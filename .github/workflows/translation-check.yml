@@ -13,7 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
       uses: actions/github-script@v3
-      if: startsWith(github.head_ref, 'i18n-sync-learn-')
       with:
         script: |
           throw "You appear to be translating files directly on GitHub. Please use Crowdin instead."
