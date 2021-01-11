@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/github-script@v3
-      if: github.event.pull_request.user.login != "github-actions[bot]"
+      if: github.event.pull_request.user.login != 'github-actions[bot]'
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
