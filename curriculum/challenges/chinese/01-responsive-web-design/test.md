@@ -1,1 +1,1 @@
-I'm a test!
+Should fire workflow and throw error.
