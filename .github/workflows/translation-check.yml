@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Dump 
       env: 
-      GITHUB_CONTEXT: ${{ toJSON(github)}}
+        GITHUB_CONTEXT: ${{ toJSON(github)}}
       run: echo "$GITHUB_CONTEXT"
     - uses: actions/github-script@v3
       with:
