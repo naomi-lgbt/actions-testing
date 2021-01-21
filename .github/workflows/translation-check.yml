@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: Dump 
       env: 
-        GITHUB_CONTEXT: ${{ toJSON(github)}}
-      run: echo "$GITHUB_CONTEXT"
+        GITHUB: ${{ toJSON(github)}}
+      run: echo "$GITHUB.event.pull_request.head.l"
     - uses: actions/github-script@v3
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
