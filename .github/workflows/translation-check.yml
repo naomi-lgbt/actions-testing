@@ -3,16 +3,16 @@ on:
   pull_request_target:
     branches:
     - 'main'
-    paths:
-    - 'curriculum/challenges/**'
-    - '!curriculum/challenges/english/**'
 
 jobs:
   has-translation:
     runs-on: ubuntu-latest
     steps:
+    - name: Dump 
+    - env: 
+        GITHUB_CONTEXT: ${{ toJSON(github)}}
+        run: echo "$GITHUB_CONTEXT"
     - uses: actions/github-script@v3
-      if: github.event.pull_request.user.login != 'github-actions[bot]'
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
