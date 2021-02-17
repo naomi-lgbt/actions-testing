@@ -2,10 +2,10 @@ name: No translate on GitHub
 on:
   pull_request_target:
     branches:
-      - 'main'
+      - "main"
     paths:
-      - 'curriculum/challenges/**'
-      - '!curriculum/challenges/english/**'
+      - "curriculum/challenges/**"
+      - "!curriculum/challenges/english/**"
 
 jobs:
   has-translation:
@@ -15,5 +15,19 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log("This is head");
-            console.log(context.payload.pull_request.head);
+            // console.log(context.payload.pull_request.head);
+            if (!context.payload.pull_request.head.fork) {
+              await github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'This is not a fork - when this is true we should pass this workflow.'
+            })
+            } else {
+              await github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'This IS a fork - when this is true we should FAIL this workflow.'
+            })
+            }
