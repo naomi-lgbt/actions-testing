@@ -15,5 +15,5 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log("This is context");
-            console.log(context);
+            console.log("This is head");
+            console.log(context.payload.pull_request.head);
