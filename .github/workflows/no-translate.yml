@@ -23,6 +23,7 @@ jobs:
               repo: context.repo.repo,
               body: 'This is not a fork - when this is true we should pass this workflow.'
             })
+              return;
             } else {
               await github.issues.createComment({
               issue_number: context.issue.number,
@@ -30,4 +31,5 @@ jobs:
               repo: context.repo.repo,
               body: 'This IS a fork - when this is true we should FAIL this workflow.'
             })
+              throw new Error("NA NA NA NA NA NA NA Can't touch this")
             }
