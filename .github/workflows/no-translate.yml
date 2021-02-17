@@ -16,7 +16,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             console.log(context.payload.pull_request.head);
-            if (!context.payload.pull_request.head.fork) {
+            if (!context.payload.pull_request.head.repo.fork) {
               await github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
