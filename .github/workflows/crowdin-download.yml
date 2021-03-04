@@ -41,4 +41,13 @@ jobs:
                 "scope: i18n",
                 "scope: learn"
               ]
-            })
+            });
+            await github.pulls.requestReviewers({
+              owner: 'nhcarrigan',
+              repo: 'actions-testing',
+              pull_number: PRNumber,
+              reviewers: [
+                'RandellDawson',
+                'nhcarrigan'
+              ]
+            });
