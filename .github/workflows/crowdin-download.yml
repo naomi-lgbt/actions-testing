@@ -32,4 +32,13 @@ jobs:
               body: 'This PR was opened automagically by Crowdin.'
             });
             const PRNumber = PR.data.number;
-            console.log(PRNumber);
+            await github.issues.addLabels({
+              owner: 'nhcarrigan',
+              repo: 'actions-testing',
+              issue_number: PRNumber,
+              labels: [
+                "crowdin-sync",
+                "scope: i18n",
+                "scope: learn"
+              ]
+            })
