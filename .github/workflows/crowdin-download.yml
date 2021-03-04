@@ -95,5 +95,7 @@ jobs:
               owner: 'nhcarrigan',
               repo: 'actions-testing',
               head: 'i18n-sync-learn',
-              base: 'main'
+              base: 'main',
+              title: 'Crowdin Sync Learn',
+              body: 'This PR was opened automagically by Crowdin.'
             })
