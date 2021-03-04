@@ -19,7 +19,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log(context.payload.pull_request);
+            console.log(context.payload.pull_request.base.user.login);
             if (context.payload.pull_request.head.repo.fork) {
               core.setFailed('This PR appears to touch translated curriculum files.')
               github.issues.createComment({
