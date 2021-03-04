@@ -87,6 +87,7 @@ jobs:
       # Generate PR - all languages should go ABOVE this. #
 
       - name: Create PR
+        id: cpr
         uses: actions/github-script@v3
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
@@ -99,3 +100,6 @@ jobs:
               title: 'Crowdin Sync Learn',
               body: 'This PR was opened automagically by Crowdin.'
             })
+      
+      - name: View output?
+        run: echo "${{ steps.cpr.outputs }}"
