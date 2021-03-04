@@ -47,7 +47,6 @@ jobs:
               repo: 'actions-testing',
               pull_number: PRNumber,
               reviewers: [
-                'RandellDawson',
                 'nhcarrigan'
               ]
             });
