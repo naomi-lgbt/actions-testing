@@ -92,17 +92,12 @@ jobs:
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
-            await github.pulls.create({
+            const PR = await github.pulls.create({
               owner: 'nhcarrigan',
               repo: 'actions-testing',
               head: 'i18n-sync-learn',
               base: 'main',
               title: 'Crowdin Sync Learn',
               body: 'This PR was opened automagically by Crowdin.'
-            })
-      
-      - name: View output?
-        uses: actions/github-script@v3
-        with:
-          script: |
-            console.log(steps.cpr.outputs)
+            });
+            console.log(PR);
