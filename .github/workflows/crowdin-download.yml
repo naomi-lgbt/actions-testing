@@ -85,9 +85,7 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
       - name: Switch branch
-        uses: actions/checkout@v2
-        with:
-          ref: i18n-sync-learn
+        run: git checkout i18n-sync-learn
 
       # Generate PR - all languages should go ABOVE this. #
       - name: Create PR
