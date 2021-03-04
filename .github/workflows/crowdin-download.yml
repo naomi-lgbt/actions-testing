@@ -15,6 +15,12 @@ jobs:
 
       ## Crowin stuff back here ##
 
+      - name: Get latest
+        run: git fetch origin
+
+      - name: Switch branch
+        run: git checkout i18n-sync-learn
+
       - name: Check remote?
         run: git remote -v
 
