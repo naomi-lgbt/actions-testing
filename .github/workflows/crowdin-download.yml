@@ -102,4 +102,7 @@ jobs:
             })
       
       - name: View output?
-        run: echo "${{ steps.cpr.outputs }}"
+        uses: actions/github-script@v3
+        with:
+          script: |
+            console.log(steps.cpr.outputs)
