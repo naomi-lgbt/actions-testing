@@ -31,4 +31,5 @@ jobs:
               title: 'Crowdin Sync Learn',
               body: 'This PR was opened automagically by Crowdin.'
             });
-            console.log(PR);
+            const PRNumber = PR.data.number;
+            console.log(PRNumber);
