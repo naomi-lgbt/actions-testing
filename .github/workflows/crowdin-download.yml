@@ -85,6 +85,10 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
       # Generate PR - all languages should go ABOVE this. #
+
+      - name: Get latest
+        run: git fetch origin
+        
       - name: Create PR
         id: cpr
         uses: peter-evans/create-pull-request@v3
