@@ -87,6 +87,9 @@ jobs:
       - name: Switch branch
         run: git checkout i18n-sync-learn
 
+      - name: Check remote?
+        run: git remote -v
+
       # Generate PR - all languages should go ABOVE this. #
       - name: Create PR
         id: cpr
