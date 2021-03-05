@@ -20,7 +20,9 @@ jobs:
               branch: 'i18n-sync-learn'
             }).catch(err => {
               console.info("Branch does not exist. Likely no changes in download?");
-              return;
             });
-            console.log(branchExists);
+            if (branchExists.status !== 200) {
+              return;
+            }
+            console.log('Did I return early?')
       # Status 200 on success here. Status 404 on failure.
