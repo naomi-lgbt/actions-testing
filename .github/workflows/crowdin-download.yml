@@ -21,7 +21,7 @@ jobs:
             }).catch(err => {
               console.info("Branch does not exist. Likely no changes in download?");
             });
-            if (branchExists.status !== 200) {
+            if (!branchExists || branchExists.status !== 200) {
               return;
             }
             console.log('Did I return early?')
