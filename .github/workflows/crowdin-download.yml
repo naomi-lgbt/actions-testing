@@ -24,5 +24,10 @@ jobs:
             if (!branchExists || branchExists.status !== 200) {
               return;
             }
-            console.log('Did I return early?')
+            const pullRequestExists = await github.pulls.list({
+              owner: 'nhcarrigan',
+              repo: 'actions-testing',
+              head: 'nhcarrigan:i18n-sync-learn'
+            });
+            console.log(pullRequestExists);
       # Status 200 on success here. Status 404 on failure.
