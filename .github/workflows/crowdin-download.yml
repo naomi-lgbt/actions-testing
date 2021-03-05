@@ -6,9 +6,8 @@ jobs:
   i18n-download-curriculum-translations:
     name: Learn
     runs-on: ubuntu-18.04
-
+    steps:
       # Generate PR - all languages should go ABOVE this. #
-
       - name: Create PR
         id: cpr
         uses: actions/github-script@v3
