@@ -18,5 +18,9 @@ jobs:
               owner: 'nhcarrigan',
               repo: 'actions-testing',
               branch: 'i18n-sync-learn'
+            }).catch(err => {
+              console.info("Branch does not exist. Likely no changes in download?");
+              return;
             });
             console.log(branchExists);
+      # Status 200 on success here. Status 404 on failure.
