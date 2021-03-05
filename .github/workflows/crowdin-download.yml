@@ -29,5 +29,8 @@ jobs:
               repo: 'actions-testing',
               head: 'nhcarrigan:i18n-sync-learn'
             });
-            console.log(pullRequestExists);
+            if (pullRequestExists.data.length) {
+              console.info("It looks like you have an open pull request for this branch.");
+              return;
+            }
       # Status 200 on success here. Status 404 on failure.
