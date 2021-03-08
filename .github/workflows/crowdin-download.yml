@@ -7,12 +7,12 @@ jobs:
     name: Learn
     runs-on: ubuntu-18.04
     steps:
+      - name: Checkout Source Files
+        uses: actions/checkout@v2
       # Generate PR - all languages should go ABOVE this. #
       - name: Install Dependencies
         working-directory: ./tools
         run: |
-          pwd
-          ls
           cd ./crowdin
           npm ci
           
