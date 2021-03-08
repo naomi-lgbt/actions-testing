@@ -11,6 +11,8 @@ jobs:
       - name: Install Dependencies
         working-directory: ./tools
         run: |
+          pwd
+          ls
           cd ./crowdin
           npm ci
           
