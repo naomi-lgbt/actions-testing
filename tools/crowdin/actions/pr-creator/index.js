@@ -1,8 +1,12 @@
 const core = require("@actions/core");
-const github = require("@actions/github");
+const githubRoot = require("@actions/github");
 
 (async () => {
   try {
+    const token = core.getInput("github-token");
+    if (!token) {
+      core.setFailed("Must provide an API token");
+    }
     const branch = core.getInput("branch-name");
     const [owner, repo] = core.getInput("owner-repo").split("/");
     if (!owner || !repo) {
@@ -15,6 +19,8 @@ const github = require("@actions/github");
     const labels = labelsStr.trim().split(/,\s+/);
     const reviewersStr = core.getInput("reviewers");
     const reviewers = reviewersStr.trim().split(/,\s+/);
+
+    const github = githubRoot.getOctokit(token);
 
     const branchExists = await github.repos
       .getBranch({
