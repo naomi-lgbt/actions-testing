@@ -8,29 +8,22 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       # Generate PR - all languages should go ABOVE this. #
+      - name: Install Dependencies
+        working-directory: ./tools
+        run: |
+          cd ./crowdin
+          npm ci
+          
+      # Generate PR - all languages should go ABOVE this. #
       - name: Create PR
-        id: cpr
-        uses: actions/github-script@v3
+        uses: ./tools/crowdin/actions/pr-creator
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
-          script: |
-            const branchExists = await github.repos.getBranch({
-              owner: 'nhcarrigan',
-              repo: 'actions-testing',
-              branch: 'i18n-sync-learn'
-            }).catch(err => {
-              console.info("Branch does not exist. Likely no changes in download?");
-            });
-            if (!branchExists || branchExists.status !== 200) {
-              return;
-            }
-            const pullRequestExists = await github.pulls.list({
-              owner: 'nhcarrigan',
-              repo: 'actions-testing',
-              head: 'nhcarrigan:i18n-sync-learn'
-            });
-            if (pullRequestExists.data.length) {
-              console.info("It looks like you have an open pull request for this branch.");
-              return;
-            }
-      # Status 200 on success here. Status 404 on failure.
+          branch: 'i18n-sync-learn'
+          owner-repo: 'nhcarrigan/actions-testing'
+          base: 'main'
+          title: 'chore(i18n,learn): processed translations',
+          body: 'This PR was opened auto-magically by Crowdin.'
+          labels: 'crowdin-sync, scope: i18n, scope: learn'
+          reviewers: 'nhcarrigan'
+            
