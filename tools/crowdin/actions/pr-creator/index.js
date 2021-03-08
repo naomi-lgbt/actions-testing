@@ -37,7 +37,7 @@ const githubRoot = require("@actions/github");
     const pullRequestExists = await github.pulls.list({
       owner,
       repo,
-      head: `${repo}:${branch}`,
+      head: `${owner}:${branch}`,
     });
     if (pullRequestExists.data.length) {
       console.info(
