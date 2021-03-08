@@ -63,10 +63,10 @@ const githubRoot = require("@actions/github");
     if (!PR || PR.status !== 201) {
       return;
     }
+    const prNumber = PR.data.number;
     console.log(
       `https://github.com/freeCodeCamp/freeCodeCamp/pull/${prNumber} created`
     );
-    const prNumber = PR.data.number;
     if (labels && labels.length) {
       await github.issues.addLabels({
         owner,
