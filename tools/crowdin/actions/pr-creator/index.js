@@ -7,7 +7,7 @@ const githubRoot = require("@actions/github");
     if (!token) {
       core.setFailed("Must provide an API token");
     }
-    const branch = core.getInput("branch-name");
+    const branch = core.getInput("branch");
     const [owner, repo] = core.getInput("owner-repo").split("/");
     if (!owner || !repo) {
       core.setFailed("Must specify a valid ownerName/repoName");
