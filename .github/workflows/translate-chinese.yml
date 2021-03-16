@@ -32,7 +32,7 @@ jobs:
           git config user.email "<>"
           git add .
           git commit -m "feat(i18n): traditional chinese"
-          git push origin translate-chinese
+          git push origin translate-chinese -f
 
       - name: Generate PR
         uses: ./tools/crowdin/actions/pr-creator
