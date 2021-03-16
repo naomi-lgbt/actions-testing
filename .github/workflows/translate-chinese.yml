@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     # runs every day at 2 PM UTC
-    - cron "0 14 * * * "
+    - cron: "0 14 * * * "
 
 jobs:
   translate-chinese:
