@@ -1,6 +1,6 @@
 ---
 id: 587d7b7b367417b2b2512b17
-title: 使用展开运算符合并数组
+title: 使用展開運算符合並數組
 challengeType: 1
 forumTopicId: 301156
 dashedName: combine-arrays-with-the-spread-operator
@@ -8,7 +8,7 @@ dashedName: combine-arrays-with-the-spread-operator
 
 # --description--
 
-展开语法（<dfn>spread</dfn>）的另一个重要用途是合并数组，或者将某个数组的所有元素插入到另一个数组的任意位置。 我们也可以使用 ES5 的语法连接两个数组，但只能让它们首尾相接。 而展开语法可以让这样的操作变得极其简单：
+展開語法（<dfn>spread</dfn>）的另一個重要用途是合併數組，或者將某個數組的所有元素插入到另一個數組的任意位置。 我們也可以使用 ES5 的語法連接兩個數組，但只能讓它們首尾相接。 而展開語法可以讓這樣的操作變得極其簡單：
 
 ```js
 let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
@@ -16,23 +16,23 @@ let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
 let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
 ```
 
-`thatArray` 会有值 `['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']`
+`thatArray` 會有值 `['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']`
 
-使用展开语法，我们就可以很方便的实现一个用传统方法会写得很复杂且冗长的操作。
+使用展開語法，我們就可以很方便的實現一個用傳統方法會寫得很複雜且冗長的操作。
 
 # --instructions--
 
-我们已经定义了一个返回 `sentence` 变量的 `spreadOut` 函数。 请修改这个函数，利用 <dfn>spread</dfn> 使该函数返回数组 `['learning', 'to', 'code', 'is', 'fun']`。
+我們已經定義了一個返回 `sentence` 變量的 `spreadOut` 函數。 請修改這個函數，利用 <dfn>spread</dfn> 使該函數返回數組 `['learning', 'to', 'code', 'is', 'fun']`。
 
 # --hints--
 
-`spreadOut` 应返回 `["learning", "to", "code", "is", "fun"]`。
+`spreadOut` 應返回 `["learning", "to", "code", "is", "fun"]`。
 
 ```js
 assert.deepEqual(spreadOut(), ['learning', 'to', 'code', 'is', 'fun']);
 ```
 
-`spreadOut` 函数里应用到展开语法。
+`spreadOut` 函數裏應用到展開語法。
 
 ```js
 assert.notStrictEqual(spreadOut.toString().search(/[...]/), -1);

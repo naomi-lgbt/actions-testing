@@ -1,6 +1,6 @@
 ---
 id: 587d778d367417b2b2512aaa
-title: 使用自定义 CSS 让元素仅对屏幕阅读器可见
+title: 使用自定義 CSS 讓元素僅對屏幕閱讀器可見
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cJ8QGkhJ'
 forumTopicId: 301020
@@ -9,11 +9,11 @@ dashedName: make-elements-only-visible-to-a-screen-reader-by-using-custom-css
 
 # --description--
 
-到目前为止，所有关于可访问性的挑战都没有使用 CSS。 这是为了在介绍视觉设计方面之前强调使用逻辑结构和有语义意义的标签的重要性。
+到目前爲止，所有關於可訪問性的挑戰都沒有使用 CSS。 這是爲了在介紹視覺設計方面之前強調使用邏輯結構和有語義意義的標籤的重要性。
 
-但如果我们想在页面中添加一些只对屏幕阅读器可见的内容，可以用 CSS 来实现。 当信息为视觉格式（例如图表）时，但屏幕阅读器用户需要备用文稿（例如表格）来访问数据，在这种情况下， 使用 CSS 将屏幕的只读元素放到浏览器窗口可视区域之外。
+但如果我們想在頁面中添加一些只對屏幕閱讀器可見的內容，可以用 CSS 來實現。 當信息爲視覺格式（例如圖表）時，但屏幕閱讀器用戶需要備用文稿（例如表格）來訪問數據，在這種情況下， 使用 CSS 將屏幕的只讀元素放到瀏覽器窗口可視區域之外。
 
-举个例子：
+舉個例子：
 
 ```css
 .sr-only {
@@ -26,38 +26,38 @@ dashedName: make-elements-only-visible-to-a-screen-reader-by-using-custom-css
 }
 ```
 
-**注意：**以下的 CSS 解决方案与上面的结果不同：
+**注意：**以下的 CSS 解決方案與上面的結果不同：
 
 <ul>
-<li><code>display: none;</code> 或 <code>visibility: hidden;</code> 会把内容彻底隐藏起来，屏幕阅读器也无法获取这些内容。</li>
-<li>如果把值设置为 0px，如 <code>width: 0px; height: 0px;</code>，意味着让元素脱离文档流，这样做同样也会让屏幕阅读器忽略此元素。</li>
+<li><code>display: none;</code> 或 <code>visibility: hidden;</code> 會把內容徹底隱藏起來，屏幕閱讀器也無法獲取這些內容。</li>
+<li>如果把值設置爲 0px，如 <code>width: 0px; height: 0px;</code>，意味着讓元素脫離文檔流，這樣做同樣也會讓屏幕閱讀器忽略此元素。</li>
 </ul>
 
 # --instructions--
 
-Camper Cat 为他的训练页面创建了一个十分酷炫的条形图。 考虑到可访问性，他还将数据放入到了一个表格中，供屏幕阅读器用户使用。 表格已有一个 `sr-only` class，但是还没有添加 CSS 规则。 设置 `position` 的值为 `absolute`，`left` 的值为 `-10000px`，`width` 和 `height` 的值均为 `1px`。
+Camper Cat 爲他的訓練頁面創建了一個十分酷炫的條形圖。 考慮到可訪問性，他還將數據放入到了一個表格中，供屏幕閱讀器用戶使用。 表格已有一個 `sr-only` class，但是還沒有添加 CSS 規則。 設置 `position` 的值爲 `absolute`，`left` 的值爲 `-10000px`，`width` 和 `height` 的值均爲 `1px`。
 
 # --hints--
 
-设置 `sr-only` class 的 `position` 属性值为 `absolute`。
+設置 `sr-only` class 的 `position` 屬性值爲 `absolute`。
 
 ```js
 assert($('.sr-only').css('position') == 'absolute');
 ```
 
-设置 `sr-only` class 的 `left` 属性值为`-10000px`。
+設置 `sr-only` class 的 `left` 屬性值爲`-10000px`。
 
 ```js
 assert($('.sr-only').css('left') == '-10000px');
 ```
 
-设置 `sr-only` class 的 `width` 属性值为 `1` 像素。
+設置 `sr-only` class 的 `width` 屬性值爲 `1` 像素。
 
 ```js
 assert(code.match(/width:\s*?1px/gi));
 ```
 
-设置 `sr-only` class 的 `height` 属性值为 `1` 像素。
+設置 `sr-only` class 的 `height` 屬性值爲 `1` 像素。
 
 ```js
 assert(code.match(/height:\s*?1px/gi));

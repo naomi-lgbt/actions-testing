@@ -1,6 +1,6 @@
 ---
 id: 587d7b8e367417b2b2512b5f
-title: 传递参数以避免函数中的外部依赖
+title: 傳遞參數以避免函數中的外部依賴
 challengeType: 1
 forumTopicId: 301234
 dashedName: pass-arguments-to-avoid-external-dependence-in-a-function
@@ -8,39 +8,39 @@ dashedName: pass-arguments-to-avoid-external-dependence-in-a-function
 
 # --description--
 
-上一个挑战是更接近函数式编程原则的挑战，但是仍然缺少一些东西。
+上一個挑戰是更接近函數式編程原則的挑戰，但是仍然缺少一些東西。
 
-虽然我们没有改变全局变量值，但在没有全局变量 `fixedValue` 的情况下，`incrementer` 函数将不起作用。
+雖然我們沒有改變全局變量值，但在沒有全局變量 `fixedValue` 的情況下，`incrementer` 函數將不起作用。
 
-函数式编程的另一个原则是：总是显式声明依赖关系。 如果函数依赖于一个变量或对象，那么将该变量或对象作为参数直接传递到函数中。
+函數式編程的另一個原則是：總是顯式聲明依賴關係。 如果函數依賴於一個變量或對象，那麼將該變量或對象作爲參數直接傳遞到函數中。
 
-这样做会有很多好处。 其中一点是让函数更容易测试，因为你确切地知道参数是什么，并且这个参数也不依赖于程序中的任何其他内容。
+這樣做會有很多好處。 其中一點是讓函數更容易測試，因爲你確切地知道參數是什麼，並且這個參數也不依賴於程序中的任何其他內容。
 
-其次，这样做可以让你更加自信地更改，删除或添加新代码。 因为你很清楚哪些是可以改的，哪些是不可以改的，这样你就知道哪里可能会有潜在的陷阱。
+其次，這樣做可以讓你更加自信地更改，刪除或添加新代碼。 因爲你很清楚哪些是可以改的，哪些是不可以改的，這樣你就知道哪裏可能會有潛在的陷阱。
 
-最后，无论代码的哪一部分执行它，函数总是会为同一组输入生成相同的输出。
+最後，無論代碼的哪一部分執行它，函數總是會爲同一組輸入生成相同的輸出。
 
 # --instructions--
 
-更新 `incrementer` 函数，明确声明其依赖项。
+更新 `incrementer` 函數，明確聲明其依賴項。
 
-编写 `incrementer` 函数，获取它的参数，然后将值增加 1。
+編寫 `incrementer` 函數，獲取它的參數，然後將值增加 1。
 
 # --hints--
 
-`incrementer` 函数不能修改 `fixedValue` 的值（它的值是 `4`）。
+`incrementer` 函數不能修改 `fixedValue` 的值（它的值是 `4`）。
 
 ```js
 assert(fixedValue === 4);
 ```
 
-`incrementer` 函数应该接收一个参数。
+`incrementer` 函數應該接收一個參數。
 
 ```js
 assert(incrementer.length === 1);
 ```
 
-`incrementer` 函数应返回比 `fixedValue` 更大的值。
+`incrementer` 函數應返回比 `fixedValue` 更大的值。
 
 ```js
 const __newValue = incrementer(fixedValue);

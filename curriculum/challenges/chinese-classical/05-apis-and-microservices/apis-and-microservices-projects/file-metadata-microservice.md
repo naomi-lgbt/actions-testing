@@ -1,6 +1,6 @@
 ---
 id: bd7158d8c443edefaeb5bd0f
-title: 文件元数据微服务
+title: 文件元數據微服務
 challengeType: 4
 forumTopicId: 301506
 dashedName: file-metadata-microservice
@@ -8,21 +8,21 @@ dashedName: file-metadata-microservice
 
 # --description--
 
-构建一个 JavaScript 的全栈应用，在功能上与这个应用相似：<https://file-metadata-microservice.freecodecamp.rocks/>。 可以采用下面的一种方式完成这个挑战：
+構建一個 JavaScript 的全棧應用，在功能上與這個應用相似：<https://file-metadata-microservice.freecodecamp.rocks/>。 可以採用下面的一種方式完成這個挑戰：
 
--   克隆 [this GitHub repo](https://github.com/freeCodeCamp/boilerplate-project-filemetadata/) 并在本地完成项目。
--   使用 [repl.it 初始化项目](https://repl.it/github/freeCodeCamp/boilerplate-project-filemetadata) 来完成项目。
--   使用你选择的网站生成器来完成项目， 并确保包含了我们 GitHub 仓库的所有文件。
+-   克隆 [this GitHub repo](https://github.com/freeCodeCamp/boilerplate-project-filemetadata/) 並在本地完成項目。
+-   使用 [repl.it 初始化項目](https://repl.it/github/freeCodeCamp/boilerplate-project-filemetadata) 來完成項目。
+-   使用你選擇的網站生成器來完成項目， 並確保包含了我們 GitHub 倉庫的所有文件。
 
-当完成本项目，请确认有一个正常运行的 demo 可以公开访问。 然后将 URL 提交到 `Solution Link` 中。 此外，还可以将项目的源码提交到 `GitHub Link` 中。
+當完成本項目，請確認有一個正常運行的 demo 可以公開訪問。 然後將 URL 提交到 `Solution Link` 中。 此外，還可以將項目的源碼提交到 `GitHub Link` 中。
 
 # --instructions--
 
-** 提示：** 可以使用 `multer` npm 包来处理上传文件
+** 提示：** 可以使用 `multer` npm 包來處理上傳文件
 
 # --hints--
 
-提交自己的项目，而不是示例的 URL。
+提交自己的項目，而不是示例的 URL。
 
 ```js
 (getUserInput) => {
@@ -34,7 +34,7 @@ dashedName: file-metadata-microservice
 };
 ```
 
-可以提交一个包含上传文件的表单。
+可以提交一個包含上傳文件的表單。
 
 ```js
 async (getUserInput) => {
@@ -45,7 +45,7 @@ async (getUserInput) => {
 };
 ```
 
-表单的文件上传标签的 `name` 属性设置成 `upfile`。
+表單的文件上傳標籤的 `name` 屬性設置成 `upfile`。
 
 ```js
 async (getUserInput) => {
@@ -56,7 +56,7 @@ async (getUserInput) => {
 };
 ```
 
-当提交一个文件时，在 JSON 响应中收到文件的 `name`、`type` 和`size`（以 bytes（字节）为单位）。
+當提交一個文件時，在 JSON 響應中收到文件的 `name`、`type` 和`size`（以 bytes（字節）爲單位）。
 
 ```js
 async (getUserInput) => {

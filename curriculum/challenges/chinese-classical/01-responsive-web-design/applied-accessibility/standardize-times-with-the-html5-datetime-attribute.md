@@ -1,6 +1,6 @@
 ---
 id: 587d778c367417b2b2512aa9
-title: 使用 HTML5 的 datetime 属性标准化时间
+title: 使用 HTML5 的 datetime 屬性標準化時間
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cmzMgtz'
 forumTopicId: 301025
@@ -9,25 +9,25 @@ dashedName: standardize-times-with-the-html5-datetime-attribute
 
 # --description--
 
-继续日期主题。 HTML5 还引入了 `time` 标签与 `datetime` 属性来标准化时间。 `datetime` 属性是一个内联元素，可以在一个页面上包含日期或时间。 `datetime` 属性包含的有效格式。 辅助设备可以获取这个值。 这个属性也有助于避免混乱，因为它规定了时间的标准化版本，甚至可以在文本中以非正式的方式或学术方式使用它。
+繼續日期主題。 HTML5 還引入了 `time` 標籤與 `datetime` 屬性來標準化時間。 `datetime` 屬性是一個內聯元素，可以在一個頁面上包含日期或時間。 `datetime` 屬性包含的有效格式。 輔助設備可以獲取這個值。 這個屬性也有助於避免混亂，因爲它規定了時間的標準化版本，甚至可以在文本中以非正式的方式或學術方式使用它。
 
-举个例子：
+舉個例子：
 
 `<p>Master Camper Cat officiated the cage match between Goro and Scorpion <time datetime="2013-02-13">last Wednesday</time>, which ended in a draw.</p>`
 
 # --instructions--
 
-Camper Cat 的比武大会的时间确定了！ 用 `time` 标签包裹文本 `Thursday, September 15<sup>th<sup>`，添加一个 `datetime` 属性，将属性值设置为 `2016-09-15`。
+Camper Cat 的比武大會的時間確定了！ 用 `time` 標籤包裹文本 `Thursday, September 15<sup>th<sup>`，添加一個 `datetime` 屬性，將屬性值設置爲 `2016-09-15`。
 
 # --hints--
 
-应存在一个内容文本为 `Thank you to everyone for responding to Master Camper Cat's survey.` 的 `p` 元素和一个 `time` 元素。
+應存在一個內容文本爲 `Thank you to everyone for responding to Master Camper Cat's survey.` 的 `p` 元素和一個 `time` 元素。
 
 ```js
 assert(timeElement.length);
 ```
 
-`time` 元素的内容文本应为 `Thursday, September 15<sup>th</sup>`。
+`time` 元素的內容文本應爲 `Thursday, September 15<sup>th</sup>`。
 
 ```js
 assert(
@@ -36,13 +36,13 @@ assert(
 );
 ```
 
-`time` 元素应包含非空的 `datetime` 属性。
+`time` 元素應包含非空的 `datetime` 屬性。
 
 ```js
 assert(datetimeAttr && datetimeAttr.length);
 ```
 
-`datetime` 的属性值应为 `2016-09-15`。
+`datetime` 的屬性值應爲 `2016-09-15`。
 
 ```js
 assert(datetimeAttr === '2016-09-15');

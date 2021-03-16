@@ -1,6 +1,6 @@
 ---
 id: 587d7b7c367417b2b2512b19
-title: 修改嵌套在对象中的对象
+title: 修改嵌套在對象中的對象
 challengeType: 1
 forumTopicId: 301164
 dashedName: modify-an-object-nested-within-an-object
@@ -8,7 +8,7 @@ dashedName: modify-an-object-nested-within-an-object
 
 # --description--
 
-现在我们来看一个稍复杂的对象。 在对象中，我们也可以嵌套任意层数的对象，对象的属性值可以是 JavaScript 支持的任意类型，包括数组和其他对象。 请看以下例子：
+現在我們來看一個稍複雜的對象。 在對象中，我們也可以嵌套任意層數的對象，對象的屬性值可以是 JavaScript 支持的任意類型，包括數組和其他對象。 請看以下例子：
 
 ```js
 let nestedObject = {
@@ -26,7 +26,7 @@ let nestedObject = {
 };
 ```
 
-`nestedObject` 有 3 个属性：`id`（属性值为数字）、`date`（属性值为字符串）、`data`（属性值为嵌套的对象）。 虽然对象中的数据可能很复杂，我们仍能使用上一个挑战中讲到的写法来访问我们需要的信息。 如果我们想把嵌套在 `onlineStatus` 中 `busy` 的属性值改为 `10`，可以用点号表示法来这样实现：
+`nestedObject` 有 3 個屬性：`id`（屬性值爲數字）、`date`（屬性值爲字符串）、`data`（屬性值爲嵌套的對象）。 雖然對象中的數據可能很複雜，我們仍能使用上一個挑戰中講到的寫法來訪問我們需要的信息。 如果我們想把嵌套在 `onlineStatus` 中 `busy` 的屬性值改爲 `10`，可以用點號表示法來這樣實現：
 
 ```js
 nestedObject.data.onlineStatus.busy = 10;
@@ -34,11 +34,11 @@ nestedObject.data.onlineStatus.busy = 10;
 
 # --instructions--
 
-我们已经定义了一个 `userActivity` 对象，它包含了另一个对象。 请将 `online` 的属性值改为 `45`。
+我們已經定義了一個 `userActivity` 對象，它包含了另一個對象。 請將 `online` 的屬性值改爲 `45`。
 
 # --hints--
 
-`userActivity` 应包含 `id`、`date` 和 `data` 属性。
+`userActivity` 應包含 `id`、`date` 和 `data` 屬性。
 
 ```js
 assert(
@@ -46,19 +46,19 @@ assert(
 );
 ```
 
-`userActivity` 应包含 `data` 属性，其属性值应为包含 `totalUsers` 和 `online` 属性的对象。
+`userActivity` 應包含 `data` 屬性，其屬性值應爲包含 `totalUsers` 和 `online` 屬性的對象。
 
 ```js
 assert('totalUsers' in userActivity.data && 'online' in userActivity.data);
 ```
 
-`userActivity` 的 `data` 属性值中的 `online` 属性值应被改为 `45`。
+`userActivity` 的 `data` 屬性值中的 `online` 屬性值應被改爲 `45`。
 
 ```js
 assert(userActivity.data.online === 45);
 ```
 
-应使用点号表示法或方括号表示法来修改 `online` 属性值。
+應使用點號表示法或方括號表示法來修改 `online` 屬性值。
 
 ```js
 assert.strictEqual(code.search(/online: 45/), -1);

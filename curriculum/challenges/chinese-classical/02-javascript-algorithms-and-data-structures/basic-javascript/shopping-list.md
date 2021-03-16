@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244bc
-title: 购物清单
+title: 購物清單
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c9MEKHZ'
 forumTopicId: 18280
@@ -9,35 +9,35 @@ dashedName: shopping-list
 
 # --description--
 
-创建一个名叫 `myList` 的购物清单。 清单的数据格式就是多维数组。
+創建一個名叫 `myList` 的購物清單。 清單的數據格式就是多維數組。
 
-每个子数组中的第一个元素应该是购买的物品名称。 第二个元素应该是物品的数量，类似于：
+每個子數組中的第一個元素應該是購買的物品名稱。 第二個元素應該是物品的數量，類似於：
 
 `["Chocolate Bar", 15]`
 
-任务：你的购物清单至少应该有 5 个子数组。
+任務：你的購物清單至少應該有 5 個子數組。
 
 # --hints--
 
-`myList` 应该是一个数组
+`myList` 應該是一個數組
 
 ```js
 assert(isArray);
 ```
 
-你的每个子数组的第一个元素的类型都应该是字符串
+你的每個子數組的第一個元素的類型都應該是字符串
 
 ```js
 assert(hasString);
 ```
 
-你的每个子数组的第二个元素的类型都应该是数字
+你的每個子數組的第二個元素的類型都應該是數字
 
 ```js
 assert(hasNumber);
 ```
 
-你的列表中至少要包含 5 个元素
+你的列表中至少要包含 5 個元素
 
 ```js
 assert(count > 4);

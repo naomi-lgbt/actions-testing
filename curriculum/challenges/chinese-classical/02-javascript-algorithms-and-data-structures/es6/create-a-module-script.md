@@ -1,6 +1,6 @@
 ---
 id: 5cddbfd622f1a59093ec611d
-title: 创建一个模块脚本
+title: 創建一個模塊腳本
 challengeType: 6
 forumTopicId: 301198
 dashedName: create-a-module-script
@@ -8,27 +8,27 @@ dashedName: create-a-module-script
 
 # --description--
 
-起初，JavaScript 几乎只在 HTML web 扮演一个很小的角色。 今天，一切不同了，很多网站几乎全是用 JavaScript 所写。 为了让 JavaScript 更模块化、更整洁以及更易于维护，ES6 引入了在多个 JavaScript 文件之间共享代码的机制。 它可以导出文件的一部分供其它文件使用，然后在需要它的地方按需导入。 为了使用这一功能， 需要在 HTML 文档里创建一个 `type` 为 `module` 的脚本。 例子如下：
+起初，JavaScript 幾乎只在 HTML web 扮演一個很小的角色。 今天，一切不同了，很多網站幾乎全是用 JavaScript 所寫。 爲了讓 JavaScript 更模塊化、更整潔以及更易於維護，ES6 引入了在多個 JavaScript 文件之間共享代碼的機制。 它可以導出文件的一部分供其它文件使用，然後在需要它的地方按需導入。 爲了使用這一功能， 需要在 HTML 文檔裏創建一個 `type` 爲 `module` 的腳本。 例子如下：
 
 ```html
 <script type="module" src="filename.js"></script>
 ```
 
-使用了 `module` 类型的脚本可以使用 `import` 和 `export` 特性（接下来的挑战会介绍）。
+使用了 `module` 類型的腳本可以使用 `import` 和 `export` 特性（接下來的挑戰會介紹）。
 
 # --instructions--
 
-给 HTML 文档添加 `module` 类型的脚本，指定源文件为 `index.js`。
+給 HTML 文檔添加 `module` 類型的腳本，指定源文件爲 `index.js`。
 
 # --hints--
 
-应该创建一个 `script` 标签。
+應該創建一個 `script` 標籤。
 
 ```js
 assert(code.match(/<\s*script[^>]*>\s*<\/\s*script\s*>/g));
 ```
 
-`script` 标签应该有一个值为 `module` 的 `type` 属性。
+`script` 標籤應該有一個值爲 `module` 的 `type` 屬性。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-`script` 标签的 `src` 属性应该为 `index.js`。
+`script` 標籤的 `src` 屬性應該爲 `index.js`。
 
 ```js
 assert(

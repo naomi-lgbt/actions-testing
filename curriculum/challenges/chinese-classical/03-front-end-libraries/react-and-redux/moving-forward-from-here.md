@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403614a
-title: 从这里前进
+title: 從這裏前進
 challengeType: 6
 forumTopicId: 301434
 dashedName: moving-forward-from-here
@@ -8,21 +8,21 @@ dashedName: moving-forward-from-here
 
 # --description--
 
-恭喜！ 你完成了 React 和 Redux 的所有课程！ 结束之前，还要再提一点。 通常，我们不会在这样的编辑器中编写 React 应用代码。 如果你在自己的计算机上使用 npm 和文件系统，这个挑战可让你一瞥 React 应用的语法之貌。 除了使用 `import` 语句（这些语句引入了各挑战中提供的所有依赖关系），其代码看起来类似。 “管理包（含 npm）”这一节更详细地介绍了 npm。
+恭喜！ 你完成了 React 和 Redux 的所有課程！ 結束之前，還要再提一點。 通常，我們不會在這樣的編輯器中編寫 React 應用代碼。 如果你在自己的計算機上使用 npm 和文件系統，這個挑戰可讓你一瞥 React 應用的語法之貌。 除了使用 `import` 語句（這些語句引入了各挑戰中提供的所有依賴關係），其代碼看起來類似。 “管理包（含 npm）”這一節更詳細地介紹了 npm。
 
-最后，写 React 和 Redux 的代码通常需要一些配置， 且很快会变得复杂起来。 如果你有兴趣在自己的计算机上试试，
+最後，寫 React 和 Redux 的代碼通常需要一些配置， 且很快會變得複雜起來。 如果你有興趣在自己的計算機上試試，
 
-[Create React App](https://github.com/facebookincubator/create-react-app) 可获取已配置好的现成代码。
+[Create React App](https://github.com/facebookincubator/create-react-app) 可獲取已配置好的現成代碼。
 
-另一种做法是在 CodePen 中启用 Babel 作为 JavaScript 预处理器，将 React 和 ReactDOM 添加为外部 JavaScript 资源，在那里编写应用。
+另一種做法是在 CodePen 中啓用 Babel 作爲 JavaScript 預處理器，將 React 和 ReactDOM 添加爲外部 JavaScript 資源，在那裏編寫應用。
 
 # --instructions--
 
-把 `'Now I know React and Redux!'` 这一消息输出到控制台。
+把 `'Now I know React and Redux!'` 這一消息輸出到控制檯。
 
 # --hints--
 
-应该将 `Now I know React and Redux!` 这一消息应输出到控制台。
+應該將 `Now I know React and Redux!` 這一消息應輸出到控制檯。
 
 ```js
 (getUserInput) =>

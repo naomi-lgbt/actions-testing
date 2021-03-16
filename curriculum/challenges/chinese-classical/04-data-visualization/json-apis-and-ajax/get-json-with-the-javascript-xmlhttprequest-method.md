@@ -1,6 +1,6 @@
 ---
 id: 587d7fae367417b2b2512be3
-title: 使用 XMLHttpRequest 方法获取 JSON
+title: 使用 XMLHttpRequest 方法獲取 JSON
 challengeType: 6
 forumTopicId: 301502
 dashedName: get-json-with-the-javascript-xmlhttprequest-method
@@ -8,19 +8,19 @@ dashedName: get-json-with-the-javascript-xmlhttprequest-method
 
 # --description--
 
-你还可以从外部来源请求数据。 这就是 API 发挥作用的地方。
+你還可以從外部來源請求數據。 這就是 API 發揮作用的地方。
 
-请记住，API（或叫应用程序编程接口）是计算机用来互相通信的工具。 你将学习如何通过 AJAX技术 从 API 获得的数据来更新 HTML。
+請記住，API（或叫應用程序編程接口）是計算機用來互相通信的工具。 你將學習如何通過 AJAX技術 從 API 獲得的數據來更新 HTML。
 
-大部分 web APIs 以 JSON 格式传输数据。 JSON 是 JavaScript Object Notation 的简写。
+大部分 web APIs 以 JSON 格式傳輸數據。 JSON 是 JavaScript Object Notation 的簡寫。
 
-JSON 语法与 JavaScript 对象字面符号非常相似。 JSON 具有对象属性以及其当前值，夹在 `{` 和 `}`之间。
+JSON 語法與 JavaScript 對象字面符號非常相似。 JSON 具有對象屬性以及其當前值，夾在 `{` 和 `}`之間。
 
-这些属性及其值通常称为 "键值对"。
+這些屬性及其值通常稱爲 "鍵值對"。
 
-但是，JSON 是由 API 以`bytes` 形式传输的，你的程序以`string`接受它。 它们能转换成为 JavaScript 对象，但默认情况下它们不是 JavaScript 对象。 `JSON.parse`方法解析字符串并构造它描述的 JavaScript 对象。
+但是，JSON 是由 API 以`bytes` 形式傳輸的，你的程序以`string`接受它。 它們能轉換成爲 JavaScript 對象，但默認情況下它們不是 JavaScript 對象。 `JSON.parse`方法解析字符串並構造它描述的 JavaScript 對象。
 
-你可以从 freeCodeCamp 的 Cat Photo API 请求 JSON。 以下是你可以在点击事件中添加的代码：
+你可以從 freeCodeCamp 的 Cat Photo API 請求 JSON。 以下是你可以在點擊事件中添加的代碼：
 
 ```js
 const req = new XMLHttpRequest();
@@ -32,21 +32,21 @@ req.onload = function(){
 };
 ```
 
-这里介绍每行代码的作用。 JavaScript `XMLHttpRequest` 对象具有许多用于传输数据的属性和方法。 首先，创建一个`XMLHttpRequest`对象实例，并保存在`req`变量里 。 然后，`open` 方法初始化一个请求——这个例子是从 API 请求数据，因此它是一个 `GET` 请求。 第二个参数 `open` 是你要从中请求数据的 API 的 URL。 第三个参数是一个布尔值， `true` 使其成为异步请求。 `send` 方法发送请求。 最后，`onload` 事件处理程序解析返回的数据并应用该 `JSON.stringify` 方法将JavaScript对象转换为字符串， 然后将此字符串作为消息文本插入。
+這裏介紹每行代碼的作用。 JavaScript `XMLHttpRequest` 對象具有許多用於傳輸數據的屬性和方法。 首先，創建一個`XMLHttpRequest`對象實例，並保存在`req`變量裏 。 然後，`open` 方法初始化一個請求——這個例子是從 API 請求數據，因此它是一個 `GET` 請求。 第二個參數 `open` 是你要從中請求數據的 API 的 URL。 第三個參數是一個布爾值， `true` 使其成爲異步請求。 `send` 方法發送請求。 最後，`onload` 事件處理程序解析返回的數據並應用該 `JSON.stringify` 方法將JavaScript對象轉換爲字符串， 然後將此字符串作爲消息文本插入。
 
 # --instructions--
 
-更新代码，创建并向 freeCodeCamp Cat Photo API 发送 `GET` 请求。 然后单击 `Get Message` 按钮。 AJAX 函数将使用 API​​ 的原始 JSON 输出替换文本 `The message will go here`。
+更新代碼，創建並向 freeCodeCamp Cat Photo API 發送 `GET` 請求。 然後單擊 `Get Message` 按鈕。 AJAX 函數將使用 API​​ 的原始 JSON 輸出替換文本 `The message will go here`。
 
 # --hints--
 
-应该创建一个新的 `XMLHttpRequest`。
+應該創建一個新的 `XMLHttpRequest`。
 
 ```js
 assert(code.match(/new\s+?XMLHttpRequest\(\s*?\)/g));
 ```
 
-应该使用该 `open` 方法初始化对 freeCodeCamp Cat Photo API 的 `GET` 请求。
+應該使用該 `open` 方法初始化對 freeCodeCamp Cat Photo API 的 `GET` 請求。
 
 ```js
 assert(
@@ -56,13 +56,13 @@ assert(
 );
 ```
 
-应使用该 `send` 方法发送请求。
+應使用該 `send` 方法發送請求。
 
 ```js
 assert(code.match(/\.send\(\s*\)/g));
 ```
 
-应该有一个 `onload` 设置为函数的事件处理程序。
+應該有一個 `onload` 設置爲函數的事件處理程序。
 
 ```js
 assert(
@@ -70,13 +70,13 @@ assert(
 );
 ```
 
-应该使用该 `JSON.parse` 方法来解析 `responseText`。
+應該使用該 `JSON.parse` 方法來解析 `responseText`。
 
 ```js
 assert(code.match(/JSON\s*\.parse\(\s*.*\.responseText\s*\)/g));
 ```
 
-应该使用 `message` 获取元素，并将其内部 HTML 转换为 JSON 数据字符串。
+應該使用 `message` 獲取元素，並將其內部 HTML 轉換爲 JSON 數據字符串。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036155
-title: 发送 Action Data 给 Store
+title: 發送 Action Data 給 Store
 challengeType: 6
 forumTopicId: 301448
 dashedName: send-action-data-to-the-store
@@ -8,19 +8,19 @@ dashedName: send-action-data-to-the-store
 
 # --description--
 
-到目前为止，你已经学会了如何将 action dispatch 给 Redux store，但到目前为止，这些 action 并未包含除 `type`之外的任何信息。 还可以和 action 一起发送特定数据。 事实上，这是非常常见的，因为 action 通常源于一些用户交互，并且往往会携带一些数据， Redux store 经常需要知道这些数据。
+到目前爲止，你已經學會了如何將 action dispatch 給 Redux store，但到目前爲止，這些 action 並未包含除 `type`之外的任何信息。 還可以和 action 一起發送特定數據。 事實上，這是非常常見的，因爲 action 通常源於一些用戶交互，並且往往會攜帶一些數據， Redux store 經常需要知道這些數據。
 
 # --instructions--
 
-在代码编辑器中定义了一个基础的 `notesReducer()` 和 `addNoteText()` action creator。 完成 `addNoteText()` 函数的主体，这样它就会返回一个 `action` 对象。 该对象应该包含一个 `type` 属性，其值为 `ADD_NOTE`，还有一个传入 action creator 的属性为 `text` 的 `note` 数据。 当调用 action creator 时，需要传入可以访问该对象的特定笔记信息。
+在代碼編輯器中定義了一個基礎的 `notesReducer()` 和 `addNoteText()` action creator。 完成 `addNoteText()` 函數的主體，這樣它就會返回一個 `action` 對象。 該對象應該包含一個 `type` 屬性，其值爲 `ADD_NOTE`，還有一個傳入 action creator 的屬性爲 `text` 的 `note` 數據。 當調用 action creator 時，需要傳入可以訪問該對象的特定筆記信息。
 
-接下来，完成在 `notesReducer()` 中编写的 `switch` 语句。 需要添加一个处理 `addNoteText()` 操作的选项。 如果 action 的类型为 `ADD_NOTE`，就应该触发这个 case，并且它应该在传入的 `action` 上返回 `text` 属性作为新的 `state`
+接下來，完成在 `notesReducer()` 中編寫的 `switch` 語句。 需要添加一個處理 `addNoteText()` 操作的選項。 如果 action 的類型爲 `ADD_NOTE`，就應該觸發這個 case，並且它應該在傳入的 `action` 上返回 `text` 屬性作爲新的 `state`
 
-这个 action 将在代码底部发送。 一旦完成后，运行代码并观察控制台。 这就是将特定于 action 的数据发送到 store 并在更新 store `state`时使用它所需的全部内容。
+這個 action 將在代碼底部發送。 一旦完成後，運行代碼並觀察控制檯。 這就是將特定於 action 的數據發送到 store 並在更新 store `state`時使用它所需的全部內容。
 
 # --hints--
 
-action creator `addNoteText` 应该返回一个包含 `type` 和 `text` 的对象。
+action creator `addNoteText` 應該返回一個包含 `type` 和 `text` 的對象。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-dispatch 一个 action creator 是 `addNoteText` 的action `ADD_NOTE`，应将 `state` 更新为 action creator 传递的字符串。
+dispatch 一個 action creator 是 `addNoteText` 的action `ADD_NOTE`，應將 `state` 更新爲 action creator 傳遞的字符串。
 
 ```js
 assert(

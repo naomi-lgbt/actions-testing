@@ -1,6 +1,6 @@
 ---
 id: bad88fee1348bd9aedf08816
-title: 用 a 实现网页内部跳转
+title: 用 a 實現網頁內部跳轉
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cyrDRUL'
 forumTopicId: 301098
@@ -9,11 +9,11 @@ dashedName: link-to-internal-sections-of-a-page-with-anchor-elements
 
 # --description--
 
-`a`（*anchor*）元素也可以用于创建内部链接，跳转到网页内的各个不同部分。
+`a`（*anchor*）元素也可以用於創建內部鏈接，跳轉到網頁內的各個不同部分。
 
-要创建内部链接，你需要将链接的 `href` 属性值设置为一个哈希符号 `#` 加上你想内部链接到的元素的 `id`，通常是在网页下方的元素。 然后你需要将相同的 `id` 属性添加到你链接到的元素中。 `id` 是描述网页元素的一个属性，它的值在整个页面中唯一。
+要創建內部鏈接，你需要將鏈接的 `href` 屬性值設置爲一個哈希符號 `#` 加上你想內部鏈接到的元素的 `id`，通常是在網頁下方的元素。 然後你需要將相同的 `id` 屬性添加到你鏈接到的元素中。 `id` 是描述網頁元素的一個屬性，它的值在整個頁面中唯一。
 
-当用户点击了 `Contacts` 链接，页面就会跳转到网页的 **Contacts** 区域。
+當用戶點擊了 `Contacts` 鏈接，頁面就會跳轉到網頁的 **Contacts** 區域。
 
 ```html
 <a href="#contacts-header">Contacts</a>
@@ -21,37 +21,37 @@ dashedName: link-to-internal-sections-of-a-page-with-anchor-elements
 <h2 id="contacts-header">Contacts</h2>
 ```
 
-当用户点击 `Contacts` 链接，可以访问网页中带有 **Contacts** 标题元素的部分。
+當用戶點擊 `Contacts` 鏈接，可以訪問網頁中帶有 **Contacts** 標題元素的部分。
 
 # --instructions--
 
-通过修改 `href` 属性值为 `"#footer"`，同时修改文本 `cat photos` 为 `Jump to Bottom`，来更改外部链接为内部链接。
+通過修改 `href` 屬性值爲 `"#footer"`，同時修改文本 `cat photos` 爲 `Jump to Bottom`，來更改外部鏈接爲內部鏈接。
 
-然后添加一个 `<footer>` 元素，并将它的 `id` 属性值设置为 `footer`。
+然後添加一個 `<footer>` 元素，並將它的 `id` 屬性值設置爲 `footer`。
 
-然后给页面底部的 `<footer>` 元素添加一个 `id` 属性，值为 `footer`。
+然後給頁面底部的 `<footer>` 元素添加一個 `id` 屬性，值爲 `footer`。
 
 # --hints--
 
-页面中应只存在一个 `footer` 元素。
+頁面中應只存在一個 `footer` 元素。
 
 ```js
 assert($('a').length == 1);
 ```
 
-`a` 的 `href` 属性值应为 `#footer`。
+`a` 的 `href` 屬性值應爲 `#footer`。
 
 ```js
 assert($('footer').length == 1);
 ```
 
-`a` 不应有 `target` 属性。
+`a` 不應有 `target` 屬性。
 
 ```js
 assert($('a').eq(0).attr('href') == '#footer');
 ```
 
-`a` 的内容文本应为 `Jump to Bottom`。
+`a` 的內容文本應爲 `Jump to Bottom`。
 
 ```js
 assert(
@@ -60,7 +60,7 @@ assert(
 );
 ```
 
-`footer` 元素的 `id` 属性值应为 `footer`。
+`footer` 元素的 `id` 屬性值應爲 `footer`。
 
 ```js
 assert(
@@ -71,7 +71,7 @@ assert(
 );
 ```
 
-`footer` 标签应该有一个 `id` 属性，值为 “footer”。
+`footer` 標籤應該有一個 `id` 屬性，值爲 “footer”。
 
 ```js
 assert($('footer').eq(0).attr('id') == 'footer');

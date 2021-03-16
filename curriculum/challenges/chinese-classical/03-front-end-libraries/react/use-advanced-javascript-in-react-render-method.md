@@ -8,17 +8,17 @@ dashedName: use-advanced-javascript-in-react-render-method
 
 # --description--
 
-在之前的挑战中，学习了如何使用大括号 `{ }` 将 JavaScript 代码插入到 JSX 代码中，用于访问 props、传递 props、访问 state、在代码中插入注释以及最近学习的定制组件样式等任务。 这些都是将 JavaScript 放在 JSX 中的常见用例，但是在 React 组件中使用 JavaScript 代码还有其他方式。
+在之前的挑戰中，學習瞭如何使用大括號 `{ }` 將 JavaScript 代碼插入到 JSX 代碼中，用於訪問 props、傳遞 props、訪問 state、在代碼中插入註釋以及最近學習的定製組件樣式等任務。 這些都是將 JavaScript 放在 JSX 中的常見用例，但是在 React 組件中使用 JavaScript 代碼還有其他方式。
 
-在 `render` 方法中编写 JavaScript，可以把 JavaScript 直接放在 `return` 语句之前，而***不必***将其插入大括号中。 这是因为它还不在 JSX 代码中。 如果之后想在 `return` 语句中的 JSX 代码*里面*使用变量时，可以将变量名放在大括号中。
+在 `render` 方法中編寫 JavaScript，可以把 JavaScript 直接放在 `return` 語句之前，而***不必***將其插入大括號中。 這是因爲它還不在 JSX 代碼中。 如果之後想在 `return` 語句中的 JSX 代碼*裏面*使用變量時，可以將變量名放在大括號中。
 
 # --instructions--
 
-在提供的代码中，`render` 方法中有一个包含 20 个短语的数组，用于表示 20 世纪 80 年代经典魔术八球玩具中的答案。 绑定 `ask` 方法到按钮的单击事件，每次单击该按钮时，将生成随机数并将其存储为 state 中的 `randomIndex`。 在第 52 行，删除字符串 `change me!` 并重新分配 `answer` 常量，以便每次组件更新时，代码随机访问 `possibleAnswers` 数组的不同值。 最后，在 `p` 标签内插入 `answer` 常量。
+在提供的代碼中，`render` 方法中有一個包含 20 個短語的數組，用於表示 20 世紀 80 年代經典魔術八球玩具中的答案。 綁定 `ask` 方法到按鈕的單擊事件，每次單擊該按鈕時，將生成隨機數並將其存儲爲 state 中的 `randomIndex`。 在第 52 行，刪除字符串 `change me!` 並重新分配 `answer` 常量，以便每次組件更新時，代碼隨機訪問 `possibleAnswers` 數組的不同值。 最後，在 `p` 標籤內插入 `answer` 常量。
 
 # --hints--
 
-`MagicEightBall` 组件应该存在并被渲染到页面。
+`MagicEightBall` 組件應該存在並被渲染到頁面。
 
 ```js
 assert.strictEqual(
@@ -28,7 +28,7 @@ assert.strictEqual(
 );
 ```
 
-`MagicEightBall` 的第一个子元素应该是 `input` 元素。
+`MagicEightBall` 的第一個子元素應該是 `input` 元素。
 
 ```js
 assert.strictEqual(
@@ -40,7 +40,7 @@ assert.strictEqual(
 );
 ```
 
-`MagicEightBall` 的第三个子元素应该是 `button` 元素。
+`MagicEightBall` 的第三個子元素應該是 `button` 元素。
 
 ```js
 assert.strictEqual(
@@ -52,7 +52,7 @@ assert.strictEqual(
 );
 ```
 
-`MagicEightBall` 的 state 应该用 `userInput` 属性和 `randomIndex` 属性初始化，并且这两个属性的值都应该是空字符串。
+`MagicEightBall` 的 state 應該用 `userInput` 屬性和 `randomIndex` 屬性初始化，並且這兩個屬性的值都應該是空字符串。
 
 ```js
 assert(
@@ -62,7 +62,7 @@ assert(
 );
 ```
 
-当 `MagicEightBall` 第一次加载到 DOM 中时，它应该返回一个空的 `p` 元素。
+當 `MagicEightBall` 第一次加載到 DOM 中時，它應該返回一個空的 `p` 元素。
 
 ```js
 assert(
@@ -71,7 +71,7 @@ assert(
 );
 ```
 
-当文本被输入到 `input` 元素中并点击按钮时， `MagicEightBall` 组件应该返回一个 `p` 元素，该元素包含数组 `possibleAnswers` 中的随机一个元素。
+當文本被輸入到 `input` 元素中並點擊按鈕時， `MagicEightBall` 組件應該返回一個 `p` 元素，該元素包含數組 `possibleAnswers` 中的隨機一個元素。
 
 ```js
 (() => {

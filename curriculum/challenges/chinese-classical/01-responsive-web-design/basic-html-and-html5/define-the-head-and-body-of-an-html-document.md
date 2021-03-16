@@ -1,6 +1,6 @@
 ---
 id: 587d78aa367417b2b2512aec
-title: 定义 HTML 文档的 head 和 body
+title: 定義 HTML 文檔的 head 和 body
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cra9bfP'
 forumTopicId: 301096
@@ -9,11 +9,11 @@ dashedName: define-the-head-and-body-of-an-html-document
 
 # --description--
 
-`html` 的结构主要分为两大部分：`head` 和 `body`。 网页的描述应放入 `head` 标签， 网页的内容（向用户展示的）则应放入 `body` 标签。
+`html` 的結構主要分爲兩大部分：`head` 和 `body`。 網頁的描述應放入 `head` 標籤， 網頁的內容（向用戶展示的）則應放入 `body` 標籤。
 
-比如 `link`、`meta`、`title` 和 `style` 都应放入 `head` 标签。
+比如 `link`、`meta`、`title` 和 `style` 都應放入 `head` 標籤。
 
-这是网页布局的一个例子：
+這是網頁佈局的一個例子：
 
 ```html
 <!DOCTYPE html>
@@ -30,25 +30,25 @@ dashedName: define-the-head-and-body-of-an-html-document
 
 # --instructions--
 
-标记文本的结构主要分为两大部分：`head` 和 `body`。 `head` 元素应只包含 `title`，`body` 元素应该包含 `h1` 和 `p`。
+標記文本的結構主要分爲兩大部分：`head` 和 `body`。 `head` 元素應只包含 `title`，`body` 元素應該包含 `h1` 和 `p`。
 
 # --hints--
 
-网页应只有一个 `head` 元素。
+網頁應只有一個 `head` 元素。
 
 ```js
 const headElems = code.replace(/\n/g, '').match(/\<head\s*>.*?\<\/head\s*>/g);
 assert(headElems && headElems.length === 1);
 ```
 
-网页应只有一个 `body` 元素。
+網頁應只有一個 `body` 元素。
 
 ```js
 const bodyElems = code.replace(/\n/g, '').match(/<body\s*>.*?<\/body\s*>/g);
 assert(bodyElems && bodyElems.length === 1);
 ```
 
-`head` 应为 `html` 的子元素。
+`head` 應爲 `html` 的子元素。
 
 ```js
 const htmlChildren = code
@@ -63,7 +63,7 @@ if (htmlChildren) {
 assert(foundHead);
 ```
 
-`body` 应为 `html` 的子元素。
+`body` 應爲 `html` 的子元素。
 
 ```js
 const htmlChildren = code
@@ -77,7 +77,7 @@ if (htmlChildren) {
 assert(foundBody);
 ```
 
-`title` 应为 `head` 的子元素。
+`title` 應爲 `head` 的子元素。
 
 ```js
 const headChildren = code
@@ -91,7 +91,7 @@ if (headChildren) {
 assert(foundTitle);
 ```
 
-`h1` 和 `p` 都应为 `body` 的子元素。
+`h1` 和 `p` 都應爲 `body` 的子元素。
 
 ```js
 const bodyChildren = code

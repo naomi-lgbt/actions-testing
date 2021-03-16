@@ -1,6 +1,6 @@
 ---
 id: 587d7dab367417b2b2512b6d
-title: 应用函数式编程将字符串转换为URL片段
+title: 應用函數式編程將字符串轉換爲URL片段
 challengeType: 1
 forumTopicId: 301227
 dashedName: apply-functional-programming-to-convert-strings-to-url-slugs
@@ -8,23 +8,23 @@ dashedName: apply-functional-programming-to-convert-strings-to-url-slugs
 
 # --description--
 
-最后几个挑战中涵盖了许多符合函数式编程原则并在处理数组和字符串中非常有用的方法。 我们还学习了强大的、可以将问题简化为更简单形式的 `reduce` 方法。 从计算平均值到排序，任何数组操作都可以用它来实现。 回想一下，`map` 和 `filter` 方法都是 `reduce` 的特殊实现。
+最後幾個挑戰中涵蓋了許多符合函數式編程原則並在處理數組和字符串中非常有用的方法。 我們還學習了強大的、可以將問題簡化爲更簡單形式的 `reduce` 方法。 從計算平均值到排序，任何數組操作都可以用它來實現。 回想一下，`map` 和 `filter` 方法都是 `reduce` 的特殊實現。
 
-让我们把学到的知识结合起来解决一个实际问题。
+讓我們把學到的知識結合起來解決一個實際問題。
 
-许多内容管理站点（CMS）为了让添加书签更简单，会将帖子的标题添加到 URL 上。 举个例子，如果你写了一篇标题为 `Stop Using Reduce` 的帖子，URL很可能会包含标题字符串的某种形式 (如：`.../stop-using-reduce`)。 你可能已经在 freeCodeCamp 网站上注意到了这一点。
+許多內容管理站點（CMS）爲了讓添加書籤更簡單，會將帖子的標題添加到 URL 上。 舉個例子，如果你寫了一篇標題爲 `Stop Using Reduce` 的帖子，URL很可能會包含標題字符串的某種形式 (如：`.../stop-using-reduce`)。 你可能已經在 freeCodeCamp 網站上注意到了這一點。
 
 # --instructions--
 
-填写 `urlSlug` 函数，将字符串 `title` 转换成带有连字符号的 URL。 您可以使用本节中介绍的任何方法，但不要用 `replace` 方法。 以下是本次挑战的要求：
+填寫 `urlSlug` 函數，將字符串 `title` 轉換成帶有連字符號的 URL。 您可以使用本節中介紹的任何方法，但不要用 `replace` 方法。 以下是本次挑戰的要求：
 
-输入包含空格和标题大小写单词的字符串
+輸入包含空格和標題大小寫單詞的字符串
 
-输出字符串，单词之间的空格用连字符 (`-`) 替换
+輸出字符串，單詞之間的空格用連字符 (`-`) 替換
 
-输出应该是小写字母
+輸出應該是小寫字母
 
-输出不应有任何空格
+輸出不應有任何空格
 
 # --hints--
 
@@ -34,19 +34,19 @@ dashedName: apply-functional-programming-to-convert-strings-to-url-slugs
 assert(!code.match(/\.?[\s\S]*?replace/g));
 ```
 
-`urlSlug("Winter Is Coming")` 应返回 `winter-is-coming`。
+`urlSlug("Winter Is Coming")` 應返回 `winter-is-coming`。
 
 ```js
 assert(urlSlug('Winter Is Coming') === 'winter-is-coming');
 ```
 
-`urlSlug(" Winter Is  Coming")` 应返回 `winter-is-coming`。
+`urlSlug(" Winter Is  Coming")` 應返回 `winter-is-coming`。
 
 ```js
 assert(urlSlug(' Winter Is  Coming') === 'winter-is-coming');
 ```
 
-`urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone")` 应返回 `a-mind-needs-books-like-a-sword-needs-a-whetstone`。
+`urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone")` 應返回 `a-mind-needs-books-like-a-sword-needs-a-whetstone`。
 
 ```js
 assert(
@@ -55,7 +55,7 @@ assert(
 );
 ```
 
-`urlSlug("Hold The Door")` 应返回 `hold-the-door`。
+`urlSlug("Hold The Door")` 應返回 `hold-the-door`。
 
 ```js
 assert(urlSlug('Hold The Door') === 'hold-the-door');

@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036168
-title: 从零开始写一个 React 组件
+title: 從零開始寫一個 React 組件
 challengeType: 6
 forumTopicId: 301424
 dashedName: write-a-react-component-from-scratch
@@ -8,17 +8,17 @@ dashedName: write-a-react-component-from-scratch
 
 # --description--
 
-你已经了解了 JSX 和 React 组件的基础知识，是时候自己编写一个组件了。 React 组件是 React 应用程序的核心组成部分，因此熟练编写它们是非常重要的。 记住，典型的 React 组件是 ES6 `class`，它扩展了 `React.Component`。 它有一个返回 HTML（从 JSX 返回）或 `null` 的渲染方法， 这是 React 组件的基本形式。 理解了这一点之后，就可以开始构建更复杂的 React 项目了。
+你已經瞭解了 JSX 和 React 組件的基礎知識，是時候自己編寫一個組件了。 React 組件是 React 應用程序的核心組成部分，因此熟練編寫它們是非常重要的。 記住，典型的 React 組件是 ES6 `class`，它擴展了 `React.Component`。 它有一個返回 HTML（從 JSX 返回）或 `null` 的渲染方法， 這是 React 組件的基本形式。 理解了這一點之後，就可以開始構建更復雜的 React 項目了。
 
 # --instructions--
 
-定义一个 `MyComponent` 类，它是 `React.Component` 的扩展。 它的渲染方法应该返回一个 `div`，其中包含一个 `h1` 标签，标签文本为：`My First React Component!`。 准确使用此文本，大小写和标点符号也要考虑。 确保也调用组件的构造器。
+定義一個 `MyComponent` 類，它是 `React.Component` 的擴展。 它的渲染方法應該返回一個 `div`，其中包含一個 `h1` 標籤，標籤文本爲：`My First React Component!`。 準確使用此文本，大小寫和標點符號也要考慮。 確保也調用組件的構造器。
 
-使用 `ReactDOM.render()` 把该组件渲染到 DOM 中。 有一个 `id='challenge-node'` 的 `div` 可供渲染。
+使用 `ReactDOM.render()` 把該組件渲染到 DOM 中。 有一個 `id='challenge-node'` 的 `div` 可供渲染。
 
 # --hints--
 
-应该有一个名为 `MyComponent` 的 React 组件。
+應該有一個名爲 `MyComponent` 的 React 組件。
 
 ```js
 (getUserInput) =>
@@ -29,7 +29,7 @@ dashedName: write-a-react-component-from-scratch
   );
 ```
 
-`MyComponent` 应该包含一个 `h1` 标签，标签的文本为 `My First React Component!`，区分大小写并有标点符号。
+`MyComponent` 應該包含一個 `h1` 標籤，標籤的文本爲 `My First React Component!`，區分大小寫並有標點符號。
 
 ```js
 assert(
@@ -40,13 +40,13 @@ assert(
 );
 ```
 
-`MyComponent` 应该渲染到 DOM。
+`MyComponent` 應該渲染到 DOM。
 
 ```js
 assert(document.getElementById('challenge-node').childNodes.length === 1);
 ```
 
-`MyComponent` 应该有一个构造器，里面调用了传参 `props` 的 `super` 函数。
+`MyComponent` 應該有一個構造器，裏面調用了傳參 `props` 的 `super` 函數。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: bad87dee1348bd9aede07836
-title: 使用 id 属性来设定元素的样式
+title: 使用 id 屬性來設定元素的樣式
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cakyZfL'
 forumTopicId: 18339
@@ -9,11 +9,11 @@ dashedName: use-an-id-attribute-to-style-an-element
 
 # --description--
 
-通过 `id` 属性，你可以做一些很酷的事情。就像 class 一样，你可以使用 CSS 来设置他们的样式。
+通過 `id` 屬性，你可以做一些很酷的事情。就像 class 一樣，你可以使用 CSS 來設置他們的樣式。
 
-不过，`id` 不可以重复，它只能作用于一个元素上。 如果一个元素同时应用了 class 和 `id`，且两者设置的样式有冲突，会优先应用 `id` 中所设置的样式。
+不過，`id` 不可以重複，它只能作用於一個元素上。 如果一個元素同時應用了 class 和 `id`，且兩者設置的樣式有衝突，會優先應用 `id` 中所設置的樣式。
 
-选择 `id` 为 `cat-photo-element` 的元素，并设置它的背景颜色为绿色。 可以在 `style` 标签里这样写：
+選擇 `id` 爲 `cat-photo-element` 的元素，並設置它的背景顏色爲綠色。 可以在 `style` 標籤裏這樣寫：
 
 ```css
 #cat-photo-element {
@@ -21,27 +21,27 @@ dashedName: use-an-id-attribute-to-style-an-element
 }
 ```
 
-注意在 `style` 标签里，声明 class 的时候必须在名字前插入 `.` 符号。 同样，在声明 id 的时候，也必须在名字前插入 `#` 符号。
+注意在 `style` 標籤裏，聲明 class 的時候必須在名字前插入 `.` 符號。 同樣，在聲明 id 的時候，也必須在名字前插入 `#` 符號。
 
 # --instructions--
 
-请将 `id` 为 `cat-photo-form` 的表单的背景颜色设置为绿色。
+請將 `id` 爲 `cat-photo-form` 的表單的背景顏色設置爲綠色。
 
 # --hints--
 
-`form` 元素的 id 应为 `cat-photo-form`。
+`form` 元素的 id 應爲 `cat-photo-form`。
 
 ```js
 assert($('form').attr('id') === 'cat-photo-form');
 ```
 
-`form` 元素应含有 `background-color` 属性，颜色为绿色。
+`form` 元素應含有 `background-color` 屬性，顏色爲綠色。
 
 ```js
 assert($('#cat-photo-form').css('background-color') === 'rgb(0, 128, 0)');
 ```
 
-确保 `form` 元素的 `id` 设置正确。
+確保 `form` 元素的 `id` 設置正確。
 
 ```js
 assert(
@@ -50,7 +50,7 @@ assert(
 );
 ```
 
-不要在 `form` 元素上添加其他 `class` 属性或者 `style` 行内样式。
+不要在 `form` 元素上添加其他 `class` 屬性或者 `style` 行內樣式。
 
 ```js
 assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi));

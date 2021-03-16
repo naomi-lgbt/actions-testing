@@ -1,6 +1,6 @@
 ---
 id: 587d7fb5367417b2b2512c01
-title: 通过语义化版本来管理 npm 依赖关系
+title: 通過語義化版本來管理 npm 依賴關係
 challengeType: 2
 forumTopicId: 301529
 dashedName: manage-npm-dependencies-by-understanding-semantic-versioning
@@ -8,23 +8,23 @@ dashedName: manage-npm-dependencies-by-understanding-semantic-versioning
 
 # --description--
 
-在 package.json 文件的依赖项中，npm 包的 `Versions` 遵循语义化版本（SemVer，Semantic Versioning），它是一种旨在使管理依赖项更加容易的软件版本控制的行业标准。 在 npm 上发布的库、框架或其它工具都应该使用语义化版本，以便让用户清晰地知道如果项目升级将带来哪些改变。
+在 package.json 文件的依賴項中，npm 包的 `Versions` 遵循語義化版本（SemVer，Semantic Versioning），它是一種旨在使管理依賴項更加容易的軟件版本控制的行業標準。 在 npm 上發佈的庫、框架或其它工具都應該使用語義化版本，以便讓用戶清晰地知道如果項目升級將帶來哪些改變。
 
-在使用外部依赖项（大多数情况都是这样）进行软件开发时，了解语义化版本会很有用。 这些数字保存着项目的偶然发生的破坏性改变，不会让人对项目昨天还正常，今天却无法运行而百思不解。 根据官网，这是语义化版本的工作方式：
+在使用外部依賴項（大多數情況都是這樣）進行軟件開發時，瞭解語義化版本會很有用。 這些數字保存着項目的偶然發生的破壞性改變，不會讓人對項目昨天還正常，今天卻無法運行而百思不解。 根據官網，這是語義化版本的工作方式：
 
 ```json
 "package": "MAJOR.MINOR.PATCH"
 ```
 
-当做了不兼容的 API 修改，应该增加主版本号（MAJOR）； 当新增了向下兼容的新功能时，应该增加次版本号（MINOR）； 当修复了向下兼容的 bug 时，应该增加修订号（PATCH）。 这意味着修订号是用来修复错误的，次版本号则是添加了新功能，但它们都没有破坏之前的功能。 主版本号（MAJOR）是添加了不兼容早期版本的更改。
+當做了不兼容的 API 修改，應該增加主版本號（MAJOR）； 當新增了向下兼容的新功能時，應該增加次版本號（MINOR）； 當修復了向下兼容的 bug 時，應該增加修訂號（PATCH）。 這意味着修訂號是用來修復錯誤的，次版本號則是添加了新功能，但它們都沒有破壞之前的功能。 主版本號（MAJOR）是添加了不兼容早期版本的更改。
 
 # --instructions--
 
-在 package.json 文件的依赖项中，修改 moment 的`version`，让它的主版本是 2，次版本号是 10，修订号是 2。
+在 package.json 文件的依賴項中，修改 moment 的`version`，讓它的主版本是 2，次版本號是 10，修訂號是 2。
 
 # --hints--
 
-“dependencies”字段应该包含“moment”
+“dependencies”字段應該包含“moment”
 
 ```js
 (getUserInput) =>
@@ -43,7 +43,7 @@ dashedName: manage-npm-dependencies-by-understanding-semantic-versioning
   );
 ```
 
-“moment”的版本号应该是“2.10.2”
+“moment”的版本號應該是“2.10.2”
 
 ```js
 (getUserInput) =>

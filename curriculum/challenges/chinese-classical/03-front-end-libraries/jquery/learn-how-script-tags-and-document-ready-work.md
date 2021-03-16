@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9acdd08826
-title: 了解 script 和 document.ready 是如何工作的
+title: 瞭解 script 和 document.ready 是如何工作的
 challengeType: 6
 forumTopicId: 18224
 dashedName: learn-how-script-tags-and-document-ready-work
@@ -8,23 +8,23 @@ dashedName: learn-how-script-tags-and-document-ready-work
 
 # --description--
 
-马上就要学习有史以来最受欢迎的 JavaScript 框架——jQuery 了。
+馬上就要學習有史以來最受歡迎的 JavaScript 框架——jQuery 了。
 
-在使用 jQuery 之前，需要在 HTML 页面中添加一些东西。
+在使用 jQuery 之前，需要在 HTML 頁面中添加一些東西。
 
-首先，在页面顶部添加 `script` 标签， 记得在后面为它添加结束标签。
+首先，在頁面頂部添加 `script` 標籤， 記得在後面爲它添加結束標籤。
 
-浏览器会运行 `script` 标签所有的 JavaScript 脚本包括 jQuery。
+瀏覽器會運行 `script` 標籤所有的 JavaScript 腳本包括 jQuery。
 
-在 `script` 标签中添加代码 `$(document).ready(function() {`。 然后在后面（仍在该 `script` 标签内）用 `});` 闭合它。
+在 `script` 標籤中添加代碼 `$(document).ready(function() {`。 然後在後面（仍在該 `script` 標籤內）用 `});` 閉合它。
 
-稍后将详细介绍 `functions`， 现在需要知道的是，只要浏览器加载页面，`function` 中放入的代码就会运行。
+稍後將詳細介紹 `functions`， 現在需要知道的是，只要瀏覽器加載頁面，`function` 中放入的代碼就會運行。
 
-有一点很重要，如果没有 `document ready function`，代码将在 HTML 页面呈现之前运行，这可能会导致错误。
+有一點很重要，如果沒有 `document ready function`，代碼將在 HTML 頁面呈現之前運行，這可能會導致錯誤。
 
 # --hints--
 
-应该创建一个 `script` 标签，确保其有效并具有闭合标签。
+應該創建一個 `script` 標籤，確保其有效並具有閉合標籤。
 
 ```js
 assert(
@@ -39,7 +39,7 @@ assert(
 );
 ```
 
-应该在 `script` 的开头添加 `$(document).ready(function() {`。
+應該在 `script` 的開頭添加 `$(document).ready(function() {`。
 
 ```js
 assert(
@@ -49,7 +49,7 @@ assert(
 );
 ```
 
-应该用 `});` 闭合 `$(document).ready(function() {` 函数。
+應該用 `});` 閉合 `$(document).ready(function() {` 函數。
 
 ```js
 assert(code.match(/\n*?\s*?\}\s*?\);/g));

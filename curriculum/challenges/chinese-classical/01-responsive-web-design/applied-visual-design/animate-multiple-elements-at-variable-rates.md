@@ -1,6 +1,6 @@
 ---
 id: 587d78a8367417b2b2512ae6
-title: 以可变速率来给多个元素添加动画
+title: 以可變速率來給多個元素添加動畫
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cnpWZc9'
 forumTopicId: 301042
@@ -9,29 +9,29 @@ dashedName: animate-multiple-elements-at-variable-rates
 
 # --description--
 
-在前面的关卡里，我们通过修改 `@keyframes` 改变了两个相似动画元素的频率。 你也可以通过改变多个元素的 `animation-duration` 来达到同样的效果。
+在前面的關卡里，我們通過修改 `@keyframes` 改變了兩個相似動畫元素的頻率。 你也可以通過改變多個元素的 `animation-duration` 來達到同樣的效果。
 
-在代码编辑器里运行的动画中，天空中有三颗以同样频率不停闪烁的星星。 你可以设置每一个星星的 `animation-duration` 属性为不同的值，以使其具有不同的闪烁频率。
+在代碼編輯器裏運行的動畫中，天空中有三顆以同樣頻率不停閃爍的星星。 你可以設置每一個星星的 `animation-duration` 屬性爲不同的值，以使其具有不同的閃爍頻率。
 
 # --instructions--
 
-依次设置 class 为 `star-1`、`star-2`、`star-3` 的元素的 `animation-duration` 为 1s、0.9s、1.1s。
+依次設置 class 爲 `star-1`、`star-2`、`star-3` 的元素的 `animation-duration` 爲 1s、0.9s、1.1s。
 
 # --hints--
 
-class 为 `star-1` 的 `animation-duration` 属性值应该 1s。
+class 爲 `star-1` 的 `animation-duration` 屬性值應該 1s。
 
 ```js
 assert($('.star-1').css('animation-duration') == '1s');
 ```
 
-class 为 `star-2` 的 `animation-duration` 属性值应该 0.9s。
+class 爲 `star-2` 的 `animation-duration` 屬性值應該 0.9s。
 
 ```js
 assert($('.star-2').css('animation-duration') == '0.9s');
 ```
 
-class 为 `star-3` 的 `animation-duration` 属性值应该 1.1s。
+class 爲 `star-3` 的 `animation-duration` 屬性值應該 1.1s。
 
 ```js
 assert($('.star-3').css('animation-duration') == '1.1s');

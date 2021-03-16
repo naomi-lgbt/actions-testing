@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08834
-title: 创建一组单选按钮
+title: 創建一組單選按鈕
 challengeType: 0
 forumTopicId: 16822
 dashedName: create-a-set-of-radio-buttons
@@ -8,15 +8,15 @@ dashedName: create-a-set-of-radio-buttons
 
 # --description--
 
-<dfn>radio buttons</dfn>（单选按钮）就好比单项选择题，正确答案只有一个。
+<dfn>radio buttons</dfn>（單選按鈕）就好比單項選擇題，正確答案只有一個。
 
-单选按钮是 `input` 选择框的一种类型。
+單選按鈕是 `input` 選擇框的一種類型。
 
-每一个单选按钮都应该嵌套在它自己的 `label`（标签）元素中。 这样，我们相当于给 `input` 元素和包裹它的 `label` 元素建立起了对应关系。
+每一個單選按鈕都應該嵌套在它自己的 `label`（標籤）元素中。 這樣，我們相當於給 `input` 元素和包裹它的 `label` 元素建立起了對應關係。
 
-所有关联的单选按钮应该拥有相同的 `name` 属性。 创建一组单选按钮，选中其中一个按钮，其他按钮即显示为未选中，以确保用户只提供一个答案。
+所有關聯的單選按鈕應該擁有相同的 `name` 屬性。 創建一組單選按鈕，選中其中一個按鈕，其他按鈕即顯示爲未選中，以確保用戶只提供一個答案。
 
-下面是一个单选按钮的例子：
+下面是一個單選按鈕的例子：
 
 ```html
 <label> 
@@ -24,7 +24,7 @@ dashedName: create-a-set-of-radio-buttons
 </label>
 ```
 
-最佳实践是在 `label` 元素上设置 `for` 属性，让其值与相关联的 `input` 单选按钮的 `id` 属性值相同。 这使得辅助技术能够在标签和子项 `input` 元素之间建立关联关系。 例如：
+最佳實踐是在 `label` 元素上設置 `for` 屬性，讓其值與相關聯的 `input` 單選按鈕的 `id` 屬性值相同。 這使得輔助技術能夠在標籤和子項 `input` 元素之間建立關聯關係。 例如：
 
 ```html
 <label for="indoor"> 
@@ -34,29 +34,29 @@ dashedName: create-a-set-of-radio-buttons
 
 # --instructions--
 
-在表格中添加一对单选按钮，每个按钮嵌套在自己的 `label` 元素中。 一个选项应该是 `indoor` ，另一个选项应该是 `outdoor`。 两个按钮的 `name` 属性都是 `indoor-outdoor`，以创建一组单选按钮。
+在表格中添加一對單選按鈕，每個按鈕嵌套在自己的 `label` 元素中。 一個選項應該是 `indoor` ，另一個選項應該是 `outdoor`。 兩個按鈕的 `name` 屬性都是 `indoor-outdoor`，以創建一組單選按鈕。
 
 # --hints--
 
-页面上应存在两个 `radio` 按钮元素。
+頁面上應存在兩個 `radio` 按鈕元素。
 
 ```js
 assert($('input[type="radio"]').length > 1);
 ```
 
-应设置单选按钮的 `name` 属性值为 `indoor-outdoor`。
+應設置單選按鈕的 `name` 屬性值爲 `indoor-outdoor`。
 
 ```js
 assert($('input[type="radio"]').filter("[name='indoor-outdoor']").length > 1);
 ```
 
-每个单选按钮都应嵌套进它自己的 `label` 元素中。
+每個單選按鈕都應嵌套進它自己的 `label` 元素中。
 
 ```js
 assert($('label > input[type="radio"]:only-child').length > 1);
 ```
 
-每一个 `label` 元素都有结束标签。
+每一個 `label` 元素都有結束標籤。
 
 ```js
 assert(
@@ -66,7 +66,7 @@ assert(
 );
 ```
 
-其中一个单选按钮的文本为 `indoor`。
+其中一個單選按鈕的文本爲 `indoor`。
 
 ```js
 assert(
@@ -76,7 +76,7 @@ assert(
 );
 ```
 
-其中一个单选按钮的文本为 `outdoor`。
+其中一個單選按鈕的文本爲 `outdoor`。
 
 ```js
 assert(
@@ -86,7 +86,7 @@ assert(
 );
 ```
 
-所有的单选按钮都应该包含在 `form` 表单中。
+所有的單選按鈕都應該包含在 `form` 表單中。
 
 ```js
 assert($('label').parent().get(0).tagName.match('FORM'));

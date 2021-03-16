@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08845
-title: 使用 span 创建行内元素
+title: 使用 span 創建行內元素
 challengeType: 0
 forumTopicId: 18370
 dashedName: use-a-span-to-target-inline-elements
@@ -8,31 +8,31 @@ dashedName: use-a-span-to-target-inline-elements
 
 # --description--
 
-可以使用 span 标签来创建行内元素。 还记得怎么使用 `btn-block` class 来创建填满整行的按钮吗？
+可以使用 span 標籤來創建行內元素。 還記得怎麼使用 `btn-block` class 來創建填滿整行的按鈕嗎？
 
-<button class='btn' style='background-color: rgb(0, 100, 0);  color: rgb(255, 255, 255);'>普通按钮</button>
+<button class='btn' style='background-color: rgb(0, 100, 0);  color: rgb(255, 255, 255);'>普通按鈕</button>
 
-<button class='btn btn-block' style='background-color: rgb(0, 100, 0);  color: rgb(255, 255, 255);'>块级按钮</button>
+<button class='btn btn-block' style='background-color: rgb(0, 100, 0);  color: rgb(255, 255, 255);'>塊級按鈕</button>
 
-上面的例子就是 "inline" （行内）元素和 "block" （块级）元素的区别。
+上面的例子就是 "inline" （行內）元素和 "block" （塊級）元素的區別。
 
-通过使用行内元素 `span`，可以把不同的元素放在同一行，甚至能为一行的不同部分指定不同样式。
+通過使用行內元素 `span`，可以把不同的元素放在同一行，甚至能爲一行的不同部分指定不同樣式。
 
-使用一个 `span` 元素，将文本 `love` 嵌入现在包含文本 `Things cats love` 的 `p` 元素中。 然后给 `span` 元素设置 class `text-danger`，使文本变成红色。
+使用一個 `span` 元素，將文本 `love` 嵌入現在包含文本 `Things cats love` 的 `p` 元素中。 然後給 `span` 元素設置 class `text-danger`，使文本變成紅色。
 
-对含有文本 `Top 3 things cats hate` 的 `p` 元素这样处理：
+對含有文本 `Top 3 things cats hate` 的 `p` 元素這樣處理：
 
 `<p>Top 3 things cats <span class="text-danger">hate:</span></p>`
 
 # --hints--
 
-`span` 元素应该在 `p` 元素内。
+`span` 元素應該在 `p` 元素內。
 
 ```js
 assert($('p span') && $('p span').length > 0);
 ```
 
-`span` 元素应该只包括 `love` 文本。
+`span` 元素應該只包括 `love` 文本。
 
 ```js
 assert(
@@ -44,13 +44,13 @@ assert(
 );
 ```
 
-`span` 元素应该含有 `text-danger` class。
+`span` 元素應該含有 `text-danger` class。
 
 ```js
 assert($('span').hasClass('text-danger'));
 ```
 
-确保 `span` 元素有一个闭合标签。
+確保 `span` 元素有一個閉合標籤。
 
 ```js
 assert(

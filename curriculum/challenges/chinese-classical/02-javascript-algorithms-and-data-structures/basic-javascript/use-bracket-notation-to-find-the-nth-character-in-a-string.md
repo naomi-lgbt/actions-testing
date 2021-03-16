@@ -1,6 +1,6 @@
 ---
 id: bd7123c9c450eddfaeb5bdef
-title: 使用方括号查找字符串中的第 N 个字符
+title: 使用方括號查找字符串中的第 N 個字符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cWPVJua'
 forumTopicId: 18343
@@ -9,9 +9,9 @@ dashedName: use-bracket-notation-to-find-the-nth-character-in-a-string
 
 # --description--
 
-你也可以使用方括号（ <dfn>bracket notation</dfn>）来获得一个字符串中的其他位置的字符。
+你也可以使用方括號（ <dfn>bracket notation</dfn>）來獲得一個字符串中的其他位置的字符。
 
-请记住，程序是从 `0` 开始计数，所以获取第一个字符实际上是第零个字符串。
+請記住，程序是從 `0` 開始計數，所以獲取第一個字符實際上是第零個字符串。
 
 例如：
 
@@ -20,23 +20,23 @@ var firstName = "Ada";
 var secondLetterOfFirstName = firstName[1];
 ```
 
-`secondLetterOfFirstName` 值应该为字符串 `d`。
+`secondLetterOfFirstName` 值應該爲字符串 `d`。
 
 # --instructions--
 
-让我们使用方括号，把 `lastName` 变量的第三个字符赋值给 `thirdLetterOfLastName`。
+讓我們使用方括號，把 `lastName` 變量的第三個字符賦值給 `thirdLetterOfLastName`。
 
-**提示：** 如果卡住了，请尝试查看上面的示例。
+**提示：** 如果卡住了，請嘗試查看上面的示例。
 
 # --hints--
 
-`thirdLetterOfLastName` 变量值应该为 `v` 。
+`thirdLetterOfLastName` 變量值應該爲 `v` 。
 
 ```js
 assert(thirdLetterOfLastName === 'v');
 ```
 
-应该使用方括号表示法。
+應該使用方括號表示法。
 
 ```js
 assert(code.match(/thirdLetterOfLastName\s*?=\s*?lastName\[.*?\]/));

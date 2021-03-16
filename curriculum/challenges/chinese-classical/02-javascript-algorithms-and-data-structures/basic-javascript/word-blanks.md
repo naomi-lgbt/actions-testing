@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244bb
-title: 填词造句
+title: 填詞造句
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/caqn8zuP'
 forumTopicId: 18377
@@ -9,11 +9,11 @@ dashedName: word-blanks
 
 # --description--
 
-现在，我们来用字符串的相关知识实现一个 "[Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)" 类的文字游戏，称为 "Word Blanks"。 你将创建一个（可选幽默的）“填空”样式句子。
+現在，我們來用字符串的相關知識實現一個 "[Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)" 類的文字遊戲，稱爲 "Word Blanks"。 你將創建一個（可選幽默的）“填空”樣式句子。
 
-在 "Mad Libs" 游戏中，提供一个缺少一些单词的句子，缺少的单词包括名词、动词、形容词和副词等。 然后，你选择一些单词填写句子缺失的地方，使句子完整并且有意义。
+在 "Mad Libs" 遊戲中，提供一個缺少一些單詞的句子，缺少的單詞包括名詞、動詞、形容詞和副詞等。 然後，你選擇一些單詞填寫句子缺失的地方，使句子完整並且有意義。
 
-思考一下这句话 - It was really **\_\_\_\_**, and we **\_\_\_\_** ourselves **\_\_\_\_**。 这句话有三个缺失的部分 - 形容词、动词和副词，选择合适单词填入完成它。 然后将完成的句子赋值给变量，如下所示：
+思考一下這句話 - It was really **\_\_\_\_**, and we **\_\_\_\_** ourselves **\_\_\_\_**。 這句話有三個缺失的部分 - 形容詞、動詞和副詞，選擇合適單詞填入完成它。 然後將完成的句子賦值給變量，如下所示：
 
 ```js
 var sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
@@ -21,21 +21,21 @@ var sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves 
 
 # --instructions--
 
-在这个挑战中，我们为你提供名词、动词、形容词和副词。 你需要使用合适单词以及我们提供的单词来形成完整的句子。
+在這個挑戰中，我們爲你提供名詞、動詞、形容詞和副詞。 你需要使用合適單詞以及我們提供的單詞來形成完整的句子。
 
-你需要使用字符串连接运算符 `+` 来拼接字符串变量：`myNoun`、`myAdjective`、`myVerb` 和 `myAdverb` 来构建一个新字符串。 然后，将新字符串赋给 `wordBlanks` 变量。 您不应该更改分配给变量的单词。
+你需要使用字符串連接運算符 `+` 來拼接字符串變量：`myNoun`、`myAdjective`、`myVerb` 和 `myAdverb` 來構建一個新字符串。 然後，將新字符串賦給 `wordBlanks` 變量。 您不應該更改分配給變量的單詞。
 
-你还需要考虑字符串中的空格，确保句子的所有单词之间有空格。 结果应该是一个完整的句子。
+你還需要考慮字符串中的空格，確保句子的所有單詞之間有空格。 結果應該是一個完整的句子。
 
 # --hints--
 
-`wordBlanks` 应该返回一个字符串。
+`wordBlanks` 應該返回一個字符串。
 
 ```js
 assert(typeof wordBlanks === 'string');
 ```
 
-不能改变 `myNoun`、`myVerb`、`myAdjective` 或者 `myAdverb` 的值。
+不能改變 `myNoun`、`myVerb`、`myAdjective` 或者 `myAdverb` 的值。
 
 ```js
 assert(
@@ -46,7 +46,7 @@ assert(
 );
 ```
 
-您不应该直接使用 `dog`、`ran`、`big` 或 `quickly` 来创建 `wordBlanks`。
+您不應該直接使用 `dog`、`ran`、`big` 或 `quickly` 來創建 `wordBlanks`。
 
 ```js
 const newCode = removeAssignments(code);
@@ -58,7 +58,7 @@ assert(
 );
 ```
 
-`wordBlanks` 应包含赋值给变量 `myNoun`、`myVerb`、`myAdjective` 和 `myAdverb` 的所有单词，并用非单词字符（以及 madlib 中的其它单词）分隔。
+`wordBlanks` 應包含賦值給變量 `myNoun`、`myVerb`、`myAdjective` 和 `myAdverb` 的所有單詞，並用非單詞字符（以及 madlib 中的其它單詞）分隔。
 
 ```js
 assert(

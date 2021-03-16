@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036170
-title: 创建一个有状态的组件
+title: 創建一個有狀態的組件
 challengeType: 6
 forumTopicId: 301391
 dashedName: create-a-stateful-component
@@ -8,9 +8,9 @@ dashedName: create-a-stateful-component
 
 # --description--
 
-React 中最重要的主题之一是 `state`。 state 包含应用程序需要了解的任何数据，这些数据可能会随时间而变化。 应用程序能够响应 state 的变更，并在必要时显示更新后的 UI。 React 为现代 Web 应用程序的状态管理提供了一个很好的解决方案。
+React 中最重要的主題之一是 `state`。 state 包含應用程序需要了解的任何數據，這些數據可能會隨時間而變化。 應用程序能夠響應 state 的變更，並在必要時顯示更新後的 UI。 React 爲現代 Web 應用程序的狀態管理提供了一個很好的解決方案。
 
-可以在类组件的 `constructor` 上声明 `state` 属性来在 React 组件中创建 state， 它在创建时使用 `state` 初始化组件。 `state` 属性必须设置为 JavaScript `object`（对象）。 声明如下：
+可以在類組件的 `constructor` 上聲明 `state` 屬性來在 React 組件中創建 state， 它在創建時使用 `state` 初始化組件。 `state` 屬性必須設置爲 JavaScript `object`（對象）。 聲明如下：
 
 ```jsx
 this.state = {
@@ -18,15 +18,15 @@ this.state = {
 }
 ```
 
-可以在组件的整个生命周期内访问 `state` 对象， 可以更新它、在 UI 中渲染它，也可以将其作为 props 传递给子组件。 `state` 对象的使用可以很简单，亦可以很复杂，就看你怎么用了。 请注意，必须通过扩展 `React.Component` 来创建类组件，以便像这样创建 `state`。
+可以在組件的整個生命週期內訪問 `state` 對象， 可以更新它、在 UI 中渲染它，也可以將其作爲 props 傳遞給子組件。 `state` 對象的使用可以很簡單，亦可以很複雜，就看你怎麼用了。 請注意，必須通過擴展 `React.Component` 來創建類組件，以便像這樣創建 `state`。
 
 # --instructions--
 
-代码编辑器中有一个组件试图从其 `state` 中渲染一个 `name` 属性， 但是 `state` 还没有定义。 在 `constructor` 中使用 `state` 初始化组件，并将你的名字赋给 `name` 属性。
+代碼編輯器中有一個組件試圖從其 `state` 中渲染一個 `name` 屬性， 但是 `state` 還沒有定義。 在 `constructor` 中使用 `state` 初始化組件，並將你的名字賦給 `name` 屬性。
 
 # --hints--
 
-`StatefulComponent` 应该存在并被渲染。
+`StatefulComponent` 應該存在並被渲染。
 
 ```js
 assert(
@@ -39,7 +39,7 @@ assert(
 );
 ```
 
-`StatefulComponent` 应该渲染一个 `div` 元素和一个 `h1` 元素。
+`StatefulComponent` 應該渲染一個 `div` 元素和一個 `h1` 元素。
 
 ```js
 assert(
@@ -55,7 +55,7 @@ assert(
 );
 ```
 
-应使用被设置为字符串的 `name` 属性来初始化 `StatefulComponent` 的 state。
+應使用被設置爲字符串的 `name` 屬性來初始化 `StatefulComponent` 的 state。
 
 ```js
 assert(
@@ -71,7 +71,7 @@ assert(
 );
 ```
 
-`StatefulComponent` 中 state 的 `name` 属性应该渲染在 `h1` 元素里。
+`StatefulComponent` 中 state 的 `name` 屬性應該渲染在 `h1` 元素裏。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244c9
-title: 通过变量访问对象属性
+title: 通過變量訪問對象屬性
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cnQyKur'
 forumTopicId: 16165
@@ -9,9 +9,9 @@ dashedName: accessing-object-properties-with-variables
 
 # --description--
 
-对对象上使用方括号表示法，还可以访问对象上作为变量值存储的属性。 当你需要遍历对象的所有属性，或者根据一个变量的值查找对应的属性值时，这种写法尤其适用。
+對對象上使用方括號表示法，還可以訪問對象上作爲變量值存儲的屬性。 當你需要遍歷對象的所有屬性，或者根據一個變量的值查找對應的屬性值時，這種寫法尤其適用。
 
-以下是一个使用变量来访问属性的例子：
+以下是一個使用變量來訪問屬性的例子：
 
 ```js
 var dogs = {
@@ -22,9 +22,9 @@ var myBreed = dogs[myDog];
 console.log(myBreed);
 ```
 
-字符串 `Doberman` 将会出现在控制台中。
+字符串 `Doberman` 將會出現在控制檯中。
 
-使用这一概念的另一种情况是：属性的名字是在程序运行期间动态收集得到的。如下所示：
+使用這一概念的另一種情況是：屬性的名字是在程序運行期間動態收集得到的。如下所示：
 
 ```js
 var someObj = {
@@ -38,47 +38,47 @@ var someProp = propPrefix("Name");
 console.log(someObj[someProp]);
 ```
 
-`someProp` 的值将为字符串 `propName`，并且字符串 `John` 将会出现在控制台中。
+`someProp` 的值將爲字符串 `propName`，並且字符串 `John` 將會出現在控制檯中。
 
-注意，当使用变量名访问属性时，我们*没有*使用引号包裹它，因为我们正在使用的是变量的*值*，而不是变量的*名字*。
+注意，當使用變量名訪問屬性時，我們*沒有*使用引號包裹它，因爲我們正在使用的是變量的*值*，而不是變量的*名字*。
 
 # --instructions--
 
-将变量 `playerNumber` 设置为 `16`。 然后，使用该变量查找玩家的名字，并将其赋值给`player`。
+將變量 `playerNumber` 設置爲 `16`。 然後，使用該變量查找玩家的名字，並將其賦值給`player`。
 
 # --hints--
 
-`playerNumber` 应该是一个数字
+`playerNumber` 應該是一個數字
 
 ```js
 assert(typeof playerNumber === 'number');
 ```
 
-变量 `player` 应该是一个字符串
+變量 `player` 應該是一個字符串
 
 ```js
 assert(typeof player === 'string');
 ```
 
-`player` 的值应该为字符串 `Montana`
+`player` 的值應該爲字符串 `Montana`
 
 ```js
 assert(player === 'Montana');
 ```
 
-你应该使用方括号访问 `testObj`
+你應該使用方括號訪問 `testObj`
 
 ```js
 assert(/testObj\s*?\[.*?\]/.test(code));
 ```
 
-你不应该直接将值 `Montana` 赋给变量 `player`。
+你不應該直接將值 `Montana` 賦給變量 `player`。
 
 ```js
 assert(!code.match(/player\s*=\s*"|\'\s*Montana\s*"|\'\s*;/gi));
 ```
 
-你应该在你的方括号内使用变量 `playerNumber`。
+你應該在你的方括號內使用變量 `playerNumber`。
 
 ```js
 assert(/testObj\s*?\[\s*playerNumber\s*\]/.test(code));

@@ -11,29 +11,29 @@ dashedName: change-the-css-of-an-element-using-jquery
 
 # --description--
 
-也能用 jQuery 直接改变 HTML 标签的 CSS。
+也能用 jQuery 直接改變 HTML 標籤的 CSS。
 
-jQuery 有一个 `.css()` 方法，能改变标签的 CSS。
+jQuery 有一個 `.css()` 方法，能改變標籤的 CSS。
 
-下面的代码效果是把颜色变蓝：
+下面的代碼效果是把顏色變藍：
 
 `$("#target1").css("color", "blue");`
 
-这与通常的 CSS 声明略有不同，因为这个 CSS 属性和它的值在英文引号里，并且它们用逗号而不是冒号间隔开。
+這與通常的 CSS 聲明略有不同，因爲這個 CSS 屬性和它的值在英文引號裏，並且它們用逗號而不是冒號間隔開。
 
-删除 jQuery 选择器，并留下空的 `document ready function`。
+刪除 jQuery 選擇器，並留下空的 `document ready function`。
 
-选择 `target1` 并将其颜色变为红色（red）。
+選擇 `target1` 並將其顏色變爲紅色（red）。
 
 # --hints--
 
-`target1` 标签应该有红色文本。
+`target1` 標籤應該有紅色文本。
 
 ```js
 assert($('#target1').css('color') === 'rgb(255, 0, 0)');
 ```
 
-应该仅用 jQuery 给标签添加类。
+應該僅用 jQuery 給標籤添加類。
 
 ```js
 assert(!code.match(/class.*animated/g));

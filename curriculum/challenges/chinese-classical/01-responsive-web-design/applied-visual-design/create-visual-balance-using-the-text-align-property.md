@@ -1,6 +1,6 @@
 ---
 id: 587d7791367417b2b2512ab3
-title: 使用 text-align 属性创建视觉平衡
+title: 使用 text-align 屬性創建視覺平衡
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c3b4EAp'
 forumTopicId: 301053
@@ -9,31 +9,31 @@ dashedName: create-visual-balance-using-the-text-align-property
 
 # --description--
 
-这部分课程的主题是应用视觉设计。 开始的挑战基于美化一个卡片组件的外观，借此展示了若干核心原则。
+這部分課程的主題是應用視覺設計。 開始的挑戰基於美化一個卡片組件的外觀，藉此展示了若干核心原則。
 
-web 内容大部分都是文本。 CSS 里面的 `text-align` 属性可以控制文本的对齐方式。
+web 內容大部分都是文本。 CSS 裏面的 `text-align` 屬性可以控制文本的對齊方式。
 
-`text-align: justify;` 可以让除最后一行之外的文字两端对齐，即每行的左右两端都紧贴行的边缘。
+`text-align: justify;` 可以讓除最後一行之外的文字兩端對齊，即每行的左右兩端都緊貼行的邊緣。
 
-`text-align: center;` 可以让文本居中对齐。
+`text-align: center;` 可以讓文本居中對齊。
 
-`text-align: right;` 可以让文本右对齐。
+`text-align: right;` 可以讓文本右對齊。
 
-`text-align: left;` 是默认值，它可以让文本左对齐。
+`text-align: left;` 是默認值，它可以讓文本左對齊。
 
 # --instructions--
 
-请让内容文本为 “Google” 的 `h4` 标签居中对齐， 然后将介绍 Google 创立历程的段落文本两端对齐。
+請讓內容文本爲 “Google” 的 `h4` 標籤居中對齊， 然後將介紹 Google 創立歷程的段落文本兩端對齊。
 
 # --hints--
 
-`h4` 标签应有值为 `center` 的 text-align 属性。
+`h4` 標籤應有值爲 `center` 的 text-align 屬性。
 
 ```js
 assert($('h4').css('text-align') == 'center');
 ```
 
-`p` 标签应有值为 `justify` 的 text-align 属性。
+`p` 標籤應有值爲 `justify` 的 text-align 屬性。
 
 ```js
 assert($('p').css('text-align') == 'justify');

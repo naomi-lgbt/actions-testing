@@ -9,15 +9,15 @@ dashedName: add-rows-with-grid-template-rows
 
 # --description--
 
-在上个挑战中，你创建的网格会自动设置行数。 要手动调整行，请使用 `grid-template-rows` 属性，就像在上一个挑战中使用 `grid-template-columns` 属性一样。
+在上個挑戰中，你創建的網格會自動設置行數。 要手動調整行，請使用 `grid-template-rows` 屬性，就像在上一個挑戰中使用 `grid-template-columns` 屬性一樣。
 
 # --instructions--
 
-请给网格添加两行，使每行高度均为 `50px`。
+請給網格添加兩行，使每行高度均爲 `50px`。
 
 # --hints--
 
-类为 `container` 的元素应具有 `grid-template-rows` 属性，且该属性的两个属性值均为 `50px`。
+類爲 `container` 的元素應具有 `grid-template-rows` 屬性，且該屬性的兩個屬性值均爲 `50px`。
 
 ```js
 assert(

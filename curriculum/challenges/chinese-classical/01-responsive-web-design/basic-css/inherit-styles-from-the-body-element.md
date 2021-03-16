@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08746
-title: 从 body 元素继承样式
+title: 從 body 元素繼承樣式
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c9bmdtR'
 forumTopicId: 18204
@@ -9,27 +9,27 @@ dashedName: inherit-styles-from-the-body-element
 
 # --description--
 
-我们已经证明每一个 HTML 页面都含有 `body` 元素，我们也可以在 `body` 元素上使用 CSS 样式。
+我們已經證明每一個 HTML 頁面都含有 `body` 元素，我們也可以在 `body` 元素上使用 CSS 樣式。
 
-设置 `body` 元素样式的方法跟设置其他 HTML 元素样式的方式一样，并且其他元素也会继承 `body` 中所设置的样式。
+設置 `body` 元素樣式的方法跟設置其他 HTML 元素樣式的方式一樣，並且其他元素也會繼承 `body` 中所設置的樣式。
 
 # --instructions--
 
-首先，创建一个内容文本为 `Hello World` 的 `h1` 元素。
+首先，創建一個內容文本爲 `Hello World` 的 `h1` 元素。
 
-接着，在 `body` 的 CSS 规则里面添加 `color: green;`，这会将页面内所有字体的颜色都设置为 `green`。
+接着，在 `body` 的 CSS 規則裏面添加 `color: green;`，這會將頁面內所有字體的顏色都設置爲 `green`。
 
-最后，在 `body` 的 CSS 规则里面添加 `font-family: monospace;`，这会将 `body` 内所有元素的字体都设置为 `monospace`。
+最後，在 `body` 的 CSS 規則裏面添加 `font-family: monospace;`，這會將 `body` 內所有元素的字體都設置爲 `monospace`。
 
 # --hints--
 
-应创建一个 `h1` 元素。
+應創建一個 `h1` 元素。
 
 ```js
 assert($('h1').length > 0);
 ```
 
-`h1` 元素的内容文本应为 `Hello World`。
+`h1` 元素的內容文本應爲 `Hello World`。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-确保 `h1` 元素具有结束标签。
+確保 `h1` 元素具有結束標籤。
 
 ```js
 assert(
@@ -50,13 +50,13 @@ assert(
 );
 ```
 
-`body` 元素的 `color` 属性值应为 `green`。
+`body` 元素的 `color` 屬性值應爲 `green`。
 
 ```js
 assert($('body').css('color') === 'rgb(0, 128, 0)');
 ```
 
-`body` 元素的 `font-family` 属性值应为 `monospace`。
+`body` 元素的 `font-family` 屬性值應爲 `monospace`。
 
 ```js
 assert(
@@ -66,7 +66,7 @@ assert(
 );
 ```
 
-`h1` 元素应该继承 `body` 的 `monospace` 字体属性。
+`h1` 元素應該繼承 `body` 的 `monospace` 字體屬性。
 
 ```js
 assert(
@@ -77,7 +77,7 @@ assert(
 );
 ```
 
-`h1` 元素的字体颜色应继承 `body` 元素所设置的绿色。
+`h1` 元素的字體顏色應繼承 `body` 元素所設置的綠色。
 
 ```js
 assert($('h1').length > 0 && $('h1').css('color') === 'rgb(0, 128, 0)');

@@ -1,6 +1,6 @@
 ---
 id: 5a9d7286424fe3d0e10cad13
-title: 给 CSS 变量设置备用值
+title: 給 CSS 變量設置備用值
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c6bDNfp'
 forumTopicId: 301084
@@ -9,9 +9,9 @@ dashedName: attach-a-fallback-value-to-a-css-variable
 
 # --description--
 
-使用变量来作为 CSS 属性值的时候，可以设置一个备用值来防止由于某些原因导致变量不生效的情况。
+使用變量來作爲 CSS 屬性值的時候，可以設置一個備用值來防止由於某些原因導致變量不生效的情況。
 
-**注意：**备用值不是用于增强浏览器的兼容性，它也不适用于 IE 浏览器。 相反，它是用来让浏览器在找不到你的变量时可以显示一种颜色。
+**注意：**備用值不是用於增強瀏覽器的兼容性，它也不適用於 IE 瀏覽器。 相反，它是用來讓瀏覽器在找不到你的變量時可以顯示一種顏色。
 
 下面是操作方式：
 
@@ -19,15 +19,15 @@ dashedName: attach-a-fallback-value-to-a-css-variable
 background: var(--penguin-skin, black);
 ```
 
-如果你的变量没有设置，这将会把背景设置为 `black`。 提示：这对调试代码也会很有帮助。
+如果你的變量沒有設置，這將會把背景設置爲 `black`。 提示：這對調試代碼也會很有幫助。
 
 # --instructions--
 
-`.penguin-top` 和 `.penguin-bottom` 类的变量看起来似乎有点问题。 请为 class 为 `penguin-top` 和 `penguin-bottom` 的元素的 `background` 属性设置一个 `black` 的备用色。
+`.penguin-top` 和 `.penguin-bottom` 類的變量看起來似乎有點問題。 請爲 class 爲 `penguin-top` 和 `penguin-bottom` 的元素的 `background` 屬性設置一個 `black` 的備用色。
 
 # --hints--
 
-class 为 `penguin-top` 的元素的 `background` 属性值应有 `black` 作为备用颜色。
+class 爲 `penguin-top` 的元素的 `background` 屬性值應有 `black` 作爲備用顏色。
 
 ```js
 assert(
@@ -37,7 +37,7 @@ assert(
 );
 ```
 
-class 为 `penguin-bottom` 的元素的 `background` 属性值应有 `black` 作为备用颜色。
+class 爲 `penguin-bottom` 的元素的 `background` 屬性值應有 `black` 作爲備用顏色。
 
 ```js
 assert(

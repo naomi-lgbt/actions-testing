@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08815
-title: 用 border-radius 制作圆形图片
+title: 用 border-radius 製作圓形圖片
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c2MvrcB'
 forumTopicId: 18229
@@ -9,21 +9,21 @@ dashedName: make-circular-images-with-a-border-radius
 
 # --description--
 
-除像素外，你也可以使用百分比来指定 `border-radius` 的值。
+除像素外，你也可以使用百分比來指定 `border-radius` 的值。
 
 # --instructions--
 
-将 `border-radius` 的属性值设置为 `50%`。
+將 `border-radius` 的屬性值設置爲 `50%`。
 
 # --hints--
 
-图片的边框圆角应设置为 `50%`，这样图片就会是圆形的。
+圖片的邊框圓角應設置爲 `50%`，這樣圖片就會是圓形的。
 
 ```js
 assert(parseInt($('img').css('border-top-left-radius')) > 48);
 ```
 
-`border-radius` 的值应为 `50%`。
+`border-radius` 的值應爲 `50%`。
 
 ```js
 assert(code.match(/50%/g));

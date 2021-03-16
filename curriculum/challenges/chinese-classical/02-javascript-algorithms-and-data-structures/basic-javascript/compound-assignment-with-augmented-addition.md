@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244af
-title: 复合赋值之 +=
+title: 複合賦值之 +=
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cDR6LCb'
 forumTopicId: 16661
@@ -9,13 +9,13 @@ dashedName: compound-assignment-with-augmented-addition
 
 # --description--
 
-在编程中，通常通过赋值来修改变量的内容。 记住，赋值时 JavaScript 会先计算等号右边的内容，所以我们可以写这样的语句：
+在編程中，通常通過賦值來修改變量的內容。 記住，賦值時 JavaScript 會先計算等號右邊的內容，所以我們可以寫這樣的語句：
 
 `myVar = myVar + 5;`
 
-给 `myVar` 加上 `5`。 以上是最常见的运算赋值语句，即先运算、再赋值。还有一类操作符是一步到位既做运算也赋值的。
+給 `myVar` 加上 `5`。 以上是最常見的運算賦值語句，即先運算、再賦值。還有一類操作符是一步到位既做運算也賦值的。
 
-其中一种就是 `+=` 运算符。
+其中一種就是 `+=` 運算符。
 
 ```js
 var myVar = 1;
@@ -23,39 +23,39 @@ myVar += 5;
 console.log(myVar);
 ```
 
-字符串 `6` 将会出现在控制台中。
+字符串 `6` 將會出現在控制檯中。
 
 # --instructions--
 
-使用 `+=` 操作符对 `a`、`b` 和 `c` 实现同样的效果。
+使用 `+=` 操作符對 `a`、`b` 和 `c` 實現同樣的效果。
 
 # --hints--
 
-`a` 应该等于 `15`。
+`a` 應該等於 `15`。
 
 ```js
 assert(a === 15);
 ```
 
-`b` 应该等于 `26`。
+`b` 應該等於 `26`。
 
 ```js
 assert(b === 26);
 ```
 
-`c` 应该等于 `19`。
+`c` 應該等於 `19`。
 
 ```js
 assert(c === 19);
 ```
 
-应该对每个变量使用 `+=` 操作符。
+應該對每個變量使用 `+=` 操作符。
 
 ```js
 assert(code.match(/\+=/g).length === 3);
 ```
 
-不要修改注释上面的代码。
+不要修改註釋上面的代碼。
 
 ```js
 assert(

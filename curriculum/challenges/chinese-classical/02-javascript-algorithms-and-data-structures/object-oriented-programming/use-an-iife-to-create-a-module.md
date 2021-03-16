@@ -1,6 +1,6 @@
 ---
 id: 587d7db2367417b2b2512b8c
-title: 使用 IIFE 创建一个模块
+title: 使用 IIFE 創建一個模塊
 challengeType: 1
 forumTopicId: 301332
 dashedName: use-an-iife-to-create-a-module
@@ -8,7 +8,7 @@ dashedName: use-an-iife-to-create-a-module
 
 # --description--
 
-一个立即调用函数表达式（IIFE）通常用于将相关功能分组到单个对象或者是 <dfn>module</dfn> 中。 例如，先前的挑战中定义了两个 mixins：
+一個立即調用函數表達式（IIFE）通常用於將相關功能分組到單個對象或者是 <dfn>module</dfn> 中。 例如，先前的挑戰中定義了兩個 mixins：
 
 ```js
 function glideMixin(obj) {
@@ -23,7 +23,7 @@ function flyMixin(obj) {
 }
 ```
 
-我们可以将这些 mixins 分成以下模块：
+我們可以將這些 mixins 分成以下模塊：
 
 ```js
 let motionModule = (function () {
@@ -42,7 +42,7 @@ let motionModule = (function () {
 })();
 ```
 
-注意：一个立即调用函数表达式（IIFE）返回了一个 `motionModule` 对象。 返回的这个对象包含了作为对象属性的所有 mixin 行为。 module 模式的优点是，所有的运动相关的行为都可以打包成一个对象，然后由代码的其他部分使用。 下面是一个使用它的例子：
+注意：一個立即調用函數表達式（IIFE）返回了一個 `motionModule` 對象。 返回的這個對象包含了作爲對象屬性的所有 mixin 行爲。 module 模式的優點是，所有的運動相關的行爲都可以打包成一個對象，然後由代碼的其他部分使用。 下面是一個使用它的例子：
 
 ```js
 motionModule.glideMixin(duck);
@@ -51,23 +51,23 @@ duck.glide();
 
 # --instructions--
 
-创建一个名为 `funModule` 的模块，将这两个 mixins：`isCuteMixin` 和 `singMixin` 包装起来。 `funModule` 应该返回一个对象。
+創建一個名爲 `funModule` 的模塊，將這兩個 mixins：`isCuteMixin` 和 `singMixin` 包裝起來。 `funModule` 應該返回一個對象。
 
 # --hints--
 
-`funModule` 应该被定义并返回一个对象。
+`funModule` 應該被定義並返回一個對象。
 
 ```js
 assert(typeof funModule === 'object');
 ```
 
-`funModule.isCuteMixin` 应该访问一个函数。
+`funModule.isCuteMixin` 應該訪問一個函數。
 
 ```js
 assert(typeof funModule.isCuteMixin === 'function');
 ```
 
-`funModule.singMixin` 应该访问一个函数。
+`funModule.singMixin` 應該訪問一個函數。
 
 ```js
 assert(typeof funModule.singMixin === 'function');

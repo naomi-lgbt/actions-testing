@@ -1,6 +1,6 @@
 ---
 id: 587d7da9367417b2b2512b67
-title: 使用 concat 而不是 push 将元素添加到数组的末尾
+title: 使用 concat 而不是 push 將元素添加到數組的末尾
 challengeType: 1
 forumTopicId: 301226
 dashedName: add-elements-to-the-end-of-an-array-using-concat-instead-of-push
@@ -8,26 +8,26 @@ dashedName: add-elements-to-the-end-of-an-array-using-concat-instead-of-push
 
 # --description--
 
-函数式编程就是创建和使用具有不变性的函数。
+函數式編程就是創建和使用具有不變性的函數。
 
-上一个挑战介绍了 `concat` 方法，这是一种在不改变原始数组的前提下，将数组组合成新数组的方法。 将 `concat` 方法与 `push` 方法做比较。 `push` 将元素添加到调用它的数组的末尾，这样会改变该数组。 举个例子：
+上一個挑戰介紹了 `concat` 方法，這是一種在不改變原始數組的前提下，將數組組合成新數組的方法。 將 `concat` 方法與 `push` 方法做比較。 `push` 將元素添加到調用它的數組的末尾，這樣會改變該數組。 舉個例子：
 
 ```js
 var arr = [1, 2, 3];
 arr.push([4, 5, 6]);
 ```
 
-`arr` 的值被修改为 `[1, 2, 3, [4, 5, 6]]`，这不是函数编程方式。
+`arr` 的值被修改爲 `[1, 2, 3, [4, 5, 6]]`，這不是函數編程方式。
 
-`concat` 方法可以将新项目添加到数组末尾，而不产生副作用。
+`concat` 方法可以將新項目添加到數組末尾，而不產生副作用。
 
 # --instructions--
 
-修改 `nonMutatingPush` 函数，用 `concat` 替代 `push` 将 `newItem` 添加到 `original` 末尾。 该函数应返回一个数组。
+修改 `nonMutatingPush` 函數，用 `concat` 替代 `push` 將 `newItem` 添加到 `original` 末尾。 該函數應返回一個數組。
 
 # --hints--
 
-应该使用 `concat` 方法。
+應該使用 `concat` 方法。
 
 ```js
 assert(code.match(/\.concat/g));
@@ -39,19 +39,19 @@ assert(code.match(/\.concat/g));
 assert(!code.match(/\.?[\s\S]*?push/g));
 ```
 
-不能改变 `first` 数组。
+不能改變 `first` 數組。
 
 ```js
 assert(JSON.stringify(first) === JSON.stringify([1, 2, 3]));
 ```
 
-不能改变 `second` 数组。
+不能改變 `second` 數組。
 
 ```js
 assert(JSON.stringify(second) === JSON.stringify([4, 5]));
 ```
 
-`nonMutatingPush([1, 2, 3], [4, 5])` 应返回 `[1, 2, 3, 4, 5]`。
+`nonMutatingPush([1, 2, 3], [4, 5])` 應返回 `[1, 2, 3, 4, 5]`。
 
 ```js
 assert(

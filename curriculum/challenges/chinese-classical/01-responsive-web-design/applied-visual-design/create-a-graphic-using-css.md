@@ -1,6 +1,6 @@
 ---
 id: 587d78a6367417b2b2512add
-title: 使用 CSS 创建一个图形
+title: 使用 CSS 創建一個圖形
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cEDWPs6'
 forumTopicId: 301048
@@ -9,33 +9,33 @@ dashedName: create-a-graphic-using-css
 
 # --description--
 
-通过使用不同的选择器和属性，你可以做出有趣的形状， 一个简单的例子是新月形状。 在这个挑战中，我们会学习如何使用 `box-shadow` 属性来设置元素的阴影，以及使用 `border-radius` 属性控制元素的圆角边框。
+通過使用不同的選擇器和屬性，你可以做出有趣的形狀， 一個簡單的例子是新月形狀。 在這個挑戰中，我們會學習如何使用 `box-shadow` 屬性來設置元素的陰影，以及使用 `border-radius` 屬性控制元素的圓角邊框。
 
-首先我们来创建一个圆的、透明的图形，它具有模糊阴影并略微向两边递减。 如你所见，这个阴影其实就是新月形狀。
+首先我們來創建一個圓的、透明的圖形，它具有模糊陰影並略微向兩邊遞減。 如你所見，這個陰影其實就是新月形狀。
 
-为了创建一个圆形的对象，`border-radius` 应该被设置成 50%。
+爲了創建一個圓形的對象，`border-radius` 應該被設置成 50%。
 
-你应该还记得之前关卡的 `box-shadow` 属性以及它的依次取值 `offset-x`、`offset-y`、`blur-radius`、`spread-radius` 和颜色值。 其中 `blur-radius` 和 `spread-radius` 是可选的。
+你應該還記得之前關卡的 `box-shadow` 屬性以及它的依次取值 `offset-x`、`offset-y`、`blur-radius`、`spread-radius` 和顏色值。 其中 `blur-radius` 和 `spread-radius` 是可選的。
 
 # --instructions--
 
-把编辑器里的正方形元素变成新月形状。 首先，把 `background-color` 改为 `transparent`，接着把 `border-radius` 属性设置成 50%，以创建一个圆形。 最后，更改 `box-shadow` 属性，使其 `offset-x` 为 25px，`offset-y` 为 10px，`blur-radius` 为 0，`spread-radius` 为 0，颜色为 `blue`。
+把編輯器裏的正方形元素變成新月形狀。 首先，把 `background-color` 改爲 `transparent`，接着把 `border-radius` 屬性設置成 50%，以創建一個圓形。 最後，更改 `box-shadow` 屬性，使其 `offset-x` 爲 25px，`offset-y` 爲 10px，`blur-radius` 爲 0，`spread-radius` 爲 0，顏色爲 `blue`。
 
 # --hints--
 
-`background-color` 属性值应为 `transparent`。
+`background-color` 屬性值應爲 `transparent`。
 
 ```js
 assert(code.match(/background-color:\s*?transparent;/gi));
 ```
 
-`border-radius` 属性的值应该设置为 `50%`。
+`border-radius` 屬性的值應該設置爲 `50%`。
 
 ```js
 assert(code.match(/border-radius:\s*?50%;/gi));
 ```
 
-更改 `box-shadow` 属性，使其 `offset-x` 为 25px，`offset-y` 为 10px，`blur-radius` 为 0，`spread-radius` 为 0，颜色为 `blue`。
+更改 `box-shadow` 屬性，使其 `offset-x` 爲 25px，`offset-y` 爲 10px，`blur-radius` 爲 0，`spread-radius` 爲 0，顏色爲 `blue`。
 
 ```js
 assert(

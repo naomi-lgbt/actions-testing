@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392ca
-title: 通过索引访问数组中的数据
+title: 通過索引訪問數組中的數據
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cBZQbTz'
 forumTopicId: 16158
@@ -9,9 +9,9 @@ dashedName: access-array-data-with-indexes
 
 # --description--
 
-我们可以使用索引（<dfn>indexes</dfn>）来访问数组中的数据。
+我們可以使用索引（<dfn>indexes</dfn>）來訪問數組中的數據。
 
-数组索引与字符串一样使用方括号来表示，不同的是，它们不是指定字符，而是指定数组中的一个条目。 数组索引与字符串索引一样是从 0 开始（<dfn>zero-based</dfn>）的，所以数组中第一个元素的索引编号是 `0`。
+數組索引與字符串一樣使用方括號來表示，不同的是，它們不是指定字符，而是指定數組中的一個條目。 數組索引與字符串索引一樣是從 0 開始（<dfn>zero-based</dfn>）的，所以數組中第一個元素的索引編號是 `0`。
 
 <br>
 
@@ -23,17 +23,17 @@ array[0];
 var data = array[1];
 ```
 
-现在 `array[0]` 的值是 `50`， `data` 的值为 `60`.
+現在 `array[0]` 的值是 `50`， `data` 的值爲 `60`.
 
-**注意：**数组名与方括号之间不应该有任何空格，比如`array [0]` 。 尽管 JavaScript 能够正确处理这种情况，但是当其他程序员阅读你写的代码时，这可能让他们感到困惑。
+**注意：**數組名與方括號之間不應該有任何空格，比如`array [0]` 。 儘管 JavaScript 能夠正確處理這種情況，但是當其他程序員閱讀你寫的代碼時，這可能讓他們感到困惑。
 
 # --instructions--
 
-创建一个名为 `myData` 的变量，使用方括号取出 `myArray` 数组中第一个元素的值并将其赋值给新创建的变量。
+創建一個名爲 `myData` 的變量，使用方括號取出 `myArray` 數組中第一個元素的值並將其賦值給新創建的變量。
 
 # --hints--
 
-变量 `myData` 应该等于`myArray` 数组中第一个元素的值。
+變量 `myData` 應該等於`myArray` 數組中第一個元素的值。
 
 ```js
 assert(
@@ -51,7 +51,7 @@ assert(
 );
 ```
 
-应该使用括号访问变量 `myArray` 中的数据。
+應該使用括號訪問變量 `myArray` 中的數據。
 
 ```js
 assert(

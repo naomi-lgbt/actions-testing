@@ -1,6 +1,6 @@
 ---
 id: 587d7daf367417b2b2512b7e
-title: 了解构造函数属性
+title: 瞭解構造函數屬性
 challengeType: 1
 forumTopicId: 301327
 dashedName: understand-the-constructor-property
@@ -8,7 +8,7 @@ dashedName: understand-the-constructor-property
 
 # --description--
 
-在上一个挑战中创建的实例对象 `duck` 和 `beagle` 都有一个特殊的 `constructor` 属性：
+在上一個挑戰中創建的實例對象 `duck` 和 `beagle` 都有一個特殊的 `constructor` 屬性：
 
 ```js
 let duck = new Bird();
@@ -18,9 +18,9 @@ console.log(duck.constructor === Bird);
 console.log(beagle.constructor === Dog);
 ```
 
-这两次 `console.log` 调用都将在控制台中显示 `true`。
+這兩次 `console.log` 調用都將在控制檯中顯示 `true`。
 
-需要注意到的是这个 `constructor` 属性是对创建这个实例的构造函数的一个引用。 `constructor` 属性的一个好处是可以通过检查这个属性来找出它是一个什么对象。 下面是一个例子，来看看是怎么使用的：
+需要注意到的是這個 `constructor` 屬性是對創建這個實例的構造函數的一個引用。 `constructor` 屬性的一個好處是可以通過檢查這個屬性來找出它是一個什麼對象。 下面是一個例子，來看看是怎麼使用的：
 
 ```js
 function joinBirdFraternity(candidate) {
@@ -32,27 +32,27 @@ function joinBirdFraternity(candidate) {
 }
 ```
 
-**注意：** 由于 `constructor` 属性可以被重写（在下面两节挑战中将会遇到），所以最好使用`instanceof` 方法来检查对象的类型。
+**注意：** 由於 `constructor` 屬性可以被重寫（在下面兩節挑戰中將會遇到），所以最好使用`instanceof` 方法來檢查對象的類型。
 
 # --instructions--
 
-写一个 `joinDogFraternity` 函数，传入一个 `candidate` 参数并使用 `constructor` 属性来判断传入的 candidate 是不是 `Dog` 创建的对象实例，如果是，就返回 `true`，否则返回 `false`。
+寫一個 `joinDogFraternity` 函數，傳入一個 `candidate` 參數並使用 `constructor` 屬性來判斷傳入的 candidate 是不是 `Dog` 創建的對象實例，如果是，就返回 `true`，否則返回 `false`。
 
 # --hints--
 
-`joinDogFraternity` 应该被定义为一个函数。
+`joinDogFraternity` 應該被定義爲一個函數。
 
 ```js
 assert(typeof joinDogFraternity === 'function');
 ```
 
-如果 `candidate` 是 `Dog` 的一个对象实例，则 `joinDogFraternity` 函数应该返回 `true`。
+如果 `candidate` 是 `Dog` 的一個對象實例，則 `joinDogFraternity` 函數應該返回 `true`。
 
 ```js
 assert(joinDogFraternity(new Dog('')) === true);
 ```
 
-`joinDogFraternity` 中应该用到 `constructor` 属性。
+`joinDogFraternity` 中應該用到 `constructor` 屬性。
 
 ```js
 assert(/\.constructor/.test(code) && !/instanceof/.test(code));

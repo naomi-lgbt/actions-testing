@@ -1,6 +1,6 @@
 ---
 id: bd7188d8c242eddfaeb5bd13
-title: 用热图可视化数据
+title: 用熱圖可視化數據
 challengeType: 3
 forumTopicId: 301466
 dashedName: visualize-data-with-a-heat-map
@@ -8,51 +8,51 @@ dashedName: visualize-data-with-a-heat-map
 
 # --description--
 
-**目标：** 在 [CodePen.io](https://codepen.io) 上实现一个功能类似 <https://codepen.io/freeCodeCamp/full/JEXgeY> 的 App。
+**目標：** 在 [CodePen.io](https://codepen.io) 上實現一個功能類似 <https://codepen.io/freeCodeCamp/full/JEXgeY> 的 App。
 
-在满足以下[需求](https://en.wikipedia.org/wiki/User_story)并能通过所有测试的前提下， 你可以根据自己的喜好来美化你的 app。
+在滿足以下[需求](https://en.wikipedia.org/wiki/User_story)並能通過所有測試的前提下， 你可以根據自己的喜好來美化你的 app。
 
-你可以使用 HTML、JavaScript、CSS、以及基于 svg 的 D3 可视化库来完成这个挑战。 每次测试查询的元素都必须是非虚拟 DOM。 如果你使用了前端框架（例如 Vue），那么对于动态的内容测试结果可能不准确。 我们希望最终能够兼容这些框架，但 D3 项目目前还不支持它们。
+你可以使用 HTML、JavaScript、CSS、以及基於 svg 的 D3 可視化庫來完成這個挑戰。 每次測試查詢的元素都必須是非虛擬 DOM。 如果你使用了前端框架（例如 Vue），那麼對於動態的內容測試結果可能不準確。 我們希望最終能夠兼容這些框架，但 D3 項目目前還不支持它們。
 
-**需求 #1：** 热度图包含一个具有 `id="title"` 属性的标题。
+**需求 #1：** 熱度圖包含一個具有 `id="title"` 屬性的標題。
 
-**需求 #2：** 热度图包含一个具有 `id="description"` 属性的描述内容。
+**需求 #2：** 熱度圖包含一個具有 `id="description"` 屬性的描述內容。
 
-**需求 #3：** 热度图包含一个具有 `id="x-axis"` 属性的 x 轴。
+**需求 #3：** 熱度圖包含一個具有 `id="x-axis"` 屬性的 x 軸。
 
-**需求 #4：** 热度图包含一个具有 `id="y-axis"` 属性的 y 轴。
+**需求 #4：** 熱度圖包含一個具有 `id="y-axis"` 屬性的 y 軸。
 
-**需求 #5：** 热度图包含一些 `rect` 元素来展示数据，他们具有 `class="cell"` 属性。
+**需求 #5：** 熱度圖包含一些 `rect` 元素來展示數據，他們具有 `class="cell"` 屬性。
 
-**需求 #6：** 这些单元格元素至少应该有 4 种不同的填充颜色。
+**需求 #6：** 這些單元格元素至少應該有 4 種不同的填充顏色。
 
-**需求 #7：** 每个单元格都有这些属性：`data-month`、`data-year`、`data-temp`，具有相应的属性值 `month`、`year`、`temperature`。
+**需求 #7：** 每個單元格都有這些屬性：`data-month`、`data-year`、`data-temp`，具有相應的屬性值 `month`、`year`、`temperature`。
 
-**需求 #8：** 每个元素的 `data-month`、`data-year` 属性应该在数据范围内。
+**需求 #8：** 每個元素的 `data-month`、`data-year` 屬性應該在數據範圍內。
 
-**需求 #9：** 热度图包含与 y 轴上的相应月份对齐的单元格。
+**需求 #9：** 熱度圖包含與 y 軸上的相應月份對齊的單元格。
 
-**需求 #10：** 热度图包含与 x 轴上相应年份对齐的单元格。
+**需求 #10：** 熱度圖包含與 x 軸上相應年份對齊的單元格。
 
-**需求 #11：** 热度图在 y 轴上有多个刻度标签，并带有完整的月份名称。
+**需求 #11：** 熱度圖在 y 軸上有多個刻度標籤，並帶有完整的月份名稱。
 
-**需求 #12：** 热度图在 x 轴上有多个刻度标签，年份在 1754 到 2015 之间。
+**需求 #12：** 熱度圖在 x 軸上有多個刻度標籤，年份在 1754 到 2015 之間。
 
-**需求 #13：** 热度图包含一个具有 `id="legend"` 属性的图例。
+**需求 #13：** 熱度圖包含一個具有 `id="legend"` 屬性的圖例。
 
-**需求 #14：** 图例包含一些 `rect` 元素。
+**需求 #14：** 圖例包含一些 `rect` 元素。
 
-**需求 #15：** 图例中的这些 `rect` 元素应该至少使用 4 种不同的填充颜色。
+**需求 #15：** 圖例中的這些 `rect` 元素應該至少使用 4 種不同的填充顏色。
 
-**需求 #16：** 将鼠标悬停在某个区域上时，可以看到具有 `id="tooltip"` 属性的提示框，它会显示有关该区域的更多信息。
+**需求 #16：** 將鼠標懸停在某個區域上時，可以看到具有 `id="tooltip"` 屬性的提示框，它會顯示有關該區域的更多信息。
 
-**需求 #17：** 提示框应该有 `data-year` 属性，它对应了当前激活区域的 `data-year` 属性。
+**需求 #17：** 提示框應該有 `data-year` 屬性，它對應了當前激活區域的 `data-year` 屬性。
 
-以下是完成此项目所需的数据：`https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json`
+以下是完成此項目所需的數據：`https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json`
 
-你可以<a href='https://codepen.io/pen?template=MJjpwO' target='_blank' rel='nofollow'>使用这个 CodePen 模板</a>来创建你的项目，点击 `Save` 即可创建你的项目。 或者你可以在任何你喜欢的环境中使用以下 CDN 链接来运行测试：`https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`.
+你可以<a href='https://codepen.io/pen?template=MJjpwO' target='_blank' rel='nofollow'>使用這個 CodePen 模板</a>來創建你的項目，點擊 `Save` 即可創建你的項目。 或者你可以在任何你喜歡的環境中使用以下 CDN 鏈接來運行測試：`https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`.
 
-当你完成了本项目，并且该项目所有测试运行通过，请提交项目的 URL。
+當你完成了本項目，並且該項目所有測試運行通過，請提交項目的 URL。
 
 # --solutions--
 

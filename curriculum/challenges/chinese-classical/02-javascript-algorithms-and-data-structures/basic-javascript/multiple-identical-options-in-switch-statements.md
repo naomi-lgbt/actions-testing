@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244df
-title: 在 Switch 语句添加多个相同选项
+title: 在 Switch 語句添加多個相同選項
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cdBKWCV'
 forumTopicId: 18242
@@ -9,7 +9,7 @@ dashedName: multiple-identical-options-in-switch-statements
 
 # --description--
 
-如果你忘了给 `switch` 的每一条 `case` 添加 `break`，那么后续的 `case` 会一直执行，直到遇见 `break` 为止。 如果你想为 `switch` 中的多个不同的输入设置相同的结果，可以这样写：
+如果你忘了給 `switch` 的每一條 `case` 添加 `break`，那麼後續的 `case` 會一直執行，直到遇見 `break` 爲止。 如果你想爲 `switch` 中的多個不同的輸入設置相同的結果，可以這樣寫：
 
 ```js
 var result = "";
@@ -24,80 +24,80 @@ switch(val) {
 }
 ```
 
-这样，1、2、3 都会有相同的结果。
+這樣，1、2、3 都會有相同的結果。
 
 # --instructions--
 
-请写一个 switch 语句，按如下条件设置 `answer` ：  
+請寫一個 switch 語句，按如下條件設置 `answer` ：  
 `1-3` - `Low`  
 `4-6` - `Mid`  
 `7-9` - `High`
 
-**提示：** 你的 `case` 应写全范围中的每一个数字。
+**提示：** 你的 `case` 應寫全範圍中的每一個數字。
 
 # --hints--
 
-`sequentialSizes(1)` 应该返回字符串 `Low`
+`sequentialSizes(1)` 應該返回字符串 `Low`
 
 ```js
 assert(sequentialSizes(1) === 'Low');
 ```
 
-`sequentialSizes(2)` 应该返回字符串 `Low`
+`sequentialSizes(2)` 應該返回字符串 `Low`
 
 ```js
 assert(sequentialSizes(2) === 'Low');
 ```
 
-`sequentialSizes(3)` 应该返回字符串 `Low`
+`sequentialSizes(3)` 應該返回字符串 `Low`
 
 ```js
 assert(sequentialSizes(3) === 'Low');
 ```
 
-`sequentialSizes(4)` 应该返回字符串 `Mid`
+`sequentialSizes(4)` 應該返回字符串 `Mid`
 
 ```js
 assert(sequentialSizes(4) === 'Mid');
 ```
 
-`sequentialSizes(5)` 应该返回字符串 `Mid`
+`sequentialSizes(5)` 應該返回字符串 `Mid`
 
 ```js
 assert(sequentialSizes(5) === 'Mid');
 ```
 
-`sequentialSizes(6)` 应该返回字符串 `Mid`
+`sequentialSizes(6)` 應該返回字符串 `Mid`
 
 ```js
 assert(sequentialSizes(6) === 'Mid');
 ```
 
-`sequentialSizes(7)` 应该返回字符串 `High`
+`sequentialSizes(7)` 應該返回字符串 `High`
 
 ```js
 assert(sequentialSizes(7) === 'High');
 ```
 
-`sequentialSizes(8)` 应该返回字符串 `High`
+`sequentialSizes(8)` 應該返回字符串 `High`
 
 ```js
 assert(sequentialSizes(8) === 'High');
 ```
 
-`sequentialSizes(9)` 应该返回字符串 `High`
+`sequentialSizes(9)` 應該返回字符串 `High`
 
 ```js
 assert(sequentialSizes(9) === 'High');
 ```
 
-你不应使用 `if` 或 `else` 语句。
+你不應使用 `if` 或 `else` 語句。
 
 ```js
 assert(!/else/g.test(code) || !/if/g.test(code));
 ```
 
-你应该编写 9 个`case`语句。
+你應該編寫 9 個`case`語句。
 
 ```js
 assert(code.match(/case/g).length === 9);

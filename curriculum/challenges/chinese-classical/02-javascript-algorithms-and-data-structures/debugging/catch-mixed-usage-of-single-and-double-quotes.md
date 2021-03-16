@@ -1,6 +1,6 @@
 ---
 id: 587d7b84367417b2b2512b37
-title: 捕捉单引号和双引号的混合用法
+title: 捕捉單引號和雙引號的混合用法
 challengeType: 1
 forumTopicId: 301188
 dashedName: catch-mixed-usage-of-single-and-double-quotes
@@ -8,11 +8,11 @@ dashedName: catch-mixed-usage-of-single-and-double-quotes
 
 # --description--
 
-JavaScript 允许使用单引号 (`'`) 和双引号 (`"`) 声明字符串。 决定使用哪一个通常看个人偏好，但有一些例外。
+JavaScript 允許使用單引號 (`'`) 和雙引號 (`"`) 聲明字符串。 決定使用哪一個通常看個人偏好，但有一些例外。
 
-如果字符串中有缩写或存在一段带引号的文本，你就会明白为什么 JavaScript 允许两种引号了。 请注意，不要提前用引号结束字符串，这会导致语法错误。
+如果字符串中有縮寫或存在一段帶引號的文本，你就會明白爲什麼 JavaScript 允許兩種引號了。 請注意，不要提前用引號結束字符串，這會導致語法錯誤。
 
-下面是混合使用引号的一些示例：
+下面是混合使用引號的一些示例：
 
 ```js
 const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
@@ -20,9 +20,9 @@ const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quot
 const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
 ```
 
-前两项是正确的，但第三项是不正确的。
+前兩項是正確的，但第三項是不正確的。
 
-当然，只使用一种引号也是可以的。 你可以使用反斜杠（`\`）转义字符来转义字符串中的引号：
+當然，只使用一種引號也是可以的。 你可以使用反斜槓（`\`）轉義字符來轉義字符串中的引號：
 
 ```js
 const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
@@ -30,17 +30,17 @@ const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t
 
 # --instructions--
 
-修复字符串，使其对 `href` 值使用不同的引号，或者转义现有的引号。 在整个字符串周围保留双引号。
+修復字符串，使其對 `href` 值使用不同的引號，或者轉義現有的引號。 在整個字符串周圍保留雙引號。
 
 # --hints--
 
-你应通过更改或转义来修复 `href` 的值 `#Home` 周围的引号。
+你應通過更改或轉義來修復 `href` 的值 `#Home` 周圍的引號。
 
 ```js
 assert(code.match(/<a href=\s*?('|\\")#Home\1\s*?>/g));
 ```
 
-你应该在整个字符串外围保留双引号。
+你應該在整個字符串外圍保留雙引號。
 
 ```js
 assert(code.match(/"<p>.*?<\/p>";/g));

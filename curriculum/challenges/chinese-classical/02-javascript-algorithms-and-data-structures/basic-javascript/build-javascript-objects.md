@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392d0
-title: 创建 JavaScript 对象
+title: 創建 JavaScript 對象
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cWGkbtd'
 forumTopicId: 16769
@@ -9,13 +9,13 @@ dashedName: build-javascript-objects
 
 # --description--
 
-你之前可能听过 `object` 这个词。
+你之前可能聽過 `object` 這個詞。
 
-对象和 `arrays` 类似，区别在于数组使用索引来访问和修改数据，而对象中的数据是通过 `properties` 访问的。
+對象和 `arrays` 類似，區別在於數組使用索引來訪問和修改數據，而對象中的數據是通過 `properties` 訪問的。
 
-对象非常适合用来存储结构化数据，可以表示真实世界中的物体，比如一只猫。
+對象非常適合用來存儲結構化數據，可以表示真實世界中的物體，比如一隻貓。
 
-这里是一个猫对象的样本：
+這裏是一個貓對象的樣本：
 
 ```js
 var cat = {
@@ -26,7 +26,7 @@ var cat = {
 };
 ```
 
-在这个示例中，所有的属性都被纯属为字符串，比如 `name`、`legs` 和 `tails`。 然而，你也可以使用数字作为属性。 你甚至可以省略单字字符串属性中的引号，如下所示：
+在這個示例中，所有的屬性都被純屬爲字符串，比如 `name`、`legs` 和 `tails`。 然而，你也可以使用數字作爲屬性。 你甚至可以省略單字字符串屬性中的引號，如下所示：
 
 ```js
 var anotherObject = {
@@ -36,17 +36,17 @@ var anotherObject = {
 };
 ```
 
-然而，如果你的对象有非字符串属性的话，JavaScript 会自动将它们转为字符串。
+然而，如果你的對象有非字符串屬性的話，JavaScript 會自動將它們轉爲字符串。
 
 # --instructions--
 
-确保对象表示一只名为 `myDog` 的狗，包含属性 `name`（字符串）、`legs`、`tails` 和 `friends`。
+確保對象表示一隻名爲 `myDog` 的狗，包含屬性 `name`（字符串）、`legs`、`tails` 和 `friends`。
 
-你可以随意设置这些对象的属性值，只要 `name` 是字符串，`legs` 和 `tails` 是数字，`friends` 是数组即可。
+你可以隨意設置這些對象的屬性值，只要 `name` 是字符串，`legs` 和 `tails` 是數字，`friends` 是數組即可。
 
 # --hints--
 
-`myDog` 应该包含 `name` 属性，并且它应该是一个 `string`。
+`myDog` 應該包含 `name` 屬性，並且它應該是一個 `string`。
 
 ```js
 assert(
@@ -64,7 +64,7 @@ assert(
 );
 ```
 
-`myDog`应该包含 `legs` 属性，并且它应该是一个 `number`。
+`myDog`應該包含 `legs` 屬性，並且它應該是一個 `number`。
 
 ```js
 assert(
@@ -82,7 +82,7 @@ assert(
 );
 ```
 
-`myDog` 应该包含 `tails` 属性，并且它应该是一个 `number`。
+`myDog` 應該包含 `tails` 屬性，並且它應該是一個 `number`。
 
 ```js
 assert(
@@ -100,7 +100,7 @@ assert(
 );
 ```
 
-`myDog` 应该包含 `friends` 属性，并且它应该是一个 `array`。
+`myDog` 應該包含 `friends` 屬性，並且它應該是一個 `array`。
 
 ```js
 assert(
@@ -118,7 +118,7 @@ assert(
 );
 ```
 
-`myDog` 只应该包含所有给定的属性。
+`myDog` 只應該包含所有給定的屬性。
 
 ```js
 assert(

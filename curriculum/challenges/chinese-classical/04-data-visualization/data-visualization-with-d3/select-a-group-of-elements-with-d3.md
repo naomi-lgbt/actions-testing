@@ -1,6 +1,6 @@
 ---
 id: 587d7fa6367417b2b2512bc3
-title: 用 D3 选择一组元素
+title: 用 D3 選擇一組元素
 challengeType: 6
 forumTopicId: 301490
 dashedName: select-a-group-of-elements-with-d3
@@ -8,19 +8,19 @@ dashedName: select-a-group-of-elements-with-d3
 
 # --description--
 
-`selectAll()` 方法选择一组元素。 它以 HTML 节点数组的形式返回该文本中所有匹配所输入字符串的对象。 以下是一个选择文本中所有锚标签的例子：
+`selectAll()` 方法選擇一組元素。 它以 HTML 節點數組的形式返回該文本中所有匹配所輸入字符串的對象。 以下是一個選擇文本中所有錨標籤的例子：
 
 `const anchors = d3.selectAll("a");`
 
-像 `select()` 方法一样，`selectAll()` 也支持链式调用，你可以在它之后调用其他方法。
+像 `select()` 方法一樣，`selectAll()` 也支持鏈式調用，你可以在它之後調用其他方法。
 
 # --instructions--
 
-选择所有的 `li` 标签，通过 `.text()` 方法将它们的文本改为 `list item`。
+選擇所有的 `li` 標籤，通過 `.text()` 方法將它們的文本改爲 `list item`。
 
 # --hints--
 
-页面上应该有 3 个 `li` 元素，每个元素的文本内容应为 `list item`。 大小写和空格必须一致。
+頁面上應該有 3 個 `li` 元素，每個元素的文本內容應爲 `list item`。 大小寫和空格必須一致。
 
 ```js
 assert(
@@ -30,13 +30,13 @@ assert(
 );
 ```
 
-应该能访问 `d3` 的对象。
+應該能訪問 `d3` 的對象。
 
 ```js
 assert(code.match(/d3/g));
 ```
 
-应该使用 `selectAll` 方法。
+應該使用 `selectAll` 方法。
 
 ```js
 assert(code.match(/\.selectAll/g));

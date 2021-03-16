@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036181
-title: 介绍内联样式
+title: 介紹內聯樣式
 challengeType: 6
 forumTopicId: 301395
 dashedName: introducing-inline-styles
@@ -8,29 +8,29 @@ dashedName: introducing-inline-styles
 
 # --description--
 
-还有其他复杂的概念可以为 React 代码增加强大的功能。 但是，你可能会想知道更简单的问题，比如：如何对在 React 中创建的 JSX 元素添加样式。 你可能知道，由于[将 class 应用于 JSX 元素的方式](/learn/front-end-libraries/react/define-an-html-class-in-jsx)与 HTML 中的使用并不完全相同。
+還有其他複雜的概念可以爲 React 代碼增加強大的功能。 但是，你可能會想知道更簡單的問題，比如：如何對在 React 中創建的 JSX 元素添加樣式。 你可能知道，由於[將 class 應用於 JSX 元素的方式](/learn/front-end-libraries/react/define-an-html-class-in-jsx)與 HTML 中的使用並不完全相同。
 
-如果从样式表导入样式，它就没有太大的不同。 使用 `className` 属性将 class 应用于 JSX 元素，并将样式应用于样式表中的 class。 另一种选择是使用内联样式，这在 ReactJS 开发中非常常见。
+如果從樣式表導入樣式，它就沒有太大的不同。 使用 `className` 屬性將 class 應用於 JSX 元素，並將樣式應用於樣式表中的 class。 另一種選擇是使用內聯樣式，這在 ReactJS 開發中非常常見。
 
-将内联样式应用于 JSX 元素，类似于在 HTML 中的操作方式，但有一些 JSX 差异。 以下是 HTML 中内联样式的示例：
+將內聯樣式應用於 JSX 元素，類似於在 HTML 中的操作方式，但有一些 JSX 差異。 以下是 HTML 中內聯樣式的示例：
 
 `<div style="color: yellow; font-size: 16px">Mellow Yellow</div>`
 
-JSX 元素使用 `style` 属性，但是由于 JSX 的编译方式，不能将值设置为 `string`（字符串）。 相反，你应将其设置为 JavaScript `object`（对象）。 这里有一个例子：
+JSX 元素使用 `style` 屬性，但是由於 JSX 的編譯方式，不能將值設置爲 `string`（字符串）。 相反，你應將其設置爲 JavaScript `object`（對象）。 這裏有一個例子：
 
 `<div style={{color: "yellow", fontSize: 16}}>Mellow Yellow</div>`
 
-请注意如何驼峰拼写 `fontSize` 属性？ 这是因为 React 不接受下划线分隔的样式对象。 React 将在 HTML 中编译为正确的属性名称。
+請注意如何駝峯拼寫 `fontSize` 屬性？ 這是因爲 React 不接受下劃線分隔的樣式對象。 React 將在 HTML 中編譯爲正確的屬性名稱。
 
 # --instructions--
 
-在代码编辑器的 `div` 中添加一个 `style` 属性，使文本颜色为红色，字体大小为 `72px`。
+在代碼編輯器的 `div` 中添加一個 `style` 屬性，使文本顏色爲紅色，字體大小爲 `72px`。
 
-请注意，可以选择将字体大小设置为数字，省略单位 `px`，或者将其写为 `72px`。
+請注意，可以選擇將字體大小設置爲數字，省略單位 `px`，或者將其寫爲 `72px`。
 
 # --hints--
 
-组件应该渲染一个 `div` 元素。
+組件應該渲染一個 `div` 元素。
 
 ```js
 assert(
@@ -41,7 +41,7 @@ assert(
 );
 ```
 
-`div` 元素的颜色应该是 `red`（红色）。
+`div` 元素的顏色應該是 `red`（紅色）。
 
 ```js
 assert(
@@ -52,7 +52,7 @@ assert(
 );
 ```
 
-`div` 元素的字体大小应为 `72px`。
+`div` 元素的字體大小應爲 `72px`。
 
 ```js
 assert(

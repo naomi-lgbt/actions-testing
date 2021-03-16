@@ -1,6 +1,6 @@
 ---
 id: 587d78a7367417b2b2512adf
-title: 了解 CSS 的关键帧和动画是如何工作的
+title: 瞭解 CSS 的關鍵幀和動畫是如何工作的
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cakprhv'
 forumTopicId: 301059
@@ -9,13 +9,13 @@ dashedName: learn-how-the-css-keyframes-and-animation-properties-work
 
 # --description--
 
-如果要给元素添加动画，你需要了解 animation 属性以及 `@keyframes` 规则。 animation 属性控制动画的外观，`@keyframes` 规则控制动画中各阶段的变化。 总共有 8 个 animation 属性。 为了便于理解，本挑战中我们只会暂时涉及到两个最常用的属性。
+如果要給元素添加動畫，你需要了解 animation 屬性以及 `@keyframes` 規則。 animation 屬性控制動畫的外觀，`@keyframes` 規則控制動畫中各階段的變化。 總共有 8 個 animation 屬性。 爲了便於理解，本挑戰中我們只會暫時涉及到兩個最常用的屬性。
 
-`animation-name` 用来设置动画的名称，也就是我们稍后要在 `@keyframes` 里用到的名称。
+`animation-name` 用來設置動畫的名稱，也就是我們稍後要在 `@keyframes` 裏用到的名稱。
 
-`animation-duration` 设置动画所花费的时间。
+`animation-duration` 設置動畫所花費的時間。
 
-`@keyframes` 可以通过设置特定时间点的行为来创建动画。 为此，我们只需要给持续时间内的特定帧（从 0% 到 100%）加上 CSS 规则。 如果用一部电影来做类比，那么 CSS 里面的 0% 关键帧就像是电影里面的开场镜头；100% 关键帧就像是电影里的片尾，就是那个之后会出现演职人员列表的片尾。 在动画设定的时间内，CSS 会根据关键帧的规则来给元素添加动画效果。 100% 位置的 CSS 属性就是元素最后的样子，相当于电影里的演职员表或者鸣谢镜头。 然后CSS 应用魔法来在给定的时间内转换元素以使其脱离场景。 下面举例说明 `@keyframes` 和动画属性的用法：
+`@keyframes` 可以通過設置特定時間點的行爲來創建動畫。 爲此，我們只需要給持續時間內的特定幀（從 0% 到 100%）加上 CSS 規則。 如果用一部電影來做類比，那麼 CSS 裏面的 0% 關鍵幀就像是電影裏面的開場鏡頭；100% 關鍵幀就像是電影裏的片尾，就是那個之後會出現演職人員列表的片尾。 在動畫設定的時間內，CSS 會根據關鍵幀的規則來給元素添加動畫效果。 100% 位置的 CSS 屬性就是元素最後的樣子，相當於電影裏的演職員表或者鳴謝鏡頭。 然後CSS 應用魔法來在給定的時間內轉換元素以使其脫離場景。 下面舉例說明 `@keyframes` 和動畫屬性的用法：
 
 ```css
 #anim {
@@ -33,45 +33,45 @@ dashedName: learn-how-the-css-keyframes-and-animation-properties-work
 }
 ```
 
-id 为 `anim` 的元素，我们在代码中将它的 `animation-name` 设置为 `colorful`，同时设置 `animation-duration` 为 3 秒。 然后我们把 `@keyframes` 规则添加到名为 `colorful` 的动画属性上。 在动画开始时（0%）的背景颜色为蓝色，在动画结束时（100%）的背景颜色为黄色。 注意我们不只可以设置开始和结束，而是从 0% 到 100% 间的任意位置都可以设置。
+id 爲 `anim` 的元素，我們在代碼中將它的 `animation-name` 設置爲 `colorful`，同時設置 `animation-duration` 爲 3 秒。 然後我們把 `@keyframes` 規則添加到名爲 `colorful` 的動畫屬性上。 在動畫開始時（0%）的背景顏色爲藍色，在動畫結束時（100%）的背景顏色爲黃色。 注意我們不只可以設置開始和結束，而是從 0% 到 100% 間的任意位置都可以設置。
 
 # --instructions--
 
-给 id 为 `rect` 的元素添加动画，设置其 `animation-name` 为 `rainbow`，设置其 `animation-duration` 为 4 秒。 然后声明 `@keyframes` 规则，设置动画开始时（`0%`）的 `background-color` 为蓝色，动画中间时（`50%`）为绿色，动画结束时（`100%`）为为黄色。
+給 id 爲 `rect` 的元素添加動畫，設置其 `animation-name` 爲 `rainbow`，設置其 `animation-duration` 爲 4 秒。 然後聲明 `@keyframes` 規則，設置動畫開始時（`0%`）的 `background-color` 爲藍色，動畫中間時（`50%`）爲綠色，動畫結束時（`100%`）爲爲黃色。
 
 # --hints--
 
-id 为 `rect` 的元素应该有一个值为 `rainbow` 的 `animation-name` 属性。
+id 爲 `rect` 的元素應該有一個值爲 `rainbow` 的 `animation-name` 屬性。
 
 ```js
 assert($('#rect').css('animation-name') == 'rainbow');
 ```
 
-id 为 `rect` 的元素应该有一个值为 4s 的 `animation-duration` 属性。
+id 爲 `rect` 的元素應該有一個值爲 4s 的 `animation-duration` 屬性。
 
 ```js
 assert($('#rect').css('animation-duration') == '4s');
 ```
 
-`@keyframes` 规则的 `animation-name` 应为 `rainbow`。
+`@keyframes` 規則的 `animation-name` 應爲 `rainbow`。
 
 ```js
 assert(code.match(/@keyframes\s+?rainbow\s*?{/g));
 ```
 
-`@keyframes` 规则的 `rainbow` 在 0% 时的 `background-color` 应为 `blue`。
+`@keyframes` 規則的 `rainbow` 在 0% 時的 `background-color` 應爲 `blue`。
 
 ```js
 assert(code.match(/0%\s*?{\s*?background-color:\s*?blue;\s*?}/gi));
 ```
 
-`@keyframes` 规则的 `rainbow` 在 50% 时的 `background-color` 应为 `green`。
+`@keyframes` 規則的 `rainbow` 在 50% 時的 `background-color` 應爲 `green`。
 
 ```js
 assert(code.match(/50%\s*?{\s*?background-color:\s*?green;\s*?}/gi));
 ```
 
-`@keyframes` 规则的 rainbow 在 100% 时的 `background-color` 应为 `yellow`。
+`@keyframes` 規則的 rainbow 在 100% 時的 `background-color` 應爲 `yellow`。
 
 ```js
 assert(code.match(/100%\s*?{\s*?background-color:\s*?yellow;\s*?}/gi));

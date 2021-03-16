@@ -1,6 +1,6 @@
 ---
 id: 587d78b1367417b2b2512b09
-title: 使图片自适应设备尺寸
+title: 使圖片自適應設備尺寸
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pzrPu4/cz763UD'
 forumTopicId: 301140
@@ -9,7 +9,7 @@ dashedName: make-an-image-responsive
 
 # --description--
 
-用 CSS 来让图片自适应其实很简单。 你只需要给图片添加这些属性:
+用 CSS 來讓圖片自適應其實很簡單。 你只需要給圖片添加這些屬性:
 
 ```css
 img {
@@ -18,21 +18,21 @@ img {
 }
 ```
 
-设置 `max-width` 值为 `100%` 可确保图片不超出父容器的范围；设置 `height` 属性为 `auto` 可以保持图片的原始宽高比。
+設置 `max-width` 值爲 `100%` 可確保圖片不超出父容器的範圍；設置 `height` 屬性爲 `auto` 可以保持圖片的原始寬高比。
 
 # --instructions--
 
-给 `responsive-img` 添加样式规则，使其成为响应式的图片。 它不应该超出父容器（在本例中，即预览窗口）的范围，并保持宽高比不变。 添加代码后，拖动浏览器窗口，看看图片发生什么变化。
+給 `responsive-img` 添加樣式規則，使其成爲響應式的圖片。 它不應該超出父容器（在本例中，即預覽窗口）的範圍，並保持寬高比不變。 添加代碼後，拖動瀏覽器窗口，看看圖片發生什麼變化。
 
 # --hints--
 
-`responsive-img` 类应将 `max-width` 设置为 `100%`。
+`responsive-img` 類應將 `max-width` 設置爲 `100%`。
 
 ```js
 assert(getComputedStyle($('.responsive-img')[0]).maxWidth === '100%');
 ```
 
-`responsive-img` 类应将 `height` 设置为 `auto`。
+`responsive-img` 類應將 `height` 設置爲 `auto`。
 
 ```js
 assert(code.match(/height:\s*?auto;/g));

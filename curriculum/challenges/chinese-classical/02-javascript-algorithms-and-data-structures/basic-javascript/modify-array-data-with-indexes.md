@@ -1,6 +1,6 @@
 ---
 id: cf1111c1c11feddfaeb8bdef
-title: 通过索引修改数组中的数据
+title: 通過索引修改數組中的數據
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/czQM4A8'
 forumTopicId: 18241
@@ -9,7 +9,7 @@ dashedName: modify-array-data-with-indexes
 
 # --description--
 
-与字符串的数据不可变不同，数组的数据是可变的（ <dfn>mutable</dfn>），可以自由地改变。
+與字符串的數據不可變不同，數組的數據是可變的（ <dfn>mutable</dfn>），可以自由地改變。
 
 **示例**
 
@@ -18,17 +18,17 @@ var ourArray = [50,40,30];
 ourArray[0] = 15;
 ```
 
-`ourArray` 值为 `[15, 40, 30]`。
+`ourArray` 值爲 `[15, 40, 30]`。
 
-**注意：**数组名与方括号之间不应该有任何空格，比如`array [0]` 。 尽管 JavaScript 能够正确处理这种情况，但是当其他程序员阅读你写的代码时，这可能让他们感到困惑。
+**注意：**數組名與方括號之間不應該有任何空格，比如`array [0]` 。 儘管 JavaScript 能夠正確處理這種情況，但是當其他程序員閱讀你寫的代碼時，這可能讓他們感到困惑。
 
 # --instructions--
 
-将数组 `myArray`中索引为 `0`上的值修改为 `45`。
+將數組 `myArray`中索引爲 `0`上的值修改爲 `45`。
 
 # --hints--
 
-`myArray` 应该等于 `[45,64,99]`。
+`myArray` 應該等於 `[45,64,99]`。
 
 ```js
 assert(
@@ -47,7 +47,7 @@ assert(
 );
 ```
 
-你应该使用正确的索引修改 `myArray` 的值。
+你應該使用正確的索引修改 `myArray` 的值。
 
 ```js
 assert(

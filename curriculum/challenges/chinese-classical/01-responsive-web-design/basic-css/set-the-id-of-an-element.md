@@ -1,6 +1,6 @@
 ---
 id: bad87eee1348bd9aede07836
-title: 设置元素的 id
+title: 設置元素的 id
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cN6MEc2'
 forumTopicId: 18279
@@ -9,23 +9,23 @@ dashedName: set-the-id-of-an-element
 
 # --description--
 
-除了 class 属性，每一个 HTML 元素都有一个 `id` 属性。
+除了 class 屬性，每一個 HTML 元素都有一個 `id` 屬性。
 
-使用 `id` 有几个好处：你可以通过 `id` 选择器来改变单个元素的样式。在稍后的课程中，你还会了解到如何在 JavaScript 里面用它来选择和操作元素。
+使用 `id` 有幾個好處：你可以通過 `id` 選擇器來改變單個元素的樣式。在稍後的課程中，你還會了解到如何在 JavaScript 裏面用它來選擇和操作元素。
 
-根据规范，`id` 属性应是唯一的。 尽管浏览器并非必须执行这条规范，但这是广泛认可的最佳实践。 因此，请不要给多个元素设置相同的 `id`。
+根據規範，`id` 屬性應是唯一的。 儘管瀏覽器並非必須執行這條規範，但這是廣泛認可的最佳實踐。 因此，請不要給多個元素設置相同的 `id`。
 
-设置 `h2` 元素的 id 为 `cat-photo-app` 的代码如下：
+設置 `h2` 元素的 id 爲 `cat-photo-app` 的代碼如下：
 
 `<h2 id="cat-photo-app">`
 
 # --instructions--
 
-请将 `form` 元素的 id 设置为 `cat-photo-form`。
+請將 `form` 元素的 id 設置爲 `cat-photo-form`。
 
 # --hints--
 
-`form` 元素的 id 应为 `cat-photo-form`。
+`form` 元素的 id 應爲 `cat-photo-form`。
 
 ```js
 assert($('form').attr('id') === 'cat-photo-form');

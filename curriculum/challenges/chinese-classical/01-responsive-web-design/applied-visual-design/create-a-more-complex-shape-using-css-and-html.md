@@ -1,6 +1,6 @@
 ---
 id: 587d78a6367417b2b2512ade
-title: 使用 CSS 和 HTML 创建更复杂的形状
+title: 使用 CSS 和 HTML 創建更復雜的形狀
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cPpz4fr'
 forumTopicId: 301050
@@ -9,7 +9,7 @@ dashedName: create-a-more-complex-shape-using-css-and-html
 
 # --description--
 
-世界上最流行的形状非心形莫属了，在本挑战中我们将用纯 CSS 创建一个心形。 但是首先你需要了解伪元素 `::before` 和 `::after`。 伪元素可以在所选元素之前或之后添加一些内容。 在下面的代码中，`::before` 伪元素用来给 class 为 `heart` 的元素添加一个正方形：
+世界上最流行的形狀非心形莫屬了，在本挑戰中我們將用純 CSS 創建一個心形。 但是首先你需要了解僞元素 `::before` 和 `::after`。 僞元素可以在所選元素之前或之後添加一些內容。 在下面的代碼中，`::before` 僞元素用來給 class 爲 `heart` 的元素添加一個正方形：
 
 ```css
 .heart::before {
@@ -24,19 +24,19 @@ dashedName: create-a-more-complex-shape-using-css-and-html
 }
 ```
 
-`::before` 和 `::after` 必须配合 `content` 来使用。 这个属性通常用来给元素添加内容诸如图片或者文字。 尽管有时 `::before` 和 `::after` 是用来实现形状而非文字，但 `content` 属性仍然是必需的，此时它的值可以是空字符串。 在上面的例子里，class 为 `heart` 元素的 `::before` 伪类添加了一个黄色的长方形，长方形的高和宽分别为 `50px` 和 `70px`。 这个矩形有圆角，因为它的 `border-radius` 为 25%，它的位置是绝对位置，位于离元素左边和顶部分别是 `5px`、`50px` 的位置。
+`::before` 和 `::after` 必須配合 `content` 來使用。 這個屬性通常用來給元素添加內容諸如圖片或者文字。 儘管有時 `::before` 和 `::after` 是用來實現形狀而非文字，但 `content` 屬性仍然是必需的，此時它的值可以是空字符串。 在上面的例子裏，class 爲 `heart` 元素的 `::before` 僞類添加了一個黃色的長方形，長方形的高和寬分別爲 `50px` 和 `70px`。 這個矩形有圓角，因爲它的 `border-radius` 爲 25%，它的位置是絕對位置，位於離元素左邊和頂部分別是 `5px`、`50px` 的位置。
 
 # --instructions--
 
-把屏幕里的元素变成心形。 在 `heart::after` 选择器里，把 `background-color` 改成 `pink`，把 `border-radius` 改成 50%。
+把屏幕裏的元素變成心形。 在 `heart::after` 選擇器裏，把 `background-color` 改成 `pink`，把 `border-radius` 改成 50%。
 
-接下来，用类选择器选取 class 为 `heart`（只是 `heart`）的元素，为它添加 `transform` 属性。 使用 `rotate()` 函数并设置角度为 -45 度。
+接下來，用類選擇器選取 class 爲 `heart`（只是 `heart`）的元素，爲它添加 `transform` 屬性。 使用 `rotate()` 函數並設置角度爲 -45 度。
 
-最后，在 `heart::before` 选择器里面，设置 `content` 属性值为空字符串。
+最後，在 `heart::before` 選擇器裏面，設置 `content` 屬性值爲空字符串。
 
 # --hints--
 
-`heart::after` 选择器的 `background-color` 属性值应为 `pink`。
+`heart::after` 選擇器的 `background-color` 屬性值應爲 `pink`。
 
 ```js
 const heartAfter = code.match(/\.heart::after\s*{[\s\S]+?[^\}]}/g)[0];
@@ -45,19 +45,19 @@ assert(
 );
 ```
 
-`heart::after` 伪元素的 `border-radius` 属性值应为 50%。
+`heart::after` 僞元素的 `border-radius` 屬性值應爲 50%。
 
 ```js
 assert(code.match(/border-radius\s*?:\s*?50%/gi).length == 2);
 ```
 
-class 为 `heart` 的元素的 `transform` 属性应使用 `rotate()` 函数并传入参数 -45 度。
+class 爲 `heart` 的元素的 `transform` 屬性應使用 `rotate()` 函數並傳入參數 -45 度。
 
 ```js
 assert(code.match(/transform\s*?:\s*?rotate\(\s*?-45deg\s*?\)/gi));
 ```
 
-`heart::before` 伪元素的 `content` 应为空字符串。
+`heart::before` 僞元素的 `content` 應爲空字符串。
 
 ```js
 assert(code.match(/\.heart::before\s*?{\s*?content\s*?:\s*?("|')\1\s*?;/gi));

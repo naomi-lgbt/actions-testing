@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244d2
-title: 不等运算符
+title: 不等運算符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cdBm9Sr'
 forumTopicId: 16787
@@ -9,7 +9,7 @@ dashedName: comparison-with-the-inequality-operator
 
 # --description--
 
-不相等运算符（`!=`）与相等运算符是相反的。 这意味着严格不相等并返回 `false` 的地方，用严格相等运算符会返回 `true`，*反之亦然*。 与相等运算符类似，不相等运算符在比较的时候也会转换值的数据类型。
+不相等運算符（`!=`）與相等運算符是相反的。 這意味着嚴格不相等並返回 `false` 的地方，用嚴格相等運算符會返回 `true`，*反之亦然*。 與相等運算符類似，不相等運算符在比較的時候也會轉換值的數據類型。
 
 **例如**
 
@@ -21,45 +21,45 @@ dashedName: comparison-with-the-inequality-operator
 0 != false
 ```
 
-按顺序，这些表达式会返回 `true`、`false`、`false`、`false` 和 `false`。
+按順序，這些表達式會返回 `true`、`false`、`false`、`false` 和 `false`。
 
 # --instructions--
 
-在 `if` 语句中，添加不相等运算符 `!=`，这样函数在当 `val` 不等于 `99` 的时候，会返回 `Not Equal`。
+在 `if` 語句中，添加不相等運算符 `!=`，這樣函數在當 `val` 不等於 `99` 的時候，會返回 `Not Equal`。
 
 # --hints--
 
-`testNotEqual(99)` 应该返回字符串 `Equal`
+`testNotEqual(99)` 應該返回字符串 `Equal`
 
 ```js
 assert(testNotEqual(99) === 'Equal');
 ```
 
-`testNotEqual("99")` 应该返回字符串 `Equal`
+`testNotEqual("99")` 應該返回字符串 `Equal`
 
 ```js
 assert(testNotEqual('99') === 'Equal');
 ```
 
-`testNotEqual(12)` 应该返回字符串 `Not Equal`
+`testNotEqual(12)` 應該返回字符串 `Not Equal`
 
 ```js
 assert(testNotEqual(12) === 'Not Equal');
 ```
 
-`testNotEqual("12")` 应该返回字符串 `Not Equal`
+`testNotEqual("12")` 應該返回字符串 `Not Equal`
 
 ```js
 assert(testNotEqual('12') === 'Not Equal');
 ```
 
-`testNotEqual("bob")` 应该返回字符串 `Not Equal`
+`testNotEqual("bob")` 應該返回字符串 `Not Equal`
 
 ```js
 assert(testNotEqual('bob') === 'Not Equal');
 ```
 
-你应该使用 `!=` 运算符。
+你應該使用 `!=` 運算符。
 
 ```js
 assert(code.match(/(?!!==)!=/));

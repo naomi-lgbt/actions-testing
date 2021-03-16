@@ -1,6 +1,6 @@
 ---
 id: 587d7790367417b2b2512aaf
-title: 通过给元素添加 accesskey 属性来让用户可以在链接之间快速导航
+title: 通過給元素添加 accesskey 屬性來讓用戶可以在鏈接之間快速導航
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cQvmaTp'
 forumTopicId: 301021
@@ -9,39 +9,39 @@ dashedName: make-links-navigable-with-html-access-keys
 
 # --description--
 
-HTML 提供 `accesskey` 属性，用于指定激活元素或者使元素获得焦点的快捷键。 添加 `accesskey` 属性可以让使用键盘的用户更高效率地导航。
+HTML 提供 `accesskey` 屬性，用於指定激活元素或者使元素獲得焦點的快捷鍵。 添加 `accesskey` 屬性可以讓使用鍵盤的用戶更高效率地導航。
 
-HTML5 允许在任何标签上使用这个属性。 该属性尤其适用于链接、按钮、表单组件等元素。
+HTML5 允許在任何標籤上使用這個屬性。 該屬性尤其適用於鏈接、按鈕、表單組件等元素。
 
-举个例子：
+舉個例子：
 
 `<button accesskey="b">Important Button</button>`
 
 # --instructions--
 
-Camper Cat 希望为他两篇博客的标题链接设置快捷键，以使用户可以快速导航到文章的全文。 为两个链接添加一个 `accesskey` 属性，设置第一个的值为 `g`（代表 Garfield），设置第二的值为 `c`（代表 Chuck Norris）。
+Camper Cat 希望爲他兩篇博客的標題鏈接設置快捷鍵，以使用戶可以快速導航到文章的全文。 爲兩個鏈接添加一個 `accesskey` 屬性，設置第一個的值爲 `g`（代表 Garfield），設置第二的值爲 `c`（代表 Chuck Norris）。
 
 # --hints--
 
-`id` 为 `first` 的 `a` 标签应具有 `accesskey` 属性。
+`id` 爲 `first` 的 `a` 標籤應具有 `accesskey` 屬性。
 
 ```js
 assert($('#first').attr('accesskey'));
 ```
 
-`id` 为 `second` 的 `a` 标签应具有 `accesskey` 属性。
+`id` 爲 `second` 的 `a` 標籤應具有 `accesskey` 屬性。
 
 ```js
 assert($('#second').attr('accesskey'));
 ```
 
-`id` 为 `first` 的 `a` 标签的 `accesskey` 属性值应为 `g`。 注意使用小写。
+`id` 爲 `first` 的 `a` 標籤的 `accesskey` 屬性值應爲 `g`。 注意使用小寫。
 
 ```js
 assert($('#first').attr('accesskey') == 'g');
 ```
 
-`id` 为 `second` 的 `a` 标签的 `accesskey` 属性值应为 `c`。 注意使用小写。
+`id` 爲 `second` 的 `a` 標籤的 `accesskey` 屬性值應爲 `c`。 注意使用小寫。
 
 ```js
 assert($('#second').attr('accesskey') == 'c');

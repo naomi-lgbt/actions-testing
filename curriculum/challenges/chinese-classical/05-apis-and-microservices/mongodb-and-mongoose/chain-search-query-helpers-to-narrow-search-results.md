@@ -1,6 +1,6 @@
 ---
 id: 587d7fb9367417b2b2512c12
-title: 通过链式调用辅助查询函数来缩小搜索结果
+title: 通過鏈式調用輔助查詢函數來縮小搜索結果
 challengeType: 2
 forumTopicId: 301533
 dashedName: chain-search-query-helpers-to-narrow-search-results
@@ -8,15 +8,15 @@ dashedName: chain-search-query-helpers-to-narrow-search-results
 
 # --description--
 
-如果不给 `Model.find()`（或者别的搜索方法）的最后一个参数传入回调函数, 查询将不会执行。 可以将查询条件存储在变量中供以后使用， 也可以通过链式调用这类变量来构建新的查询字段。 实际的数据库操作会在最后调用 `.exec()` 方法时执行。 必须把回调函数传给最后一个方法。 Mongoose 提供了许多辅助查询函数, 这里使用最常见的一种。
+如果不給 `Model.find()`（或者別的搜索方法）的最後一個參數傳入回調函數, 查詢將不會執行。 可以將查詢條件存儲在變量中供以後使用， 也可以通過鏈式調用這類變量來構建新的查詢字段。 實際的數據庫操作會在最後調用 `.exec()` 方法時執行。 必須把回調函數傳給最後一個方法。 Mongoose 提供了許多輔助查詢函數, 這裏使用最常見的一種。
 
 # --instructions--
 
-修改 `queryChain` 函数来查询喜欢 `foodToSearch` 食物的人。 同时，需要将查询结果按 `name` 属性排序， 查询结果应限制在两个 document 内，并隐藏 age 属性。 请链式调用 `.find()`、`.sort()`、`.limit()` 和 `.select()`，并在最后调用 `.exec()`， 并将 `done(err, data)` 回调函数传入 `exec()`。
+修改 `queryChain` 函數來查詢喜歡 `foodToSearch` 食物的人。 同時，需要將查詢結果按 `name` 屬性排序， 查詢結果應限制在兩個 document 內，並隱藏 age 屬性。 請鏈式調用 `.find()`、`.sort()`、`.limit()` 和 `.select()`，並在最後調用 `.exec()`， 並將 `done(err, data)` 回調函數傳入 `exec()`。
 
 # --hints--
 
-应该成功地链式调用辅助查询函数。
+應該成功地鏈式調用輔助查詢函數。
 
 ```js
 (getUserInput) =>

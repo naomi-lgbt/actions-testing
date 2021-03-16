@@ -1,6 +1,6 @@
 ---
 id: 587d7fa8367417b2b2512bc9
-title: 动态更新元素的高度
+title: 動態更新元素的高度
 challengeType: 6
 forumTopicId: 301493
 dashedName: update-the-height-of-an-element-dynamically
@@ -8,71 +8,71 @@ dashedName: update-the-height-of-an-element-dynamically
 
 # --description--
 
-之前的挑战包括如何从数组中显示数据和如何添加 CSS 类。 将这些课程的内容结合起来，你就能创建出一个简单的条形图， 只需两步：
+之前的挑戰包括如何從數組中顯示數據和如何添加 CSS 類。 將這些課程的內容結合起來，你就能創建出一個簡單的條形圖， 只需兩步：
 
-1) 为每一个数组中的数据点都创建一个 `div`
+1) 爲每一個數組中的數據點都創建一個 `div`
 
-2) 为每个 `div` 动态分配高度值，在 `style()` 方法中使用回调函数将高度值设置为数据大小
+2) 爲每個 `div` 動態分配高度值，在 `style()` 方法中使用回調函數將高度值設置爲數據大小
 
-回想使用回调函数设置样式的格式：
+回想使用回調函數設置樣式的格式：
 
 `selection.style("cssProperty", (d) => d)`
 
 # --instructions--
 
-在编辑器中添加 `style()` 方法给每个元素设置 `height` 属性。 使用回调函数返回数据点的值，加上字符串 `px`。
+在編輯器中添加 `style()` 方法給每個元素設置 `height` 屬性。 使用回調函數返回數據點的值，加上字符串 `px`。
 
 # --hints--
 
-第一个 `div` 的 `height` 值应为 `12` 像素。
+第一個 `div` 的 `height` 值應爲 `12` 像素。
 
 ```js
 assert($('div').eq(0)[0].style.height === '12px');
 ```
 
-第二个 `div` 的 `height` 值应为 `31` 像素。
+第二個 `div` 的 `height` 值應爲 `31` 像素。
 
 ```js
 assert($('div').eq(1)[0].style.height === '31px');
 ```
 
-第三个 `div` 的 `height` 值应为 `22` 像素。
+第三個 `div` 的 `height` 值應爲 `22` 像素。
 
 ```js
 assert($('div').eq(2)[0].style.height === '22px');
 ```
 
-第四个 `div` 的 `height` 值应为 `17` 像素。
+第四個 `div` 的 `height` 值應爲 `17` 像素。
 
 ```js
 assert($('div').eq(3)[0].style.height === '17px');
 ```
 
-第五个 `div` 的 `height` 值应为 `25` 像素。
+第五個 `div` 的 `height` 值應爲 `25` 像素。
 
 ```js
 assert($('div').eq(4)[0].style.height === '25px');
 ```
 
-第六个 `div` 的 `height` 值应为 `18` 像素。
+第六個 `div` 的 `height` 值應爲 `18` 像素。
 
 ```js
 assert($('div').eq(5)[0].style.height === '18px');
 ```
 
-第七个 `div` 的 `height` 值应为 `29` 像素。
+第七個 `div` 的 `height` 值應爲 `29` 像素。
 
 ```js
 assert($('div').eq(6)[0].style.height === '29px');
 ```
 
-第八个 `div` 的 `height` 值应为 `14` 像素。
+第八個 `div` 的 `height` 值應爲 `14` 像素。
 
 ```js
 assert($('div').eq(7)[0].style.height === '14px');
 ```
 
-第九个 `div` 的 `height` 值应为 `9` 像素。
+第九個 `div` 的 `height` 值應爲 `9` 像素。
 
 ```js
 assert($('div').eq(8)[0].style.height === '9px');

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08814
-title: 用 border-radius 添加圆角边框
+title: 用 border-radius 添加圓角邊框
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cbZm2hg'
 forumTopicId: 16649
@@ -9,23 +9,23 @@ dashedName: add-rounded-corners-with-border-radius
 
 # --description--
 
-猫咪图片的四个角看起来很尖锐， 我们可以使用 `border-radius` 属性来让它变得圆润。
+貓咪圖片的四個角看起來很尖銳， 我們可以使用 `border-radius` 屬性來讓它變得圓潤。
 
 # --instructions--
 
-`border-radius` 的属性值单位可以是 px（像素）。 请将猫咪图片 `border-radius` 的属性值设置为 `10px`。
+`border-radius` 的屬性值單位可以是 px（像素）。 請將貓咪圖片 `border-radius` 的屬性值設置爲 `10px`。
 
-**注意：**这个挑战有多个解决方法。 例如，添加 `border-radius` 属性到 `.thick-green-border` 或 `.smaller-image` 都是可行的。
+**注意：**這個挑戰有多個解決方法。 例如，添加 `border-radius` 屬性到 `.thick-green-border` 或 `.smaller-image` 都是可行的。
 
 # --hints--
 
-图片元素应有 `thick-green-border` class。
+圖片元素應有 `thick-green-border` class。
 
 ```js
 assert($('img').hasClass('thick-green-border'));
 ```
 
-图片的边框半径应为 `10px`。
+圖片的邊框半徑應爲 `10px`。
 
 ```js
 assert(

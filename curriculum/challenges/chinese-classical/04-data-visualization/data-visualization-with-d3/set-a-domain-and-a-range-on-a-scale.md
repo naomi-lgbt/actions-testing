@@ -1,6 +1,6 @@
 ---
 id: 587d7fac367417b2b2512bdb
-title: 按比例设置域和范围
+title: 按比例設置域和範圍
 challengeType: 6
 forumTopicId: 301491
 dashedName: set-a-domain-and-a-range-on-a-scale
@@ -8,13 +8,13 @@ dashedName: set-a-domain-and-a-range-on-a-scale
 
 # --description--
 
-默认情况下，比例尺使用一对一关系（identity relationship）， 即输入值直接映射为输出值。 但是比例尺可以更灵活更有趣。
+默認情況下，比例尺使用一對一關係（identity relationship）， 即輸入值直接映射爲輸出值。 但是比例尺可以更靈活更有趣。
 
-假设有一个数据集范围为 50 到 480， 这是缩放的输入信息，也被称为<dfn>域</dfn>。
+假設有一個數據集範圍爲 50 到 480， 這是縮放的輸入信息，也被稱爲<dfn>域</dfn>。
 
-你想沿着 `x` 轴将这些点映射到 SVG 画布上，位置介于 10 个单位到 500 个单位之间。 这是输出信息，也被称为<dfn>范围</dfn>。
+你想沿着 `x` 軸將這些點映射到 SVG 畫布上，位置介於 10 個單位到 500 個單位之間。 這是輸出信息，也被稱爲<dfn>範圍</dfn>。
 
-`domain()` 和 `range()` 方法设置比例尺的值， 它们都接受一个至少有两个元素的数组作为参数。 下面是一个例子：
+`domain()` 和 `range()` 方法設置比例尺的值， 它們都接受一個至少有兩個元素的數組作爲參數。 下面是一個例子：
 
 ```js
 scale.domain([50, 480]);
@@ -26,43 +26,43 @@ scale(750)
 d3.scaleLinear()
 ```
 
-按顺序，将在控制台中显示以下值：`10`、`500`、`323.37` 和 `807.67`。
+按順序，將在控制檯中顯示以下值：`10`、`500`、`323.37` 和 `807.67`。
 
-注意，比例尺使用了域和范围之间的线性关系来找出给定数字的输出值。 域中的最小值（50）映射为范围中的最小值（10）。
+注意，比例尺使用了域和範圍之間的線性關係來找出給定數字的輸出值。 域中的最小值（50）映射爲範圍中的最小值（10）。
 
 # --instructions--
 
-创建一个比例尺，将它的域设置为 `[250, 500]`，范围设置为 `[10, 150]`。
+創建一個比例尺，將它的域設置爲 `[250, 500]`，範圍設置爲 `[10, 150]`。
 
-**注意：**你可以将 `domain()` 和 `range()` 方法串联在 `scale` 变量后。
+**注意：**你可以將 `domain()` 和 `range()` 方法串聯在 `scale` 變量後。
 
 # --hints--
 
-应使用 `domain()` 方法。
+應使用 `domain()` 方法。
 
 ```js
 assert(code.match(/\.domain/g));
 ```
 
-`scale` 的 `domain()` 应为 `[250, 500]`。
+`scale` 的 `domain()` 應爲 `[250, 500]`。
 
 ```js
 assert(JSON.stringify(scale.domain()) == JSON.stringify([250, 500]));
 ```
 
-应使用 `range()` 方法。
+應使用 `range()` 方法。
 
 ```js
 assert(code.match(/\.range/g));
 ```
 
-`scale` 的 `range()` 应为 `[10, 150]`。
+`scale` 的 `range()` 應爲 `[10, 150]`。
 
 ```js
 assert(JSON.stringify(scale.range()) == JSON.stringify([10, 150]));
 ```
 
-`h2` 的文本应为 `-102`。
+`h2` 的文本應爲 `-102`。
 
 ```js
 assert($('h2').text() == '-102');

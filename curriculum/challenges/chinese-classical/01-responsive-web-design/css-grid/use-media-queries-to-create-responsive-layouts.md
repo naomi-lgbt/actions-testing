@@ -1,6 +1,6 @@
 ---
 id: 5a94fe7769fb03452672e463
-title: 使用媒体查询创建响应式布局
+title: 使用媒體查詢創建響應式佈局
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cMbqeHk'
 forumTopicId: 301138
@@ -9,17 +9,17 @@ dashedName: use-media-queries-to-create-responsive-layouts
 
 # --description--
 
-将 CSS 网格与使用媒体查询结合使用，如使用媒体查询重新排列网格区域、更改网格尺寸以及重新排列网格项位置，我们可以让制作出的网站更具响应性。
+將 CSS 網格與使用媒體查詢結合使用，如使用媒體查詢重新排列網格區域、更改網格尺寸以及重新排列網格項位置，我們可以讓製作出的網站更具響應性。
 
-在右侧的预览区中，当网页可视区域的宽不小于 300px 时，列数从 1 变为 2。 并且，广告（advertisement）区域会完全占据左列。
+在右側的預覽區中，當網頁可視區域的寬不小於 300px 時，列數從 1 變爲 2。 並且，廣告（advertisement）區域會完全佔據左列。
 
 # --instructions--
 
-当网页可视区域的宽不小于 `400px` 时，请让 header 区域完全占据最顶行，footer 区域完全占据最底行。
+當網頁可視區域的寬不小於 `400px` 時，請讓 header 區域完全佔據最頂行，footer 區域完全佔據最底行。
 
 # --hints--
 
-当网页可视区域的宽度为 `400px` 或以上时，class 为 `container` 的元素应具有 `grid-template-areas` 属性，其属性值能够使 footer 和 header 区域分别占据顶行和底行，advert 和 content 区域分别占据中间行的左列和右列。
+當網頁可視區域的寬度爲 `400px` 或以上時，class 爲 `container` 的元素應具有 `grid-template-areas` 屬性，其屬性值能夠使 footer 和 header 區域分別佔據頂行和底行，advert 和 content 區域分別佔據中間行的左列和右列。
 
 ```js
 assert(

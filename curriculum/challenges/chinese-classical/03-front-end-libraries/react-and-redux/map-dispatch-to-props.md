@@ -8,9 +8,9 @@ dashedName: map-dispatch-to-props
 
 # --description--
 
-`mapDispatchToProps()` 函数可为 React 组件提供特定的创建 action 的函数，以便组件可 dispatch actions，从而更改 Redux store 中的数据。 该函数的结构跟上一挑战中的`mapStateToProps()`函数相似， 它返回一个对象，把 dispatch actions 映射到属性名上，该属性名成为`props`。 然而，每个属性都返回一个用 action creator 及与 action 相关的所有数据调用 `dispatch` 的函数，而不是返回 `state` 的一部分。 可以访问 `dispatch`，因为在定义函数时，我们以参数形式把它传入 `mapDispatchToProps()` 了，这跟 `state` 传入 `mapStateToProps()` 是一样的。 在幕后，React Redux 用 Redux 的 `store.dispatch()` 来管理这些含 `mapDispatchToProps()` 的dispatches， 这跟它使用 `store.subscribe()` 来订阅映射到 `state` 的组件的方式类似。
+`mapDispatchToProps()` 函數可爲 React 組件提供特定的創建 action 的函數，以便組件可 dispatch actions，從而更改 Redux store 中的數據。 該函數的結構跟上一挑戰中的`mapStateToProps()`函數相似， 它返回一個對象，把 dispatch actions 映射到屬性名上，該屬性名成爲`props`。 然而，每個屬性都返回一個用 action creator 及與 action 相關的所有數據調用 `dispatch` 的函數，而不是返回 `state` 的一部分。 可以訪問 `dispatch`，因爲在定義函數時，我們以參數形式把它傳入 `mapDispatchToProps()` 了，這跟 `state` 傳入 `mapStateToProps()` 是一樣的。 在幕後，React Redux 用 Redux 的 `store.dispatch()` 來管理這些含 `mapDispatchToProps()` 的dispatches， 這跟它使用 `store.subscribe()` 來訂閱映射到 `state` 的組件的方式類似。
 
-例如，创建 action 的函数 `loginUser()` 把 `username` 作为 action payload， `mapDispatchToProps()` 返回给创建 action 的函数的对象如下：
+例如，創建 action 的函數 `loginUser()` 把 `username` 作爲 action payload， `mapDispatchToProps()` 返回給創建 action 的函數的對象如下：
 
 ```jsx
 {
@@ -22,11 +22,11 @@ dashedName: map-dispatch-to-props
 
 # --instructions--
 
-编辑器上提供的是创建 action 的函数 `addMessage()`。 写出接收 `dispatch` 为参数的函数 `mapDispatchToProps()`，返回一个 dispatch 函数对象， 其属性为 `submitNewMessage`。该函数在 dispatch `addMessage()` 时为新消息提供一个参数。
+編輯器上提供的是創建 action 的函數 `addMessage()`。 寫出接收 `dispatch` 爲參數的函數 `mapDispatchToProps()`，返回一個 dispatch 函數對象， 其屬性爲 `submitNewMessage`。該函數在 dispatch `addMessage()` 時爲新消息提供一個參數。
 
 # --hints--
 
-`addMessage` 应返回含 `type` 和 `message` 两个键的对象。
+`addMessage` 應返回含 `type` 和 `message` 兩個鍵的對象。
 
 ```js
 assert(
@@ -40,19 +40,19 @@ assert(
 );
 ```
 
-`mapDispatchToProps` 应为函数。
+`mapDispatchToProps` 應爲函數。
 
 ```js
 assert(typeof mapDispatchToProps === 'function');
 ```
 
-`mapDispatchToProps` 应返回一个对象。
+`mapDispatchToProps` 應返回一個對象。
 
 ```js
 assert(typeof mapDispatchToProps() === 'object');
 ```
 
-从 `mapDispatchToProps` 通过 `submitNewMessage` 分发 `addMessage`，应向 dispatch 函数返回一条消息。
+從 `mapDispatchToProps` 通過 `submitNewMessage` 分發 `addMessage`，應向 dispatch 函數返回一條消息。
 
 ```js
 assert(

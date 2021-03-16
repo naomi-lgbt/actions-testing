@@ -1,6 +1,6 @@
 ---
 id: 587d7dac367417b2b2512b74
-title: 使用点符号来访问对象的属性
+title: 使用點符號來訪問對象的屬性
 challengeType: 1
 forumTopicId: 301333
 dashedName: use-dot-notation-to-access-the-properties-of-an-object
@@ -8,7 +8,7 @@ dashedName: use-dot-notation-to-access-the-properties-of-an-object
 
 # --description--
 
-最后一个挑战创建了一个具有各种属性的对象。 现在你会看到如何访问这些属性的值。 下面是一个示例：
+最後一個挑戰創建了一個具有各種屬性的對象。 現在你會看到如何訪問這些屬性的值。 下面是一個示例：
 
 ```js
 let duck = {
@@ -18,21 +18,21 @@ let duck = {
 console.log(duck.name);
 ```
 
-我们可以用“点号表示法”来访问对象的属性，`duck` 后面加上点号以及属性名 `name`，来访问到 `Aflac`。
+我們可以用“點號表示法”來訪問對象的屬性，`duck` 後面加上點號以及屬性名 `name`，來訪問到 `Aflac`。
 
 # --instructions--
 
-请在控制台里面输出 `dog` 对象中两个属性的值。
+請在控制檯裏面輸出 `dog` 對象中兩個屬性的值。
 
 # --hints--
 
-你应该使用 `console.log` 来将 `dog` 对象的 `name` 属性值输出到控制台。
+你應該使用 `console.log` 來將 `dog` 對象的 `name` 屬性值輸出到控制檯。
 
 ```js
 assert(/console.log\(.*dog\.name.*\)/g.test(code));
 ```
 
-你应该使用 `console.log` 来将 `dog` 对象的 `numLegs` 属性值输出到控制台。
+你應該使用 `console.log` 來將 `dog` 對象的 `numLegs` 屬性值輸出到控制檯。
 
 ```js
 assert(/console.log\(.*dog\.numLegs.*\)/g.test(code));

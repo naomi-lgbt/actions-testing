@@ -1,6 +1,6 @@
 ---
 id: 587d7b89367417b2b2512b49
-title: 使用解构赋值从对象中分配变量
+title: 使用解構賦值從對象中分配變量
 challengeType: 1
 forumTopicId: 301215
 dashedName: use-destructuring-assignment-to-assign-variables-from-objects
@@ -8,29 +8,29 @@ dashedName: use-destructuring-assignment-to-assign-variables-from-objects
 
 # --description--
 
-可以给解构的值赋予一个新的变量名， 通过在赋值的时候将新的变量名放在冒号后面来实现。
+可以給解構的值賦予一個新的變量名， 通過在賦值的時候將新的變量名放在冒號後面來實現。
 
-还是以上个例子的对象来举例：
+還是以上個例子的對象來舉例：
 
 ```js
 const user = { name: 'John Doe', age: 34 };
 ```
 
-这是指定新的变量名的例子：
+這是指定新的變量名的例子：
 
 ```js
 const { name: userName, age: userAge } = user;
 ```
 
-你可以这么理解这段代码：获取 `user.name` 的值，将它赋给一个新的变量 `userName`，等等。 `userName` 的值将是字符串 `John Doe`，`userAge` 的值将是数字 `34`。
+你可以這麼理解這段代碼：獲取 `user.name` 的值，將它賦給一個新的變量 `userName`，等等。 `userName` 的值將是字符串 `John Doe`，`userAge` 的值將是數字 `34`。
 
 # --instructions--
 
-使用解构赋值语句替换两个赋值语句。 将 `HIGH_TEMPERATURES` 的 `today` 和 `tomorrow` 的值赋值给 `highToday` 和 `highTomorrow`。
+使用解構賦值語句替換兩個賦值語句。 將 `HIGH_TEMPERATURES` 的 `today` 和 `tomorrow` 的值賦值給 `highToday` 和 `highTomorrow`。
 
 # --hints--
 
-应该移除 ES5 赋值语句。
+應該移除 ES5 賦值語句。
 
 ```js
 assert(
@@ -39,7 +39,7 @@ assert(
 );
 ```
 
-应该使用解构赋值语句创建 `highToday` 变量。
+應該使用解構賦值語句創建 `highToday` 變量。
 
 ```js
 assert(
@@ -49,7 +49,7 @@ assert(
 );
 ```
 
-应该使用解构赋值语句创建 `highTomorrow` 变量。
+應該使用解構賦值語句創建 `highTomorrow` 變量。
 
 ```js
 assert(
@@ -59,7 +59,7 @@ assert(
 );
 ```
 
-`highToday` 应该等于 `77`，`highTomorrow` 应该等于 `80`。
+`highToday` 應該等於 `77`，`highTomorrow` 應該等於 `80`。
 
 ```js
 assert(highToday === 77 && highTomorrow === 80);

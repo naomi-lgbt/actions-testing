@@ -1,6 +1,6 @@
 ---
 id: 587d7b7d367417b2b2512b1c
-title: 检查对象是否具有某个属性
+title: 檢查對象是否具有某個屬性
 challengeType: 1
 forumTopicId: 301155
 dashedName: check-if-an-object-has-a-property
@@ -8,22 +8,22 @@ dashedName: check-if-an-object-has-a-property
 
 # --description--
 
-我们已经学习了如何添加、修改和移除对象中的属性。 但如果我们想知道一个对象中是否包含某个属性呢？ JavaScript 为我们提供了两种不同的方式来实现这个功能： 一个是通过 `hasOwnProperty()` 方法，另一个是使用 `in` 关键字。 假如我们有一个 `users` 对象，为检查它是否含有 `Alan` 属性，可以这样写：
+我們已經學習瞭如何添加、修改和移除對象中的屬性。 但如果我們想知道一個對象中是否包含某個屬性呢？ JavaScript 爲我們提供了兩種不同的方式來實現這個功能： 一個是通過 `hasOwnProperty()` 方法，另一個是使用 `in` 關鍵字。 假如我們有一個 `users` 對象，爲檢查它是否含有 `Alan` 屬性，可以這樣寫：
 
 ```js
 users.hasOwnProperty('Alan');
 'Alan' in users;
 ```
 
-这两者结果都应该为 `true`。
+這兩者結果都應該爲 `true`。
 
 # --instructions--
 
-我们已经定义了一个包含若干用户信息的 `users` 对象和一个 `isEveryoneHere` 函数，该函数接收 `users` 对象作为参数。 请完成该函数使其在 `users` 对象中同时包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 四个属性时才返回 `true`，否则返回 `false`。
+我們已經定義了一個包含若干用戶信息的 `users` 對象和一個 `isEveryoneHere` 函數，該函數接收 `users` 對象作爲參數。 請完成該函數使其在 `users` 對象中同時包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 四個屬性時才返回 `true`，否則返回 `false`。
 
 # --hints--
 
-`users` 对象应该只包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 4 个属性。
+`users` 對象應該只包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 4 個屬性。
 
 ```js
 assert(
@@ -35,13 +35,13 @@ assert(
 );
 ```
 
-`isEveryoneHere` 函数在 `users` 对象包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 4 个属性时应返回 `true`。
+`isEveryoneHere` 函數在 `users` 對象包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 4 個屬性時應返回 `true`。
 
 ```js
 assert(isEveryoneHere(users) === true);
 ```
 
-`isEveryoneHere` 函数在 `users` 对象不包含 `Alan` 时应返回 `false`。
+`isEveryoneHere` 函數在 `users` 對象不包含 `Alan` 時應返回 `false`。
 
 ```js
 assert(
@@ -52,7 +52,7 @@ assert(
 );
 ```
 
-`isEveryoneHere` 函数在 `users` 对象不包含 `Jeff` 时应返回 `false`。
+`isEveryoneHere` 函數在 `users` 對象不包含 `Jeff` 時應返回 `false`。
 
 ```js
 assert(
@@ -63,7 +63,7 @@ assert(
 );
 ```
 
-`isEveryoneHere` 函数在 `users` 对象不包含 `Sarah` 时应返回 `false`。
+`isEveryoneHere` 函數在 `users` 對象不包含 `Sarah` 時應返回 `false`。
 
 ```js
 assert(
@@ -74,7 +74,7 @@ assert(
 );
 ```
 
-`isEveryoneHere` 函数在 `users` 对象不包含 `Ryan` 时应返回 `false`。
+`isEveryoneHere` 函數在 `users` 對象不包含 `Ryan` 時應返回 `false`。
 
 ```js
 assert(

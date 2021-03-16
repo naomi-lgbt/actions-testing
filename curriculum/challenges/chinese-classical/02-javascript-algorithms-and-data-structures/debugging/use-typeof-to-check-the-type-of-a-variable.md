@@ -1,6 +1,6 @@
 ---
 id: 587d7b84367417b2b2512b34
-title: 使用 type of 检查变量的类型
+title: 使用 type of 檢查變量的類型
 challengeType: 1
 forumTopicId: 18374
 dashedName: use-typeof-to-check-the-type-of-a-variable
@@ -8,7 +8,7 @@ dashedName: use-typeof-to-check-the-type-of-a-variable
 
 # --description--
 
-可以使用 `typeof` 检查变量的数据结构或类型。 在处理多种数据类型时，这会对调试很有帮助。 如果想计算两数之和，但实际传入了一个字符串参数，则结果可能是错误的。 类型错误可能隐藏在计算或函数调用中。 当你以 JavaScript 对象（JSON）的形式访问和使用外部数据时尤其要小心。
+可以使用 `typeof` 檢查變量的數據結構或類型。 在處理多種數據類型時，這會對調試很有幫助。 如果想計算兩數之和，但實際傳入了一個字符串參數，則結果可能是錯誤的。 類型錯誤可能隱藏在計算或函數調用中。 當你以 JavaScript 對象（JSON）的形式訪問和使用外部數據時尤其要小心。
 
 下面是使用 `typeof` 的一些示例：
 
@@ -19,29 +19,29 @@ console.log(typeof []);
 console.log(typeof {});
 ```
 
-控制台将按顺序显示字符串 `string`、`number`、`object` 和 `object`。
+控制檯將按順序顯示字符串 `string`、`number`、`object` 和 `object`。
 
-JavaScript 有六种原始（不可变）数据类型：`Boolean`、`Null`、`Undefined`、`Number`、`String` 和 `Symbol`（ES6 中新增的），和一种可变的数据类型：`Object`。 注意：在 JavaScript 中，数组在本质上是一种对象。
+JavaScript 有六種原始（不可變）數據類型：`Boolean`、`Null`、`Undefined`、`Number`、`String` 和 `Symbol`（ES6 中新增的），和一種可變的數據類型：`Object`。 注意：在 JavaScript 中，數組在本質上是一種對象。
 
 # --instructions--
 
-添加两个 `console.log()` 语句来检查代码中的两个变量 `seven` 和 `three` 的 `typeof` 值。
+添加兩個 `console.log()` 語句來檢查代碼中的兩個變量 `seven` 和 `three` 的 `typeof` 值。
 
 # --hints--
 
-应在两个 `console.log()` 语句中使用 `typeof` 来检查变量的类型。
+應在兩個 `console.log()` 語句中使用 `typeof` 來檢查變量的類型。
 
 ```js
 assert(code.match(/console\.log\(typeof[\( ].*\)?\)/g).length == 2);
 ```
 
-应使用 `typeof` 来检查变量 `seven` 的类型。
+應使用 `typeof` 來檢查變量 `seven` 的類型。
 
 ```js
 assert(code.match(/typeof[\( ]seven\)?/g));
 ```
 
-应使用 `typeof` 来检查变量 `three` 的类型。
+應使用 `typeof` 來檢查變量 `three` 的類型。
 
 ```js
 assert(code.match(/typeof[\( ]three\)?/g));

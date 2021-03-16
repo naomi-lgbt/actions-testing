@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedc08826
-title: 使用 jQuery class 选择器选择元素
+title: 使用 jQuery class 選擇器選擇元素
 challengeType: 6
 forumTopicId: 18316
 required:
@@ -11,29 +11,29 @@ dashedName: target-elements-by-class-using-jquery
 
 # --description--
 
-如何使所有的 `button` 标签都有弹跳的动画效果？ 用 `$("button")` 选取所有的 button 标签，并用 `.addClass("animated bounce");` 给其添加一些 CSS 属性。
+如何使所有的 `button` 標籤都有彈跳的動畫效果？ 用 `$("button")` 選取所有的 button 標籤，並用 `.addClass("animated bounce");` 給其添加一些 CSS 屬性。
 
-jQuery 的 `.addClass()` 方法用来给标签添加类。
+jQuery 的 `.addClass()` 方法用來給標籤添加類。
 
-首先，使用 `$(".well")` 选取类为 `well` 的 `div` 标签。
+首先，使用 `$(".well")` 選取類爲 `well` 的 `div` 標籤。
 
-值得注意的是，和 CSS 声明一样，在类名前需要添加 `.`。
+值得注意的是，和 CSS 聲明一樣，在類名前需要添加 `.`。
 
-然后，用 jQuery 的 `.addClass()` 方法添加 `animated` 和 `shake` class。
+然後，用 jQuery 的 `.addClass()` 方法添加 `animated` 和 `shake` class。
 
-例如，在 `document ready function` 中添加下面的代码，使所有类为 `text-primary` 的标签抖动：
+例如，在 `document ready function` 中添加下面的代碼，使所有類爲 `text-primary` 的標籤抖動：
 
 `$(".text-primary").addClass("animated shake");`
 
 # --hints--
 
-应该用 jQuery 的 `addClass()` 方法给所有 class 为 `well` 的标签添加 `animated` 和 `shake` 类。
+應該用 jQuery 的 `addClass()` 方法給所有 class 爲 `well` 的標籤添加 `animated` 和 `shake` 類。
 
 ```js
 assert($('.well').hasClass('animated') && $('.well').hasClass('shake'));
 ```
 
-应该仅用 jQuery 给标签添加 class。
+應該僅用 jQuery 給標籤添加 class。
 
 ```js
 assert(!code.match(/class\.\*animated/g));

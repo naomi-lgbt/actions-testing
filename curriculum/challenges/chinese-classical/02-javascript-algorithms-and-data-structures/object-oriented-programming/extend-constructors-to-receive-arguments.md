@@ -1,6 +1,6 @@
 ---
 id: 587d7dae367417b2b2512b79
-title: 扩展构造函数以接收参数
+title: 擴展構造函數以接收參數
 challengeType: 1
 forumTopicId: 18235
 dashedName: extend-constructors-to-receive-arguments
@@ -8,7 +8,7 @@ dashedName: extend-constructors-to-receive-arguments
 
 # --description--
 
-上一个挑战中 `Bird` 和 `Dog` 构造函数运行得不错。 但是，注意到没有：所有通过`Bird` 构造函数创建出来的实例 `Birds` 都自动的取名为 Albert，颜色都是蓝色，还都有两条腿。 如果你想要新创建出来的小鸟们拥有不同的名字和颜色要怎么办呢？ 当然，手动的去修改每一个小鸟实例自己的属性也是可以实现的，只是会增加很多无谓的工作量：
+上一個挑戰中 `Bird` 和 `Dog` 構造函數運行得不錯。 但是，注意到沒有：所有通過`Bird` 構造函數創建出來的實例 `Birds` 都自動的取名爲 Albert，顏色都是藍色，還都有兩條腿。 如果你想要新創建出來的小鳥們擁有不同的名字和顏色要怎麼辦呢？ 當然，手動的去修改每一個小鳥實例自己的屬性也是可以實現的，只是會增加很多無謂的工作量：
 
 ```js
 let swan = new Bird();
@@ -16,7 +16,7 @@ swan.name = "Carlos";
 swan.color = "white";
 ```
 
-假如你写了一个程序来追踪一个鸟舍里面的几百只甚至几千只不同的小鸟。 你将会花费很多时间去创建所有的小鸟实例并给它们的属性一一修改为不同的值。 为了减轻创建不同 `Bird` 对象的工作量，你可以给你的 Bird 设置为可以接收参数的构造函数：
+假如你寫了一個程序來追蹤一個鳥舍裏面的幾百只甚至幾千只不同的小鳥。 你將會花費很多時間去創建所有的小鳥實例並給它們的屬性一一修改爲不同的值。 爲了減輕創建不同 `Bird` 對象的工作量，你可以給你的 Bird 設置爲可以接收參數的構造函數：
 
 ```js
 function Bird(name, color) {
@@ -26,7 +26,7 @@ function Bird(name, color) {
 }
 ```
 
-然后将值通过参数的方式传递给 `Bird` 构造函数来定义每一个唯一的小鸟实例： `let cardinal = new Bird("Bruce", "red");` 这给 `Bird` 的 `name` 和 `color` 属性分别赋值为 `Bruce` 和 `red` 色。 但 `numLegs` 属性仍然设置为 2。 `cardinal` 有以下这些属性：
+然後將值通過參數的方式傳遞給 `Bird` 構造函數來定義每一個唯一的小鳥實例： `let cardinal = new Bird("Bruce", "red");` 這給 `Bird` 的 `name` 和 `color` 屬性分別賦值爲 `Bruce` 和 `red` 色。 但 `numLegs` 屬性仍然設置爲 2。 `cardinal` 有以下這些屬性：
 
 ```js
 cardinal.name
@@ -34,33 +34,33 @@ cardinal.color
 cardinal.numLegs
 ```
 
-这样一来构造函数就变得很灵活了。 现在可以在创建每个`Bird`实例时直接定义属性，这是 JavaScript 构造函数非常实用的用法之一。 它们根据共同或相似的属性和行为将对象归纳为一组，并能够自动的创建各自实例。
+這樣一來構造函數就變得很靈活了。 現在可以在創建每個`Bird`實例時直接定義屬性，這是 JavaScript 構造函數非常實用的用法之一。 它們根據共同或相似的屬性和行爲將對象歸納爲一組，並能夠自動的創建各自實例。
 
 # --instructions--
 
-创建另一个 `Dog` 构造函数。 这一次，给它设置两个参数：`name` 和 `color`，同时给 `numLegs` 赋值为 4。 然后创建一个新 `Dog` 实例保存为变量名：`terrier`。 再将两个字符串通过参数的形式传入`name` 和 `color` 属性。
+創建另一個 `Dog` 構造函數。 這一次，給它設置兩個參數：`name` 和 `color`，同時給 `numLegs` 賦值爲 4。 然後創建一個新 `Dog` 實例保存爲變量名：`terrier`。 再將兩個字符串通過參數的形式傳入`name` 和 `color` 屬性。
 
 # --hints--
 
-`Dog` 应该接收一个 `name` 参数。
+`Dog` 應該接收一個 `name` 參數。
 
 ```js
 assert(new Dog('Clifford').name === 'Clifford');
 ```
 
-`Dog` 应该接收一个 `color` 参数。
+`Dog` 應該接收一個 `color` 參數。
 
 ```js
 assert(new Dog('Clifford', 'yellow').color === 'yellow');
 ```
 
-`Dog` 应该有一个 `numLegs` 属性且值为 4。
+`Dog` 應該有一個 `numLegs` 屬性且值爲 4。
 
 ```js
 assert(new Dog('Clifford').numLegs === 4);
 ```
 
-`terrier` 应该是通过 `Dog` 构造函数创建的。
+`terrier` 應該是通過 `Dog` 構造函數創建的。
 
 ```js
 assert(terrier instanceof Dog);

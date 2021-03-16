@@ -1,6 +1,6 @@
 ---
 id: 587d7fae367417b2b2512be7
-title: 预先过滤 JSON 以获得所需的数据
+title: 預先過濾 JSON 以獲得所需的數據
 challengeType: 6
 forumTopicId: 18257
 dashedName: pre-filter-json-to-get-the-data-you-need
@@ -8,11 +8,11 @@ dashedName: pre-filter-json-to-get-the-data-you-need
 
 # --description--
 
-如果你不希望渲染每张从 freeCodeCamp Cat Photo API 取回的猫照片，你可以在循环先预先过滤 JSON 数据。
+如果你不希望渲染每張從 freeCodeCamp Cat Photo API 取回的貓照片，你可以在循環先預先過濾 JSON 數據。
 
-鉴于 JSON 数据存储在数组中，你可以使用 `filter` 方法过滤掉 `id` 键值为 `1` 的 cat。
+鑑於 JSON 數據存儲在數組中，你可以使用 `filter` 方法過濾掉 `id` 鍵值爲 `1` 的 cat。
 
-这是执行此操作的代码：
+這是執行此操作的代碼：
 
 ```js
 json = json.filter(function(val) {
@@ -22,11 +22,11 @@ json = json.filter(function(val) {
 
 # --instructions--
 
-添加代码以 `filter` json 数据，删除 `id` 值为 `1` 的 cat。
+添加代碼以 `filter` json 數據，刪除 `id` 值爲 `1` 的 cat。
 
 # --hints--
 
-应该使用 `filter` 方法。
+應該使用 `filter` 方法。
 
 ```js
 assert(code.match(/json\.filter/g));

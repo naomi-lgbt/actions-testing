@@ -1,6 +1,6 @@
 ---
 id: 587d7b8f367417b2b2512b61
-title: 使用 map 方法从数组中提取数据
+title: 使用 map 方法從數組中提取數據
 challengeType: 1
 forumTopicId: 18214
 dashedName: use-the-map-method-to-extract-data-from-an-array
@@ -8,19 +8,19 @@ dashedName: use-the-map-method-to-extract-data-from-an-array
 
 # --description--
 
-目前为止，我们已经学会了使用纯函数来避免程序中的副作用。 此外，我们已经看到函数的值仅取决于其输入参数。
+目前爲止，我們已經學會了使用純函數來避免程序中的副作用。 此外，我們已經看到函數的值僅取決於其輸入參數。
 
-这仅仅是个开始。 顾名思义，函数式编程以函数理论为中心。
+這僅僅是個開始。 顧名思義，函數式編程以函數理論爲中心。
 
-能够将它们作为参数传递给其他函数，从另一个函数返回一个函数是有意义的。 函数在 JavaScript 中被视为 <dfn>First Class Objects</dfn>，它们可以像任何其他对象一样使用。 它们可以保存在变量中，存储在对象中，也可以作为函数参数传递。
+能夠將它們作爲參數傳遞給其他函數，從另一個函數返回一個函數是有意義的。 函數在 JavaScript 中被視爲 <dfn>First Class Objects</dfn>，它們可以像任何其他對象一樣使用。 它們可以保存在變量中，存儲在對象中，也可以作爲函數參數傳遞。
 
-让我们从一些简单的数组函数开始，这些函数是数组对象原型上的方法。 在本练习中，我们来了解下数组的 `map` 方法（即 `Array.prototype.map()`）。
+讓我們從一些簡單的數組函數開始，這些函數是數組對象原型上的方法。 在本練習中，我們來了解下數組的 `map` 方法（即 `Array.prototype.map()`）。
 
-请记住，`map`方法是迭代数组中每一项的方式之一。 在对每个元素应用回调函数后，它会创建一个新数组(不改变原来的数组)。 它这样做时没有改变原始数组。
+請記住，`map`方法是迭代數組中每一項的方式之一。 在對每個元素應用回調函數後，它會創建一個新數組(不改變原來的數組)。 它這樣做時沒有改變原始數組。
 
-当调用回调函数时，传入了三个参数。 第一个参数是当前正在处理的数组项。 第二个参数是当前数组项的索引值，第三个参数是在其上调用 `map` 方法的数组。
+當調用回調函數時，傳入了三個參數。 第一個參數是當前正在處理的數組項。 第二個參數是當前數組項的索引值，第三個參數是在其上調用 `map` 方法的數組。
 
-看下在 `users` 上使用 `map` 方法的例子，返回了一个新数组只包含了用户的名字。 为了简化，例子里只使用了回调函数的第一个参数。
+看下在 `users` 上使用 `map` 方法的例子，返回了一個新數組只包含了用戶的名字。 爲了簡化，例子裏只使用了回調函數的第一個參數。
 
 ```js
 const users = [
@@ -33,15 +33,15 @@ const names = users.map(user => user.name);
 console.log(names);
 ```
 
-控制台将显示值 `[ 'John', 'Amy', 'camperCat' ]`。
+控制檯將顯示值 `[ 'John', 'Amy', 'camperCat' ]`。
 
 # --instructions--
 
-`watchList` 数组保存了包含一些电影信息的对象。 使用 `map` 从 `watchList` 中提取标题（`title`）和评分（`rating`），并将新数组保存在 `ratings` 变量里。 目前编辑器中的代码是使用 `for` 循环实现，使用 `map` 表达式替换循环功能。
+`watchList` 數組保存了包含一些電影信息的對象。 使用 `map` 從 `watchList` 中提取標題（`title`）和評分（`rating`），並將新數組保存在 `ratings` 變量裏。 目前編輯器中的代碼是使用 `for` 循環實現，使用 `map` 表達式替換循環功能。
 
 # --hints--
 
-`watchList` 应保持不变。
+`watchList` 應保持不變。
 
 ```js
 assert(
@@ -49,19 +49,19 @@ assert(
 );
 ```
 
-不能使用 `for` 循环。
+不能使用 `for` 循環。
 
 ```js
 assert(!__helpers.removeJSComments(code).match(/for\s*?\([\s\S]*?\)/));
 ```
 
-你的代码应使用 `map` 方法。
+你的代碼應使用 `map` 方法。
 
 ```js
 assert(code.match(/\.map/g));
 ```
 
-`ratings` 应等于 `[{"title":"Inception","rating":"8.8"},{"title":"Interstellar","rating":"8.6"},{"title":"The Dark Knight","rating":"9.0"},{"title":"Batman Begins","rating":"8.3"},{"title":"Avatar","rating":"7.9"}]`。
+`ratings` 應等於 `[{"title":"Inception","rating":"8.8"},{"title":"Interstellar","rating":"8.6"},{"title":"The Dark Knight","rating":"9.0"},{"title":"Batman Begins","rating":"8.3"},{"title":"Avatar","rating":"7.9"}]`。
 
 ```js
 assert.deepEqual(ratings, [

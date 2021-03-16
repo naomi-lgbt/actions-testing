@@ -1,6 +1,6 @@
 ---
 id: 587d7fae367417b2b2512be4
-title: 访问来自 API 的 JSON 数据
+title: 訪問來自 API 的 JSON 數據
 challengeType: 6
 forumTopicId: 301499
 dashedName: access-the-json-data-from-an-api
@@ -8,37 +8,37 @@ dashedName: access-the-json-data-from-an-api
 
 # --description--
 
-在前面的挑战中，你了解了如何从 freeCodeCamp Cat Photo API 获取 JSON 数据。
+在前面的挑戰中，你瞭解瞭如何從 freeCodeCamp Cat Photo API 獲取 JSON 數據。
 
-现在，你将进一步观察返回的数据，以更好地了解 JSON 格式。 回忆一下 JavaScript 中的一些符号：
+現在，你將進一步觀察返回的數據，以更好地瞭解 JSON 格式。 回憶一下 JavaScript 中的一些符號：
 
-<blockquote>[ ] -> 方括号表示数组<br>{ } -> 大括号表示对象<br>" " -> 双引号表示字符串， 它们还用于表示 JSON 中的键名</blockquote>
+<blockquote>[ ] -> 方括號表示數組<br>{ } -> 大括號表示對象<br>" " -> 雙引號表示字符串， 它們還用於表示 JSON 中的鍵名</blockquote>
 
-理解 API 返回数据的结构是必需的，它将影响你如何获取你所需的值。
+理解 API 返回數據的結構是必需的，它將影響你如何獲取你所需的值。
 
-在右侧，单击 `Get Message` 按钮，将 freeCodeCamp Cat Photo API JSON 加载到 HTML 中。
+在右側，單擊 `Get Message` 按鈕，將 freeCodeCamp Cat Photo API JSON 加載到 HTML 中。
 
-在 JSON 数据中的第一个和最后一个字符是中括号`[ ]`， 这意味着返回的数据是一个数组。 JSON 数据中的第二个符号是一个大括号`{`，这意味着是一个对象。 再仔细看，你会发现有三个独立的对象。 这个 JSON 数据是一个包含三个对象的数组，它们各自都包含了 cat photo 的信息。
+在 JSON 數據中的第一個和最後一個字符是中括號`[ ]`， 這意味着返回的數據是一個數組。 JSON 數據中的第二個符號是一個大括號`{`，這意味着是一個對象。 再仔細看，你會發現有三個獨立的對象。 這個 JSON 數據是一個包含三個對象的數組，它們各自都包含了 cat photo 的信息。
 
-你之前了解了对象包含了用逗号分隔的 "键值对"。 在 Cat Photo 示例中，第一个对象的 `"id":0`，`id` 是键，`0` 是对应的值。 类似地，`imageLink`、`altText` 和 `codeNames` 也有键。 每个 cat photo 对象具有相同的键，但具有不同的值。
+你之前瞭解了對象包含了用逗號分隔的 "鍵值對"。 在 Cat Photo 示例中，第一個對象的 `"id":0`，`id` 是鍵，`0` 是對應的值。 類似地，`imageLink`、`altText` 和 `codeNames` 也有鍵。 每個 cat photo 對象具有相同的鍵，但具有不同的值。
 
-在第一个对象中有一个有趣的 "键值对" 它是`"codeNames":["Juggernaut","Mrs. Wallace","ButterCup"]`。 `codeNames` 是键，它的值是一个包含三个字符串的数组。 对象数组以及数组作为键可以作为值
+在第一個對象中有一個有趣的 "鍵值對" 它是`"codeNames":["Juggernaut","Mrs. Wallace","ButterCup"]`。 `codeNames` 是鍵，它的值是一個包含三個字符串的數組。 對象數組以及數組作爲鍵可以作爲值
 
-记住如何访问数组和对象中的数据。 数组使用括号表示法来访问项目的特定索引， 对象使用括号或点表示法来访问给定属性的值。 这个例子打印第一张 cat photo 的 `altText` 属性——请注意，编辑器中解析的 JSON 数据被保存在名为 `json` 的变量中：
+記住如何訪問數組和對象中的數據。 數組使用括號表示法來訪問項目的特定索引， 對象使用括號或點表示法來訪問給定屬性的值。 這個例子打印第一張 cat photo 的 `altText` 屬性——請注意，編輯器中解析的 JSON 數據被保存在名爲 `json` 的變量中：
 
 ```js
 console.log(json[0].altText);
 ```
 
-控制台将显示字符串 `A white cat wearing a green helmet shaped melon on its head.`。
+控制檯將顯示字符串 `A white cat wearing a green helmet shaped melon on its head.`。
 
 # --instructions--
 
-对于 `id` 为 2 的 cat，在控制台打印 `codeNames` 数组中的第二个值。 你应该在对象（保存在变量 `json` 中）上使用括号或者点表示法来访问该值。
+對於 `id` 爲 2 的 cat，在控制檯打印 `codeNames` 數組中的第二個值。 你應該在對象（保存在變量 `json` 中）上使用括號或者點表示法來訪問該值。
 
 # --hints--
 
-应该使用括号和点表示法来读取正确的代码名称，并将 `Loki` 打印到控制台。
+應該使用括號和點表示法來讀取正確的代碼名稱，並將 `Loki` 打印到控制檯。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 587d7fad367417b2b2512be2
-title: 通过单击事件更改文本
+title: 通過單擊事件更改文本
 challengeType: 6
 forumTopicId: 301500
 dashedName: change-text-with-click-events
@@ -8,21 +8,21 @@ dashedName: change-text-with-click-events
 
 # --description--
 
-当点击事件发生时，你可以使用 JavaScript 更新 HTML 元素。
+當點擊事件發生時，你可以使用 JavaScript 更新 HTML 元素。
 
-例如，当用户点击 `Get Message` 按钮时，它将改变 class 为 `message` 的元素的文本为 `Here is the message`。
+例如，當用戶點擊 `Get Message` 按鈕時，它將改變 class 爲 `message` 的元素的文本爲 `Here is the message`。
 
-通过在点击事件内添加以下代码实现：
+通過在點擊事件內添加以下代碼實現：
 
 `document.getElementsByClassName('message')[0].textContent="Here is the message";`
 
 # --instructions--
 
-在 `onclick` 事件处理器中添加代码，改变 `message` 元素内的文本为 `Here is the message`。
+在 `onclick` 事件處理器中添加代碼，改變 `message` 元素內的文本爲 `Here is the message`。
 
 # --hints--
 
-应该使用 `document.getElementsByClassName` 方法来选择 class 为 `message` 的元素，然后将其 `textContent` 改为给定文字。
+應該使用 `document.getElementsByClassName` 方法來選擇 class 爲 `message` 的元素，然後將其 `textContent` 改爲給定文字。
 
 ```js
 assert(

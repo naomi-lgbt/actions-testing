@@ -1,6 +1,6 @@
 ---
 id: a77dbc43c33f39daa4429b4f
-title: 基本类型布尔值的检查
+title: 基本類型布爾值的檢查
 challengeType: 5
 forumTopicId: 16000
 dashedName: boo-who
@@ -8,67 +8,67 @@ dashedName: boo-who
 
 # --description--
 
-检查一个值是否是基本类型中的布尔值（boolean）类型。 函数应返回 `true` 或者 `false`。
+檢查一個值是否是基本類型中的布爾值（boolean）類型。 函數應返回 `true` 或者 `false`。
 
-基本类型中的布尔值为 `true` 或者 `false`。
+基本類型中的布爾值爲 `true` 或者 `false`。
 
 # --hints--
 
-`booWho(true)` 应返回 `true`。
+`booWho(true)` 應返回 `true`。
 
 ```js
 assert.strictEqual(booWho(true), true);
 ```
 
-`booWho(false)` 应该返回 `true`。
+`booWho(false)` 應該返回 `true`。
 
 ```js
 assert.strictEqual(booWho(false), true);
 ```
 
-`booWho([1, 2, 3])` 应该返回 `false`。
+`booWho([1, 2, 3])` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho([1, 2, 3]), false);
 ```
 
-`booWho([].slice)` 应该返回 `false`。
+`booWho([].slice)` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho([].slice), false);
 ```
 
-`booWho({ "a": 1 })` 应该返回 `false`。
+`booWho({ "a": 1 })` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho({ a: 1 }), false);
 ```
 
-`booWho(1)` 应该返回 `false`。
+`booWho(1)` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho(1), false);
 ```
 
-`booWho(NaN)` 应该返回 `false`。
+`booWho(NaN)` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho(NaN), false);
 ```
 
-`booWho("a")` 应该返回 `false`。
+`booWho("a")` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho('a'), false);
 ```
 
-`booWho("true")` 应该返回 `false`。
+`booWho("true")` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho('true'), false);
 ```
 
-`booWho("false")` 应该返回 `false`。
+`booWho("false")` 應該返回 `false`。
 
 ```js
 assert.strictEqual(booWho('false'), false);

@@ -1,6 +1,6 @@
 ---
 id: 587d7daf367417b2b2512b80
-title: 更改原型时，记得设置构造函数属性
+title: 更改原型時，記得設置構造函數屬性
 challengeType: 1
 forumTopicId: 301323
 dashedName: remember-to-set-the-constructor-property-when-changing-the-prototype
@@ -8,7 +8,7 @@ dashedName: remember-to-set-the-constructor-property-when-changing-the-prototype
 
 # --description--
 
-手动设置一个新对象的原型有一个重要的副作用。 它清除了 `constructor` 属性！ 此属性可以用来检查是哪个构造函数创建了实例，但由于该属性已被覆盖，它现在给出了错误的结果：
+手動設置一個新對象的原型有一個重要的副作用。 它清除了 `constructor` 屬性！ 此屬性可以用來檢查是哪個構造函數創建了實例，但由於該屬性已被覆蓋，它現在給出了錯誤的結果：
 
 ```js
 duck.constructor === Bird;
@@ -16,9 +16,9 @@ duck.constructor === Object;
 duck instanceof Bird;
 ```
 
-按顺序，这些表达式会返回 `false`、`true` 和 `true`。
+按順序，這些表達式會返回 `false`、`true` 和 `true`。
 
-为了解决这个问题，凡是手动给新对象重新设置过原型对象的，都别忘记在原型对象中定义一个 `constructor` 属性：
+爲了解決這個問題，凡是手動給新對象重新設置過原型對象的，都別忘記在原型對象中定義一個 `constructor` 屬性：
 
 ```js
 Bird.prototype = {
@@ -35,11 +35,11 @@ Bird.prototype = {
 
 # --instructions--
 
-给 `Dog` 的 `prototype` 对象定义一个 `constructor` 属性。
+給 `Dog` 的 `prototype` 對象定義一個 `constructor` 屬性。
 
 # --hints--
 
-`Dog.prototype` 应该定义一个 `constructor` 属性。
+`Dog.prototype` 應該定義一個 `constructor` 屬性。
 
 ```js
 assert(Dog.prototype.constructor === Dog);

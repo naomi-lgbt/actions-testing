@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244cd
-title: 访问嵌套数组
+title: 訪問嵌套數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cLeGDtZ'
 forumTopicId: 16160
@@ -9,9 +9,9 @@ dashedName: accessing-nested-arrays
 
 # --description--
 
-在之前的挑战中，我们学习了在对象中嵌套对象和数组。 与访问嵌套对象类似，数组的方括号可以用来对嵌套数组进行链式访问。
+在之前的挑戰中，我們學習了在對象中嵌套對象和數組。 與訪問嵌套對象類似，數組的方括號可以用來對嵌套數組進行鏈式訪問。
 
-下面是访问嵌套数组的例子：
+下面是訪問嵌套數組的例子：
 
 ```js
 var ourPets = [
@@ -36,21 +36,21 @@ ourPets[0].names[1];
 ourPets[1].names[0];
 ```
 
-`ourPets[0].names[1]` 应该是字符串 `Fluffy`， 并且 `ourPets[1].names[0]` 应该是字符串 `Spot`。
+`ourPets[0].names[1]` 應該是字符串 `Fluffy`， 並且 `ourPets[1].names[0]` 應該是字符串 `Spot`。
 
 # --instructions--
 
-使用对象的点号和数组的方括号从变量 `myPlants` 检索出第二棵树。
+使用對象的點號和數組的方括號從變量 `myPlants` 檢索出第二棵樹。
 
 # --hints--
 
-`secondTree` 应该等于字符串 `pine`。
+`secondTree` 應該等於字符串 `pine`。
 
 ```js
 assert(secondTree === 'pine');
 ```
 
-你的代码应该使用点号和方括号访问 `myPlants`。
+你的代碼應該使用點號和方括號訪問 `myPlants`。
 
 ```js
 assert(/=\s*myPlants\[1\].list\[1\]/.test(code));

@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036158
-title: 永不改变状态
+title: 永不改變狀態
 challengeType: 6
 forumTopicId: 301445
 dashedName: never-mutate-state
@@ -8,19 +8,19 @@ dashedName: never-mutate-state
 
 # --description--
 
-这些最后的挑战描述了在 Redux 中强制执行状态不变性关键原则的几种方法。 不可变状态意味着永远不直接修改状态，而是返回一个新的状态副本。
+這些最後的挑戰描述了在 Redux 中強制執行狀態不變性關鍵原則的幾種方法。 不可變狀態意味着永遠不直接修改狀態，而是返回一個新的狀態副本。
 
-如果拍摄 Redux 应用程序一段时间状态的快照，会看到类似 `state 1`，`state 2`，`state 3`，`state 4`，`...`等等，每个状态可能与最后一个状态相似，但每个状态都是一个独特的数据。 事实上，这种不变性提供了时间旅行调试等功能。
+如果拍攝 Redux 應用程序一段時間狀態的快照，會看到類似 `state 1`，`state 2`，`state 3`，`state 4`，`...`等等，每個狀態可能與最後一個狀態相似，但每個狀態都是一個獨特的數據。 事實上，這種不變性提供了時間旅行調試等功能。
 
-Redux 并没有主动地在其 store 或者 reducer 中强制执行状态不变性，责任落在程序员身上。 幸运的是，JavaScript（尤其是 ES6）提供了一些有用的工具，可以用来强制执行状态的不变性，无论是 `string`，`number`，`array` 或 `object`。 请注意，字符串和数字是原始值，并且本质上是不可变的。 换句话说，3 总是 3， 不能改变数字 3 的值。 然而，`array` 或 `object` 是可变的。 实际上，状态可能会包括 `array` 或 `object`，因为它们经常用来描述一些代表信息的数据结构。
+Redux 並沒有主動地在其 store 或者 reducer 中強制執行狀態不變性，責任落在程序員身上。 幸運的是，JavaScript（尤其是 ES6）提供了一些有用的工具，可以用來強制執行狀態的不變性，無論是 `string`，`number`，`array` 或 `object`。 請注意，字符串和數字是原始值，並且本質上是不可變的。 換句話說，3 總是 3， 不能改變數字 3 的值。 然而，`array` 或 `object` 是可變的。 實際上，狀態可能會包括 `array` 或 `object`，因爲它們經常用來描述一些代表信息的數據結構。
 
 # --instructions--
 
-代码编辑器中有一个 `store` 和 `reducer`，用于管理待办事项。 完成 reducer 里的 `ADD_TO_DO` 用例，使其可以将一个新的待办事项附加到 state。 使用通过标准 JavaScript 或 ES6 的一些方法实现此目的。 看看是否可以找到一种方法来返回一个新数组，其中来自 `action.todo` 的项目添加到数组的末尾。
+代碼編輯器中有一個 `store` 和 `reducer`，用於管理待辦事項。 完成 reducer 裏的 `ADD_TO_DO` 用例，使其可以將一個新的待辦事項附加到 state。 使用通過標準 JavaScript 或 ES6 的一些方法實現此目的。 看看是否可以找到一種方法來返回一個新數組，其中來自 `action.todo` 的項目添加到數組的末尾。
 
 # --hints--
 
-Redux store 应该在代码编辑器中存在并使用名字为 `todos` 的数组进行状态初始化。
+Redux store 應該在代碼編輯器中存在並使用名字爲 `todos` 的數組進行狀態初始化。
 
 ```js
 assert(
@@ -39,13 +39,13 @@ assert(
 );
 ```
 
-`addToDo` 和 `immutableReducer` 都应该是函数。
+`addToDo` 和 `immutableReducer` 都應該是函數。
 
 ```js
 assert(typeof addToDo === 'function' && typeof immutableReducer === 'function');
 ```
 
-在 Redux store 上 dispatch 一个类型为 `ADD_TO_DO` 的 aciton，应该添加一个 `todo` 项，并且不应该改变 state。
+在 Redux store 上 dispatch 一個類型爲 `ADD_TO_DO` 的 aciton，應該添加一個 `todo` 項，並且不應該改變 state。
 
 ```js
 assert(

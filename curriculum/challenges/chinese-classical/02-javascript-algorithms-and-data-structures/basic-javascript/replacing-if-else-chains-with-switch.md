@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244e0
-title: 用一个 Switch 语句来替代多个 if else 语句
+title: 用一個 Switch 語句來替代多個 if else 語句
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c3JE8fy'
 forumTopicId: 18266
@@ -9,7 +9,7 @@ dashedName: replacing-if-else-chains-with-switch
 
 # --description--
 
-如果你有多个选项需要选择，`switch` 语句写起来会比多个串联的 `if`/`else if` 语句容易些。 譬如:
+如果你有多個選項需要選擇，`switch` 語句寫起來會比多個串聯的 `if`/`else if` 語句容易些。 譬如:
 
 ```js
 if (val === 1) {
@@ -38,65 +38,65 @@ switch(val) {
 
 # --instructions--
 
-把串联的 `if`/`else if` 语句改成 `switch` 语句。
+把串聯的 `if`/`else if` 語句改成 `switch` 語句。
 
 # --hints--
 
-不要使用 `else` 表达式。
+不要使用 `else` 表達式。
 
 ```js
 assert(!/else/g.test(code));
 ```
 
-不要使用 `if` 表达式。
+不要使用 `if` 表達式。
 
 ```js
 assert(!/if/g.test(code));
 ```
 
-你应该有至少 4 个 `break` 表达式。
+你應該有至少 4 個 `break` 表達式。
 
 ```js
 assert(code.match(/break/g).length >= 4);
 ```
 
-`chainToSwitch("bob")` 应该是字符串 `Marley`
+`chainToSwitch("bob")` 應該是字符串 `Marley`
 
 ```js
 assert(chainToSwitch('bob') === 'Marley');
 ```
 
-`chainToSwitch(42)` 应该是字符串 `The Answer`
+`chainToSwitch(42)` 應該是字符串 `The Answer`
 
 ```js
 assert(chainToSwitch(42) === 'The Answer');
 ```
 
-`chainToSwitch(1)` 应该是字符串 `There is no #1`
+`chainToSwitch(1)` 應該是字符串 `There is no #1`
 
 ```js
 assert(chainToSwitch(1) === 'There is no #1');
 ```
 
-`chainToSwitch(99)`应该为 `Missed me by this much!`。
+`chainToSwitch(99)`應該爲 `Missed me by this much!`。
 
 ```js
 assert(chainToSwitch(99) === 'Missed me by this much!');
 ```
 
-`chainToSwitch(7)` 应该是字符串 `Ate Nine`
+`chainToSwitch(7)` 應該是字符串 `Ate Nine`
 
 ```js
 assert(chainToSwitch(7) === 'Ate Nine');
 ```
 
-`chainToSwitch("John")` 应该为 `""` (empty string)。
+`chainToSwitch("John")` 應該爲 `""` (empty string)。
 
 ```js
 assert(chainToSwitch('John') === '');
 ```
 
-`chainToSwitch(156)` 应该为 `""` (empty string)。
+`chainToSwitch(156)` 應該爲 `""` (empty string)。
 
 ```js
 assert(chainToSwitch(156) === '');

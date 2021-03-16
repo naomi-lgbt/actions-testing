@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392cf
-title: 用函数编写可重用代码
+title: 用函數編寫可重用代碼
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cL6dqfy'
 forumTopicId: 18378
@@ -9,9 +9,9 @@ dashedName: write-reusable-javascript-with-functions
 
 # --description--
 
-在 JavaScript 中，我们可以把代码的重复部分抽取出来，放到一个函数 （<dfn>functions</dfn>）中。
+在 JavaScript 中，我們可以把代碼的重複部分抽取出來，放到一個函數 （<dfn>functions</dfn>）中。
 
-举个例子：
+舉個例子：
 
 ```js
 function functionName() {
@@ -19,27 +19,27 @@ function functionName() {
 }
 ```
 
-你可以通过函数名加上后面的小括号来调用（<dfn>invoke</dfn>）这个函数，就像这样： `functionName();` 每次调用函数时，它都会在控制台上打印消息 `Hello World`。 每次调用函数时，大括号之间的所有代码都将被执行。
+你可以通過函數名加上後面的小括號來調用（<dfn>invoke</dfn>）這個函數，就像這樣： `functionName();` 每次調用函數時，它都會在控制檯上打印消息 `Hello World`。 每次調用函數時，大括號之間的所有代碼都將被執行。
 
 # --instructions--
 
-<ol><li>先创建一个名为 <code>reusableFunction</code> 的函数，这个函数可以打印 <code>"Hi World"</code> 到控制台上。</li><li>然后调用这个函数。</li></ol>
+<ol><li>先創建一個名爲 <code>reusableFunction</code> 的函數，這個函數可以打印 <code>"Hi World"</code> 到控制檯上。</li><li>然後調用這個函數。</li></ol>
 
 # --hints--
 
-`reusableFunction` 应该是一个函数。
+`reusableFunction` 應該是一個函數。
 
 ```js
 assert(typeof reusableFunction === 'function');
 ```
 
-`reusableFunction` 应该将字符串 `Hi World` 输出到控制台。
+`reusableFunction` 應該將字符串 `Hi World` 輸出到控制檯。
 
 ```js
 assert(hiWorldWasLogged);
 ```
 
-在你定义 `reusableFunction` 之后记得调用它。
+在你定義 `reusableFunction` 之後記得調用它。
 
 ```js
 assert(/^\s*reusableFunction\(\)\s*/m.test(code));

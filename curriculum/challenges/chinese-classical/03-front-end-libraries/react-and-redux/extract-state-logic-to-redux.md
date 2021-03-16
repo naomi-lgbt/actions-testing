@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036143
-title: 提取状态逻辑给 Redux
+title: 提取狀態邏輯給 Redux
 challengeType: 6
 forumTopicId: 301429
 dashedName: extract-state-logic-to-redux
@@ -8,23 +8,23 @@ dashedName: extract-state-logic-to-redux
 
 # --description--
 
-完成 React 组件后，我们需要把在本地 `state` 执行的逻辑移到 Redux 中， 这是为小规模 React 应用添加 Redux 的第一步。 该应用的唯一功能是把用户的新消息添加到无序列表中。 下面我们用简单的示例来演示 React 和 Redux 之间的配合。
+完成 React 組件後，我們需要把在本地 `state` 執行的邏輯移到 Redux 中， 這是爲小規模 React 應用添加 Redux 的第一步。 該應用的唯一功能是把用戶的新消息添加到無序列表中。 下面我們用簡單的示例來演示 React 和 Redux 之間的配合。
 
 # --instructions--
 
-首先，定义 action 的类型 `ADD`，将其设置为常量 `ADD`。 接着，定义创建 action 的函数`addMessage()`，用该函数创建添加消息的 action， 把 `message` 传给创建 action 的函数并返回包含该消息的 `action`
+首先，定義 action 的類型 `ADD`，將其設置爲常量 `ADD`。 接着，定義創建 action 的函數`addMessage()`，用該函數創建添加消息的 action， 把 `message` 傳給創建 action 的函數並返回包含該消息的 `action`
 
-接着，创建名为 `messageReducer()` 的 reducer 方法，为这些消息处理状态。 初始状态应为空数组。 reducer 向状态中的消息数组添加消息，或返回当前状态。 最后，创建 Redux store 并传给 reducer。
+接着，創建名爲 `messageReducer()` 的 reducer 方法，爲這些消息處理狀態。 初始狀態應爲空數組。 reducer 向狀態中的消息數組添加消息，或返回當前狀態。 最後，創建 Redux store 並傳給 reducer。
 
 # --hints--
 
-应存在一个值为字符串 `ADD` 的常量 `ADD`。
+應存在一個值爲字符串 `ADD` 的常量 `ADD`。
 
 ```js
 assert(ADD === 'ADD');
 ```
 
-创建 action 的函数 `addMessage` 应返回 `type` 等于 `ADD` 的对象，其返回的 `message` 即被传入的消息。
+創建 action 的函數 `addMessage` 應返回 `type` 等於 `ADD` 的對象，其返回的 `message` 即被傳入的消息。
 
 ```js
 assert(
@@ -35,13 +35,13 @@ assert(
 );
 ```
 
-`messageReducer` 应是一个函数。
+`messageReducer` 應是一個函數。
 
 ```js
 assert(typeof messageReducer === 'function');
 ```
 
-存在一个 store 且其初始状态为空数组。
+存在一個 store 且其初始狀態爲空數組。
 
 ```js
 assert(
@@ -52,7 +52,7 @@ assert(
 );
 ```
 
-分发 `addMessage` 到 store 应添加新消息到状态中消息数组。
+分發 `addMessage` 到 store 應添加新消息到狀態中消息數組。
 
 ```js
 assert(
@@ -66,7 +66,7 @@ assert(
 );
 ```
 
-`messageReducer` 被其它任何 actions 调用时应返回当前状态。
+`messageReducer` 被其它任何 actions 調用時應返回當前狀態。
 
 ```js
 assert(

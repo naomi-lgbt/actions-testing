@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf07756
-title: Important 的优先级最高
+title: Important 的優先級最高
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cm24rcp'
 forumTopicId: 18249
@@ -9,17 +9,17 @@ dashedName: override-all-other-styles-by-using-important
 
 # --description--
 
-耶！ 我们刚刚又证明了行内样式会覆盖 `style` 标签里面所有的 CSS 声明。
+耶！ 我們剛剛又證明了行內樣式會覆蓋 `style` 標籤裏面所有的 CSS 聲明。
 
-不过， 还有一种方式可以覆盖重新 CSS 样式。 这是所有方法里面最强大的一个。 在此之前，我们要考虑清楚，为什么我们要覆盖 CSS 样式。
+不過， 還有一種方式可以覆蓋重新 CSS 樣式。 這是所有方法裏面最強大的一個。 在此之前，我們要考慮清楚，爲什麼我們要覆蓋 CSS 樣式。
 
-很多时候，你会使用 CSS 库， CSS 库中的样式会意外覆盖你的 CSS 样式。 如果想保证你的 CSS 样式不受影响，你可以使用 `!important`。
+很多時候，你會使用 CSS 庫， CSS 庫中的樣式會意外覆蓋你的 CSS 樣式。 如果想保證你的 CSS 樣式不受影響，你可以使用 `!important`。
 
-让我们回到 `pink-text` 类声明。 `pink-text` 类的颜色样式已被之后的 class 声明、id 声明以及行内样式所覆盖。
+讓我們回到 `pink-text` 類聲明。 `pink-text` 類的顏色樣式已被之後的 class 聲明、id 聲明以及行內樣式所覆蓋。
 
 # --instructions--
 
-给粉红文本元素的颜色声明添加关键词 `!important`，以确保 `h1` 元素为粉红色。
+給粉紅文本元素的顏色聲明添加關鍵詞 `!important`，以確保 `h1` 元素爲粉紅色。
 
 如下所示：
 
@@ -27,31 +27,31 @@ dashedName: override-all-other-styles-by-using-important
 
 # --hints--
 
-`h1` 元素的应有一个 class 为 `pink-text`。
+`h1` 元素的應有一個 class 爲 `pink-text`。
 
 ```js
 assert($('h1').hasClass('pink-text'));
 ```
 
-`h1` 元素应该包含 `color: white` 的行内样式声明。
+`h1` 元素應該包含 `color: white` 的行內樣式聲明。
 
 ```js
 assert($('h1').hasClass('blue-text'));
 ```
 
-`h1` 元素应有 `id`， 值为 `orange-text`。
+`h1` 元素應有 `id`， 值爲 `orange-text`。
 
 ```js
 assert($('h1').attr('id') === 'orange-text');
 ```
 
-`h1` 元素应有一个内联样式 `color: white`。
+`h1` 元素應有一個內聯樣式 `color: white`。
 
 ```js
 assert(code.match(/<h1.*style/gi) && code.match(/<h1.*style.*color\s*?:/gi));
 ```
 
-`pink-text` 类应有 `!important` 关键词 ，以覆盖其他声明。
+`pink-text` 類應有 `!important` 關鍵詞 ，以覆蓋其他聲明。
 
 ```js
 assert(
@@ -59,7 +59,7 @@ assert(
 );
 ```
 
-`h1` 元素应为粉红色。
+`h1` 元素應爲粉紅色。
 
 ```js
 assert($('h1').css('color') === 'rgb(255, 192, 203)');

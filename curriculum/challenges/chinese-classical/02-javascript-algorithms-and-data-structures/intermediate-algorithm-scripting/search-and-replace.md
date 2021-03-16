@@ -1,6 +1,6 @@
 ---
 id: a0b5010f579e69b815e7c5d6
-title: 搜索与替换
+title: 搜索與替換
 challengeType: 5
 forumTopicId: 16045
 dashedName: search-and-replace
@@ -8,19 +8,19 @@ dashedName: search-and-replace
 
 # --description--
 
-在这道题目中，我们需要写一个字符串的搜索与替换函数，它的返回值为完成替换后的新字符串。
+在這道題目中，我們需要寫一個字符串的搜索與替換函數，它的返回值爲完成替換後的新字符串。
 
-这个函数接收的第一个参数为待替换的句子。
+這個函數接收的第一個參數爲待替換的句子。
 
-第二个参数为句中需要被替换的单词。
+第二個參數爲句中需要被替換的單詞。
 
-第三个参数为替换后的单词。
+第三個參數爲替換後的單詞。
 
-**注意：** 在更换原始单词时保留原始单词中第一个字符的大小写。 即如果传入的第二个参数为 `Book`，第三个参数为 `dog`，那么替换后的结果应为 `Dog`
+**注意：** 在更換原始單詞時保留原始單詞中第一個字符的大小寫。 即如果傳入的第二個參數爲 `Book`，第三個參數爲 `dog`，那麼替換後的結果應爲 `Dog`
 
 # --hints--
 
-`myReplace("Let us go to the store", "store", "mall")` 应返回 `Let us go to the mall`。
+`myReplace("Let us go to the store", "store", "mall")` 應返回 `Let us go to the mall`。
 
 ```js
 assert.deepEqual(
@@ -29,7 +29,7 @@ assert.deepEqual(
 );
 ```
 
-`myReplace("He is Sleeping on the couch", "Sleeping", "sitting")` 应返回 `He is Sitting on the couch`。
+`myReplace("He is Sleeping on the couch", "Sleeping", "sitting")` 應返回 `He is Sitting on the couch`。
 
 ```js
 assert.deepEqual(
@@ -38,7 +38,7 @@ assert.deepEqual(
 );
 ```
 
-`myReplace("I think we should look up there", "up", "Down")` 应返回 `I think we should look down there`。
+`myReplace("I think we should look up there", "up", "Down")` 應返回 `I think we should look down there`。
 
 ```js
 assert.deepEqual(
@@ -47,7 +47,7 @@ assert.deepEqual(
 );
 ```
 
-`myReplace("This has a spellngi error", "spellngi", "spelling")` 应返回 `This has a spelling error`。
+`myReplace("This has a spellngi error", "spellngi", "spelling")` 應返回 `This has a spelling error`。
 
 ```js
 assert.deepEqual(
@@ -56,7 +56,7 @@ assert.deepEqual(
 );
 ```
 
-`myReplace("His name is Tom", "Tom", "john")` 应返回 `His name is John`。
+`myReplace("His name is Tom", "Tom", "john")` 應返回 `His name is John`。
 
 ```js
 assert.deepEqual(
@@ -65,7 +65,7 @@ assert.deepEqual(
 );
 ```
 
-`myReplace("Let us get back to more Coding", "Coding", "algorithms")` 应返回 `Let us get back to more Algorithms`。
+`myReplace("Let us get back to more Coding", "Coding", "algorithms")` 應返回 `Let us get back to more Algorithms`。
 
 ```js
 assert.deepEqual(

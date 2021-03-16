@@ -1,6 +1,6 @@
 ---
 id: 587d7fb5367417b2b2512c04
-title: 从依赖项中删除依赖包
+title: 從依賴項中刪除依賴包
 challengeType: 2
 forumTopicId: 301530
 dashedName: remove-a-package-from-your-dependencies
@@ -8,17 +8,17 @@ dashedName: remove-a-package-from-your-dependencies
 
 # --description--
 
-已经尝试过一些通过项目 package.json 文件中依赖项管理依赖的方式了， 也添加了一些外部的依赖包到项目中，甚至通过一些特殊的字符比如波浪号或者脱字符来告诉 npm 想要的版本类型。
+已經嘗試過一些通過項目 package.json 文件中依賴項管理依賴的方式了， 也添加了一些外部的依賴包到項目中，甚至通過一些特殊的字符比如波浪號或者脫字符來告訴 npm 想要的版本類型。
 
-但是，如果想要删除不再需要的依赖包，该怎么办呢？ 可能已经猜到了——只需要从依赖项中删除相应的键值对就行了。
+但是，如果想要刪除不再需要的依賴包，該怎麼辦呢？ 可能已經猜到了——只需要從依賴項中刪除相應的鍵值對就行了。
 
-同样的方法也适用于删除 package.json 中的其它字段。
+同樣的方法也適用於刪除 package.json 中的其它字段。
 
 # --instructions--
 
-从依赖项中删除 moment 依赖包。
+從依賴項中刪除 moment 依賴包。
 
-**注意：**删除依赖包后，确保逗号数量正确。
+**注意：**刪除依賴包後，確保逗號數量正確。
 
 # --hints--
 

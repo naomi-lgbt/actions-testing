@@ -1,6 +1,6 @@
 ---
 id: 587d7789367417b2b2512aa4
-title: 使用 audio 元素提高音频内容的可访问性
+title: 使用 audio 元素提高音頻內容的可訪問性
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJVkcZ'
 forumTopicId: 301014
@@ -9,11 +9,11 @@ dashedName: improve-accessibility-of-audio-content-with-the-audio-element
 
 # --description--
 
-HTML5 的 `audio` 标签用于呈现音频内容或音频流，它也具有语义化特性。 音频内容也需要备用文本，供聋哑人或听力困难的人使用。 这可以通过页面上的文本或与字幕链接来实现。
+HTML5 的 `audio` 標籤用於呈現音頻內容或音頻流，它也具有語義化特性。 音頻內容也需要備用文本，供聾啞人或聽力困難的人使用。 這可以通過頁面上的文本或與字幕鏈接來實現。
 
-`audio` 标签支持 `controls` 属性， 用于显示浏览器默认播放、停止和其他控制，以及支持键盘功能。 这是一个布尔值属性，意味着它不需要一个值，它在标签上存在即开启设置。
+`audio` 標籤支持 `controls` 屬性， 用於顯示瀏覽器默認播放、停止和其他控制，以及支持鍵盤功能。 這是一個布爾值屬性，意味着它不需要一個值，它在標籤上存在即開啓設置。
 
-举个例子：
+舉個例子：
 
 ```html
 <audio id="meowClip" controls>
@@ -22,23 +22,23 @@ HTML5 的 `audio` 标签用于呈现音频内容或音频流，它也具有语�
 </audio>
 ```
 
-**注意：**多媒体内容通常同时包含音频与视频部分， 它需要同步的字幕，使视觉或听觉障碍用户可以获取它的内容。 一般情况下，网页开发者不负责创建字幕或逐字稿，但是需要将它们添加到多媒体中。
+**注意：**多媒體內容通常同時包含音頻與視頻部分， 它需要同步的字幕，使視覺或聽覺障礙用戶可以獲取它的內容。 一般情況下，網頁開發者不負責創建字幕或逐字稿，但是需要將它們添加到多媒體中。
 
 # --instructions--
 
-是时候让 Camper Cat 休息一下，并与朋友 Zersiax (@zersiax) 会面了。 Zersiax 是一位屏幕阅读器用户，同时也是无障碍设计的高手。 为了体验屏幕阅读器的朗读效果，请在 `p` 标签之后添加一个 `audio` 标签， 具有 `controls` 属性。 然后在 `audio` 标签里面放一个带有 `src` 属性的 `source` 标签，属性值为 `https://s3.amazonaws.com/freecodecamp/screen-reader.mp3`。将 `type` 属性设置为 `"audio/mpeg"`.
+是時候讓 Camper Cat 休息一下，並與朋友 Zersiax (@zersiax) 會面了。 Zersiax 是一位屏幕閱讀器用戶，同時也是無障礙設計的高手。 爲了體驗屏幕閱讀器的朗讀效果，請在 `p` 標籤之後添加一個 `audio` 標籤， 具有 `controls` 屬性。 然後在 `audio` 標籤裏面放一個帶有 `src` 屬性的 `source` 標籤，屬性值爲 `https://s3.amazonaws.com/freecodecamp/screen-reader.mp3`。將 `type` 屬性設置爲 `"audio/mpeg"`.
 
-**注意：**音频片段的播放速度可能会快到令我们难以理解，但是对于屏幕阅读器用户来说这是正常速度。
+**注意：**音頻片段的播放速度可能會快到令我們難以理解，但是對於屏幕閱讀器用戶來說這是正常速度。
 
 # --hints--
 
-应该包含一个 `audio` 标签。
+應該包含一個 `audio` 標籤。
 
 ```js
 assert($('audio').length === 1);
 ```
 
-确保 `audio` 元素有结束标签。
+確保 `audio` 元素有結束標籤。
 
 ```js
 assert(
@@ -47,25 +47,25 @@ assert(
 );
 ```
 
-`audio` 标签应存在 `controls` 属性。
+`audio` 標籤應存在 `controls` 屬性。
 
 ```js
 assert($('audio').attr('controls'));
 ```
 
-代码中应存在 `source` 标签。
+代碼中應存在 `source` 標籤。
 
 ```js
 assert($('source').length === 1);
 ```
 
-`source` 标签应位于 `audio` 标签中。
+`source` 標籤應位於 `audio` 標籤中。
 
 ```js
 assert($('audio').children('source').length === 1);
 ```
 
-`source` 标签中 `src` 的属性值应该与教程中的链接一致。
+`source` 標籤中 `src` 的屬性值應該與教程中的鏈接一致。
 
 ```js
 assert(
@@ -74,7 +74,7 @@ assert(
 );
 ```
 
-`source` 标签中应具有 `type` 属性，其属性值应为 audio/mpeg。
+`source` 標籤中應具有 `type` 屬性，其屬性值應爲 audio/mpeg。
 
 ```js
 assert($('source').attr('type') === 'audio/mpeg');

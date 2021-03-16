@@ -1,6 +1,6 @@
 ---
 id: 587d7b8d367417b2b2512b59
-title: 导入一个默认的导出
+title: 導入一個默認的導出
 challengeType: 1
 forumTopicId: 301205
 dashedName: import-a-default-export
@@ -8,21 +8,21 @@ dashedName: import-a-default-export
 
 # --description--
 
-在上一个挑战里，学习了 `export default` 的用法。 还需要一种 `import` 的语法来导入默认的导出。 在下面的例子里，`add` 是 `math_functions.js` 文件的默认导出。 以下是如何导入它：
+在上一個挑戰裏，學習了 `export default` 的用法。 還需要一種 `import` 的語法來導入默認的導出。 在下面的例子裏，`add` 是 `math_functions.js` 文件的默認導出。 以下是如何導入它：
 
 ```js
 import add from "./math_functions.js";
 ```
 
-这个语法有一处特别的地方， 被导入的 `add` 值没有被花括号（`{}`）所包围。 `add` 只是一个变量的名字，对应 `math_functions.js` 文件的任何默认导出值。 在导入默认导出时，可以使用任何名字。
+這個語法有一處特別的地方， 被導入的 `add` 值沒有被花括號（`{}`）所包圍。 `add` 只是一個變量的名字，對應 `math_functions.js` 文件的任何默認導出值。 在導入默認導出時，可以使用任何名字。
 
 # --instructions--
 
-在下面的代码中，导入同一目录中 `math_functions.js` 文件的默认导出。 导入变量的名字为 `subtract`。
+在下面的代碼中，導入同一目錄中 `math_functions.js` 文件的默認導出。 導入變量的名字爲 `subtract`。
 
 # --hints--
 
-应从 `math_functions.js` 中正确导入 `subtract`。
+應從 `math_functions.js` 中正確導入 `subtract`。
 
 ```js
 assert(code.match(/import\s+subtract\s+from\s+('|")\.\/math_functions\.js\1/g));

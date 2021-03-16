@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403616d
-title: 使用 PropTypes 来定义 Props 的类型
+title: 使用 PropTypes 來定義 Props 的類型
 challengeType: 6
 forumTopicId: 301419
 dashedName: use-proptypes-to-define-the-props-you-expect
@@ -8,23 +8,23 @@ dashedName: use-proptypes-to-define-the-props-you-expect
 
 # --description--
 
-React 提供了有用的类型检查特性，以验证组件是否接收了正确类型的 props。 例如，应用程序调用 API 来检索数据是否是数组，然后将数据作为 prop 传递给组件。 可以在组件上设置 `propTypes`，以要求数据的类型为 `array`。 当数据是任何其它类型时，都会抛出警告。
+React 提供了有用的類型檢查特性，以驗證組件是否接收了正確類型的 props。 例如，應用程序調用 API 來檢索數據是否是數組，然後將數據作爲 prop 傳遞給組件。 可以在組件上設置 `propTypes`，以要求數據的類型爲 `array`。 當數據是任何其它類型時，都會拋出警告。
 
-当提前知道 prop 的类型时，最佳实践是设置其 `propTypes`。 可以为组件定义 `propTypes` 属性，方法与定义 `defaultProps` 相同。 这样做将检查给定键的 prop 是否是给定类型。 这里有一个示例，表示名为 `handleClick` 的 prop 应为 `function` 类型：
+當提前知道 prop 的類型時，最佳實踐是設置其 `propTypes`。 可以爲組件定義 `propTypes` 屬性，方法與定義 `defaultProps` 相同。 這樣做將檢查給定鍵的 prop 是否是給定類型。 這裏有一個示例，表示名爲 `handleClick` 的 prop 應爲 `function` 類型：
 
 `MyComponent.propTypes = { handleClick: PropTypes.func.isRequired }`
 
-在上面的示例中，`PropTypes.func` 部分检查 `handleClick` 是否为函数。 添加 `isRequired` 是为了告诉 React `handleClick` 是该组件的必需属性。 如果未提供该 prop，将看到警告信息。 另请注意，`func` 表示 `function`。 在 7 种 JavaScript 基本类型中，`function` 和 `boolean`（写为 `bool`）是仅有的使用异常拼写的两种类型。 除了基本类型，还有其它类型可用。 例如，可以检查 prop 是否为 React 组件， 请参阅[文档](https://reactjs.org/docs/jsx-in-depth.html#specifying-the-react-element-type)以获取所有选项。
+在上面的示例中，`PropTypes.func` 部分檢查 `handleClick` 是否爲函數。 添加 `isRequired` 是爲了告訴 React `handleClick` 是該組件的必需屬性。 如果未提供該 prop，將看到警告信息。 另請注意，`func` 表示 `function`。 在 7 種 JavaScript 基本類型中，`function` 和 `boolean`（寫爲 `bool`）是僅有的使用異常拼寫的兩種類型。 除了基本類型，還有其它類型可用。 例如，可以檢查 prop 是否爲 React 組件， 請參閱[文檔](https://reactjs.org/docs/jsx-in-depth.html#specifying-the-react-element-type)以獲取所有選項。
 
-**注意：** 在 React v15.5.0 版本中, `PropTypes` 可以从 React 中单独引入，例如： `import PropTypes from 'prop-types';`。
+**注意：** 在 React v15.5.0 版本中, `PropTypes` 可以從 React 中單獨引入，例如： `import PropTypes from 'prop-types';`。
 
 # --instructions--
 
-为 `Items` 组件定义 `propTypes`，要求 `quantity` 作为 prop，并验证它是 `number` 类型。
+爲 `Items` 組件定義 `propTypes`，要求 `quantity` 作爲 prop，並驗證它是 `number` 類型。
 
 # --hints--
 
-应该渲染 `ShoppingCart` 组件。
+應該渲染 `ShoppingCart` 組件。
 
 ```js
 assert(
@@ -35,7 +35,7 @@ assert(
 );
 ```
 
-应该渲染 `Items` 组件。
+應該渲染 `Items` 組件。
 
 ```js
 assert(
@@ -46,7 +46,7 @@ assert(
 );
 ```
 
-`Items` 组件应该包含一个 `propTypes`，要求 `quantity` 有一个 number 类型的值。
+`Items` 組件應該包含一個 `propTypes`，要求 `quantity` 有一個 number 類型的值。
 
 ```js
 (getUserInput) =>

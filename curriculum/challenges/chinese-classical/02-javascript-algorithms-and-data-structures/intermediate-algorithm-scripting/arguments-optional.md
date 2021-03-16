@@ -1,6 +1,6 @@
 ---
 id: a97fd23d9b809dac9921074f
-title: 可选参数
+title: 可選參數
 challengeType: 5
 forumTopicId: 14271
 dashedName: arguments-optional
@@ -8,51 +8,51 @@ dashedName: arguments-optional
 
 # --description--
 
-创建一个将两个参数相加的函数。 如果只提供了一个参数，则返回一个需要一个参数并返回总和的函数。
+創建一個將兩個參數相加的函數。 如果只提供了一個參數，則返回一個需要一個參數並返回總和的函數。
 
-比如，`addTogether(2, 3)` 应该返回 `5`。 而 `addTogether(2)` 应该返回一个函数。
+比如，`addTogether(2, 3)` 應該返回 `5`。 而 `addTogether(2)` 應該返回一個函數。
 
-调用这个返回的函数，为它传入一个值，会返回两个值的总和：
+調用這個返回的函數，爲它傳入一個值，會返回兩個值的總和：
 
 `var sumTwoAnd = addTogether(2);`
 
-`sumTwoAnd(3)` 此时应返回 `5`。
+`sumTwoAnd(3)` 此時應返回 `5`。
 
-任何时候，只要任一传入的参数不是数字，就应返回 undefined。
+任何時候，只要任一傳入的參數不是數字，就應返回 undefined。
 
 # --hints--
 
-`addTogether(2, 3)` 应返回 5。
+`addTogether(2, 3)` 應返回 5。
 
 ```js
 assert.deepEqual(addTogether(2, 3), 5);
 ```
 
-`addTogether(23, 30)` 应返回 53。
+`addTogether(23, 30)` 應返回 53。
 
 ```js
 assert.deepEqual(addTogether(23, 30), 53);
 ```
 
-`addTogether(5)(7)` 应返回 12。
+`addTogether(5)(7)` 應返回 12。
 
 ```js
 assert.deepEqual(addTogether(5)(7), 12);
 ```
 
-`addTogether("http://bit.ly/IqT6zt")` 应返回 `undefined`。
+`addTogether("http://bit.ly/IqT6zt")` 應返回 `undefined`。
 
 ```js
 assert.isUndefined(addTogether('http://bit.ly/IqT6zt'));
 ```
 
-`addTogether(2, "3")` 应返回 `undefined`。
+`addTogether(2, "3")` 應返回 `undefined`。
 
 ```js
 assert.isUndefined(addTogether(2, '3'));
 ```
 
-`addTogether(2)([3])` 应返回 `undefined`。
+`addTogether(2)([3])` 應返回 `undefined`。
 
 ```js
 assert.isUndefined(addTogether(2)([3]));

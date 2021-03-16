@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08808
-title: 字体如何优雅降级
+title: 字體如何優雅降級
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cpVKBfQ'
 forumTopicId: 18304
@@ -9,11 +9,11 @@ dashedName: specify-how-fonts-should-degrade
 
 # --description--
 
-所有浏览器都有几种默认字体， 包括 `monospace`、`serif` 和 `sans-serif`。
+所有瀏覽器都有幾種默認字體， 包括 `monospace`、`serif` 和 `sans-serif`。
 
-在字体不可用的时候，你可以告诉浏览器通过“降级”去使用其他字体。
+在字體不可用的時候，你可以告訴瀏覽器通過“降級”去使用其他字體。
 
-如果你想将一个元素的字体设置成 `Helvetica`，但当 `Helvetica` 不可用时，降级使用 `sans-serif` 字体，那么可以这样写：
+如果你想將一個元素的字體設置成 `Helvetica`，但當 `Helvetica` 不可用時，降級使用 `sans-serif` 字體，那麼可以這樣寫：
 
 ```css
 p {
@@ -21,19 +21,19 @@ p {
 }
 ```
 
-通用字体名不区分大小写。 同时，也不需要使用引号，因为它们是 CSS 中的关键字。
+通用字體名不區分大小寫。 同時，也不需要使用引號，因爲它們是 CSS 中的關鍵字。
 
 # --instructions--
 
-首先，添加 `monospace` 字体到 `h2` 元素里，它现在拥有 `Lobster` 和 `monospace` 两种字体。
+首先，添加 `monospace` 字體到 `h2` 元素裏，它現在擁有 `Lobster` 和 `monospace` 兩種字體。
 
-在上一个挑战里，你已经通过 `link` 标签从谷歌字体库引入了 `Lobster` 字体。 现在让我们使用之前学习的 HTML 注释，将 `Lobster` 字体的引入注释掉，这样一来，这个引入的字体就会失效。 此时，你会发现 `h2` 元素降级到了 `monospace` 字体。
+在上一個挑戰裏，你已經通過 `link` 標籤從谷歌字體庫引入了 `Lobster` 字體。 現在讓我們使用之前學習的 HTML 註釋，將 `Lobster` 字體的引入註釋掉，這樣一來，這個引入的字體就會失效。 此時，你會發現 `h2` 元素降級到了 `monospace` 字體。
 
-**Note:** 如果你的电脑里已经安装了 `Lobster` 字体，你就看不到这个降级过程，因为浏览器会在你的电脑中找到该字体。
+**Note:** 如果你的電腦裏已經安裝了 `Lobster` 字體，你就看不到這個降級過程，因爲瀏覽器會在你的電腦中找到該字體。
 
 # --hints--
 
-h2 元素的字体应设置为 `Lobster`。
+h2 元素的字體應設置爲 `Lobster`。
 
 ```js
 assert(
@@ -43,7 +43,7 @@ assert(
 );
 ```
 
-当 `Lobster` 字体失效时，h2 元素应该降级使用 `monospace` 字体。
+當 `Lobster` 字體失效時，h2 元素應該降級使用 `monospace` 字體。
 
 ```js
 assert(
@@ -53,13 +53,13 @@ assert(
 );
 ```
 
-通过添加`<!--`，注释掉 `Lobster` 字体的引入。
+通過添加`<!--`，註釋掉 `Lobster` 字體的引入。
 
 ```js
 assert(new RegExp('<!--[^fc]', 'gi').test(code));
 ```
 
-确保注释要以 `-->` 结束。
+確保註釋要以 `-->` 結束。
 
 ```js
 assert(new RegExp('[^fc]-->', 'gi').test(code));

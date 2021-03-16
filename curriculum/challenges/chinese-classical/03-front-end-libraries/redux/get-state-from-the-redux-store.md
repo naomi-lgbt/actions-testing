@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403614c
-title: 从 Redux Store 获取状态
+title: 從 Redux Store 獲取狀態
 challengeType: 6
 forumTopicId: 301443
 dashedName: get-state-from-the-redux-store
@@ -8,21 +8,21 @@ dashedName: get-state-from-the-redux-store
 
 # --description--
 
-Redux store 对象提供了几种与之交互的方法， 比如，可以使用 `getState()` 方法检索 Redux store 对象中保存的当前 `state`。
+Redux store 對象提供了幾種與之交互的方法， 比如，可以使用 `getState()` 方法檢索 Redux store 對象中保存的當前 `state`。
 
 # --instructions--
 
-在代码编辑器中可以将上一个挑战中的代码更简洁地重写， 在 `store` 中使用 `store.getState()` 检索`state`，并将其分配给新变量 `currentState`。
+在代碼編輯器中可以將上一個挑戰中的代碼更簡潔地重寫， 在 `store` 中使用 `store.getState()` 檢索`state`，並將其分配給新變量 `currentState`。
 
 # --hints--
 
-Redux store 的 state 应该有一个初始值 5。
+Redux store 的 state 應該有一個初始值 5。
 
 ```js
 assert(store.getState() === 5);
 ```
 
-应该存在一个变量 `currentState`，并为其分配 Redux store 的当前状态。
+應該存在一個變量 `currentState`，併爲其分配 Redux store 的當前狀態。
 
 ```js
 (getUserInput) =>

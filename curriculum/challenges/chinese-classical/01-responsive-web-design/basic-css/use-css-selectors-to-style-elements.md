@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08805
-title: 使用元素选择器来设置元素的样式
+title: 使用元素選擇器來設置元素的樣式
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cJKMBT2'
 forumTopicId: 18349
@@ -9,20 +9,20 @@ dashedName: use-css-selectors-to-style-elements
 
 # --description--
 
-在 CSS 中，页面样式的属性有几百个，你可以用来改变元素在页面上的外观。
+在 CSS 中，頁面樣式的屬性有幾百個，你可以用來改變元素在頁面上的外觀。
 
-当你输入 `<h2 style="color: red;">CatPhotoApp</h2>`，就可以用行内 CSS 设置 `h2` 元素的样式。
+當你輸入 `<h2 style="color: red;">CatPhotoApp</h2>`，就可以用行內 CSS 設置 `h2` 元素的樣式。
 
-这是指定元素样式的一种方法，但有一个更好的方法来应用 CSS。
+這是指定元素樣式的一種方法，但有一個更好的方法來應用 CSS。
 
-在代码的顶部，创建一个 `style` 声明区域，如下方所示：
+在代碼的頂部，創建一個 `style` 聲明區域，如下方所示：
 
 ```html
 <style>
 </style>
 ```
 
-在样式声明区域内，可以为所有 `h2` 元素创建一个 <dfn>CSS selector</dfn>。 如果想让所有 `h2` 元素在变成红色，可以添加下方的样式规则：
+在樣式聲明區域內，可以爲所有 `h2` 元素創建一個 <dfn>CSS selector</dfn>。 如果想讓所有 `h2` 元素在變成紅色，可以添加下方的樣式規則：
 
 ```html
 <style>
@@ -32,39 +32,39 @@ dashedName: use-css-selectors-to-style-elements
 </style>
 ```
 
-请注意，每个元素的样式规则都应该有开始和结束大括号（`{` 和 `}`）。 还需要确保元素的样式定义在开始和结束样式标签之间。 你需要确保所有样式规则位于花括号之间，并且每条样式规则都以分号结束。
+請注意，每個元素的樣式規則都應該有開始和結束大括號（`{` 和 `}`）。 還需要確保元素的樣式定義在開始和結束樣式標籤之間。 你需要確保所有樣式規則位於花括號之間，並且每條樣式規則都以分號結束。
 
 # --instructions--
 
-请删除 `h2` 元素的行内样式，然后创建 `style` 样式声明区域， 最后添加 CSS 样式规则使所有 `h2` 元素变为蓝色。
+請刪除 `h2` 元素的行內樣式，然後創建 `style` 樣式聲明區域， 最後添加 CSS 樣式規則使所有 `h2` 元素變爲藍色。
 
 # --hints--
 
-应删除 `h2` 元素的 `style` 样式。
+應刪除 `h2` 元素的 `style` 樣式。
 
 ```js
 assert(!$('h2').attr('style'));
 ```
 
-应创建一个 `style` 样式声明区域。
+應創建一個 `style` 樣式聲明區域。
 
 ```js
 assert($('style') && $('style').length >= 1);
 ```
 
-`h2` 元素颜色应为蓝色。
+`h2` 元素顏色應爲藍色。
 
 ```js
 assert($('h2').css('color') === 'rgb(0, 0, 255)');
 ```
 
-确保 `h2` 选择器的内容被花括号所包围，样式规则应以分号结束。
+確保 `h2` 選擇器的內容被花括號所包圍，樣式規則應以分號結束。
 
 ```js
 assert(code.match(/h2\s*\{\s*color\s*:.*;\s*\}/g));
 ```
 
-`style` 标签应符合语法，且应有一个结束标签。
+`style` 標籤應符合語法，且應有一個結束標籤。
 
 ```js
 assert(

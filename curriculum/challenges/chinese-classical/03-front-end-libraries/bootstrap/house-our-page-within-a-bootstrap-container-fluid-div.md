@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908746
-title: 将页面放在 container-fluid div 中
+title: 將頁面放在 container-fluid div 中
 challengeType: 0
 forumTopicId: 18198
 dashedName: house-our-page-within-a-bootstrap-container-fluid-div
@@ -8,19 +8,19 @@ dashedName: house-our-page-within-a-bootstrap-container-fluid-div
 
 # --description--
 
-现在确保页面所有内容都可以响应移动端。
+現在確保頁面所有內容都可以響應移動端。
 
-将的 `h3` 元素内嵌进一个具有 `container-fluid` class 的`div` 元素中。
+將的 `h3` 元素內嵌進一個具有 `container-fluid` class 的`div` 元素中。
 
 # --hints--
 
-`div` 元素 class 属性应该为 `container-fluid`。
+`div` 元素 class 屬性應該爲 `container-fluid`。
 
 ```js
 assert($('div').hasClass('container-fluid'));
 ```
 
-确保每一个 `div` 元素都有一个闭合标签。
+確保每一個 `div` 元素都有一個閉合標籤。
 
 ```js
 assert(
@@ -30,7 +30,7 @@ assert(
 );
 ```
 
-`h3` 元素应该内嵌于 `div` 元素。
+`h3` 元素應該內嵌於 `div` 元素。
 
 ```js
 assert($('div').children('h3').length > 0);

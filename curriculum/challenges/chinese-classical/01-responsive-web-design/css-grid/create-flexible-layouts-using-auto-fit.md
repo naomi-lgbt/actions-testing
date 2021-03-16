@@ -1,6 +1,6 @@
 ---
 id: 5a94fe6269fb03452672e462
-title: 使用 auto-fit 创建弹性布局
+title: 使用 auto-fit 創建彈性佈局
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/c3dPph8'
 forumTopicId: 301127
@@ -9,17 +9,17 @@ dashedName: create-flexible-layouts-using-auto-fit
 
 # --description--
 
-`auto-fit` 效果几乎和 `auto-fill` 一样。 不同点仅在于，当容器的大小大于各网格项之和时，`auto-fill` 会持续地在一端放入空行或空列，这样就会使所有网格项挤到另一边；而 `auto-fit` 则不会在一端放入空行或空列，而是会将所有网格项拉伸至合适的大小。
+`auto-fit` 效果幾乎和 `auto-fill` 一樣。 不同點僅在於，當容器的大小大於各網格項之和時，`auto-fill` 會持續地在一端放入空行或空列，這樣就會使所有網格項擠到另一邊；而 `auto-fit` 則不會在一端放入空行或空列，而是會將所有網格項拉伸至合適的大小。
 
-**注意：**如果容器宽度不足以将所有网格项放在同一行，余下的网格项将会移至新的一行。
+**注意：**如果容器寬度不足以將所有網格項放在同一行，餘下的網格項將會移至新的一行。
 
 # --instructions--
 
-在第二个网格中，请用 `auto-fit` 和 `repeat` 来填充网格，其中列宽的最小值为 `60px`，最大值为`1fr`。 你可以调整最右侧的预览区来查看效果。
+在第二個網格中，請用 `auto-fit` 和 `repeat` 來填充網格，其中列寬的最小值爲 `60px`，最大值爲`1fr`。 你可以調整最右側的預覽區來查看效果。
 
 # --hints--
 
-`container2` class 应该有一个 `grid-template-columns` 属性，通过 `repeat` 和 `auto-fit` 将网格中的列的宽度设置为最小 `60px`，最大 `1fr`。
+`container2` class 應該有一個 `grid-template-columns` 屬性，通過 `repeat` 和 `auto-fit` 將網格中的列的寬度設置爲最小 `60px`，最大 `1fr`。
 
 ```js
 assert(

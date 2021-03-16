@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244d8
-title: 逻辑与运算符
+title: 邏輯與運算符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cvbRVtr'
 forumTopicId: 16799
@@ -9,9 +9,9 @@ dashedName: comparisons-with-the-logical-and-operator
 
 # --description--
 
-有时你需要在一次判断中做多个操作。 当且仅当<dfn>运算符</dfn>的左边和右边都是 true，<dfn>逻辑与</dfn>运算符（`&&`）才会返回`true`。
+有時你需要在一次判斷中做多個操作。 當且僅當<dfn>運算符</dfn>的左邊和右邊都是 true，<dfn>邏輯與</dfn>運算符（`&&`）纔會返回`true`。
 
-同样的效果可以通过 if 语句的嵌套来实现：
+同樣的效果可以通過 if 語句的嵌套來實現：
 
 ```js
 if (num > 5) {
@@ -22,7 +22,7 @@ if (num > 5) {
 return "No";
 ```
 
-只有当 `num` 的值大于 `5` 并且小于`10` 时才会返回 `Yes`。 相同的逻辑可被写为：
+只有當 `num` 的值大於 `5` 並且小於`10` 時纔會返回 `Yes`。 相同的邏輯可被寫爲：
 
 ```js
 if (num > 5 && num < 10) {
@@ -33,65 +33,65 @@ return "No";
 
 # --instructions--
 
-请使用 `&&` 运算符把两个 if 语句合并为一个 if 语句，如果 `val` 小于或等于`50` 并且大于或等于 `25` 时，返回 `Yes`。 否则，将返回`No`。
+請使用 `&&` 運算符把兩個 if 語句合併爲一個 if 語句，如果 `val` 小於或等於`50` 並且大於或等於 `25` 時，返回 `Yes`。 否則，將返回`No`。
 
 # --hints--
 
-你应该使用 `&&` 运算符一次。
+你應該使用 `&&` 運算符一次。
 
 ```js
 assert(code.match(/&&/g).length === 1);
 ```
 
-你应该只有一个 `if` 表达式。
+你應該只有一個 `if` 表達式。
 
 ```js
 assert(code.match(/if/g).length === 1);
 ```
 
-`testLogicalAnd(0)` 应该返回字符串 `No`
+`testLogicalAnd(0)` 應該返回字符串 `No`
 
 ```js
 assert(testLogicalAnd(0) === 'No');
 ```
 
-`testLogicalAnd(24)` 应该返回字符串 `No`
+`testLogicalAnd(24)` 應該返回字符串 `No`
 
 ```js
 assert(testLogicalAnd(24) === 'No');
 ```
 
-`testLogicalAnd(25)` 应该返回字符串 `Yes`
+`testLogicalAnd(25)` 應該返回字符串 `Yes`
 
 ```js
 assert(testLogicalAnd(25) === 'Yes');
 ```
 
-`testLogicalAnd(30)` 应该返回字符串 `Yes`
+`testLogicalAnd(30)` 應該返回字符串 `Yes`
 
 ```js
 assert(testLogicalAnd(30) === 'Yes');
 ```
 
-`testLogicalAnd(50)` 应该返回字符串 `Yes`
+`testLogicalAnd(50)` 應該返回字符串 `Yes`
 
 ```js
 assert(testLogicalAnd(50) === 'Yes');
 ```
 
-`testLogicalAnd(51)` 应该返回字符串 `No`
+`testLogicalAnd(51)` 應該返回字符串 `No`
 
 ```js
 assert(testLogicalAnd(51) === 'No');
 ```
 
-`testLogicalAnd(75)` 应该返回字符串 `No`
+`testLogicalAnd(75)` 應該返回字符串 `No`
 
 ```js
 assert(testLogicalAnd(75) === 'No');
 ```
 
-`testLogicalAnd(80)` 应该返回字符串 `No`
+`testLogicalAnd(80)` 應該返回字符串 `No`
 
 ```js
 assert(testLogicalAnd(80) === 'No');

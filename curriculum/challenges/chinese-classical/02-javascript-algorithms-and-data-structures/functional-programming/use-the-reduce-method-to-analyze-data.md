@@ -1,6 +1,6 @@
 ---
 id: 587d7da9367417b2b2512b68
-title: 使用 reduce 方法分析数据
+title: 使用 reduce 方法分析數據
 challengeType: 1
 forumTopicId: 301313
 dashedName: use-the-reduce-method-to-analyze-data
@@ -8,15 +8,15 @@ dashedName: use-the-reduce-method-to-analyze-data
 
 # --description--
 
-`reduce()`（即`Array.prototype.reduce()`），是 JavaScript 所有数组操作中最常用的方法。 几乎可以用`reduce`方法解决所有数组处理问题。
+`reduce()`（即`Array.prototype.reduce()`），是 JavaScript 所有數組操作中最常用的方法。 幾乎可以用`reduce`方法解決所有數組處理問題。
 
-`reduce`方法是处理数组更通用的方式，而且`filter`和`map`方法都可以当作是`reduce`的特殊实现。 `reduce`方法遍历数组中的每个项目并返回单个值（即字符串、数字、对象、数组）。 这是通过在每次迭代中调用一个回调函数来实现的。
+`reduce`方法是處理數組更通用的方式，而且`filter`和`map`方法都可以當作是`reduce`的特殊實現。 `reduce`方法遍歷數組中的每個項目並返回單個值（即字符串、數字、對象、數組）。 這是通過在每次迭代中調用一個回調函數來實現的。
 
-回调函数接受四个参数。 第一个参数称为叠加器，它是上一次迭代中回调函数的返回值，第二个参数是当前正在处理的数组元素，第三个参数是该参数的索引，第四个参数是在其上调用 `reduce` 方法的数组。
+回調函數接受四個參數。 第一個參數稱爲疊加器，它是上一次迭代中回調函數的返回值，第二個參數是當前正在處理的數組元素，第三個參數是該參數的索引，第四個參數是在其上調用 `reduce` 方法的數組。
 
-除了回调函数，`reduce` 还有一个额外的参数做为叠加器的初始值。 如果没有第二个参数，会跳过第一次迭代，第二次迭代给叠加器传入数组的第一个元素。
+除了回調函數，`reduce` 還有一個額外的參數做爲疊加器的初始值。 如果沒有第二個參數，會跳過第一次迭代，第二次迭代給疊加器傳入數組的第一個元素。
 
-见下面的例子，给 `users` 数组使用 `reduce` 方法，返回所有用户数组的和。 为了简化，例子仅使用了回调函数的第一个参数和第二个参数。
+見下面的例子，給 `users` 數組使用 `reduce` 方法，返回所有用戶數組的和。 爲了簡化，例子僅使用了回調函數的第一個參數和第二個參數。
 
 ```js
 const users = [
@@ -29,9 +29,9 @@ const sumOfAges = users.reduce((sum, user) => sum + user.age, 0);
 console.log(sumOfAges);
 ```
 
-这里控制台将显示值 `64`。
+這裏控制檯將顯示值 `64`。
 
-在另一个例子里，查看如何返回一个包含用户名称做为属性，其年龄做为值的对象。
+在另一個例子裏，查看如何返回一個包含用戶名稱做爲屬性，其年齡做爲值的對象。
 
 ```js
 const users = [
@@ -47,15 +47,15 @@ const usersObj = users.reduce((obj, user) => {
 console.log(usersObj);
 ```
 
-控制台将显示值 `{ John: 34, Amy: 20, camperCat: 10 }`。
+控制檯將顯示值 `{ John: 34, Amy: 20, camperCat: 10 }`。
 
 # --instructions--
 
-`watchList` 是包含一些电影信息的对象。 使用 `reduce` 查找由 `Christopher Nolan` 导演的电影的 IMDB 评级平均值。 回想一下之前的挑战，如何 `filter` 数据，以及使用 `map` 来获取你想要的数据。 您可能需要创建其他变量，并从 `getRating` 函数返回平均评分。 请注意，评级在对象中是字符串，需要将其转换为数字再用于数学运算。
+`watchList` 是包含一些電影信息的對象。 使用 `reduce` 查找由 `Christopher Nolan` 導演的電影的 IMDB 評級平均值。 回想一下之前的挑戰，如何 `filter` 數據，以及使用 `map` 來獲取你想要的數據。 您可能需要創建其他變量，並從 `getRating` 函數返回平均評分。 請注意，評級在對象中是字符串，需要將其轉換爲數字再用於數學運算。
 
 # --hints--
 
-`watchList` 应保持不变。
+`watchList` 應保持不變。
 
 ```js
 assert(
@@ -63,25 +63,25 @@ assert(
 );
 ```
 
-应该使用`reduce`方法。
+應該使用`reduce`方法。
 
 ```js
 assert(code.match(/\.reduce/g));
 ```
 
-`getRating(watchList)` 应该等于 8.675。
+`getRating(watchList)` 應該等於 8.675。
 
 ```js
 assert(getRating(watchList) === 8.675);
 ```
 
-不能使用 `for` 循环。
+不能使用 `for` 循環。
 
 ```js
 assert(!code.match(/for\s*?\([\s\S]*?\)/g));
 ```
 
-在修改 `watchList` 对象后应该返回正确的输出。
+在修改 `watchList` 對象後應該返回正確的輸出。
 
 ```js
 assert(getRating(watchList.filter((_, i) => i < 1 || i > 2)) === 8.55);

@@ -8,19 +8,19 @@ dashedName: use--for-a-more-concise-conditional
 
 # --description--
 
-`if/else` 语句在上一次挑战中是有效的，但是有一种更简洁的方法可以达到同样的结果。 假设正在跟踪组件中的几个条件，并且希望根据这些条件中的每一个来渲染不同的元素。 如果你写了很多 `else if` 语句来返回稍微不同的 UI，你可能会写很多重复代码，这就留下了出错的空间。 相反，你可以使用 `&&` 逻辑运算符以更简洁的方式执行条件逻辑。 这是完全可行的，因为你希望检查条件是否为 `true`。如果是，则返回一些标记。 这里有一个例子：
+`if/else` 語句在上一次挑戰中是有效的，但是有一種更簡潔的方法可以達到同樣的結果。 假設正在跟蹤組件中的幾個條件，並且希望根據這些條件中的每一個來渲染不同的元素。 如果你寫了很多 `else if` 語句來返回稍微不同的 UI，你可能會寫很多重複代碼，這就留下了出錯的空間。 相反，你可以使用 `&&` 邏輯運算符以更簡潔的方式執行條件邏輯。 這是完全可行的，因爲你希望檢查條件是否爲 `true`。如果是，則返回一些標記。 這裏有一個例子：
 
 `{condition && <p>markup</p>}`
 
-如果 `condition` 为 `true`，则返回标记。 如果 condition 为 `false`，操作将在判断 `condition` 后立即返回 `false`，并且不返回任何内容。 可以将这些语句直接包含在 JSX 中，并通过在每个条件后面写 `&&` 来将多个条件串在一起。 这允许在 `render()` 方法中处理更复杂的条件逻辑，而无需重复大量代码。
+如果 `condition` 爲 `true`，則返回標記。 如果 condition 爲 `false`，操作將在判斷 `condition` 後立即返回 `false`，並且不返回任何內容。 可以將這些語句直接包含在 JSX 中，並通過在每個條件後面寫 `&&` 來將多個條件串在一起。 這允許在 `render()` 方法中處理更復雜的條件邏輯，而無需重複大量代碼。
 
 # --instructions--
 
-再来看看前面的示例，`h1` 还是在 `display` 为 `true` 时被渲染，但使用 `&&` 逻辑运算符代替 `if/else` 语句。
+再來看看前面的示例，`h1` 還是在 `display` 爲 `true` 時被渲染，但使用 `&&` 邏輯運算符代替 `if/else` 語句。
 
 # --hints--
 
-`MyComponent` 应该存在并被渲染。
+`MyComponent` 應該存在並被渲染。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-当 `display` 被设置为 `true` 时，`div`、`button` 和 `h1` 标签应该被渲染。
+當 `display` 被設置爲 `true` 時，`div`、`button` 和 `h1` 標籤應該被渲染。
 
 ```js
 async () => {
@@ -52,7 +52,7 @@ async () => {
 };
 ```
 
-当 `display` 被设置为 `false` 时，只有 `div` 和 `button` 应该被渲染。
+當 `display` 被設置爲 `false` 時，只有 `div` 和 `button` 應該被渲染。
 
 ```js
 async () => {
@@ -73,7 +73,7 @@ async () => {
 };
 ```
 
-render 方法应该使用 `&&` 逻辑运算符来检查 `this.state.display` 的条件。
+render 方法應該使用 `&&` 邏輯運算符來檢查 `this.state.display` 的條件。
 
 ```js
 (getUserInput) => assert(getUserInput('index').includes('&&'));

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348cd8acef08811
-title: 体验 Bootstrap 按钮的不同主题
+title: 體驗 Bootstrap 按鈕的不同主題
 challengeType: 0
 forumTopicId: 18323
 dashedName: taste-the-bootstrap-button-color-rainbow
@@ -8,27 +8,27 @@ dashedName: taste-the-bootstrap-button-color-rainbow
 
 # --description--
 
-`btn-primary` class 的颜色是应用的主要颜色。 这样 “突出显示” 是引导用户按部就班进行操作的有效办法。
+`btn-primary` class 的顏色是應用的主要顏色。 這樣 “突出顯示” 是引導用戶按部就班進行操作的有效辦法。
 
-将按钮的 class 从 Bootstrap 的 `btn-default` 替换为 `btn-primary`。
+將按鈕的 class 從 Bootstrap 的 `btn-default` 替換爲 `btn-primary`。
 
-注意：按钮仍然需要 `btn` 和 `btn-block` classes。
+注意：按鈕仍然需要 `btn` 和 `btn-block` classes。
 
 # --hints--
 
-按钮的 class 属性应该包含 `btn-primary`。
+按鈕的 class 屬性應該包含 `btn-primary`。
 
 ```js
 assert($('button').hasClass('btn-primary'));
 ```
 
-按钮的 class 属性应该包含 `btn` 和 `btn-block`。
+按鈕的 class 屬性應該包含 `btn` 和 `btn-block`。
 
 ```js
 assert($('button').hasClass('btn-block') && $('button').hasClass('btn'));
 ```
 
-确保所有 `button` 元素都有一个闭合标签。
+確保所有 `button` 元素都有一個閉合標籤。
 
 ```js
 assert(

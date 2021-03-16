@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244da
-title: 介绍 else 语句
+title: 介紹 else 語句
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cek4Efq'
 forumTopicId: 18207
@@ -9,7 +9,7 @@ dashedName: introducing-else-statements
 
 # --description--
 
-当 `if` 语句的条件为真，会执行大括号里的代码。 那如果条件为假呢？ 正常情况下什么也不会发生。 使用 `else` 语句，可以执行当条件为假时相应的代码。
+當 `if` 語句的條件爲真，會執行大括號裏的代碼。 那如果條件爲假呢？ 正常情況下什麼也不會發生。 使用 `else` 語句，可以執行當條件爲假時相應的代碼。
 
 ```js
 if (num > 10) {
@@ -21,47 +21,47 @@ if (num > 10) {
 
 # --instructions--
 
-请把多个 `if` 语句合并为一个 `if/else` 语句。
+請把多個 `if` 語句合併爲一個 `if/else` 語句。
 
 # --hints--
 
-应该只有一个 `if` 语句。
+應該只有一個 `if` 語句。
 
 ```js
 assert(code.match(/if/g).length === 1);
 ```
 
-应该使用一个 `else` 语句。
+應該使用一個 `else` 語句。
 
 ```js
 assert(/else/g.test(code));
 ```
 
-`testElse(4)` 应该返回字符串 `5 or Smaller`
+`testElse(4)` 應該返回字符串 `5 or Smaller`
 
 ```js
 assert(testElse(4) === '5 or Smaller');
 ```
 
-`testElse(5)` 应该返回字符串 `5 or Smaller`
+`testElse(5)` 應該返回字符串 `5 or Smaller`
 
 ```js
 assert(testElse(5) === '5 or Smaller');
 ```
 
-`testElse(6)` 应该返回字符串 `Bigger than 5`
+`testElse(6)` 應該返回字符串 `Bigger than 5`
 
 ```js
 assert(testElse(6) === 'Bigger than 5');
 ```
 
-`testElse(10)` 应该返回字符串 `Bigger than 5`
+`testElse(10)` 應該返回字符串 `Bigger than 5`
 
 ```js
 assert(testElse(10) === 'Bigger than 5');
 ```
 
-不要修改相应注释的上面或下面的代码。
+不要修改相應註釋的上面或下面的代碼。
 
 ```js
 assert(/var result = "";/.test(code) && /return result;/.test(code));

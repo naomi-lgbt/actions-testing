@@ -1,6 +1,6 @@
 ---
 id: 587d778b367417b2b2512aa8
-title: 添加可访问的日期选择器
+title: 添加可訪問的日期選擇器
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cR3bRbCV'
 forumTopicId: 301008
@@ -9,13 +9,13 @@ dashedName: add-an-accessible-date-picker
 
 # --description--
 
-表单中经常出现 `input` 标签，它可以用来创建多种表单控件。 它的 `type` 属性指定了所要创建的 `input` 标签类型。
+表單中經常出現 `input` 標籤，它可以用來創建多種表單控件。 它的 `type` 屬性指定了所要創建的 `input` 標籤類型。
 
-在以前的挑战中，我们已经见过 `text` 与 `submit` 类型的 input 标签。 HTML5 规范添加了 `date` 类型来创建日期选择器。 如果浏览器支持，在点击 `input` 标签时，日期选择器会显示出来，这让用户填写表单变得更加容易。
+在以前的挑戰中，我們已經見過 `text` 與 `submit` 類型的 input 標籤。 HTML5 規範添加了 `date` 類型來創建日期選擇器。 如果瀏覽器支持，在點擊 `input` 標籤時，日期選擇器會顯示出來，這讓用戶填寫表單變得更加容易。
 
-对于较老的浏览器，类型将默认为 `text`， 这样它可以通过 `label` 或 `placeholder` 文本向用户显示预期的日期格式。
+對於較老的瀏覽器，類型將默認爲 `text`， 這樣它可以通過 `label` 或 `placeholder` 文本向用戶顯示預期的日期格式。
 
-举个例子：
+舉個例子：
 
 ```html
 <label for="input1">Enter a date:</label>
@@ -24,29 +24,29 @@ dashedName: add-an-accessible-date-picker
 
 # --instructions--
 
-Camper Cat 想举办一场比武大会，他想收集参赛者的最佳参赛时间。 请为 Camper Cat 的页面添加一个`input` 标签，起 `type` 属性值为 `date`，`id` 属性为 `pickdate`，`name` 属性为 `date`。
+Camper Cat 想舉辦一場比武大會，他想收集參賽者的最佳參賽時間。 請爲 Camper Cat 的頁面添加一個`input` 標籤，起 `type` 屬性值爲 `date`，`id` 屬性爲 `pickdate`，`name` 屬性爲 `date`。
 
 # --hints--
 
-日期选择器应有一个 `input` 标签。
+日期選擇器應有一個 `input` 標籤。
 
 ```js
 assert($('input').length == 2);
 ```
 
-`input` 标签应有一个值为 `date` 的 `type` 属性。
+`input` 標籤應有一個值爲 `date` 的 `type` 屬性。
 
 ```js
 assert($('input').attr('type') == 'date');
 ```
 
-`input` 标签应有一个值为 `pickdate` 的 `id` 属性。
+`input` 標籤應有一個值爲 `pickdate` 的 `id` 屬性。
 
 ```js
 assert($('input').attr('id') == 'pickdate');
 ```
 
-`input` 标签应有一个值为 `date` 的 `name` 属性。
+`input` 標籤應有一個值爲 `date` 的 `name` 屬性。
 
 ```js
 assert($('input').attr('name') == 'date');

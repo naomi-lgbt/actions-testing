@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908856
-title: 给 Bootstrap 按钮设置标签
+title: 給 Bootstrap 按鈕設置標籤
 challengeType: 0
 forumTopicId: 18222
 dashedName: label-bootstrap-buttons
@@ -8,43 +8,43 @@ dashedName: label-bootstrap-buttons
 
 # --description--
 
-正如标注了每个 wells 一样，同样可以标注每一个按钮。
+正如標註了每個 wells 一樣，同樣可以標註每一個按鈕。
 
-为每个 `button` 元素设置与其 id 选择器对应的文本。
+爲每個 `button` 元素設置與其 id 選擇器對應的文本。
 
 # --hints--
 
-应给 id 为 `target1` 的 `button` 元素设置文本为 `#target1`。
+應給 id 爲 `target1` 的 `button` 元素設置文本爲 `#target1`。
 
 ```js
 assert(new RegExp('#target1', 'gi').test($('#target1').text()));
 ```
 
-应给 id 为 `target2` 的 `button` 元素设置文本为`#target2`。
+應給 id 爲 `target2` 的 `button` 元素設置文本爲`#target2`。
 
 ```js
 assert(new RegExp('#target2', 'gi').test($('#target2').text()));
 ```
 
-应给 id 为 `target3` 的 `button` 元素设置文本为 `#target3`。
+應給 id 爲 `target3` 的 `button` 元素設置文本爲 `#target3`。
 
 ```js
 assert(new RegExp('#target3', 'gi').test($('#target3').text()));
 ```
 
-应给 id 为 `target4` 的 `button` 元素设置文本为 `#target4`。
+應給 id 爲 `target4` 的 `button` 元素設置文本爲 `#target4`。
 
 ```js
 assert(new RegExp('#target4', 'gi').test($('#target4').text()));
 ```
 
-应给 id 为 `target5` 的 `button` 元素设置文本为`#target5`。
+應給 id 爲 `target5` 的 `button` 元素設置文本爲`#target5`。
 
 ```js
 assert(new RegExp('#target5', 'gi').test($('#target5').text()));
 ```
 
-应给 id 为 `target6` 的 `button` 元素设置文本为`#target6`。
+應給 id 爲 `target6` 的 `button` 元素設置文本爲`#target6`。
 
 ```js
 assert(new RegExp('#target6', 'gi').test($('#target6').text()));

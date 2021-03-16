@@ -1,6 +1,6 @@
 ---
 id: 5a9d725e424fe3d0e10cad10
-title: 使用 CSS 变量一次更改多个元素
+title: 使用 CSS 變量一次更改多個元素
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c6bDECm'
 forumTopicId: 301093
@@ -9,17 +9,17 @@ dashedName: use-css-variables-to-change-several-elements-at-once
 
 # --description--
 
-<dfn>CSS 变量</dfn>可以实现仅需要更新一个值，就可以将更改应用到多个 CSS 样式属性的强大方法。
+<dfn>CSS 變量</dfn>可以實現僅需要更新一個值，就可以將更改應用到多個 CSS 樣式屬性的強大方法。
 
-按照下面指示的来做，我们只需要改变三个值，多个样式将会同时被修改。
+按照下面指示的來做，我們只需要改變三個值，多個樣式將會同時被修改。
 
 # --instructions--
 
-在 `penguin` class 里，将 `black` 改为 `gray`；`gray` 改为 `white`；`yellow` 改为 `orange`。
+在 `penguin` class 裏，將 `black` 改爲 `gray`；`gray` 改爲 `white`；`yellow` 改爲 `orange`。
 
 # --hints--
 
-`penguin` class 声明中的 `--penguin-skin` 变量值应为 `gray`。
+`penguin` class 聲明中的 `--penguin-skin` 變量值應爲 `gray`。
 
 ```js
 assert(
@@ -27,7 +27,7 @@ assert(
 );
 ```
 
-`penguin` class 声明中的 `--penguin-belly` 变量值应为 `white`。
+`penguin` class 聲明中的 `--penguin-belly` 變量值應爲 `white`。
 
 ```js
 assert(
@@ -35,7 +35,7 @@ assert(
 );
 ```
 
-`penguin` class 声明中的 `--penguin-beak` 变量值应为 `orange`。
+`penguin` class 聲明中的 `--penguin-beak` 變量值應爲 `orange`。
 
 ```js
 assert(

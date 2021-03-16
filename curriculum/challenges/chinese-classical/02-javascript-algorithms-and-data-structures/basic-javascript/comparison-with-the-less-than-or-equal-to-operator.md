@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244d7
-title: 小于或等于运算符
+title: 小於或等於運算符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cNVR7Am'
 forumTopicId: 16788
@@ -9,7 +9,7 @@ dashedName: comparison-with-the-less-than-or-equal-to-operator
 
 # --description--
 
-使用小于等于运算符（`<=`）比较两个数字的大小。 如果在小于等于运算符左边的数字小于或者等于右边的数字，它会返回 `true`。 如果在小于等于运算符左边的数字大于右边的数字，它会返回 `false`。 与相等运算符类似，小于或等于运算符会转换数据类型。
+使用小於等於運算符（`<=`）比較兩個數字的大小。 如果在小於等於運算符左邊的數字小於或者等於右邊的數字，它會返回 `true`。 如果在小於等於運算符左邊的數字大於右邊的數字，它會返回 `false`。 與相等運算符類似，小於或等於運算符會轉換數據類型。
 
 **例如**
 
@@ -21,57 +21,57 @@ dashedName: comparison-with-the-less-than-or-equal-to-operator
 '8' <= 4
 ```
 
-按顺序，这些表达式会返回 `true`、`true`、`true`、`false` 和 `false`。
+按順序，這些表達式會返回 `true`、`true`、`true`、`false` 和 `false`。
 
 # --instructions--
 
-添加小于等于运算符到指定行，使得函数的返回语句有意义。
+添加小於等於運算符到指定行，使得函數的返回語句有意義。
 
 # --hints--
 
-`testLessOrEqual(0)` 应该返回 `Smaller Than or Equal to 12`
+`testLessOrEqual(0)` 應該返回 `Smaller Than or Equal to 12`
 
 ```js
 assert(testLessOrEqual(0) === 'Smaller Than or Equal to 12');
 ```
 
-`testLessOrEqual(11)` 应该返回 `Smaller Than or Equal to 12`
+`testLessOrEqual(11)` 應該返回 `Smaller Than or Equal to 12`
 
 ```js
 assert(testLessOrEqual(11) === 'Smaller Than or Equal to 12');
 ```
 
-`testLessOrEqual(12)` 应该返回 `Smaller Than or Equal to 12`
+`testLessOrEqual(12)` 應該返回 `Smaller Than or Equal to 12`
 
 ```js
 assert(testLessOrEqual(12) === 'Smaller Than or Equal to 12');
 ```
 
-`testLessOrEqual(23)` 应该返回 `Smaller Than or Equal to 24`
+`testLessOrEqual(23)` 應該返回 `Smaller Than or Equal to 24`
 
 ```js
 assert(testLessOrEqual(23) === 'Smaller Than or Equal to 24');
 ```
 
-`testLessOrEqual(24)` 应该返回 `Smaller Than or Equal to 24`
+`testLessOrEqual(24)` 應該返回 `Smaller Than or Equal to 24`
 
 ```js
 assert(testLessOrEqual(24) === 'Smaller Than or Equal to 24');
 ```
 
-`testLessOrEqual(25)` 应该返回 `More Than 24`
+`testLessOrEqual(25)` 應該返回 `More Than 24`
 
 ```js
 assert(testLessOrEqual(25) === 'More Than 24');
 ```
 
-`testLessOrEqual(55)` 应该返回 `More Than 24`
+`testLessOrEqual(55)` 應該返回 `More Than 24`
 
 ```js
 assert(testLessOrEqual(55) === 'More Than 24');
 ```
 
-应该使用 `<=` 运算符至少两次
+應該使用 `<=` 運算符至少兩次
 
 ```js
 assert(code.match(/val\s*<=\s*('|")*\d+('|")*/g).length > 1);

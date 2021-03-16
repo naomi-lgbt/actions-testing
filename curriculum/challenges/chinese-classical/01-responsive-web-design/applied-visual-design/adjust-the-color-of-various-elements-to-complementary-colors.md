@@ -1,6 +1,6 @@
 ---
 id: 587d78a4367417b2b2512ad3
-title: 将各种元素的颜色调整为互补色
+title: 將各種元素的顏色調整爲互補色
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cWmPpud'
 forumTopicId: 301033
@@ -9,33 +9,33 @@ dashedName: adjust-the-color-of-various-elements-to-complementary-colors
 
 # --description--
 
-通过前面关卡的学习，我们知道了补色搭配能形成强列的对比效果，让内容更富生机。 但是如果使用不当效果会适得其反：比如将文字背景色和文字颜色设置为互补色，这样文字会很难看清。 通常的做法是，一种颜色做为主要颜色，然后使用其补色用来装点那些需要用户特别注意的部分。
+通過前面關卡的學習，我們知道了補色搭配能形成強列的對比效果，讓內容更富生機。 但是如果使用不當效果會適得其反：比如將文字背景色和文字顏色設置爲互補色，這樣文字會很難看清。 通常的做法是，一種顏色做爲主要顏色，然後使用其補色用來裝點那些需要用戶特別注意的部分。
 
 # --instructions--
 
-使用深青色（`#09A7A1`）做为页面主色，用其补色橙色（`#FF790E`）来装饰登录按钮。 把 `header` 和 `footer` 的 `background-color` 从黑色改成深青色。 然后把 `h2` 的文字 `color` 也改成深青色。 最后，把 `button` 的 `background-color` 改成橙色。
+使用深青色（`#09A7A1`）做爲頁面主色，用其補色橙色（`#FF790E`）來裝飾登錄按鈕。 把 `header` 和 `footer` 的 `background-color` 從黑色改成深青色。 然後把 `h2` 的文字 `color` 也改成深青色。 最後，把 `button` 的 `background-color` 改成橙色。
 
 # --hints--
 
-`header` 元素的 `background-color` 属性值应为 #09A7A1。
+`header` 元素的 `background-color` 屬性值應爲 #09A7A1。
 
 ```js
 assert($('header').css('background-color') == 'rgb(9, 167, 161)');
 ```
 
-`footer` 元素的 `background-color` 属性值应为 #09A7A1。
+`footer` 元素的 `background-color` 屬性值應爲 #09A7A1。
 
 ```js
 assert($('footer').css('background-color') == 'rgb(9, 167, 161)');
 ```
 
-`h2` 元素的 `color` 属性值应为 #09A7A1。
+`h2` 元素的 `color` 屬性值應爲 #09A7A1。
 
 ```js
 assert($('h2').css('color') == 'rgb(9, 167, 161)');
 ```
 
-`button` 元素的 `background-color` 属性值应为 #FF790E。
+`button` 元素的 `background-color` 屬性值應爲 #FF790E。
 
 ```js
 assert($('button').css('background-color') == 'rgb(255, 121, 14)');

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aede08830
-title: 创建一个表单
+title: 創建一個表單
 challengeType: 0
 forumTopicId: 16817
 dashedName: create-a-form-element
@@ -8,7 +8,7 @@ dashedName: create-a-form-element
 
 # --description--
 
-我们可以只通过 HTML 来实现发送数据给服务器的表单， 只需要给 `form` 元素添加 `action` 属性即可。
+我們可以只通過 HTML 來實現發送數據給服務器的表單， 只需要給 `form` 元素添加 `action` 屬性即可。
 
 例如：
 
@@ -20,11 +20,11 @@ dashedName: create-a-form-element
 
 # --instructions--
 
-把现有的 `input` 输入框放到一个新建的表单 `form` 里，然后设置 `form` 元素的 `action` 属性值为 `"https://freecatphotoapp.com/submit-cat-photo"`。
+把現有的 `input` 輸入框放到一個新建的表單 `form` 裏，然後設置 `form` 元素的 `action` 屬性值爲 `"https://freecatphotoapp.com/submit-cat-photo"`。
 
 # --hints--
 
-现有的 `input` 输入框应位于新创建的 `form` 表单里面。
+現有的 `input` 輸入框應位於新創建的 `form` 表單裏面。
 
 ```js
 const inputElem = document.querySelector('form input');
@@ -34,7 +34,7 @@ assert(
 );
 ```
 
-`form` 的 `action` 属性值应设置为 `https://freecatphotoapp.com/submit-cat-photo`。
+`form` 的 `action` 屬性值應設置爲 `https://freecatphotoapp.com/submit-cat-photo`。
 
 ```js
 assert(
@@ -42,7 +42,7 @@ assert(
 );
 ```
 
-`form` 元素应有开始标签和结束标签。
+`form` 元素應有開始標籤和結束標籤。
 
 ```js
 assert(

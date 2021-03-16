@@ -1,6 +1,6 @@
 ---
 id: 587d7fa8367417b2b2512bca
-title: 更改条形图的显示方式
+title: 更改條形圖的顯示方式
 challengeType: 6
 forumTopicId: 301481
 dashedName: change-the-presentation-of-a-bar-chart
@@ -8,21 +8,21 @@ dashedName: change-the-presentation-of-a-bar-chart
 
 # --description--
 
-上一个挑战创建了一个条形图，可以通过下面的格式调整来美化它：
+上一個挑戰創建了一個條形圖，可以通過下面的格式調整來美化它：
 
-1) 通过在 CSS 中为 `bar` class 添加 margin 属性，给每一个条形图之间添加空格，把它们分开。
+1) 通過在 CSS 中爲 `bar` class 添加 margin 屬性，給每一個條形圖之間添加空格，把它們分開。
 
-2) 通过给每个值乘以一个数来缩放高度，增加高度，以更好地显示值的差异。
+2) 通過給每個值乘以一個數來縮放高度，增加高度，以更好地顯示值的差異。
 
 # --instructions--
 
-首先，在 `style` 标签中给 `bar` class 增加值为 `2px` 的 `margin`。 然后，更改 `style()` 方法中的回调函数，使其返回原始数据值的 `10` 倍（加上 `px`）。
+首先，在 `style` 標籤中給 `bar` class 增加值爲 `2px` 的 `margin`。 然後，更改 `style()` 方法中的回調函數，使其返回原始數據值的 `10` 倍（加上 `px`）。
 
-**注意：**每一个数值点乘以*相同的*常量值，仅仅改变比例。 这就像放大，它不会改变底层数据的含义。
+**注意：**每一個數值點乘以*相同的*常量值，僅僅改變比例。 這就像放大，它不會改變底層數據的含義。
 
 # --hints--
 
-第一个 `div` 应有一个 `120` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第一個 `div` 應有一個 `120` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-第二个 `div` 应有一个 `310` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第二個 `div` 應有一個 `310` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-第三个 `div` 应有一个 `220` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第三個 `div` 應有一個 `220` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -49,7 +49,7 @@ assert(
 );
 ```
 
-第四个 `div` 应有一个 `170` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第四個 `div` 應有一個 `170` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -58,7 +58,7 @@ assert(
 );
 ```
 
-第五个 `div` 应有一个 `250` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第五個 `div` 應有一個 `250` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -67,7 +67,7 @@ assert(
 );
 ```
 
-第六个 `div` 应有一个 `180` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第六個 `div` 應有一個 `180` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -76,7 +76,7 @@ assert(
 );
 ```
 
-第七个 `div` 应有一个 `290` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第七個 `div` 應有一個 `290` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -85,7 +85,7 @@ assert(
 );
 ```
 
-第八个 `div` 应有一个 `140` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第八個 `div` 應有一個 `140` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(
@@ -94,7 +94,7 @@ assert(
 );
 ```
 
-第九个 `div` 应有一个 `90` 像素的 `height` 和一个 `2` 像素的 `margin`。
+第九個 `div` 應有一個 `90` 像素的 `height` 和一個 `2` 像素的 `margin`。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908845
-title: 使用 Bootstrap 响应式排列表单元素
+title: 使用 Bootstrap 響應式排列表單元素
 challengeType: 0
 forumTopicId: 18225
 required:
@@ -13,15 +13,15 @@ dashedName: line-up-form-elements-responsively-with-bootstrap
 
 # --description--
 
-现在把表单里的 `input` 元素和 submit `button` （提交按钮）放在同一行。 跟着之前的做法来就行：准备好一个具有 `row` class 的 `div` 元素还有几个具有 `col-xs-*` class 的 `div` 元素。
+現在把表單裏的 `input` 元素和 submit `button` （提交按鈕）放在同一行。 跟着之前的做法來就行：準備好一個具有 `row` class 的 `div` 元素還有幾個具有 `col-xs-*` class 的 `div` 元素。
 
-先把表单的 text `input` （文本输入框）和 submit `button` （提交按钮）放进具有 `row` class 的 `div` 中。 再用 `col-xs-7` class 的 div 包裹表单的 text `input` （文本输入框）， `col-xs-5` class 的 `div` 包裹表单的 submit `button` （提交按钮）。
+先把表單的 text `input` （文本輸入框）和 submit `button` （提交按鈕）放進具有 `row` class 的 `div` 中。 再用 `col-xs-7` class 的 div 包裹表單的 text `input` （文本輸入框）， `col-xs-5` class 的 `div` 包裹表單的 submit `button` （提交按鈕）。
 
-这是我们到目前为止 Cat Photo App 的最后一个挑战了。 祝你编码愉快。
+這是我們到目前爲止 Cat Photo App 的最後一個挑戰了。 祝你編碼愉快。
 
 # --hints--
 
-确保提交按钮和文本输入框都在同一个具有 class 属性 `row` 的 div 元素中。
+確保提交按鈕和文本輸入框都在同一個具有 class 屬性 `row` 的 div 元素中。
 
 ```js
 assert(
@@ -30,19 +30,19 @@ assert(
 );
 ```
 
-表单的文本输入框应该嵌入到 `col-xs-7` class 属性的 div 内。
+表單的文本輸入框應該嵌入到 `col-xs-7` class 屬性的 div 內。
 
 ```js
 assert($('div.col-xs-7:has(input[type="text"])').length > 0);
 ```
 
-表单的提交按钮应该嵌入到 `col-xs-5` class 属性的 div 内。
+表單的提交按鈕應該嵌入到 `col-xs-5` class 屬性的 div 內。
 
 ```js
 assert($('div.col-xs-5:has(button[type="submit"])').length > 0);
 ```
 
-确保每一个 `div` 元素都有一个闭合标签。
+確保每一個 `div` 元素都有一個閉合標籤。
 
 ```js
 assert(

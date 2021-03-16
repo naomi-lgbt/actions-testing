@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08823
-title: 给元素添加负外边距
+title: 給元素添加負外邊距
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cnpyGs3'
 forumTopicId: 16166
@@ -9,19 +9,19 @@ dashedName: add-a-negative-margin-to-an-element
 
 # --description--
 
-元素的 `margin（外边距）` 用来控制元素 `border（边框）` 与其周围元素之间的距离大小。
+元素的 `margin（外邊距）` 用來控制元素 `border（邊框）` 與其周圍元素之間的距離大小。
 
-如果你把元素的 `margin` 设置为负值，元素会变得占用更多空间。
+如果你把元素的 `margin` 設置爲負值，元素會變得佔用更多空間。
 
 # --instructions--
 
-请将蓝色框的 `margin` 设为负值，跟红色框的一样。
+請將藍色框的 `margin` 設爲負值，跟紅色框的一樣。
 
-将蓝色框的 `margin` 设置为 `-15px`，它会让蓝色框填满整个黄色框。
+將藍色框的 `margin` 設置爲 `-15px`，它會讓藍色框填滿整個黃色框。
 
 # --hints--
 
-class 为 `blue-box` 的元素的 `margin` 应设置为 `-15px`。
+class 爲 `blue-box` 的元素的 `margin` 應設置爲 `-15px`。
 
 ```js
 assert($('.blue-box').css('margin-top') === '-15px');

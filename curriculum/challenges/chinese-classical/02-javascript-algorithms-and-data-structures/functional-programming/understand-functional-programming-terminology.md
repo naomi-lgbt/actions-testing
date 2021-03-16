@@ -1,6 +1,6 @@
 ---
 id: 587d7b8e367417b2b2512b5c
-title: 了解函数式编程术语
+title: 瞭解函數式編程術語
 challengeType: 1
 forumTopicId: 301240
 dashedName: understand-functional-programming-terminology
@@ -8,47 +8,47 @@ dashedName: understand-functional-programming-terminology
 
 # --description--
 
-FCC 团队需求有变更，现在想要两种茶：绿茶（green tea）和红茶（black tea）。 事实证明，用户需求变更是很常见的。
+FCC 團隊需求有變更，現在想要兩種茶：綠茶（green tea）和紅茶（black tea）。 事實證明，用戶需求變更是很常見的。
 
-基于以上信息，我们需要重构上一节挑战中的 `getTea` 函数来处理多种茶的请求。 我们可以修改 `getTea` 接受一个函数作为参数，使它能够修改茶的类型。 这让 `getTea` 更灵活，也使需求变更时为程序员提供更多控制权。
+基於以上信息，我們需要重構上一節挑戰中的 `getTea` 函數來處理多種茶的請求。 我們可以修改 `getTea` 接受一個函數作爲參數，使它能夠修改茶的類型。 這讓 `getTea` 更靈活，也使需求變更時爲程序員提供更多控制權。
 
-首先，我们将介绍一些术语：
+首先，我們將介紹一些術語：
 
-<dfn>Callbacks</dfn> 是被传递到另一个函数中调用的函数。 你应该已经在其他函数中看过这个写法，例如在 `filter` 中，回调函数告诉 JavaScript 以什么规则过滤数组。
+<dfn>Callbacks</dfn> 是被傳遞到另一個函數中調用的函數。 你應該已經在其他函數中看過這個寫法，例如在 `filter` 中，回調函數告訴 JavaScript 以什麼規則過濾數組。
 
-函数就像其他正常值一样，可以赋值给变量、传递给另一个函数，或从其它函数返回，这种函数叫做头等 <dfn>first class</dfn> 函数。 在 JavaScript 中，所有函数都是头等函数。
+函數就像其他正常值一樣，可以賦值給變量、傳遞給另一個函數，或從其它函數返回，這種函數叫做頭等 <dfn>first class</dfn> 函數。 在 JavaScript 中，所有函數都是頭等函數。
 
-将函数为参数或返回值的函数叫做高阶 ( <dfn>higher order</dfn>) 函数。
+將函數爲參數或返回值的函數叫做高階 ( <dfn>higher order</dfn>) 函數。
 
-当函数传递给另一个函数或从另一个函数返回时，那些传入或返回的函数可以叫做<dfn>lambda</dfn>。
+當函數傳遞給另一個函數或從另一個函數返回時，那些傳入或返回的函數可以叫做<dfn>lambda</dfn>。
 
 # --instructions--
 
-准备 27 杯绿茶和 13 杯红茶，分别存入 `tea4GreenTeamFCC` 和 `tea4BlackTeamFCC` 变量。 请注意，`getTea` 函数已经变了，现在它接收一个函数作为第一个参数。
+準備 27 杯綠茶和 13 杯紅茶，分別存入 `tea4GreenTeamFCC` 和 `tea4BlackTeamFCC` 變量。 請注意，`getTea` 函數已經變了，現在它接收一個函數作爲第一個參數。
 
-注意：数据（茶的数量）作为最后一个参数。 我们将在后面的课程中对此进行更多讨论。
+注意：數據（茶的數量）作爲最後一個參數。 我們將在後面的課程中對此進行更多討論。
 
 # --hints--
 
-`tea4GreenTeamFCC` 变量应存有为团队准备的 27 杯茶。
+`tea4GreenTeamFCC` 變量應存有爲團隊準備的 27 杯茶。
 
 ```js
 assert(tea4GreenTeamFCC.length === 27);
 ```
 
-`tea4GreenTeamFCC` 变量应存有绿茶。
+`tea4GreenTeamFCC` 變量應存有綠茶。
 
 ```js
 assert(tea4GreenTeamFCC[0] === 'greenTea');
 ```
 
-`tea4BlackTeamFCC` 变量应存有 13 杯红茶。
+`tea4BlackTeamFCC` 變量應存有 13 杯紅茶。
 
 ```js
 assert(tea4BlackTeamFCC.length === 13);
 ```
 
-`tea4BlackTeamFCC` 变量应存有红茶。
+`tea4BlackTeamFCC` 變量應存有紅茶。
 
 ```js
 assert(tea4BlackTeamFCC[0] === 'blackTea');

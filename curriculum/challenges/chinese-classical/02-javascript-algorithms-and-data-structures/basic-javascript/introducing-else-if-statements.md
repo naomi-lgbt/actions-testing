@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244db
-title: 介绍 else if 语句
+title: 介紹 else if 語句
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/caeJ2hm'
 forumTopicId: 18206
@@ -9,7 +9,7 @@ dashedName: introducing-else-if-statements
 
 # --description--
 
-如果你有多个条件语句，你可以通过 `else if` 语句把 `if` 语句链起来。
+如果你有多個條件語句，你可以通過 `else if` 語句把 `if` 語句鏈起來。
 
 ```js
 if (num > 15) {
@@ -23,23 +23,23 @@ if (num > 15) {
 
 # --instructions--
 
-使用 `else if` 实现同样的效果。
+使用 `else if` 實現同樣的效果。
 
 # --hints--
 
-你应该至少有两个 `else` 表达式。
+你應該至少有兩個 `else` 表達式。
 
 ```js
 assert(code.match(/else/g).length > 1);
 ```
 
-你应该至少有两个 `if` 表达式。
+你應該至少有兩個 `if` 表達式。
 
 ```js
 assert(code.match(/if/g).length > 1);
 ```
 
-应该关闭每一个 `if else` 代码块。
+應該關閉每一個 `if else` 代碼塊。
 
 ```js
 assert(
@@ -49,31 +49,31 @@ assert(
 );
 ```
 
-`testElseIf(0)` 应该返回字符串 `Smaller than 5`
+`testElseIf(0)` 應該返回字符串 `Smaller than 5`
 
 ```js
 assert(testElseIf(0) === 'Smaller than 5');
 ```
 
-`testElseIf(5)` 应该返回字符串 `Between 5 and 10`
+`testElseIf(5)` 應該返回字符串 `Between 5 and 10`
 
 ```js
 assert(testElseIf(5) === 'Between 5 and 10');
 ```
 
-`testElseIf(7)` 应该返回字符串 `Between 5 and 10`
+`testElseIf(7)` 應該返回字符串 `Between 5 and 10`
 
 ```js
 assert(testElseIf(7) === 'Between 5 and 10');
 ```
 
-`testElseIf(10)` 应该返回字符串 `Between 5 and 10`
+`testElseIf(10)` 應該返回字符串 `Between 5 and 10`
 
 ```js
 assert(testElseIf(10) === 'Between 5 and 10');
 ```
 
-`testElseIf(12)` 应该返回字符串 `Greater than 10`
+`testElseIf(12)` 應該返回字符串 `Greater than 10`
 
 ```js
 assert(testElseIf(12) === 'Greater than 10');

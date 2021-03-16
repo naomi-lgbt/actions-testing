@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedc08830
-title: 给表单添加一个必填字段
+title: 給表單添加一個必填字段
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cMd4EcQ'
 forumTopicId: 18360
@@ -9,19 +9,19 @@ dashedName: use-html5-to-require-a-field
 
 # --description--
 
-当你设计表单时，你可以指定某些字段为必填项（required），只有当用户填写了该字段后，才可以提交表单。
+當你設計表單時，你可以指定某些字段爲必填項（required），只有當用戶填寫了該字段後，纔可以提交表單。
 
-如果你想把文本输入框设置为必填项，在 `input` 元素中加上 `required` 属性就可以了，例如：`<input type="text" required>`
+如果你想把文本輸入框設置爲必填項，在 `input` 元素中加上 `required` 屬性就可以了，例如：`<input type="text" required>`
 
 # --instructions--
 
-请给 `input` 元素加上 `required` 属性，这样用户就必须先在输入框里填入内容，然后才可以提交表单。
+請給 `input` 元素加上 `required` 屬性，這樣用戶就必須先在輸入框裏填入內容，然後纔可以提交表單。
 
-然后尝试在不输入任何文本的情况下提交表单， 看看 HTML5 表单是如何通知你这个字段是必填的。
+然後嘗試在不輸入任何文本的情況下提交表單， 看看 HTML5 表單是如何通知你這個字段是必填的。
 
 # --hints--
 
-`input` 元素应有 `required` 属性。
+`input` 元素應有 `required` 屬性。
 
 ```js
 assert($('input').prop('required'));

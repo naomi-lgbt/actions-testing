@@ -1,6 +1,6 @@
 ---
 id: af7588ade1100bde429baf20
-title: 寻找缺失的字母
+title: 尋找缺失的字母
 challengeType: 5
 forumTopicId: 16023
 dashedName: missing-letters
@@ -8,37 +8,37 @@ dashedName: missing-letters
 
 # --description--
 
-在这道题目中，我们需要写一个函数，找出传入的字符串里缺失的字母并返回它。
+在這道題目中，我們需要寫一個函數，找出傳入的字符串裏缺失的字母並返回它。
 
-如果所有字母都在传入的字符串范围内，返回 `undefined`。
+如果所有字母都在傳入的字符串範圍內，返回 `undefined`。
 
 # --hints--
 
-`fearNotLetter("abce")` 应该返回字符串 `d`。
+`fearNotLetter("abce")` 應該返回字符串 `d`。
 
 ```js
 assert.deepEqual(fearNotLetter('abce'), 'd');
 ```
 
-`fearNotLetter("abcdefghjklmno")` 应返回 `i`。
+`fearNotLetter("abcdefghjklmno")` 應返回 `i`。
 
 ```js
 assert.deepEqual(fearNotLetter('abcdefghjklmno'), 'i');
 ```
 
-`fearNotLetter("stvwx")` 应该返回字符串 `u`。
+`fearNotLetter("stvwx")` 應該返回字符串 `u`。
 
 ```js
 assert.deepEqual(fearNotLetter('stvwx'), 'u');
 ```
 
-`fearNotLetter("bcdf")` 应该返回字符串 `e`。
+`fearNotLetter("bcdf")` 應該返回字符串 `e`。
 
 ```js
 assert.deepEqual(fearNotLetter('bcdf'), 'e');
 ```
 
-`fearNotLetter("abcdefghijklmnopqrstuvwxyz")` 应返回 `undefined`。
+`fearNotLetter("abcdefghijklmnopqrstuvwxyz")` 應返回 `undefined`。
 
 ```js
 assert.isUndefined(fearNotLetter('abcdefghijklmnopqrstuvwxyz'));

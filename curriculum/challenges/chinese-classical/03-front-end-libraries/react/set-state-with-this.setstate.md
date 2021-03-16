@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036173
-title: 用 this.setState 设置状态
+title: 用 this.setState 設置狀態
 challengeType: 6
 forumTopicId: 301412
 dashedName: set-state-with-this-setstate
@@ -8,7 +8,7 @@ dashedName: set-state-with-this-setstate
 
 # --description--
 
-前面的挑战涵盖了组件的 `state` 以及如何在 `constructor` 中初始化 state。 还有一种方法可以更改组件的 `state`， React 提供了 `setState` 方法来更新组件的 `state`。 在组件类中调用 `setState` 方法如下所示：`this.setState()`，传入键值对的对象， 其中键是 state 属性，值是更新后的 state 数据。 例如，如果我们在 state 中存储 `username`，并想要更新它，代码如下所示：
+前面的挑戰涵蓋了組件的 `state` 以及如何在 `constructor` 中初始化 state。 還有一種方法可以更改組件的 `state`， React 提供了 `setState` 方法來更新組件的 `state`。 在組件類中調用 `setState` 方法如下所示：`this.setState()`，傳入鍵值對的對象， 其中鍵是 state 屬性，值是更新後的 state 數據。 例如，如果我們在 state 中存儲 `username`，並想要更新它，代碼如下所示：
 
 ```jsx
 this.setState({
@@ -16,17 +16,17 @@ this.setState({
 });
 ```
 
-React 要求永远不要直接修改 `state`，而是在 state 发生改变时始终使用 `this.setState()`。 此外，应该注意，React 可以批量处理多个 state 更新以提高性能。 这意味着通过 `setState` 方法进行的 state 更新可以是异步的。 `setState` 方法有一种替代语法可以解决异步问题， 虽然这很少用到，但是最好还是记住它！ 有关详细信息，请参阅[React 文档](https://facebook.github.io/react/docs/state-and-lifecycle.html)。
+React 要求永遠不要直接修改 `state`，而是在 state 發生改變時始終使用 `this.setState()`。 此外，應該注意，React 可以批量處理多個 state 更新以提高性能。 這意味着通過 `setState` 方法進行的 state 更新可以是異步的。 `setState` 方法有一種替代語法可以解決異步問題， 雖然這很少用到，但是最好還是記住它！ 有關詳細信息，請參閱[React 文檔](https://facebook.github.io/react/docs/state-and-lifecycle.html)。
 
 # --instructions--
 
-代码编辑器中有一个 `button` 元素，它有一个 `onClick()` 处理程序。 当 `button` 在浏览器中接收到单击事件时触发此处理程序，并运行 `MyComponent` 中定义的 `handleClick` 方法。 在 `handleClick` 方法中，使用 `this.setState()` 更新组件的 `state`。 设置 `state` 中的 `name` 属性为字符串 `React Rocks!`。
+代碼編輯器中有一個 `button` 元素，它有一個 `onClick()` 處理程序。 當 `button` 在瀏覽器中接收到單擊事件時觸發此處理程序，並運行 `MyComponent` 中定義的 `handleClick` 方法。 在 `handleClick` 方法中，使用 `this.setState()` 更新組件的 `state`。 設置 `state` 中的 `name` 屬性爲字符串 `React Rocks!`。
 
-单击按钮查看渲染的 state 的更新。 如果不完全理解单击处理程序代码在此时的工作方式，请不要担心。 在接下来的挑战中会有讲述。
+單擊按鈕查看渲染的 state 的更新。 如果不完全理解單擊處理程序代碼在此時的工作方式，請不要擔心。 在接下來的挑戰中會有講述。
 
 # --hints--
 
-`MyComponent` 的 state 应该使用键值对 `{ name: Initial State }` 来初始化。
+`MyComponent` 的 state 應該使用鍵值對 `{ name: Initial State }` 來初始化。
 
 ```js
 assert(
@@ -35,13 +35,13 @@ assert(
 );
 ```
 
-`MyComponent` 应该渲染一个 `h1` 标题。
+`MyComponent` 應該渲染一個 `h1` 標題。
 
 ```js
 assert(Enzyme.mount(React.createElement(MyComponent)).find('h1').length === 1);
 ```
 
-渲染的 `h1` 标题中应该包含一段文本，这段文本是从组件的 state 中渲染出来的。
+渲染的 `h1` 標題中應該包含一段文本，這段文本是從組件的 state 中渲染出來的。
 
 ```js
 async () => {
@@ -57,7 +57,7 @@ async () => {
 };
 ```
 
-调用 `MyComponent` 的 `handleClick` 方法应该将 state 的 name 属性设置为 `React Rocks!`。
+調用 `MyComponent` 的 `handleClick` 方法應該將 state 的 name 屬性設置爲 `React Rocks!`。
 
 ```js
 async () => {

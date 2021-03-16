@@ -1,6 +1,6 @@
 ---
 id: a26cbbe9ad8655a977e1ceb5
-title: 找出字符串中的最长单词
+title: 找出字符串中的最長單詞
 challengeType: 5
 forumTopicId: 16015
 dashedName: find-the-longest-word-in-a-string
@@ -8,13 +8,13 @@ dashedName: find-the-longest-word-in-a-string
 
 # --description--
 
-返回给出的句子中，最长单词的长度。
+返回給出的句子中，最長單詞的長度。
 
-函数的返回值应是一个数字。
+函數的返回值應是一個數字。
 
 # --hints--
 
-`findLongestWordLength("The quick brown fox jumped over the lazy dog")` 应返回一个数字。
+`findLongestWordLength("The quick brown fox jumped over the lazy dog")` 應返回一個數字。
 
 ```js
 assert(
@@ -24,7 +24,7 @@ assert(
 );
 ```
 
-`findLongestWordLength("The quick brown fox jumped over the lazy dog")` 应返回 `6`。
+`findLongestWordLength("The quick brown fox jumped over the lazy dog")` 應返回 `6`。
 
 ```js
 assert(
@@ -32,19 +32,19 @@ assert(
 );
 ```
 
-`findLongestWordLength("May the force be with you")` 应返回 `5`。
+`findLongestWordLength("May the force be with you")` 應返回 `5`。
 
 ```js
 assert(findLongestWordLength('May the force be with you') === 5);
 ```
 
-`findLongestWordLength("Google do a barrel roll")` 应返回 `6`。
+`findLongestWordLength("Google do a barrel roll")` 應返回 `6`。
 
 ```js
 assert(findLongestWordLength('Google do a barrel roll') === 6);
 ```
 
-`findLongestWordLength("What is the average airspeed velocity of an unladen swallow")` 应返回 `8`。
+`findLongestWordLength("What is the average airspeed velocity of an unladen swallow")` 應返回 `8`。
 
 ```js
 assert(
@@ -54,7 +54,7 @@ assert(
 );
 ```
 
-`findLongestWordLength("What if we try a super-long word such as otorhinolaryngology")` 应返回 `19`。
+`findLongestWordLength("What if we try a super-long word such as otorhinolaryngology")` 應返回 `19`。
 
 ```js
 assert(

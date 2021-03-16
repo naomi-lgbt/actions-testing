@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036187
-title: 使用三元表达式进行条件渲染
+title: 使用三元表達式進行條件渲染
 challengeType: 6
 forumTopicId: 301414
 dashedName: use-a-ternary-expression-for-conditional-rendering
@@ -8,7 +8,7 @@ dashedName: use-a-ternary-expression-for-conditional-rendering
 
 # --description--
 
-在继续使用动态渲染技术之前，还有最后一种方法可以渲染想要的东西，它使用内置的 JavaScript 条件：<dfn>三元运算符</dfn>。 三元运算符经常被用作 JavaScript 中 `if/else` 语句的缩写。 它们不像传统的 `if/else` 语句那样强大，但是在 React 开发人员中非常流行， 原因之一就是 JSX 的编译原理，`if/else` 语句不能直接插入到 JSX 代码中。 可能你在前几个挑战就注意到了这一点——当需要 `if/else` 语句时，它总是在 `return` 语句的*外面*。 如果想在 JSX 中实现条件逻辑，三元表达式是一个很好的选择。 回想一下，三元运算符有三个部分，但是可以将多个三元表达式组合在一起。 以下是基本语法：
+在繼續使用動態渲染技術之前，還有最後一種方法可以渲染想要的東西，它使用內置的 JavaScript 條件：<dfn>三元運算符</dfn>。 三元運算符經常被用作 JavaScript 中 `if/else` 語句的縮寫。 它們不像傳統的 `if/else` 語句那樣強大，但是在 React 開發人員中非常流行， 原因之一就是 JSX 的編譯原理，`if/else` 語句不能直接插入到 JSX 代碼中。 可能你在前幾個挑戰就注意到了這一點——當需要 `if/else` 語句時，它總是在 `return` 語句的*外面*。 如果想在 JSX 中實現條件邏輯，三元表達式是一個很好的選擇。 回想一下，三元運算符有三個部分，但是可以將多個三元表達式組合在一起。 以下是基本語法：
 
 ```jsx
 condition ? expressionIfTrue : expressionIfFalse;
@@ -16,13 +16,13 @@ condition ? expressionIfTrue : expressionIfFalse;
 
 # --instructions--
 
-代码编辑器在 `CheckUserAge` 组件的 `render()` 方法中定义了三个常量， 它们分别是 `buttonOne`、`buttonTwo` 和 `buttonThree`。 每个都分配了一个表示按钮元素的简单 JSX 表达式。 首先，使用 `input` 和 `userAge` 初始化 `CheckUserAge` 的 state，并将其值设置为空字符串。
+代碼編輯器在 `CheckUserAge` 組件的 `render()` 方法中定義了三個常量， 它們分別是 `buttonOne`、`buttonTwo` 和 `buttonThree`。 每個都分配了一個表示按鈕元素的簡單 JSX 表達式。 首先，使用 `input` 和 `userAge` 初始化 `CheckUserAge` 的 state，並將其值設置爲空字符串。
 
-一旦组件将信息渲染给页面，用户应该有一种方法与之交互。 在组件的 `return` 语句中，设置一个实现以下逻辑的三元表达式：当页面首次加载时，将提交按钮 `buttonOne` 渲染到页面。 然后，当用户输入年龄并点击该按钮时，根据年龄渲染不同的按钮。 如果用户输入的数字小于`18`，则渲染`buttonThree`。 如果用户输入的数字大于或等于`18`，则渲染`buttonTwo`。
+一旦組件將信息渲染給頁面，用戶應該有一種方法與之交互。 在組件的 `return` 語句中，設置一個實現以下邏輯的三元表達式：當頁面首次加載時，將提交按鈕 `buttonOne` 渲染到頁面。 然後，當用戶輸入年齡並點擊該按鈕時，根據年齡渲染不同的按鈕。 如果用戶輸入的數字小於`18`，則渲染`buttonThree`。 如果用戶輸入的數字大於或等於`18`，則渲染`buttonTwo`。
 
 # --hints--
 
-`CheckUserAge` 组件应该渲染出单个 `input` 元素和单个 `button` 元素。
+`CheckUserAge` 組件應該渲染出單個 `input` 元素和單個 `button` 元素。
 
 ```js
 assert(
@@ -33,7 +33,7 @@ assert(
 );
 ```
 
-`CheckUserAge` 组件的 state 应该用 `userAge` 属性和 `input` 属性初始化，并且这两个属性的值都被设置为空字符串。
+`CheckUserAge` 組件的 state 應該用 `userAge` 屬性和 `input` 屬性初始化，並且這兩個屬性的值都被設置爲空字符串。
 
 ```js
 assert(
@@ -42,7 +42,7 @@ assert(
 );
 ```
 
-当 `CheckUserAge` 组件首次渲染到 DOM 时，`button` 内部的文本应为 Submit。
+當 `CheckUserAge` 組件首次渲染到 DOM 時，`button` 內部的文本應爲 Submit。
 
 ```js
 assert(
@@ -51,7 +51,7 @@ assert(
 );
 ```
 
-当小于 18 的数字输入到 `input` 元素中，并点击该`button` 时，该 `button` 的内部文本应该是 `You Shall Not Pass`。
+當小於 18 的數字輸入到 `input` 元素中，並點擊該`button` 時，該 `button` 的內部文本應該是 `You Shall Not Pass`。
 
 ```js
 (() => {
@@ -83,7 +83,7 @@ assert(
 })();
 ```
 
-当大于或等于 18 的数字输入到 `input` 元素中，并点击该 `button` 时，该 `button` 的内部文本应该是 `You May Enter`。
+當大於或等於 18 的數字輸入到 `input` 元素中，並點擊該 `button` 時，該 `button` 的內部文本應該是 `You May Enter`。
 
 ```js
 (() => {
@@ -115,7 +115,7 @@ assert(
 })();
 ```
 
-提交了一个数字之后，并再次更改了 `input` 的值，该 `button` 内部文本应该变回 `Submit`。
+提交了一個數字之後，並再次更改了 `input` 的值，該 `button` 內部文本應該變回 `Submit`。
 
 ```js
 (() => {
@@ -156,7 +156,7 @@ assert(
 })();
 ```
 
-你的代码不应该包含任何 `if/else` 语句。
+你的代碼不應該包含任何 `if/else` 語句。
 
 ```js
 assert(

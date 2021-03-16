@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244c0
-title: 函数中的全局作用域和局部作用域
+title: 函數中的全局作用域和局部作用域
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c2QwKH2'
 forumTopicId: 18194
@@ -9,9 +9,9 @@ dashedName: global-vs--local-scope-in-functions
 
 # --description--
 
-一个程序中有可能具有相同名称的<dfn>局部</dfn>变量 和<dfn>全局</dfn>变量。 在这种情况下，`local` 变量将会优先于`global`变量。
+一個程序中有可能具有相同名稱的<dfn>局部</dfn>變量 和<dfn>全局</dfn>變量。 在這種情況下，`local` 變量將會優先於`global`變量。
 
-下面为例：
+下面爲例：
 
 ```js
 var someVar = "Hat";
@@ -21,27 +21,27 @@ function myFun() {
 }
 ```
 
-函数 `myFun` 将会返回 `Head`，因为 `local` 变量优先级更高。
+函數 `myFun` 將會返回 `Head`，因爲 `local` 變量優先級更高。
 
 # --instructions--
 
-给 `myOutfit` 添加一个局部变量来将 `outerWear` 的值重载为 `sweater`。
+給 `myOutfit` 添加一個局部變量來將 `outerWear` 的值重載爲 `sweater`。
 
 # --hints--
 
-不要修改全局变量 `outerWear` 的值。
+不要修改全局變量 `outerWear` 的值。
 
 ```js
 assert(outerWear === 'T-Shirt');
 ```
 
-`myOutfit` 应该返回 `sweater`。
+`myOutfit` 應該返回 `sweater`。
 
 ```js
 assert(myOutfit() === 'sweater');
 ```
 
-不要修改 return 语句。
+不要修改 return 語句。
 
 ```js
 assert(/return outerWear/.test(code));

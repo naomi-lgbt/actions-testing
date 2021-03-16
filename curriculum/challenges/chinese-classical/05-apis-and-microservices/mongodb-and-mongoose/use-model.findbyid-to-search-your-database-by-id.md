@@ -1,6 +1,6 @@
 ---
 id: 587d7fb7367417b2b2512c0d
-title: 使用 model.findById() 方法，根据 _id 来搜索数据
+title: 使用 model.findById() 方法，根據 _id 來搜索數據
 challengeType: 2
 forumTopicId: 301544
 dashedName: use-model-findbyid-to-search-your-database-by-id
@@ -8,15 +8,15 @@ dashedName: use-model-findbyid-to-search-your-database-by-id
 
 # --description--
 
-在保存 document 的时候，MongoDB 会自动为它添加 `_id` 字段，并给该字段设置一个唯一的仅包含数字和字母的值。 通过 `_id` 搜索是一个十分常见的操作，为此，Mongoose 提供了一个专门的方法。
+在保存 document 的時候，MongoDB 會自動爲它添加 `_id` 字段，並給該字段設置一個唯一的僅包含數字和字母的值。 通過 `_id` 搜索是一個十分常見的操作，爲此，Mongoose 提供了一個專門的方法。
 
 # --instructions--
 
-修改 `findPersonById`，用 `Model.findById() -> Person` 来查询唯一一个给定 `_id` 的人， 把函数参数 `personId` 作为查询键。
+修改 `findPersonById`，用 `Model.findById() -> Person` 來查詢唯一一個給定 `_id` 的人， 把函數參數 `personId` 作爲查詢鍵。
 
 # --hints--
 
-应成功地根据 Id 找到对应的数据
+應成功地根據 Id 找到對應的數據
 
 ```js
 (getUserInput) =>

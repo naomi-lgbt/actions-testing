@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403616c
-title: 覆盖默认的 Props
+title: 覆蓋默認的 Props
 challengeType: 6
 forumTopicId: 301399
 dashedName: override-default-props
@@ -8,17 +8,17 @@ dashedName: override-default-props
 
 # --description--
 
-在 React 中，设置默认的 props 是一个很有用的特性， 显式设置组件的 prop 值即可覆盖默认 props。
+在 React 中，設置默認的 props 是一個很有用的特性， 顯式設置組件的 prop 值即可覆蓋默認 props。
 
 # --instructions--
 
-`ShoppingCart` 组件现在渲染了一个子组件 `Items`。 该 `Items` 组件有一个默认 `quantity` prop，其值被设置为整数 `0`。 通过传入数值 `10` 来覆盖 `quantity` 的默认 prop。
+`ShoppingCart` 組件現在渲染了一個子組件 `Items`。 該 `Items` 組件有一個默認 `quantity` prop，其值被設置爲整數 `0`。 通過傳入數值 `10` 來覆蓋 `quantity` 的默認 prop。
 
-**注意：** 请记住，向组件添加 prop 的语法与添加 HTML 属性类似。 但是，由于 `quantity` 的值是整数，所以它不会加引号，但应该用花括号括起来， 例如`{100}`。 这个语法告诉 JSX 直接将花括号中的值解释为 JavaScript。
+**注意：** 請記住，向組件添加 prop 的語法與添加 HTML 屬性類似。 但是，由於 `quantity` 的值是整數，所以它不會加引號，但應該用花括號括起來， 例如`{100}`。 這個語法告訴 JSX 直接將花括號中的值解釋爲 JavaScript。
 
 # --hints--
 
-应该渲染 `ShoppingCart` 组件。
+應該渲染 `ShoppingCart` 組件。
 
 ```js
 assert(
@@ -29,7 +29,7 @@ assert(
 );
 ```
 
-应该渲染 `Items` 组件。
+應該渲染 `Items` 組件。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-`Items` 组件应该有一个 `{ quantity: 10 }` 的 prop，该 prop 是从 `ShoppingCart` 组件传递过去的。
+`Items` 組件應該有一個 `{ quantity: 10 }` 的 prop，該 prop 是從 `ShoppingCart` 組件傳遞過去的。
 
 ```js
 (getUserInput) =>

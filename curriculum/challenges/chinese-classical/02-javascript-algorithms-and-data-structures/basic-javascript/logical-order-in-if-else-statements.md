@@ -1,6 +1,6 @@
 ---
 id: 5690307fddb111c6084545d7
-title: if else 语句中的逻辑顺序
+title: if else 語句中的邏輯順序
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cwNvMUV'
 forumTopicId: 18228
@@ -9,13 +9,13 @@ dashedName: logical-order-in-if-else-statements
 
 # --description--
 
-`if`、`else if` 语句中的代码顺序是很重要的。
+`if`、`else if` 語句中的代碼順序是很重要的。
 
-在条件判断语句中，代码的执行顺序是从上到下，所以你需要考虑清楚先执行哪一句，后执行哪一句。
+在條件判斷語句中，代碼的執行順序是從上到下，所以你需要考慮清楚先執行哪一句，後執行哪一句。
 
-这有两个例子。
+這有兩個例子。
 
-第一个例子：
+第一個例子：
 
 ```js
 function foo(x) {
@@ -29,7 +29,7 @@ function foo(x) {
 }
 ```
 
-第二个例子更改了代码的执行顺序：
+第二個例子更改了代碼的執行順序：
 
 ```js
 function bar(x) {
@@ -43,34 +43,34 @@ function bar(x) {
 }
 ```
 
-这两个函数看起来几乎一模一样，我们传一个值进去看看它们有什么区别。
+這兩個函數看起來幾乎一模一樣，我們傳一個值進去看看它們有什麼區別。
 
 ```js
 foo(0)
 bar(0)
 ```
 
-`foo(0)` 将返回字符串 `Less than one`，`bar(0)` 将返回字符串 `Less than two`。
+`foo(0)` 將返回字符串 `Less than one`，`bar(0)` 將返回字符串 `Less than two`。
 
 # --instructions--
 
-更改函数的逻辑顺序以便通过所有的测试用例。
+更改函數的邏輯順序以便通過所有的測試用例。
 
 # --hints--
 
-`orderMyLogic(4)` 应该返回字符串 `Less than 5`
+`orderMyLogic(4)` 應該返回字符串 `Less than 5`
 
 ```js
 assert(orderMyLogic(4) === 'Less than 5');
 ```
 
-`orderMyLogic(6)` 应该返回字符串 `Less than 10`
+`orderMyLogic(6)` 應該返回字符串 `Less than 10`
 
 ```js
 assert(orderMyLogic(6) === 'Less than 10');
 ```
 
-`orderMyLogic(11)`应该返回 `Greater than or equal to 10`。
+`orderMyLogic(11)`應該返回 `Greater than or equal to 10`。
 
 ```js
 assert(orderMyLogic(11) === 'Greater than or equal to 10');

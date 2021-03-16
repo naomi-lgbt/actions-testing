@@ -1,6 +1,6 @@
 ---
 id: 579e2a2c335b9d72dd32e05c
-title: Slice 与 Splice
+title: Slice 與 Splice
 challengeType: 5
 forumTopicId: 301148
 dashedName: slice-and-splice
@@ -8,29 +8,29 @@ dashedName: slice-and-splice
 
 # --description--
 
-本挑战的输入参数为两个数组和一个索引值。
+本挑戰的輸入參數爲兩個數組和一個索引值。
 
-将第一个数组中的所有元素依次复制到第二个数组中。
+將第一個數組中的所有元素依次複製到第二個數組中。
 
-请注意，你需要从第二个数组索引值为 `n` 的地方开始插入。
+請注意，你需要從第二個數組索引值爲 `n` 的地方開始插入。
 
-最后，请返回插入元素后的数组。 作为输入参数的两个数组在函数执行前后应保持不变。
+最後，請返回插入元素後的數組。 作爲輸入參數的兩個數組在函數執行前後應保持不變。
 
 # --hints--
 
-`frankenSplice([1, 2, 3], [4, 5], 1)` 应返回 `[4, 1, 2, 3, 5]`。
+`frankenSplice([1, 2, 3], [4, 5], 1)` 應返回 `[4, 1, 2, 3, 5]`。
 
 ```js
 assert.deepEqual(frankenSplice([1, 2, 3], [4, 5], 1), [4, 1, 2, 3, 5]);
 ```
 
-`frankenSplice([1, 2], ["a", "b"], 1)` 应返回 `["a", 1, 2, "b"]`。
+`frankenSplice([1, 2], ["a", "b"], 1)` 應返回 `["a", 1, 2, "b"]`。
 
 ```js
 assert.deepEqual(frankenSplice(testArr1, testArr2, 1), ['a', 1, 2, 'b']);
 ```
 
-`frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)` 应返回 `["head", "shoulders", "claw", "tentacle", "knees", "toes"]`。
+`frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)` 應返回 `["head", "shoulders", "claw", "tentacle", "knees", "toes"]`。
 
 ```js
 assert.deepEqual(
@@ -43,20 +43,20 @@ assert.deepEqual(
 );
 ```
 
-第一个数组中的所有元素都应按原始顺序添加到第二个数组中。
+第一個數組中的所有元素都應按原始順序添加到第二個數組中。
 
 ```js
 assert.deepEqual(frankenSplice([1, 2, 3, 4], [], 0), [1, 2, 3, 4]);
 ```
 
-函数运行后，第一个数组应保持不变。
+函數運行後，第一個數組應保持不變。
 
 ```js
 frankenSplice(testArr1, testArr2, 1);
 assert.deepEqual(testArr1, [1, 2]);
 ```
 
-函数运行后，第二个数组应保持不变。
+函數運行後，第二個數組應保持不變。
 
 ```js
 frankenSplice(testArr1, testArr2, 1);

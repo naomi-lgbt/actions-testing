@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036148
-title: 将 Redux 连接到 Messages App
+title: 將 Redux 連接到 Messages App
 challengeType: 6
 forumTopicId: 301427
 dashedName: connect-redux-to-the-messages-app
@@ -8,17 +8,17 @@ dashedName: connect-redux-to-the-messages-app
 
 # --description--
 
-知道如何使用 `connect` 连接 React 和 Redux 后，我们可以在 React 组件中应用上面学到的内容。
+知道如何使用 `connect` 連接 React 和 Redux 後，我們可以在 React 組件中應用上面學到的內容。
 
-在上一课，连接到 Redux 的组件命名为 `Presentational`，这个命名不是任意的， 这样的术语*通常*是指未直接连接到 Redux 的 React 组件， 它们只负责执行接收 props 的函数来实现 UI 的呈现。 相比之下，容器组件用来连接到 Redux 上。 这些组件通常负责把 actions 分派给 store，且经常给子组件传入 store state 属性。
+在上一課，連接到 Redux 的組件命名爲 `Presentational`，這個命名不是任意的， 這樣的術語*通常*是指未直接連接到 Redux 的 React 組件， 它們只負責執行接收 props 的函數來實現 UI 的呈現。 相比之下，容器組件用來連接到 Redux 上。 這些組件通常負責把 actions 分派給 store，且經常給子組件傳入 store state 屬性。
 
 # --instructions--
 
-到目前为止，我们的编辑器上已包含了整个章节的代码， 唯一不同的是，React 组件被重新命名为 `Presentational`，即展示层组件。 创建一个新组件，保存在名为 `Container` 的常量中。 这个常量用 `connect` 把 `Presentational` 组件和 Redux 连接起来。 然后，在`AppWrapper` 中渲染 React Redux 的 `Provider`组件， 给 `Provider` 传入 Redux `store` 属性并渲染 `Container` 为子组件。 设置完所有内容后，将再次看到消息应用程序渲染到页面上。
+到目前爲止，我們的編輯器上已包含了整個章節的代碼， 唯一不同的是，React 組件被重新命名爲 `Presentational`，即展示層組件。 創建一個新組件，保存在名爲 `Container` 的常量中。 這個常量用 `connect` 把 `Presentational` 組件和 Redux 連接起來。 然後，在`AppWrapper` 中渲染 React Redux 的 `Provider`組件， 給 `Provider` 傳入 Redux `store` 屬性並渲染 `Container` 爲子組件。 設置完所有內容後，將再次看到消息應用程序渲染到頁面上。
 
 # --hints--
 
-`AppWrapper` 应渲染该页面上。
+`AppWrapper` 應渲染該頁面上。
 
 ```js
 assert(
@@ -29,7 +29,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应该渲染到页面上。
+`Presentational` 組件應該渲染到頁面上。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应渲染 `h2`、`input`、`button`、`ul` 四个元素。
+`Presentational` 組件應渲染 `h2`、`input`、`button`、`ul` 四個元素。
 
 ```js
 assert(
@@ -57,7 +57,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应接收 Redux store 的 `messages` 属性。
+`Presentational` 組件應接收 Redux store 的 `messages` 屬性。
 
 ```js
 assert(
@@ -70,7 +70,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应接收创建 action 的函数 `submitMessage` 属性。
+`Presentational` 組件應接收創建 action 的函數 `submitMessage` 屬性。
 
 ```js
 assert(

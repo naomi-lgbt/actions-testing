@@ -1,6 +1,6 @@
 ---
 id: ab306dbdcc907c7ddfc30830
-title: 数组扁平化
+title: 數組扁平化
 challengeType: 5
 forumTopicId: 16079
 dashedName: steamroller
@@ -8,35 +8,35 @@ dashedName: steamroller
 
 # --description--
 
-嵌套数组扁平化成一维数组。 必须考虑到各种深度的嵌套层级。
+嵌套數組扁平化成一維數組。 必須考慮到各種深度的嵌套層級。
 
 # --hints--
 
-`steamrollArray([[["a"]], [["b"]]])` 应返回 `["a", "b"]`。
+`steamrollArray([[["a"]], [["b"]]])` 應返回 `["a", "b"]`。
 
 ```js
 assert.deepEqual(steamrollArray([[['a']], [['b']]]), ['a', 'b']);
 ```
 
-`steamrollArray([1, [2], [3, [[4]]]])` 应返回 `[1, 2, 3, 4]`。
+`steamrollArray([1, [2], [3, [[4]]]])` 應返回 `[1, 2, 3, 4]`。
 
 ```js
 assert.deepEqual(steamrollArray([1, [2], [3, [[4]]]]), [1, 2, 3, 4]);
 ```
 
-`steamrollArray([1, [], [3, [[4]]]])` 应返回 `[1, 3, 4]`。
+`steamrollArray([1, [], [3, [[4]]]])` 應返回 `[1, 3, 4]`。
 
 ```js
 assert.deepEqual(steamrollArray([1, [], [3, [[4]]]]), [1, 3, 4]);
 ```
 
-`steamrollArray([1, {}, [3, [[4]]]])` 应返回 `[1, {}, 3, 4]`。
+`steamrollArray([1, {}, [3, [[4]]]])` 應返回 `[1, {}, 3, 4]`。
 
 ```js
 assert.deepEqual(steamrollArray([1, {}, [3, [[4]]]]), [1, {}, 3, 4]);
 ```
 
-代码中不应使用 `Array.prototype.flat()` 或 `Array.prototype.flatMap()` 方法。
+代碼中不應使用 `Array.prototype.flat()` 或 `Array.prototype.flatMap()` 方法。
 
 ```js
 assert(!code.match(/\.\s*flat\s*\(/) && !code.match(/\.\s*flatMap\s*\(/));

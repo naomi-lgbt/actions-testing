@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403615a
-title: 从数组中删除项目
+title: 從數組中刪除項目
 challengeType: 6
 forumTopicId: 301447
 dashedName: remove-an-item-from-an-array
@@ -8,15 +8,15 @@ dashedName: remove-an-item-from-an-array
 
 # --description--
 
-是时候练习从数组中删除项目了。 扩展运算符也可以在这里使用。 其他有用的JavaScript方法包括 `slice()` 和 `concat()`。
+是時候練習從數組中刪除項目了。 擴展運算符也可以在這裏使用。 其他有用的JavaScript方法包括 `slice()` 和 `concat()`。
 
 # --instructions--
 
-reducer 和 action creator 被修改为根据项目的索引从数组中删除一个项目。 完成编写 reducer 以便返回一个新的状态数组，并删除特定索引处的项目。
+reducer 和 action creator 被修改爲根據項目的索引從數組中刪除一個項目。 完成編寫 reducer 以便返回一個新的狀態數組，並刪除特定索引處的項目。
 
 # --hints--
 
-Redux store 应该存在并初始化一个 `[0,1,2,3,4,5]` 的状态。
+Redux store 應該存在並初始化一個 `[0,1,2,3,4,5]` 的狀態。
 
 ```js
 assert(
@@ -30,7 +30,7 @@ assert(
 );
 ```
 
-`removeItem` 和 `immutableReducer` 都应该是一个函数。
+`removeItem` 和 `immutableReducer` 都應該是一個函數。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-dispatch `removeItem` action creator 应该从 state 中删除项目，不应该改变 state。
+dispatch `removeItem` action creator 應該從 state 中刪除項目，不應該改變 state。
 
 ```js
 assert(

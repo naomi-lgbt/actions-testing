@@ -1,6 +1,6 @@
 ---
 id: 5c6c06847491271903d37cfd
-title: 使用单选框和复选框的 value 属性
+title: 使用單選框和複選框的 value 屬性
 challengeType: 0
 forumTopicId: 301099
 dashedName: use-the-value-attribute-with-radio-buttons-and-checkboxes
@@ -8,7 +8,7 @@ dashedName: use-the-value-attribute-with-radio-buttons-and-checkboxes
 
 # --description--
 
-提交表单时，所选项的值会发送给服务端。 `radio` 和 `checkbox` 的 `value` 属性值决定了发送到服务端的实际内容。
+提交表單時，所選項的值會發送給服務端。 `radio` 和 `checkbox` 的 `value` 屬性值決定了發送到服務端的實際內容。
 
 例如：
 
@@ -21,17 +21,17 @@ dashedName: use-the-value-attribute-with-radio-buttons-and-checkboxes
 </label>
 ```
 
-这里有两个 `radio` 单选框。 当用户提交表单时，如果 `indoor` 选项被选中，表单数据会包含：`indoor-outdoor=indoor`。 也就是所选项的 `name` 和 `value` 属性值。
+這裏有兩個 `radio` 單選框。 當用戶提交表單時，如果 `indoor` 選項被選中，表單數據會包含：`indoor-outdoor=indoor`。 也就是所選項的 `name` 和 `value` 屬性值。
 
-如果没有指明 `value` 属性值，则会使用默认值做为表单数据提交，也就是 `on`。 在这种情况下，如果用户选中 "indoor" 选项然后提交表单，表单数据则会包含 `indoor-outdoor=on`。 这样的表单数据看起来不够直观，因此最好将 `value` 属性值设置为一些有意义的内容。
+如果沒有指明 `value` 屬性值，則會使用默認值做爲表單數據提交，也就是 `on`。 在這種情況下，如果用戶選中 "indoor" 選項然後提交表單，表單數據則會包含 `indoor-outdoor=on`。 這樣的表單數據看起來不夠直觀，因此最好將 `value` 屬性值設置爲一些有意義的內容。
 
 # --instructions--
 
-给每一个 `radio` 和 `checkbox` 输入框添加 `value` 属性。 使用输入标签的文本，小写形式，作为属性的值。
+給每一個 `radio` 和 `checkbox` 輸入框添加 `value` 屬性。 使用輸入標籤的文本，小寫形式，作爲屬性的值。
 
 # --hints--
 
-应有一个单选按钮的 `value` 属性值为 `indoor`。
+應有一個單選按鈕的 `value` 屬性值爲 `indoor`。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-应有一个单选按钮的 `value` 属性值为 `outdoor`。
+應有一個單選按鈕的 `value` 屬性值爲 `outdoor`。
 
 ```js
 assert(
@@ -50,7 +50,7 @@ assert(
 );
 ```
 
-应有一个复选框的 `value` 属性值为 `loving`。
+應有一個複選框的 `value` 屬性值爲 `loving`。
 
 ```js
 assert(
@@ -60,7 +60,7 @@ assert(
 );
 ```
 
-应有一个复选框的 `value` 属性值为 `lazy`。
+應有一個複選框的 `value` 屬性值爲 `lazy`。
 
 ```js
 assert(
@@ -69,7 +69,7 @@ assert(
 );
 ```
 
-应有一个复选框的 `value` 属性值为 `energetic`。
+應有一個複選框的 `value` 屬性值爲 `energetic`。
 
 ```js
 assert(

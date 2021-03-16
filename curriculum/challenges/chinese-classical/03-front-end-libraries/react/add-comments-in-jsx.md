@@ -1,6 +1,6 @@
 ---
 id: 5a24bbe0dba28a8d3cbd4c5e
-title: 在 JSX 中添加注释
+title: 在 JSX 中添加註釋
 challengeType: 6
 forumTopicId: 301376
 dashedName: add-comments-in-jsx
@@ -8,35 +8,35 @@ dashedName: add-comments-in-jsx
 
 # --description--
 
-JSX 是一种可以编译成 JavaScript 的语法。 有时，为了便于阅读，可能需要在代码中添加注释。 像大多数编程语言一样，JSX 也有自己的方法来实现这一点。
+JSX 是一種可以編譯成 JavaScript 的語法。 有時，爲了便於閱讀，可能需要在代碼中添加註釋。 像大多數編程語言一樣，JSX 也有自己的方法來實現這一點。
 
-要将注释放在 JSX 中，可以使用 `{/* */}` 语法来包裹注释文本。
+要將註釋放在 JSX 中，可以使用 `{/* */}` 語法來包裹註釋文本。
 
 # --instructions--
 
-代码编辑器中的 JSX 元素与在上一个挑战中创建的元素类似。 在提供的 `div` 元素里添加注释，不修改现有的 `h1` 或 `p` 元素。
+代碼編輯器中的 JSX 元素與在上一個挑戰中創建的元素類似。 在提供的 `div` 元素裏添加註釋，不修改現有的 `h1` 或 `p` 元素。
 
 # --hints--
 
-常量 `JSX` 应该返回一个 `div` 元素。
+常量 `JSX` 應該返回一個 `div` 元素。
 
 ```js
 assert(JSX.type === 'div');
 ```
 
-`div` 应该包含一个 `h1` 标签作为第一个元素。
+`div` 應該包含一個 `h1` 標籤作爲第一個元素。
 
 ```js
 assert(JSX.props.children[0].type === 'h1');
 ```
 
-`div` 应该包含一个 `p` 标签作为第二个元素。
+`div` 應該包含一個 `p` 標籤作爲第二個元素。
 
 ```js
 assert(JSX.props.children[1].type === 'p');
 ```
 
-当前的 `h1` 和 `p` 元素不能被修改。
+當前的 `h1` 和 `p` 元素不能被修改。
 
 ```js
 assert(
@@ -45,7 +45,7 @@ assert(
 );
 ```
 
-`JSX` 应该包含一个注释。
+`JSX` 應該包含一個註釋。
 
 ```js
 assert(/<div>[\s\S]*{\s*\/\*[\s\S]*\*\/\s*}[\s\S]*<\/div>/.test(code));

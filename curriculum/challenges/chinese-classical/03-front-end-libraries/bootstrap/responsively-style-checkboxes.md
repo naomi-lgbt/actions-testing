@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aeda08845
-title: 响应式风格的复选框
+title: 響應式風格的複選框
 challengeType: 0
 forumTopicId: 18269
 required:
@@ -13,27 +13,27 @@ dashedName: responsively-style-checkboxes
 
 # --description--
 
-Bootstrap 的 `col-xs-*` 可应用于所有的 `form` 元素上，包括复选框！ 这样就可以不必关注屏幕大小，均匀地把复选框放在页面上了。
+Bootstrap 的 `col-xs-*` 可應用於所有的 `form` 元素上，包括複選框！ 這樣就可以不必關注屏幕大小，均勻地把複選框放在頁面上了。
 
 # --instructions--
 
-将所有三个复选框都放置于一个 `<div class="row">` 元素中。 然后分别把每个复选框都放置于一个 `<div class="col-xs-4">` 元素中。
+將所有三個複選框都放置於一個 `<div class="row">` 元素中。 然後分別把每個複選框都放置於一個 `<div class="col-xs-4">` 元素中。
 
 # --hints--
 
-将所有的复选框嵌入一个含有 `row` class 的 `div` 元素中。
+將所有的複選框嵌入一個含有 `row` class 的 `div` 元素中。
 
 ```js
 assert($('div.row:has(input[type="checkbox"])').length > 0);
 ```
 
-每一个复选框应该嵌套于单独的具有 `col-xs-4` class 的 `div` 元素中。
+每一個複選框應該嵌套於單獨的具有 `col-xs-4` class 的 `div` 元素中。
 
 ```js
 assert($('div.col-xs-4:has(input[type="checkbox"])').length > 2);
 ```
 
-确保所有 `div` 元素都有一个闭合标签。
+確保所有 `div` 元素都有一個閉合標籤。
 
 ```js
 assert(

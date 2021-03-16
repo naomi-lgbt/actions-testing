@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403615b
-title: 使用 Object.assign 拷贝对象
+title: 使用 Object.assign 拷貝對象
 challengeType: 6
 forumTopicId: 301437
 dashedName: copy-an-object-with-object-assign
@@ -8,19 +8,19 @@ dashedName: copy-an-object-with-object-assign
 
 # --description--
 
-最后几个挑战适用于数组，但是当状态是 `object` 时，有一些方法可以实现状态不变性。 处理对象的一个常用的方法是 `Object.assign()`。 `Object.assign()` 获取目标对象和源对象，并将源对象中的属性映射到目标对象。 任何匹配的属性都会被源对象中的属性覆盖。 通常用于通过传递一个空对象作为第一个参数，然后是要用复制的对象来制作对象的浅表副本。 这是一个例子：
+最後幾個挑戰適用於數組，但是當狀態是 `object` 時，有一些方法可以實現狀態不變性。 處理對象的一個常用的方法是 `Object.assign()`。 `Object.assign()` 獲取目標對象和源對象，並將源對象中的屬性映射到目標對象。 任何匹配的屬性都會被源對象中的屬性覆蓋。 通常用於通過傳遞一個空對象作爲第一個參數，然後是要用複製的對象來製作對象的淺表副本。 這是一個例子：
 
 `const newObject = Object.assign({}, obj1, obj2);`
 
-这会创建 `newObject` 作为新的 `object`，其中包含 `obj1` 和 `obj2` 中当前存在的属性。
+這會創建 `newObject` 作爲新的 `object`，其中包含 `obj1` 和 `obj2` 中當前存在的屬性。
 
 # --instructions--
 
-Redux 状态和 action 被修改为处理 `state` 的 `object`。 编辑代码以返回一个新的 `state` 对象，用于含有 `ONLINE` 类型的 action ，它将 `status` 属性设置为字符串 `online`。 尝试使用 `Object.assign()` 来完成挑战。
+Redux 狀態和 action 被修改爲處理 `state` 的 `object`。 編輯代碼以返回一個新的 `state` 對象，用於含有 `ONLINE` 類型的 action ，它將 `status` 屬性設置爲字符串 `online`。 嘗試使用 `Object.assign()` 來完成挑戰。
 
 # --hints--
 
-Redux store 应该存在并使用与第 1 行声明的 `defaultState` 对象相同的状态进行初始化。
+Redux store 應該存在並使用與第 1 行聲明的 `defaultState` 對象相同的狀態進行初始化。
 
 ```js
 assert(
@@ -37,13 +37,13 @@ assert(
 );
 ```
 
-`wakeUp` 和 `immutableReducer` 都应该是函数。
+`wakeUp` 和 `immutableReducer` 都應該是函數。
 
 ```js
 assert(typeof wakeUp === 'function' && typeof immutableReducer === 'function');
 ```
 
-dispatch 一个类型为 `ONLINE` 的 action 应该将状态 `status` 更新为 `online`，并且不应该改变状态。
+dispatch 一個類型爲 `ONLINE` 的 action 應該將狀態 `status` 更新爲 `online`，並且不應該改變狀態。
 
 ```js
 assert(
@@ -63,7 +63,7 @@ assert(
 );
 ```
 
-`Object.assign` 应该被用于返回一个新状态。
+`Object.assign` 應該被用於返回一個新狀態。
 
 ```js
 (getUserInput) => assert(getUserInput('index').includes('Object.assign'));

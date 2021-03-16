@@ -1,6 +1,6 @@
 ---
 id: cf1111c1c12feddfaeb2bdef
-title: 生成某个范围内的随机整数
+title: 生成某個範圍內的隨機整數
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cm83yu6'
 forumTopicId: 18187
@@ -9,39 +9,39 @@ dashedName: generate-random-whole-numbers-within-a-range
 
 # --description--
 
-我们之前生成的随机数是在 0 到某个数之间，现在我们要生成的随机数是在两个指定的数之间。
+我們之前生成的隨機數是在 0 到某個數之間，現在我們要生成的隨機數是在兩個指定的數之間。
 
-我们需要定义一个最小值 `min` 和一个最大值 `max`。
+我們需要定義一個最小值 `min` 和一個最大值 `max`。
 
-下面是我们将要使用的方法， 仔细看看并尝试理解这行代码到底在干嘛：
+下面是我們將要使用的方法， 仔細看看並嘗試理解這行代碼到底在幹嘛：
 
 `Math.floor(Math.random() * (max - min + 1)) + min`
 
 # --instructions--
 
-创建一个函数 `randomRange`，接收参数的范围在 `myMin` 和 `myMax`之间，返回一个在 `myMin`（包括 myMin）和 `myMax`（包括 myMax）之间的随机整数。
+創建一個函數 `randomRange`，接收參數的範圍在 `myMin` 和 `myMax`之間，返回一個在 `myMin`（包括 myMin）和 `myMax`（包括 myMax）之間的隨機整數。
 
 # --hints--
 
-`randomRange` 返回的随机数应该大于或等于 `myMin`。
+`randomRange` 返回的隨機數應該大於或等於 `myMin`。
 
 ```js
 assert(calcMin === 5);
 ```
 
-`randomRange` 返回的随机数最大值应该等于 `myMax`。
+`randomRange` 返回的隨機數最大值應該等於 `myMax`。
 
 ```js
 assert(calcMax === 15);
 ```
 
-`randomRange` 应该返回一个随机整数，而不是小数。
+`randomRange` 應該返回一個隨機整數，而不是小數。
 
 ```js
 assert(randomRange(0, 1) % 1 === 0);
 ```
 
-`randomRange` 应该使用 `myMax` 和 `myMin`，并且返回两者之间的随机数。
+`randomRange` 應該使用 `myMax` 和 `myMin`，並且返回兩者之間的隨機數。
 
 ```js
 assert(

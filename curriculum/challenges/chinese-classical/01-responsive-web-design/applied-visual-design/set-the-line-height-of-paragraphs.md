@@ -1,6 +1,6 @@
 ---
 id: 587d781d367417b2b2512ac5
-title: 设置段落的 line-height
+title: 設置段落的 line-height
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/crVWdcv'
 forumTopicId: 301070
@@ -9,15 +9,15 @@ dashedName: set-the-line-height-of-paragraphs
 
 # --description--
 
-CSS 提供 `line-height` 属性来设置行间的距离。 行高，顾名思义，可以用来设置每行文字所占据的垂直空间。
+CSS 提供 `line-height` 屬性來設置行間的距離。 行高，顧名思義，可以用來設置每行文字所佔據的垂直空間。
 
 # --instructions--
 
-给 `p` 标签添加 `line-height` 属性并赋值 25px。
+給 `p` 標籤添加 `line-height` 屬性並賦值 25px。
 
 # --hints--
 
-`p` 标签的 `line-height` 属性值应为 25px。
+`p` 標籤的 `line-height` 屬性值應爲 25px。
 
 ```js
 assert($('p').css('line-height') == '25px');

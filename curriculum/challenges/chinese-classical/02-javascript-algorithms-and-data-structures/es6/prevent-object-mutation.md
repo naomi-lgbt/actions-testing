@@ -1,6 +1,6 @@
 ---
 id: 598f48a36c8c40764b4e52b3
-title: 防止对象改变
+title: 防止對象改變
 challengeType: 1
 forumTopicId: 301207
 dashedName: prevent-object-mutation
@@ -8,9 +8,9 @@ dashedName: prevent-object-mutation
 
 # --description--
 
-通过之前的挑战可以看出，`const` 声明并不会真的保护数据不被改变。 为了确保数据不被改变，JavaScript 提供了一个函数 `Object.freeze`。
+通過之前的挑戰可以看出，`const` 聲明並不會真的保護數據不被改變。 爲了確保數據不被改變，JavaScript 提供了一個函數 `Object.freeze`。
 
-当一个对象被冻结的时候，你不能再对它的属性再进行增、删、改的操作。 任何试图改变对象的操作都会被阻止，却不会报错。
+當一個對象被凍結的時候，你不能再對它的屬性再進行增、刪、改的操作。 任何試圖改變對象的操作都會被阻止，卻不會報錯。
 
 ```js
 let obj = {
@@ -23,28 +23,28 @@ obj.newProp = "Test";
 console.log(obj); 
 ```
 
-`obj.review` 和 `obj.newProp` 赋值将导致错误，控制台将显示值 `{ name: "FreeCodeCamp", review: "Awesome" }`。
+`obj.review` 和 `obj.newProp` 賦值將導致錯誤，控制檯將顯示值 `{ name: "FreeCodeCamp", review: "Awesome" }`。
 
 # --instructions--
 
-在这个挑战中，你将使用 `Object.freeze` 来防止数学常量被改变。 你需要冻结 `MATH_CONSTANTS` 对象，使得没有人可以改变 `PI` 的值，或增加或删除属性。
+在這個挑戰中，你將使用 `Object.freeze` 來防止數學常量被改變。 你需要凍結 `MATH_CONSTANTS` 對象，使得沒有人可以改變 `PI` 的值，或增加或刪除屬性。
 
 # --hints--
 
-不要替换 `const` 关键字。
+不要替換 `const` 關鍵字。
 
 ```js
 (getUserInput) => assert(getUserInput('index').match(/const/g));
 ```
 
-`MATH_CONSTANTS` 应该为一个常量（使用 `const`）。
+`MATH_CONSTANTS` 應該爲一個常量（使用 `const`）。
 
 ```js
 (getUserInput) =>
   assert(getUserInput('index').match(/const\s+MATH_CONSTANTS/g));
 ```
 
-不要改变 `MATH_CONSTANTS` 的原始声明。
+不要改變 `MATH_CONSTANTS` 的原始聲明。
 
 ```js
 (getUserInput) =>
@@ -55,7 +55,7 @@ console.log(obj);
   );
 ```
 
-`PI` 应等于 `3.14`。
+`PI` 應等於 `3.14`。
 
 ```js
 assert(PI === 3.14);

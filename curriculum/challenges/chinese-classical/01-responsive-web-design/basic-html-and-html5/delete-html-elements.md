@@ -1,6 +1,6 @@
 ---
 id: bad87fed1348bd9aedf08833
-title: 删除 HTML 元素
+title: 刪除 HTML 元素
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/ckK73C9'
 forumTopicId: 17559
@@ -9,29 +9,29 @@ dashedName: delete-html-elements
 
 # --description--
 
-手机屏幕的空间是有限的。
+手機屏幕的空間是有限的。
 
-让我们删除不必要的元素，开始设计我们的 CatPhotoApp。
+讓我們刪除不必要的元素，開始設計我們的 CatPhotoApp。
 
 # --instructions--
 
-任务：删除 `h1` 元素以简化视图。
+任務：刪除 `h1` 元素以簡化視圖。
 
 # --hints--
 
-应删除 `h1` 元素。
+應刪除 `h1` 元素。
 
 ```js
 assert(!code.match(/<h1>/gi) && !code.match(/<\/h1>/gi));
 ```
 
-应保留 `h2` 元素。
+應保留 `h2` 元素。
 
 ```js
 assert(code.match(/<h2>[\w\W]*<\/h2>/gi));
 ```
 
-应保留 `p` 元素。
+應保留 `p` 元素。
 
 ```js
 assert(code.match(/<p>[\w\W]*<\/p>/gi));

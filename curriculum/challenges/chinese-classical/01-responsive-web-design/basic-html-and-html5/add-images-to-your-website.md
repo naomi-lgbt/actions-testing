@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08812
-title: 给网站添加图片
+title: 給網站添加圖片
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/c8EbJf2'
 forumTopicId: 16640
@@ -9,51 +9,51 @@ dashedName: add-images-to-your-website
 
 # --description--
 
-你可以使用 `img` 元素来为你的网站添加图片，其中 `src` 属性指向图片的地址。
+你可以使用 `img` 元素來爲你的網站添加圖片，其中 `src` 屬性指向圖片的地址。
 
 例如：
 
 `<img src="https://www.freecatphotoapp.com/your-image.jpg">`
 
-注意：`img` 元素是没有结束标签的。
+注意：`img` 元素是沒有結束標籤的。
 
-所有的 `img` 元素**必须**有 `alt` 属性。 `alt` 的属性值有两个作用，第一个作用是让屏幕阅读器可以知晓图片的内容，这会对网页的可访问性有很大提升；另一个作用是当图片无法加载时，页面需要显示的替代文本。
+所有的 `img` 元素**必須**有 `alt` 屬性。 `alt` 的屬性值有兩個作用，第一個作用是讓屏幕閱讀器可以知曉圖片的內容，這會對網頁的可訪問性有很大提升；另一個作用是當圖片無法加載時，頁面需要顯示的替代文本。
 
-**注意：**如果图片是纯装饰性的，把 `alt` 的属性值设置为空是最佳实践。
+**注意：**如果圖片是純裝飾性的，把 `alt` 的屬性值設置爲空是最佳實踐。
 
-理想情况下，`alt` 属性不应该包含特殊字符，除非有特殊需要。
+理想情況下，`alt` 屬性不應該包含特殊字符，除非有特殊需要。
 
-让我们给上面例子的 `img` 添加 `alt` 属性。
+讓我們給上面例子的 `img` 添加 `alt` 屬性。
 
 `<img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">`
 
 # --instructions--
 
-让我们给网站添加图片：
+讓我們給網站添加圖片：
 
-在 `main` 元素里，给 `p` 元素前面插入一个 `img` 元素。
+在 `main` 元素裏，給 `p` 元素前面插入一個 `img` 元素。
 
-然后将 `src` 的属性值设置为这个 url：
+然後將 `src` 的屬性值設置爲這個 url：
 
 `https://bit.ly/fcc-relaxing-cat`
 
-最后，不要忘记给 `img` 加上 `alt` 属性。
+最後，不要忘記給 `img` 加上 `alt` 屬性。
 
 # --hints--
 
-你的网页上应该有一张图片。
+你的網頁上應該有一張圖片。
 
 ```js
 assert($('img').length);
 ```
 
-你的图片应该有一个 `src` 属性，其值为猫咪图片的 url。
+你的圖片應該有一個 `src` 屬性，其值爲貓咪圖片的 url。
 
 ```js
 assert(/^https:\/\/bit\.ly\/fcc-relaxing-cat$/i.test($('img').attr('src')));
 ```
 
-你的图片元素的 `alt` 属性值不应为空。
+你的圖片元素的 `alt` 屬性值不應爲空。
 
 ```js
 assert(

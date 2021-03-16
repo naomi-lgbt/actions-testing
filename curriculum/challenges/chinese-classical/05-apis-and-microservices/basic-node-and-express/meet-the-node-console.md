@@ -1,6 +1,6 @@
 ---
 id: 587d7fb0367417b2b2512bed
-title: 认识 Node 的控制台
+title: 認識 Node 的控制檯
 challengeType: 2
 forumTopicId: 301515
 dashedName: meet-the-node-console
@@ -8,27 +8,27 @@ dashedName: meet-the-node-console
 
 # --description--
 
-可以采用下面的任意一种方式完成这些挑战：
+可以採用下面的任意一種方式完成這些挑戰：
 
-- 克隆 [这个 GitHub 仓库](https://github.com/freeCodeCamp/boilerplate-express/) 并在本地完成项目。
-- 使用 [Repl.it 上的初始化项目](https://repl.it/github/freeCodeCamp/boilerplate-express) 来完成项目。
-- 使用你选择的网站生成器来完成项目， 并确保包含了我们 GitHub 仓库的所有文件。
+- 克隆 [這個 GitHub 倉庫](https://github.com/freeCodeCamp/boilerplate-express/) 並在本地完成項目。
+- 使用 [Repl.it 上的初始化項目](https://repl.it/github/freeCodeCamp/boilerplate-express) 來完成項目。
+- 使用你選擇的網站生成器來完成項目， 並確保包含了我們 GitHub 倉庫的所有文件。
 
-当完成本项目，请确认有一个正常运行的 demo 可以公开访问。 然后将 URL 提交到 `Solution Link` 中。
+當完成本項目，請確認有一個正常運行的 demo 可以公開訪問。 然後將 URL 提交到 `Solution Link` 中。
 
-在开发过程中，能够随时看到代码的运行结果是非常重要的。
+在開發過程中，能夠隨時看到代碼的運行結果是非常重要的。
 
-Node 只是一个 JavaScript 环境。 与客户端 JavaScript 一样，你可以使用控制台显示有用的调试信息。 在本地计算机上，你可以在终端中输出调试信息。 在 Repl.it 上，右侧边栏会默认打开一个终端。
+Node 只是一個 JavaScript 環境。 與客戶端 JavaScript 一樣，你可以使用控制檯顯示有用的調試信息。 在本地計算機上，你可以在終端中輸出調試信息。 在 Repl.it 上，右側邊欄會默認打開一個終端。
 
-我们建议在做这些挑战题时保持终端打开的状态。 通过这些终端的输出，你可能会发现这些错误的本质原因。
+我們建議在做這些挑戰題時保持終端打開的狀態。 通過這些終端的輸出，你可能會發現這些錯誤的本質原因。
 
 # --instructions--
 
-修改 `myApp.js` 文件，在控制台打印出 “Hello World”。
+修改 `myApp.js` 文件，在控制檯打印出 “Hello World”。
 
 # --hints--
 
-控制台应该输出 `"Hello World"`
+控制檯應該輸出 `"Hello World"`
 
 ```js
 (getUserInput) =>

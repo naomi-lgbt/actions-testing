@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348cd8acdf08812
-title: 创建一个 Bootstrap 按钮
+title: 創建一個 Bootstrap 按鈕
 challengeType: 0
 forumTopicId: 16811
 dashedName: create-a-bootstrap-button
@@ -8,13 +8,13 @@ dashedName: create-a-bootstrap-button
 
 # --description--
 
-Bootstrap 的 `button` 元素有着独有的、比默认 HTML 按钮更好的样式风格。
+Bootstrap 的 `button` 元素有着獨有的、比默認 HTML 按鈕更好的樣式風格。
 
-在较大的小猫图片下方创建新的 `button` 元素。 为它添加 `btn` 与 `btn-default` 两个 classes 和 `Like` 文本。
+在較大的小貓圖片下方創建新的 `button` 元素。 爲它添加 `btn` 與 `btn-default` 兩個 classes 和 `Like` 文本。
 
 # --hints--
 
-应创建一个新的包含 `Like` 文本的 `button` 元素。
+應創建一個新的包含 `Like` 文本的 `button` 元素。
 
 ```js
 assert(
@@ -23,13 +23,13 @@ assert(
 );
 ```
 
-新的按钮元素应该有两个 classes: `btn` 和 `btn-default`。
+新的按鈕元素應該有兩個 classes: `btn` 和 `btn-default`。
 
 ```js
 assert($('button').hasClass('btn') && $('button').hasClass('btn-default'));
 ```
 
-保证所有 `button` 元素都有一个闭合标签。
+保證所有 `button` 元素都有一個閉合標籤。
 
 ```js
 assert(

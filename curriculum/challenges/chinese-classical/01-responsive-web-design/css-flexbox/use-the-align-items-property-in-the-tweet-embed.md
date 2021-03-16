@@ -1,6 +1,6 @@
 ---
 id: 587d78ad367417b2b2512af9
-title: 在推文中使用 align-items 属性
+title: 在推文中使用 align-items 屬性
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/cd3PNfq'
 forumTopicId: 301106
@@ -9,21 +9,21 @@ dashedName: use-the-align-items-property-in-the-tweet-embed
 
 # --description--
 
-在上一个挑战中，我们介绍了 `align-items` 属性并给出了示例。 我们可以对推文的几个嵌入元素使用这个属性，以调整其中 flex 元素的对齐方式。
+在上一個挑戰中，我們介紹了 `align-items` 屬性並給出了示例。 我們可以對推文的幾個嵌入元素使用這個屬性，以調整其中 flex 元素的對齊方式。
 
 # --instructions--
 
-为 header 中的 `.follow-btn` 元素添加 CSS 属性 `align-items`， 并将其属性值设为 `center`。
+爲 header 中的 `.follow-btn` 元素添加 CSS 屬性 `align-items`， 並將其屬性值設爲 `center`。
 
 # --hints--
 
-`.follow-btn` 应在页面上呈现。 请关闭广告拦截器等任何扩展。
+`.follow-btn` 應在頁面上呈現。 請關閉廣告攔截器等任何擴展。
 
 ```js
 assert($('.follow-btn').length > 0 && $('.follow-btn').css('display') !== 'none');
 ```
 
-`.follow-btn` 元素应有值为 `center` 的 `align-items` 属性。
+`.follow-btn` 元素應有值爲 `center` 的 `align-items` 屬性。
 
 ```js
 assert($('.follow-btn').css('align-items') == 'center');

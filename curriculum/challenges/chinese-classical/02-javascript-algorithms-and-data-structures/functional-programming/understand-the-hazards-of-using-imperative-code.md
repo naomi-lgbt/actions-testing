@@ -1,6 +1,6 @@
 ---
 id: 587d7b8e367417b2b2512b5d
-title: 了解使用命令式编程的危害
+title: 瞭解使用命令式編程的危害
 challengeType: 1
 forumTopicId: 301241
 dashedName: understand-the-hazards-of-using-imperative-code
@@ -8,31 +8,31 @@ dashedName: understand-the-hazards-of-using-imperative-code
 
 # --description--
 
-使用函数式编程是一个好的习惯。 它使你的代码易于管理，避免潜在的 bug。 但在开始之前，先看看命令式编程方法，以强调你可能有什么问题。
+使用函數式編程是一個好的習慣。 它使你的代碼易於管理，避免潛在的 bug。 但在開始之前，先看看命令式編程方法，以強調你可能有什麼問題。
 
-在英语 (以及许多其他语言) 中，命令式时态用来发出指令。 同样，命令式编程是向计算机提供一套执行任务的声明。
+在英語 (以及許多其他語言) 中，命令式時態用來發出指令。 同樣，命令式編程是向計算機提供一套執行任務的聲明。
 
-命令式编程常常改变程序状态，例如更新全局变量。 一个典型的例子是编写 `for` 循环，它为一个数组的索引提供了准确的迭代方向。
+命令式編程常常改變程序狀態，例如更新全局變量。 一個典型的例子是編寫 `for` 循環，它爲一個數組的索引提供了準確的迭代方向。
 
-相反，函数式编程是声明式编程的一种形式。 通过调用方法或函数来告诉计算机要做什么。
+相反，函數式編程是聲明式編程的一種形式。 通過調用方法或函數來告訴計算機要做什麼。
 
-JavaScript 提供了许多处理常见任务的方法，所以你无需写出计算机应如何执行它们。 例如，你可以用 `map` 函数替代上面提到的 `for` 循环来处理数组迭代。 这有助于避免语义错误，如调试章节介绍的 "Off By One Errors"。
+JavaScript 提供了許多處理常見任務的方法，所以你無需寫出計算機應如何執行它們。 例如，你可以用 `map` 函數替代上面提到的 `for` 循環來處理數組迭代。 這有助於避免語義錯誤，如調試章節介紹的 "Off By One Errors"。
 
-考虑这样的场景：你正在浏览器中浏览网页，并想操作你打开的标签。 下面我们来试试用面向对象的思路来描述这种情景。
+考慮這樣的場景：你正在瀏覽器中瀏覽網頁，並想操作你打開的標籤。 下面我們來試試用面向對象的思路來描述這種情景。
 
-窗口对象由选项卡组成，通常会打开多个窗口。 窗口对象中每个打开网站的标题都保存在一个数组中。 在对浏览器进行了如打开新标签、合并窗口、关闭标签之类的操作后，你需要输出所有打开的标签。 关掉的标签将从数组中删除，新打开的标签（为简单起见）则添加到数组的末尾。
+窗口對象由選項卡組成，通常會打開多個窗口。 窗口對象中每個打開網站的標題都保存在一個數組中。 在對瀏覽器進行了如打開新標籤、合併窗口、關閉標籤之類的操作後，你需要輸出所有打開的標籤。 關掉的標籤將從數組中刪除，新打開的標籤（爲簡單起見）則添加到數組的末尾。
 
-代码编辑器中显示了此功能的实现，其中包含 `tabOpen()`，`tabClose()`，和 `join()` 函数。 `tabs` 数组是窗口对象的一部分用于储存打开页面的名称。
+代碼編輯器中顯示了此功能的實現，其中包含 `tabOpen()`，`tabClose()`，和 `join()` 函數。 `tabs` 數組是窗口對象的一部分用於儲存打開頁面的名稱。
 
 # --instructions--
 
-在编辑器中运行代码。 它使用了有副作用的方法，导致输出错误。 存储在 `finalTabs.tabs` 中的打开标签的最终列表应该是 `['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab']`，但输出会略有不同。
+在編輯器中運行代碼。 它使用了有副作用的方法，導致輸出錯誤。 存儲在 `finalTabs.tabs` 中的打開標籤的最終列表應該是 `['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab']`，但輸出會略有不同。
 
-修改 `Window.prototype.tabClose` 使其删除正确的标签。
+修改 `Window.prototype.tabClose` 使其刪除正確的標籤。
 
 # --hints--
 
-`finalTabs.tabs` 应该是 `['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab']`
+`finalTabs.tabs` 應該是 `['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab']`
 
 ```js
 assert.deepEqual(finalTabs.tabs, [

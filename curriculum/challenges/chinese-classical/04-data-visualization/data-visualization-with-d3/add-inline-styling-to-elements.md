@@ -1,6 +1,6 @@
 ---
 id: 587d7fa7367417b2b2512bc6
-title: 给元素添加内联样式
+title: 給元素添加內聯樣式
 challengeType: 6
 forumTopicId: 301475
 dashedName: add-inline-styling-to-elements
@@ -8,25 +8,25 @@ dashedName: add-inline-styling-to-elements
 
 # --description--
 
-D3允许你使用 `style()` 方法在动态元素上添加内联 CSS 样式。
+D3允許你使用 `style()` 方法在動態元素上添加內聯 CSS 樣式。
 
-`style()` 方法以用逗号分隔的键值对作为参数。 这里是一个将选中文本的颜色设为蓝色的例子：
+`style()` 方法以用逗號分隔的鍵值對作爲參數。 這裏是一個將選中文本的顏色設爲藍色的例子：
 
 `selection.style("color","blue");`
 
 # --instructions--
 
-在编辑器中添加 `style()` 方法，使所有显示的文本都有 `font-family` 属性，且值为 `verdana`。
+在編輯器中添加 `style()` 方法，使所有顯示的文本都有 `font-family` 屬性，且值爲 `verdana`。
 
 # --hints--
 
-`h2` 元素的 `font-family` 应为 `verdana`。
+`h2` 元素的 `font-family` 應爲 `verdana`。
 
 ```js
 assert($('h2').css('font-family') == 'verdana');
 ```
 
-你应该使用 `style()` 方法。
+你應該使用 `style()` 方法。
 
 ```js
 assert(code.match(/\.style/g));

@@ -1,6 +1,6 @@
 ---
 id: 587d78a8367417b2b2512ae4
-title: 使用无限的动画计数制作 CSS 心跳
+title: 使用無限的動畫計數製作 CSS 心跳
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cDZpDUr'
 forumTopicId: 301062
@@ -9,23 +9,23 @@ dashedName: make-a-css-heartbeat-using-an-infinite-animation-count
 
 # --description--
 
-这也是一个用 `animation-iteration-count` 属性创造持续动画的例子，它基于我们在前面挑战中创建的心形。
+這也是一個用 `animation-iteration-count` 屬性創造持續動畫的例子，它基於我們在前面挑戰中創建的心形。
 
-心跳动画的每一秒包含两个部分。 `heart` 元素（包括 `:before` 和 `:after`）使用 `transform` 属性改变其大小，背景 `div` 使用 `background` 属性改变其颜色。
+心跳動畫的每一秒包含兩個部分。 `heart` 元素（包括 `:before` 和 `:after`）使用 `transform` 屬性改變其大小，背景 `div` 使用 `background` 屬性改變其顏色。
 
 # --instructions--
 
-给 `back` class 和 the `heart` class 添加 `animation-iteration-count` 属性，将属性值设置为 `infinite`，使心保持跳动。 `heart:before` 和 `heart:after` 所选择的元素则不需要添加动画属性。
+給 `back` class 和 the `heart` class 添加 `animation-iteration-count` 屬性，將屬性值設置爲 `infinite`，使心保持跳動。 `heart:before` 和 `heart:after` 所選擇的元素則不需要添加動畫屬性。
 
 # --hints--
 
-`heart` class 的 `animation-iteration-count` 的属性值应为 `infinite`。
+`heart` class 的 `animation-iteration-count` 的屬性值應爲 `infinite`。
 
 ```js
 assert($('.heart').css('animation-iteration-count') == 'infinite');
 ```
 
-`back` class 的 `animation-iteration-count` 的属性值应为 `infinite`。
+`back` class 的 `animation-iteration-count` 的屬性值應爲 `infinite`。
 
 ```js
 assert($('.back').css('animation-iteration-count') == 'infinite');

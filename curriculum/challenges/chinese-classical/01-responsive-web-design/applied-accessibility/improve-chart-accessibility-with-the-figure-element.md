@@ -1,6 +1,6 @@
 ---
 id: 587d778a367417b2b2512aa5
-title: 使用 figure 元素提高图表的可访问性
+title: 使用 figure 元素提高圖表的可訪問性
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cGJMqtE'
 forumTopicId: 301015
@@ -9,11 +9,11 @@ dashedName: improve-chart-accessibility-with-the-figure-element
 
 # --description--
 
-HTML5 引入了 `figure` 标签以及与之相关的 `figcaption` 标签。 它们一起用于展示可视化信息（如：图片、图表）及其标题。 这样通过语义化对内容进行分组并配以用于解释 `figure` 的文字，可以极大地提升内容的可访问性。
+HTML5 引入了 `figure` 標籤以及與之相關的 `figcaption` 標籤。 它們一起用於展示可視化信息（如：圖片、圖表）及其標題。 這樣通過語義化對內容進行分組並配以用於解釋 `figure` 的文字，可以極大地提升內容的可訪問性。
 
-对于图表之类的可视化数据，标题可以为屏幕阅读器用户提供简要的说明。 但是这里有一个难点，如何为屏幕阅读器用户展示那些超出屏幕可视范围（使用 CSS）的表格所表现的图表数据。
+對於圖表之類的可視化數據，標題可以爲屏幕閱讀器用戶提供簡要的說明。 但是這裏有一個難點，如何爲屏幕閱讀器用戶展示那些超出屏幕可視範圍（使用 CSS）的表格所表現的圖表數據。
 
-举个例子，注意 `figcaption` 包含在 `figure` 标签中，并且可以与其他标签组合使用：
+舉個例子，注意 `figcaption` 包含在 `figure` 標籤中，並且可以與其他標籤組合使用：
 
 ```html
 <figure>
@@ -27,41 +27,41 @@ HTML5 引入了 `figure` 标签以及与之相关的 `figcaption` 标签。 它�
 
 # --instructions--
 
-Camper Cat 正在努力创建一张条形图，用来显示每周用于隐形、战斗、武器训练的时间。 请帮助完善他的页面，将他用于呈现图表的 `div` 标签修改为 `figure` 标签；将用于呈现图表标题的 `p` 标签改为 `figcaption` 标签。
+Camper Cat 正在努力創建一張條形圖，用來顯示每週用於隱形、戰鬥、武器訓練的時間。 請幫助完善他的頁面，將他用於呈現圖表的 `div` 標籤修改爲 `figure` 標籤；將用於呈現圖表標題的 `p` 標籤改爲 `figcaption` 標籤。
 
 # --hints--
 
-应存在一个 `figure` 标签。
+應存在一個 `figure` 標籤。
 
 ```js
 assert($('figure').length == 1);
 ```
 
-应存在一个 `figcaption` 标签。
+應存在一個 `figcaption` 標籤。
 
 ```js
 assert($('figcaption').length == 1);
 ```
 
-不应存在 `div` 标签。
+不應存在 `div` 標籤。
 
 ```js
 assert($('div').length == 0);
 ```
 
-不应存在 `p` 标签。
+不應存在 `p` 標籤。
 
 ```js
 assert($('p').length == 0);
 ```
 
-`figcaption` 应为 `figure` 的子标签。
+`figcaption` 應爲 `figure` 的子標籤。
 
 ```js
 assert($('figure').children('figcaption').length == 1);
 ```
 
-确保 `figure` 元素有结束标签。
+確保 `figure` 元素有結束標籤。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244d1
-title: 严格相等运算符
+title: 嚴格相等運算符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cy87atr'
 forumTopicId: 16790
@@ -9,9 +9,9 @@ dashedName: comparison-with-the-strict-equality-operator
 
 # --description--
 
-严格相等运算符（`===`）是相对相等操作符（`==`）的另一种比较操作符。 与相等操作符转换数据两类型不同，严格相等运算符不会做类型转换。
+嚴格相等運算符（`===`）是相對相等操作符（`==`）的另一種比較操作符。 與相等操作符轉換數據兩類型不同，嚴格相等運算符不會做類型轉換。
 
-如果比较的值类型不同，那么在严格相等运算符比较下它们是不相等的，会返回 false 。
+如果比較的值類型不同，那麼在嚴格相等運算符比較下它們是不相等的，會返回 false 。
 
 **示例**
 
@@ -20,35 +20,35 @@ dashedName: comparison-with-the-strict-equality-operator
 3 === '3'
 ```
 
-这些条件将分别返回 `true` and `false`。
+這些條件將分別返回 `true` and `false`。
 
-在第二个例子中，`3` 是一个 `Number` 类型，而 `'3'` 是一个 `String` 类型。
+在第二個例子中，`3` 是一個 `Number` 類型，而 `'3'` 是一個 `String` 類型。
 
 # --instructions--
 
-在 `if` 语句中，添加不相等运算符，这样函数在当 `val` 严格等于 `7` 的时候，会返回 `Equal`。
+在 `if` 語句中，添加不相等運算符，這樣函數在當 `val` 嚴格等於 `7` 的時候，會返回 `Equal`。
 
 # --hints--
 
-`testStrict(10)` 应该返回字符串 `Not Equal`
+`testStrict(10)` 應該返回字符串 `Not Equal`
 
 ```js
 assert(testStrict(10) === 'Not Equal');
 ```
 
-`testStrict(7)` 应该返回字符串 `Equal`
+`testStrict(7)` 應該返回字符串 `Equal`
 
 ```js
 assert(testStrict(7) === 'Equal');
 ```
 
-`testStrict("7")` 应该返回字符串 `Not Equal`
+`testStrict("7")` 應該返回字符串 `Not Equal`
 
 ```js
 assert(testStrict('7') === 'Not Equal');
 ```
 
-你应该使用 `===` 运算符。
+你應該使用 `===` 運算符。
 
 ```js
 assert(code.match(/(val\s*===\s*\d+)|(\d+\s*===\s*val)/g).length > 0);

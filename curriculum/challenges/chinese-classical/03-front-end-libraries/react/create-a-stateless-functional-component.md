@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036162
-title: 创建一个无状态的函数组件
+title: 創建一個無狀態的函數組件
 challengeType: 6
 forumTopicId: 301392
 dashedName: create-a-stateless-functional-component
@@ -8,11 +8,11 @@ dashedName: create-a-stateless-functional-component
 
 # --description--
 
-组件是 React 的核心。 React 中的所有内容都是一个组件，在这里将学习如何创建一个组件。
+組件是 React 的核心。 React 中的所有內容都是一個組件，在這裏將學習如何創建一個組件。
 
-有两种方法可以创建 React 组件。 第一种方法是使用 JavaScript 函数。 以这种方式定义组件会创建*无状态功能组件*。 应用程序中的状态概念将在以后的挑战中介绍。 目前为止，可以将无状态组件视为能接收数据并对其进行渲染，但不管理或跟踪该数据的更改的组件。 (我们将下一个挑战使用中第二种方式创建 React 组件。)
+有兩種方法可以創建 React 組件。 第一種方法是使用 JavaScript 函數。 以這種方式定義組件會創建*無狀態功能組件*。 應用程序中的狀態概念將在以後的挑戰中介紹。 目前爲止，可以將無狀態組件視爲能接收數據並對其進行渲染，但不管理或跟蹤該數據的更改的組件。 (我們將下一個挑戰使用中第二種方式創建 React 組件。)
 
-要用函数创建组件，只需编写一个返回 JSX 或 `null` 的 JavaScript 函数。 需要注意的一点是，React 要求你的函数名以大写字母开头。 下面是一个无状态功能组件的示例，该组件在 JSX 中分配一个 HTML 的 class：
+要用函數創建組件，只需編寫一個返回 JSX 或 `null` 的 JavaScript 函數。 需要注意的一點是，React 要求你的函數名以大寫字母開頭。 下面是一個無狀態功能組件的示例，該組件在 JSX 中分配一個 HTML 的 class：
 
 ```jsx
 const DemoComponent = function() {
@@ -22,19 +22,19 @@ const DemoComponent = function() {
 };
 ```
 
-翻译完成后， `<div>` 将有一个 `customClass` 的 CSS class。
+翻譯完成後， `<div>` 將有一個 `customClass` 的 CSS class。
 
-因为 JSX 组件代表 HTML，所以你可以将几个组件放在一起以创建更复杂的 HTML 页面。 这是 React 提供的组件架构的关键优势之一。 它允许用许多独立的组件组合成 UI。 这使得构建和维护复杂的用户界面变得更加容易。
+因爲 JSX 組件代表 HTML，所以你可以將幾個組件放在一起以創建更復雜的 HTML 頁面。 這是 React 提供的組件架構的關鍵優勢之一。 它允許用許多獨立的組件組合成 UI。 這使得構建和維護複雜的用戶界面變得更加容易。
 
 # --instructions--
 
-代码编辑器中有一个名为 `MyComponent` 的函数。 完成此函数，使其返回包含一些文本字符串的单个`div`元素。
+代碼編輯器中有一個名爲 `MyComponent` 的函數。 完成此函數，使其返回包含一些文本字符串的單個`div`元素。
 
-**注意：** 文本被视为是 `div` 的子元素，因此不能使用自闭合标签。
+**注意：** 文本被視爲是 `div` 的子元素，因此不能使用自閉合標籤。
 
 # --hints--
 
-`MyComponent` 应该返回 JSX。
+`MyComponent` 應該返回 JSX。
 
 ```js
 assert(
@@ -45,7 +45,7 @@ assert(
 );
 ```
 
-`MyComponent` 应该返回一个 `div` 元素。
+`MyComponent` 應該返回一個 `div` 元素。
 
 ```js
 assert(
@@ -56,7 +56,7 @@ assert(
 );
 ```
 
-`div` 元素应该包含一个文本字符串。
+`div` 元素應該包含一個文本字符串。
 
 ```js
 assert(

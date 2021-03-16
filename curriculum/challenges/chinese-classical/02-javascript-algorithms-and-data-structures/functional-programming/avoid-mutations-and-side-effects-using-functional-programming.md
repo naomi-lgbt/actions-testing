@@ -1,6 +1,6 @@
 ---
 id: 587d7b8e367417b2b2512b5e
-title: 使用函数式编程避免变化和副作用
+title: 使用函數式編程避免變化和副作用
 challengeType: 1
 forumTopicId: 301228
 dashedName: avoid-mutations-and-side-effects-using-functional-programming
@@ -8,39 +8,39 @@ dashedName: avoid-mutations-and-side-effects-using-functional-programming
 
 # --description--
 
-如果你还没想通，上一个挑战的问题出在 `tabClose()` 函数里的 `splice`。 不幸的是，`splice` 修改了调用它的原始数组，所以第二次调用它时是基于修改后的数组，才给出了意料之外的结果。
+如果你還沒想通，上一個挑戰的問題出在 `tabClose()` 函數裏的 `splice`。 不幸的是，`splice` 修改了調用它的原始數組，所以第二次調用它時是基於修改後的數組，纔給出了意料之外的結果。
 
-这是一个小例子，还有更广义的定义——在变量，数组或对象上调用一个函数，这个函数会改变对象中的变量或其他东西。
+這是一個小例子，還有更廣義的定義——在變量，數組或對象上調用一個函數，這個函數會改變對象中的變量或其他東西。
 
-函数式编程的核心原则之一是不改变任何东西。 变化会导致错误。 如果一个函数不改变传入的参数、全局变量等数据，那么它造成问题的可能性就会小很多。
+函數式編程的核心原則之一是不改變任何東西。 變化會導致錯誤。 如果一個函數不改變傳入的參數、全局變量等數據，那麼它造成問題的可能性就會小很多。
 
-前面的例子没有任何复杂的操作，但是 `splice` 方法改变了原始数组，导致 bug 产生。
+前面的例子沒有任何複雜的操作，但是 `splice` 方法改變了原始數組，導致 bug 產生。
 
-回想一下，在函数式编程中，改变或变更叫做 <dfn>mutation</dfn>，这种改变的结果叫做“副作用”（<dfn>side effect</dfn>）。 理想情况下，函数应该是不会产生任何副作用的 <dfn>pure function</dfn>。
+回想一下，在函數式編程中，改變或變更叫做 <dfn>mutation</dfn>，這種改變的結果叫做“副作用”（<dfn>side effect</dfn>）。 理想情況下，函數應該是不會產生任何副作用的 <dfn>pure function</dfn>。
 
-让我们尝试掌握这个原则：不要改变代码中的任何变量或对象。
+讓我們嘗試掌握這個原則：不要改變代碼中的任何變量或對象。
 
 # --instructions--
 
-填写 `incrementer` 函数的代码，使其返回值为全局变量 `fixedValue` 增加 1 。
+填寫 `incrementer` 函數的代碼，使其返回值爲全局變量 `fixedValue` 增加 1 。
 
 # --hints--
 
-`incrementer` 函数不能改变 `fixedValue` 的值（`4`）。
+`incrementer` 函數不能改變 `fixedValue` 的值（`4`）。
 
 ```js
 incrementer();
 assert(fixedValue === 4);
 ```
 
-`incrementer` 函数应返回比 `fixedValue` 变量更大的值。
+`incrementer` 函數應返回比 `fixedValue` 變量更大的值。
 
 ```js
 const __newValue = incrementer();
 assert(__newValue === 5);
 ```
 
-你的 `incrementer` 函数返回的值应该基于全局变量 `fixedValue` 的值。
+你的 `incrementer` 函數返回的值應該基於全局變量 `fixedValue` 的值。
 
 ```js
 (function () {

@@ -1,6 +1,6 @@
 ---
 id: 587d7b7c367417b2b2512b1b
-title: 使用 delete 关键字删除对象属性
+title: 使用 delete 關鍵字刪除對象屬性
 challengeType: 1
 forumTopicId: 301168
 dashedName: use-the-delete-keyword-to-remove-object-properties
@@ -8,11 +8,11 @@ dashedName: use-the-delete-keyword-to-remove-object-properties
 
 # --description--
 
-现在我们已经学习了什么是对象以及对象的基本特性和用途。 总之，对象是以键值对的形式，灵活、直观地存储结构化数据的一种方式，***而且***，通过对象的属性查找属性值是速度很快的操作。 在本章余下的挑战中，我们来了解一下对象的几种常用操作，这样你能更好地在代码中使用这个十分有用的数据结构：对象。
+現在我們已經學習了什麼是對象以及對象的基本特性和用途。 總之，對象是以鍵值對的形式，靈活、直觀地存儲結構化數據的一種方式，***而且***，通過對象的屬性查找屬性值是速度很快的操作。 在本章餘下的挑戰中，我們來了解一下對象的幾種常用操作，這樣你能更好地在代碼中使用這個十分有用的數據結構：對象。
 
-在之前的挑战中，我们已经试过添加和修改对象中的键值对。 现在我们来看看如何从一个对象中*移除*一个键值对。
+在之前的挑戰中，我們已經試過添加和修改對象中的鍵值對。 現在我們來看看如何從一個對象中*移除*一個鍵值對。
 
-我们再来回顾一下上一个挑战中的 `foods` 对象。 如果我们想移除 `apples` 属性，可以像这样使用 `delete` 关键字：
+我們再來回顧一下上一個挑戰中的 `foods` 對象。 如果我們想移除 `apples` 屬性，可以像這樣使用 `delete` 關鍵字：
 
 ```js
 delete foods.apples;
@@ -20,11 +20,11 @@ delete foods.apples;
 
 # --instructions--
 
-请使用 delete 关键字来移除 `foods` 中的 `oranges`、`plums` 和 `strawberries` 属性。
+請使用 delete 關鍵字來移除 `foods` 中的 `oranges`、`plums` 和 `strawberries` 屬性。
 
 # --hints--
 
-`foods` 对象应只包含 3 个属性：`apples`、`grapes` 和 `bananas`。
+`foods` 對象應只包含 3 個屬性：`apples`、`grapes` 和 `bananas`。
 
 ```js
 assert(
@@ -35,7 +35,7 @@ assert(
 );
 ```
 
-应使用 `delete` 关键字来移除 `oranges`、`plums` 和 `strawberries` 属性。
+應使用 `delete` 關鍵字來移除 `oranges`、`plums` 和 `strawberries` 屬性。
 
 ```js
 assert(

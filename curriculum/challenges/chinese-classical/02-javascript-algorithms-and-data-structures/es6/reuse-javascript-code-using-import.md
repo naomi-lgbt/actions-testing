@@ -1,6 +1,6 @@
 ---
 id: 587d7b8c367417b2b2512b55
-title: 通过 import 复用 JavaScript 代码
+title: 通過 import 複用 JavaScript 代碼
 challengeType: 1
 forumTopicId: 301208
 dashedName: reuse-javascript-code-using-import
@@ -8,15 +8,15 @@ dashedName: reuse-javascript-code-using-import
 
 # --description--
 
-`import` 可以导入文件或模块的一部分。 在之前的课程里，例子从 `math_functions.js` 文件里导出了 `add`。 下面看一下如何在其它文件导入它：
+`import` 可以導入文件或模塊的一部分。 在之前的課程裏，例子從 `math_functions.js` 文件裏導出了 `add`。 下面看一下如何在其它文件導入它：
 
 ```js
 import { add } from './math_functions.js';
 ```
 
-在这里，`import` 会在 `math_functions.js` 里找到 `add`，只导入这个函数，忽略剩余的部分。 `./` 告诉程序在当前文件的相同目录寻找 `math_functions.js` 文件。 用这种方式导入时，相对路径（`./`）和文件扩展名（`.js`）都是必需的。
+在這裏，`import` 會在 `math_functions.js` 裏找到 `add`，只導入這個函數，忽略剩餘的部分。 `./` 告訴程序在當前文件的相同目錄尋找 `math_functions.js` 文件。 用這種方式導入時，相對路徑（`./`）和文件擴展名（`.js`）都是必需的。
 
-通过在 `import` 语句里添加项目，可以从文件里导入多个项目，如下：
+通過在 `import` 語句裏添加項目，可以從文件裏導入多個項目，如下：
 
 ```js
 import { add, subtract } from './math_functions.js';
@@ -24,11 +24,11 @@ import { add, subtract } from './math_functions.js';
 
 # --instructions--
 
-添加 `import` 语句，使当前文件可以使用你在之前课程里导出的 `uppercaseString` 和 `lowercaseString` 函数。 函数在当前路径下的 `string_functions.js` 文件里。
+添加 `import` 語句，使當前文件可以使用你在之前課程裏導出的 `uppercaseString` 和 `lowercaseString` 函數。 函數在當前路徑下的 `string_functions.js` 文件裏。
 
 # --hints--
 
-应该导入 `uppercaseString`。
+應該導入 `uppercaseString`。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-应该导入 `lowercaseString`。
+應該導入 `lowercaseString`。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 5a90376038fddaf9a66b5d3c
-title: 使用 justify-items 水平对齐所有项目
+title: 使用 justify-items 水平對齊所有項目
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cJbpECn'
 forumTopicId: 301120
@@ -9,15 +9,15 @@ dashedName: align-all-items-horizontally-using-justify-items
 
 # --description--
 
-有时你想让 CSS 网格中的网格项共享对齐方式。 你可以像之前学习的那样分别设置它们的对齐方式，也可以对网格容器使用 `justify-items` 使它们一次性沿水平轴对齐。 这个属性能接受我们在之前两个挑战中学到的所有值作为属性值，但与之前不同的是，它会将网格中**所有**的网格项按所设置的方式对齐。
+有時你想讓 CSS 網格中的網格項共享對齊方式。 你可以像之前學習的那樣分別設置它們的對齊方式，也可以對網格容器使用 `justify-items` 使它們一次性沿水平軸對齊。 這個屬性能接受我們在之前兩個挑戰中學到的所有值作爲屬性值，但與之前不同的是，它會將網格中**所有**的網格項按所設置的方式對齊。
 
 # --instructions--
 
-请使用这个属性设置所有网格项水平居中。
+請使用這個屬性設置所有網格項水平居中。
 
 # --hints--
 
-class 为 `container` 的元素应具有 `justify-items` 属性且属性值应为 `center`。
+class 爲 `container` 的元素應具有 `justify-items` 屬性且屬性值應爲 `center`。
 
 ```js
 assert(

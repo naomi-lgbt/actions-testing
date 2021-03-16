@@ -1,6 +1,6 @@
 ---
 id: bd7123c8c441eddfaeb5bdef
-title: 向 HTML 元素问好
+title: 向 HTML 元素問好
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cE8Gpt2'
 forumTopicId: 18276
@@ -9,33 +9,33 @@ dashedName: say-hello-to-html-elements
 
 # --description--
 
-欢迎访问 freeCodeCamp 的 HTML 编程挑战。 这些挑战将会帮助你逐步掌握 Web 开发。
+歡迎訪問 freeCodeCamp 的 HTML 編程挑戰。 這些挑戰將會幫助你逐步掌握 Web 開發。
 
-首先，我们来用 HTML 制作一个简单的网页。 你可以直接在网页内置的代码编辑器中编辑代码。
+首先，我們來用 HTML 製作一個簡單的網頁。 你可以直接在網頁內置的代碼編輯器中編輯代碼。
 
-你看到编辑器中的 `<h1>Hello</h1>` 了吗？ 那是一个 HTML 元素。
+你看到編輯器中的 `<h1>Hello</h1>` 了嗎？ 那是一個 HTML 元素。
 
-大部分 HTML 元素都有一个开始标签和一个结束标签。
+大部分 HTML 元素都有一個開始標籤和一個結束標籤。
 
-开始标签像这样：
+開始標籤像這樣：
 
 `<h1>`
 
-结束标签像这样：
+結束標籤像這樣：
 
 `</h1>`
 
-开始标签和结束标签的唯一区别就是结束标签多了一个斜杠。
+開始標籤和結束標籤的唯一區別就是結束標籤多了一個斜槓。
 
-每个挑战都有测试，任何时候你点击“运行测试”按钮，就可以运行测试。 如果代码通过测试，将会弹出一个窗口，你就可以进入下一个挑战。
+每個挑戰都有測試，任何時候你點擊“運行測試”按鈕，就可以運行測試。 如果代碼通過測試，將會彈出一個窗口，你就可以進入下一個挑戰。
 
 # --instructions--
 
-要通过这个挑战的测试，需要修改 `h1` 元素的文本为 `Hello World`。
+要通過這個挑戰的測試，需要修改 `h1` 元素的文本爲 `Hello World`。
 
 # --hints--
 
-`h1` 元素应有文本 `Hello World`。
+`h1` 元素應有文本 `Hello World`。
 
 ```js
 assert.isTrue(/hello(\s)+world/gi.test($('h1').text()));

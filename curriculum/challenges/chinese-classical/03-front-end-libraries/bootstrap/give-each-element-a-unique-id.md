@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908855
-title: 给每个元素一个唯一的 id
+title: 給每個元素一個唯一的 id
 challengeType: 0
 forumTopicId: 18191
 dashedName: give-each-element-a-unique-id
@@ -8,15 +8,15 @@ dashedName: give-each-element-a-unique-id
 
 # --description--
 
-也可以通过 jQuery 根据每个按钮唯一的 id 来定位出它们。
+也可以通過 jQuery 根據每個按鈕唯一的 id 來定位出它們。
 
-给每一个按钮设置唯一的 id，以 `target1` 开始，`target6` 结束。
+給每一個按鈕設置唯一的 id，以 `target1` 開始，`target6` 結束。
 
-确保 `target1` 到 `target3` 在 `#left-well` 之中，`target4` 到 `target6` 在 `#right-well` 之中。
+確保 `target1` 到 `target3` 在 `#left-well` 之中，`target4` 到 `target6` 在 `#right-well` 之中。
 
 # --hints--
 
-其中一个 `button` 元素应该有 id `target1`。
+其中一個 `button` 元素應該有 id `target1`。
 
 ```js
 assert(
@@ -25,7 +25,7 @@ assert(
 );
 ```
 
-其中一个 `button` 元素应该有 id `target2`。
+其中一個 `button` 元素應該有 id `target2`。
 
 ```js
 assert(
@@ -34,7 +34,7 @@ assert(
 );
 ```
 
-其中一个 `button` 元素应该有 id `target3`。
+其中一個 `button` 元素應該有 id `target3`。
 
 ```js
 assert(
@@ -43,7 +43,7 @@ assert(
 );
 ```
 
-其中一个 `button` 元素应该有 id `target4`。
+其中一個 `button` 元素應該有 id `target4`。
 
 ```js
 assert(
@@ -52,7 +52,7 @@ assert(
 );
 ```
 
-其中一个 `button` 元素应该有 id `target5`。
+其中一個 `button` 元素應該有 id `target5`。
 
 ```js
 assert(
@@ -61,7 +61,7 @@ assert(
 );
 ```
 
-其中一个 `button` 元素应有 id `target6`。
+其中一個 `button` 元素應有 id `target6`。
 
 ```js
 assert(

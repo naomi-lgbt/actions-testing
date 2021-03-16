@@ -1,6 +1,6 @@
 ---
 id: 587d7b7b367417b2b2512b16
-title: 创建复杂的多维数组
+title: 創建複雜的多維數組
 challengeType: 1
 forumTopicId: 301159
 dashedName: create-complex-multi-dimensional-arrays
@@ -8,9 +8,9 @@ dashedName: create-complex-multi-dimensional-arrays
 
 # --description--
 
-很好！ 你现在已经学到很多关于数组的知识了， 但这些只是个开始。我们将在接下来的中挑战中学到更多与数组相关的知识。 在继续学习对象（<dfn>Objects</dfn>）之前，让我们再花一点时间了解下更复杂的数组嵌套。
+很好！ 你現在已經學到很多關於數組的知識了， 但這些只是個開始。我們將在接下來的中挑戰中學到更多與數組相關的知識。 在繼續學習對象（<dfn>Objects</dfn>）之前，讓我們再花一點時間瞭解下更復雜的數組嵌套。
 
-数组的一个强大的特性是，它可以包含其他数组，甚至完全由其他数组组成。 在上一个挑战中，我们已经接触到了包含数组的数组，但它还算是比较简单的。 数组中的数组还可以再包含其他数组，即可以嵌套任意多层数组。 习惯上，我们称这种数据结构为<dfn>多维（multi-dimensional）数组</dfn>或嵌套（nested）数组。 请看如下的示例：
+數組的一個強大的特性是，它可以包含其他數組，甚至完全由其他數組組成。 在上一個挑戰中，我們已經接觸到了包含數組的數組，但它還算是比較簡單的。 數組中的數組還可以再包含其他數組，即可以嵌套任意多層數組。 習慣上，我們稱這種數據結構爲<dfn>多維（multi-dimensional）數組</dfn>或嵌套（nested）數組。 請看如下的示例：
 
 ```js
 let nestedArray = [
@@ -31,15 +31,15 @@ let nestedArray = [
 ];
 ```
 
-`deep` 数组已嵌套 2 层。 `deeper` 数组嵌套了 3 层。 `deepest` 数组嵌套了 3 层， `deepest-est?` 嵌套了 5 层。
+`deep` 數組已嵌套 2 層。 `deeper` 數組嵌套了 3 層。 `deepest` 數組嵌套了 3 層， `deepest-est?` 嵌套了 5 層。
 
-虽然这个例子看起来错综复杂，不过，尤其是在处理大量数据的时候，这种数据结构还是会用到的。 尽管结构复杂，不过我们仍可以通过方括号表示法来访问嵌套得最深的数组：
+雖然這個例子看起來錯綜複雜，不過，尤其是在處理大量數據的時候，這種數據結構還是會用到的。 儘管結構複雜，不過我們仍可以通過方括號表示法來訪問嵌套得最深的數組：
 
 ```js
 console.log(nestedArray[2][1][0][0][0]);
 ```
 
-控制台打印的是字符串 `deepest-est?`。 既然我们知道数据的位置，当然，我们也可以修改它：
+控制檯打印的是字符串 `deepest-est?`。 既然我們知道數據的位置，當然，我們也可以修改它：
 
 ```js
 nestedArray[2][1][0][0][0] = 'deeper still';
@@ -47,15 +47,15 @@ nestedArray[2][1][0][0][0] = 'deeper still';
 console.log(nestedArray[2][1][0][0][0]);
 ```
 
-现在控制台打印的是 `deeper still`。
+現在控制檯打印的是 `deeper still`。
 
 # --instructions--
 
-我们已经定义了一个叫做 `myNestedArray` 的数组变量。 请修改 `myNestedArray`，使用字符串（<dfn>string</dfn>）、数字（<dfn>number</dfn>）或布尔值（<dfn>boolean</dfn>）的任意组合作为数组的元素，并让 myNestedArray 刚好有 5 层（注意，最外层的数组是第 1 层）。 同时，请在第 3 层的数组中包含字符串 `deep`；在第 4 层的数组中包含字符串 `deeper`，在第 5 层的数组中包含字符串 `deepest`。
+我們已經定義了一個叫做 `myNestedArray` 的數組變量。 請修改 `myNestedArray`，使用字符串（<dfn>string</dfn>）、數字（<dfn>number</dfn>）或布爾值（<dfn>boolean</dfn>）的任意組合作爲數組的元素，並讓 myNestedArray 剛好有 5 層（注意，最外層的數組是第 1 層）。 同時，請在第 3 層的數組中包含字符串 `deep`；在第 4 層的數組中包含字符串 `deeper`，在第 5 層的數組中包含字符串 `deepest`。
 
 # --hints--
 
-`myNestedArray` 中的数据元素应只包含字符串、数字或者布尔值。
+`myNestedArray` 中的數據元素應只包含字符串、數字或者布爾值。
 
 ```js
 assert.strictEqual(
@@ -79,7 +79,7 @@ assert.strictEqual(
 );
 ```
 
-`myNestedArray` 应刚好包含 5 层嵌套数组。
+`myNestedArray` 應剛好包含 5 層嵌套數組。
 
 ```js
 assert.strictEqual(
@@ -102,7 +102,7 @@ assert.strictEqual(
 );
 ```
 
-`myNestedArray` 中应只有一个字符串 `deep`，并且应出现在第 3 层数组中。
+`myNestedArray` 中應只有一個字符串 `deep`，並且應出現在第 3 層數組中。
 
 ```js
 assert(
@@ -131,7 +131,7 @@ assert(
 );
 ```
 
-`myNestedArray` 中应只有一个字符串 `deeper`，并且应出现在第 4 层数组中。
+`myNestedArray` 中應只有一個字符串 `deeper`，並且應出現在第 4 層數組中。
 
 ```js
 assert(
@@ -160,7 +160,7 @@ assert(
 );
 ```
 
-`myNestedArray` 中应只有一个字符串 `deepest`，并且应出现在第 5 层数组中。
+`myNestedArray` 中應只有一個字符串 `deepest`，並且應出現在第 5 層數組中。
 
 ```js
 assert(

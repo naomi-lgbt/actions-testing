@@ -1,6 +1,6 @@
 ---
 id: 587d7db7367417b2b2512b9c
-title: 在狩猎中找到一个或多个罪犯
+title: 在狩獵中找到一個或多個罪犯
 challengeType: 1
 forumTopicId: 301343
 dashedName: find-one-or-more-criminals-in-a-hunt
@@ -8,11 +8,11 @@ dashedName: find-one-or-more-criminals-in-a-hunt
 
 # --description--
 
-是时候停一停来测试你的正则表达式使用能力了。 一群罪犯越狱逃跑了，但你不知道有多少人。 然而，你知道他们不在一起时会保持紧密联系。 你有责任立刻找到所有的罪犯。
+是時候停一停來測試你的正則表達式使用能力了。 一羣罪犯越獄逃跑了，但你不知道有多少人。 然而，你知道他們不在一起時會保持緊密聯繫。 你有責任立刻找到所有的罪犯。
 
-这里有一个示例来提示如何做到这一点：
+這裏有一個示例來提示如何做到這一點：
 
-当字母`z`在一行中出现一次或连续多次时，正则表达式`/z+/`会匹配到它。 它会在以下所有字符串中找到匹配项：
+當字母`z`在一行中出現一次或連續多次時，正則表達式`/z+/`會匹配到它。 它會在以下所有字符串中找到匹配項：
 
 ```js
 "z"
@@ -22,7 +22,7 @@ dashedName: find-one-or-more-criminals-in-a-hunt
 "abczzzzzzzzzzzzzzzzzzzzzabc"
 ```
 
-但是它不会在以下字符串中找到匹配项，因为它们中没有字母`z`：
+但是它不會在以下字符串中找到匹配項，因爲它們中沒有字母`z`：
 
 ```js
 ""
@@ -32,23 +32,23 @@ dashedName: find-one-or-more-criminals-in-a-hunt
 
 # --instructions--
 
-编写一个贪婪正则表达式，在一组其他人中匹配到一个或多个罪犯。 罪犯由大写字母`C`表示。
+編寫一個貪婪正則表達式，在一組其他人中匹配到一個或多個罪犯。 罪犯由大寫字母`C`表示。
 
 # --hints--
 
-您的正则表达式应该匹配字符串 `C` 中的一个罪犯(`C`)
+您的正則表達式應該匹配字符串 `C` 中的一個罪犯(`C`)
 
 ```js
 assert('C'.match(reCriminals) && 'C'.match(reCriminals)[0] == 'C');
 ```
 
-您的正则表达式应该匹配字符串 `CC` 中的两个罪犯(`CC`)
+您的正則表達式應該匹配字符串 `CC` 中的兩個罪犯(`CC`)
 
 ```js
 assert('CC'.match(reCriminals) && 'CC'.match(reCriminals)[0] == 'CC');
 ```
 
-您的正则表达式应该在字符串 `P1P5P4CCCcP2P6P3` 中匹配三个罪犯(`CCC`)。
+您的正則表達式應該在字符串 `P1P5P4CCCcP2P6P3` 中匹配三個罪犯(`CCC`)。
 
 ```js
 assert(
@@ -57,7 +57,7 @@ assert(
 );
 ```
 
-您的正则表达式应该在字符串 `P6P2P7P4P5CCCCCP3P1`中匹配五个罪犯(`CCCCC`)
+您的正則表達式應該在字符串 `P6P2P7P4P5CCCCCP3P1`中匹配五個罪犯(`CCCCC`)
 
 ```js
 assert(
@@ -66,19 +66,19 @@ assert(
 );
 ```
 
-你的正则表达式在`""`中不应该匹配到任何罪犯
+你的正則表達式在`""`中不應該匹配到任何罪犯
 
 ```js
 assert(!reCriminals.test(''));
 ```
 
-你的正则表达式在`P1P2P3`中不应该匹配到任何罪犯
+你的正則表達式在`P1P2P3`中不應該匹配到任何罪犯
 
 ```js
 assert(!reCriminals.test('P1P2P3'));
 ```
 
-你的正则表达式应该在`P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3`中匹配五十个 罪犯（'`CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`'）。
+你的正則表達式應該在`P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3`中匹配五十個 罪犯（'`CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`'）。
 
 ```js
 assert(

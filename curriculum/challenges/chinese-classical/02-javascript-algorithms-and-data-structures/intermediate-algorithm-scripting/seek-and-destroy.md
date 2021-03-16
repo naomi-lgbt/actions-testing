@@ -1,6 +1,6 @@
 ---
 id: a39963a4c10bc8b4d4f06d7e
-title: 过滤数组元素
+title: 過濾數組元素
 challengeType: 5
 forumTopicId: 16046
 dashedName: seek-and-destroy
@@ -8,37 +8,37 @@ dashedName: seek-and-destroy
 
 # --description--
 
-你将获得一个初始数组（`destroyer` 函数中的第一个参数），后跟一个或多个参数。 从初始数组中移除所有与后续参数相等的元素。
+你將獲得一個初始數組（`destroyer` 函數中的第一個參數），後跟一個或多個參數。 從初始數組中移除所有與後續參數相等的元素。
 
-**注意：** 你可以使用 `arguments` 对象。
+**注意：** 你可以使用 `arguments` 對象。
 
 # --hints--
 
-`destroyer([1, 2, 3, 1, 2, 3], 2, 3)` 应返回 `[1, 1]`。
+`destroyer([1, 2, 3, 1, 2, 3], 2, 3)` 應返回 `[1, 1]`。
 
 ```js
 assert.deepEqual(destroyer([1, 2, 3, 1, 2, 3], 2, 3), [1, 1]);
 ```
 
-`destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3)` 应返回 `[1, 5, 1]`。
+`destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3)` 應返回 `[1, 5, 1]`。
 
 ```js
 assert.deepEqual(destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3), [1, 5, 1]);
 ```
 
-`destroyer([3, 5, 1, 2, 2], 2, 3, 5)` 应返回 `[1]`。
+`destroyer([3, 5, 1, 2, 2], 2, 3, 5)` 應返回 `[1]`。
 
 ```js
 assert.deepEqual(destroyer([3, 5, 1, 2, 2], 2, 3, 5), [1]);
 ```
 
-`destroyer([2, 3, 2, 3], 2, 3)` 应返回 `[]`。
+`destroyer([2, 3, 2, 3], 2, 3)` 應返回 `[]`。
 
 ```js
 assert.deepEqual(destroyer([2, 3, 2, 3], 2, 3), []);
 ```
 
-`destroyer(["tree", "hamburger", 53], "tree", 53)` 应返回 `["hamburger"]`。
+`destroyer(["tree", "hamburger", 53], "tree", 53)` 應返回 `["hamburger"]`。
 
 ```js
 assert.deepEqual(destroyer(['tree', 'hamburger', 53], 'tree', 53), [
@@ -46,7 +46,7 @@ assert.deepEqual(destroyer(['tree', 'hamburger', 53], 'tree', 53), [
 ]);
 ```
 
-`destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")` 应返回 `[12,92,65]`。
+`destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")` 應返回 `[12,92,65]`。
 
 ```js
 assert.deepEqual(

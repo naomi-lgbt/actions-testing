@@ -1,6 +1,6 @@
 ---
 id: 587d7fb4367417b2b2512bfe
-title: 给 package.json 添加许可证
+title: 給 package.json 添加許可證
 challengeType: 2
 forumTopicId: 301523
 dashedName: add-a-license-to-your-package-json
@@ -8,9 +8,9 @@ dashedName: add-a-license-to-your-package-json
 
 # --description--
 
-`license` 字段将告知用户允许他们拿这个项目干什么。
+`license` 字段將告知用戶允許他們拿這個項目幹什麼。
 
-开源项目常见的协议有 MIT 和 BSD 等。 许可证信息并不是必须的。 大多数国家的版权法会默认让你拥有自己创作的作品的所有权。 但是，明确说明用户可以做什么和不能做什么会是一个很好的做法。 这里有一个 license 字段的例子：
+開源項目常見的協議有 MIT 和 BSD 等。 許可證信息並不是必須的。 大多數國家的版權法會默認讓你擁有自己創作的作品的所有權。 但是，明確說明用戶可以做什麼和不能做什麼會是一個很好的做法。 這裏有一個 license 字段的例子：
 
 ```json
 "license": "MIT",
@@ -18,11 +18,11 @@ dashedName: add-a-license-to-your-package-json
 
 # --instructions--
 
-在项目的 package.json 文件中补充合适的 `license` 字段。
+在項目的 package.json 文件中補充合適的 `license` 字段。
 
 # --hints--
 
-package.json 应该包含一个有效的“license”键
+package.json 應該包含一個有效的“license”鍵
 
 ```js
 (getUserInput) =>

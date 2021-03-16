@@ -8,37 +8,37 @@ dashedName: map-state-to-props
 
 # --description--
 
-`Provider`可向 React 组件提供 `state` 和 `dispatch` ，但必须确切地指定所需要的 state 和 actions， 以确保每个组件只能访问所需的 state。 完成这个任务，需要创建两个函数：`mapStateToProps()`、`mapDispatchToProps()`。
+`Provider`可向 React 組件提供 `state` 和 `dispatch` ，但必須確切地指定所需要的 state 和 actions， 以確保每個組件只能訪問所需的 state。 完成這個任務，需要創建兩個函數：`mapStateToProps()`、`mapDispatchToProps()`。
 
-在这两个函数中，声明 state 中函数所要访问的部分及需要 dispatch 的创建 action 的函数。 完成这些，我们就可以迎接下一个挑战，学习如何使用 React Redux 的 `connect` 方法来把函数连接到组件了。
+在這兩個函數中，聲明 state 中函數所要訪問的部分及需要 dispatch 的創建 action 的函數。 完成這些，我們就可以迎接下一個挑戰，學習如何使用 React Redux 的 `connect` 方法來把函數連接到組件了。
 
-**注意：** 在幕后，React Redux 用 `store.subscribe()` 方法来实现 `mapStateToProps()`。
+**注意：** 在幕後，React Redux 用 `store.subscribe()` 方法來實現 `mapStateToProps()`。
 
 # --instructions--
 
-创建 `mapStateToProps()` 函数， 以 `state` 为参数，然后返回一个对象，该对象把 state 映射到特定属性名上， 这些属性能通过 `props` 访问组件。 由于此示例把 app 应用的整个状态保存在单一数组中，可把整个状态传给组件。 在返回的对象中创建 `messages` 属性，并设置为 `state`。
+創建 `mapStateToProps()` 函數， 以 `state` 爲參數，然後返回一個對象，該對象把 state 映射到特定屬性名上， 這些屬性能通過 `props` 訪問組件。 由於此示例把 app 應用的整個狀態保存在單一數組中，可把整個狀態傳給組件。 在返回的對象中創建 `messages` 屬性，並設置爲 `state`。
 
 # --hints--
 
-常量 `state` 应为空数组。
+常量 `state` 應爲空數組。
 
 ```js
 assert(Array.isArray(state) && state.length === 0);
 ```
 
-`mapStateToProps` 应为函数。
+`mapStateToProps` 應爲函數。
 
 ```js
 assert(typeof mapStateToProps === 'function');
 ```
 
-`mapStateToProps` 应返回一个对象。
+`mapStateToProps` 應返回一個對象。
 
 ```js
 assert(typeof mapStateToProps() === 'object');
 ```
 
-把 state 数组传入 `mapStateToProps` 后应返回赋值给 `messages` 键的数组。
+把 state 數組傳入 `mapStateToProps` 後應返回賦值給 `messages` 鍵的數組。
 
 ```js
 assert(mapStateToProps(['messages']).messages.pop() === 'messages');

@@ -1,6 +1,6 @@
 ---
 id: 5688e62ea601b2482ff8422b
-title: 资料查找
+title: 資料查找
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cDqW2Cg'
 forumTopicId: 18259
@@ -9,27 +9,27 @@ dashedName: profile-lookup
 
 # --description--
 
-我们有一个对象数组，里面存储着通讯录。
+我們有一個對象數組，裏面存儲着通訊錄。
 
-`lookUpProfile` 函数已经写好了参数，需要 `name` 和属性 (`prop`) 参数。
+`lookUpProfile` 函數已經寫好了參數，需要 `name` 和屬性 (`prop`) 參數。
 
-函数将会检查通讯录中是否存在一个 `firstName` 与传入的 `name` 相同的联系人。 如果存在，那么还需要检查对应的联系人中是否存在 `prop` 属性。
+函數將會檢查通訊錄中是否存在一個 `firstName` 與傳入的 `name` 相同的聯繫人。 如果存在，那麼還需要檢查對應的聯繫人中是否存在 `prop` 屬性。
 
-如果它们都存在，函数返回 prop 属性对应的值。
+如果它們都存在，函數返回 prop 屬性對應的值。
 
-如果 `name` 不对应于任何联系人，然后返回字符串 `No such contact`。
+如果 `name` 不對應於任何聯繫人，然後返回字符串 `No such contact`。
 
-如果 `prop` 属性在匹配 `name` 的联系人里不存在，返回 `No such property`。
+如果 `prop` 屬性在匹配 `name` 的聯繫人裏不存在，返回 `No such property`。
 
 # --hints--
 
-`lookUpProfile("Kristian", "lastName")` 应该返回字符串 `Vos`
+`lookUpProfile("Kristian", "lastName")` 應該返回字符串 `Vos`
 
 ```js
 assert(lookUpProfile('Kristian', 'lastName') === 'Vos');
 ```
 
-`lookUpProfile("Sherlock", "likes")` 应该返回 `["Intriguing Cases", "Violin"]`
+`lookUpProfile("Sherlock", "likes")` 應該返回 `["Intriguing Cases", "Violin"]`
 
 ```js
 assert.deepEqual(lookUpProfile('Sherlock', 'likes'), [
@@ -38,25 +38,25 @@ assert.deepEqual(lookUpProfile('Sherlock', 'likes'), [
 ]);
 ```
 
-`lookUpProfile("Harry", "likes")` 应该返回一个数组
+`lookUpProfile("Harry", "likes")` 應該返回一個數組
 
 ```js
 assert(typeof lookUpProfile('Harry', 'likes') === 'object');
 ```
 
-`lookUpProfile("Bob", "number")` 应该返回字符串 `No such contact`
+`lookUpProfile("Bob", "number")` 應該返回字符串 `No such contact`
 
 ```js
 assert(lookUpProfile('Bob', 'number') === 'No such contact');
 ```
 
-`lookUpProfile("Bob", "potato")` 应该返回字符串 `No such contact`
+`lookUpProfile("Bob", "potato")` 應該返回字符串 `No such contact`
 
 ```js
 assert(lookUpProfile('Bob', 'potato') === 'No such contact');
 ```
 
-`lookUpProfile("Akira", "address")` 应该返回字符串 `No such property`
+`lookUpProfile("Akira", "address")` 應該返回字符串 `No such property`
 
 ```js
 assert(lookUpProfile('Akira', 'address') === 'No such property');

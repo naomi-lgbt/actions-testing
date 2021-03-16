@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aecf08806
-title: 使用 class 选择器设置单个元素的样式
+title: 使用 class 選擇器設置單個元素的樣式
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c2MvDtV'
 forumTopicId: 18337
@@ -9,9 +9,9 @@ dashedName: use-a-css-class-to-style-an-element
 
 # --description--
 
-CSS 的 class 具有可重用性，可应用于各种 HTML 元素。
+CSS 的 class 具有可重用性，可應用於各種 HTML 元素。
 
-一个 CSS class 声明示例如下所示：
+一個 CSS class 聲明示例如下所示：
 
 ```html
 <style>
@@ -21,35 +21,35 @@ CSS 的 class 具有可重用性，可应用于各种 HTML 元素。
 </style>
 ```
 
-可以看到，我们在 `<style>` 样式声明区域里，创建了一个名为 `blue-text` 的 `class` 选择器。 你可以这样将 class 应用于 HTML 元素：`<h2 class="blue-text">CatPhotoApp</h2>`。 注意在 CSS `style` 元素里，class 名以一个句点开头。 在 HTML 元素的 class 属性中，class 名的开头没有句点。
+可以看到，我們在 `<style>` 樣式聲明區域裏，創建了一個名爲 `blue-text` 的 `class` 選擇器。 你可以這樣將 class 應用於 HTML 元素：`<h2 class="blue-text">CatPhotoApp</h2>`。 注意在 CSS `style` 元素裏，class 名以一個句點開頭。 在 HTML 元素的 class 屬性中，class 名的開頭沒有句點。
 
 # --instructions--
 
-在 `style` 样式声明里，把 `h2` 元素选择器改为 `.red-text` class 选择器，同时将颜色 `blue` 改为 `red`。
+在 `style` 樣式聲明裏，把 `h2` 元素選擇器改爲 `.red-text` class 選擇器，同時將顏色 `blue` 改爲 `red`。
 
-给 `h2` 元素设置一个值为 `red-text` 的 `class` 属性。
+給 `h2` 元素設置一個值爲 `red-text` 的 `class` 屬性。
 
 # --hints--
 
-`h2` 元素应为红色。
+`h2` 元素應爲紅色。
 
 ```js
 assert($('h2').css('color') === 'rgb(255, 0, 0)');
 ```
 
-`h2` 元素应有一个 `red-text` class。
+`h2` 元素應有一個 `red-text` class。
 
 ```js
 assert($('h2').hasClass('red-text'));
 ```
 
-样式表应该声明一个 `red-text` class，颜色为 `red`。
+樣式表應該聲明一個 `red-text` class，顏色爲 `red`。
 
 ```js
 assert(code.match(/\.red-text\s*\{\s*color\s*:\s*red;\s*\}/g));
 ```
 
-不应在 `h2` 元素里使用行内样式 `style="color: red"`。
+不應在 `h2` 元素裏使用行內樣式 `style="color: red"`。
 
 ```js
 assert($('h2').attr('style') === undefined);

@@ -1,6 +1,6 @@
 ---
 id: 587d7fb1367417b2b2512bf4
-title: 通过链式调用中间件来创建时间服务
+title: 通過鏈式調用中間件來創建時間服務
 challengeType: 2
 forumTopicId: 301510
 dashedName: chain-middleware-to-create-a-time-server
@@ -8,9 +8,9 @@ dashedName: chain-middleware-to-create-a-time-server
 
 # --description--
 
-使用 `app.METHOD(path, middlewareFunction)` 可以在指定的路由挂载中间件， 也可以在路由定义中链式调用中间件。
+使用 `app.METHOD(path, middlewareFunction)` 可以在指定的路由掛載中間件， 也可以在路由定義中鏈式調用中間件。
 
-请看以下示例：
+請看以下示例：
 
 ```js
 app.get('/user', function(req, res, next) {
@@ -21,17 +21,17 @@ app.get('/user', function(req, res, next) {
 });
 ```
 
-此方法可用于将服务操作拆分为较小的单元， 这可以让应用拥有更好的结构，也便于在不同的位置上复用代码； 此方法还可用于对数据执行某些验证。 可以在每一个中间件堆栈中，阻止当前链的执行，并将控制权传递给专门设计用于处理错误的函数； 或者可以将控制权传递给下一个匹配的路由，以处理特殊情况， 我们将在高级 Express 章节中看到这些内容。
+此方法可用於將服務操作拆分爲較小的單元， 這可以讓應用擁有更好的結構，也便於在不同的位置上覆用代碼； 此方法還可用於對數據執行某些驗證。 可以在每一箇中間件堆棧中，阻止當前鏈的執行，並將控制權傳遞給專門設計用於處理錯誤的函數； 或者可以將控制權傳遞給下一個匹配的路由，以處理特殊情況， 我們將在高級 Express 章節中看到這些內容。
 
 # --instructions--
 
-在路由 `app.get('/now', ...)` 中链式调用中间件函数，并在最后处理。 在中间件函数中给请求对象中的 `req.time` 添加到当前时间， 可以使用 `new Date().toString()`， 在处理函数中，使用 `{time: req.time}` 结构的 JSON 对象来响应请求。
+在路由 `app.get('/now', ...)` 中鏈式調用中間件函數，並在最後處理。 在中間件函數中給請求對象中的 `req.time` 添加到當前時間， 可以使用 `new Date().toString()`， 在處理函數中，使用 `{time: req.time}` 結構的 JSON 對象來響應請求。
 
-**注意：** 如果不链式调用中间件，测试将不能通过。 如果将中间件函数挂载在其他地方，即使输出结果正确，测试也会失败。
+**注意：** 如果不鏈式調用中間件，測試將不能通過。 如果將中間件函數掛載在其他地方，即使輸出結果正確，測試也會失敗。
 
 # --hints--
 
-/now 接口应该已经挂载了中间件
+/now 接口應該已經掛載了中間件
 
 ```js
 (getUserInput) =>
@@ -49,7 +49,7 @@ app.get('/user', function(req, res, next) {
   );
 ```
 
-/now 接口应该返回一个现在时间 +/-20 秒的时间
+/now 接口應該返回一個現在時間 +/-20 秒的時間
 
 ```js
 (getUserInput) =>

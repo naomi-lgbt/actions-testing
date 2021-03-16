@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244cb
-title: 操作复杂对象
+title: 操作複雜對象
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c9yNMfR'
 forumTopicId: 18208
@@ -9,9 +9,9 @@ dashedName: manipulating-complex-objects
 
 # --description--
 
-有时你可能希望将数据存储在一个灵活的数据结构（<dfn>Data Structure</dfn>）中。 JavaScript 对象是一种灵活的数据结构。 它可以储存字符串（<dfn>strings</dfn>）、数字（<dfn>numbers</dfn>）、布尔值（<dfn>booleans</dfn>）、数组（<dfn>arrays</dfn>）、函数（<dfn>functions</dfn>）和对象（<dfn>objects</dfn>）以及这些值的任意组合。
+有時你可能希望將數據存儲在一個靈活的數據結構（<dfn>Data Structure</dfn>）中。 JavaScript 對象是一種靈活的數據結構。 它可以儲存字符串（<dfn>strings</dfn>）、數字（<dfn>numbers</dfn>）、布爾值（<dfn>booleans</dfn>）、數組（<dfn>arrays</dfn>）、函數（<dfn>functions</dfn>）和對象（<dfn>objects</dfn>）以及這些值的任意組合。
 
-这是一个复杂数据结构的示例：
+這是一個複雜數據結構的示例：
 
 ```js
 var ourMusic = [
@@ -29,7 +29,7 @@ var ourMusic = [
 ];
 ```
 
-这是一个包含一个对象的数组。 该对象有关于专辑的各种元数据（<dfn>metadata</dfn>）。 它也有一个嵌套的 `formats` 数组。 可以将专辑添加到顶级数组来增加更多的专辑记录。 对象将数据以一种键 - 值对的形式保存。 在上面的示例中，`"artist": "Daft Punk"` 有一个键位 `artist` 值为 `Daft Punk` 的属性。 [JavaScript Object Notation](http://www.json.org/) 简称 `JSON` 是可以用于存储数据的数据交换格式。
+這是一個包含一個對象的數組。 該對象有關於專輯的各種元數據（<dfn>metadata</dfn>）。 它也有一個嵌套的 `formats` 數組。 可以將專輯添加到頂級數組來增加更多的專輯記錄。 對象將數據以一種鍵 - 值對的形式保存。 在上面的示例中，`"artist": "Daft Punk"` 有一個鍵位 `artist` 值爲 `Daft Punk` 的屬性。 [JavaScript Object Notation](http://www.json.org/) 簡稱 `JSON` 是可以用於存儲數據的數據交換格式。
 
 ```json
 {
@@ -45,39 +45,39 @@ var ourMusic = [
 }
 ```
 
-**提示：**数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。
+**提示：**數組中有多個 JSON 對象的時候，對象與對象之間要用逗號隔開。
 
 # --instructions--
 
-添加一个新专辑到 `myMusic` 数组。 添加 `artist` 和 `title` 字符串，`release_year` 数字和 `formats` 字符串数组。
+添加一個新專輯到 `myMusic` 數組。 添加 `artist` 和 `title` 字符串，`release_year` 數字和 `formats` 字符串數組。
 
 # --hints--
 
-`myMusic` 应该是一个数组
+`myMusic` 應該是一個數組
 
 ```js
 assert(Array.isArray(myMusic));
 ```
 
-`myMusic` 应该至少包含两个元素
+`myMusic` 應該至少包含兩個元素
 
 ```js
 assert(myMusic.length > 1);
 ```
 
-`myMusic[1]` 应该是一个对象
+`myMusic[1]` 應該是一個對象
 
 ```js
 assert(typeof myMusic[1] === 'object');
 ```
 
-`myMusic[1]` 至少要包含四个属性
+`myMusic[1]` 至少要包含四個屬性
 
 ```js
 assert(Object.keys(myMusic[1]).length > 3);
 ```
 
-`myMusic[1]` 应该包含一个类型为字符串的 `artist` 的属性
+`myMusic[1]` 應該包含一個類型爲字符串的 `artist` 的屬性
 
 ```js
 assert(
@@ -85,7 +85,7 @@ assert(
 );
 ```
 
-`myMusic[1]` 应该包含一个类型为字符串的 `title` 属性
+`myMusic[1]` 應該包含一個類型爲字符串的 `title` 屬性
 
 ```js
 assert(
@@ -93,7 +93,7 @@ assert(
 );
 ```
 
-`myMusic[1]` 应该包含一个类型为数字的 `release_year` 属性
+`myMusic[1]` 應該包含一個類型爲數字的 `release_year` 屬性
 
 ```js
 assert(
@@ -102,7 +102,7 @@ assert(
 );
 ```
 
-`myMusic[1]` 应该包含一个类型为数组的 `formats` 属性
+`myMusic[1]` 應該包含一個類型爲數組的 `formats` 屬性
 
 ```js
 assert(
@@ -110,7 +110,7 @@ assert(
 );
 ```
 
-`formats`应该是一个至少包含两个字符串元素的数组
+`formats`應該是一個至少包含兩個字符串元素的數組
 
 ```js
 assert(

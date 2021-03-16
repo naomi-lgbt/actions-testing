@@ -1,6 +1,6 @@
 ---
 id: 587d7788367417b2b2512aa2
-title: 使用 nav 元素使屏幕阅读器更容易导航
+title: 使用 nav 元素使屏幕閱讀器更容易導航
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/czVwWSv'
 forumTopicId: 301024
@@ -9,35 +9,35 @@ dashedName: make-screen-reader-navigation-easier-with-the-nav-landmark
 
 # --description--
 
-`nav` 也是一个具有语义化特性的 HTML5 标签，它可以使屏幕阅读器快速识别出页面中的导航信息。 它用于呈现页面中的主导航链接。
+`nav` 也是一個具有語義化特性的 HTML5 標籤，它可以使屏幕閱讀器快速識別出頁面中的導航信息。 它用於呈現頁面中的主導航鏈接。
 
-对于在多个页面底部出现的站点链接，我们不需要使用 `nav` 标签。 我们将会在下个挑战中学习 `footer` 标签的使用。
+對於在多個頁面底部出現的站點鏈接，我們不需要使用 `nav` 標籤。 我們將會在下個挑戰中學習 `footer` 標籤的使用。
 
 # --instructions--
 
-Camper Cat 在他的忍者训练页面顶端放置了多个导航链接，但这些链接都写在了 `div` 中。 请将 `div` 标签更改为 `nav` 标签，以提升页面的可访问性。
+Camper Cat 在他的忍者訓練頁面頂端放置了多個導航鏈接，但這些鏈接都寫在了 `div` 中。 請將 `div` 標籤更改爲 `nav` 標籤，以提升頁面的可訪問性。
 
 # --hints--
 
-应存在一个 `nav` 标签。
+應存在一個 `nav` 標籤。
 
 ```js
 assert($('nav').length == 1);
 ```
 
-`nav` 标签应包含 `ul` 标签及其列表项。
+`nav` 標籤應包含 `ul` 標籤及其列表項。
 
 ```js
 assert($('nav').children('ul').length == 1);
 ```
 
-不应存在 `div` 标签。
+不應存在 `div` 標籤。
 
 ```js
 assert($('div').length == 0);
 ```
 
-确保 `nav` 标签是闭合的。
+確保 `nav` 標籤是閉合的。
 
 ```js
 assert(

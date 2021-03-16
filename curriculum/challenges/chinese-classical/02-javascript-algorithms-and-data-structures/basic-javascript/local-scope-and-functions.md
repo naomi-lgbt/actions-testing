@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244bf
-title: 局部作用域和函数
+title: 局部作用域和函數
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cd62NhM'
 forumTopicId: 18227
@@ -9,9 +9,9 @@ dashedName: local-scope-and-functions
 
 # --description--
 
-在一个函数内声明的变量，以及该函数的参数都具有局部（<dfn>local</dfn>）作用域。 这意味着它们只在该函数内可见。
+在一個函數內聲明的變量，以及該函數的參數都具有局部（<dfn>local</dfn>）作用域。 這意味着它們只在該函數內可見。
 
-这是在函数 `myTest` 内声明局部变量 `loc` 的例子：
+這是在函數 `myTest` 內聲明局部變量 `loc` 的例子：
 
 ```js
 function myTest() {
@@ -22,17 +22,17 @@ myTest();
 console.log(loc);
 ```
 
-`myTest()` 函数调用将在控制台中显示字符串 `foo`。 `console.log(loc)` 行会产生一个错误，因为 `loc` 没有定义在函数之外。
+`myTest()` 函數調用將在控制檯中顯示字符串 `foo`。 `console.log(loc)` 行會產生一個錯誤，因爲 `loc` 沒有定義在函數之外。
 
 # --instructions--
 
-编辑器有两个 `console.log` 来帮助您了解正在发生的事情。 检查控制台的代码输出以查看它是如何改变的。 在 `myLocalScope` 中声明一个本地变量 `myVar` 并运行测试。
+編輯器有兩個 `console.log` 來幫助您瞭解正在發生的事情。 檢查控制檯的代碼輸出以查看它是如何改變的。 在 `myLocalScope` 中聲明一個本地變量 `myVar` 並運行測試。
 
-**注意：** 控制台仍将显示 `ReferenceError: myVar is not defined`，但这不会导致测试失败。
+**注意：** 控制檯仍將顯示 `ReferenceError: myVar is not defined`，但這不會導致測試失敗。
 
 # --hints--
 
-不应该包含全局的 `myVar` 变量。
+不應該包含全局的 `myVar` 變量。
 
 ```js
 function declared() {
@@ -41,7 +41,7 @@ function declared() {
 assert.throws(declared, ReferenceError);
 ```
 
-需要定义局部的 `myVar` 变量。
+需要定義局部的 `myVar` 變量。
 
 ```js
 assert(

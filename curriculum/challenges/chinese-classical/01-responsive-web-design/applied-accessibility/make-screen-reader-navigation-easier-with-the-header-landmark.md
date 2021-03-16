@@ -1,6 +1,6 @@
 ---
 id: 587d7787367417b2b2512aa1
-title: 使用 header 元素来让屏幕阅读器更容易进行导航
+title: 使用 header 元素來讓屏幕閱讀器更容易進行導航
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cB76vtv'
 forumTopicId: 301023
@@ -9,37 +9,37 @@ dashedName: make-screen-reader-navigation-easier-with-the-header-landmark
 
 # --description--
 
-`header` 也是一个具有语义化的、可以提升页面可访问性的 HTML5 标签。 它可以为父级标签呈现简介信息或者导航链接，适用于那些在多个页面顶部重复出现的内容。
+`header` 也是一個具有語義化的、可以提升頁面可訪問性的 HTML5 標籤。 它可以爲父級標籤呈現簡介信息或者導航鏈接，適用於那些在多個頁面頂部重複出現的內容。
 
-与 `main` 类似，`header` 的语义化特性也可以让辅助工具快速定位到它的内容。
+與 `main` 類似，`header` 的語義化特性也可以讓輔助工具快速定位到它的內容。
 
-**注意：**`header` 应当在 HTML 文档的 `body` 标签内使用。 它与包含页面标题、元信息的 `head` 标签不同。
+**注意：**`header` 應當在 HTML 文檔的 `body` 標籤內使用。 它與包含頁面標題、元信息的 `head` 標籤不同。
 
 # --instructions--
 
-Camper Cat 正在创作一些训练忍者的精彩文章，并打算为这些文章创建一个新的页面。 请把包含 `h1` 的 `div` 标签替换为 `header` 标签。
+Camper Cat 正在創作一些訓練忍者的精彩文章，並打算爲這些文章創建一個新的頁面。 請把包含 `h1` 的 `div` 標籤替換爲 `header` 標籤。
 
 # --hints--
 
-应该存在一个 `header` 标签。
+應該存在一個 `header` 標籤。
 
 ```js
 assert($('header').length == 1);
 ```
 
-`header` 标签中应包含 `h1`。
+`header` 標籤中應包含 `h1`。
 
 ```js
 assert($('header').children('h1').length == 1);
 ```
 
-不应存在 `div` 标签。
+不應存在 `div` 標籤。
 
 ```js
 assert($('div').length == 0);
 ```
 
-确保 `header` 标签是闭合的。
+確保 `header` 標籤是閉合的。
 
 ```js
 assert(

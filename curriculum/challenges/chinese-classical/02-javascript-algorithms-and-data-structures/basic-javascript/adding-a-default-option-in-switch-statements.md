@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244de
-title: 在 switch 语句中添加默认选项
+title: 在 switch 語句中添加默認選項
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c3JvVfg'
 forumTopicId: 16653
@@ -9,9 +9,9 @@ dashedName: adding-a-default-option-in-switch-statements
 
 # --description--
 
-在 `switch` 语句中，你可能无法用 `case` 枚举出所有可能的值。 相反，你可以添加 `default` 语句，它会在找不到相匹配的 `case` 语句之后执行。 你可以把它看作是 `if/else` 链中最后的那个 `else` 语句。
+在 `switch` 語句中，你可能無法用 `case` 枚舉出所有可能的值。 相反，你可以添加 `default` 語句，它會在找不到相匹配的 `case` 語句之後執行。 你可以把它看作是 `if/else` 鏈中最後的那個 `else` 語句。
 
-`default` 语句应该被放到最后。
+`default` 語句應該被放到最後。
 
 ```js
 switch (num) {
@@ -30,7 +30,7 @@ switch (num) {
 
 # --instructions--
 
-写一个 switch 语句，设置以下条件设置 `answer`：  
+寫一個 switch 語句，設置以下條件設置 `answer`：  
 `a` - `apple`  
 `b` - `bird`  
 `c` - `cat`  
@@ -38,49 +38,49 @@ switch (num) {
 
 # --hints--
 
-`switchOfStuff("a")` 应该返回字符串 `apple`
+`switchOfStuff("a")` 應該返回字符串 `apple`
 
 ```js
 assert(switchOfStuff('a') === 'apple');
 ```
 
-`switchOfStuff("b")` 应该返回字符串 `bird`
+`switchOfStuff("b")` 應該返回字符串 `bird`
 
 ```js
 assert(switchOfStuff('b') === 'bird');
 ```
 
-`switchOfStuff("c")` 应该返回字符串 `cat`
+`switchOfStuff("c")` 應該返回字符串 `cat`
 
 ```js
 assert(switchOfStuff('c') === 'cat');
 ```
 
-`switchOfStuff("d")` 应该返回字符串 `stuff`
+`switchOfStuff("d")` 應該返回字符串 `stuff`
 
 ```js
 assert(switchOfStuff('d') === 'stuff');
 ```
 
-`switchOfStuff(4)` 应该返回字符串 `stuff`
+`switchOfStuff(4)` 應該返回字符串 `stuff`
 
 ```js
 assert(switchOfStuff(4) === 'stuff');
 ```
 
-不能使用 `if` 或 `else` 语句。
+不能使用 `if` 或 `else` 語句。
 
 ```js
 assert(!/else/g.test(code) || !/if/g.test(code));
 ```
 
-你应该使用 `default` 语句。
+你應該使用 `default` 語句。
 
 ```js
 assert(switchOfStuff('string-to-trigger-default-case') === 'stuff');
 ```
 
-你至少应该写 3 个 `break` 语句。
+你至少應該寫 3 個 `break` 語句。
 
 ```js
 assert(code.match(/break/g).length > 2);

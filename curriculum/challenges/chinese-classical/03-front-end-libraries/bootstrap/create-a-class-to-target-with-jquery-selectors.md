@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908852
-title: 用 jQuery 选择器给目标元素的添加 class
+title: 用 jQuery 選擇器給目標元素的添加 class
 challengeType: 0
 forumTopicId: 16815
 dashedName: create-a-class-to-target-with-jquery-selectors
@@ -8,13 +8,13 @@ dashedName: create-a-class-to-target-with-jquery-selectors
 
 # --description--
 
-并不是所有 class 属性都需要有对应的 CSS 样式。 有时候我们设置 class 只是为了更方便地在 jQuery 中选中这些元素。
+並不是所有 class 屬性都需要有對應的 CSS 樣式。 有時候我們設置 class 只是爲了更方便地在 jQuery 中選中這些元素。
 
-为每一个 `button` 元素添加 `target` class。
+爲每一個 `button` 元素添加 `target` class。
 
 # --hints--
 
-每一个 `button` 元素都应该设置 `target` class
+每一個 `button` 元素都應該設置 `target` class
 
 ```js
 assert($('.target').length > 5);

@@ -1,6 +1,6 @@
 ---
 id: 587d781d367417b2b2512ac8
-title: 调整锚点的悬停状态
+title: 調整錨點的懸停狀態
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cakRGcm'
 forumTopicId: 301035
@@ -9,9 +9,9 @@ dashedName: adjust-the-hover-state-of-an-anchor-tag
 
 # --description--
 
-本挑战将要涉及到伪类。 伪类是可以添加到选择器上的关键字，用来选择特定状态的元素。
+本挑戰將要涉及到僞類。 僞類是可以添加到選擇器上的關鍵字，用來選擇特定狀態的元素。
 
-比如，可以使用 `:hover` 伪类选择器来选取超链接的悬停状态。 下面的代码可以在鼠标悬停在超链接上时将其 `color` 变成红色：
+比如，可以使用 `:hover` 僞類選擇器來選取超鏈接的懸停狀態。 下面的代碼可以在鼠標懸停在超鏈接上時將其 `color` 變成紅色：
 
 ```css
 a:hover {
@@ -21,17 +21,17 @@ a:hover {
 
 # --instructions--
 
-代码编辑器里面已经有了一个 CSS 规则把所有的 `a` 标签定义成了黑色。 请添加一个规则，使得用户悬停在 `a` 标签时，标签的 `color` 变成蓝色。
+代碼編輯器裏面已經有了一個 CSS 規則把所有的 `a` 標籤定義成了黑色。 請添加一個規則，使得用戶懸停在 `a` 標籤時，標籤的 `color` 變成藍色。
 
 # --hints--
 
-超链接的 `color` 应该保持黑色，应只添加 `:hover` CSS 规则。
+超鏈接的 `color` 應該保持黑色，應只添加 `:hover` CSS 規則。
 
 ```js
 assert($('a').css('color') == 'rgb(0, 0, 0)');
 ```
 
-悬停超链接时超链接的 `color` 应该变成蓝色。
+懸停超鏈接時超鏈接的 `color` 應該變成藍色。
 
 ```js
 assert(

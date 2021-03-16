@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036154
-title: 组合多个 Reducers
+title: 組合多個 Reducers
 challengeType: 6
 forumTopicId: 301436
 dashedName: combine-multiple-reducers
@@ -8,11 +8,11 @@ dashedName: combine-multiple-reducers
 
 # --description--
 
-当应用程序的状态开始变得越来越复杂时，可能会将 state 分成多个块。 相反，请记住 Redux 的第一个原则：所有应用程序状态都保存在 store 中的一个简单的 state 对象中。 因此，Redux 提供 reducer 组合作为复杂状态模型的解决方案。 定义多个 reducer 来处理应用程序状态的不同部分，然后将这些 reducer 组合成一个 root reducer。 然后将 root reducer 传递给 Redux `createStore()`方法。
+當應用程序的狀態開始變得越來越複雜時，可能會將 state 分成多個塊。 相反，請記住 Redux 的第一個原則：所有應用程序狀態都保存在 store 中的一個簡單的 state 對象中。 因此，Redux 提供 reducer 組合作爲複雜狀態模型的解決方案。 定義多個 reducer 來處理應用程序狀態的不同部分，然後將這些 reducer 組合成一個 root reducer。 然後將 root reducer 傳遞給 Redux `createStore()`方法。
 
-为了将多个 reducer 组合在一起，Redux 提供了`combineReducers()`方法。 该方法接受一个对象作为参数，在该参数中定义一个属性，该属性将键与特定 reducer 函数关联。 Redux 将使用给定的键值作为关联状态的名称。
+爲了將多個 reducer 組合在一起，Redux 提供了`combineReducers()`方法。 該方法接受一個對象作爲參數，在該參數中定義一個屬性，該屬性將鍵與特定 reducer 函數關聯。 Redux 將使用給定的鍵值作爲關聯狀態的名稱。
 
-通常情况下，当它们在某种程度上是独一无二的，为每个应用程序的 state 创建一个 reducer 是一个很好的做法。 例如，在一个带有用户身份验证的记笔记应用程序中，一个 reducer 可以处理身份验证而另一个处理用户提交的文本和注释。 对于这样的应用程序，可能会编写 `combineReducers()` 方法，如下所示：
+通常情況下，當它們在某種程度上是獨一無二的，爲每個應用程序的 state 創建一個 reducer 是一個很好的做法。 例如，在一個帶有用戶身份驗證的記筆記應用程序中，一個 reducer 可以處理身份驗證而另一個處理用戶提交的文本和註釋。 對於這樣的應用程序，可能會編寫 `combineReducers()` 方法，如下所示：
 
 ```js
 const rootReducer = Redux.combineReducers({
@@ -21,15 +21,15 @@ const rootReducer = Redux.combineReducers({
 });
 ```
 
-现在，`notes` 键将包含与注释相关联的所有状态，并由 `notesReducer` 处理。 这就是组合多个 reducer 来管理更复杂的应用程序状态的方式， 在此示例中，Redux store 中保存的状态将是一个包含 `auth` 和 `notes` 属性的简单对象。
+現在，`notes` 鍵將包含與註釋相關聯的所有狀態，並由 `notesReducer` 處理。 這就是組合多個 reducer 來管理更復雜的應用程序狀態的方式， 在此示例中，Redux store 中保存的狀態將是一個包含 `auth` 和 `notes` 屬性的簡單對象。
 
 # --instructions--
 
-代码编辑器中提供了 `counterReducer()` 和 `authReducer()` 函数以及 Redux store。 使用 `Redux.combineReducers()` 方法编写完成 `rootReducer()` 函数。 将 `counterReducer` 分配给一个叫做 `count` 的键，将 `authReducer` 分配给一个叫做 `auth` 的键。
+代碼編輯器中提供了 `counterReducer()` 和 `authReducer()` 函數以及 Redux store。 使用 `Redux.combineReducers()` 方法編寫完成 `rootReducer()` 函數。 將 `counterReducer` 分配給一個叫做 `count` 的鍵，將 `authReducer` 分配給一個叫做 `auth` 的鍵。
 
 # --hints--
 
-`counterReducer` 应该递增和递减 `state`。
+`counterReducer` 應該遞增和遞減 `state`。
 
 ```js
 assert(
@@ -45,7 +45,7 @@ assert(
 );
 ```
 
-`authReducer` 应该可以使 `authenticated` 的 `state` 值在 `true` 和 `false` 之间切换。
+`authReducer` 應該可以使 `authenticated` 的 `state` 值在 `true` 和 `false` 之間切換。
 
 ```js
 assert(
@@ -59,7 +59,7 @@ assert(
 );
 ```
 
-store `state` 应该有两个 key：一个是 `count`，它包含一个数字。 另一个 `auth`，它包含一个对象。 `auth` 对象应该具有 `authenticated` 的属性，该属性的值应该为布尔值。
+store `state` 應該有兩個 key：一個是 `count`，它包含一個數字。 另一個 `auth`，它包含一個對象。 `auth` 對象應該具有 `authenticated` 的屬性，該屬性的值應該爲布爾值。
 
 ```js
 assert(
@@ -74,7 +74,7 @@ assert(
 );
 ```
 
-`rootReducer` 应该是一个合并了 `counterReducer` 和 `authReducer` 的函数。
+`rootReducer` 應該是一個合併了 `counterReducer` 和 `authReducer` 的函數。
 
 ```js
 (getUserInput) =>

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348ce8acef08814
-title: 使用 btn-danger 提示危险操作
+title: 使用 btn-danger 提示危險操作
 challengeType: 0
 forumTopicId: 18375
 dashedName: warn-your-users-of-a-dangerous-action-with-btn-danger
@@ -8,33 +8,33 @@ dashedName: warn-your-users-of-a-dangerous-action-with-btn-danger
 
 # --description--
 
-Bootstrap 有着丰富的预定义按钮颜色。 红色 `btn-danger` class 用来提醒用户此行为具有破坏性，比如删除一张猫的图片。
+Bootstrap 有着豐富的預定義按鈕顏色。 紅色 `btn-danger` class 用來提醒用戶此行爲具有破壞性，比如刪除一張貓的圖片。
 
-创建一个带有文本 `Delete` 的按钮，给它设置 class `btn-danger`。
+創建一個帶有文本 `Delete` 的按鈕，給它設置 class `btn-danger`。
 
-注意：这些按钮仍然需要 `btn` 和 `btn-block` class。
+注意：這些按鈕仍然需要 `btn` 和 `btn-block` class。
 
 # --hints--
 
-应创建一个新的带有文本 `Delete` 的 `button` 元素。
+應創建一個新的帶有文本 `Delete` 的 `button` 元素。
 
 ```js
 assert(new RegExp('Delete', 'gi').test($('button').text()));
 ```
 
-所有 Bootstrap 按钮的 class 属性都应该包含 `btn` 和 `btn-block`。
+所有 Bootstrap 按鈕的 class 屬性都應該包含 `btn` 和 `btn-block`。
 
 ```js
 assert($('button.btn-block.btn').length > 2);
 ```
 
-新创建按钮的 class 属性应该包含 `btn-danger`。
+新創建按鈕的 class 屬性應該包含 `btn-danger`。
 
 ```js
 assert($('button').hasClass('btn-danger'));
 ```
 
-确保所有的 `button` 元素都有一个闭合标签。
+確保所有的 `button` 元素都有一個閉合標籤。
 
 ```js
 assert(

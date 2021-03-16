@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403617e
-title: 添加事件侦听器
+title: 添加事件偵聽器
 challengeType: 6
 forumTopicId: 301377
 dashedName: add-event-listeners
@@ -8,19 +8,19 @@ dashedName: add-event-listeners
 
 # --description--
 
-`componentDidMount()` 方法也是添加特定功能所需的任何事件监听器的最佳位置。 React 提供了一个合成事件系统，它封装了浏览器中的事件系统。 这意味着，不管用户用的是什么浏览器，合成事件系统的行为都完全相同 -- 即使不同浏览器之间的本地事件的行为可能不同。
+`componentDidMount()` 方法也是添加特定功能所需的任何事件監聽器的最佳位置。 React 提供了一個合成事件系統，它封裝了瀏覽器中的事件系統。 這意味着，不管用戶用的是什麼瀏覽器，合成事件系統的行爲都完全相同 -- 即使不同瀏覽器之間的本地事件的行爲可能不同。
 
-之前已经接触了一些合成事件处理程序，如`onClick()`。 React 的合成事件系统非常适合用于在 DOM 元素上管理的大多数交互。 但是，如果要将事件处理程序附加到 document 或 window 对象，则必须直接执行此操作。
+之前已經接觸了一些合成事件處理程序，如`onClick()`。 React 的合成事件系統非常適合用於在 DOM 元素上管理的大多數交互。 但是，如果要將事件處理程序附加到 document 或 window 對象，則必須直接執行此操作。
 
 # --instructions--
 
-在 `componentDidMount()` 方法中为 `keydown` 事件添加事件监听器，并让这些事件触发回调 `handleKeyPress()`。 可以使用 `document.addEventListener()`，它将事件（用引号括起来）作为第一个参数，将回调作为第二个参数。
+在 `componentDidMount()` 方法中爲 `keydown` 事件添加事件監聽器，並讓這些事件觸發回調 `handleKeyPress()`。 可以使用 `document.addEventListener()`，它將事件（用引號括起來）作爲第一個參數，將回調作爲第二個參數。
 
-然后，在 `componentWillUnmount()` 中移除相同的事件监听器。 可以把相同的参数传递给 `document.removeEventListener()`。 在卸载和销毁 React 组件之前，最好在这个生命周期方法中对它们进行清理。 移除事件监听器就是这样一个清理操作的例子。
+然後，在 `componentWillUnmount()` 中移除相同的事件監聽器。 可以把相同的參數傳遞給 `document.removeEventListener()`。 在卸載和銷燬 React 組件之前，最好在這個生命週期方法中對它們進行清理。 移除事件監聽器就是這樣一個清理操作的例子。
 
 # --hints--
 
-`MyComponent` 应该渲染一个包含 `h1` 标签的 `div` 元素。
+`MyComponent` 應該渲染一個包含 `h1` 標籤的 `div` 元素。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-应该在 `componentDidMount` 中将 `keydown` 事件监听添加到到 document 上。
+應該在 `componentDidMount` 中將 `keydown` 事件監聽添加到到 document 上。
 
 ```js
 assert(
@@ -47,7 +47,7 @@ assert(
 );
 ```
 
-应该在 `componentWillUnmount` 中将 document 上的 `keydown` 事件监听移除。
+應該在 `componentWillUnmount` 中將 document 上的 `keydown` 事件監聽移除。
 
 ```js
 assert(
@@ -63,7 +63,7 @@ assert(
 );
 ```
 
-当组件装载完毕，按 `enter` 键应该会更新其 state ，并渲染到 `h1` 标签。
+當組件裝載完畢，按 `enter` 鍵應該會更新其 state ，並渲染到 `h1` 標籤。
 
 ```js
 async () => {

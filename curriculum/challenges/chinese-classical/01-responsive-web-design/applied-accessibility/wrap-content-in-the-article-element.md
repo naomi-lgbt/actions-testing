@@ -1,6 +1,6 @@
 ---
 id: 587d774e367417b2b2512aa0
-title: 使用 article 元素包裹文章内容
+title: 使用 article 元素包裹文章內容
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cPp79S3'
 forumTopicId: 301029
@@ -9,29 +9,29 @@ dashedName: wrap-content-in-the-article-element
 
 # --description--
 
-`article` 是另一个具有语义化特性的 HTML5 新标签。 `article` 是一个分段标签，用于呈现独立及完整的内容。 这个标签适用于博客、论坛帖子或者新闻文章。
+`article` 是另一個具有語義化特性的 HTML5 新標籤。 `article` 是一個分段標籤，用於呈現獨立及完整的內容。 這個標籤適用於博客、論壇帖子或者新聞文章。
 
-确定内容是否可以单独作为一部分，通常是个人的判断，但你可以使用几个简单的测试。 如果删除了所有周围的上下文，这个内容是否仍然有意义？ 类似地，对于文本内容，可否把这些内容放到一个 RSS 推送里？
+確定內容是否可以單獨作爲一部分，通常是個人的判斷，但你可以使用幾個簡單的測試。 如果刪除了所有周圍的上下文，這個內容是否仍然有意義？ 類似地，對於文本內容，可否把這些內容放到一個 RSS 推送裏？
 
-请牢记，辅助设备依赖组织良好、语义化的标签来获取页面中的信息。
+請牢記，輔助設備依賴組織良好、語義化的標籤來獲取頁面中的信息。
 
-**注意：**`section` 元素也是 HTML5 引入的新元素，其语义与 `article` 略有不同。 `article` 用于独立且完整的内容，而 `section` 用于对与主题相关的内容进行分组。 它们可以根据需要来嵌套使用。 举个例子：如果一本书是一个 `article` 的话，那么每个章节就是 `section`。 当内容组之间没有联系时，我们可以使用 `div`。
+**注意：**`section` 元素也是 HTML5 引入的新元素，其語義與 `article` 略有不同。 `article` 用於獨立且完整的內容，而 `section` 用於對與主題相關的內容進行分組。 它們可以根據需要來嵌套使用。 舉個例子：如果一本書是一個 `article` 的話，那麼每個章節就是 `section`。 當內容組之間沒有聯繫時，我們可以使用 `div`。
 
-`<div>` - 一组内容 `<section>` - 几组相关的内容 `<article>` - 几组独立的内容
+`<div>` - 一組內容 `<section>` - 幾組相關的內容 `<article>` - 幾組獨立的內容
 
 # --instructions--
 
-Camper Cat 打算使用 `article` 标签来呈现他的博客页面里的帖子，但是他忘记在顶部的帖子上使用这个标签。 将 `div` 标签改为 `article` 标签。
+Camper Cat 打算使用 `article` 標籤來呈現他的博客頁面裏的帖子，但是他忘記在頂部的帖子上使用這個標籤。 將 `div` 標籤改爲 `article` 標籤。
 
 # --hints--
 
-应有三个 `article` 标签。
+應有三個 `article` 標籤。
 
 ```js
 assert($('article').length == 3);
 ```
 
-不应有 `div` 标签。
+不應有 `div` 標籤。
 
 ```js
 assert($('div').length == 0);

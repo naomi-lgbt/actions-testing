@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf06756
-title: 内联样式的优先级高于 ID 选择器
+title: 內聯樣式的優先級高於 ID 選擇器
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cGJDRha'
 forumTopicId: 18252
@@ -9,45 +9,45 @@ dashedName: override-class-declarations-with-inline-styles
 
 # --description--
 
-我们刚刚证明了，id 选择器无论在 `style` 标签的任何位置声明，都会覆盖 class 声明的样式。
+我們剛剛證明了，id 選擇器無論在 `style` 標籤的任何位置聲明，都會覆蓋 class 聲明的樣式。
 
-其实还有其他方法可以覆盖 CSS 样式。 你还记得行内样式吗？
+其實還有其他方法可以覆蓋 CSS 樣式。 你還記得行內樣式嗎？
 
 # --instructions--
 
-使用行内样式尝试让 `h1` 的字体颜色变白。 像这样使用：
+使用行內樣式嘗試讓 `h1` 的字體顏色變白。 像這樣使用：
 
 `<h1 style="color: green;">`
 
-`h1` 元素需继续保留 `blue-text` 和 `pink-text` 这两个 class。
+`h1` 元素需繼續保留 `blue-text` 和 `pink-text` 這兩個 class。
 
 # --hints--
 
-`h1` 元素应包含 `pink-text` class。
+`h1` 元素應包含 `pink-text` class。
 
 ```js
 assert($('h1').hasClass('pink-text'));
 ```
 
-`h1` 元素应包含 `blue-text` class。
+`h1` 元素應包含 `blue-text` class。
 
 ```js
 assert($('h1').hasClass('blue-text'));
 ```
 
-`h1` 元素的 id 应为 `orange-text`。
+`h1` 元素的 id 應爲 `orange-text`。
 
 ```js
 assert($('h1').attr('id') === 'orange-text');
 ```
 
-`h1` 元素应含有行内样式。
+`h1` 元素應含有行內樣式。
 
 ```js
 assert(document.querySelector('h1[style]'));
 ```
 
-`h1` 元素的字体颜色应该为白色。
+`h1` 元素的字體顏色應該爲白色。
 
 ```js
 assert($('h1').css('color') === 'rgb(255, 255, 255)');

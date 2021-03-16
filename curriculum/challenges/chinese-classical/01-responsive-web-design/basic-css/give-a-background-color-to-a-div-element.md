@@ -1,6 +1,6 @@
 ---
 id: bad87fed1348bd9aede07836
-title: 给 div 元素添加背景色
+title: 給 div 元素添加背景色
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cdRKMCk'
 forumTopicId: 18190
@@ -9,9 +9,9 @@ dashedName: give-a-background-color-to-a-div-element
 
 # --description--
 
-`background-color` 属性可以设置元素的背景颜色。
+`background-color` 屬性可以設置元素的背景顏色。
 
-如果想将一个元素的背景颜色改为 `green`，可以在 `style` 里面这样写：
+如果想將一個元素的背景顏色改爲 `green`，可以在 `style` 裏面這樣寫：
 
 ```css
 .green-background {
@@ -21,23 +21,23 @@ dashedName: give-a-background-color-to-a-div-element
 
 # --instructions--
 
-创建一个叫作 `silver-background` 的 class，并设置 `background-color` 为 `silver`。 之后，将这个 class 添加到 `div` 元素上。
+創建一個叫作 `silver-background` 的 class，並設置 `background-color` 爲 `silver`。 之後，將這個 class 添加到 `div` 元素上。
 
 # --hints--
 
-`div` 元素应有 `silver-background` class。
+`div` 元素應有 `silver-background` class。
 
 ```js
 assert($('div').hasClass('silver-background'));
 ```
 
-`div` 元素背景颜色应设置为银色。
+`div` 元素背景顏色應設置爲銀色。
 
 ```js
 assert($('div').css('background-color') === 'rgb(192, 192, 192)');
 ```
 
-class 名 `silver-background` 应该定义在 `style` 元素内；`background-color` 的属性值应为 `silver`。
+class 名 `silver-background` 應該定義在 `style` 元素內；`background-color` 的屬性值應爲 `silver`。
 
 ```js
 assert(code.match(/\.silver-background\s*{\s*background-color:\s*silver;\s*}/));

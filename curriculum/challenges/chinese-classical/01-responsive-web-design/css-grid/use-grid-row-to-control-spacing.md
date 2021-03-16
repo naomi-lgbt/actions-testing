@@ -1,6 +1,6 @@
 ---
 id: 5a90373638fddaf9a66b5d39
-title: 使用 grid-row 来控制空间大小
+title: 使用 grid-row 來控制空間大小
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/c9WBLU4'
 forumTopicId: 301137
@@ -9,15 +9,15 @@ dashedName: use-grid-row-to-control-spacing
 
 # --description--
 
-和设置一个网格项占用多列类似，你也可以设置它占用多行。 你可以使用 `grid-row` 属性来定义一个网格项开始和结束的水平线。
+和設置一個網格項佔用多列類似，你也可以設置它佔用多行。 你可以使用 `grid-row` 屬性來定義一個網格項開始和結束的水平線。
 
 # --instructions--
 
-请让 class 为 `item5` 的元素占用最后两行。
+請讓 class 爲 `item5` 的元素佔用最後兩行。
 
 # --hints--
 
-class 为 `item5` 的元素应具有 `grid-row` 属性。
+class 爲 `item5` 的元素應具有 `grid-row` 屬性。
 
 ```js
 assert(
@@ -25,7 +25,7 @@ assert(
 );
 ```
 
-class 为 `item5` 的元素应具有 `grid-row` 属性，其属性值应将元素设置为占用网格的最后两行。
+class 爲 `item5` 的元素應具有 `grid-row` 屬性，其屬性值應將元素設置爲佔用網格的最後兩行。
 
 ```js
 const rowStart = getComputedStyle($('.item5')[0]).gridRowStart;

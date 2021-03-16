@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036144
-title: 使用 Provider 连接 Redux 和 React
+title: 使用 Provider 連接 Redux 和 React
 challengeType: 6
 forumTopicId: 301435
 dashedName: use-provider-to-connect-redux-to-react
@@ -8,9 +8,9 @@ dashedName: use-provider-to-connect-redux-to-react
 
 # --description--
 
-在上一挑战中，创建了 Redux store 和 action，分别用于处理消息数组和添加新消息。 下一步要为 React 提供访问 Redux store 及发起更新所需的 actions。 `react-redux` 包可帮助我们完成这些任务。
+在上一挑戰中，創建了 Redux store 和 action，分別用於處理消息數組和添加新消息。 下一步要爲 React 提供訪問 Redux store 及發起更新所需的 actions。 `react-redux` 包可幫助我們完成這些任務。
 
-React Redux 提供的 API 有两个关键的功能：`Provider` 和 `connect`。 会在另一个挑战会介绍 `connect`。 `Provider`是 React Redux 包装 React 应用的 wrapper 组件， 它允许访问整个组件树中的 Redux `store` 及 `dispatch`（分发）方法。 `Provider` 需要两个 props：Redux store 和 App 应用的子组件。 用于 App 组件的 `Provider` 可这样定义：
+React Redux 提供的 API 有兩個關鍵的功能：`Provider` 和 `connect`。 會在另一個挑戰會介紹 `connect`。 `Provider`是 React Redux 包裝 React 應用的 wrapper 組件， 它允許訪問整個組件樹中的 Redux `store` 及 `dispatch`（分發）方法。 `Provider` 需要兩個 props：Redux store 和 App 應用的子組件。 用於 App 組件的 `Provider` 可這樣定義：
 
 ```jsx
 <Provider store={store}>
@@ -20,13 +20,13 @@ React Redux 提供的 API 有两个关键的功能：`Provider` 和 `connect`。
 
 # --instructions--
 
-此时，编辑器上显示的是过去几个挑战中所有代码， 包括 Redux store、actions、`DisplayMessages` 组件。 新出现的代码是底部的`AppWrapper`组件， 这个顶级组件可用于渲染 `ReactRedux` 的 `Provider`，并把 Redux 的 store 作为 props 传入。 接着，渲染 `DisplayMessages` 为子组件。 完成这些任务后，会看到 React 组件渲染到页面上。
+此時，編輯器上顯示的是過去幾個挑戰中所有代碼， 包括 Redux store、actions、`DisplayMessages` 組件。 新出現的代碼是底部的`AppWrapper`組件， 這個頂級組件可用於渲染 `ReactRedux` 的 `Provider`，並把 Redux 的 store 作爲 props 傳入。 接着，渲染 `DisplayMessages` 爲子組件。 完成這些任務後，會看到 React 組件渲染到頁面上。
 
-**注意：** React Redux 在此可作全局变量，因此可通过点号表示法访问 Provider。 利用这一点，编辑器上的代码把 `Provider` 设置为常量，便于你在 `AppWrapper` 渲染方法中使用。
+**注意：** React Redux 在此可作全局變量，因此可通過點號表示法訪問 Provider。 利用這一點，編輯器上的代碼把 `Provider` 設置爲常量，便於你在 `AppWrapper` 渲染方法中使用。
 
 # --hints--
 
-`AppWrapper` 应渲染。
+`AppWrapper` 應渲染。
 
 ```js
 assert(
@@ -37,7 +37,7 @@ assert(
 );
 ```
 
-`Provider` 组件应传入相当于 Redux store 的 `store` 参数。
+`Provider` 組件應傳入相當於 Redux store 的 `store` 參數。
 
 ```js
 (getUserInput) =>
@@ -51,7 +51,7 @@ assert(
   );
 ```
 
-`DisplayMessages` 应渲染为 `AppWrapper` 的子组件。
+`DisplayMessages` 應渲染爲 `AppWrapper` 的子組件。
 
 ```js
 assert(
@@ -64,7 +64,7 @@ assert(
 );
 ```
 
-`DisplayMessages` 组件应渲染 `h2`、`input`、`button`、`ul` 四个元素。
+`DisplayMessages` 組件應渲染 `h2`、`input`、`button`、`ul` 四個元素。
 
 ```js
 assert(

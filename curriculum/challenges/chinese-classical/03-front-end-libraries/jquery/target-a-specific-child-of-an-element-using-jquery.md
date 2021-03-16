@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aed108826
-title: 使用 jQuery 选择元素的特定子元素
+title: 使用 jQuery 選擇元素的特定子元素
 challengeType: 6
 forumTopicId: 18315
 required:
@@ -11,21 +11,21 @@ dashedName: target-a-specific-child-of-an-element-using-jquery
 
 # --description--
 
-已经看到了 id 属性对于 jQuery 选择器选取标签的便利， 但这并不适用于所有情景。
+已經看到了 id 屬性對於 jQuery 選擇器選取標籤的便利， 但這並不適用於所有情景。
 
-幸运的是，jQuery 有一些其他的方法可以选取正确的标签。
+幸運的是，jQuery 有一些其他的方法可以選取正確的標籤。
 
-jQuery 可以用 CSS 选择器（CSS Selectors）选取标签。 `target:nth-child(n)` CSS 选择器可以选取指定 class 或者元素类型的的第 n 个标签。
+jQuery 可以用 CSS 選擇器（CSS Selectors）選取標籤。 `target:nth-child(n)` CSS 選擇器可以選取指定 class 或者元素類型的的第 n 個標籤。
 
-下面的代码展示了给每个区域（well）的第 3 个标签设置弹跳（bounce）动画效果：
+下面的代碼展示了給每個區域（well）的第 3 個標籤設置彈跳（bounce）動畫效果：
 
 `$(".target:nth-child(3)").addClass("animated bounce");`
 
-给 well 元素的第二个子元素添加弹跳（bounce）动画效果。 必须选择具有 `target` class 的子元素。
+給 well 元素的第二個子元素添加彈跳（bounce）動畫效果。 必須選擇具有 `target` class 的子元素。
 
 # --hints--
 
-`target` 元素中的第二个元素应该有弹跳（bounce）动画效果。
+`target` 元素中的第二個元素應該有彈跳（bounce）動畫效果。
 
 ```js
 assert(
@@ -34,19 +34,19 @@ assert(
 );
 ```
 
-应该仅两个标签有弹跳（bounce）动画效果。
+應該僅兩個標籤有彈跳（bounce）動畫效果。
 
 ```js
 assert($('.animated.bounce').length === 2);
 ```
 
-应该用 `:nth-child()` 选择器修改这些标签。
+應該用 `:nth-child()` 選擇器修改這些標籤。
 
 ```js
 assert(code.match(/\:nth-child\(/g));
 ```
 
-应该仅用 jQuery 给标签添加类。
+應該僅用 jQuery 給標籤添加類。
 
 ```js
 assert(

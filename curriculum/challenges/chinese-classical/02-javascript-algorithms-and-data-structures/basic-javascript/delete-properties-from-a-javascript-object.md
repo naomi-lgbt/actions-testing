@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392d3
-title: 删除对象的属性
+title: 刪除對象的屬性
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cDqKdTv'
 forumTopicId: 17560
@@ -9,7 +9,7 @@ dashedName: delete-properties-from-a-javascript-object
 
 # --description--
 
-我们同样可以删除对象的属性，例如：
+我們同樣可以刪除對象的屬性，例如：
 
 `delete ourDog.bark;`
 
@@ -27,7 +27,7 @@ var ourDog = {
 delete ourDog.bark;
 ```
 
-在上面代码的最后一行中，`ourDog` 是这样的：
+在上面代碼的最後一行中，`ourDog` 是這樣的：
 
 ```js
 {
@@ -40,17 +40,17 @@ delete ourDog.bark;
 
 # --instructions--
 
-删除 `myDog` 对象的 `tails` 属性。 可以使用点操作符或者中括号操作符。
+刪除 `myDog` 對象的 `tails` 屬性。 可以使用點操作符或者中括號操作符。
 
 # --hints--
 
-应该从 `myDog` 中删除 `tails` 属性。
+應該從 `myDog` 中刪除 `tails` 屬性。
 
 ```js
 assert(typeof myDog === 'object' && myDog.tails === undefined);
 ```
 
-不要修改 `myDog` 的初始化代码。
+不要修改 `myDog` 的初始化代碼。
 
 ```js
 assert(code.match(/"tails": 1/g).length > 0);

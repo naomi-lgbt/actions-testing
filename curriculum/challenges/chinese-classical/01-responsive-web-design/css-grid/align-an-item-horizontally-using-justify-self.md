@@ -1,6 +1,6 @@
 ---
 id: 5a90374338fddaf9a66b5d3a
-title: 使用 justify-self 水平对齐项目
+title: 使用 justify-self 水平對齊項目
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cJbpKHq'
 forumTopicId: 301122
@@ -9,21 +9,21 @@ dashedName: align-an-item-horizontally-using-justify-self
 
 # --description--
 
-在 CSS 网格中，每个网格项的内容分别位于被称为<dfn>单元格（cell）</dfn>的框内。 你可以使用网格项的 `justify-self` 属性，设置其内容的位置在单元格内沿水平轴的对齐方式。 默认情况下，这个属性的值是 `stretch`，这将使内容占满整个单元格的宽度。 该 CSS 网格属性也可以使用其他的值：
+在 CSS 網格中，每個網格項的內容分別位於被稱爲<dfn>單元格（cell）</dfn>的框內。 你可以使用網格項的 `justify-self` 屬性，設置其內容的位置在單元格內沿水平軸的對齊方式。 默認情況下，這個屬性的值是 `stretch`，這將使內容佔滿整個單元格的寬度。 該 CSS 網格屬性也可以使用其他的值：
 
-`start`：使内容在单元格左侧对齐，
+`start`：使內容在單元格左側對齊，
 
-`center`：使内容在单元格居中对齐，
+`center`：使內容在單元格居中對齊，
 
-`end`：使内容在单元格右侧对齐，
+`end`：使內容在單元格右側對齊，
 
 # --instructions--
 
-请使用 `justify-self` 属性让 class 为 `item2` 的网格项居中。
+請使用 `justify-self` 屬性讓 class 爲 `item2` 的網格項居中。
 
 # --hints--
 
-class 为 `item2` 的元素应具有 `justify-self` 属性且属性值应为 `center`。
+class 爲 `item2` 的元素應具有 `justify-self` 屬性且屬性值應爲 `center`。
 
 ```js
 assert(

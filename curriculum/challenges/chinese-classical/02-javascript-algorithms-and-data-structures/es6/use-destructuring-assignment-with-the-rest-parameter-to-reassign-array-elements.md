@@ -1,7 +1,7 @@
 ---
 id: 587d7b8a367417b2b2512b4c
 title: >-
-  使用解构赋值配合 rest 操作符来重新分配数组元素
+  使用解構賦值配合 rest 操作符來重新分配數組元素
 challengeType: 1
 forumTopicId: 301218
 dashedName: >-
@@ -10,9 +10,9 @@ dashedName: >-
 
 # --description--
 
-在解构数组的某些情况下，我们可能希望将剩下的元素放进另一个数组里面。
+在解構數組的某些情況下，我們可能希望將剩下的元素放進另一個數組裏面。
 
-以下代码的结果与使用 `Array.prototype.slice()` 类似：
+以下代碼的結果與使用 `Array.prototype.slice()` 類似：
 
 ```js
 const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
@@ -20,35 +20,35 @@ console.log(a, b);
 console.log(arr);
 ```
 
-控制台将显示 `1, 2` 和 `[3, 4, 5, 7]`。
+控制檯將顯示 `1, 2` 和 `[3, 4, 5, 7]`。
 
-变量 `a` 和 `b` 分别接收数组的第一个和第二个值。 之后，因为 rest 操作符的存在，`arr` 获取了原数组剩余的元素的值。 rest 操作符只能对数组列表最后的元素起作用。 这意味着你不能使用 rest 操作符来截取原数组中间的元素作为子数组。
+變量 `a` 和 `b` 分別接收數組的第一個和第二個值。 之後，因爲 rest 操作符的存在，`arr` 獲取了原數組剩餘的元素的值。 rest 操作符只能對數組列表最後的元素起作用。 這意味着你不能使用 rest 操作符來截取原數組中間的元素作爲子數組。
 
 # --instructions--
 
-使用解构赋值以及 rest 操作符来进行和 `Array.prototype.slice()` 相同的操作，使 `arr` 是原数组 `source` 除开前两个元素的子数组。
+使用解構賦值以及 rest 操作符來進行和 `Array.prototype.slice()` 相同的操作，使 `arr` 是原數組 `source` 除開前兩個元素的子數組。
 
 # --hints--
 
-`arr` 应该是 `[3,4,5,6,7,8,9,10]`。
+`arr` 應該是 `[3,4,5,6,7,8,9,10]`。
 
 ```js
 assert(arr.every((v, i) => v === i + 3) && arr.length === 8);
 ```
 
-`source` 应该是 `[1,2,3,4,5,6,7,8,9,10]`。
+`source` 應該是 `[1,2,3,4,5,6,7,8,9,10]`。
 
 ```js
 assert(source.every((v, i) => v === i + 1) && source.length === 10);
 ```
 
-不应该使用 `Array.slice()`。
+不應該使用 `Array.slice()`。
 
 ```js
 (getUserInput) => assert(!getUserInput('index').match(/slice/g));
 ```
 
-应该对 `list` 进行解构赋值。
+應該對 `list` 進行解構賦值。
 
 ```js
 assert(

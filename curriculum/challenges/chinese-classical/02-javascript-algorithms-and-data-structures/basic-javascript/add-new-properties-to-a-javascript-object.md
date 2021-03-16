@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392d2
-title: 给 JavaScript 对象添加新属性
+title: 給 JavaScript 對象添加新屬性
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cQe38UD'
 forumTopicId: 301169
@@ -9,9 +9,9 @@ dashedName: add-new-properties-to-a-javascript-object
 
 # --description--
 
-你也可以像更改属性一样给 JavaScript 对象添加属性。
+你也可以像更改屬性一樣給 JavaScript 對象添加屬性。
 
-这里展示了如何给 `ourDog` 添加一个属性 `bark`：
+這裏展示瞭如何給 `ourDog` 添加一個屬性 `bark`：
 
 `ourDog.bark = "bow-wow";`
 
@@ -19,7 +19,7 @@ dashedName: add-new-properties-to-a-javascript-object
 
 `ourDog["bark"] = "bow-wow";`
 
-现在，当我们执行 `ourDog.bark` 时，我们就能得到他的叫声，`bow-wow`。
+現在，當我們執行 `ourDog.bark` 時，我們就能得到他的叫聲，`bow-wow`。
 
 例如：
 
@@ -36,17 +36,17 @@ ourDog.bark = "bow-wow";
 
 # --instructions--
 
-给 `myDog` 添加一个属性 `bark` ，并将其设置为狗的声音，比如“woof“. 你可以使用点号表示法或方括号表示法来完成此挑战。
+給 `myDog` 添加一個屬性 `bark` ，並將其設置爲狗的聲音，比如“woof“. 你可以使用點號表示法或方括號表示法來完成此挑戰。
 
 # --hints--
 
-你应该将属性 `bark` 添加到 `myDog`。
+你應該將屬性 `bark` 添加到 `myDog`。
 
 ```js
 assert(myDog.bark !== undefined);
 ```
 
-你不应该在 Setup 部分添加 `bark`。
+你不應該在 Setup 部分添加 `bark`。
 
 ```js
 assert(!/bark[^\n]:/.test(code));

@@ -1,6 +1,6 @@
 ---
 id: aa7697ea2477d1316795783b
-title: 儿童黑话
+title: 兒童黑話
 challengeType: 5
 forumTopicId: 16039
 dashedName: pig-latin
@@ -8,55 +8,55 @@ dashedName: pig-latin
 
 # --description--
 
-儿童黑话也叫 Pig Latin，是一种英语语言游戏。 规则如下：
+兒童黑話也叫 Pig Latin，是一種英語語言遊戲。 規則如下：
 
-\- 如果单词以辅音开头，就把第一个辅音字母或第一组辅音簇移到单词的结尾，并在后面加上 `ay`。
+\- 如果單詞以輔音開頭，就把第一個輔音字母或第一組輔音簇移到單詞的結尾，並在後面加上 `ay`。
 
-\- 如果单词以元音开头，只需要在结尾加上 `way`。
+\- 如果單詞以元音開頭，只需要在結尾加上 `way`。
 
 # --instructions--
 
-请把传入的字符串根据上述规则翻译成儿童黑话并返回结果。 输入的字符串一定是一个小写的英文单词。
+請把傳入的字符串根據上述規則翻譯成兒童黑話並返回結果。 輸入的字符串一定是一個小寫的英文單詞。
 
 # --hints--
 
-`translatePigLatin("california")` 应该返回字符串 `aliforniacay`。
+`translatePigLatin("california")` 應該返回字符串 `aliforniacay`。
 
 ```js
 assert.deepEqual(translatePigLatin('california'), 'aliforniacay');
 ```
 
-`translatePigLatin("paragraphs")` 应该返回字符串 `aragraphspay`。
+`translatePigLatin("paragraphs")` 應該返回字符串 `aragraphspay`。
 
 ```js
 assert.deepEqual(translatePigLatin('paragraphs'), 'aragraphspay');
 ```
 
-`translatePigLatin("glove")` 应该返回字符串 `oveglay`。
+`translatePigLatin("glove")` 應該返回字符串 `oveglay`。
 
 ```js
 assert.deepEqual(translatePigLatin('glove'), 'oveglay');
 ```
 
-`translatePigLatin("algorithm")` 应该返回字符串 `algorithmway`。
+`translatePigLatin("algorithm")` 應該返回字符串 `algorithmway`。
 
 ```js
 assert.deepEqual(translatePigLatin('algorithm'), 'algorithmway');
 ```
 
-`translatePigLatin("eight")` 应该返回字符串 `eightway`。
+`translatePigLatin("eight")` 應該返回字符串 `eightway`。
 
 ```js
 assert.deepEqual(translatePigLatin('eight'), 'eightway');
 ```
 
-应该处理单词的第一个元音在单词中间的位置的情况。  `translatePigLatin("schwartz")` 应该返回字符串 `artzschway`。
+應該處理單詞的第一個元音在單詞中間的位置的情況。  `translatePigLatin("schwartz")` 應該返回字符串 `artzschway`。
 
 ```js
 assert.deepEqual(translatePigLatin('schwartz'), 'artzschway');
 ```
 
-应该处理不带元音的单词。 `translatePigLatin("rhythm")` 应该返回字符串 `rhythmay`。
+應該處理不帶元音的單詞。 `translatePigLatin("rhythm")` 應該返回字符串 `rhythmay`。
 
 ```js
 assert.deepEqual(translatePigLatin('rhythm'), 'rhythmay');

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08828
-title: 创建一个有序列表
+title: 創建一個有序列表
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cQ3B8TM'
 forumTopicId: 16824
@@ -9,9 +9,9 @@ dashedName: create-an-ordered-list
 
 # --description--
 
-HTML 中有用于创建<dfn>有序列表</dfn>的特定元素。
+HTML 中有用於創建<dfn>有序列表</dfn>的特定元素。
 
-有序列表以 `<ol>` 开始，中间包含一个或多个 `<li>` 元素。 最后以 `</ol>` 结束。
+有序列表以 `<ol>` 開始，中間包含一個或多個 `<li>` 元素。 最後以 `</ol>` 結束。
 
 例如:
 
@@ -22,51 +22,51 @@ HTML 中有用于创建<dfn>有序列表</dfn>的特定元素。
 </ol>
 ```
 
-将创建一个包含 `Garfield` 和 `Sylvester` 的编号列表。
+將創建一個包含 `Garfield` 和 `Sylvester` 的編號列表。
 
 # --instructions--
 
-请创建一个有序列表，内容是猫咪最讨厌的三样东西。
+請創建一個有序列表，內容是貓咪最討厭的三樣東西。
 
 # --hints--
 
-应包含一个有序列表，内容是猫咪最讨厌的三样东西（`Top 3 things cats hate:`）。
+應包含一個有序列表，內容是貓咪最討厭的三樣東西（`Top 3 things cats hate:`）。
 
 ```js
 assert(/Top 3 things cats hate:/i.test($('ol').prev().text()));
 ```
 
-应包含有一个无序列表，内容是猫咪最喜欢的东西（`Things cats love:`）。
+應包含有一個無序列表，內容是貓咪最喜歡的東西（`Things cats love:`）。
 
 ```js
 assert(/Things cats love:/i.test($('ul').prev().text()));
 ```
 
-页面应只包含一个 `ul` 元素。
+頁面應只包含一個 `ul` 元素。
 
 ```js
 assert.equal($('ul').length, 1);
 ```
 
-页面应只包含一个 `ol` 元素。
+頁面應只包含一個 `ol` 元素。
 
 ```js
 assert.equal($('ol').length, 1);
 ```
 
-`ul` 无序列表中应包含 3 个 `li` 元素。
+`ul` 無序列表中應包含 3 個 `li` 元素。
 
 ```js
 assert.equal($('ul li').length, 3);
 ```
 
-`ol` 有序列表应该包含 3 个 `li` 元素。
+`ol` 有序列表應該包含 3 個 `li` 元素。
 
 ```js
 assert.equal($('ol li').length, 3);
 ```
 
-`ul` 无序列表应有结束标签。
+`ul` 無序列表應有結束標籤。
 
 ```js
 assert(
@@ -75,7 +75,7 @@ assert(
 );
 ```
 
-`ol` 有序列表应有结束标签。
+`ol` 有序列表應有結束標籤。
 
 ```js
 assert(
@@ -84,7 +84,7 @@ assert(
 );
 ```
 
-`li` 元素应有结束标签。
+`li` 元素應有結束標籤。
 
 ```js
 assert(
@@ -94,7 +94,7 @@ assert(
 );
 ```
 
-无序列表里的 `li` 元素内容不应为空。
+無序列表裏的 `li` 元素內容不應爲空。
 
 ```js
 $('ul li').each((i, val) =>
@@ -102,7 +102,7 @@ $('ul li').each((i, val) =>
 );
 ```
 
-有序列表里的 `li` 元素内容不应该为空。
+有序列表裏的 `li` 元素內容不應該爲空。
 
 ```js
 $('ol li').each((i, val) =>

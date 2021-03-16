@@ -1,6 +1,6 @@
 ---
 id: 58a7a6ebf9a6318348e2d5aa
-title: 修改动画的填充模式
+title: 修改動畫的填充模式
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJDmcE'
 forumTopicId: 301064
@@ -9,19 +9,19 @@ dashedName: modify-fill-mode-of-an-animation
 
 # --description--
 
-太棒了，但是现在还不完美。 注意动画在 `500ms` 之后重置了，所以按钮又变成了之前的颜色。 而我们想要的效果是按钮在悬停时始终高亮。
+太棒了，但是現在還不完美。 注意動畫在 `500ms` 之後重置了，所以按鈕又變成了之前的顏色。 而我們想要的效果是按鈕在懸停時始終高亮。
 
-为此，我们可以通过把 `animation-fill-mode` 设置成 `forwards` 来实现。 `animation-fill-mode` 指定了在动画结束时元素的样式： 你可以这样设置：
+爲此，我們可以通過把 `animation-fill-mode` 設置成 `forwards` 來實現。 `animation-fill-mode` 指定了在動畫結束時元素的樣式： 你可以這樣設置：
 
 `animation-fill-mode: forwards;`
 
 # --instructions--
 
-修改 `button:hover` 的 `animation-fill-mode` 属性值为 `forwards`，使按钮悬停时保持高亮。
+修改 `button:hover` 的 `animation-fill-mode` 屬性值爲 `forwards`，使按鈕懸停時保持高亮。
 
 # --hints--
 
-`button:hover` 应该有一个值为 `forwards` 的 `animation-fill-mode` 的属性。
+`button:hover` 應該有一個值爲 `forwards` 的 `animation-fill-mode` 的屬性。
 
 ```js
 assert(

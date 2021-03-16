@@ -8,21 +8,21 @@ dashedName: center-text-with-bootstrap
 
 # --description--
 
-可以使用 Bootstrap 将顶部的元素居中来美化页面。 只需要将 `h2` 元素的 class 属性设置为 `text-center` 就可以实现。
+可以使用 Bootstrap 將頂部的元素居中來美化頁面。 只需要將 `h2` 元素的 class 屬性設置爲 `text-center` 就可以實現。
 
-记住：可以为一个元素添加多个 classes ，class 间通过空格分隔，就像这样：
+記住：可以爲一個元素添加多個 classes ，class 間通過空格分隔，就像這樣：
 
 `<h2 class="red-text text-center">your text</h2>`
 
 # --hints--
 
-`h2` 元素应该通过 `text-center` class 使其居中显示
+`h2` 元素應該通過 `text-center` class 使其居中顯示
 
 ```js
 assert($('h2').hasClass('text-center'));
 ```
 
-`h2` 元素应该包含 `red-text` class
+`h2` 元素應該包含 `red-text` class
 
 ```js
 assert($('h2').hasClass('red-text'));

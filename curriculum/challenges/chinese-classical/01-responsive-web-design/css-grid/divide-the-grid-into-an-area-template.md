@@ -1,6 +1,6 @@
 ---
 id: 5a94fe0569fb03452672e45c
-title: 将网格划分为区域模板
+title: 將網格劃分爲區域模板
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cLLpGAy'
 forumTopicId: 301130
@@ -9,7 +9,7 @@ dashedName: divide-the-grid-into-an-area-template
 
 # --description--
 
-你可以将网格中的一些单元格组合成一个<dfn>区域（area）</dfn>，并为该区域指定一个自定义名称。 可以通过给容器加上 `grid-template-areas` 来实现：
+你可以將網格中的一些單元格組合成一個<dfn>區域（area）</dfn>，併爲該區域指定一個自定義名稱。 可以通過給容器加上 `grid-template-areas` 來實現：
 
 ```css
 grid-template-areas:
@@ -18,15 +18,15 @@ grid-template-areas:
   "footer footer footer";
 ```
 
-上面的代码将顶部三个单元格合并成一个名为 `header` 的区域，将底部三个单元格合并为一个名为 `footer` 的区域，并在中间行创建了两个区域：`advert` 和 `content`。 **注意：**在代码中，每个单词代表一个网格单元格，每对引号代表一行。 除了自定义标签，你还能使用句点（`.`）来表示一个空单元格。
+上面的代碼將頂部三個單元格合併成一個名爲 `header` 的區域，將底部三個單元格合併爲一個名爲 `footer` 的區域，並在中間行創建了兩個區域：`advert` 和 `content`。 **注意：**在代碼中，每個單詞代表一個網格單元格，每對引號代表一行。 除了自定義標籤，你還能使用句點（`.`）來表示一個空單元格。
 
 # --instructions--
 
-请放置区域模板，让名为 `advert` 的区域变成空单元格。
+請放置區域模板，讓名爲 `advert` 的區域變成空單元格。
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-template-areas` 属性，在其属性值中，应使用 `.` 代替 `advert`。
+class 爲 `container` 的元素應具有 `grid-template-areas` 屬性，在其屬性值中，應使用 `.` 代替 `advert`。
 
 ```js
 assert(

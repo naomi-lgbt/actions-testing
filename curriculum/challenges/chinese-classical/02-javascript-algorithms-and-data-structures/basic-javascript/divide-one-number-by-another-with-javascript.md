@@ -1,6 +1,6 @@
 ---
 id: cf1111c1c11feddfaeb6bdef
-title: 除法运算
+title: 除法運算
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cqkbdAr'
 forumTopicId: 17566
@@ -9,9 +9,9 @@ dashedName: divide-one-number-by-another-with-javascript
 
 # --description--
 
-我们可以在 JavaScript 中做除法运算。
+我們可以在 JavaScript 中做除法運算。
 
-JavaScript 中使用 `/` 符号做除法运算。
+JavaScript 中使用 `/` 符號做除法運算。
 
 **示例**
 
@@ -19,20 +19,20 @@ JavaScript 中使用 `/` 符号做除法运算。
 myVar = 16 / 2;
 ```
 
-现在，变量 `myVar` 的值为 `8`。
+現在，變量 `myVar` 的值爲 `8`。
 # --instructions--
 
-改变数值 `0` 来让变量 `quotient` 的值等于 `2`。
+改變數值 `0` 來讓變量 `quotient` 的值等於 `2`。
 
 # --hints--
 
-要使 `quotient` 的值等于 2。
+要使 `quotient` 的值等於 2。
 
 ```js
 assert(quotient === 2);
 ```
 
-使用 `/` 运算符。
+使用 `/` 運算符。
 
 ```js
 assert(/\d+\s*\/\s*\d+/.test(code));

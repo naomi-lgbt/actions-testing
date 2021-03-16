@@ -1,6 +1,6 @@
 ---
 id: 587d7fb7367417b2b2512c0a
-title: 使用 model.create() 创建多条记录
+title: 使用 model.create() 創建多條記錄
 challengeType: 2
 forumTopicId: 301537
 dashedName: create-many-records-with-model-create
@@ -8,17 +8,17 @@ dashedName: create-many-records-with-model-create
 
 # --description--
 
-在一些情况下，比如进行数据库初始化，你会需要创建很多 model 实例来用作初始数据。 `Model.create()` 接受一组像 `[{name: 'John', ...}, {...}, ...]` 的数组作为第一个参数，并将其保存到数据库。
+在一些情況下，比如進行數據庫初始化，你會需要創建很多 model 實例來用作初始數據。 `Model.create()` 接受一組像 `[{name: 'John', ...}, {...}, ...]` 的數組作爲第一個參數，並將其保存到數據庫。
 
 # --instructions--
 
-修改 `createManyPeople` 方法，使用 `arrayOfPeople` 作为 `Model.create()` 的参数来创建多个 people 实例。
+修改 `createManyPeople` 方法，使用 `arrayOfPeople` 作爲 `Model.create()` 的參數來創建多個 people 實例。
 
-**注意：** 你可以使用在上一个挑战中创建的 model 来完成当前挑战。
+**注意：** 你可以使用在上一個挑戰中創建的 model 來完成當前挑戰。
 
 # --hints--
 
-应当成功地一次性创建多条数据
+應當成功地一次性創建多條數據
 
 ```js
 (getUserInput) =>

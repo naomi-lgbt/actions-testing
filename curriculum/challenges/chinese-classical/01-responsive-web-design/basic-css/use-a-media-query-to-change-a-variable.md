@@ -1,6 +1,6 @@
 ---
 id: 5a9d72ad424fe3d0e10cad16
-title: 使用媒体查询更改变量
+title: 使用媒體查詢更改變量
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cWmL8UP'
 forumTopicId: 301091
@@ -9,17 +9,17 @@ dashedName: use-a-media-query-to-change-a-variable
 
 # --description--
 
-CSS 变量可以简化媒体查询的定义方式。
+CSS 變量可以簡化媒體查詢的定義方式。
 
-例如，当屏幕小于或大于媒体查询所设置的值，只要我们更新变量的值，那么使用了此变量的元素样式就都会更改。
+例如，當屏幕小於或大於媒體查詢所設置的值，只要我們更新變量的值，那麼使用了此變量的元素樣式就都會更改。
 
 # --instructions--
 
-在 `media query`（媒体查询）声明的 `:root` 选择器里，重定义 `--penguin-size` 的值为 `200px`。 同时，重新定义 `--penguin-skin` 的值为 `black`， 然后通过缩放页面来查看它们是否生效。
+在 `media query`（媒體查詢）聲明的 `:root` 選擇器裏，重定義 `--penguin-size` 的值爲 `200px`。 同時，重新定義 `--penguin-skin` 的值爲 `black`， 然後通過縮放頁面來查看它們是否生效。
 
 # --hints--
 
-`:root` 中的 `--penguin-size` 值应为 `200px`。
+`:root` 中的 `--penguin-size` 值應爲 `200px`。
 
 ```js
 assert(
@@ -29,7 +29,7 @@ assert(
 );
 ```
 
-`:root` 中的 `--penguin-skin` 值应为 `black`。
+`:root` 中的 `--penguin-skin` 值應爲 `black`。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: bd7157d8c242eddfaeb5bd13
-title: 构建一个 Markdown 文件预览器
+title: 構建一個 Markdown 文件預覽器
 challengeType: 3
 forumTopicId: 301372
 dashedName: build-a-markdown-previewer
@@ -8,29 +8,29 @@ dashedName: build-a-markdown-previewer
 
 # --description--
 
-**目标：** 在 [CodePen.io](https://codepen.io) 上实现一个功能类似 <https://codepen.io/freeCodeCamp/full/GrZVVO> 的 App。
+**目標：** 在 [CodePen.io](https://codepen.io) 上實現一個功能類似 <https://codepen.io/freeCodeCamp/full/GrZVVO> 的 App。
 
-在满足以下[需求](https://en.wikipedia.org/wiki/User_story)并能通过所有测试的前提下， 你可以根据自己的喜好来美化 app。
+在滿足以下[需求](https://en.wikipedia.org/wiki/User_story)並能通過所有測試的前提下， 你可以根據自己的喜好來美化 app。
 
-可以使用 HTML、JavaScript、CSS、Bootstrap、SASS、React、Redux、jQuery 来完成这个挑战。 但鉴于这个章节的学习内容与前端框架相关，推荐使用一款前端框架（比如 React）来完成这个挑战。 不推荐使用前面没有提到的技术，否则风险自负。 我们有计划新增其他前端框架课程，例如 Angular 和 Vue，不过目前还没有这些内容。 我们会接受并尝试修复使用推荐技术栈遇到的反馈问题。 编码愉快！
+可以使用 HTML、JavaScript、CSS、Bootstrap、SASS、React、Redux、jQuery 來完成這個挑戰。 但鑑於這個章節的學習內容與前端框架相關，推薦使用一款前端框架（比如 React）來完成這個挑戰。 不推薦使用前面沒有提到的技術，否則風險自負。 我們有計劃新增其他前端框架課程，例如 Angular 和 Vue，不過目前還沒有這些內容。 我們會接受並嘗試修復使用推薦技術棧遇到的反饋問題。 編碼愉快！
 
-**需求 1：** 应该能看到一个具有 `id="editor"` 属性的 `textarea` 元素。
+**需求 1：** 應該能看到一個具有 `id="editor"` 屬性的 `textarea` 元素。
 
-**需求 2：** 应该能看到一个具有 `id="preview"` 属性的元素。
+**需求 2：** 應該能看到一個具有 `id="preview"` 屬性的元素。
 
-**需求 3：** 当在具有 `#editor` 属性的元素内输入文本时，具有 `#preview` 属性的元素应该同步更新展示键入的内容。
+**需求 3：** 當在具有 `#editor` 屬性的元素內輸入文本時，具有 `#preview` 屬性的元素應該同步更新展示鍵入的內容。
 
-**需求 4：** 当在具有 `#editor` 属性的元素内输入 GitHub 风格的 markdown 内容时，文本应该以 HTML 的形式，把所键入的内容渲染在具有 `#preview` 属性的元素中（提示：不需要自己解析 Markdown——可以引入一个叫做 Marked 的库来完成这项工作：<https://cdnjs.com/libraries/marked>）。
+**需求 4：** 當在具有 `#editor` 屬性的元素內輸入 GitHub 風格的 markdown 內容時，文本應該以 HTML 的形式，把所鍵入的內容渲染在具有 `#preview` 屬性的元素中（提示：不需要自己解析 Markdown——可以引入一個叫做 Marked 的庫來完成這項工作：<https://cdnjs.com/libraries/marked>）。
 
-**需求 5：** 当 Markdown 预览器首次加载时，具有 `#editor` 属性的元素内的默认内容应该包含以下每个种类的至少一段有效的 Markdown 代码：标题（H1 标签）、次级标题（H2 标签）、链接、行内代码、代码块、列表、引用块、图片、加粗文本。
+**需求 5：** 當 Markdown 預覽器首次加載時，具有 `#editor` 屬性的元素內的默認內容應該包含以下每個種類的至少一段有效的 Markdown 代碼：標題（H1 標籤）、次級標題（H2 標籤）、鏈接、行內代碼、代碼塊、列表、引用塊、圖片、加粗文本。
 
-**需求 6：** 当 Markdown 预览器首次加载时，具有 `#editor` 属性的元素内容应该以 HTML 的形式渲染在具有 `#preview` 属性的元素中。
+**需求 6：** 當 Markdown 預覽器首次加載時，具有 `#editor` 屬性的元素內容應該以 HTML 的形式渲染在具有 `#preview` 屬性的元素中。
 
-**可选需求（你无需通过这项测试）：** Markdown 预览器能够解析回车符并且将他们以 `br`（换行）元素的形式渲染出来。
+**可選需求（你無需通過這項測試）：** Markdown 預覽器能夠解析回車符並且將他們以 `br`（換行）元素的形式渲染出來。
 
-你可以<a href='https://codepen.io/pen?template=MJjpwO' target='_blank' rel='nofollow'>使用这个 CodePen 模板</a>，点击 `Save` 即可创建你自己的项目。 或者可以在任何喜欢的环境中使用以下 CDN 链接来运行测试：`https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`。
+你可以<a href='https://codepen.io/pen?template=MJjpwO' target='_blank' rel='nofollow'>使用這個 CodePen 模板</a>，點擊 `Save` 即可創建你自己的項目。 或者可以在任何喜歡的環境中使用以下 CDN 鏈接來運行測試：`https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`。
 
-当你完成了本项目，并且该项目所有测试运行通过，请提交项目的 URL。
+當你完成了本項目，並且該項目所有測試運行通過，請提交項目的 URL。
 
 # --solutions--
 
