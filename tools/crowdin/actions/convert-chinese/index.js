@@ -19,12 +19,12 @@ const getFiles = async (directory, fileList = []) => {
   console.info("Getting file list...");
   const fileList = [];
   const curriculum = await getFiles(
-    path.join(__dirname + "/../../../../curriculum/challenges/chinese")
+    path.join(__dirname, "/../../../../curriculum/challenges/chinese")
   );
   fileList.push(...curriculum);
 
   const client = await getFiles(
-    path.join(__dirname + "/../../../../client/i18n/locales/chinese")
+    path.join(__dirname, "/../../../../client/i18n/locales/chinese")
   );
   fileList.push(...client);
 
