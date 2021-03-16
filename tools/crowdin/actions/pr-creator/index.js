@@ -1,23 +1,22 @@
-const core = require("@actions/core");
-const githubRoot = require("@actions/github");
+/* eslint-disable import/no-unresolved */
+/* eslint-disable camelcase */
+const core = require('@actions/core');
+const githubRoot = require('@actions/github');
 
 (async () => {
   try {
-    const token = core.getInput("github-token");
-    if (!token) {
-      core.setFailed("Must provide an API token");
-    }
-    const branch = core.getInput("branch");
-    const [owner, repo] = core.getInput("owner-repo").split("/");
+    const token = core.getInput('github-token');
+    const branch = core.getInput('branch');
+    const [owner, repo] = core.getInput('owner-repo').split('/');
     if (!owner || !repo) {
-      core.setFailed("Must specify a valid ownerName/repoName");
+      core.setFailed('Must specify a valid ownerName/repoName');
     }
-    const base = core.getInput("base");
-    const title = core.getInput("title");
-    const body = core.getInput("body");
-    const labelsStr = core.getInput("labels");
+    const base = core.getInput('base');
+    const title = core.getInput('title');
+    const body = core.getInput('body');
+    const labelsStr = core.getInput('labels');
     const labels = labelsStr.trim().split(/,\s+/);
-    const reviewersStr = core.getInput("reviewers");
+    const reviewersStr = core.getInput('reviewers');
     const reviewers = reviewersStr.trim().split(/,\s+/);
 
     const github = githubRoot.getOctokit(token);
@@ -26,10 +25,10 @@ const githubRoot = require("@actions/github");
       .getBranch({
         owner,
         repo,
-        branch,
+        branch
       })
-      .catch((err) => {
-        console.info("Branch does not exist. Likely no changes in download?");
+      .catch(() => {
+        console.info('Branch does not exist. Likely no changes in download?');
       });
     if (!branchExists || branchExists.status !== 200) {
       return;
@@ -37,11 +36,11 @@ const githubRoot = require("@actions/github");
     const pullRequestExists = await github.pulls.list({
       owner,
       repo,
-      head: `${owner}:${branch}`,
+      head: `${owner}:${branch}`
     });
     if (pullRequestExists.data.length) {
       console.info(
-        "It looks like a pull request already exists for this branch."
+        'It looks like a pull request already exists for this branch.'
       );
       return;
     }
@@ -52,11 +51,11 @@ const githubRoot = require("@actions/github");
         head: branch,
         base,
         title,
-        body,
+        body
       })
-      .catch((err) => {
+      .catch(err => {
         console.info(
-          "Unpredicted error occurred when trying to create the PR."
+          'Unpredicted error occurred when trying to create the PR.'
         );
         console.error(err);
       });
@@ -72,7 +71,7 @@ const githubRoot = require("@actions/github");
         owner,
         repo,
         issue_number: prNumber,
-        labels,
+        labels
       });
       console.log(`Labels ${labels} added to PR`);
     }
@@ -81,7 +80,7 @@ const githubRoot = require("@actions/github");
         owner,
         repo,
         pull_number: prNumber,
-        reviewers,
+        reviewers
       });
       console.log(`Requested Reviewers ${reviewers} added to PR`);
     }
