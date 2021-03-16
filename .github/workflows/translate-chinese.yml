@@ -43,4 +43,5 @@ jobs:
           base: "main"
           title: "chore(i18n): translate chinese characters"
           body: "This PR was opened auto-magically."
+          labels: ''
           reviewers: "nhcarrigan"
