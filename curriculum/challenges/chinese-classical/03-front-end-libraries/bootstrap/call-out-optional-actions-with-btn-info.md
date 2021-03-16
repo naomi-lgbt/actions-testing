@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348cd8acef08813
-title: 可选操作样式 btn-info
+title: 可選操作樣式 btn-info
 challengeType: 0
 forumTopicId: 16770
 dashedName: call-out-optional-actions-with-btn-info
@@ -8,33 +8,33 @@ dashedName: call-out-optional-actions-with-btn-info
 
 # --description--
 
-Bootstrap 有着丰富的预定义按钮颜色。 浅蓝色的 `btn-info` class 通常用在备选操作上。
+Bootstrap 有着豐富的預定義按鈕顏色。 淺藍色的 `btn-info` class 通常用在備選操作上。
 
-在 `Like` 按钮下方创建包含文本 `Info` 的块级 Bootstrap 按钮，然后为该按钮添加 Bootstrap 的 `btn-info` 和 `btn-block` classes。
+在 `Like` 按鈕下方創建包含文本 `Info` 的塊級 Bootstrap 按鈕，然後爲該按鈕添加 Bootstrap 的 `btn-info` 和 `btn-block` classes。
 
-注意：这些按钮仍然需要 `btn` 和 `btn-block` classes。
+注意：這些按鈕仍然需要 `btn` 和 `btn-block` classes。
 
 # --hints--
 
-应创建一个新的包含 `Info` 文本的 `button` 元素。
+應創建一個新的包含 `Info` 文本的 `button` 元素。
 
 ```js
 assert(new RegExp('info', 'gi').test($('button').text()));
 ```
 
-两个按钮的 class 属性应该包含 `btn` 和 `btn-block`。
+兩個按鈕的 class 屬性應該包含 `btn` 和 `btn-block`。
 
 ```js
 assert($('button.btn-block.btn').length > 1);
 ```
 
-新按钮的 class 属性应该含有 `btn-info`。
+新按鈕的 class 屬性應該含有 `btn-info`。
 
 ```js
 assert($('button').hasClass('btn-info'));
 ```
 
-确保所有的 `button` 元素都有一个闭合标签。
+確保所有的 `button` 元素都有一個閉合標籤。
 
 ```js
 assert(

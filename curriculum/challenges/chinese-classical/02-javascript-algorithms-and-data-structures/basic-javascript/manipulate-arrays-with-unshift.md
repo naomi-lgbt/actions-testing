@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392ce
-title: 使用 unshift() 操作数组
+title: 使用 unshift() 操作數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/ckNDESv'
 forumTopicId: 18239
@@ -9,9 +9,9 @@ dashedName: manipulate-arrays-with-unshift
 
 # --description--
 
-不仅可以 `shift`（移出）数组中的第一个元素，也可以 `unshift`（移入）一个元素到数组的头部。
+不僅可以 `shift`（移出）數組中的第一個元素，也可以 `unshift`（移入）一個元素到數組的頭部。
 
-`.unshift()` 函数用起来就像 `.push()` 函数一样，但不是在数组的末尾添加元素，`unshift()` 在数组的头部添加元素。
+`.unshift()` 函數用起來就像 `.push()` 函數一樣，但不是在數組的末尾添加元素，`unshift()` 在數組的頭部添加元素。
 
 示例：
 
@@ -21,15 +21,15 @@ ourArray.shift();
 ourArray.unshift("Happy");
 ```
 
-在 `shift`、`ourArray` 后值为 `["J", "cat"]`。 在 `unshift`、`ourArray` 后值为 `["Happy", "J", "cat"]`。
+在 `shift`、`ourArray` 後值爲 `["J", "cat"]`。 在 `unshift`、`ourArray` 後值爲 `["Happy", "J", "cat"]`。
 
 # --instructions--
 
-使用 `unshift()` 函数把 `["Paul",35]` 加入到 `myArray` 的头部。
+使用 `unshift()` 函數把 `["Paul",35]` 加入到 `myArray` 的頭部。
 
 # --hints--
 
-`myArray` 现在应该等于 `[["Paul", 35], ["dog", 3]]`。
+`myArray` 現在應該等於 `[["Paul", 35], ["dog", 3]]`。
 
 ```js
 assert(

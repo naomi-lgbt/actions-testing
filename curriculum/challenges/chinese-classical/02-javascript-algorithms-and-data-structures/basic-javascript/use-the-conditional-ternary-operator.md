@@ -1,6 +1,6 @@
 ---
 id: 587d7b7e367417b2b2512b24
-title: 使用三元运算符
+title: 使用三元運算符
 challengeType: 1
 forumTopicId: 301181
 dashedName: use-the-conditional-ternary-operator
@@ -8,11 +8,11 @@ dashedName: use-the-conditional-ternary-operator
 
 # --description--
 
-条件运算符（ <dfn>conditional operator</dfn>,）（也称为三元运算符（ <dfn>ternary operator</dfn>））的就像写成一行的 if-else 表达式
+條件運算符（ <dfn>conditional operator</dfn>,）（也稱爲三元運算符（ <dfn>ternary operator</dfn>））的就像寫成一行的 if-else 表達式
 
-语法是 `a ？ b: c`，其中 `a` 是条件，`b` 是条件返回 `true` 时要运行的代码，`c` 是条件返回 `false` 时要运行的代码。
+語法是 `a ？ b: c`，其中 `a` 是條件，`b` 是條件返回 `true` 時要運行的代碼，`c` 是條件返回 `false` 時要運行的代碼。
 
-以下函数使用 `if/else` 语句来检查条件：
+以下函數使用 `if/else` 語句來檢查條件：
 
 ```js
 function findGreater(a, b) {
@@ -25,7 +25,7 @@ function findGreater(a, b) {
 }
 ```
 
-这可以使用三元运算符重写：
+這可以使用三元運算符重寫：
 
 ```js
 function findGreater(a, b) {
@@ -35,29 +35,29 @@ function findGreater(a, b) {
 
 # --instructions--
 
-在 `checkEqual` 函数中使用三元运算符检查两个数字是否相等。 函数应该返回 `Equal` 或字符串 `Not Equal`。
+在 `checkEqual` 函數中使用三元運算符檢查兩個數字是否相等。 函數應該返回 `Equal` 或字符串 `Not Equal`。
 
 # --hints--
 
-`checkEqual` 应该使用条件运算符。
+`checkEqual` 應該使用條件運算符。
 
 ```js
 assert(/.+?\s*?\?\s*?.+?\s*?:\s*?.+?/.test(code));
 ```
 
-`checkEqual(1, 2)` 应该返回字符串 `Not Equal`
+`checkEqual(1, 2)` 應該返回字符串 `Not Equal`
 
 ```js
 assert(checkEqual(1, 2) === 'Not Equal');
 ```
 
-`checkEqual(1, 1)` 应该返回字符串 `Equal`
+`checkEqual(1, 1)` 應該返回字符串 `Equal`
 
 ```js
 assert(checkEqual(1, 1) === 'Equal');
 ```
 
-`checkEqual(1, -1)` 应该返回字符串 `Not Equal`
+`checkEqual(1, -1)` 應該返回字符串 `Not Equal`
 
 ```js
 assert(checkEqual(1, -1) === 'Not Equal');

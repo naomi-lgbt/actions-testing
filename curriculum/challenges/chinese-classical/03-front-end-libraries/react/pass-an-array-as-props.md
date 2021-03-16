@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403616a
-title: 传递一个数组作为 Props
+title: 傳遞一個數組作爲 Props
 challengeType: 6
 forumTopicId: 301401
 dashedName: pass-an-array-as-props
@@ -8,7 +8,7 @@ dashedName: pass-an-array-as-props
 
 # --description--
 
-上一个挑战演示了如何将来自父组件的信息作为 `props` 传递给子组件。 这个挑战着眼于如何将数组作为 `props` 传递。 要将数组传递给 JSX 元素，必须将其视为 JavaScript 并用花括号括起来。
+上一個挑戰演示瞭如何將來自父組件的信息作爲 `props` 傳遞給子組件。 這個挑戰着眼於如何將數組作爲 `props` 傳遞。 要將數組傳遞給 JSX 元素，必須將其視爲 JavaScript 並用花括號括起來。
 
 ```jsx
 <ParentComponent>
@@ -16,15 +16,15 @@ dashedName: pass-an-array-as-props
 </ParentComponent>
 ```
 
-这样，子组件就可以访问数组属性 `colors`。 访问属性时可以使用 `join()` 等数组方法。 `const ChildComponent = (props) => <p>{props.colors.join(', ')}</p>` 这将把所有 `colors` 数组项连接成一个逗号分隔的字符串并生成： `<p>green, blue, red</p>` 稍后，我们将了解在 React 中渲染数组数据的其他常用方法。
+這樣，子組件就可以訪問數組屬性 `colors`。 訪問屬性時可以使用 `join()` 等數組方法。 `const ChildComponent = (props) => <p>{props.colors.join(', ')}</p>` 這將把所有 `colors` 數組項連接成一個逗號分隔的字符串並生成： `<p>green, blue, red</p>` 稍後，我們將瞭解在 React 中渲染數組數據的其他常用方法。
 
 # --instructions--
 
-代码编辑器中有 `List` 和 `ToDo` 组件。 在 `ToDo` 组件中渲染每个 `List` 时，传入 `tasks` 属性并将其分配给待办任务数组，例如 `["walk dog", "workout"]`。 然后访问 `List` 组件中的 `tasks` 数组，在`p`元素中显示其值。 使用 `join(", ")` 把 `props.tasks` 数组作为逗号分隔列表显示在 `p` 元素中。 今天的列表应该至少有 2 个任务，明天的列表应该至少有 3 个任务。
+代碼編輯器中有 `List` 和 `ToDo` 組件。 在 `ToDo` 組件中渲染每個 `List` 時，傳入 `tasks` 屬性並將其分配給待辦任務數組，例如 `["walk dog", "workout"]`。 然後訪問 `List` 組件中的 `tasks` 數組，在`p`元素中顯示其值。 使用 `join(", ")` 把 `props.tasks` 數組作爲逗號分隔列表顯示在 `p` 元素中。 今天的列表應該至少有 2 個任務，明天的列表應該至少有 3 個任務。
 
 # --hints--
 
-`ToDo` 组件应该返回单个外部 `div`。
+`ToDo` 組件應該返回單個外部 `div`。
 
 ```js
 assert(
@@ -35,7 +35,7 @@ assert(
 );
 ```
 
-`ToDo` 组件的第三个子元素应该是 `List` 组件的一个实例。
+`ToDo` 組件的第三個子元素應該是 `List` 組件的一個實例。
 
 ```js
 assert(
@@ -46,7 +46,7 @@ assert(
 );
 ```
 
-`ToDo` 组件的第五个子元素应该是 `List` 组件的一个实例。
+`ToDo` 組件的第五個子元素應該是 `List` 組件的一個實例。
 
 ```js
 assert(
@@ -57,7 +57,7 @@ assert(
 );
 ```
 
-`List` 组件的两个实例都应该具有一个名为 `tasks` 的属性，并且 `tasks` 的类型应该是数组。
+`List` 組件的兩個實例都應該具有一個名爲 `tasks` 的屬性，並且 `tasks` 的類型應該是數組。
 
 ```js
 assert(
@@ -71,7 +71,7 @@ assert(
 );
 ```
 
-表示今天任务的第一个 `List` 组件应该有 2 个或更多项。
+表示今天任務的第一個 `List` 組件應該有 2 個或更多項。
 
 ```js
 assert(
@@ -82,7 +82,7 @@ assert(
 );
 ```
 
-表示明天任务的第二个 `List` 组件应该有 3 个或更多项。
+表示明天任務的第二個 `List` 組件應該有 3 個或更多項。
 
 ```js
 assert(
@@ -93,7 +93,7 @@ assert(
 );
 ```
 
-`List` 组件应在 `p` 标签中渲染 `tasks` 属性的值。
+`List` 組件應在 `p` 標籤中渲染 `tasks` 屬性的值。
 
 ```js
 assert(

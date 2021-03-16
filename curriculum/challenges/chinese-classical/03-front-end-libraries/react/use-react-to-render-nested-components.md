@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036165
-title: 使用 React 渲染嵌套组件
+title: 使用 React 渲染嵌套組件
 challengeType: 6
 forumTopicId: 301420
 dashedName: use-react-to-render-nested-components
@@ -8,23 +8,23 @@ dashedName: use-react-to-render-nested-components
 
 # --description--
 
-上一个挑战显示了组合两个组件的简单方法，但是有许多不同的方法可以把 React 组件组合在一起。
+上一個挑戰顯示了組合兩個組件的簡單方法，但是有許多不同的方法可以把 React 組件組合在一起。
 
-组件组合是 React 的强大功能之一。 当使用 React 时，应当先用组件的思路考虑清楚用户界面的结构（如上一个挑战中的 App 示例）。 可以将 UI 分解为基本的构建块，这些构建块就是组件。 这样做有助于将负责 UI 的代码与负责处理应用程序逻辑的代码分开， 并可以大大简化复杂项目的开发和维护。
+組件組合是 React 的強大功能之一。 當使用 React 時，應當先用組件的思路考慮清楚用戶界面的結構（如上一個挑戰中的 App 示例）。 可以將 UI 分解爲基本的構建塊，這些構建塊就是組件。 這樣做有助於將負責 UI 的代碼與負責處理應用程序邏輯的代碼分開， 並可以大大簡化複雜項目的開發和維護。
 
 # --instructions--
 
-代码编辑器中定义了两个功能组件，分别是 `TypesOfFruit` 和 `Fruits`。 请用组合或者*嵌套*把 `TypesOfFruit` 组件放到 `Fruits` 组件中， 然后把 `Fruits` 组件放到 `TypesOfFood` 组件中。 结果应该是子组件嵌套在父组件中，父组件嵌套在它本身的父组件中！
+代碼編輯器中定義了兩個功能組件，分別是 `TypesOfFruit` 和 `Fruits`。 請用組合或者*嵌套*把 `TypesOfFruit` 組件放到 `Fruits` 組件中， 然後把 `Fruits` 組件放到 `TypesOfFood` 組件中。 結果應該是子組件嵌套在父組件中，父組件嵌套在它本身的父組件中！
 
 # --hints--
 
-`TypesOfFood` 组件应该返回单个 `div` 元素。
+`TypesOfFood` 組件應該返回單個 `div` 元素。
 
 ```js
 assert(Enzyme.shallow(React.createElement(TypesOfFood)).type() === 'div');
 ```
 
-`TypesOfFood` 组件应该返回 `Fruits` 组件。
+`TypesOfFood` 組件應該返回 `Fruits` 組件。
 
 ```js
 assert(
@@ -33,7 +33,7 @@ assert(
 );
 ```
 
-`Fruits` 组件应该返回 `TypesOfFruit` 组件。
+`Fruits` 組件應該返回 `TypesOfFruit` 組件。
 
 ```js
 assert(
@@ -42,7 +42,7 @@ assert(
 );
 ```
 
-`TypesOfFruit` 组件应该返回 `h2` 和 `ul` 元素。
+`TypesOfFruit` 組件應該返回 `h2` 和 `ul` 元素。
 
 ```js
 assert(

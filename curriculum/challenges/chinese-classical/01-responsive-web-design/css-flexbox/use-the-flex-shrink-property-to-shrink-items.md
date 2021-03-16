@@ -1,6 +1,6 @@
 ---
 id: 587d78ad367417b2b2512afb
-title: 使用 flex-shrink 属性定义 flex 子元素的收缩规则
+title: 使用 flex-shrink 屬性定義 flex 子元素的收縮規則
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/cd3PBfr'
 forumTopicId: 301113
@@ -9,25 +9,25 @@ dashedName: use-the-flex-shrink-property-to-shrink-items
 
 # --description--
 
-目前为止，挑战里提到的属性都是应用于 flex 容器（flex 子元素的父元素）的。 除此之外，flex 子元素也有很多实用属性。
+目前爲止，挑戰裏提到的屬性都是應用於 flex 容器（flex 子元素的父元素）的。 除此之外，flex 子元素也有很多實用屬性。
 
-首先介绍的是 `flex-shrink` 属性。 使用之后，如果 flex 容器太小，则子元素会自动缩小。 当容器的宽度小于里面所有子元素的宽度之和时，所有子元素都会自动压缩。
+首先介紹的是 `flex-shrink` 屬性。 使用之後，如果 flex 容器太小，則子元素會自動縮小。 當容器的寬度小於裏面所有子元素的寬度之和時，所有子元素都會自動壓縮。
 
-子元素的 `flex-shrink` 接受数值作为属性值。 数值越大，则该元素与其他元素相比会被压缩得更厉害。 比如，一个项目的 `flex-shrink` 属性值为 `1`，另一个项目的 `flex-shrink` 属性值为 `3`，那么后者相比前者会受到 `3` 倍压缩。
+子元素的 `flex-shrink` 接受數值作爲屬性值。 數值越大，則該元素與其他元素相比會被壓縮得更厲害。 比如，一個項目的 `flex-shrink` 屬性值爲 `1`，另一個項目的 `flex-shrink` 屬性值爲 `3`，那麼後者相比前者會受到 `3` 倍壓縮。
 
 # --instructions--
 
-请为 `#box-1` 和 `#box-2` 添加 CSS 属性 `flex-shrink`。 将 `#box-1` 的属性值设为 `1`，将 `#box-2` 的属性值设为 `2`。
+請爲 `#box-1` 和 `#box-2` 添加 CSS 屬性 `flex-shrink`。 將 `#box-1` 的屬性值設爲 `1`，將 `#box-2` 的屬性值設爲 `2`。
 
 # --hints--
 
-`#box-1` 元素应具有 `flex-shrink` 属性，其属性值应为 `1`。
+`#box-1` 元素應具有 `flex-shrink` 屬性，其屬性值應爲 `1`。
 
 ```js
 assert($('#box-1').css('flex-shrink') == '1');
 ```
 
-`#box-2` 元素应具有 `flex-shrink` 属性，其属性值应为 `2`。
+`#box-2` 元素應具有 `flex-shrink` 屬性，其屬性值應爲 `2`。
 
 ```js
 assert($('#box-2').css('flex-shrink') == '2');

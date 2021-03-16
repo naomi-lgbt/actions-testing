@@ -1,6 +1,6 @@
 ---
 id: 587d7faa367417b2b2512bd3
-title: 给 D3 标签添加样式
+title: 給 D3 標籤添加樣式
 challengeType: 6
 forumTopicId: 301492
 dashedName: style-d3-labels
@@ -8,21 +8,21 @@ dashedName: style-d3-labels
 
 # --description--
 
-D3 可以将样式添加到条形标签中。 `fill` 属性为 `text` 节点设置文本颜色， `style()` 方法设置其它样式的 CSS 规则，例如 `font-family` 或 `font-size`。
+D3 可以將樣式添加到條形標籤中。 `fill` 屬性爲 `text` 節點設置文本顏色， `style()` 方法設置其它樣式的 CSS 規則，例如 `font-family` 或 `font-size`。
 
 # --instructions--
 
-将 `text` 元素的 `font-size` 设置为 `25px`，文本颜色设置为红色（red）。
+將 `text` 元素的 `font-size` 設置爲 `25px`，文本顏色設置爲紅色（red）。
 
 # --hints--
 
-所有标签的 `fill` 颜色应该是 red。
+所有標籤的 `fill` 顏色應該是 red。
 
 ```js
 assert($('text').css('fill') == 'rgb(255, 0, 0)');
 ```
 
-所有标签的 `font-size` 应为 `25` 像素。
+所有標籤的 `font-size` 應爲 `25` 像素。
 
 ```js
 assert($('text').css('font-size') == '25px');

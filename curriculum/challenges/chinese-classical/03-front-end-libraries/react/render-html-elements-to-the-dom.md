@@ -1,6 +1,6 @@
 ---
 id: 5a24bbe0dba28a8d3cbd4c5f
-title: 渲染 HTML 元素为 DOM 树
+title: 渲染 HTML 元素爲 DOM 樹
 challengeType: 6
 forumTopicId: 301406
 dashedName: render-html-elements-to-the-dom
@@ -8,37 +8,37 @@ dashedName: render-html-elements-to-the-dom
 
 # --description--
 
-到目前为止，已经了解到 JSX 是一种在 JavaScript 中编写可读 HTML 的便捷工具。 在 React 中，可以使用它的的渲染 API（ReactDOM）将此 JSX 直接渲染到 HTML DOM。
+到目前爲止，已經瞭解到 JSX 是一種在 JavaScript 中編寫可讀 HTML 的便捷工具。 在 React 中，可以使用它的的渲染 API（ReactDOM）將此 JSX 直接渲染到 HTML DOM。
 
-ReactDOM 提供了一个简单的方法来将 React 元素呈现给 DOM，如下所示：`ReactDOM.render(componentToRender, targetNode)`，其中第一个参数是要渲染的 React 元素或组件，第二个参数是组件将要渲染到的 DOM 节点。
+ReactDOM 提供了一個簡單的方法來將 React 元素呈現給 DOM，如下所示：`ReactDOM.render(componentToRender, targetNode)`，其中第一個參數是要渲染的 React 元素或組件，第二個參數是組件將要渲染到的 DOM 節點。
 
-如你所料，必须在 JSX 元素声明之后调用 `ReactDOM.render()`，就像在使用变量之前必须声明它一样。
+如你所料，必須在 JSX 元素聲明之後調用 `ReactDOM.render()`，就像在使用變量之前必須聲明它一樣。
 
 # --instructions--
 
-代码编辑器有一个简单的 JSX 组件。 使用 `ReactDOM.render()` 方法将该组件渲染到页面。 可以将定义好的 JSX 元素直接作为第一个参数传入，然后使用 `document.getElementById()` 来选择要渲染到的 DOM 节点， 在这个挑战中，请渲染到 `id='challenge-node'` 的 `div` 中。 确保没有修改 `JSX` 常量。
+代碼編輯器有一個簡單的 JSX 組件。 使用 `ReactDOM.render()` 方法將該組件渲染到頁面。 可以將定義好的 JSX 元素直接作爲第一個參數傳入，然後使用 `document.getElementById()` 來選擇要渲染到的 DOM 節點， 在這個挑戰中，請渲染到 `id='challenge-node'` 的 `div` 中。 確保沒有修改 `JSX` 常量。
 
 # --hints--
 
-常量 `JSX` 应该返回一个 `div` 元素。
+常量 `JSX` 應該返回一個 `div` 元素。
 
 ```js
 assert(JSX.type === 'div');
 ```
 
-`div` 应该包含一个 `h1` 标签作为第一个元素。
+`div` 應該包含一個 `h1` 標籤作爲第一個元素。
 
 ```js
 assert(JSX.props.children[0].type === 'h1');
 ```
 
-`div` 应该包含一个 `p` 标签作为第二个元素。
+`div` 應該包含一個 `p` 標籤作爲第二個元素。
 
 ```js
 assert(JSX.props.children[1].type === 'p');
 ```
 
-提供的 JSX 元素应该渲染到 id 为 `challenge-node` 的 DOM 节点。
+提供的 JSX 元素應該渲染到 id 爲 `challenge-node` 的 DOM 節點。
 
 ```js
 assert(

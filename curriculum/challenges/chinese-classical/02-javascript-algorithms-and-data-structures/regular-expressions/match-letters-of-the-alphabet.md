@@ -8,11 +8,11 @@ dashedName: match-letters-of-the-alphabet
 
 # --description--
 
-了解了如何使用字符集（<dfn>character sets</dfn>）来指定要匹配的一组字符串，但是有时需要匹配大量字符（例如，字母表中的每个字母）。 有一种写法可以让实现这个功能变得简短。
+瞭解瞭如何使用字符集（<dfn>character sets</dfn>）來指定要匹配的一組字符串，但是有時需要匹配大量字符（例如，字母表中的每個字母）。 有一種寫法可以讓實現這個功能變得簡短。
 
-在字符集中，可以使用连字符（`-`）来定义要匹配的字符范围。
+在字符集中，可以使用連字符（`-`）來定義要匹配的字符範圍。
 
-例如，要匹配小写字母 `a` 到 `e`，你可以使用 `[a-e]`。
+例如，要匹配小寫字母 `a` 到 `e`，你可以使用 `[a-e]`。
 
 ```js
 let catStr = "cat";
@@ -24,29 +24,29 @@ batStr.match(bgRegex);
 matStr.match(bgRegex);
 ```
 
-按顺序排列，三次 `match` 调用将返回值 `["cat"]`，`["bat"]` 和 `null`。
+按順序排列，三次 `match` 調用將返回值 `["cat"]`，`["bat"]` 和 `null`。
 
 # --instructions--
 
 匹配字符串 `quoteSample` 中的所有字母。
 
-**注意**：一定要同时匹配大小写字母。
+**注意**：一定要同時匹配大小寫字母。
 
 # --hints--
 
-你的正则表达式 `alphabetRegex` 应该匹配 35 项。
+你的正則表達式 `alphabetRegex` 應該匹配 35 項。
 
 ```js
 assert(result.length == 35);
 ```
 
-你的正则表达式 `alphabetRegex` 应该使用全局标识。
+你的正則表達式 `alphabetRegex` 應該使用全局標識。
 
 ```js
 assert(alphabetRegex.flags.match(/g/).length == 1);
 ```
 
-你的正则表达式 `alphabetRegex` 应该使用忽略大小写标志。
+你的正則表達式 `alphabetRegex` 應該使用忽略大小寫標誌。
 
 ```js
 assert(alphabetRegex.flags.match(/i/).length == 1);

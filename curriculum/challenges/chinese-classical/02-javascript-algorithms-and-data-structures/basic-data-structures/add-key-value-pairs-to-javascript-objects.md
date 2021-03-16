@@ -1,6 +1,6 @@
 ---
 id: 587d7b7c367417b2b2512b18
-title: 将键值对添加到对象中
+title: 將鍵值對添加到對象中
 challengeType: 1
 forumTopicId: 301153
 dashedName: add-key-value-pairs-to-javascript-objects
@@ -8,7 +8,7 @@ dashedName: add-key-value-pairs-to-javascript-objects
 
 # --description--
 
-对象（object）本质上是键值对（<dfn>key-value pair</dfn>）的集合。 或者说，一系列被映射到唯一标识符的数据就是对象；习惯上，唯一标识符叫做属性（<dfn>property</dfn>）或者键（<dfn>key</dfn>）；数据叫做值（<dfn>value</dfn>）。 让我们来看一个简单的例子：
+對象（object）本質上是鍵值對（<dfn>key-value pair</dfn>）的集合。 或者說，一系列被映射到唯一標識符的數據就是對象；習慣上，唯一標識符叫做屬性（<dfn>property</dfn>）或者鍵（<dfn>key</dfn>）；數據叫做值（<dfn>value</dfn>）。 讓我們來看一個簡單的例子：
 
 ```js
 const tekkenCharacter = {
@@ -18,19 +18,19 @@ const tekkenCharacter = {
 };
 ```
 
-上面的代码定义了一个叫做 `tekkenCharacter` 的“铁拳”游戏人物对象。 它有三个属性，每个属性都对应一个特定的值。 如果我们想为它再添加一个叫做 `origin` 的属性，可以这样写：
+上面的代碼定義了一個叫做 `tekkenCharacter` 的“鐵拳”遊戲人物對象。 它有三個屬性，每個屬性都對應一個特定的值。 如果我們想爲它再添加一個叫做 `origin` 的屬性，可以這樣寫：
 
 ```js
 tekkenCharacter.origin = 'South Korea';
 ```
 
-上面的代码中，我们使用了点号表示法。 如果我们现在输出 `tekkenCharacter` 对象，便可以看到它具有 `origin` 属性。 接下来，因为这个人物在游戏中有着与众不同的橘色头发， 我们可以通过方括号表示法来为它添加这个属性，像这样：
+上面的代碼中，我們使用了點號表示法。 如果我們現在輸出 `tekkenCharacter` 對象，便可以看到它具有 `origin` 屬性。 接下來，因爲這個人物在遊戲中有着與衆不同的橘色頭髮， 我們可以通過方括號表示法來爲它添加這個屬性，像這樣：
 
 ```js
 tekkenCharacter['hair color'] = 'dyed orange';
 ```
 
-如果要设置的属性中存在空格，或者要设置的属性是一个变量，那我们必须使用方括号表示法（bracket notation）来为对象添加属性。 在上面的代码中，我们把属性（hair color）放到引号里，以此来表示整个字符串都是需要设置的属性。 如果我们不加上引号，那么中括号里的内容会被当作一个变量来解析，这个变量对应的值就会作为要设置的属性， 请看这段代码：
+如果要設置的屬性中存在空格，或者要設置的屬性是一個變量，那我們必須使用方括號表示法（bracket notation）來爲對象添加屬性。 在上面的代碼中，我們把屬性（hair color）放到引號裏，以此來表示整個字符串都是需要設置的屬性。 如果我們不加上引號，那麼中括號裏的內容會被當作一個變量來解析，這個變量對應的值就會作爲要設置的屬性， 請看這段代碼：
 
 ```js
 const eyes = 'eye color';
@@ -38,7 +38,7 @@ const eyes = 'eye color';
 tekkenCharacter[eyes] = 'brown';
 ```
 
-执行以上所有示例代码后，对象会变成这样：
+執行以上所有示例代碼後，對象會變成這樣：
 
 ```js
 {
@@ -53,35 +53,35 @@ tekkenCharacter[eyes] = 'brown';
 
 # --instructions--
 
-我们已经为你创建了包含三个项目的 `foods` 对象。 请使用上述任意语法，来为 foods 对象添加如下三个键值对：`bananas` 属性，值为 `13`；`grapes` 属性，值为 `35`；`strawberries` 属性，值为 `27`。
+我們已經爲你創建了包含三個項目的 `foods` 對象。 請使用上述任意語法，來爲 foods 對象添加如下三個鍵值對：`bananas` 屬性，值爲 `13`；`grapes` 屬性，值爲 `35`；`strawberries` 屬性，值爲 `27`。
 
 # --hints--
 
-`foods` 应为一个对象。
+`foods` 應爲一個對象。
 
 ```js
 assert(typeof foods === 'object');
 ```
 
-`foods` 应有一个值为 `13` 的 `bananas` 属性。
+`foods` 應有一個值爲 `13` 的 `bananas` 屬性。
 
 ```js
 assert(foods.bananas === 13);
 ```
 
-`foods` 应有一个值为 `35` 的 `grapes` 属性。
+`foods` 應有一個值爲 `35` 的 `grapes` 屬性。
 
 ```js
 assert(foods.grapes === 35);
 ```
 
-`foods` 应有一个值为 `27` 的 `strawberries` 属性。
+`foods` 應有一個值爲 `27` 的 `strawberries` 屬性。
 
 ```js
 assert(foods.strawberries === 27);
 ```
 
-应使用点号表示法或方括号表示法来设置对象的属性。
+應使用點號表示法或方括號表示法來設置對象的屬性。
 
 ```js
 assert(

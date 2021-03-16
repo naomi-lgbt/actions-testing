@@ -1,6 +1,6 @@
 ---
 id: 587d7b8f367417b2b2512b63
-title: 使用 filter 方法从数组中提取数据
+title: 使用 filter 方法從數組中提取數據
 challengeType: 1
 forumTopicId: 18179
 dashedName: use-the-filter-method-to-extract-data-from-an-array
@@ -8,13 +8,13 @@ dashedName: use-the-filter-method-to-extract-data-from-an-array
 
 # --description--
 
-另一个有用的数组方法是 `filter()`（即 `Array.prototype.filter()`）。
+另一個有用的數組方法是 `filter()`（即 `Array.prototype.filter()`）。
 
-`filter` 接收一个回调函数，将回调函数内的逻辑应用于数组的每个元素，新数组包含根据回调函数内条件返回 `true` 的元素。 换言之，它根据传递给它的函数过滤数组。  和 `map` 一样，filter 不会改变原始数组。
+`filter` 接收一個回調函數，將回調函數內的邏輯應用於數組的每個元素，新數組包含根據回調函數內條件返回 `true` 的元素。 換言之，它根據傳遞給它的函數過濾數組。  和 `map` 一樣，filter 不會改變原始數組。
 
-回调函数接收三个参数。 第一个参数是当前正在被处理的元素。 第二个参数是这个元素的索引，第三个参数是在其上调用 `filter` 方法的数组。
+回調函數接收三個參數。 第一個參數是當前正在被處理的元素。 第二個參數是這個元素的索引，第三個參數是在其上調用 `filter` 方法的數組。
 
-看下在 `users` 上使用 `filter` 方法的例子，返回了一个包含了 30 岁以下的用户新数组。 为了简化，例子里只使用了回调函数的第一个参数。
+看下在 `users` 上使用 `filter` 方法的例子，返回了一個包含了 30 歲以下的用戶新數組。 爲了簡化，例子裏只使用了回調函數的第一個參數。
 
 ```js
 const users = [
@@ -27,15 +27,15 @@ const usersUnder30 = users.filter(user => user.age < 30);
 console.log(usersUnder30); 
 ```
 
-控制台将显示值 `[ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ]`
+控制檯將顯示值 `[ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ]`
 
 # --instructions--
 
-`watchList` 变量中包含一组存有多部电影信息对象。 结合 `filter` 和 `map` 返回一个 `watchList` 只包含 `title` 和 `rating` 属性的新数组。 新数组只包含 `imdbRating` 值大于或等于 8.0 的对象。 请注意，`rating` 值在对象中保存为字符串，你可能需要将它转换成数字来执行运算。
+`watchList` 變量中包含一組存有多部電影信息對象。 結合 `filter` 和 `map` 返回一個 `watchList` 只包含 `title` 和 `rating` 屬性的新數組。 新數組只包含 `imdbRating` 值大於或等於 8.0 的對象。 請注意，`rating` 值在對象中保存爲字符串，你可能需要將它轉換成數字來執行運算。
 
 # --hints--
 
-`watchList`应保持不变。
+`watchList`應保持不變。
 
 ```js
 assert(
@@ -43,19 +43,19 @@ assert(
 );
 ```
 
-应使用 `filter` 方法。
+應使用 `filter` 方法。
 
 ```js
 assert(code.match(/\.filter/g));
 ```
 
-不能使用 `for` 循环。
+不能使用 `for` 循環。
 
 ```js
 assert(!code.match(/for\s*?\([\s\S]*?\)/g));
 ```
 
-`filteredList` 应等于 `[{"title": "Inception","rating": "8.8"},{"title": "Interstellar","rating": "8.6"},{"title": "The Dark Knight","rating": "9.0"},{"title": "Batman Begins","rating": "8.3"}]`。
+`filteredList` 應等於 `[{"title": "Inception","rating": "8.8"},{"title": "Interstellar","rating": "8.6"},{"title": "The Dark Knight","rating": "9.0"},{"title": "Batman Begins","rating": "8.3"}]`。
 
 ```js
 assert.deepEqual(filteredList, [

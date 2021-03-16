@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9bec908846
-title: 创建一个 Bootstrap Row
+title: 創建一個 Bootstrap Row
 challengeType: 0
 forumTopicId: 16813
 dashedName: create-a-bootstrap-row
@@ -8,13 +8,13 @@ dashedName: create-a-bootstrap-row
 
 # --description--
 
-这次为内联元素创建一个 Bootstrap 栅格系统的 Row（行）。
+這次爲內聯元素創建一個 Bootstrap 柵格系統的 Row（行）。
 
-在 `h3` 标签下方创建一个 class 属性为 `row` 的 `div` 元素。
+在 `h3` 標籤下方創建一個 class 屬性爲 `row` 的 `div` 元素。
 
 # --hints--
 
-`h3` 元素下应该增加一个 `div` 元素。
+`h3` 元素下應該增加一個 `div` 元素。
 
 ```js
 assert(
@@ -25,19 +25,19 @@ assert(
 );
 ```
 
-`div` 元素的 class 属性应为 `row`。
+`div` 元素的 class 屬性應爲 `row`。
 
 ```js
 assert($('div').hasClass('row'));
 ```
 
-`row div` 应该内嵌于 `container-fluid div`。
+`row div` 應該內嵌於 `container-fluid div`。
 
 ```js
 assert($('div.container-fluid div.row').length > 0);
 ```
 
-确保所有 `div` 元素都有一个闭合标签。
+確保所有 `div` 元素都有一個閉合標籤。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08835
-title: 创建一组复选框
+title: 創建一組複選框
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cqrkJsp'
 forumTopicId: 16821
@@ -9,39 +9,39 @@ dashedName: create-a-set-of-checkboxes
 
 # --description--
 
-<dfn>checkboxes</dfn>（复选框）就好比多项选择题，正确答案有多个。
+<dfn>checkboxes</dfn>（複選框）就好比多項選擇題，正確答案有多個。
 
-复选框是 `input` 选择框的一种类型。
+複選框是 `input` 選擇框的一種類型。
 
-每一个复选框都应该嵌套在它自己的 `label`（标签）元素中。 这样，我们相当于给 `input` 元素和包裹它的 `label` 元素建立起了对应关系。
+每一個複選框都應該嵌套在它自己的 `label`（標籤）元素中。 這樣，我們相當於給 `input` 元素和包裹它的 `label` 元素建立起了對應關係。
 
-所有关联的复选框应该拥有相同的 `name` 属性。
+所有關聯的複選框應該擁有相同的 `name` 屬性。
 
-使得 `input` 与 `label` 关联的最佳实践是在 `label` 元素上设置 `for` 属性，让其值与相关联的 `input` 复选框的 `id` 属性值相同。
+使得 `input` 與 `label` 關聯的最佳實踐是在 `label` 元素上設置 `for` 屬性，讓其值與相關聯的 `input` 複選框的 `id` 屬性值相同。
 
-下面是一个复选框的例子：
+下面是一個複選框的例子：
 
 `<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>`
 
 # --instructions--
 
-请给表单添加三个复选框， 每个复选框都被嵌套进 `label` 元素中， 并且它们的 `name` 属性均为 `personality`。
+請給表單添加三個複選框， 每個複選框都被嵌套進 `label` 元素中， 並且它們的 `name` 屬性均爲 `personality`。
 
 # --hints--
 
-表单中应存在三个复选框。
+表單中應存在三個複選框。
 
 ```js
 assert($('input[type="checkbox"]').length > 2);
 ```
 
-每个复选框都应该被嵌套进 `label` 元素中。
+每個複選框都應該被嵌套進 `label` 元素中。
 
 ```js
 assert($('label > input[type="checkbox"]:only-child').length > 2);
 ```
 
-确保 `label` 元素有结束标签。
+確保 `label` 元素有結束標籤。
 
 ```js
 assert(
@@ -51,7 +51,7 @@ assert(
 );
 ```
 
-复选框的 `name` 属性值均应为 `personality`。
+複選框的 `name` 屬性值均應爲 `personality`。
 
 ```js
 assert(
@@ -59,7 +59,7 @@ assert(
 );
 ```
 
-每个复选框都应该在 `form` 标签内。
+每個複選框都應該在 `form` 標籤內。
 
 ```js
 assert($('label').parent().get(0).tagName.match('FORM'));

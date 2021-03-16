@@ -1,6 +1,6 @@
 ---
 id: 587d7fb4367417b2b2512bfd
-title: 给 package.json 添加关键词
+title: 給 package.json 添加關鍵詞
 challengeType: 2
 forumTopicId: 301526
 dashedName: add-keywords-to-your-package-json
@@ -8,23 +8,23 @@ dashedName: add-keywords-to-your-package-json
 
 # --description--
 
-在 `keywords` 字段中可以使用相关的关键字描述项目。 例如：
+在 `keywords` 字段中可以使用相關的關鍵字描述項目。 例如：
 
 ```json
 "keywords": [ "descriptive", "related", "words" ],
 ```
 
-正如你所见的，这个字段的结构是一个由双引号字符串组成的数组。
+正如你所見的，這個字段的結構是一個由雙引號字符串組成的數組。
 
 # --instructions--
 
-在 package.json 文件中，给 `keywords` 字段添加一个由适当的字符串组成的数组。
+在 package.json 文件中，給 `keywords` 字段添加一個由適當的字符串組成的數組。
 
-“freecodecamp”应该是关键词之一。
+“freecodecamp”應該是關鍵詞之一。
 
 # --hints--
 
-package.json 应该有一个有效的“keywords”键
+package.json 應該有一個有效的“keywords”鍵
 
 ```js
 (getUserInput) =>
@@ -39,7 +39,7 @@ package.json 应该有一个有效的“keywords”键
   );
 ```
 
-“keywords”字段应该是一个数组
+“keywords”字段應該是一個數組
 
 ```js
 (getUserInput) =>
@@ -54,7 +54,7 @@ package.json 应该有一个有效的“keywords”键
   );
 ```
 
-“keywords”中应该包含关键词“freecodecamp”
+“keywords”中應該包含關鍵詞“freecodecamp”
 
 ```js
 (getUserInput) =>

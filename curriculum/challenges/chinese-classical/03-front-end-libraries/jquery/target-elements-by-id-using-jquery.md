@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aeda08826
-title: 使用 jQuery id 选择器选择元素
+title: 使用 jQuery id 選擇器選擇元素
 challengeType: 6
 forumTopicId: 18317
 required:
@@ -11,27 +11,27 @@ dashedName: target-elements-by-id-using-jquery
 
 # --description--
 
-也能通过 id 属性选取标签。
+也能通過 id 屬性選取標籤。
 
-首先，用 `$("#target3")` 选择器选取 id 为 `target3` 的 `button` 标签。
+首先，用 `$("#target3")` 選擇器選取 id 爲 `target3` 的 `button` 標籤。
 
-注意，和 CSS 声明一样，在 id 名前需要添加 `#`。
+注意，和 CSS 聲明一樣，在 id 名前需要添加 `#`。
 
-然后，用 jQuery 的 `.addClass()` 方法添加 `animated` 和 `fadeOut` 类。
+然後，用 jQuery 的 `.addClass()` 方法添加 `animated` 和 `fadeOut` 類。
 
-下面的代码的效果是使 id 为 `target6` 的 `button` 标签淡出：
+下面的代碼的效果是使 id 爲 `target6` 的 `button` 標籤淡出：
 
 `$("#target6").addClass("animated fadeOut")`.
 
 # --hints--
 
-应该用 jQuery 的 `addClass()` 方法给 `id` 为 `target3` 的 `button` 标签添加 `animated` 类。
+應該用 jQuery 的 `addClass()` 方法給 `id` 爲 `target3` 的 `button` 標籤添加 `animated` 類。
 
 ```js
 assert($('#target3').hasClass('animated'));
 ```
 
-应该用 jQuery 的 `addClass()` 方法给 id 为 `target3` 的标签的类添加 `fadeOut` 类。
+應該用 jQuery 的 `addClass()` 方法給 id 爲 `target3` 的標籤的類添加 `fadeOut` 類。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-应该仅用 jQuery 给标签设置类。
+應該僅用 jQuery 給標籤設置類。
 
 ```js
 assert(!code.match(/class.*animated/g));

@@ -1,6 +1,6 @@
 ---
 id: 56104e9e514f539506016a5c
-title: 使用 For 循环遍历数组的奇数
+title: 使用 For 循環遍歷數組的奇數
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cm8n7T9'
 forumTopicId: 18212
@@ -9,9 +9,9 @@ dashedName: iterate-odd-numbers-with-a-for-loop
 
 # --description--
 
-对于循环，一次不必递增一个。 通过更改我们的 `final-expression`，我们可以用偶数来计数。
+對於循環，一次不必遞增一個。 通過更改我們的 `final-expression`，我們可以用偶數來計數。
 
-初始化 `i = 0`，当 `i < 10` 的时候继续循环。 `i += 2` 让 `i` 每次循环之后增加 2。
+初始化 `i = 0`，當 `i < 10` 的時候繼續循環。 `i += 2` 讓 `i` 每次循環之後增加 2。
 
 ```js
 var ourArray = [];
@@ -20,21 +20,21 @@ for (var i = 0; i < 10; i += 2) {
 }
 ```
 
-循环结束后，`ourArray` 的值为 `[0,2,4,6,8]`。 改变计数器（`initialization`） ，这样我们可以用奇数来递增。
+循環結束後，`ourArray` 的值爲 `[0,2,4,6,8]`。 改變計數器（`initialization`） ，這樣我們可以用奇數來遞增。
 
 # --instructions--
 
-写一个 `for` 循环，把从 1 到 9 的奇数添加到 `myArray`。
+寫一個 `for` 循環，把從 1 到 9 的奇數添加到 `myArray`。
 
 # --hints--
 
-应该使用 `for` 循环。
+應該使用 `for` 循環。
 
 ```js
 assert(/for\s*\([^)]+?\)/.test(code));
 ```
 
-`myArray` 应该等于 `[1,3,5,7,9]`
+`myArray` 應該等於 `[1,3,5,7,9]`
 
 ```js
 assert.deepEqual(myArray, [1, 3, 5, 7, 9]);

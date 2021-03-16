@@ -1,6 +1,6 @@
 ---
 id: cf1111c1c11feddfaeb4bdef
-title: 减法运算
+title: 減法運算
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cP3yQtk'
 forumTopicId: 18314
@@ -9,9 +9,9 @@ dashedName: subtract-one-number-from-another-with-javascript
 
 # --description--
 
-我们也可以在 JavaScript 中进行减法运算。
+我們也可以在 JavaScript 中進行減法運算。
 
-JavaScript 中使用 `-` 来做减法运算。
+JavaScript 中使用 `-` 來做減法運算。
 
 **示例**
 
@@ -19,20 +19,20 @@ JavaScript 中使用 `-` 来做减法运算。
 myVar = 12 - 6;
 ```
 
-现在，变量 `myVar` 的值为 `6`。
+現在，變量 `myVar` 的值爲 `6`。
 # --instructions--
 
-改变数字`0`让变量 difference 的值为 `12`。
+改變數字`0`讓變量 difference 的值爲 `12`。
 
 # --hints--
 
-变量 `difference` 的值应该为 12。
+變量 `difference` 的值應該爲 12。
 
 ```js
 assert(difference === 12);
 ```
 
-您只能从 45 中减去一个数字。
+您只能從 45 中減去一個數字。
 
 ```js
 assert(/difference=45-33;?/.test(__helpers.removeWhiteSpace(code)));

@@ -1,6 +1,6 @@
 ---
 id: 587d778f367417b2b2512aae
-title: 为链接添加描述性的文本
+title: 爲鏈接添加描述性的文本
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c437DcV'
 forumTopicId: 301013
@@ -9,17 +9,17 @@ dashedName: give-links-meaning-by-using-descriptive-link-text
 
 # --description--
 
-屏幕阅读器用户可以选择其设备读取的内容的类型， 包括表示“跳转到”（或“跳过”）的元素，跳转到主要内容，或者从标题中获取页面摘要。 用户还可以选择只听取页面中的超链接内容。
+屏幕閱讀器用戶可以選擇其設備讀取的內容的類型， 包括表示“跳轉到”（或“跳過”）的元素，跳轉到主要內容，或者從標題中獲取頁面摘要。 用戶還可以選擇只聽取頁面中的超鏈接內容。
 
-屏幕阅读器通过阅读链接文本（即 `a` 标签的内容文本）来完成这个操作。 如果我们只在链接中写上 "click here"（点击这里）或者 "read more"（阅读更多），显然帮助有限。 相反地，应该在 `a` 标签中使用简洁的描述性语言来为用户提供更多的信息。
+屏幕閱讀器通過閱讀鏈接文本（即 `a` 標籤的內容文本）來完成這個操作。 如果我們只在鏈接中寫上 "click here"（點擊這裏）或者 "read more"（閱讀更多），顯然幫助有限。 相反地，應該在 `a` 標籤中使用簡潔的描述性語言來爲用戶提供更多的信息。
 
 # --instructions--
 
-Camper Cat 在链接中使用的文本在脱离上下文的情况下，描述性不是很好。 请修改锚点标签（`a`），将其包含的文本从 `Click here` 改为 `information about batteries`。
+Camper Cat 在鏈接中使用的文本在脫離上下文的情況下，描述性不是很好。 請修改錨點標籤（`a`），將其包含的文本從 `Click here` 改爲 `information about batteries`。
 
 # --hints--
 
-应修改 `a` 标签，将其包含的文本从 `Click here` 改为 `information about batteries`。
+應修改 `a` 標籤，將其包含的文本從 `Click here` 改爲 `information about batteries`。
 
 ```js
 assert(
@@ -29,13 +29,13 @@ assert(
 );
 ```
 
-`a` 元素应该有一个 `href` 属性，且其属性值为空字符串 `""`。
+`a` 元素應該有一個 `href` 屬性，且其屬性值爲空字符串 `""`。
 
 ```js
 assert($('a').attr('href') === '');
 ```
 
-`a` 元素应该有一个结束标签。
+`a` 元素應該有一個結束標籤。
 
 ```js
 assert(

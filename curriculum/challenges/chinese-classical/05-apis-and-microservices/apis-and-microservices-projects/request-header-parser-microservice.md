@@ -1,6 +1,6 @@
 ---
 id: bd7158d8c443edefaeb5bdff
-title: 请求头解析器微服务
+title: 請求頭解析器微服務
 challengeType: 4
 forumTopicId: 301507
 dashedName: request-header-parser-microservice
@@ -8,17 +8,17 @@ dashedName: request-header-parser-microservice
 
 # --description--
 
-构建一个 JavaScript 的全栈应用，在功能上与这个应用相似：<https://request-header-parser-microservice.freecodecamp.rocks/>。 可以采用下面的一种方式完成这个挑战：
+構建一個 JavaScript 的全棧應用，在功能上與這個應用相似：<https://request-header-parser-microservice.freecodecamp.rocks/>。 可以採用下面的一種方式完成這個挑戰：
 
--   克隆 [this GitHub repo](https://github.com/freeCodeCamp/boilerplate-project-headerparser/) 并在本地完成项目。
--   使用 [repl.it 初始化项目](https://repl.it/github/freeCodeCamp/boilerplate-project-headerparser) 来完成项目。
--   使用你选择的网站生成器来完成项目， 并确保包含了我们 GitHub 仓库的所有文件。
+-   克隆 [this GitHub repo](https://github.com/freeCodeCamp/boilerplate-project-headerparser/) 並在本地完成項目。
+-   使用 [repl.it 初始化項目](https://repl.it/github/freeCodeCamp/boilerplate-project-headerparser) 來完成項目。
+-   使用你選擇的網站生成器來完成項目， 並確保包含了我們 GitHub 倉庫的所有文件。
 
-当完成本项目，请确认有一个正常运行的 demo 可以公开访问。 然后将 URL 提交到 `Solution Link` 中。 此外，还可以将项目的源码提交到 `GitHub Link` 中。
+當完成本項目，請確認有一個正常運行的 demo 可以公開訪問。 然後將 URL 提交到 `Solution Link` 中。 此外，還可以將項目的源碼提交到 `GitHub Link` 中。
 
 # --hints--
 
-提交自己的项目，而不是示例的 URL。
+提交自己的項目，而不是示例的 URL。
 
 ```js
 (getUserInput) => {
@@ -30,7 +30,7 @@ dashedName: request-header-parser-microservice
 };
 ```
 
-向 `/api/whoami` 发送请求，返回一个 JSON 对象，这个JSON 对象应该含有存放 IP 地址的 `ipaddress` 键中。
+向 `/api/whoami` 發送請求，返回一個 JSON 對象，這個JSON 對象應該含有存放 IP 地址的 `ipaddress` 鍵中。
 
 ```js
 (getUserInput) =>
@@ -42,7 +42,7 @@ dashedName: request-header-parser-microservice
   );
 ```
 
-向 `/api/whoami` 发送请求，返回一个 JSON 对象，这个 JSON 对象应该含有存放语言首选项的 `language` 键。
+向 `/api/whoami` 發送請求，返回一個 JSON 對象，這個 JSON 對象應該含有存放語言首選項的 `language` 鍵。
 
 ```js
 (getUserInput) =>
@@ -54,7 +54,7 @@ dashedName: request-header-parser-microservice
   );
 ```
 
-向 `/api/whoami` 发送请求，返回一个 JSON 对象，这个 JSON 对象应该含有存放（发送请求的）软件的 `software` 键。
+向 `/api/whoami` 發送請求，返回一個 JSON 對象，這個 JSON 對象應該含有存放（發送請求的）軟件的 `software` 鍵。
 
 ```js
 (getUserInput) =>

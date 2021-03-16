@@ -1,6 +1,6 @@
 ---
 id: 587d7fb2367417b2b2512bf6
-title: 从客户端获取输入的查询参数
+title: 從客戶端獲取輸入的查詢參數
 challengeType: 2
 forumTopicId: 301512
 dashedName: get-query-parameter-input-from-the-client
@@ -8,19 +8,19 @@ dashedName: get-query-parameter-input-from-the-client
 
 # --description--
 
-从客户端获取输入的另一种常见方式是使用查询字符串对路由路径中的数据进行编码， 查询字符串使用标记（?）分隔，并且包含键值对 field=value， 每对键值使用连字号（&）分隔。 Express 能够从查询字符串中解析这些数据，并且把它放到 `req.query` 对象中。 有些字符（如百分号（%））不能在出现在 URL 中，它们在发送前必须以不同的格式进行编码。 如果使用 JavaScript 的 API，可以用特定的方法来编码/解码这些字符。
+從客戶端獲取輸入的另一種常見方式是使用查詢字符串對路由路徑中的數據進行編碼， 查詢字符串使用標記（?）分隔，並且包含鍵值對 field=value， 每對鍵值使用連字號（&）分隔。 Express 能夠從查詢字符串中解析這些數據，並且把它放到 `req.query` 對象中。 有些字符（如百分號（%））不能在出現在 URL 中，它們在發送前必須以不同的格式進行編碼。 如果使用 JavaScript 的 API，可以用特定的方法來編碼/解碼這些字符。
 
-<blockquote>路由地址：'/library'<br> 实际请求 URL：'/library?userId=546&#x26;bookId=6754'<br>req.query：{userId: '546', bookId: '6754'}</blockquote>
+<blockquote>路由地址：'/library'<br> 實際請求 URL：'/library?userId=546&#x26;bookId=6754'<br>req.query：{userId: '546', bookId: '6754'}</blockquote>
 
 # --instructions--
 
-构建一个 API 接口，使用路由挂载在 `GET /name` 上， 使用一个 JSON 文件来响应，它的结构是这样的：`{ name: 'firstname lastname'}`， 名字（first name）和姓氏（last name）参数应该编码在查询参数中，例如：`?first=firstname&last=lastname`。
+構建一個 API 接口，使用路由掛載在 `GET /name` 上， 使用一個 JSON 文件來響應，它的結構是這樣的：`{ name: 'firstname lastname'}`， 名字（first name）和姓氏（last name）參數應該編碼在查詢參數中，例如：`?first=firstname&last=lastname`。
 
-**注意：** 在后面的练习中，我们将向相同的路由路径 `/name` 发送 POST 请求来接收数据。 如果愿意，可以使用`app.route(path).get(handler).post(handler)`这中写法， 这种语法允许在同一路径路由上链式调用不同的请求方法， 可以节省一点打字时间，也可以让代码看起来更清晰。
+**注意：** 在後面的練習中，我們將向相同的路由路徑 `/name` 發送 POST 請求來接收數據。 如果願意，可以使用`app.route(path).get(handler).post(handler)`這中寫法， 這種語法允許在同一路徑路由上鍊式調用不同的請求方法， 可以節省一點打字時間，也可以讓代碼看起來更清晰。
 
 # --hints--
 
-测试 1：你的 API 应该用正确的名字来响应
+測試 1：你的 API 應該用正確的名字來響應
 
 ```js
 (getUserInput) =>
@@ -38,7 +38,7 @@ dashedName: get-query-parameter-input-from-the-client
   );
 ```
 
-测试 2：你的 API 应该用正确的名字来响应
+測試 2：你的 API 應該用正確的名字來響應
 
 ```js
 (getUserInput) =>

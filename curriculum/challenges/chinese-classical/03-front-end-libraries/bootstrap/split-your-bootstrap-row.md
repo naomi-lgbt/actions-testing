@@ -8,19 +8,19 @@ dashedName: split-your-bootstrap-row
 
 # --description--
 
-现在已经有了一个 Bootstrap Row，把它分成两列。
+現在已經有了一個 Bootstrap Row，把它分成兩列。
 
-在行内创建两个 class 属性为 `col-xs-6` 的 `div` 元素。
+在行內創建兩個 class 屬性爲 `col-xs-6` 的 `div` 元素。
 
 # --hints--
 
-两个 `div class="col-xs-6"` 元素应该内嵌入 `div class="row"` 元素中。
+兩個 `div class="col-xs-6"` 元素應該內嵌入 `div class="row"` 元素中。
 
 ```js
 assert($('div.row > div.col-xs-6').length > 1);
 ```
 
-确保所有的 `div` 元素都有闭合标签。
+確保所有的 `div` 元素都有閉合標籤。
 
 ```js
 assert(

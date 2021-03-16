@@ -1,6 +1,6 @@
 ---
 id: 587d7db7367417b2b2512b9d
-title: 匹配字符串的开头
+title: 匹配字符串的開頭
 challengeType: 1
 forumTopicId: 301349
 dashedName: match-beginning-string-patterns
@@ -8,9 +8,9 @@ dashedName: match-beginning-string-patterns
 
 # --description--
 
-回顾一下之前的挑战，正则表达式可以用于查找多项匹配。 还可以查询字符串中符合指定匹配模式的字符。
+回顧一下之前的挑戰，正則表達式可以用於查找多項匹配。 還可以查詢字符串中符合指定匹配模式的字符。
 
-在之前的挑战中，使用字符集中前插入符号（`^`）来创建一个否定字符集，形如 `[^thingsThatWillNotBeMatched]`。 除了在字符集中使用之外，脱字符还用于匹配字符串的开始位置。
+在之前的挑戰中，使用字符集中前插入符號（`^`）來創建一個否定字符集，形如 `[^thingsThatWillNotBeMatched]`。 除了在字符集中使用之外，脫字符還用於匹配字符串的開始位置。
 
 ```js
 let firstString = "Ricky is first and can be found.";
@@ -20,33 +20,33 @@ let notFirst = "You can't find Ricky now.";
 firstRegex.test(notFirst);
 ```
 
-第一次 `test` 调用将返回 `true`，而第二次调用将返回 `false`。
+第一次 `test` 調用將返回 `true`，而第二次調用將返回 `false`。
 
 # --instructions--
 
-在正则表达式中使用脱字符来找到 `Cal` 在字符串 `rickyAndCal` 中的开始位置。
+在正則表達式中使用脫字符來找到 `Cal` 在字符串 `rickyAndCal` 中的開始位置。
 
 # --hints--
 
-你的正则表达式应该搜寻首字母大写的 `Cal`。
+你的正則表達式應該搜尋首字母大寫的 `Cal`。
 
 ```js
 assert(calRegex.source == '^Cal');
 ```
 
-你的正则表达式不应该使用任何标志。
+你的正則表達式不應該使用任何標誌。
 
 ```js
 assert(calRegex.flags == '');
 ```
 
-你的正则表达式应该匹配字符串 `Cal` 的开始位置。
+你的正則表達式應該匹配字符串 `Cal` 的開始位置。
 
 ```js
 assert(calRegex.test('Cal and Ricky both like racing.'));
 ```
 
-你的正则表达式不应该匹配中间包含 `Cal` 的字符串。
+你的正則表達式不應該匹配中間包含 `Cal` 的字符串。
 
 ```js
 assert(!calRegex.test('Ricky and Cal both like racing.'));

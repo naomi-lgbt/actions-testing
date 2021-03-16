@@ -1,6 +1,6 @@
 ---
 id: 587d7b7d367417b2b2512b1e
-title: 使用 Object.keys() 生成由对象的所有属性组成的数组
+title: 使用 Object.keys() 生成由對象的所有屬性組成的數組
 challengeType: 1
 forumTopicId: 301160
 dashedName: generate-an-array-of-all-object-keys-with-object-keys
@@ -8,15 +8,15 @@ dashedName: generate-an-array-of-all-object-keys-with-object-keys
 
 # --description--
 
-我们可以给 `Object.keys()` 方法传入一个对象作为参数，来生成包含对象所有键的数组。 这会返回一个由对象中所有属性（字符串）组成的数组。 需要注意的是，数组中元素的顺序是不确定的。
+我們可以給 `Object.keys()` 方法傳入一個對象作爲參數，來生成包含對象所有鍵的數組。 這會返回一個由對象中所有屬性（字符串）組成的數組。 需要注意的是，數組中元素的順序是不確定的。
 
 # --instructions--
 
-请完成 `getArrayOfUsers` 函数的实现，使其返回一个由输入对象中的所有属性所组成的数组。
+請完成 `getArrayOfUsers` 函數的實現，使其返回一個由輸入對象中的所有屬性所組成的數組。
 
 # --hints--
 
-`users` 对象应该只包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 这 4 个属性。
+`users` 對象應該只包含 `Alan`、`Jeff`、`Sarah`、`Ryan` 這 4 個屬性。
 
 ```js
 assert(
@@ -28,7 +28,7 @@ assert(
 );
 ```
 
-`getArrayOfUsers` 函数应返回一个包含 `users` 对象中所有属性的数组。
+`getArrayOfUsers` 函數應返回一個包含 `users` 對象中所有屬性的數組。
 
 ```js
 assert(

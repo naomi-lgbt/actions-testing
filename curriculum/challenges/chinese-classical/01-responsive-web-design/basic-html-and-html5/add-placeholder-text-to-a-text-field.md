@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08830
-title: 给输入框添加占位符文本
+title: 給輸入框添加佔位符文本
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cKdJDhg'
 forumTopicId: 16647
@@ -9,27 +9,27 @@ dashedName: add-placeholder-text-to-a-text-field
 
 # --description--
 
-占位符文本用户在 `input` 输入框中输入任何东西前的预定义文本。
+佔位符文本用戶在 `input` 輸入框中輸入任何東西前的預定義文本。
 
-你可以像这样创建一个占位符：
+你可以像這樣創建一個佔位符：
 
 `<input type="text" placeholder="this is placeholder text">`
 
-**注意：**别忘了 `input` 元素是 "自闭和标签"，即不需要结束标签。
+**注意：**別忘了 `input` 元素是 "自閉和標籤"，即不需要結束標籤。
 
 # --instructions--
 
-把 `input` 输入框的 `placeholder` 占位符文本设置为 "cat photo URL"。
+把 `input` 輸入框的 `placeholder` 佔位符文本設置爲 "cat photo URL"。
 
 # --hints--
 
-给现有的 `input` 输入框添加一个 `placeholder` 属性。
+給現有的 `input` 輸入框添加一個 `placeholder` 屬性。
 
 ```js
 assert($('input[placeholder]').length > 0);
 ```
 
-设置 `placeholder` 属性的值为 `cat photo URL`。
+設置 `placeholder` 屬性的值爲 `cat photo URL`。
 
 ```js
 assert(
@@ -41,13 +41,13 @@ assert(
 );
 ```
 
-`input` 元素不该有结束标签。
+`input` 元素不該有結束標籤。
 
 ```js
 assert(!code.match(/<input.*\/?>.*<\/input>/gi));
 ```
 
-`input` 输入框的语法必须正确。
+`input` 輸入框的語法必須正確。
 
 ```js
 assert($('input[type=text]').length > 0);

@@ -1,6 +1,6 @@
 ---
 id: 587d7b8a367417b2b2512b4f
-title: 使用简单字段编写简洁的对象字面量声明
+title: 使用簡單字段編寫簡潔的對象字面量聲明
 challengeType: 1
 forumTopicId: 301225
 dashedName: write-concise-object-literal-declarations-using-object-property-shorthand
@@ -8,9 +8,9 @@ dashedName: write-concise-object-literal-declarations-using-object-property-shor
 
 # --description--
 
-ES6 添加了一些很棒的功能，用于更方便地定义对象。
+ES6 添加了一些很棒的功能，用於更方便地定義對象。
 
-请看以下代码：
+請看以下代碼：
 
 ```js
 const getMousePosition = (x, y) => ({
@@ -19,7 +19,7 @@ const getMousePosition = (x, y) => ({
 });
 ```
 
-`getMousePosition` 简单的函数，返回拥有两个属性的对象。 ES6 提供了一个语法糖，消除了类似 `x: x` 这种冗余的写法。 你可以只写一次 `x`，解释器会自动将其转换成 `x: x`（或效果相同的内容）。 下面是使用这种语法重写的同样的函数：
+`getMousePosition` 簡單的函數，返回擁有兩個屬性的對象。 ES6 提供了一個語法糖，消除了類似 `x: x` 這種冗餘的寫法。 你可以只寫一次 `x`，解釋器會自動將其轉換成 `x: x`（或效果相同的內容）。 下面是使用這種語法重寫的同樣的函數：
 
 ```js
 const getMousePosition = (x, y) => ({ x, y });
@@ -27,11 +27,11 @@ const getMousePosition = (x, y) => ({ x, y });
 
 # --instructions--
 
-请使用简单属性对象的语法来创建并返回一个具有 `name`、`age` 和 `gender` 属性的对象。
+請使用簡單屬性對象的語法來創建並返回一個具有 `name`、`age` 和 `gender` 屬性的對象。
 
 # --hints--
 
-`createPerson("Zodiac Hasbro", 56, "male")` 应该返回 `{name: "Zodiac Hasbro", age: 56, gender: "male"}`。
+`createPerson("Zodiac Hasbro", 56, "male")` 應該返回 `{name: "Zodiac Hasbro", age: 56, gender: "male"}`。
 
 ```js
 assert.deepEqual(

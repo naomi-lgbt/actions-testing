@@ -1,6 +1,6 @@
 ---
 id: 5a94fe1369fb03452672e45d
-title: 使用 grid-area 属性将项目放置在网格区域中
+title: 使用 grid-area 屬性將項目放置在網格區域中
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cRrqmtV'
 forumTopicId: 301132
@@ -9,7 +9,7 @@ dashedName: place-items-in-grid-areas-using-the-grid-area-property
 
 # --description--
 
-像上一个挑战那样，在为网格添加区域模板后，可以通过引用你所定义的区域的名称，将元素放入相应的区域。 为此，你需要对网格项使用 `grid-area`：
+像上一個挑戰那樣，在爲網格添加區域模板後，可以通過引用你所定義的區域的名稱，將元素放入相應的區域。 爲此，你需要對網格項使用 `grid-area`：
 
 ```css
 .item1 {
@@ -17,15 +17,15 @@ dashedName: place-items-in-grid-areas-using-the-grid-area-property
 }
 ```
 
-这样，class 为 `item1` 的网格项就被放到了 `header` 区域里。 在这个示例中，网格项将占用第一行整行，因为这一整行都被命名为标题区域。
+這樣，class 爲 `item1` 的網格項就被放到了 `header` 區域裏。 在這個示例中，網格項將佔用第一行整行，因爲這一整行都被命名爲標題區域。
 
 # --instructions--
 
-请使用 `grid-area` 属性，把 class 为 `item5` 的元素放到 `footer` 区域。
+請使用 `grid-area` 屬性，把 class 爲 `item5` 的元素放到 `footer` 區域。
 
 # --hints--
 
-class 为 `item5` 的元素应具有 `grid-area` 属性且属性值应为 `footer`。
+class 爲 `item5` 的元素應具有 `grid-area` 屬性且屬性值應爲 `footer`。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 587d781b367417b2b2512abd
-title: 调整标题与段落的大小
+title: 調整標題與段落的大小
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c3bRPTz'
 forumTopicId: 301037
@@ -9,15 +9,15 @@ dashedName: adjust-the-size-of-a-header-versus-a-paragraph-tag
 
 # --description--
 
-标题标签的字体大小（从 `h1` 到 `h6`）一般应该大于段落标签的字体大小。 这使用户更容易在视觉上了解页面上所有内容的布局和重要程度。 你可以使用 `font-size` 属性来设置元素内文字的大小。
+標題標籤的字體大小（從 `h1` 到 `h6`）一般應該大於段落標籤的字體大小。 這使用戶更容易在視覺上了解頁面上所有內容的佈局和重要程度。 你可以使用 `font-size` 屬性來設置元素內文字的大小。
 
 # --instructions--
 
-把 `h4` 标签的 `font-size` 的属性值改成 27px，让标题更醒目。
+把 `h4` 標籤的 `font-size` 的屬性值改成 27px，讓標題更醒目。
 
 # --hints--
 
-应给 `h4` 元素添加一个 `font-size` 属性并将属性值设置为 27px。
+應給 `h4` 元素添加一個 `font-size` 屬性並將屬性值設置爲 27px。
 
 ```js
 assert($('h4').css('font-size') == '27px');

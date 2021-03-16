@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aede08718
-title: 使用 RGB 值为元素上色
+title: 使用 RGB 值爲元素上色
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cRkp2fr'
 forumTopicId: 18369
@@ -9,7 +9,7 @@ dashedName: use-rgb-values-to-color-elements
 
 # --description--
 
-`RGB` 值是在 CSS 中表示颜色的另一种方法。
+`RGB` 值是在 CSS 中表示顏色的另一種方法。
 
 黑色的 `RGB` 值：
 
@@ -19,11 +19,11 @@ dashedName: use-rgb-values-to-color-elements
 
 `rgb(255, 255, 255)`
 
-RGB 值与我们之前学到的十六进制编码不同。`RGB` 值不需要用到 6 位十六进制数字，而只需要指定每种颜色的亮度大小，数值范围从 0 到 255。
+RGB 值與我們之前學到的十六進制編碼不同。`RGB` 值不需要用到 6 位十六進制數字，而只需要指定每種顏色的亮度大小，數值範圍從 0 到 255。
 
-如果我们稍微计算一下，就不难发现这两种表示方式本质上是等价的。在十六进制编码中，我们用两个十六进制数表示一个颜色；这样，每种颜色都有 16 \* 16（即 256）种可能。 所以，`RGB` 从零开始计算，与十六进制代码的值的数量完全相同。
+如果我們稍微計算一下，就不難發現這兩種表示方式本質上是等價的。在十六進制編碼中，我們用兩個十六進制數表示一個顏色；這樣，每種顏色都有 16 \* 16（即 256）種可能。 所以，`RGB` 從零開始計算，與十六進制代碼的值的數量完全相同。
 
-下面是通过使用 RGB 值设置背景颜色为橘色的例子：
+下面是通過使用 RGB 值設置背景顏色爲橘色的例子：
 
 ```css
 body {
@@ -33,17 +33,17 @@ body {
 
 # --instructions--
 
-请用 RGB 值 `rgb(0, 0, 0)` 替换 `body` 元素背景颜色的十六进制编码。
+請用 RGB 值 `rgb(0, 0, 0)` 替換 `body` 元素背景顏色的十六進制編碼。
 
 # --hints--
 
-`body` 元素的背景颜色应该是黑色。
+`body` 元素的背景顏色應該是黑色。
 
 ```js
 assert($('body').css('background-color') === 'rgb(0, 0, 0)');
 ```
 
-`body` 元素的背景颜色的属性值应使用 `rgb` 值。
+`body` 元素的背景顏色的屬性值應使用 `rgb` 值。
 
 ```js
 assert(code.match(/rgb\s*\(\s*0\s*,\s*0\s*,\s*0\s*\)/gi));

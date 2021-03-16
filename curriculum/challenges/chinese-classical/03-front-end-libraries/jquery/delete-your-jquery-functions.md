@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aeda08726
-title: 删除 jQuery 函数
+title: 刪除 jQuery 函數
 challengeType: 6
 forumTopicId: 17561
 required:
@@ -11,37 +11,37 @@ dashedName: delete-your-jquery-functions
 
 # --description--
 
-这些动画开始看起来很酷，但是有时可能会让用户分心。
+這些動畫開始看起來很酷，但是有時可能會讓用戶分心。
 
-请删除 `document ready function` 内的三个 jQuery 函数，但保留 `document ready function` 本身。
+請刪除 `document ready function` 內的三個 jQuery 函數，但保留 `document ready function` 本身。
 
 # --hints--
 
-应该删除 `document ready function` 中的三个 jQuery 函数。
+應該刪除 `document ready function` 中的三個 jQuery 函數。
 
 ```js
 assert(code.match(/\{\s*\}\);/g));
 ```
 
-应该保持 `script` 标签不变。
+應該保持 `script` 標籤不變。
 
 ```js
 assert(code.match(/<script>/g));
 ```
 
-应该保持 `$(document).ready(function() {` 在 `script` 标签的开头不变。
+應該保持 `$(document).ready(function() {` 在 `script` 標籤的開頭不變。
 
 ```js
 assert(code.match(/\$\(document\)\.ready\(function\(\)\s?\{/g));
 ```
 
-应该保持 `document.ready` function 用 `})` 闭合。
+應該保持 `document.ready` function 用 `})` 閉合。
 
 ```js
 assert(code.match(/.*\s*\}\);/g));
 ```
 
-应该保持 `script` 标签闭合。
+應該保持 `script` 標籤閉合。
 
 ```js
 assert(

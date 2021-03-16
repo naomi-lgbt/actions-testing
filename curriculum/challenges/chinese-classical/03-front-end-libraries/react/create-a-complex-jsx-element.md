@@ -1,6 +1,6 @@
 ---
 id: 5a24bbe0dba28a8d3cbd4c5d
-title: 创建一个复杂的 JSX 元素
+title: 創建一個複雜的 JSX 元素
 challengeType: 6
 forumTopicId: 301382
 dashedName: create-a-complex-jsx-element
@@ -8,15 +8,15 @@ dashedName: create-a-complex-jsx-element
 
 # --description--
 
-上一个挑战是 JSX 的一个简单示例，但 JSX 也可以表示更复杂的 HTML。
+上一個挑戰是 JSX 的一個簡單示例，但 JSX 也可以表示更復雜的 HTML。
 
-关于嵌套的 JSX，需要知道的一件重要的事情，那就是它必须返回单个元素。
+關於嵌套的 JSX，需要知道的一件重要的事情，那就是它必須返回單個元素。
 
-这个父元素将包裹所有其他级别的嵌套元素。
+這個父元素將包裹所有其他級別的嵌套元素。
 
-例如，几个作为兄弟元素编写的 JSX 元素而没有父元素包裹将不会被转换。
+例如，幾個作爲兄弟元素編寫的 JSX 元素而沒有父元素包裹將不會被轉換。
 
-这里是一个示例：
+這裏是一個示例：
 
 **有效的 JSX：**
 
@@ -28,7 +28,7 @@ dashedName: create-a-complex-jsx-element
 </div>
 ```
 
-**无效的 JSX：**
+**無效的 JSX：**
 
 ```jsx
 <p>Paragraph One</p>
@@ -38,39 +38,39 @@ dashedName: create-a-complex-jsx-element
 
 # --instructions--
 
-定义一个新的常量 `JSX`，渲染一个 `div`，其中依次包含以下元素：
+定義一個新的常量 `JSX`，渲染一個 `div`，其中依次包含以下元素：
 
-一个 `h1`，一个 `p`，一个包含三个 `li` 项的无序列表。 可以在每个元素中包含任意文本。
+一個 `h1`，一個 `p`，一個包含三個 `li` 項的無序列表。 可以在每個元素中包含任意文本。
 
-**注意：** 当像这样渲染多个元素时，可以把它们都用圆括号括起来，但是这并不是必须的。 另外，此挑战使用 `div` 标签把所有子元素包裹在里面。 如果删除 `div`，JSX 将不会编译这些元素。 请记住这一点，因为在 React 组件中返回 JSX 元素时也适用。
+**注意：** 當像這樣渲染多個元素時，可以把它們都用圓括號括起來，但是這並不是必須的。 另外，此挑戰使用 `div` 標籤把所有子元素包裹在裏面。 如果刪除 `div`，JSX 將不會編譯這些元素。 請記住這一點，因爲在 React 組件中返回 JSX 元素時也適用。
 
 # --hints--
 
-常量 `JSX` 应该返回一个 `div` 元素。
+常量 `JSX` 應該返回一個 `div` 元素。
 
 ```js
 assert(JSX.type === 'div');
 ```
 
-`div` 应该包含一个 `h1` 标签作为第一个元素。
+`div` 應該包含一個 `h1` 標籤作爲第一個元素。
 
 ```js
 assert(JSX.props.children[0].type === 'h1');
 ```
 
-`div`应该包含一个`p`标签作为第二个元素。
+`div`應該包含一個`p`標籤作爲第二個元素。
 
 ```js
 assert(JSX.props.children[1].type === 'p');
 ```
 
-`div` 应该包含一个 `ul` 标签作为第三个元素。
+`div` 應該包含一個 `ul` 標籤作爲第三個元素。
 
 ```js
 assert(JSX.props.children[2].type === 'ul');
 ```
 
-`ul` 应该包含三个 `li` 元素。
+`ul` 應該包含三個 `li` 元素。
 
 ```js
 assert(

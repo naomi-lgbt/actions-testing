@@ -1,6 +1,6 @@
 ---
 id: 587d7b89367417b2b2512b4a
-title: 使用解构赋值从嵌套对象中分配变量
+title: 使用解構賦值從嵌套對象中分配變量
 challengeType: 1
 forumTopicId: 301214
 dashedName: use-destructuring-assignment-to-assign-variables-from-nested-objects
@@ -8,9 +8,9 @@ dashedName: use-destructuring-assignment-to-assign-variables-from-nested-objects
 
 # --description--
 
-你可以使用前两节课程中相同的原则来解构嵌套对象中的值。
+你可以使用前兩節課程中相同的原則來解構嵌套對象中的值。
 
-使用与前面的例子中类似的对象：
+使用與前面的例子中類似的對象：
 
 ```js
 const user = {
@@ -21,13 +21,13 @@ const user = {
 };
 ```
 
-这是解构对象的属性值赋值给具有相同名字的变量：
+這是解構對象的屬性值賦值給具有相同名字的變量：
 
 ```js
 const { johnDoe: { age, email }} = user;
 ```
 
-这是将对象的属性值赋值给具有不同名字的变量：
+這是將對象的屬性值賦值給具有不同名字的變量：
 
 ```js
 const { johnDoe: { age: userAge, email: userEmail }} = user;
@@ -35,11 +35,11 @@ const { johnDoe: { age: userAge, email: userEmail }} = user;
 
 # --instructions--
 
-将两个赋值语句替换成等价的解构赋值。 `lowToday` 和 `highToday` 应该为 `LOCAL_FORECAST` 中 `today.low` 和 `today.high` 的值。
+將兩個賦值語句替換成等價的解構賦值。 `lowToday` 和 `highToday` 應該爲 `LOCAL_FORECAST` 中 `today.low` 和 `today.high` 的值。
 
 # --hints--
 
-不能使用 ES5 的赋值语句。
+不能使用 ES5 的賦值語句。
 
 ```js
 assert(
@@ -48,7 +48,7 @@ assert(
 );
 ```
 
-应该使用解构创建 `lowToday` 变量。
+應該使用解構創建 `lowToday` 變量。
 
 ```js
 assert(
@@ -58,7 +58,7 @@ assert(
 );
 ```
 
-应该使用解构创建 `highToday` 变量。
+應該使用解構創建 `highToday` 變量。
 
 ```js
 assert(
@@ -68,7 +68,7 @@ assert(
 );
 ```
 
-`lowToday` 应等于 `64`，`highToday` 应等于 `77`。
+`lowToday` 應等於 `64`，`highToday` 應等於 `77`。
 
 ```js
 assert(lowToday === 64 && highToday === 77);

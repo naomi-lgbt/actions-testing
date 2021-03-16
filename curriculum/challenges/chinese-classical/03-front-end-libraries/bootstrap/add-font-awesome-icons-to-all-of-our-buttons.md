@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedc08845
-title: 将字体图标添加到所有的按钮上
+title: 將字體圖標添加到所有的按鈕上
 challengeType: 0
 forumTopicId: 16637
 required:
@@ -12,17 +12,17 @@ dashedName: add-font-awesome-icons-to-all-of-our-buttons
 
 # --description--
 
-Font Awesome 是一个非常便利的图标库。 这些图标可以是网络字体，也可以是一张矢量图。 这些图标就和字体一样， 不仅能通过像素单位指定它们的大小，它们也同样会继承父级 HTML 元素的字号。
+Font Awesome 是一個非常便利的圖標庫。 這些圖標可以是網絡字體，也可以是一張矢量圖。 這些圖標就和字體一樣， 不僅能通過像素單位指定它們的大小，它們也同樣會繼承父級 HTML 元素的字號。
 
 # --instructions--
 
-为 info 按钮添加 Font Awesome `info-circle` 图标，delete 按钮添加 `trash` 图标。
+爲 info 按鈕添加 Font Awesome `info-circle` 圖標，delete 按鈕添加 `trash` 圖標。
 
 **注意：** 下述要求中的 `i` 元素也可以用 `span` 元素代替。
 
 # --hints--
 
-应在 `info` 按钮元素中添加一个 `<i class="fas fa-info-circle"></i>`。
+應在 `info` 按鈕元素中添加一個 `<i class="fas fa-info-circle"></i>`。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-应在 `delete` 按钮元素中添加一个 `<i class="fas fa-trash"></i>`。
+應在 `delete` 按鈕元素中添加一個 `<i class="fas fa-trash"></i>`。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-每个 `i` 元素都应有一个闭合标签，`<i class="fas fa-thumbs-up"></i>` 在 `like` 标签元素中。
+每個 `i` 元素都應有一個閉合標籤，`<i class="fas fa-thumbs-up"></i>` 在 `like` 標籤元素中。
 
 ```js
 assert(

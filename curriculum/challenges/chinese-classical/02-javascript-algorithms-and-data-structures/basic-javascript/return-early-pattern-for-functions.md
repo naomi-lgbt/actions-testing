@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244c4
-title: 函数执行到 return 语句就结束
+title: 函數執行到 return 語句就結束
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cQe39Sq'
 forumTopicId: 18272
@@ -9,7 +9,7 @@ dashedName: return-early-pattern-for-functions
 
 # --description--
 
-当代码执行到 `return` 语句时，函数返回一个结果就结束运行了，return 后面的语句不会执行。
+當代碼執行到 `return` 語句時，函數返回一個結果就結束運行了，return 後面的語句不會執行。
 
 **示例**
 
@@ -22,54 +22,54 @@ function myFun() {
 myFun();
 ```
 
-以上将在控制台中显示字符串 `Hello` 并返回字符串 `World`。 字符串 `byebye` 将永远不会在控制台中显示，因为函数在 `return` 语句处就退出了。
+以上將在控制檯中顯示字符串 `Hello` 並返回字符串 `World`。 字符串 `byebye` 將永遠不會在控制檯中顯示，因爲函數在 `return` 語句處就退出了。
 
 # --instructions--
 
-修改函数 `abTest` 当 `a` 或 `b` 小于 `0` 时，函数立即返回一个 `undefined` 并退出。
+修改函數 `abTest` 當 `a` 或 `b` 小於 `0` 時，函數立即返回一個 `undefined` 並退出。
 
 **提示**  
-记住 [`undefined` 是一个关键字](/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables)，而不是一个字符串。
+記住 [`undefined` 是一個關鍵字](/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables)，而不是一個字符串。
 
 # --hints--
 
-`abTest(2,2)` 应该返回一个数字
+`abTest(2,2)` 應該返回一個數字
 
 ```js
 assert(typeof abTest(2, 2) === 'number');
 ```
 
-`abTest(2,2)` 应该返回 `8`
+`abTest(2,2)` 應該返回 `8`
 
 ```js
 assert(abTest(2, 2) === 8);
 ```
 
-`abTest(-2,2)` 应该返回 `undefined`
+`abTest(-2,2)` 應該返回 `undefined`
 
 ```js
 assert(abTest(-2, 2) === undefined);
 ```
 
-`abTest(2,-2)` 应该返回 `undefined`
+`abTest(2,-2)` 應該返回 `undefined`
 
 ```js
 assert(abTest(2, -2) === undefined);
 ```
 
-`abTest(2,8)` 应该返回 `18`
+`abTest(2,8)` 應該返回 `18`
 
 ```js
 assert(abTest(2, 8) === 18);
 ```
 
-`abTest(3,3)` 应该返回 `12`
+`abTest(3,3)` 應該返回 `12`
 
 ```js
 assert(abTest(3, 3) === 12);
 ```
 
-`abTest(0,0)` 应该返回 `0`
+`abTest(0,0)` 應該返回 `0`
 
 ```js
 assert(abTest(0, 0) === 0);

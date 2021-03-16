@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908850
-title: 给 Bootstrap 按钮添加默认样式
+title: 給 Bootstrap 按鈕添加默認樣式
 challengeType: 0
 forumTopicId: 16657
 dashedName: apply-the-default-bootstrap-button-style
@@ -8,19 +8,19 @@ dashedName: apply-the-default-bootstrap-button-style
 
 # --description--
 
-Bootstrap 还有另外一种按钮 class 属性叫做 `btn-default`。
+Bootstrap 還有另外一種按鈕 class 屬性叫做 `btn-default`。
 
-为所有的 `button` 元素增加两个 class： `btn` 和 `btn-default`。
+爲所有的 `button` 元素增加兩個 class： `btn` 和 `btn-default`。
 
 # --hints--
 
-应该将 `btn` class 添加到所有的 `button` 元素中。
+應該將 `btn` class 添加到所有的 `button` 元素中。
 
 ```js
 assert($('.btn').length > 5);
 ```
 
-应该将 `btn-default` class 添加到每一个 `button` 元素中。
+應該將 `btn-default` class 添加到每一個 `button` 元素中。
 
 ```js
 assert($('.btn-default').length > 5);

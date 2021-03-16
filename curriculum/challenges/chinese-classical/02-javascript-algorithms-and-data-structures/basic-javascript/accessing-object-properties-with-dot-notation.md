@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244c7
-title: 通过点号表示法访问对象属性
+title: 通過點號表示法訪問對象屬性
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cGryJs8'
 forumTopicId: 16164
@@ -9,11 +9,11 @@ dashedName: accessing-object-properties-with-dot-notation
 
 # --description--
 
-和访问数组类似，访问对象属性有两种方式：点号表示法（`.`）和方括号表示法（`[]`）。
+和訪問數組類似，訪問對象屬性有兩種方式：點號表示法（`.`）和方括號表示法（`[]`）。
 
-如果我们已经提前知道要访问的属性名，使用点号表示法是最方便的。
+如果我們已經提前知道要訪問的屬性名，使用點號表示法是最方便的。
 
-这里是一个用点符号（`.`）读取对象属性的示例：
+這裏是一個用點符號（`.`）讀取對象屬性的示例：
 
 ```js
 var myObj = {
@@ -24,38 +24,38 @@ var prop1val = myObj.prop1;
 var prop2val = myObj.prop2;
 ```
 
-`prop1val` 的值将为字符串 `val1`，并且`prop2val` 的值将为字符串 `val2`。
+`prop1val` 的值將爲字符串 `val1`，並且`prop2val` 的值將爲字符串 `val2`。
 # --instructions--
 
-使用点号读取 `testObj` 的属性值。 将变量 `hatValue` 的值设置为该对象的 `hat` 属性的值，并将变量 `shirtValue` 的值设置为该对象的 `shirt` 属性的值。
+使用點號讀取 `testObj` 的屬性值。 將變量 `hatValue` 的值設置爲該對象的 `hat` 屬性的值，並將變量 `shirtValue` 的值設置爲該對象的 `shirt` 屬性的值。
 
 # --hints--
 
-`hatValue` 应该是一个字符串
+`hatValue` 應該是一個字符串
 
 ```js
 assert(typeof hatValue === 'string');
 ```
 
-`hatValue` 的值应该为字符串 `ballcap`
+`hatValue` 的值應該爲字符串 `ballcap`
 
 ```js
 assert(hatValue === 'ballcap');
 ```
 
-`shirtValue` 应该是一个字符串
+`shirtValue` 應該是一個字符串
 
 ```js
 assert(typeof shirtValue === 'string');
 ```
 
-`shirtValue` 的值应该为字符串 `jersey`
+`shirtValue` 的值應該爲字符串 `jersey`
 
 ```js
 assert(shirtValue === 'jersey');
 ```
 
-你应该使用两个点号
+你應該使用兩個點號
 
 ```js
 assert(code.match(/testObj\.\w+/g).length > 1);

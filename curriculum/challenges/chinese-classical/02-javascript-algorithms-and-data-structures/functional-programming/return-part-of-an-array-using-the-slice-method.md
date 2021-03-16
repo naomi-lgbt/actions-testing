@@ -1,6 +1,6 @@
 ---
 id: 587d7b90367417b2b2512b65
-title: 使用 slice 方法返回数组的一部分
+title: 使用 slice 方法返回數組的一部分
 challengeType: 1
 forumTopicId: 301239
 dashedName: return-part-of-an-array-using-the-slice-method
@@ -8,30 +8,30 @@ dashedName: return-part-of-an-array-using-the-slice-method
 
 # --description--
 
-`slice` 方法可以从已有数组中返回指定元素。 它接受两个参数，第一个规定从何处开始选取，第二个规定从何处结束选取（不包括该元素）。 如果没有传参，则默认为从数组的开头开始到结尾结束，这是复制整个数组的简单方式。 `slice` 返回一个新数组，不会修改原始数组。
+`slice` 方法可以從已有數組中返回指定元素。 它接受兩個參數，第一個規定從何處開始選取，第二個規定從何處結束選取（不包括該元素）。 如果沒有傳參，則默認爲從數組的開頭開始到結尾結束，這是複製整個數組的簡單方式。 `slice` 返回一個新數組，不會修改原始數組。
 
-举个例子：
+舉個例子：
 
 ```js
 var arr = ["Cat", "Dog", "Tiger", "Zebra"];
 var newArray = arr.slice(1, 3);
 ```
 
-`newArray` 值为 `["Dog", "Tiger"]`
+`newArray` 值爲 `["Dog", "Tiger"]`
 
 # --instructions--
 
-在 `sliceArray` 函数中使用 `slice` 方法，给出 `beginSlice` 和 `endSlice` 索引，返回 `anim` 数组的一部分。 这个函数应返回一个数组。
+在 `sliceArray` 函數中使用 `slice` 方法，給出 `beginSlice` 和 `endSlice` 索引，返回 `anim` 數組的一部分。 這個函數應返回一個數組。
 
 # --hints--
 
-应该使用 `slice` 方法。
+應該使用 `slice` 方法。
 
 ```js
 assert(code.match(/\.slice/g));
 ```
 
-不能改变 `inputAnim` 变量。
+不能改變 `inputAnim` 變量。
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 3)` 应返回 `["Dog", "Tiger"]`。
+`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 3)` 應返回 `["Dog", "Tiger"]`。
 
 ```js
 assert(
@@ -49,7 +49,7 @@ assert(
 );
 ```
 
-`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 0, 1)` 应返回 `["Cat"]`。
+`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 0, 1)` 應返回 `["Cat"]`。
 
 ```js
 assert(
@@ -58,7 +58,7 @@ assert(
 );
 ```
 
-`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 4)` 应返回 `["Dog", "Tiger", "Zebra"]`。
+`sliceArray(["Cat", "Dog", "Tiger", "Zebra", "Ant"], 1, 4)` 應返回 `["Dog", "Tiger", "Zebra"]`。
 
 ```js
 assert(

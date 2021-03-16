@@ -1,6 +1,6 @@
 ---
 id: 587d78ab367417b2b2512af1
-title: 在推文中添加弹性盒子布局
+title: 在推文中添加彈性盒子佈局
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/c9W7MhM'
 forumTopicId: 301100
@@ -9,59 +9,59 @@ dashedName: add-flex-superpowers-to-the-tweet-embed
 
 # --description--
 
-以右边的嵌入推文为例， 一些元素换一个布局方式或许更好看。 上一个挑战演示了 `display: flex`， 现在你需要把它添加到推文内嵌的多个组件中，调整它们的位置。
+以右邊的嵌入推文爲例， 一些元素換一個佈局方式或許更好看。 上一個挑戰演示了 `display: flex`， 現在你需要把它添加到推文內嵌的多個組件中，調整它們的位置。
 
 # --instructions--
 
-请为下列项目添加 CSS 属性 `display: flex`。 注意，以下 CSS 选择器已为你写好：
+請爲下列項目添加 CSS 屬性 `display: flex`。 注意，以下 CSS 選擇器已爲你寫好：
 
 `header`、header 中的 `.profile-name`、header 中的 `.follow-btn`、header 中的 `h3` 和 `h4`、`footer` 以及 footer 中的 `.stats`。
 
 # --hints--
 
-`.follow-btn` 应在页面上呈现。 请关闭广告拦截器等任何扩展。
+`.follow-btn` 應在頁面上呈現。 請關閉廣告攔截器等任何擴展。
 
 ```js
 assert($('.follow-btn').length > 0 && $('.follow-btn').css('display') !== 'none');
 ```
 
-`header` 的 `display` 属性值应为 `flex`。
+`header` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('header').css('display') == 'flex');
 ```
 
-`footer` 的 `display` 属性值应为 `flex`。
+`footer` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('footer').css('display') == 'flex');
 ```
 
-`h3` 的 `display` 属性值应为 `flex`。
+`h3` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('h3').css('display') == 'flex');
 ```
 
-`h4` 的 `display` 属性值应为 `flex`。
+`h4` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('h4').css('display') == 'flex');
 ```
 
-`.profile-name` 的 `display` 属性值应为 `flex`。
+`.profile-name` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('.profile-name').css('display') == 'flex');
 ```
 
-`.follow-btn` 的 `display` 属性值应为 `flex`。
+`.follow-btn` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('.follow-btn').css('display') == 'flex');
 ```
 
-`.stats` 的 `display` 属性值应为 `flex`。
+`.stats` 的 `display` 屬性值應爲 `flex`。
 
 ```js
 assert($('.stats').css('display') == 'flex');

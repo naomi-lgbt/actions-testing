@@ -1,6 +1,6 @@
 ---
 id: 587d781a367417b2b2512ab7
-title: 使用 strong 标签加粗文本
+title: 使用 strong 標籤加粗文本
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/ceJNBSb'
 forumTopicId: 301080
@@ -9,27 +9,27 @@ dashedName: use-the-strong-tag-to-make-text-bold
 
 # --description--
 
-你可以使用 `strong` 标签来加粗文字。 粗体文字一般用来吸引读者注意或用来表示强调。 添加了 `strong` 标签后，浏览器会自动给元素添加这段样式：`font-weight:bold;`。
+你可以使用 `strong` 標籤來加粗文字。 粗體文字一般用來吸引讀者注意或用來表示強調。 添加了 `strong` 標籤後，瀏覽器會自動給元素添加這段樣式：`font-weight:bold;`。
 
 # --instructions--
 
-给 `p` 标签里的 `Stanford University` 内容文本添加 `strong` 标签。
+給 `p` 標籤裏的 `Stanford University` 內容文本添加 `strong` 標籤。
 
 # --hints--
 
-应添加一个 `strong` 标签。
+應添加一個 `strong` 標籤。
 
 ```js
 assert($('strong').length == 1);
 ```
 
-`strong` 标签应在 `p` 标签里。
+`strong` 標籤應在 `p` 標籤裏。
 
 ```js
 assert($('p').children('strong').length == 1);
 ```
 
-`strong` 标签的文本应为 `Stanford University`。
+`strong` 標籤的文本應爲 `Stanford University`。
 
 ```js
 assert(

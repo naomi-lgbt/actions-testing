@@ -1,6 +1,6 @@
 ---
 id: 587d78b2367417b2b2512b0f
-title: 使用 pop() 和 shift() 从数组中删除元素
+title: 使用 pop() 和 shift() 從數組中刪除元素
 challengeType: 1
 forumTopicId: 301165
 dashedName: remove-items-from-an-array-with-pop-and-shift
@@ -8,9 +8,9 @@ dashedName: remove-items-from-an-array-with-pop-and-shift
 
 # --description--
 
-`push()` 和 `unshift()` 都有一个与它们作用相反的函数：`pop()` 和 `shift()`。 与插入元素相反，`pop()` 会从数组的末尾*移除*一个元素，而 `shift()` 会从数组的开头移除一个元素。 `pop()` 和 `shift()` 与 `push()` 和 `unshift()` 的关键区别在于，用于删除元素的方法不接收参数，而且每次只能删除数组中的一个元素。
+`push()` 和 `unshift()` 都有一個與它們作用相反的函數：`pop()` 和 `shift()`。 與插入元素相反，`pop()` 會從數組的末尾*移除*一個元素，而 `shift()` 會從數組的開頭移除一個元素。 `pop()` 和 `shift()` 與 `push()` 和 `unshift()` 的關鍵區別在於，用於刪除元素的方法不接收參數，而且每次只能刪除數組中的一個元素。
 
-让我们来看以下的例子：
+讓我們來看以下的例子：
 
 ```js
 let greetings = ['whats up?', 'hello', 'see ya!'];
@@ -18,29 +18,29 @@ let greetings = ['whats up?', 'hello', 'see ya!'];
 greetings.pop();
 ```
 
-`greetings` 值为 `['whats up?', 'hello']`。
+`greetings` 值爲 `['whats up?', 'hello']`。
 
 ```js
 greetings.shift();
 ```
 
-`greetings` 值为 `['hello']`。
+`greetings` 值爲 `['hello']`。
 
-这些用于删除数组元素的方法会返回被删除的元素：
+這些用於刪除數組元素的方法會返回被刪除的元素：
 
 ```js
 let popped = greetings.pop();
 ```
 
-`greetings` 值为 `[]`，`popped` 值为 `hello`。
+`greetings` 值爲 `[]`，`popped` 值爲 `hello`。
 
 # --instructions--
 
-我们已经定义了一个 `popShift` 函数，它接收一个数组作为输入参数并返回一个新的数组。 请修改这个函数，使用 `pop()` 和 `shift()` 来移除输入的数组中的第一个元素和最后一个元素，并将这两个被移除的元素分别赋值给对应的变量，使得最终返回的数组里包含这两个值。
+我們已經定義了一個 `popShift` 函數，它接收一個數組作爲輸入參數並返回一個新的數組。 請修改這個函數，使用 `pop()` 和 `shift()` 來移除輸入的數組中的第一個元素和最後一個元素，並將這兩個被移除的元素分別賦值給對應的變量，使得最終返回的數組裏包含這兩個值。
 
 # --hints--
 
-`popShift(["challenge", "is", "not", "complete"])` 应返回 `["challenge", "complete"]`。
+`popShift(["challenge", "is", "not", "complete"])` 應返回 `["challenge", "complete"]`。
 
 ```js
 assert.deepEqual(popShift(['challenge', 'is', 'not', 'complete']), [
@@ -49,13 +49,13 @@ assert.deepEqual(popShift(['challenge', 'is', 'not', 'complete']), [
 ]);
 ```
 
-`popShift` 函数中应使用 `pop()` 方法。
+`popShift` 函數中應使用 `pop()` 方法。
 
 ```js
 assert.notStrictEqual(popShift.toString().search(/\.pop\(/), -1);
 ```
 
-`popShift` 函数中应使用 `shift()` 方法。
+`popShift` 函數中應使用 `shift()` 方法。
 
 ```js
 assert.notStrictEqual(popShift.toString().search(/\.shift\(/), -1);

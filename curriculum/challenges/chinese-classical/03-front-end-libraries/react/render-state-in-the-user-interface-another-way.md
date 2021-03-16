@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036172
-title: 以另一种方式在用户界面中渲染状态
+title: 以另一種方式在用戶界面中渲染狀態
 challengeType: 6
 forumTopicId: 301408
 dashedName: render-state-in-the-user-interface-another-way
@@ -8,17 +8,17 @@ dashedName: render-state-in-the-user-interface-another-way
 
 # --description--
 
-还有另一种方法可以访问组件中的 `state`。 在 `render()` 方法中，在 `return` 语句之前，可以直接编写 JavaScript。 例如，可以声明函数、从 `state` 或 `props` 中访问数据、对此数据执行计算等。 然后，可以将任何数据赋值给 `return` 语句中可以访问的变量。
+還有另一種方法可以訪問組件中的 `state`。 在 `render()` 方法中，在 `return` 語句之前，可以直接編寫 JavaScript。 例如，可以聲明函數、從 `state` 或 `props` 中訪問數據、對此數據執行計算等。 然後，可以將任何數據賦值給 `return` 語句中可以訪問的變量。
 
 # --instructions--
 
-在 `MyComponent` 的 render 方法中，定义一个名为 `name` 的 `const`（常量），并将其设置为组件 `state` 中的 name 值。 因为可以直接在代码部分编写 JavaScript，所以不需要用大括号括起来。
+在 `MyComponent` 的 render 方法中，定義一個名爲 `name` 的 `const`（常量），並將其設置爲組件 `state` 中的 name 值。 因爲可以直接在代碼部分編寫 JavaScript，所以不需要用大括號括起來。
 
-接下来，在 return 语句中，在 `h1` 标签中渲染变量 `name` 的值。 记住，在 return 语句中需要使用 JSX 语法（用到 JavaScript 的花括号）。
+接下來，在 return 語句中，在 `h1` 標籤中渲染變量 `name` 的值。 記住，在 return 語句中需要使用 JSX 語法（用到 JavaScript 的花括號）。
 
 # --hints--
 
-`MyComponent` 应该有一个键 `name`，其值 `freeCodeCamp` 存储在其 state 中。
+`MyComponent` 應該有一個鍵 `name`，其值 `freeCodeCamp` 存儲在其 state 中。
 
 ```js
 assert(
@@ -27,7 +27,7 @@ assert(
 );
 ```
 
-`MyComponent` 应该在 `div` 中渲染一个 `h1` 标题。
+`MyComponent` 應該在 `div` 中渲染一個 `h1` 標題。
 
 ```js
 assert(
@@ -37,14 +37,14 @@ assert(
 );
 ```
 
-渲染的 `h1` 标签应该包含 `{name}` 的引用。
+渲染的 `h1` 標籤應該包含 `{name}` 的引用。
 
 ```js
 (getUserInput) =>
   assert(/<h1>\n*\s*\{\s*name\s*\}\s*\n*<\/h1>/.test(getUserInput('index')));
 ```
 
-渲染的 `h1` 标题中应该包含一段文本，这段文本是从组件的 state 中渲染出来的。
+渲染的 `h1` 標題中應該包含一段文本，這段文本是從組件的 state 中渲染出來的。
 
 ```js
 async () => {

@@ -8,7 +8,7 @@ dashedName: find-more-than-the-first-match
 
 # --description--
 
-到目前为止，只能提取或搜寻一次模式匹配。
+到目前爲止，只能提取或搜尋一次模式匹配。
 
 ```js
 let testStr = "Repeat, Repeat, Repeat";
@@ -16,39 +16,39 @@ let ourRegex = /Repeat/;
 testStr.match(ourRegex);
 ```
 
-在这里 `match` 将返回 `["Repeat"]`。
+在這裏 `match` 將返回 `["Repeat"]`。
 
-若要多次搜寻或提取模式匹配，可以使用 `g` 标志。
+若要多次搜尋或提取模式匹配，可以使用 `g` 標誌。
 
 ```js
 let repeatRegex = /Repeat/g;
 testStr.match(repeatRegex);
 ```
 
-这里 `match` 返回值 `["Repeat", "Repeat", "Repeat"]`
+這裏 `match` 返回值 `["Repeat", "Repeat", "Repeat"]`
 
 # --instructions--
 
-使用正则表达式 `starRegex`，从字符串 `twinkleStar` 中匹配所有的 `Twinkle` 单词并提取出来。
+使用正則表達式 `starRegex`，從字符串 `twinkleStar` 中匹配所有的 `Twinkle` 單詞並提取出來。
 
 **注意：**  
-在正则表达式上可以有多个标志，比如 `/search/gi`
+在正則表達式上可以有多個標誌，比如 `/search/gi`
 
 # --hints--
 
-你的正则表达式 `starRegex` 应该使用全局标志 `g`
+你的正則表達式 `starRegex` 應該使用全局標誌 `g`
 
 ```js
 assert(starRegex.flags.match(/g/).length == 1);
 ```
 
-你的正则表达式 `starRegex` 应该使用忽略大小写标志 `i`
+你的正則表達式 `starRegex` 應該使用忽略大小寫標誌 `i`
 
 ```js
 assert(starRegex.flags.match(/i/).length == 1);
 ```
 
-你的匹配应该匹配单词 `Twinkle` 的两个匹配项
+你的匹配應該匹配單詞 `Twinkle` 的兩個匹配項
 
 ```js
 assert(
@@ -60,7 +60,7 @@ assert(
 );
 ```
 
-你的匹配 `result` 应该包含两个元素
+你的匹配 `result` 應該包含兩個元素
 
 ```js
 assert(result.length == 2);

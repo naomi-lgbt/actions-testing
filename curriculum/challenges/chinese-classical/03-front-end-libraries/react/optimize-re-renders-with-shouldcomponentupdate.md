@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036180
-title: 使用 shouldComponentUpdate 优化重新渲染
+title: 使用 shouldComponentUpdate 優化重新渲染
 challengeType: 6
 forumTopicId: 301398
 dashedName: optimize-re-renders-with-shouldcomponentupdate
@@ -8,17 +8,17 @@ dashedName: optimize-re-renders-with-shouldcomponentupdate
 
 # --description--
 
-到目前为止，如果任何组件接收到新的 `state` 或新的 `props`，它会重新渲染自己及其所有子组件。 这通常是好的。 但是 React 提供了一种生命周期方法，当子组件接收到新的 `state` 或 `props` 时，可以调用该方法，并特别声明组件是否应该更新。 这个方法就是 `shouldComponentUpdate()`，它将 `nextProps` 和 `nextState` 作为参数。
+到目前爲止，如果任何組件接收到新的 `state` 或新的 `props`，它會重新渲染自己及其所有子組件。 這通常是好的。 但是 React 提供了一種生命週期方法，當子組件接收到新的 `state` 或 `props` 時，可以調用該方法，並特別聲明組件是否應該更新。 這個方法就是 `shouldComponentUpdate()`，它將 `nextProps` 和 `nextState` 作爲參數。
 
-这种方法是优化性能的有效方法。 例如，默认行为是，当组件接收到新的 `props` 时，即使 `props` 没有改变，它也会重新渲染。 可以通过使用 `shouldComponentUpdate()` 比较 `props` 来防止这种情况发生。 该方法必须返回一个 `boolean`（布尔值），该值告诉 React 是否更新组件。 可以比较当前的 props（`this.props`）和下一个 props（`nextProps`），以确定你是否需要更新，并相应地返回 `true` 或 `false`。
+這種方法是優化性能的有效方法。 例如，默認行爲是，當組件接收到新的 `props` 時，即使 `props` 沒有改變，它也會重新渲染。 可以通過使用 `shouldComponentUpdate()` 比較 `props` 來防止這種情況發生。 該方法必須返回一個 `boolean`（布爾值），該值告訴 React 是否更新組件。 可以比較當前的 props（`this.props`）和下一個 props（`nextProps`），以確定你是否需要更新，並相應地返回 `true` 或 `false`。
 
 # --instructions--
 
-将 `shouldComponentUpdate()` 方法添加到名为 `OnlyEvens` 的组件中。 目前，该方法返回 `true`，因此每次收到新的 `props` 时，`OnlyEvens` 都会重新渲染。 修改该方法，以便 `OnlyEvens` 仅在其新 props 的 `value` 为偶数时更新。 单击 `Add` 按钮，在触发其他生命周期钩子时，在浏览器控制台中查看事件的顺序。
+將 `shouldComponentUpdate()` 方法添加到名爲 `OnlyEvens` 的組件中。 目前，該方法返回 `true`，因此每次收到新的 `props` 時，`OnlyEvens` 都會重新渲染。 修改該方法，以便 `OnlyEvens` 僅在其新 props 的 `value` 爲偶數時更新。 單擊 `Add` 按鈕，在觸發其他生命週期鉤子時，在瀏覽器控制檯中查看事件的順序。
 
 # --hints--
 
-`Controller` 组件应该将 `OnlyEvens` 组件渲染为子组件。
+`Controller` 組件應該將 `OnlyEvens` 組件渲染爲子組件。
 
 ```js
 assert(
@@ -32,7 +32,7 @@ assert(
 );
 ```
 
-应该在 `OnlyEvens` 组件上定义 `shouldComponentUpdate` 方法。
+應該在 `OnlyEvens` 組件上定義 `shouldComponentUpdate` 方法。
 
 ```js
 assert(
@@ -45,7 +45,7 @@ assert(
 );
 ```
 
-`OnlyEvens` 组件应该返回一个 `h1` 标签，该标签渲染 `this.props.value` 的值。
+`OnlyEvens` 組件應該返回一個 `h1` 標籤，該標籤渲染 `this.props.value` 的值。
 
 ```js
 (() => {
@@ -64,7 +64,7 @@ assert(
 })();
 ```
 
-只有在 `nextProps.value` 为偶数时，`OnlyEvens` 才会重新渲染。
+只有在 `nextProps.value` 爲偶數時，`OnlyEvens` 纔會重新渲染。
 
 ```js
 (() => {

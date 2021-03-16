@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aed708826
-title: 使用 jQuery 删除元素
+title: 使用 jQuery 刪除元素
 challengeType: 6
 forumTopicId: 18262
 dashedName: remove-an-element-using-jquery
@@ -8,15 +8,15 @@ dashedName: remove-an-element-using-jquery
 
 # --description--
 
-现在学习用 jQuery 从页面移除 HTML 标签。
+現在學習用 jQuery 從頁面移除 HTML 標籤。
 
-jQuery 有一个 `.remove()` 方法，能完全移除 HTML 标签。
+jQuery 有一個 `.remove()` 方法，能完全移除 HTML 標籤。
 
-用 `.remove()` 方法从页面移除 `target4` 标签。
+用 `.remove()` 方法從頁面移除 `target4` 標籤。
 
 # --hints--
 
-应该用 jQuery 从页面中移除 `target4`标签。
+應該用 jQuery 從頁面中移除 `target4`標籤。
 
 ```js
 assert(
@@ -24,7 +24,7 @@ assert(
 );
 ```
 
-应该仅用 jQuery 移除该标签。
+應該僅用 jQuery 移除該標籤。
 
 ```js
 assert(

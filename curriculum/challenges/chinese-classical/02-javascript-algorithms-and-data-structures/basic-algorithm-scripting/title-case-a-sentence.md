@@ -1,6 +1,6 @@
 ---
 id: ab6137d4e35944e21037b769
-title: 句中单词首字母大写
+title: 句中單詞首字母大寫
 challengeType: 5
 forumTopicId: 16088
 dashedName: title-case-a-sentence
@@ -8,31 +8,31 @@ dashedName: title-case-a-sentence
 
 # --description--
 
-请将传入的字符串中，每个单词的第一个字母变成大写并返回。 注意除首字母外，其余的字符都应是小写的。
+請將傳入的字符串中，每個單詞的第一個字母變成大寫並返回。 注意除首字母外，其餘的字符都應是小寫的。
 
-在这个挑战中，我们还需要将诸如 `the` 和 `of` 之类的连接词大写。
+在這個挑戰中，我們還需要將諸如 `the` 和 `of` 之類的連接詞大寫。
 
 # --hints--
 
-`titleCase("I'm a little tea pot")` 应返回一个字符串。
+`titleCase("I'm a little tea pot")` 應返回一個字符串。
 
 ```js
 assert(typeof titleCase("I'm a little tea pot") === 'string');
 ```
 
-`titleCase("I'm a little tea pot")` 应返回 `I'm A Little Tea Pot`。
+`titleCase("I'm a little tea pot")` 應返回 `I'm A Little Tea Pot`。
 
 ```js
 assert(titleCase("I'm a little tea pot") === "I'm A Little Tea Pot");
 ```
 
-`titleCase("sHoRt AnD sToUt")` 应返回 `Short And Stout`。
+`titleCase("sHoRt AnD sToUt")` 應返回 `Short And Stout`。
 
 ```js
 assert(titleCase('sHoRt AnD sToUt') === 'Short And Stout');
 ```
 
-`titleCase("HERE IS MY HANDLE HERE IS MY SPOUT")` 应返回 `Here Is My Handle Here Is My Spout`。
+`titleCase("HERE IS MY HANDLE HERE IS MY SPOUT")` 應返回 `Here Is My Handle Here Is My Spout`。
 
 ```js
 assert(

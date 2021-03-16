@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392cc
-title: 使用 pop() 操作数组
+title: 使用 pop() 操作數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cRbVZAB'
 forumTopicId: 18236
@@ -9,11 +9,11 @@ dashedName: manipulate-arrays-with-pop
 
 # --description--
 
-改变数组中数据的另一种方法是用 `.pop()` 函数。
+改變數組中數據的另一種方法是用 `.pop()` 函數。
 
-`.pop()` 函数用来弹出一个数组末尾的值。 我们可以把这个弹出的值赋给一个变量存储起来。 换句话说就是 `.pop()` 函数移除数组末尾的元素并返回这个元素。
+`.pop()` 函數用來彈出一個數組末尾的值。 我們可以把這個彈出的值賦給一個變量存儲起來。 換句話說就是 `.pop()` 函數移除數組末尾的元素並返回這個元素。
 
-数组中任何类型的元素（数值，字符串，甚至是数组）都可以被弹出来 。
+數組中任何類型的元素（數值，字符串，甚至是數組）都可以被彈出來 。
 
 ```js
 var threeArr = [1, 4, 6];
@@ -22,15 +22,15 @@ console.log(oneDown);
 console.log(threeArr);
 ```
 
-第一个 `console.log` 将显示值 `6`，第二个将显示值 `[1, 4]`。
+第一個 `console.log` 將顯示值 `6`，第二個將顯示值 `[1, 4]`。
 
 # --instructions--
 
-使用 `.pop()` 函数移除 `myArray` 中的最后一个元素，并且把弹出的值赋给 `removedFromMyArray`。
+使用 `.pop()` 函數移除 `myArray` 中的最後一個元素，並且把彈出的值賦給 `removedFromMyArray`。
 
 # --hints--
 
-`myArray` 应该只包含 `[["John", 23]]`。
+`myArray` 應該只包含 `[["John", 23]]`。
 
 ```js
 assert(
@@ -44,13 +44,13 @@ assert(
 );
 ```
 
-对 `myArray` 使用 `pop()` 函数。
+對 `myArray` 使用 `pop()` 函數。
 
 ```js
 assert(/removedFromMyArray\s*=\s*myArray\s*.\s*pop\s*(\s*)/.test(code));
 ```
 
-`removedFromMyArray` 应该只包含 `["cat", 2]`。
+`removedFromMyArray` 應該只包含 `["cat", 2]`。
 
 ```js
 assert(

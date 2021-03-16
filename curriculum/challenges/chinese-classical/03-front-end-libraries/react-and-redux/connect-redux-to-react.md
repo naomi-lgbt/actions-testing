@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036147
-title: 连接 Redux 和 React
+title: 連接 Redux 和 React
 challengeType: 6
 forumTopicId: 301426
 dashedName: connect-redux-to-react
@@ -8,21 +8,21 @@ dashedName: connect-redux-to-react
 
 # --description--
 
-你已经写了`mapStateToProps()`、`mapDispatchToProps()` 两个函数，现在可以用它们来把 `state` 和 `dispatch` 映射到 React 组件的 `props` 了。 React Redux 的 `connect` 方法可以完成这个任务。 此方法有 `mapStateToProps()`、`mapDispatchToProps()` 两个可选参数， 它们是可选的，原因是你的组件可能仅需要访问 `state` 但不需要分发任何 actions，反之亦然。
+你已經寫了`mapStateToProps()`、`mapDispatchToProps()` 兩個函數，現在可以用它們來把 `state` 和 `dispatch` 映射到 React 組件的 `props` 了。 React Redux 的 `connect` 方法可以完成這個任務。 此方法有 `mapStateToProps()`、`mapDispatchToProps()` 兩個可選參數， 它們是可選的，原因是你的組件可能僅需要訪問 `state` 但不需要分發任何 actions，反之亦然。
 
-为了使用此方法，需要传入函数参数并在调用时传入组件。 这种语法有些不寻常，如下所示：
+爲了使用此方法，需要傳入函數參數並在調用時傳入組件。 這種語法有些不尋常，如下所示：
 
 `connect(mapStateToProps, mapDispatchToProps)(MyComponent)`
 
-**注意：** 如果要省略 `connect` 方法中的某个参数，则应当用 `null` 替换这个参数。
+**注意：** 如果要省略 `connect` 方法中的某個參數，則應當用 `null` 替換這個參數。
 
 # --instructions--
 
-在编辑器上有两个函数：`mapStateToProps()`、`mapDispatchToProps()`，还有一个叫 `Presentational` 的 React 组件。 用 `ReactRedux` 全局对象中的 `connect` 方法将此组件连接到 Redux，并立即在 `Presentational` 组件中调用， 把结果赋值给一个名为 `ConnectedComponent` 的代表已连接组件的新 `const`。 大功告成，已成功把 React 连接到 Redux！ 尝试更改任何一个 `connect` 参数为 `null` 并观察测试结果。
+在編輯器上有兩個函數：`mapStateToProps()`、`mapDispatchToProps()`，還有一個叫 `Presentational` 的 React 組件。 用 `ReactRedux` 全局對象中的 `connect` 方法將此組件連接到 Redux，並立即在 `Presentational` 組件中調用， 把結果賦值給一個名爲 `ConnectedComponent` 的代表已連接組件的新 `const`。 大功告成，已成功把 React 連接到 Redux！ 嘗試更改任何一個 `connect` 參數爲 `null` 並觀察測試結果。
 
 # --hints--
 
-应渲染 `Presentational` 组件。
+應渲染 `Presentational` 組件。
 
 ```js
 assert(
@@ -33,7 +33,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应通过 `connect` 接收一个 `messages` 属性。
+`Presentational` 組件應通過 `connect` 接收一個 `messages` 屬性。
 
 ```js
 assert(
@@ -45,7 +45,7 @@ assert(
 );
 ```
 
-`Presentational` 组件应通过 `connect` 接收一个 `submitNewMessage` 属性。
+`Presentational` 組件應通過 `connect` 接收一個 `submitNewMessage` 屬性。
 
 ```js
 assert(

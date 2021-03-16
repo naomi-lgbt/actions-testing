@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aed908626
-title: 用多个 jQuery 选择器选择同一个元素
+title: 用多個 jQuery 選擇器選擇同一個元素
 challengeType: 6
 forumTopicId: 18322
 required:
@@ -11,41 +11,41 @@ dashedName: target-the-same-element-with-multiple-jquery-selectors
 
 # --description--
 
-现在学写了三种选取标签的方法：用标签选择器： `$("button")`，用类选择器：`$(".btn")` 以及用 id 选择器：`$("#target1")` 。
+現在學寫了三種選取標籤的方法：用標籤選擇器： `$("button")`，用類選擇器：`$(".btn")` 以及用 id 選擇器：`$("#target1")` 。
 
-虽然可以在单个 `.addClass()` 内添加多个类，但是我们可以用*三种不同的方式*给一种标签添加类。
+雖然可以在單個 `.addClass()` 內添加多個類，但是我們可以用*三種不同的方式*給一種標籤添加類。
 
-以三种不同的方式用 `.addClass()` 方法每次只给一种标签添加一个类：
+以三種不同的方式用 `.addClass()` 方法每次只給一種標籤添加一個類：
 
-给所有的 `button` 标签添加 `animated` 类。
+給所有的 `button` 標籤添加 `animated` 類。
 
-给所有类为 `.btn` 的 button 标签添加 `shake` 类。
+給所有類爲 `.btn` 的 button 標籤添加 `shake` 類。
 
-给所有 id 为 `#target1` 的 button 标签添加 `btn-primary` 类。
+給所有 id 爲 `#target1` 的 button 標籤添加 `btn-primary` 類。
 
-**注意：**只针对一个元素并且一次只能添加一个 class。 总之，三个选择器最终将添加三个 class `shake`、`animated` 以及 `btn-primary` 到 `#target1` 上。
+**注意：**只針對一個元素並且一次只能添加一個 class。 總之，三個選擇器最終將添加三個 class `shake`、`animated` 以及 `btn-primary` 到 `#target1` 上。
 
 # --hints--
 
-应该使用 `$("button")` 选择器。
+應該使用 `$("button")` 選擇器。
 
 ```js
 assert(code.match(/\$\s*?\(\s*?(?:'|")\s*?button\s*?(?:'|")/gi));
 ```
 
-应该使用 `$(".btn")` 选择器。
+應該使用 `$(".btn")` 選擇器。
 
 ```js
 assert(code.match(/\$\s*?\(\s*?(?:'|")\s*?\.btn\s*?(?:'|")/gi));
 ```
 
-应该使用 `$("#target1")` 选择器。
+應該使用 `$("#target1")` 選擇器。
 
 ```js
 assert(code.match(/\$\s*?\(\s*?(?:'|")\s*?#target1\s*?(?:'|")/gi));
 ```
 
-三个选择器每个应该只添加一个类。
+三個選擇器每個應該只添加一個類。
 
 ```js
 assert(
@@ -54,7 +54,7 @@ assert(
 );
 ```
 
-`#target1` 标签应具有 `animated`、`shake` 和 `btn-primary` 三个类。
+`#target1` 標籤應具有 `animated`、`shake` 和 `btn-primary` 三個類。
 
 ```js
 assert(
@@ -64,7 +64,7 @@ assert(
 );
 ```
 
-应该仅用 jQuery 给标签添加类。
+應該僅用 jQuery 給標籤添加類。
 
 ```js
 assert(!code.match(/class.*animated/g));

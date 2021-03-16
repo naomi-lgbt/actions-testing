@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aecb08826
-title: 使用 jQuery 修改整个页面
+title: 使用 jQuery 修改整個頁面
 challengeType: 6
 forumTopicId: 18361
 required:
@@ -11,17 +11,17 @@ dashedName: use-jquery-to-modify-the-entire-page
 
 # --description--
 
-目前，已经完成了 jQuery playground。 把它移除吧。
+目前，已經完成了 jQuery playground。 把它移除吧。
 
-jQuery 也能选取 `body` 标签。
+jQuery 也能選取 `body` 標籤。
 
-这是使整个 body 淡出的代码：`$("body").addClass("animated fadeOut");`
+這是使整個 body 淡出的代碼：`$("body").addClass("animated fadeOut");`
 
-来做一些更好玩的事。 给 `body` 标签添加 `animated` 和 `hinge` class。
+來做一些更好玩的事。 給 `body` 標籤添加 `animated` 和 `hinge` class。
 
 # --hints--
 
-应该给 `body` 标签添加 `animated` 和 `hinge` class。
+應該給 `body` 標籤添加 `animated` 和 `hinge` class。
 
 ```js
 assert($('body').hasClass('animated') && $('body').hasClass('hinge'));

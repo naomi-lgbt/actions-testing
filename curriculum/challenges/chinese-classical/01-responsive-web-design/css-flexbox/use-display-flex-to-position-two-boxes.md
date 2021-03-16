@@ -1,6 +1,6 @@
 ---
 id: 587d78ab367417b2b2512af0
-title: '使用 display: flex 定位两个盒子'
+title: '使用 display: flex 定位兩個盒子'
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/cgz3QS7'
 forumTopicId: 301105
@@ -9,17 +9,17 @@ dashedName: use-display-flex-to-position-two-boxes
 
 # --description--
 
-这节我们会使用不同的挑战方式来学习如何使用 CSS 更灵活地布局元素。 首先我们会通过一个挑战来解释原理，然后通过操作一个简单的推文组件来应用弹性盒子（flexbox）。
+這節我們會使用不同的挑戰方式來學習如何使用 CSS 更靈活地佈局元素。 首先我們會通過一個挑戰來解釋原理，然後通過操作一個簡單的推文組件來應用彈性盒子（flexbox）。
 
-只要在一个元素的 CSS 中添加 `display: flex;`，就可以使用其它 flex 属性来构建响应式页面了。
+只要在一個元素的 CSS 中添加 `display: flex;`，就可以使用其它 flex 屬性來構建響應式頁面了。
 
 # --instructions--
 
-请为 `#box-container` 添加 `display` 属性，并设置其属性值为 `flex`。
+請爲 `#box-container` 添加 `display` 屬性，並設置其屬性值爲 `flex`。
 
 # --hints--
 
-`#box-container` 应具有 `display`属性，其属性值应为 `flex`。
+`#box-container` 應具有 `display`屬性，其屬性值應爲 `flex`。
 
 ```js
 assert($('#box-container').css('display') == 'flex');

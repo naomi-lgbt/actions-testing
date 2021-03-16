@@ -8,11 +8,11 @@ dashedName: specify-only-the-lower-number-of-matches
 
 # --description--
 
-可以使用带有花括号的数量说明符来指定匹配模式的上下限。 但有时候只想指定匹配模式的下限而不需要指定上限。
+可以使用帶有花括號的數量說明符來指定匹配模式的上下限。 但有時候只想指定匹配模式的下限而不需要指定上限。
 
-为此，在第一个数字后面跟一个逗号即可。
+爲此，在第一個數字後面跟一個逗號即可。
 
-例如，要匹配至少出现 `3` 次字母 `a` 的字符串 `hah`，正则表达式应该是 `/ha{3,}h/`。
+例如，要匹配至少出現 `3` 次字母 `a` 的字符串 `hah`，正則表達式應該是 `/ha{3,}h/`。
 
 ```js
 let A4 = "haaaah";
@@ -24,51 +24,51 @@ multipleA.test(A2);
 multipleA.test(A100);
 ```
 
-按顺序排列，三次 `test` 调用将返回值 `true`，`false` 和 `true`。
+按順序排列，三次 `test` 調用將返回值 `true`，`false` 和 `true`。
 
 # --instructions--
 
-修改正则表达式 `haRegex`，匹配包含四个或更多字母 `z` 的单词 `Hazzah`。
+修改正則表達式 `haRegex`，匹配包含四個或更多字母 `z` 的單詞 `Hazzah`。
 
 # --hints--
 
-你的正则表达式应该使用花括号。
+你的正則表達式應該使用花括號。
 
 ```js
 assert(haRegex.source.match(/{.*?}/).length > 0);
 ```
 
-你的正则表达式不应匹配字符串 `Hazzah`
+你的正則表達式不應匹配字符串 `Hazzah`
 
 ```js
 assert(!haRegex.test('Hazzah'));
 ```
 
-你的正则表达式不应匹配字符串 `Hazzzah`
+你的正則表達式不應匹配字符串 `Hazzzah`
 
 ```js
 assert(!haRegex.test('Hazzzah'));
 ```
 
-你的正则表达式应该匹配字符串 `Hazzzzah`
+你的正則表達式應該匹配字符串 `Hazzzzah`
 
 ```js
 assert('Hazzzzah'.match(haRegex)[0].length === 8);
 ```
 
-你的正则表达式应该匹配字符串 `Hazzzzzah`
+你的正則表達式應該匹配字符串 `Hazzzzzah`
 
 ```js
 assert('Hazzzzzah'.match(haRegex)[0].length === 9);
 ```
 
-你的正则表达式应该匹配字符串 `Hazzzzzzah`
+你的正則表達式應該匹配字符串 `Hazzzzzzah`
 
 ```js
 assert('Hazzzzzzah'.match(haRegex)[0].length === 10);
 ```
 
-你的正则表达式应该匹配包含 30 个字母 `z` 的 `Hazzah`。
+你的正則表達式應該匹配包含 30 個字母 `z` 的 `Hazzah`。
 
 ```js
 assert('Hazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzah'.match(haRegex)[0].length === 34);

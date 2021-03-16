@@ -8,9 +8,9 @@ dashedName: match-ending-string-patterns
 
 # --description--
 
-在上一个挑战中，学习了使用脱字符号来搜寻字符串的开始位置。 还有一种方法可以搜寻字符串末尾的匹配模式。
+在上一個挑戰中，學習了使用脫字符號來搜尋字符串的開始位置。 還有一種方法可以搜尋字符串末尾的匹配模式。
 
-可以使用正则表达式的美元符号 `$` 来搜寻字符串的结尾。
+可以使用正則表達式的美元符號 `$` 來搜尋字符串的結尾。
 
 ```js
 let theEnding = "This is a never ending story";
@@ -20,27 +20,27 @@ let noEnding = "Sometimes a story will have to end";
 storyRegex.test(noEnding);
 ```
 
-第一次 `test` 调用将返回 `true`, 而第二次调用将返回 `false`。
+第一次 `test` 調用將返回 `true`, 而第二次調用將返回 `false`。
 
 # --instructions--
 
-使用锚点字符 `$` 来匹配字符串 `caboose` 在字符串末尾 `caboose`。
+使用錨點字符 `$` 來匹配字符串 `caboose` 在字符串末尾 `caboose`。
 
 # --hints--
 
-你应该在正则表达式使用美元符号 `$` 来搜寻 `caboose`。
+你應該在正則表達式使用美元符號 `$` 來搜尋 `caboose`。
 
 ```js
 assert(lastRegex.source == 'caboose$');
 ```
 
-你的正则表达式不应该使用任何标志。
+你的正則表達式不應該使用任何標誌。
 
 ```js
 assert(lastRegex.flags == '');
 ```
 
-你应该在字符串 `The last car on a train is the caboose` 的末尾匹配 `caboose`。
+你應該在字符串 `The last car on a train is the caboose` 的末尾匹配 `caboose`。
 
 ```js
 assert(lastRegex.test('The last car on a train is the caboose'));

@@ -1,6 +1,6 @@
 ---
 id: 5a9d726c424fe3d0e10cad11
-title: 创建一个自定义的 CSS 变量
+title: 創建一個自定義的 CSS 變量
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cQd27Hr'
 forumTopicId: 301086
@@ -9,21 +9,21 @@ dashedName: create-a-custom-css-variable
 
 # --description--
 
-为创建一个 CSS 变量，你只需要在变量名前添加两个连字符号，并为其赋值即可，例子如下：
+爲創建一個 CSS 變量，你只需要在變量名前添加兩個連字符號，併爲其賦值即可，例子如下：
 
 ```css
 --penguin-skin: gray;
 ```
 
-这样就会创建一个 `--penguin-skin` 变量，它的值为 `gray`。 现在，其他元素可通过该变量来使元素变成灰色。
+這樣就會創建一個 `--penguin-skin` 變量，它的值爲 `gray`。 現在，其他元素可通過該變量來使元素變成灰色。
 
 # --instructions--
 
-在 `penguin` class 里面，创建一个 `--penguin-skin` 变量，并将其值设置为 `gray`。
+在 `penguin` class 裏面，創建一個 `--penguin-skin` 變量，並將其值設置爲 `gray`。
 
 # --hints--
 
-应在 `penguin` class 里声明 `--penguin-skin` 变量，且赋值为 `gray`。
+應在 `penguin` class 裏聲明 `--penguin-skin` 變量，且賦值爲 `gray`。
 
 ```js
 assert(

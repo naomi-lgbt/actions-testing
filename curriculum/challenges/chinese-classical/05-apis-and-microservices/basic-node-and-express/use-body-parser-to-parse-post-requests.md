@@ -1,6 +1,6 @@
 ---
 id: 587d7fb2367417b2b2512bf7
-title: 使用 body-parser 来解析 POST 请求
+title: 使用 body-parser 來解析 POST 請求
 challengeType: 2
 forumTopicId: 301520
 dashedName: use-body-parser-to-parse-post-requests
@@ -8,9 +8,9 @@ dashedName: use-body-parser-to-parse-post-requests
 
 # --description--
 
-除了 GET 还有另一个常见的 HTTP 动词，即 POST。 POST 是使用 HTML 表单发送客户端数据的默认方法。 在 REST 规范中，POST 常用于发送数据以在数据库中创建新项目（新用户或新博客文章）。 在这个项目中没有使用数据库，但下面将学习如何处理 POST 请求。
+除了 GET 還有另一個常見的 HTTP 動詞，即 POST。 POST 是使用 HTML 表單發送客戶端數據的默認方法。 在 REST 規範中，POST 常用於發送數據以在數據庫中創建新項目（新用戶或新博客文章）。 在這個項目中沒有使用數據庫，但下面將學習如何處理 POST 請求。
 
-在这些类型的请求中，数据不会出现在 URL 中，而是隐藏在请求正文中。 请求正文也是 HTML 请求的一部分，被称为负载。 即使数据在 URL 中是不可见的，也不意味着它是私有的。 要了解原因，请观察 HTTP POST 请求的原始内容：
+在這些類型的請求中，數據不會出現在 URL 中，而是隱藏在請求正文中。 請求正文也是 HTML 請求的一部分，被稱爲負載。 即使數據在 URL 中是不可見的，也不意味着它是私有的。 要了解原因，請觀察 HTTP POST 請求的原始內容：
 
 ```http
 POST /path/subpath HTTP/1.0
@@ -22,17 +22,17 @@ Content-Length: 20
 name=John+Doe&age=25
 ```
 
-正如你所看到的，正文被编码成类似查询字符串的形式， 这是 HTML 表单使用的默认格式。 我们还可以通过 Ajax 使用 JSON 来处理具有更复杂结构的数据。 还有另一种类型的编码：multipart/form-data， 它被用来上传二进制文件。 在本练习中，我们将使用 URL 编码请求正文。 要解析来自 POST 请求的数据，你必须安装 `body-parser` 包， 这个包包含一套可以解码不同格式数据的中间件。
+正如你所看到的，正文被編碼成類似查詢字符串的形式， 這是 HTML 表單使用的默認格式。 我們還可以通過 Ajax 使用 JSON 來處理具有更復雜結構的數據。 還有另一種類型的編碼：multipart/form-data， 它被用來上傳二進制文件。 在本練習中，我們將使用 URL 編碼請求正文。 要解析來自 POST 請求的數據，你必須安裝 `body-parser` 包， 這個包包含一套可以解碼不同格式數據的中間件。
 
 # --instructions--
 
-在 `package.json` 中安装 `body-parser` 模块， 然后在文件顶部 `require` 进来， 用变量 `bodyParser` 保存它。 通过中间件的 `bodyParser.urlencoded({extended: false})` 方法处理 URL 编码数据， 将调用上个方法返回的函数传给 `app.use()`， 中间件通常挂载在所有需要它的路由之前。
+在 `package.json` 中安裝 `body-parser` 模塊， 然後在文件頂部 `require` 進來， 用變量 `bodyParser` 保存它。 通過中間件的 `bodyParser.urlencoded({extended: false})` 方法處理 URL 編碼數據， 將調用上個方法返回的函數傳給 `app.use()`， 中間件通常掛載在所有需要它的路由之前。
 
-**注意：**`extended=false` 是一个告诉解析器使用经典编码的配置选项， 当使用它时，值只能是字符串或者数组， 拓展版本数据更加灵活，但稍逊于 JSON。
+**注意：**`extended=false` 是一個告訴解析器使用經典編碼的配置選項， 當使用它時，值只能是字符串或者數組， 拓展版本數據更加靈活，但稍遜於 JSON。
 
 # --hints--
 
-应该挂载“body-parser”中间件
+應該掛載“body-parser”中間件
 
 ```js
 (getUserInput) =>

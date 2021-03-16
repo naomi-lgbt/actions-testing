@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08726
-title: 使用十六进制编码获得指定颜色
+title: 使用十六進制編碼獲得指定顏色
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c8W9mHM'
 forumTopicId: 18350
@@ -9,11 +9,11 @@ dashedName: use-hex-code-for-specific-colors
 
 # --description--
 
-你知道在 CSS 里面还有其他方式来代表颜色吗？ 其中一个方法叫十六进制编码，简称 hex。
+你知道在 CSS 裏面還有其他方式來代表顏色嗎？ 其中一個方法叫十六進制編碼，簡稱 hex。
 
-日常生活中，我们使用的计数方法一般是 <dfn>decimals</dfn>，或十进制，即使用数字 0 到 9 来表示。 而 <dfn>Hexadecimals</dfn>（或 <dfn>hex</dfn>）基于 16 位数字， 它包括 16 种不同字符。 像十进制一样，0-9 的符号代表 0 到 9 的值。 然后，A、B、C、D、E、F 代表 10 至 15 的值。 总的来说，0 到 F 在十六进制里代表数字，总共有 16 个值。 你可以在这里访问更多[关于十六进制的信息](https://en.wikipedia.org/wiki/Hexadecimal)。
+日常生活中，我們使用的計數方法一般是 <dfn>decimals</dfn>，或十進制，即使用數字 0 到 9 來表示。 而 <dfn>Hexadecimals</dfn>（或 <dfn>hex</dfn>）基於 16 位數字， 它包括 16 種不同字符。 像十進制一樣，0-9 的符號代表 0 到 9 的值。 然後，A、B、C、D、E、F 代表 10 至 15 的值。 總的來說，0 到 F 在十六進制裏代表數字，總共有 16 個值。 你可以在這裏訪問更多[關於十六進制的信息](https://en.wikipedia.org/wiki/Hexadecimal)。
 
-在 CSS 里面，我们可以使用 6 个十六进制的数字来代表颜色，每两个数字控制一种颜色，分别是红（R）、绿（G）、蓝（B）。 例如，`#000000` 代表黑色，同时也是最小的值。 你可以在 [RGB color system here](https://en.wikipedia.org/wiki/RGB_color_model) 找到更多的相关信息。
+在 CSS 裏面，我們可以使用 6 個十六進制的數字來代表顏色，每兩個數字控制一種顏色，分別是紅（R）、綠（G）、藍（B）。 例如，`#000000` 代表黑色，同時也是最小的值。 你可以在 [RGB color system here](https://en.wikipedia.org/wiki/RGB_color_model) 找到更多的相關信息。
 
 ```css
 body {
@@ -23,17 +23,17 @@ body {
 
 # --instructions--
 
-将 `body` 元素的背景颜色由 `black` 改为它对应的十六进制编码 `#000000`。
+將 `body` 元素的背景顏色由 `black` 改爲它對應的十六進制編碼 `#000000`。
 
 # --hints--
 
-`body` 元素的背景颜色应为黑色。
+`body` 元素的背景顏色應爲黑色。
 
 ```js
 assert($('body').css('background-color') === 'rgb(0, 0, 0)');
 ```
 
-应使用 `hex code` 来替换 `black`。
+應使用 `hex code` 來替換 `black`。
 
 ```js
 assert(

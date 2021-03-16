@@ -1,6 +1,6 @@
 ---
 id: 587d7dae367417b2b2512b7c
-title: 使用原型属性来减少重复代码
+title: 使用原型屬性來減少重複代碼
 challengeType: 1
 forumTopicId: 301336
 dashedName: use-prototype-properties-to-reduce-duplicate-code
@@ -8,44 +8,44 @@ dashedName: use-prototype-properties-to-reduce-duplicate-code
 
 # --description--
 
-所有 `Bird` 实例可能会有相同的 `numLegs` 值，所以在每一个 `Bird` 的实例中本质上都有一个重复的变量 `numLegs`。
+所有 `Bird` 實例可能會有相同的 `numLegs` 值，所以在每一個 `Bird` 的實例中本質上都有一個重複的變量 `numLegs`。
 
-当只有两个实例时可能并不是什么问题，但想象一下如果有数百万个实例。 这将会产生许许多多重复的变量。
+當只有兩個實例時可能並不是什麼問題，但想象一下如果有數百萬個實例。 這將會產生許許多多重複的變量。
 
-这里有一个更好的方法可以解决上述问题，那就是使用 `Bird’s` 的 `prototype`。 `prototype` 是一个可以在所有 `Bird` 实例之间共享的对象。 以下是一个在 `Bird prototype` 中添加 `numLegs` 属性的示例：
+這裏有一個更好的方法可以解決上述問題，那就是使用 `Bird’s` 的 `prototype`。 `prototype` 是一個可以在所有 `Bird` 實例之間共享的對象。 以下是一個在 `Bird prototype` 中添加 `numLegs` 屬性的示例：
 
 ```js
 Bird.prototype.numLegs = 2;
 ```
 
-现在所有的 `Bird` 实例都拥有了共同的 `numLegs` 属性值。
+現在所有的 `Bird` 實例都擁有了共同的 `numLegs` 屬性值。
 
 ```js
 console.log(duck.numLegs);
 console.log(canary.numLegs);
 ```
 
-由于所有的实例都可以继承 `prototype` 上的属性，所以可以把 `prototype` 看作是创建对象的 "配方"。 请注意：`duck` 和 `canary` 的 `prototype` 属于 `Bird` 的构造函数，即 Bird 的原型 `Bird.prototype`。 JavaScript 中几乎所有的对象都有一个 `prototype` 属性，这个属性是属于它所在的构造函数。
+由於所有的實例都可以繼承 `prototype` 上的屬性，所以可以把 `prototype` 看作是創建對象的 "配方"。 請注意：`duck` 和 `canary` 的 `prototype` 屬於 `Bird` 的構造函數，即 Bird 的原型 `Bird.prototype`。 JavaScript 中幾乎所有的對象都有一個 `prototype` 屬性，這個屬性是屬於它所在的構造函數。
 
 # --instructions--
 
-给 `Dog` 的 `prototype` 添加一个 `numLegs` 属性。
+給 `Dog` 的 `prototype` 添加一個 `numLegs` 屬性。
 
 # --hints--
 
-`beagle` 应该有一个 `numLegs` 属性。
+`beagle` 應該有一個 `numLegs` 屬性。
 
 ```js
 assert(beagle.numLegs !== undefined);
 ```
 
-`beagle.numLegs` 应该是一个数字。
+`beagle.numLegs` 應該是一個數字。
 
 ```js
 assert(typeof beagle.numLegs === 'number');
 ```
 
-`numLegs` 应该是一个 `prototype` 属性而不是一个 `own` 属性。
+`numLegs` 應該是一個 `prototype` 屬性而不是一個 `own` 屬性。
 
 ```js
 assert(beagle.hasOwnProperty('numLegs') === false);

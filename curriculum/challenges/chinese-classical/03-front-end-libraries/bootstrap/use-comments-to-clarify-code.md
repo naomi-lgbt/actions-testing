@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aec908857
-title: 使用注释来说明代码
+title: 使用註釋來說明代碼
 challengeType: 0
 forumTopicId: 18347
 dashedName: use-comments-to-clarify-code
@@ -8,35 +8,35 @@ dashedName: use-comments-to-clarify-code
 
 # --description--
 
-使用 jQuery 时，修改 HTML 元素时并不需要直接修改 HTML 代码。
+使用 jQuery 時，修改 HTML 元素時並不需要直接修改 HTML 代碼。
 
-必须确保让每个人都知道不应该直接修改此页面上的这些代码。
+必須確保讓每個人都知道不應該直接修改此頁面上的這些代碼。
 
-记住，可以在 `<!--` 为开始，`-->` 为结束的地方进行评论注释。
+記住，可以在 `<!--` 爲開始，`-->` 爲結束的地方進行評論註釋。
 
-请你在 HTML 顶部加如下一段注释： `Code below this line should not be changed` 。
+請你在 HTML 頂部加如下一段註釋： `Code below this line should not be changed` 。
 
 # --hints--
 
-应该在 HTML 顶部增加此代码 `<!--` 以开始注释。
+應該在 HTML 頂部增加此代碼 `<!--` 以開始註釋。
 
 ```js
 assert(code.match(/^\s*<!--/));
 ```
 
-注释内容应该为 `Code below this line should not be changed`。
+註釋內容應該爲 `Code below this line should not be changed`。
 
 ```js
 assert(code.match(/<!--(?!(>|->|.*-->.*this line))\s*.*this line.*\s*-->/gi));
 ```
 
-注释应该用 `-->` 进行闭合。
+註釋應該用 `-->` 進行閉合。
 
 ```js
 assert(code.match(/-->.*\n+.+/g));
 ```
 
-注意，注释的开始标签和闭合标签数量应该一一对应，保持数量一致。
+注意，註釋的開始標籤和閉合標籤數量應該一一對應，保持數量一致。
 
 ```js
 assert(code.match(/<!--/g).length === code.match(/-->/g).length);

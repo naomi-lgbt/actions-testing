@@ -8,27 +8,27 @@ dashedName: add-classes-with-d3
 
 # --description--
 
-即使对小型 app 来说，在 HTML 元素中大量使用内联样式也十分难以管理。 给元素添加类，并使用 CSS 规则给类添加样式会更加方便。 D3 中的 `attr()` 方法可以给元素添加任何 HTML 属性，包括 class 名称。
+即使對小型 app 來說，在 HTML 元素中大量使用內聯樣式也十分難以管理。 給元素添加類，並使用 CSS 規則給類添加樣式會更加方便。 D3 中的 `attr()` 方法可以給元素添加任何 HTML 屬性，包括 class 名稱。
 
-`attr()` 方法和 `style()` 的使用方法一样。 它使用逗号分隔值，并且可以使用回调函数。 下面是给选中元素添加 `container` class 的例子：
+`attr()` 方法和 `style()` 的使用方法一樣。 它使用逗號分隔值，並且可以使用回調函數。 下面是給選中元素添加 `container` class 的例子：
 
 `selection.attr("class", "container");`
 
-请注意，当你需要添加 class 时，`class` 参数保持不变，只有 `container` 参数会发生变化。
+請注意，當你需要添加 class 時，`class` 參數保持不變，只有 `container` 參數會發生變化。
 
 # --instructions--
 
-将 `attr()` 方法添加到编辑器的代码中，并在 `div` 元素上添加一个 `bar` 类。
+將 `attr()` 方法添加到編輯器的代碼中，並在 `div` 元素上添加一個 `bar` 類。
 
 # --hints--
 
-`div` 元素应该有值为 `bar` 的类。
+`div` 元素應該有值爲 `bar` 的類。
 
 ```js
 assert($('div').attr('class') == 'bar');
 ```
 
-你应该使用 `attr()` 方法。
+你應該使用 `attr()` 方法。
 
 ```js
 assert(code.match(/\.attr/g));

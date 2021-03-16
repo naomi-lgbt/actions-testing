@@ -1,6 +1,6 @@
 ---
 id: 587d7faf367417b2b2512be9
-title: 使用 XMLHttpRequest 方法发送数据
+title: 使用 XMLHttpRequest 方法發送數據
 challengeType: 6
 forumTopicId: 301504
 dashedName: post-data-with-the-javascript-xmlhttprequest-method
@@ -8,9 +8,9 @@ dashedName: post-data-with-the-javascript-xmlhttprequest-method
 
 # --description--
 
-在前面的示例中，你通过外部资源获取数据。 此外，你也可以将数据发送到外部资源，只要该资源支持 AJAX 请求并且你知道 URL。
+在前面的示例中，你通過外部資源獲取數據。 此外，你也可以將數據發送到外部資源，只要該資源支持 AJAX 請求並且你知道 URL。
 
-JavaScript 的`XMLHttpRequest`方法也用于将数据发布到服务器。 这是一个示例：
+JavaScript 的`XMLHttpRequest`方法也用於將數據發佈到服務器。 這是一個示例：
 
 ```js
 const xhr = new XMLHttpRequest();
@@ -26,27 +26,27 @@ const body = JSON.stringify({ userName: userName, suffix: ' loves cats!' });
 xhr.send(body);
 ```
 
-你之前已经见过这些方法。 `open` 方法将对外部资源的给定 URL 的请求初始化为 `POST`，并使用 `true` 布尔值使其变成异步的。 `setRequestHeader` 方法设置了 HTTP 请求标头的值，该标头包含有关发送人和请求的信息。 它必须在 `open` 方法之后、`send` 方法之前调用。 它的两个参数表示标头的内容类型和标头数据将被设置成什么值。 接下来，`onreadystatechange` 事件监听器监听请求状态的更改。 `readyState` 为 `4`，表示操作已完成。`status` 为 `201`，表示请求成功。 文档的 HTML 可以更新。 最后，`send` 方法发送带有 `body` 值的请求，其中 `userName` 的值由用户在 `input` 字段中输入。
+你之前已經見過這些方法。 `open` 方法將對外部資源的給定 URL 的請求初始化爲 `POST`，並使用 `true` 布爾值使其變成異步的。 `setRequestHeader` 方法設置了 HTTP 請求標頭的值，該標頭包含有關發送人和請求的信息。 它必須在 `open` 方法之後、`send` 方法之前調用。 它的兩個參數表示標頭的內容類型和標頭數據將被設置成什麼值。 接下來，`onreadystatechange` 事件監聽器監聽請求狀態的更改。 `readyState` 爲 `4`，表示操作已完成。`status` 爲 `201`，表示請求成功。 文檔的 HTML 可以更新。 最後，`send` 方法發送帶有 `body` 值的請求，其中 `userName` 的值由用戶在 `input` 字段中輸入。
 
 # --instructions--
 
-更新代码，创建并向 API 发送 `POST` 请求。 然后在输入框中输入你的姓名，并点击 `Send Message`。 你的 AJAX 函数会用服务器返回的数据替换 `Reply from Server will be here.`。 修改返回的请求结果，在你的名字后面添加 `loves cats`。
+更新代碼，創建並向 API 發送 `POST` 請求。 然後在輸入框中輸入你的姓名，並點擊 `Send Message`。 你的 AJAX 函數會用服務器返回的數據替換 `Reply from Server will be here.`。 修改返回的請求結果，在你的名字後面添加 `loves cats`。
 
 # --hints--
 
-应该创建一个新的 `XMLHttpRequest`。
+應該創建一個新的 `XMLHttpRequest`。
 
 ```js
 assert(code.match(/new\s+?XMLHttpRequest\(\s*?\)/g));
 ```
 
-应该使用 `open` 方法初始化一个发送给服务器的 `POST` 请求。
+應該使用 `open` 方法初始化一個發送給服務器的 `POST` 請求。
 
 ```js
 assert(code.match(/\.open\(\s*?('|")POST\1\s*?,\s*?url\s*?,\s*?true\s*?\)/g));
 ```
 
-应该使用 `setRequestHeader` 方法。
+應該使用 `setRequestHeader` 方法。
 
 ```js
 assert(
@@ -56,13 +56,13 @@ assert(
 );
 ```
 
-应该有一个 `onreadystatechange` 的事件监听器。
+應該有一個 `onreadystatechange` 的事件監聽器。
 
 ```js
 assert(code.match(/\.onreadystatechange\s*?=/g));
 ```
 
-应该获取 class 为 `message` 的元素，并将它的 `textContent` 更改为 `userName loves cats`。
+應該獲取 class 爲 `message` 的元素，並將它的 `textContent` 更改爲 `userName loves cats`。
 
 ```js
 assert(
@@ -72,7 +72,7 @@ assert(
 );
 ```
 
-应该使用 `send` 方法。
+應該使用 `send` 方法。
 
 ```js
 assert(code.match(/\.send\(\s*?body\s*?\)/g));

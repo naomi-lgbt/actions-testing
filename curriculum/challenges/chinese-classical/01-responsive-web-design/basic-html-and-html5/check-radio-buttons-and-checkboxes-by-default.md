@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedd08835
-title: 给单选按钮和复选框添加默认选中项
+title: 給單選按鈕和複選框添加默認選中項
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cWk3Qh6'
 forumTopicId: 301094
@@ -9,25 +9,25 @@ dashedName: check-radio-buttons-and-checkboxes-by-default
 
 # --description--
 
-用 `checked` 属性把第一个复选框和单选按钮都设置为默认选中。
+用 `checked` 屬性把第一個複選框和單選按鈕都設置爲默認選中。
 
-在一个 input 元素里面添加 `checked` 这个词，即可实现。 例如:
+在一個 input 元素裏面添加 `checked` 這個詞，即可實現。 例如:
 
 `<input type="radio" name="test-name" checked>`
 
 # --instructions--
 
-把第一个单选按钮和第一个复选框都设置为默认选中。
+把第一個單選按鈕和第一個複選框都設置爲默認選中。
 
 # --hints--
 
-表单的第一个多选按钮应被默认选中。
+表單的第一個多選按鈕應被默認選中。
 
 ```js
 assert($('input[type="radio"]').prop('checked'));
 ```
 
-表单的第一个复选框应被默认选中。
+表單的第一個複選框應被默認選中。
 
 ```js
 assert($('input[type="checkbox"]').prop('checked'));

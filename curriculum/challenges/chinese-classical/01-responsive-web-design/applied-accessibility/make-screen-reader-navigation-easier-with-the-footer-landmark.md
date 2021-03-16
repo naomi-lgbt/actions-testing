@@ -1,6 +1,6 @@
 ---
 id: 587d7788367417b2b2512aa3
-title: 使用 footer 元素来让屏幕阅读器更容易进行导航
+title: 使用 footer 元素來讓屏幕閱讀器更容易進行導航
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/crVrDh8'
 forumTopicId: 301022
@@ -9,27 +9,27 @@ dashedName: make-screen-reader-navigation-easier-with-the-footer-landmark
 
 # --description--
 
-与 `header` 和 `nav` 类似，`footer` 元素也具有语义化的特性，可以让辅助工具快速定位到它。 它位于页面底部，用于呈现版权信息或者相关文档链接。
+與 `header` 和 `nav` 類似，`footer` 元素也具有語義化的特性，可以讓輔助工具快速定位到它。 它位於頁面底部，用於呈現版權信息或者相關文檔鏈接。
 
 # --instructions--
 
-Camper Cat 的忍者训练页面进展顺利。 请将他在页面底部呈现版权信息的 `div` 元素更改为 `footer` 元素。
+Camper Cat 的忍者訓練頁面進展順利。 請將他在頁面底部呈現版權信息的 `div` 元素更改爲 `footer` 元素。
 
 # --hints--
 
-应存在一个 `footer` 标签。
+應存在一個 `footer` 標籤。
 
 ```js
 assert($('footer').length == 1);
 ```
 
-不应存在 `div` 标签。
+不應存在 `div` 標籤。
 
 ```js
 assert($('div').length == 0);
 ```
 
-确保 `footer` 元素有结束标签。
+確保 `footer` 元素有結束標籤。
 
 ```js
 assert(code.match(/<footer>\s*&copy; 2018 Camper Cat\s*<\/footer>/g));

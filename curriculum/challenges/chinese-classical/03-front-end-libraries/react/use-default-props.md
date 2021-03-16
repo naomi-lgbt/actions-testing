@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403616b
-title: 使用默认的 Props
+title: 使用默認的 Props
 challengeType: 6
 forumTopicId: 301418
 dashedName: use-default-props
@@ -8,15 +8,15 @@ dashedName: use-default-props
 
 # --description--
 
-React 还有一个设置默认 props 的选项。 可以将默认 props 作为组件本身的属性分配给组件，React 会在必要时分配默认 prop。 如果没有显式的提供任何值，这允许指定 prop 值应该是什么。 例如，如果声明 `MyComponent.defaultProps = { location: 'San Francisco' }`，即定义一个 location 属性，并且其值在没有另行制定的情况下被设置为字符串 `San Francisco`。 如果 props 未定义，则 React 会分配默认 props，但如果你将 `null` 作为 prop 的值，它将保持 `null`。
+React 還有一個設置默認 props 的選項。 可以將默認 props 作爲組件本身的屬性分配給組件，React 會在必要時分配默認 prop。 如果沒有顯式的提供任何值，這允許指定 prop 值應該是什麼。 例如，如果聲明 `MyComponent.defaultProps = { location: 'San Francisco' }`，即定義一個 location 屬性，並且其值在沒有另行制定的情況下被設置爲字符串 `San Francisco`。 如果 props 未定義，則 React 會分配默認 props，但如果你將 `null` 作爲 prop 的值，它將保持 `null`。
 
 # --instructions--
 
-代码编辑器中有一个 `ShoppingCart` 组件。 在这个组件上定义默认 props，它指定一个 `items` prop，其值为 `0`。
+代碼編輯器中有一個 `ShoppingCart` 組件。 在這個組件上定義默認 props，它指定一個 `items` prop，其值爲 `0`。
 
 # --hints--
 
-应该渲染 `ShoppingCart` 组件。
+應該渲染 `ShoppingCart` 組件。
 
 ```js
 assert(
@@ -27,7 +27,7 @@ assert(
 );
 ```
 
-`ShoppingCart` 组件应该有一个 `{ items: 0 }` 的默认 prop。
+`ShoppingCart` 組件應該有一個 `{ items: 0 }` 的默認 prop。
 
 ```js
 assert(

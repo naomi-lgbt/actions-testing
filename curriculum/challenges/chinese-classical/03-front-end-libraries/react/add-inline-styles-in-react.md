@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036182
-title: 在 React 中添加内联样式
+title: 在 React 中添加內聯樣式
 challengeType: 6
 forumTopicId: 301378
 dashedName: add-inline-styles-in-react
@@ -8,41 +8,41 @@ dashedName: add-inline-styles-in-react
 
 # --description--
 
-在上一次挑战中，你可能已经注意到，除了设置为 JavaScript 对象的 `style` 属性之外，与 HTML 内联样式相比，React 的内联样式还有其他几个语法差异。 首先，某些 CSS 样式属性的名称使用驼峰式命名。 例如，最后一个挑战用 `fontSize` 而不是 `font-size` 来设置字体的大小。 对于 JavaScript 对象属性来说，像 `font-size` 这样的连字符命名是无效的语法，所以 React 使用驼峰式命名。 通常，任何连字符的 style 属性在 JSX 中都是使用驼峰式命名的。
+在上一次挑戰中，你可能已經注意到，除了設置爲 JavaScript 對象的 `style` 屬性之外，與 HTML 內聯樣式相比，React 的內聯樣式還有其他幾個語法差異。 首先，某些 CSS 樣式屬性的名稱使用駝峯式命名。 例如，最後一個挑戰用 `fontSize` 而不是 `font-size` 來設置字體的大小。 對於 JavaScript 對象屬性來說，像 `font-size` 這樣的連字符命名是無效的語法，所以 React 使用駝峯式命名。 通常，任何連字符的 style 屬性在 JSX 中都是使用駝峯式命名的。
 
-除非另有规定，否则所有属性值的 length（如`height`、`width` 和 `fontSize`）其单位都假定为 `px`。 例如，如果要使用 `em`，可以用引号将值和单位括起来，例如 `{fontSize: "4em"}`。 除了默认为 `px` 的 length 值之外，所有其他属性值都应该用引号括起来。
+除非另有規定，否則所有屬性值的 length（如`height`、`width` 和 `fontSize`）其單位都假定爲 `px`。 例如，如果要使用 `em`，可以用引號將值和單位括起來，例如 `{fontSize: "4em"}`。 除了默認爲 `px` 的 length 值之外，所有其他屬性值都應該用引號括起來。
 
 # --instructions--
 
-如果你有大量样式，你可以将样式 `object`（对象）分配给一个常量，以保持代码的组织有序。 定义一个 `styles` 常量，并将其声明为具有三个样式属性及对应值的 `object`（对象）。 使 `div` 的文字颜色为 `purple`、字号为 `40`、边框为 `2px solid purple`。 然后设置 `style` 属性，使其等于 `styles` 常量。
+如果你有大量樣式，你可以將樣式 `object`（對象）分配給一個常量，以保持代碼的組織有序。 定義一個 `styles` 常量，並將其聲明爲具有三個樣式屬性及對應值的 `object`（對象）。 使 `div` 的文字顏色爲 `purple`、字號爲 `40`、邊框爲 `2px solid purple`。 然後設置 `style` 屬性，使其等於 `styles` 常量。
 
 # --hints--
 
-`styles` 变量应该是具有三个属性的 `object`（对象）。
+`styles` 變量應該是具有三個屬性的 `object`（對象）。
 
 ```js
 assert(Object.keys(styles).length === 3);
 ```
 
-`styles` 变量的 `color` 属性应该设置为 `purple`。
+`styles` 變量的 `color` 屬性應該設置爲 `purple`。
 
 ```js
 assert(styles.color === 'purple');
 ```
 
-`styles` 变量应该将 `fontSize` 属性设置为 `40`。
+`styles` 變量應該將 `fontSize` 屬性設置爲 `40`。
 
 ```js
 assert(styles.fontSize === 40);
 ```
 
-`styles` 变量的 `border` 属性应该设置为 `2px solid purple`。
+`styles` 變量的 `border` 屬性應該設置爲 `2px solid purple`。
 
 ```js
 assert(styles.border === '2px solid purple');
 ```
 
-组件应该渲染一个 `div` 元素。
+組件應該渲染一個 `div` 元素。
 
 ```js
 assert(
@@ -53,7 +53,7 @@ assert(
 );
 ```
 
-`div` 元素的样式应该由 `styles` 对象定义。
+`div` 元素的樣式應該由 `styles` 對象定義。
 
 ```js
 assert(

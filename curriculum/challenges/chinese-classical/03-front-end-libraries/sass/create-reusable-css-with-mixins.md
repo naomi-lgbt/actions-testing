@@ -1,6 +1,6 @@
 ---
 id: 587d7dbd367417b2b2512bb6
-title: 用 Mixins 创建可重用 CSS
+title: 用 Mixins 創建可重用 CSS
 challengeType: 0
 forumTopicId: 301455
 dashedName: create-reusable-css-with-mixins
@@ -8,9 +8,9 @@ dashedName: create-reusable-css-with-mixins
 
 # --description--
 
-在 Sass 中，<dfn>mixin</dfn> 是一组 CSS 声明，可以在整个样式表中重复使用。
+在 Sass 中，<dfn>mixin</dfn> 是一組 CSS 聲明，可以在整個樣式表中重複使用。
 
-CSS 的新功能需要一段时间适配后，所有浏览器后才能完全使用。 随着浏览器的不断升级，使用这些 CSS 规则时可能需要添加浏览器前缀。 考虑 `box-shadow`：
+CSS 的新功能需要一段時間適配後，所有瀏覽器後才能完全使用。 隨着瀏覽器的不斷升級，使用這些 CSS 規則時可能需要添加瀏覽器前綴。 考慮 `box-shadow`：
 
 ```scss
 div {
@@ -21,7 +21,7 @@ div {
 }
 ```
 
-对于所有具有 `box-shadow` 属性的元素重写此规则，或者更改每个值以测试不同的效果，需要花费大量的精力。 Mixins 就像 CSS 的函数。 以下是一个例子：
+對於所有具有 `box-shadow` 屬性的元素重寫此規則，或者更改每個值以測試不同的效果，需要花費大量的精力。 Mixins 就像 CSS 的函數。 以下是一個例子：
 
 ```scss
 @mixin box-shadow($x, $y, $blur, $c){ 
@@ -32,7 +32,7 @@ div {
 }
 ```
 
-定义以 `@mixin` 开头，后跟自定义名称。 参数（`$x`，`$y`，`$blur`，以及上例中的 `$c` ）是可选的。 现在在需要 `box-shadow` 规则的地方，只需一行 mixin 调用而无需添加所有的浏览器前缀。 mixin 可以通过 `@include` 指令调用。
+定義以 `@mixin` 開頭，後跟自定義名稱。 參數（`$x`，`$y`，`$blur`，以及上例中的 `$c` ）是可選的。 現在在需要 `box-shadow` 規則的地方，只需一行 mixin 調用而無需添加所有的瀏覽器前綴。 mixin 可以通過 `@include` 指令調用。
 
 ```scss
 div {
@@ -42,17 +42,17 @@ div {
 
 # --instructions--
 
-为 `border-radius` 写一个 mixin，并给它一个 `$radius` 参数。 应该使用之前例子中的所有浏览器前缀。 然后使用 `border-radius` mixin 为 `#awesome` 元素提供 `15px` 的边框半径。
+爲 `border-radius` 寫一個 mixin，並給它一個 `$radius` 參數。 應該使用之前例子中的所有瀏覽器前綴。 然後使用 `border-radius` mixin 爲 `#awesome` 元素提供 `15px` 的邊框半徑。
 
 # --hints--
 
-应声明名为 `border-radius` 的 mixin，其中包含名为 `$radius` 的参数。
+應聲明名爲 `border-radius` 的 mixin，其中包含名爲 `$radius` 的參數。
 
 ```js
 assert(code.match(/@mixin\s+?border-radius\s*?\(\s*?\$radius\s*?\)\s*?{/gi));
 ```
 
-应该给 `$radius` 添加 `-webkit-border-radius` 浏览器前缀。
+應該給 `$radius` 添加 `-webkit-border-radius` 瀏覽器前綴。
 
 ```js
 assert(
@@ -60,7 +60,7 @@ assert(
 );
 ```
 
-应该给 `$radius` 添加 `-moz-border-radius` 浏览器前缀。
+應該給 `$radius` 添加 `-moz-border-radius` 瀏覽器前綴。
 
 ```js
 assert(
@@ -68,13 +68,13 @@ assert(
 );
 ```
 
-应该给 `$radius` 添加 `-ms-border-radius` 浏览器前缀。
+應該給 `$radius` 添加 `-ms-border-radius` 瀏覽器前綴。
 
 ```js
 assert(__helpers.removeWhiteSpace(code).match(/-ms-border-radius:\$radius;/gi));
 ```
 
-应该给 `$radius` 添加 `border-radius`。
+應該給 `$radius` 添加 `border-radius`。
 
 ```js
 assert(
@@ -83,7 +83,7 @@ assert(
 );
 ```
 
-应使用 `@include` 关键字调用 `border-radius mixin`，并将其设置为 `15px`。
+應使用 `@include` 關鍵字調用 `border-radius mixin`，並將其設置爲 `15px`。
 
 ```js
 assert(code.match(/@include\s+?border-radius\(\s*?15px\s*?\)\s*;/gi));

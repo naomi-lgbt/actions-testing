@@ -1,6 +1,6 @@
 ---
 id: 587d7fb6367417b2b2512c09
-title: 创建并保存一条 Model 记录
+title: 創建並保存一條 Model 記錄
 challengeType: 2
 forumTopicId: 301536
 dashedName: create-and-save-a-record-of-a-model
@@ -8,11 +8,11 @@ dashedName: create-and-save-a-record-of-a-model
 
 # --description--
 
-在这个挑战中，你需要创建并保存一条模型数据。
+在這個挑戰中，你需要創建並保存一條模型數據。
 
 # --instructions--
 
-在 `createAndSavePerson` 函数中，用我们在上一个挑战中写好的 `Person` 构造函数创建 document 实例， 将包含 `name`、`age` 和 `favoriteFoods` 的对象传给构造函数， 这些属性的数据类型必须符合我们在 `personSchema` 中定义的类型。 然后在返回的 document 实例上调用方法 `document.save()`。 同时，按 Node.js 的方式为它传一个回调函数。 这是一种常见模式，以下所有CRUD方法都将这样的回调函数作为最后一个参数。
+在 `createAndSavePerson` 函數中，用我們在上一個挑戰中寫好的 `Person` 構造函數創建 document 實例， 將包含 `name`、`age` 和 `favoriteFoods` 的對象傳給構造函數， 這些屬性的數據類型必須符合我們在 `personSchema` 中定義的類型。 然後在返回的 document 實例上調用方法 `document.save()`。 同時，按 Node.js 的方式爲它傳一個回調函數。 這是一種常見模式，以下所有CRUD方法都將這樣的回調函數作爲最後一個參數。
 
 ```js
 /* Example */
@@ -25,7 +25,7 @@ person.save(function(err, data) {
 
 # --hints--
 
-应成功地创建数据并保存一条数据到数据库
+應成功地創建數據並保存一條數據到數據庫
 
 ```js
 (getUserInput) =>

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9acdf08812
-title: 调整图片的大小
+title: 調整圖片的大小
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cM9MmCP'
 forumTopicId: 18282
@@ -9,9 +9,9 @@ dashedName: size-your-images
 
 # --description--
 
-CSS 的 `width` 属性可以控制元素的宽度。 和设置文本字号一样，我们会以 `px`（像素）为单位来设置图片的宽度。
+CSS 的 `width` 屬性可以控制元素的寬度。 和設置文本字號一樣，我們會以 `px`（像素）爲單位來設置圖片的寬度。
 
-例如，如果你想创建一个叫 `larger-image` 的 CSS class，来控制 HTML 元素的宽度为 500px，就可以这样写：
+例如，如果你想創建一個叫 `larger-image` 的 CSS class，來控制 HTML 元素的寬度爲 500px，就可以這樣寫：
 
 ```html
 <style>
@@ -23,11 +23,11 @@ CSS 的 `width` 属性可以控制元素的宽度。 和设置文本字号一样
 
 # --instructions--
 
-创建一个叫 `smaller-image` 的 CSS class，并用它来设置图片宽度为 100px。
+創建一個叫 `smaller-image` 的 CSS class，並用它來設置圖片寬度爲 100px。
 
 # --hints--
 
-`img` 元素应包含 `smaller-image` class。
+`img` 元素應包含 `smaller-image` class。
 
 ```js
 assert(
@@ -36,7 +36,7 @@ assert(
 );
 ```
 
-图片宽度应为 100px。
+圖片寬度應爲 100px。
 
 ```js
 assert(

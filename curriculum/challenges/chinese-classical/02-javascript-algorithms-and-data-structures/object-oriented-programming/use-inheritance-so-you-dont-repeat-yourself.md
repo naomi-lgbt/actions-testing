@@ -1,6 +1,6 @@
 ---
 id: 587d7db0367417b2b2512b83
-title: 使用继承避免重复
+title: 使用繼承避免重複
 challengeType: 1
 forumTopicId: 301334
 dashedName: use-inheritance-so-you-dont-repeat-yourself
@@ -8,9 +8,9 @@ dashedName: use-inheritance-so-you-dont-repeat-yourself
 
 # --description--
 
-有一条原则叫做：<dfn>Don't Repeat Yourself</dfn>。常以缩写形式 DRY 出现，意思是“不要自己重复”。 编写重复代码会产生的问题是：任何改变都需要去多个地方修复所有重复的代码。 这通常意味着我们需要做更多的工作，会产生更高的出错率。
+有一條原則叫做：<dfn>Don't Repeat Yourself</dfn>。常以縮寫形式 DRY 出現，意思是“不要自己重複”。 編寫重複代碼會產生的問題是：任何改變都需要去多個地方修復所有重複的代碼。 這通常意味着我們需要做更多的工作，會產生更高的出錯率。
 
-请观察下面的示例，`Bird` 和 `Dog` 共享 `describe` 方法：
+請觀察下面的示例，`Bird` 和 `Dog` 共享 `describe` 方法：
 
 ```js
 Bird.prototype = {
@@ -28,7 +28,7 @@ Dog.prototype = {
 };
 ```
 
-我们可以看到 `describe` 方法在两个地方重复定义了。 根据以上所说的 DRY 原则，我们可以通过创建一个 `Animal` `supertype`（或者父类）来重写这段代码：
+我們可以看到 `describe` 方法在兩個地方重複定義了。 根據以上所說的 DRY 原則，我們可以通過創建一個 `Animal` `supertype`（或者父類）來重寫這段代碼：
 
 ```js
 function Animal() { };
@@ -41,7 +41,7 @@ Animal.prototype = {
 };
 ```
 
-`Animal` 构造函数中定义了 `describe` 方法，可将 `Bird` 和 `Dog` 这两个构造函数的方法删除掉：
+`Animal` 構造函數中定義了 `describe` 方法，可將 `Bird` 和 `Dog` 這兩個構造函數的方法刪除掉：
 
 ```js
 Bird.prototype = {
@@ -55,23 +55,23 @@ Dog.prototype = {
 
 # --instructions--
 
-`Cat` 和 `Bear` 重复定义了 `eat` 方法。 本着 DRY 的原则，通过将 `eat` 方法移动到 `Animal``supertype` 中来重写你的代码。
+`Cat` 和 `Bear` 重複定義了 `eat` 方法。 本着 DRY 的原則，通過將 `eat` 方法移動到 `Animal``supertype` 中來重寫你的代碼。
 
 # --hints--
 
-`Animal.prototype` 应该有 `eat` 属性。
+`Animal.prototype` 應該有 `eat` 屬性。
 
 ```js
 assert(Animal.prototype.hasOwnProperty('eat'));
 ```
 
-`Bear.prototype` 不应该有 `eat` 属性。
+`Bear.prototype` 不應該有 `eat` 屬性。
 
 ```js
 assert(!Bear.prototype.hasOwnProperty('eat'));
 ```
 
-`Cat.prototype` 不应该有 `eat` 属性。
+`Cat.prototype` 不應該有 `eat` 屬性。
 
 ```js
 assert(!Cat.prototype.hasOwnProperty('eat'));

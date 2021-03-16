@@ -1,6 +1,6 @@
 ---
 id: 587d7b8f367417b2b2512b64
-title: 在原型上实现 filter 方法
+title: 在原型上實現 filter 方法
 challengeType: 1
 forumTopicId: 301231
 dashedName: implement-the-filter-method-on-a-prototype
@@ -8,21 +8,21 @@ dashedName: implement-the-filter-method-on-a-prototype
 
 # --description--
 
-为了加深对 `filter` 的理解，可以自己实现一个。 可以用 `for` 循环或 `Array.prototype.forEach()`。
+爲了加深對 `filter` 的理解，可以自己實現一個。 可以用 `for` 循環或 `Array.prototype.forEach()`。
 
 # --instructions--
 
-编写一个和 `Array.prototype.filter()` 功能一样的 `Array.prototype.myFilter()` 方法。 不能使用内置的 `filter` 方法。 在 `myFilter` 方法内部，可以使用 `this` 访问 `Array` 实例。
+編寫一個和 `Array.prototype.filter()` 功能一樣的 `Array.prototype.myFilter()` 方法。 不能使用內置的 `filter` 方法。 在 `myFilter` 方法內部，可以使用 `this` 訪問 `Array` 實例。
 
 # --hints--
 
-`new_s` 应该等于 `[23, 65, 5]`。
+`new_s` 應該等於 `[23, 65, 5]`。
 
 ```js
 assert(JSON.stringify(new_s) === JSON.stringify([23, 65, 5]));
 ```
 
-不应该使用 `filter` 方法。
+不應該使用 `filter` 方法。
 
 ```js
 assert(!code.match(/\.?[\s\S]*?filter/g));

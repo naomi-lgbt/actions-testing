@@ -1,6 +1,6 @@
 ---
 id: bd7123c9c452eddfaeb5bdef
-title: 使用方括号查找字符串中的倒数第 N 个字符
+title: 使用方括號查找字符串中的倒數第 N 個字符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cw4vkh9'
 forumTopicId: 18344
@@ -9,9 +9,9 @@ dashedName: use-bracket-notation-to-find-the-nth-to-last-character-in-a-string
 
 # --description--
 
-我们既可以获取字符串的最后一个字符，也可以用获取字符串的倒数第 N 个字符。
+我們既可以獲取字符串的最後一個字符，也可以用獲取字符串的倒數第 N 個字符。
 
-例如，你可以这样 `firstName[firstName.length - 3]` 来获得 `var firstName = "Charles"` 字符串中的倒数第三个字符。
+例如，你可以這樣 `firstName[firstName.length - 3]` 來獲得 `var firstName = "Charles"` 字符串中的倒數第三個字符。
 
 例如：
 
@@ -20,23 +20,23 @@ var firstName = "Charles";
 var thirdToLastLetter = firstName[firstName.length - 3];
 ```
 
-`thirdToLastLetter` 的值应该为字符串 `l`。
+`thirdToLastLetter` 的值應該爲字符串 `l`。
 
 # --instructions--
 
-使用方括号（ <dfn>bracket notation</dfn>）来获得 `lastName` 字符串中的倒数第二个字符。
+使用方括號（ <dfn>bracket notation</dfn>）來獲得 `lastName` 字符串中的倒數第二個字符。
 
-**提示：** 如果卡住了，请尝试查看上面的示例。
+**提示：** 如果卡住了，請嘗試查看上面的示例。
 
 # --hints--
 
-`secondToLastLetterOfLastName` 应该是字母 `c`。
+`secondToLastLetterOfLastName` 應該是字母 `c`。
 
 ```js
 assert(secondToLastLetterOfLastName === 'c');
 ```
 
-您应该使用 `.length` 获取倒数第二个字母。
+您應該使用 `.length` 獲取倒數第二個字母。
 
 ```js
 assert(code.match(/\.length/g).length > 0);

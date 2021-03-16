@@ -1,6 +1,6 @@
 ---
 id: 587d78b2367417b2b2512b0e
-title: 使用 push() 和 unshift() 为数组添加元素
+title: 使用 push() 和 unshift() 爲數組添加元素
 challengeType: 1
 forumTopicId: 301151
 dashedName: add-items-to-an-array-with-push-and-unshift
@@ -8,9 +8,9 @@ dashedName: add-items-to-an-array-with-push-and-unshift
 
 # --description--
 
-数组的长度与数组能包含的数据类型一样，都是不固定的。 数组可以包含任意数量的元素，可以不限次数地往数组中添加元素或者从中移除元素。 总之，数组是可变的（<dfn>mutable</dfn>）。 在本挑战中，我们要学习两种修改数组的方法：`Array.push()` 和 `Array.unshift()`。
+數組的長度與數組能包含的數據類型一樣，都是不固定的。 數組可以包含任意數量的元素，可以不限次數地往數組中添加元素或者從中移除元素。 總之，數組是可變的（<dfn>mutable</dfn>）。 在本挑戰中，我們要學習兩種修改數組的方法：`Array.push()` 和 `Array.unshift()`。
 
-这两个方法都接收一个或多个元素作为参数，并会将参数中的元素添加到该数组中。 `push()` 方法会将元素插入到数组的末尾，而 `unshift()` 方法会将元素插入到数组的开头。 请看以下例子：
+這兩個方法都接收一個或多個元素作爲參數，並會將參數中的元素添加到該數組中。 `push()` 方法會將元素插入到數組的末尾，而 `unshift()` 方法會將元素插入到數組的開頭。 請看以下例子：
 
 ```js
 let twentyThree = 'XXIII';
@@ -19,21 +19,21 @@ let romanNumerals = ['XXI', 'XXII'];
 romanNumerals.unshift('XIX', 'XX');
 ```
 
-`romanNumerals` 的值就变成了 `['XIX', 'XX', 'XXI', 'XXII']`。
+`romanNumerals` 的值就變成了 `['XIX', 'XX', 'XXI', 'XXII']`。
 
 ```js
 romanNumerals.push(twentyThree);
 ```
 
-`romanNumerals` 的值现在就变成了 `['XIX', 'XX', 'XXI', 'XXII', 'XXIII']`。 请注意这里，我们也可以使用变量作为参数，这让我们在动态修改数组数据时更加灵活。
+`romanNumerals` 的值現在就變成了 `['XIX', 'XX', 'XXI', 'XXII', 'XXIII']`。 請注意這裏，我們也可以使用變量作爲參數，這讓我們在動態修改數組數據時更加靈活。
 
 # --instructions--
 
-我们已经定义了一个 `mixedNumbers` 函数，它接收一个数组作为参数。 请修改这个函数，使用 `push()` 和 `unshift()` 来将 `'I', 2, 'three'` 插入到数组开头；将 `7, 'VIII', 9` 插入到数组的末尾。最终这个函数的返回值就会是一个依次包含不同形式的 1-9 的数组。
+我們已經定義了一個 `mixedNumbers` 函數，它接收一個數組作爲參數。 請修改這個函數，使用 `push()` 和 `unshift()` 來將 `'I', 2, 'three'` 插入到數組開頭；將 `7, 'VIII', 9` 插入到數組的末尾。最終這個函數的返回值就會是一個依次包含不同形式的 1-9 的數組。
 
 # --hints--
 
-`mixedNumbers(["IV", 5, "six"])` 应返回 `["I", 2, "three", "IV", 5, "six", 7, "VIII", 9]`。
+`mixedNumbers(["IV", 5, "six"])` 應返回 `["I", 2, "three", "IV", 5, "six", 7, "VIII", 9]`。
 
 ```js
 assert.deepEqual(mixedNumbers(['IV', 5, 'six']), [
@@ -49,13 +49,13 @@ assert.deepEqual(mixedNumbers(['IV', 5, 'six']), [
 ]);
 ```
 
-`mixedNumbers` 函数中应调用 `push()` 方法。
+`mixedNumbers` 函數中應調用 `push()` 方法。
 
 ```js
 assert(mixedNumbers.toString().match(/\.push/));
 ```
 
-`mixedNumbers` 函数中应调用 `unshift()` 方法。
+`mixedNumbers` 函數中應調用 `unshift()` 方法。
 
 ```js
 assert(mixedNumbers.toString().match(/\.unshift/));

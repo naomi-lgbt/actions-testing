@@ -1,6 +1,6 @@
 ---
 id: 5675e877dbd60be8ad28edc6
-title: 使用 For 循环遍历数组
+title: 使用 For 循環遍歷數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/caeR3HB'
 forumTopicId: 18216
@@ -9,7 +9,7 @@ dashedName: iterate-through-an-array-with-a-for-loop
 
 # --description--
 
-JavaScript 中的一个常见任务是遍历数组的内容。 一种方法是使用 `for` 循环。 下面的代码将输出数组 `arr` 的每个元素到控制台：
+JavaScript 中的一個常見任務是遍歷數組的內容。 一種方法是使用 `for` 循環。 下面的代碼將輸出數組 `arr` 的每個元素到控制檯：
 
 ```js
 var arr = [10, 9, 8, 7, 6];
@@ -18,33 +18,33 @@ for (var i = 0; i < arr.length; i++) {
 }
 ```
 
-记住数组的索引从零开始的，这意味着数组的最后一个元素的下标是：`length - 1`（数组的长度 -1）。 我们这个循环的条件是 `i < arr.length`，当 `i` 的值为 `length` 的时候循环就停止了。 在这个例子中，最后一个循环是 `i === 4`，也就是说，当 `i` 的值等于 `arr.length` 时，结果输出 `6`。
+記住數組的索引從零開始的，這意味着數組的最後一個元素的下標是：`length - 1`（數組的長度 -1）。 我們這個循環的條件是 `i < arr.length`，當 `i` 的值爲 `length` 的時候循環就停止了。 在這個例子中，最後一個循環是 `i === 4`，也就是說，當 `i` 的值等於 `arr.length` 時，結果輸出 `6`。
 
 # --instructions--
 
-声明并初始化一个变量 `total` 值为 `0`。 使用 `for` 循环，使得 `total` 的值为 `myArr` 的数组中的每个元素的值的总和。
+聲明並初始化一個變量 `total` 值爲 `0`。 使用 `for` 循環，使得 `total` 的值爲 `myArr` 的數組中的每個元素的值的總和。
 
 # --hints--
 
-`total` 应该被声明, 并且初始化值为 0。
+`total` 應該被聲明, 並且初始化值爲 0。
 
 ```js
 assert(code.match(/(var|let|const)\s*?total\s*=\s*0.*?;?/));
 ```
 
-`total` 应该等于 20。
+`total` 應該等於 20。
 
 ```js
 assert(total === 20);
 ```
 
-你应该使用 `for` 循环在 `myArr` 中遍历。
+你應該使用 `for` 循環在 `myArr` 中遍歷。
 
 ```js
 assert(/for\s*\(/g.test(code) && /myArr\s*\[/g.test(code));
 ```
 
-不能直接把 `total` 设置成 20。
+不能直接把 `total` 設置成 20。
 
 ```js
 assert(!__helpers.removeWhiteSpace(code).match(/total[=+-]0*[1-9]+/gm));

@@ -1,6 +1,6 @@
 ---
 id: 587d7791367417b2b2512ab4
-title: 使用 width 属性调整元素的宽度
+title: 使用 width 屬性調整元素的寬度
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cvVLPtN'
 forumTopicId: 301039
@@ -9,7 +9,7 @@ dashedName: adjust-the-width-of-an-element-using-the-width-property
 
 # --description--
 
-你可以使用 CSS 里的 `width` 属性来指定元素的宽度。 属性值可以是相对单位（比如 `em`），绝对单位（比如 `px`），或者包含块（父元素）宽度的百分比。 下面这段代码可以把图片的宽度设置为 220px：
+你可以使用 CSS 裏的 `width` 屬性來指定元素的寬度。 屬性值可以是相對單位（比如 `em`），絕對單位（比如 `px`），或者包含塊（父元素）寬度的百分比。 下面這段代碼可以把圖片的寬度設置爲 220px：
 
 ```css
 img {
@@ -19,11 +19,11 @@ img {
 
 # --instructions--
 
-为卡片元素添加 `width` 属性，并将它的宽度设置为 245px。 使用 `fullCard` class 来选择卡片元素。
+爲卡片元素添加 `width` 屬性，並將它的寬度設置爲 245px。 使用 `fullCard` class 來選擇卡片元素。
 
 # --hints--
 
-应使用 `fullCard` class 选择器将卡片的 `width` 属性值设置为 `245px`。
+應使用 `fullCard` class 選擇器將卡片的 `width` 屬性值設置爲 `245px`。
 
 ```js
 const fullCard = code.match(/\.fullCard\s*{[\s\S]+?[^}]}/g);

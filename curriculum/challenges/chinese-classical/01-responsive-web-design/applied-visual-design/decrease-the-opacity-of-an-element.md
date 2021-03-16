@@ -9,19 +9,19 @@ dashedName: decrease-the-opacity-of-an-element
 
 # --description--
 
-CSS 里的 `opacity` 属性用来设置元素的透明度。
+CSS 裏的 `opacity` 屬性用來設置元素的透明度。
 
-<blockquote>属性值为 1 代表完全不透明。 <br>属性值为 0.5 代表半透明。 <br>属性值为 0 代表完全透明。</blockquote>
+<blockquote>屬性值爲 1 代表完全不透明。 <br>屬性值爲 0.5 代表半透明。 <br>屬性值爲 0 代表完全透明。</blockquote>
 
-透明度会应用到元素内的所有内容，不论是图片，还是文本，或是背景色。
+透明度會應用到元素內的所有內容，不論是圖片，還是文本，或是背景色。
 
 # --instructions--
 
-将 class 为 `links` 的所有超链接的 `opacity` 属性值设置 0.7。
+將 class 爲 `links` 的所有超鏈接的 `opacity` 屬性值設置 0.7。
 
 # --hints--
 
-应使用 `links` class 选择所有的超链接，并设置其 `opacity` 属性值为 0.7。
+應使用 `links` class 選擇所有的超鏈接，並設置其 `opacity` 屬性值爲 0.7。
 
 ```js
 assert(

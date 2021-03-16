@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036176
-title: 使用 State 切换元素
+title: 使用 State 切換元素
 challengeType: 6
 forumTopicId: 301421
 dashedName: use-state-to-toggle-an-element
@@ -8,7 +8,7 @@ dashedName: use-state-to-toggle-an-element
 
 # --description--
 
-有时可能在更新状态的时候想知道上一个状态是什么。 但是状态更新是异步的，这意味着 React 可能会把多个 `setState()` 集中在一起批量更新。 所以计算下一个值时 `this.state` 或者 `this.props` 不能作为当前值。 所以最好不要写如下的代码：
+有時可能在更新狀態的時候想知道上一個狀態是什麼。 但是狀態更新是異步的，這意味着 React 可能會把多個 `setState()` 集中在一起批量更新。 所以計算下一個值時 `this.state` 或者 `this.props` 不能作爲當前值。 所以最好不要寫如下的代碼：
 
 ```jsx
 this.setState({
@@ -16,7 +16,7 @@ this.setState({
 });
 ```
 
-正确的做法是，给 `setState` 传入一个函数，这个函数可以访问 state 和 props。 给 `setState` 传入函数可以保证 state 和 props 是正确的值。 代码可以重写为这样：
+正確的做法是，給 `setState` 傳入一個函數，這個函數可以訪問 state 和 props。 給 `setState` 傳入函數可以保證 state 和 props 是正確的值。 代碼可以重寫爲這樣：
 
 ```jsx
 this.setState((state, props) => ({
@@ -24,7 +24,7 @@ this.setState((state, props) => ({
 }));
 ```
 
-如果只需要 `state`，那么用下面没有 `props` 的格式也是可以的：
+如果只需要 `state`，那麼用下面沒有 `props` 的格式也是可以的：
 
 ```jsx
 this.setState(state => ({
@@ -32,21 +32,21 @@ this.setState(state => ({
 }));
 ```
 
-注意一定要把 object 放在括号里，否则 JavaScript 会认为这只是代码片段。
+注意一定要把 object 放在括號裏，否則 JavaScript 會認爲這只是代碼片段。
 
 # --instructions--
 
-`MyComponent` 有一个初始值为 `false` 的`visibility` 属性。 如果 `visibility` 的值为 true，render 方法返回一个视图，如果为 false，返回另一个视图。
+`MyComponent` 有一個初始值爲 `false` 的`visibility` 屬性。 如果 `visibility` 的值爲 true，render 方法返回一個視圖，如果爲 false，返回另一個視圖。
 
-目前，无法更新组件 `state` 中的 `visibility` 属性， 该值应在 true 和 false 之间来回切换。 按钮上有一个单击处理程序，它触发一个名为 `toggleVisibility()` 的类方法。 给函数传入 `setState` 来定义此方法，以便 `visibility` 的 `state` 在调用方法时切换到相反的值。 如果 `visibility` 是 `false`，则该方法将其设置为`true`，反之亦然。
+目前，無法更新組件 `state` 中的 `visibility` 屬性， 該值應在 true 和 false 之間來回切換。 按鈕上有一個單擊處理程序，它觸發一個名爲 `toggleVisibility()` 的類方法。 給函數傳入 `setState` 來定義此方法，以便 `visibility` 的 `state` 在調用方法時切換到相反的值。 如果 `visibility` 是 `false`，則該方法將其設置爲`true`，反之亦然。
 
-最后，单击按钮以查看基于其 `state` 的组件的条件渲染。
+最後，單擊按鈕以查看基於其 `state` 的組件的條件渲染。
 
-**提示：** 不要忘记将 `this` 关键字绑定到 `constructor` 中的方法上！
+**提示：** 不要忘記將 `this` 關鍵字綁定到 `constructor` 中的方法上！
 
 # --hints--
 
-`MyComponent` 应该返回一个 `div` 元素，其中包含一个 `button` 元素。
+`MyComponent` 應該返回一個 `div` 元素，其中包含一個 `button` 元素。
 
 ```js
 assert.strictEqual(
@@ -56,7 +56,7 @@ assert.strictEqual(
 );
 ```
 
-`MyComponent` 应该使用设置为 `false` 的 `visibility` 属性来初始化其 state。
+`MyComponent` 應該使用設置爲 `false` 的 `visibility` 屬性來初始化其 state。
 
 ```js
 assert.strictEqual(
@@ -65,7 +65,7 @@ assert.strictEqual(
 );
 ```
 
-单击按钮元素应在 `true` 和 `false` 之间切换 `visibility` 属性的状态。
+單擊按鈕元素應在 `true` 和 `false` 之間切換 `visibility` 屬性的狀態。
 
 ```js
 (() => {
@@ -89,7 +89,7 @@ assert.strictEqual(
 })();
 ```
 
-应该给 `setState` 传入一个匿名函数。
+應該給 `setState` 傳入一個匿名函數。
 
 ```js
 const paramRegex = '[a-zA-Z$_]\\w*(,[a-zA-Z$_]\\w*)?';
@@ -104,7 +104,7 @@ assert(
 );
 ```
 
-不要在 `setState` 里面使用 `this`。
+不要在 `setState` 裏面使用 `this`。
 
 ```js
 assert(!/this\.setState\([^}]*this/.test(code));

@@ -1,6 +1,6 @@
 ---
 id: bad87fee1347bd9aedf08845
-title: 用 Bootstrap 来取代我们之前的自定义样式
+title: 用 Bootstrap 來取代我們之前的自定義樣式
 challengeType: 0
 forumTopicId: 17565
 dashedName: ditch-custom-css-for-bootstrap
@@ -8,31 +8,31 @@ dashedName: ditch-custom-css-for-bootstrap
 
 # --description--
 
-现在可以清理一下之前代码，用 Bootstrap 的内置样式来替换之前定义的样式，这样 Cat Photo App 看起来更简洁些。
+現在可以清理一下之前代碼，用 Bootstrap 的內置樣式來替換之前定義的樣式，這樣 Cat Photo App 看起來更簡潔些。
 
-别担心——以后会有大把时间来自定义 CSS 样式的。
+別擔心——以後會有大把時間來自定義 CSS 樣式的。
 
-删除 `style` 元素里的 `.red-text`，`p`，和 `.smaller-image` CSS 定义，使 `style` 元素只留下 `h2` 和 `thick-green-border`。
+刪除 `style` 元素裏的 `.red-text`，`p`，和 `.smaller-image` CSS 定義，使 `style` 元素只留下 `h2` 和 `thick-green-border`。
 
-删除包含死链接的 `p` 元素。 然后将 `h2` 的 `red-text` class 替换为 Bootstrap 的 `text-primary` class。
+刪除包含死鏈接的 `p` 元素。 然後將 `h2` 的 `red-text` class 替換爲 Bootstrap 的 `text-primary` class。
 
-最后，从第一个 `img` 元素中删除 `smaller-image` class，并将其替换为 `img-responsive` class。
+最後，從第一個 `img` 元素中刪除 `smaller-image` class，並將其替換爲 `img-responsive` class。
 
 # --hints--
 
-`h2` 元素不应该有 `red-text` class。
+`h2` 元素不應該有 `red-text` class。
 
 ```js
 assert(!$('h2').hasClass('red-text'));
 ```
 
-`h2` 元素应有 `text-primary` class。
+`h2` 元素應有 `text-primary` class。
 
 ```js
 assert($('h2').hasClass('text-primary'));
 ```
 
-段落元素（p）不应该再使用 `Monospace` 字体。
+段落元素（p）不應該再使用 `Monospace` 字體。
 
 ```js
 assert(
@@ -42,13 +42,13 @@ assert(
 );
 ```
 
-移除第一张图片的 `smaller-image` class 属性。
+移除第一張圖片的 `smaller-image` class 屬性。
 
 ```js
 assert(!$('img').hasClass('smaller-image'));
 ```
 
-给第一张图片添加 `img-responsive` class 属性。
+給第一張圖片添加 `img-responsive` class 屬性。
 
 ```js
 assert($('.img-responsive').length > 1);

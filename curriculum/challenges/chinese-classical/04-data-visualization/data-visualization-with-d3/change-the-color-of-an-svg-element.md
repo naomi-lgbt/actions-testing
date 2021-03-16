@@ -1,6 +1,6 @@
 ---
 id: 587d7fa9367417b2b2512bd1
-title: 更改 SVG 元素的颜色
+title: 更改 SVG 元素的顏色
 challengeType: 6
 forumTopicId: 301480
 dashedName: change-the-color-of-an-svg-element
@@ -8,17 +8,17 @@ dashedName: change-the-color-of-an-svg-element
 
 # --description--
 
-所有条形图的位置都是正确的，但是它们都是一样的黑色。 SVG 可以改变条形图的颜色。
+所有條形圖的位置都是正確的，但是它們都是一樣的黑色。 SVG 可以改變條形圖的顏色。
 
-在 SVG 中， `rect` 图形用 `fill` 属性着色。 它支持十六进制代码、颜色名称、rgb 值以及更复杂的选项，比如渐变和透明。
+在 SVG 中， `rect` 圖形用 `fill` 屬性着色。 它支持十六進制代碼、顏色名稱、rgb 值以及更復雜的選項，比如漸變和透明。
 
 # --instructions--
 
-添加 `attr()` 方法，将所有条形图的 `fill` 设置为海军蓝。
+添加 `attr()` 方法，將所有條形圖的 `fill` 設置爲海軍藍。
 
 # --hints--
 
-所有条形图的 `fill` 颜色都应该是 navy（海军蓝）。
+所有條形圖的 `fill` 顏色都應該是 navy（海軍藍）。
 
 ```js
 assert($('rect').css('fill') == 'rgb(0, 0, 128)');

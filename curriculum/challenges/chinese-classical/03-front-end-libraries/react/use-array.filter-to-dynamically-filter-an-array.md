@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403618c
-title: 使用 Array.Filter() 动态过滤数组
+title: 使用 Array.Filter() 動態過濾數組
 challengeType: 6
 forumTopicId: 301416
 dashedName: use-array-filter-to-dynamically-filter-an-array
@@ -8,17 +8,17 @@ dashedName: use-array-filter-to-dynamically-filter-an-array
 
 # --description--
 
-`map` 数组方法是一个强大的工具，在使用 React 时经常使用。 与 `map` 相关的另一种方法是 `filter`，它根据条件过滤数组的内容，然后返回一个新数组。 例如，如果有一个 users 数组，每个数组元素都有一个可以设置为 `true` 或 `false` 的 `online` 属性，可以这样只过滤那些在线的用户：
+`map` 數組方法是一個強大的工具，在使用 React 時經常使用。 與 `map` 相關的另一種方法是 `filter`，它根據條件過濾數組的內容，然後返回一個新數組。 例如，如果有一個 users 數組，每個數組元素都有一個可以設置爲 `true` 或 `false` 的 `online` 屬性，可以這樣只過濾那些在線的用戶：
 
 `let onlineUsers = users.filter(user => user.online);`
 
 # --instructions--
 
-在代码编辑器中，`MyComponent` 的 `state` 由一个 users 数组初始化。 有些用户在线，有些则不在线。 过滤数组，只看到在线用户。 为此，首先使用 `filter` 返回一个新数组，该数组只包含 `online` 属性为 `true` 的用户。 然后，在 `renderOnline` 变量中，映射经过过滤的数组，并为每个用户返回一个包含它们 `username` 文本的 `li` 元素。 确保像上一个挑战一样包含一个独特的 `key`。
+在代碼編輯器中，`MyComponent` 的 `state` 由一個 users 數組初始化。 有些用戶在線，有些則不在線。 過濾數組，只看到在線用戶。 爲此，首先使用 `filter` 返回一個新數組，該數組只包含 `online` 屬性爲 `true` 的用戶。 然後，在 `renderOnline` 變量中，映射經過過濾的數組，併爲每個用戶返回一個包含它們 `username` 文本的 `li` 元素。 確保像上一個挑戰一樣包含一個獨特的 `key`。
 
 # --hints--
 
-`MyComponent` 应该存在并被渲染到页面。
+`MyComponent` 應該存在並被渲染到頁面。
 
 ```js
 assert.strictEqual(
@@ -27,7 +27,7 @@ assert.strictEqual(
 );
 ```
 
-`MyComponent` 的 state 应该初始化为包含 6 个用户的数组。
+`MyComponent` 的 state 應該初始化爲包含 6 個用戶的數組。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-`MyComponent` 应该返回一个 `div`、一个 `h1` 和一个包含 `li` 元素的无序列表，该列表用于展示在线状态为 `true` 的每个用户。
+`MyComponent` 應該返回一個 `div`、一個 `h1` 和一個包含 `li` 元素的無序列表，該列表用於展示在線狀態爲 `true` 的每個用戶。
 
 ```js
 (() => {
@@ -81,7 +81,7 @@ assert(
 })();
 ```
 
-`MyComponent` 应该渲染包含每个在线用户的 `username` 的 `li` 元素。
+`MyComponent` 應該渲染包含每個在線用戶的 `username` 的 `li` 元素。
 
 ```js
 (() => {
@@ -107,7 +107,7 @@ assert(
 })();
 ```
 
-每个列表项元素都应该有一个唯一的 `key` 属性。
+每個列表項元素都應該有一個唯一的 `key` 屬性。
 
 ```js
 assert(

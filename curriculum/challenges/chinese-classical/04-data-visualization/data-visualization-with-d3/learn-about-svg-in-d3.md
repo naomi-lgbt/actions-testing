@@ -1,6 +1,6 @@
 ---
 id: 587d7fa8367417b2b2512bcb
-title: 了解 D3 中的 SVG
+title: 瞭解 D3 中的 SVG
 challengeType: 6
 forumTopicId: 301489
 dashedName: learn-about-svg-in-d3
@@ -8,35 +8,35 @@ dashedName: learn-about-svg-in-d3
 
 # --description--
 
-<dfn>SVG</dfn> 是 <dfn>Scalable Vector Graphics</dfn> 的缩写。
+<dfn>SVG</dfn> 是 <dfn>Scalable Vector Graphics</dfn> 的縮寫。
 
-“scalable” 的意思是如果放大或缩小一个对象，它不会像素化。 不管是在小的移动手机屏幕上还是在大的电视显示器上，它都会随着显示系统缩放。
+“scalable” 的意思是如果放大或縮小一個對象，它不會像素化。 不管是在小的移動手機屏幕上還是在大的電視顯示器上，它都會隨着顯示系統縮放。
 
-SVG 用于制作常见的几何图形。 由于 D3 将数据映射成可视化表达，它用 SVG 来创建可视化的图形。 网页上的 SVG 图形必须在 HTML 的 `svg` 标签中。
+SVG 用於製作常見的幾何圖形。 由於 D3 將數據映射成可視化表達，它用 SVG 來創建可視化的圖形。 網頁上的 SVG 圖形必須在 HTML 的 `svg` 標籤中。
 
-当使用相对单位（例如 `vh`、`vw` 或者百分比）时，CSS 是可伸缩的。 但是在实现数据可视化的时候 SVG 更加的灵活。
+當使用相對單位（例如 `vh`、`vw` 或者百分比）時，CSS 是可伸縮的。 但是在實現數據可視化的時候 SVG 更加的靈活。
 
 # --instructions--
 
-用 `append()` 给 `body` 加一个 `svg` 节点。 使用 `attr()` 或 `style()` 方法给它设置一个 `width` 属性和一个 `height` 属性，并分别将它们设置为给定的常量 `w` 和给定的常量 `h`。 你可以在输出中看见它，因为在 `style` 标签中它的 `background-color` 设置为 pink。
+用 `append()` 給 `body` 加一個 `svg` 節點。 使用 `attr()` 或 `style()` 方法給它設置一個 `width` 屬性和一個 `height` 屬性，並分別將它們設置爲給定的常量 `w` 和給定的常量 `h`。 你可以在輸出中看見它，因爲在 `style` 標籤中它的 `background-color` 設置爲 pink。
 
-**注意：**width 和 height `attr()` 没有单位。 它们是用来定义缩放的——但无论怎么缩放，元素的宽高比永远是 5:1 。
+**注意：**width 和 height `attr()` 沒有單位。 它們是用來定義縮放的——但無論怎麼縮放，元素的寬高比永遠是 5:1 。
 
 # --hints--
 
-文档应该有 1 个 `svg` 元素。
+文檔應該有 1 個 `svg` 元素。
 
 ```js
 assert($('svg').length == 1);
 ```
 
-`svg` 元素应有一个 `width` 属性，值为 `500`，或者在样式中 width 值为 `500px`。
+`svg` 元素應有一個 `width` 屬性，值爲 `500`，或者在樣式中 width 值爲 `500px`。
 
 ```js
 assert($('svg').attr('width') == '500' || $('svg').css('width') == '500px');
 ```
 
-`svg` 元素应有一个 `height` 属性，值为 `100`，或者在样式中 height 值为 `100px`。
+`svg` 元素應有一個 `height` 屬性，值爲 `100`，或者在樣式中 height 值爲 `100px`。
 
 ```js
 assert($('svg').attr('height') == '100' || $('svg').css('height') == '100px');

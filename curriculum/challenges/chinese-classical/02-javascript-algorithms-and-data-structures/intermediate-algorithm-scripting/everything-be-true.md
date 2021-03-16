@@ -8,17 +8,17 @@ dashedName: everything-be-true
 
 # --description--
 
-检查谓词（第二个参数）在集合（第一个参数）的所有元素是否为 <dfn>truthy</dfn>。
+檢查謂詞（第二個參數）在集合（第一個參數）的所有元素是否爲 <dfn>truthy</dfn>。
 
-换句话说，你将获得一个对象的数组集合。 如果数组中的每个对象里，`pre` 对应属性值均为 `truthy`，则返回 `true`。 否则，返回 `false` 。
+換句話說，你將獲得一個對象的數組集合。 如果數組中的每個對象裏，`pre` 對應屬性值均爲 `truthy`，則返回 `true`。 否則，返回 `false` 。
 
-JavaScript 中，如果一个值在 Boolean 的上下文中的执行结果为 `true`，那么我们称这个值是 `truthy` 的。
+JavaScript 中，如果一個值在 Boolean 的上下文中的執行結果爲 `true`，那麼我們稱這個值是 `truthy` 的。
 
-别忘了，你可以使用点号表示法或方括号表示法（`[]`）来访问对象的属性。
+別忘了，你可以使用點號表示法或方括號表示法（`[]`）來訪問對象的屬性。
 
 # --hints--
 
-`truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex")` 应返回 `true`。
+`truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex")` 應返回 `true`。
 
 ```js
 assert.strictEqual(
@@ -35,7 +35,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex")` 应返回 `false`。
+`truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex")` 應返回 `false`。
 
 ```js
 assert.strictEqual(
@@ -52,7 +52,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age")` 应返回 `false`。
+`truthCheck([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age")` 應返回 `false`。
 
 ```js
 assert.strictEqual(
@@ -69,7 +69,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true}, {"name": "FastForward", "onBoat": null}], "onBoat")` 应返回 `false`。
+`truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true}, {"name": "FastForward", "onBoat": null}], "onBoat")` 應返回 `false`。
 
 ```js
 assert.strictEqual(
@@ -85,7 +85,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true, "alias": "Repete"}, {"name": "FastForward", "onBoat": true}], "onBoat")` 应返回 `true`。
+`truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true, "alias": "Repete"}, {"name": "FastForward", "onBoat": true}], "onBoat")` 應返回 `true`。
 
 ```js
 assert.strictEqual(
@@ -101,13 +101,13 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"single": "yes"}], "single")` 应返回 `true`。
+`truthCheck([{"single": "yes"}], "single")` 應返回 `true`。
 
 ```js
 assert.strictEqual(truthCheck([{ single: 'yes' }], 'single'), true);
 ```
 
-`truthCheck([{"single": ""}, {"single": "double"}], "single")` 应返回 `false`。
+`truthCheck([{"single": ""}, {"single": "double"}], "single")` 應返回 `false`。
 
 ```js
 assert.strictEqual(
@@ -116,7 +116,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"single": "double"}, {"single": undefined}], "single")` 应返回 `false`。
+`truthCheck([{"single": "double"}, {"single": undefined}], "single")` 應返回 `false`。
 
 ```js
 assert.strictEqual(
@@ -125,7 +125,7 @@ assert.strictEqual(
 );
 ```
 
-`truthCheck([{"single": "double"}, {"single": NaN}], "single")` 应返回 `false`。
+`truthCheck([{"single": "double"}, {"single": NaN}], "single")` 應返回 `false`。
 
 ```js
 assert.strictEqual(

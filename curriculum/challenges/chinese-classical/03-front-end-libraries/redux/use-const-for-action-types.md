@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036152
-title: 使用 const 声明 Action Types
+title: 使用 const 聲明 Action Types
 challengeType: 6
 forumTopicId: 301450
 dashedName: use-const-for-action-types
@@ -8,35 +8,35 @@ dashedName: use-const-for-action-types
 
 # --description--
 
-在使用 Redux 时的一个常见做法是将操作类型指定为只读，然后在任何使用它们的地方引用这些常量。 可以通过将 action types 使用 `const` 声明重构你正在使用的代码。
+在使用 Redux 時的一個常見做法是將操作類型指定爲只讀，然後在任何使用它們的地方引用這些常量。 可以通過將 action types 使用 `const` 聲明重構你正在使用的代碼。
 
 # --instructions--
 
-将 `LOGIN` 和 `LOGOUT` 声明为 `const` 的值，并为它们分别分配字符串 `'LOGIN'` 和 `'LOGOUT'`。 然后，编辑 `authReducer()` 和 action creators 来引用这些常量而不是字符串值。
+將 `LOGIN` 和 `LOGOUT` 聲明爲 `const` 的值，併爲它們分別分配字符串 `'LOGIN'` 和 `'LOGOUT'`。 然後，編輯 `authReducer()` 和 action creators 來引用這些常量而不是字符串值。
 
-**注意：** 通常以全部大写形式写出常量，这也是 Redux 的标准做法。
+**注意：** 通常以全部大寫形式寫出常量，這也是 Redux 的標準做法。
 
 # --hints--
 
-调用函数 `loginUser` 应该返回一个 `type` 属性设置为字符串 `LOGIN` 的对象。
+調用函數 `loginUser` 應該返回一個 `type` 屬性設置爲字符串 `LOGIN` 的對象。
 
 ```js
 assert(loginUser().type === 'LOGIN');
 ```
 
-调用函数 `logoutUser` 应该返回一个 `type` 属性设置为字符串 `LOGOUT` 的对象。
+調用函數 `logoutUser` 應該返回一個 `type` 屬性設置爲字符串 `LOGOUT` 的對象。
 
 ```js
 assert(logoutUser().type === 'LOGOUT');
 ```
 
-store 应该用属性 `login` 设置为 `false` 的对象初始化。
+store 應該用屬性 `login` 設置爲 `false` 的對象初始化。
 
 ```js
 assert(store.getState().authenticated === false);
 ```
 
-dispatch `loginUser` 以后应将 store 中的 state 的 `login` 值更新为 `true`。
+dispatch `loginUser` 以後應將 store 中的 state 的 `login` 值更新爲 `true`。
 
 ```js
 assert(
@@ -51,7 +51,7 @@ assert(
 );
 ```
 
-dispatch `logoutUser` 应将 store 中的 state 的 `login` 值更新为 `false`。
+dispatch `logoutUser` 應將 store 中的 state 的 `login` 值更新爲 `false`。
 
 ```js
 assert(
@@ -67,7 +67,7 @@ assert(
 );
 ```
 
-`authReducer` 函数应该使用 switch 语句处理多个 action 类型。
+`authReducer` 函數應該使用 switch 語句處理多個 action 類型。
 
 ```js
 (getUserInput) =>
@@ -83,7 +83,7 @@ assert(
   );
 ```
 
-`LOGIN` 和 `LOGOUT` 应该声明为 `const` 值，并且应该分配为 `LOGIN` 和 `LOGOUT` 的字符串。
+`LOGIN` 和 `LOGOUT` 應該聲明爲 `const` 值，並且應該分配爲 `LOGIN` 和 `LOGOUT` 的字符串。
 
 ```js
 const noWhiteSpace = __helpers.removeWhiteSpace(code);
@@ -93,7 +93,7 @@ assert(
 );
 ```
 
-action creator 和 reducer 中应该引用 `LOGIN` 和 `LOGOUT` 常量。
+action creator 和 reducer 中應該引用 `LOGIN` 和 `LOGOUT` 常量。
 
 ```js
 (getUserInput) =>

@@ -1,6 +1,6 @@
 ---
 id: 587d7fa7367417b2b2512bc7
-title: 根据数据更改样式
+title: 根據數據更改樣式
 challengeType: 6
 forumTopicId: 301479
 dashedName: change-styles-based-on-data
@@ -8,9 +8,9 @@ dashedName: change-styles-based-on-data
 
 # --description--
 
-D3 是关于可视化和展示数据的。 如果你想基于数据来改变元素的样式， 你可以在 `style()` 方法中使用回调函数来修改不同元素的样式。
+D3 是關於可視化和展示數據的。 如果你想基於數據來改變元素的樣式， 你可以在 `style()` 方法中使用回調函數來修改不同元素的樣式。
 
-例如，你想将值小于 20 的数据点设置为蓝色，其余设置为红色。 你可以在 `style()` 方法中使用包含条件逻辑的回调函数。 回调函数以 `d` 作为参数来表示一个数据点：
+例如，你想將值小於 20 的數據點設置爲藍色，其餘設置爲紅色。 你可以在 `style()` 方法中使用包含條件邏輯的回調函數。 回調函數以 `d` 作爲參數來表示一個數據點：
 
 ```js
 selection.style("color", (d) => {
@@ -18,65 +18,65 @@ selection.style("color", (d) => {
 });
 ```
 
-`style()` 方法不仅仅可以设置 `color`——它也适用于其他 CSS 属性。
+`style()` 方法不僅僅可以設置 `color`——它也適用於其他 CSS 屬性。
 
 # --instructions--
 
-在编辑器中添加 `style()` 方法，根据条件设置 `h2` 元素的 `color` 属性。 写一个回调函数，如果数据值小于 20，则返回红色（red），否则返回绿色（green）。
+在編輯器中添加 `style()` 方法，根據條件設置 `h2` 元素的 `color` 屬性。 寫一個回調函數，如果數據值小於 20，則返回紅色（red），否則返回綠色（green）。
 
-**注意：** 你可以使用 if-else 逻辑或者三元操作符。
+**注意：** 你可以使用 if-else 邏輯或者三元操作符。
 
 # --hints--
 
-第一个 `h2` 的 `color` 应该为 red。
+第一個 `h2` 的 `color` 應該爲 red。
 
 ```js
 assert($('h2').eq(0).css('color') == 'rgb(255, 0, 0)');
 ```
 
-第二个 `h2` 的 `color` 应该为 green。
+第二個 `h2` 的 `color` 應該爲 green。
 
 ```js
 assert($('h2').eq(1).css('color') == 'rgb(0, 128, 0)');
 ```
 
-第三个 `h2` 的 `color` 应该为 green。
+第三個 `h2` 的 `color` 應該爲 green。
 
 ```js
 assert($('h2').eq(2).css('color') == 'rgb(0, 128, 0)');
 ```
 
-第四个 `h2` 的 `color` 应该为 red。
+第四個 `h2` 的 `color` 應該爲 red。
 
 ```js
 assert($('h2').eq(3).css('color') == 'rgb(255, 0, 0)');
 ```
 
-第五个 `h2` 的 `color` 应该为 green。
+第五個 `h2` 的 `color` 應該爲 green。
 
 ```js
 assert($('h2').eq(4).css('color') == 'rgb(0, 128, 0)');
 ```
 
-第六个 `h2` 的 `color` 应该为 red。
+第六個 `h2` 的 `color` 應該爲 red。
 
 ```js
 assert($('h2').eq(5).css('color') == 'rgb(255, 0, 0)');
 ```
 
-第七个 `h2` 的 `color` 应该为 green。
+第七個 `h2` 的 `color` 應該爲 green。
 
 ```js
 assert($('h2').eq(6).css('color') == 'rgb(0, 128, 0)');
 ```
 
-第八个 `h2` 的 `color` 应该为 red。
+第八個 `h2` 的 `color` 應該爲 red。
 
 ```js
 assert($('h2').eq(7).css('color') == 'rgb(255, 0, 0)');
 ```
 
-第九个 `h2` 的 `color` 应该为 red。
+第九個 `h2` 的 `color` 應該爲 red。
 
 ```js
 assert($('h2').eq(8).css('color') == 'rgb(255, 0, 0)');

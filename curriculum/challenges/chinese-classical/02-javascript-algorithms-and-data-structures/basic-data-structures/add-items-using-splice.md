@@ -8,7 +8,7 @@ dashedName: add-items-using-splice
 
 # --description--
 
-还记得在上个挑战中我们提到 `splice()` 方法最多可以接收 3 个参数吗？ 第三个参数可以是一个或多个元素，这些元素会被添加到数组中。 这样，我们能够便捷地将数组中的一个或多个连续元素换成其他的元素。
+還記得在上個挑戰中我們提到 `splice()` 方法最多可以接收 3 個參數嗎？ 第三個參數可以是一個或多個元素，這些元素會被添加到數組中。 這樣，我們能夠便捷地將數組中的一個或多個連續元素換成其他的元素。
 
 ```js
 const numbers = [10, 11, 12, 12, 15];
@@ -19,17 +19,17 @@ numbers.splice(startIndex, amountToDelete, 13, 14);
 console.log(numbers);
 ```
 
-`12` 的第二个条目已被删除，我们在同一索引处添加 `13` 和 `14`。 `numbers` 数组现在将会是 `[ 10, 11, 12, 13, 14, 15 ]`。
+`12` 的第二個條目已被刪除，我們在同一索引處添加 `13` 和 `14`。 `numbers` 數組現在將會是 `[ 10, 11, 12, 13, 14, 15 ]`。
 
-在上面的代码中，数组一开始包含了若干数字。 接着，我们调用 `splice()` 方法，索引为 (3) 的地方开始删除元素，删除的元素数量是 (1)。然后，(13, 14) 是在删除位置插入的元素。 可以在 `amountToDelete` 后面传入任意数量的元素（以逗号分隔），每个都会被插入到数组中。
+在上面的代碼中，數組一開始包含了若干數字。 接着，我們調用 `splice()` 方法，索引爲 (3) 的地方開始刪除元素，刪除的元素數量是 (1)。然後，(13, 14) 是在刪除位置插入的元素。 可以在 `amountToDelete` 後面傳入任意數量的元素（以逗號分隔），每個都會被插入到數組中。
 
 # --instructions--
 
-我们已经定义了一个 `htmlColorNames` 函数，它以一个 HTML 颜色的数组作为输入参数。 请修改这个函数，使用 `splice()` 来移除数组中的前两个元素，并在对应的位置上添加 `'DarkSalmon'` 和 `'BlanchedAlmond'`。
+我們已經定義了一個 `htmlColorNames` 函數，它以一個 HTML 顏色的數組作爲輸入參數。 請修改這個函數，使用 `splice()` 來移除數組中的前兩個元素，並在對應的位置上添加 `'DarkSalmon'` 和 `'BlanchedAlmond'`。
 
 # --hints--
 
-`htmlColorNames` 应返回 `["DarkSalmon", "BlanchedAlmond", "LavenderBlush", "PaleTurquoise", "FireBrick"]`。
+`htmlColorNames` 應返回 `["DarkSalmon", "BlanchedAlmond", "LavenderBlush", "PaleTurquoise", "FireBrick"]`。
 
 ```js
 assert.deepEqual(
@@ -50,19 +50,19 @@ assert.deepEqual(
 );
 ```
 
-`htmlColorNames` 函数中应调用 `splice()` 方法。
+`htmlColorNames` 函數中應調用 `splice()` 方法。
 
 ```js
 assert(/.splice/.test(code));
 ```
 
-不应使用 `shift()` 或 `unshift()`。
+不應使用 `shift()` 或 `unshift()`。
 
 ```js
 assert(!/shift|unshift/.test(code));
 ```
 
-不应使用数组的方括号表示法。
+不應使用數組的方括號表示法。
 
 ```js
 assert(!/\[\d\]\s*=/.test(code));

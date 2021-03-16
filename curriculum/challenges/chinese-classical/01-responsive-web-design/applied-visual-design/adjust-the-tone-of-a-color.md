@@ -1,6 +1,6 @@
 ---
 id: 587d78a4367417b2b2512ad5
-title: 调整颜色的色调
+title: 調整顏色的色調
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cEDJvT7'
 forumTopicId: 301038
@@ -9,15 +9,15 @@ dashedName: adjust-the-tone-of-a-color
 
 # --description--
 
-`hsl()` 使 CSS 更改颜色色调更加方便。 比如，给一个纯色添加白色可以调出更浅的色调；添加黑色可以创造更深的色调。 另外，还可以通过给纯色添加灰色来同时改变颜色的深浅和明暗。 回忆下 `hsl()` 里面的 ‘s’ 和 ‘l’ 分辨代表饱和度和亮度。 饱和度代表灰色的占比，亮度代表白色和黑色的占比。 这在你想获取一个基准色的变种的情景下会十分有用。
+`hsl()` 使 CSS 更改顏色色調更加方便。 比如，給一個純色添加白色可以調出更淺的色調；添加黑色可以創造更深的色調。 另外，還可以通過給純色添加灰色來同時改變顏色的深淺和明暗。 回憶下 `hsl()` 裏面的 ‘s’ 和 ‘l’ 分辨代表飽和度和亮度。 飽和度代表灰色的佔比，亮度代表白色和黑色的佔比。 這在你想獲取一個基準色的變種的情景下會十分有用。
 
 # --instructions--
 
-所有元素的默认 `background-color` 都是 `transparent`。 当前页面的导航栏 `nav` 背景色之所以看起来是蓝绿色，是因为它背后的 `header` 的 `background-color` 属性值为 `cyan`。 给 `nav` 元素增加一个 `background-color`，使它的颜色也为 `cyan`，饱和度为 `80%`，亮度为 `25%`，以修改它的色调和阴影。
+所有元素的默認 `background-color` 都是 `transparent`。 當前頁面的導航欄 `nav` 背景色之所以看起來是藍綠色，是因爲它背後的 `header` 的 `background-color` 屬性值爲 `cyan`。 給 `nav` 元素增加一個 `background-color`，使它的顏色也爲 `cyan`，飽和度爲 `80%`，亮度爲 `25%`，以修改它的色調和陰影。
 
 # --hints--
 
-`nav` 元素应该有一个使用 `hsl()` 属性调节蓝绿色调的 `background-color` 属性。
+`nav` 元素應該有一個使用 `hsl()` 屬性調節藍綠色調的 `background-color` 屬性。
 
 ```js
 assert(

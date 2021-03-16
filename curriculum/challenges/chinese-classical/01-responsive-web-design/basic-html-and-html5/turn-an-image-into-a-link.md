@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08820
-title: 给图片添加链接
+title: 給圖片添加鏈接
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cRdBnUr'
 forumTopicId: 18327
@@ -9,35 +9,35 @@ dashedName: turn-an-image-into-a-link
 
 # --description--
 
-你可以通过把元素嵌套进 `a` 里使其变成一个链接。
+你可以通過把元素嵌套進 `a` 裏使其變成一個鏈接。
 
-如果我们要把图片嵌套进 `a` 元素， 可以这样写：
+如果我們要把圖片嵌套進 `a` 元素， 可以這樣寫：
 
 `<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>`
 
-如果把 `a` 的 `href` 属性值设置为 `#`，创建的是一个死链接（不跳转到其他画面）。
+如果把 `a` 的 `href` 屬性值設置爲 `#`，創建的是一個死鏈接（不跳轉到其他畫面）。
 
 # --instructions--
 
-请把现存的图片嵌套进 `a`（ *锚点*）元素中。
+請把現存的圖片嵌套進 `a`（ *錨點*）元素中。
 
-完成后，请你把鼠标光标悬停在你的图像上， 鼠标光标将变成点击光标。 于是图片就变成了链接。
+完成後，請你把鼠標光標懸停在你的圖像上， 鼠標光標將變成點擊光標。 於是圖片就變成了鏈接。
 
 # --hints--
 
-应将 `img` 嵌套进 `a` 元素中。
+應將 `img` 嵌套進 `a` 元素中。
 
 ```js
 assert($('a').children('img').length > 0);
 ```
 
-`a` 的 `href` 属性值应为 `#`。
+`a` 的 `href` 屬性值應爲 `#`。
 
 ```js
 assert(new RegExp('#').test($('a').children('img').parent().attr('href')));
 ```
 
-每个 `a` 元素都应有结束标签。
+每個 `a` 元素都應有結束標籤。
 
 ```js
 assert(

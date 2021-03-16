@@ -1,6 +1,6 @@
 ---
 id: 587d7fb5367417b2b2512c02
-title: 用波浪号维持依赖项的最新修订号
+title: 用波浪號維持依賴項的最新修訂號
 challengeType: 2
 forumTopicId: 301532
 dashedName: use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-dependency
@@ -8,9 +8,9 @@ dashedName: use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-
 
 # --description--
 
-在上一个挑战中，npm 只包含特定版本的依赖包。 如果想让项目各个部分保持相互兼容，锁定依赖包版本是一个行之有效的办法。 但是大多数情况下，我们并不希望错过依赖项的问题修复，因为它们通常包含重要的安全补丁，而且它们理论上也会兼容我们既有的代码。
+在上一個挑戰中，npm 只包含特定版本的依賴包。 如果想讓項目各個部分保持相互兼容，鎖定依賴包版本是一個行之有效的辦法。 但是大多數情況下，我們並不希望錯過依賴項的問題修復，因爲它們通常包含重要的安全補丁，而且它們理論上也會兼容我們既有的代碼。
 
-可以在依赖项的版本号前加一个波浪号（`~`），以让 npm 依赖项更新到最新的修订版。 这里有一个允许升级到任何 1.3.x 的例子：
+可以在依賴項的版本號前加一個波浪號（`~`），以讓 npm 依賴項更新到最新的修訂版。 這裏有一個允許升級到任何 1.3.x 的例子：
 
 ```json
 "package": "~1.3.8"
@@ -18,15 +18,15 @@ dashedName: use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-
 
 # --instructions--
 
-在 package.json 文件中，当前规则是 npm 将 moment 升级到特定版本（2.10.2）。 但是现在，要允许使用最新的 2.10.x 版本。
+在 package.json 文件中，當前規則是 npm 將 moment 升級到特定版本（2.10.2）。 但是現在，要允許使用最新的 2.10.x 版本。
 
-在依赖项中，给 moment 的版本号添加波浪号（`~`）前缀，允许 npm 将其更新为最新的修订版。
+在依賴項中，給 moment 的版本號添加波浪號（`~`）前綴，允許 npm 將其更新爲最新的修訂版。
 
-**注意：**原来的版本号不用更改。
+**注意：**原來的版本號不用更改。
 
 # --hints--
 
-“dependencies”应该包含“moment”
+“dependencies”應該包含“moment”
 
 ```js
 (getUserInput) =>
@@ -45,7 +45,7 @@ dashedName: use-the-tilde-character-to-always-use-the-latest-patch-version-of-a-
   );
 ```
 
-“moment”的版本号应该是“~2.10.2”
+“moment”的版本號應該是“~2.10.2”
 
 ```js
 (getUserInput) =>

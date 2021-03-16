@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9acde08712
-title: 使用 Bootstrap Fluid 容器实现响应式设计
+title: 使用 Bootstrap Fluid 容器實現響應式設計
 challengeType: 0
 forumTopicId: 18362
 dashedName: use-responsive-design-with-bootstrap-fluid-containers
@@ -8,29 +8,29 @@ dashedName: use-responsive-design-with-bootstrap-fluid-containers
 
 # --description--
 
-之前，在 freeCodeCamp 的 HTML5 和 CSS 章节中我们构建了一个 Cat Photo App。 我们在此基础上继续学习。 这次我们将会使用最受欢迎的响应式 CSS 框架 Bootstrap 来美化它。
+之前，在 freeCodeCamp 的 HTML5 和 CSS 章節中我們構建了一個 Cat Photo App。 我們在此基礎上繼續學習。 這次我們將會使用最受歡迎的響應式 CSS 框架 Bootstrap 來美化它。
 
-Bootstrap 会根据屏幕大小来动态调整 HTML 元素的大小————因此称为 <dfn>Responsive Design</dfn>（响应式设计）。
+Bootstrap 會根據屏幕大小來動態調整 HTML 元素的大小————因此稱爲 <dfn>Responsive Design</dfn>（響應式設計）。
 
-通过响应式设计，我们将无需额外设计一个手机版的网页， 因为它在任何尺寸的屏幕上看起来都很棒。
+通過響應式設計，我們將無需額外設計一個手機版的網頁， 因爲它在任何尺寸的屏幕上看起來都很棒。
 
-任何 Web 应用，都可以通过添加如下代码到 HTML 顶部来引入 Bootstrap 。
+任何 Web 應用，都可以通過添加如下代碼到 HTML 頂部來引入 Bootstrap 。
 
 `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>`
 
-在该类课程中，我们已经提前帮你把相应代码添加到了页面中。 注意使用 `>` 或者 `/>` 两种方式闭合 `link` 标签都是可行的。
+在該類課程中，我們已經提前幫你把相應代碼添加到了頁面中。 注意使用 `>` 或者 `/>` 兩種方式閉合 `link` 標籤都是可行的。
 
-首先，我们应该把所有 HTML 标签放在 class 为 `container-fluid` 的 `div` 元素内（除了 `link` 标签和 `style` 元素）。
+首先，我們應該把所有 HTML 標籤放在 class 爲 `container-fluid` 的 `div` 元素內（除了 `link` 標籤和 `style` 元素）。
 
 # --hints--
 
-`div` 元素的 class 属性值应该为 `container-fluid`。
+`div` 元素的 class 屬性值應該爲 `container-fluid`。
 
 ```js
 assert($('div').hasClass('container-fluid'));
 ```
 
-确保该 `div` 元素有闭合标签.
+確保該 `div` 元素有閉合標籤.
 
 ```js
 assert(
@@ -40,7 +40,7 @@ assert(
 );
 ```
 
-确保已经将闭合 `style` 标签后所有的 HTML 元素内嵌在 `.container-fluid` 元素中。
+確保已經將閉合 `style` 標籤後所有的 HTML 元素內嵌在 `.container-fluid` 元素中。
 
 ```js
 assert($('.container-fluid').children().length >= 8);

@@ -1,6 +1,6 @@
 ---
 id: 587d781b367417b2b2512abe
-title: 给卡片元素添加 box-shadow
+title: 給卡片元素添加 box-shadow
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cvVZdUd'
 forumTopicId: 301031
@@ -9,23 +9,23 @@ dashedName: add-a-box-shadow-to-a-card-like-element
 
 # --description--
 
-`box-shadow` 属性用来给元素添加阴影，该属性值是由逗号分隔的一个或多个阴影列表。
+`box-shadow` 屬性用來給元素添加陰影，該屬性值是由逗號分隔的一個或多個陰影列表。
 
-`box-shadow` 属性的阴影依次由下面这些值描述：
+`box-shadow` 屬性的陰影依次由下面這些值描述：
 
 <ul>
-  <li><code>offset-x</code> 阴影的水平偏移量；</li>
-  <li><code>offset-y</code> 阴影的垂直偏移量；</li>
-  <li><code>blur-radius</code> 模糊半径；</li>
-  <li><code>spread-radius</code> 阴影扩展半径；</li>
+  <li><code>offset-x</code> 陰影的水平偏移量；</li>
+  <li><code>offset-y</code> 陰影的垂直偏移量；</li>
+  <li><code>blur-radius</code> 模糊半徑；</li>
+  <li><code>spread-radius</code> 陰影擴展半徑；</li>
   <li><code>color</code></li>
 </ul>
 
-其中 `blur-radius` 和 `spread-radius` 是可选的。
+其中 `blur-radius` 和 `spread-radius` 是可選的。
 
-可以通过逗号分隔每个 `box-shadow` 元素的属性来添加多个 box-shadow。
+可以通過逗號分隔每個 `box-shadow` 元素的屬性來添加多個 box-shadow。
 
-如下为添加了模糊效果的例子，它使用了透明度较高的黑色作为阴影：
+如下爲添加了模糊效果的例子，它使用了透明度較高的黑色作爲陰影：
 
 ```css
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -33,17 +33,17 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 # --instructions--
 
-元素现在有一个 `thumbnail` id。 在这个选择器中，使用上面的示例 CSS 值在卡片上加一个 `box-shadow`。
+元素現在有一個 `thumbnail` id。 在這個選擇器中，使用上面的示例 CSS 值在卡片上加一個 `box-shadow`。
 
 # --hints--
 
-应该给 id 为 `thumbnail` 的元素添加 `box-shadow` 属性。
+應該給 id 爲 `thumbnail` 的元素添加 `box-shadow` 屬性。
 
 ```js
 assert(code.match(/#thumbnail\s*?{\s*?box-shadow/g));
 ```
 
-`box-shadow` 属性值应该是题目说明中指定的 CSS 值。
+`box-shadow` 屬性值應該是題目說明中指定的 CSS 值。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 5cc0bd7a49b71cb96132e54c
-title: 使用递归来创建一个数字序列
+title: 使用遞歸來創建一個數字序列
 challengeType: 1
 forumTopicId: 301180
 dashedName: use-recursion-to-create-a-range-of-numbers
@@ -8,21 +8,21 @@ dashedName: use-recursion-to-create-a-range-of-numbers
 
 # --description--
 
-接着上一个挑战，有另外一个机会来用递归函数解决问题。
+接着上一個挑戰，有另外一個機會來用遞歸函數解決問題。
 
 # --instructions--
 
-已经定义好了 `rangeOfNumbers` 函数，包含两个参数。 函数应该返回一个连续数字数组，`startNum` 参数开始 `endNum` 参数截止。 开始的数字小于或等于截止数字。 函数必需递归调用自身，不能使用任意形式的循环。 要考虑到 `startNum` 和 `endNum` 相同的情况。
+已經定義好了 `rangeOfNumbers` 函數，包含兩個參數。 函數應該返回一個連續數字數組，`startNum` 參數開始 `endNum` 參數截止。 開始的數字小於或等於截止數字。 函數必需遞歸調用自身，不能使用任意形式的循環。 要考慮到 `startNum` 和 `endNum` 相同的情況。
 
 # --hints--
 
-函数应该返回一个数组。
+函數應該返回一個數組。
 
 ```js
 assert(Array.isArray(rangeOfNumbers(5, 10)));
 ```
 
-不能包含循环语句（`for` 或者 `while` 或者高阶函数比如 `forEach`、`map`、`filter` 或者 `reduce`）。
+不能包含循環語句（`for` 或者 `while` 或者高階函數比如 `forEach`、`map`、`filter` 或者 `reduce`）。
 
 ```js
 assert(
@@ -32,7 +32,7 @@ assert(
 );
 ```
 
-`rangeOfNumbers` 应该使用递归函数（调用自身）来完成这个挑战。
+`rangeOfNumbers` 應該使用遞歸函數（調用自身）來完成這個挑戰。
 
 ```js
 assert(
@@ -42,19 +42,19 @@ assert(
 );
 ```
 
-`rangeOfNumbers(1, 5)` 应该返回 `[1, 2, 3, 4, 5]`。
+`rangeOfNumbers(1, 5)` 應該返回 `[1, 2, 3, 4, 5]`。
 
 ```js
 assert.deepStrictEqual(rangeOfNumbers(1, 5), [1, 2, 3, 4, 5]);
 ```
 
-`rangeOfNumbers(6, 9)` 应该返回 `[6, 7, 8, 9]`。
+`rangeOfNumbers(6, 9)` 應該返回 `[6, 7, 8, 9]`。
 
 ```js
 assert.deepStrictEqual(rangeOfNumbers(6, 9), [6, 7, 8, 9]);
 ```
 
-`rangeOfNumbers(4, 4)` 应该返回 `[4]`。
+`rangeOfNumbers(4, 4)` 應該返回 `[4]`。
 
 ```js
 assert.deepStrictEqual(rangeOfNumbers(4, 4), [4]);

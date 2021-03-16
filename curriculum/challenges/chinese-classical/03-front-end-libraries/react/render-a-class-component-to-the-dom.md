@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036167
-title: 将 class 组件渲染到 DOM 树
+title: 將 class 組件渲染到 DOM 樹
 challengeType: 6
 forumTopicId: 301404
 dashedName: render-a-class-component-to-the-dom
@@ -8,19 +8,19 @@ dashedName: render-a-class-component-to-the-dom
 
 # --description--
 
-还记不记得在之前的挑战中使用 ReactDOM API 将 JSX 元素渲染到 DOM， 这与渲染 React 组件的过程十分相似。 过去的几个挑战主要针对组件和组合，因此渲染是在幕后完成的。 但是，如果不调用 ReactDOM API，编写的任何 React 代码都不会渲染到 DOM。
+還記不記得在之前的挑戰中使用 ReactDOM API 將 JSX 元素渲染到 DOM， 這與渲染 React 組件的過程十分相似。 過去的幾個挑戰主要針對組件和組合，因此渲染是在幕後完成的。 但是，如果不調用 ReactDOM API，編寫的任何 React 代碼都不會渲染到 DOM。
 
-复习一下语法： `ReactDOM.render(componentToRender, targetNode)`。 第一个参数是要渲染的 React 组件。 第二个参数是要在其中渲染该组件的 DOM 节点。
+複習一下語法： `ReactDOM.render(componentToRender, targetNode)`。 第一個參數是要渲染的 React 組件。 第二個參數是要在其中渲染該組件的 DOM 節點。
 
-传递到`ReactDOM.render()` 的React 组件与 JSX 元素略有不同。 对于 JSX 元素，传入的是要渲染的元素的名称。 但是，对于 React 组件，需要使用与渲染嵌套组件相同的语法，例如`ReactDOM.render(<ComponentToRender />, targetNode)`。 此语法用于 ES6 class 组件和函数组件都可以。
+傳遞到`ReactDOM.render()` 的React 組件與 JSX 元素略有不同。 對於 JSX 元素，傳入的是要渲染的元素的名稱。 但是，對於 React 組件，需要使用與渲染嵌套組件相同的語法，例如`ReactDOM.render(<ComponentToRender />, targetNode)`。 此語法用於 ES6 class 組件和函數組件都可以。
 
 # --instructions--
 
-在后台引入了 `Fruits` 和 `Vegetables` 组件。 将两个组件渲染为 `TypesOfFood` 组件的子组件，然后将 `TypesOfFood` 渲染到 DOM 节点， 在这个挑战中，请渲染到 `id='challenge-node'`的 `div` 中。
+在後臺引入了 `Fruits` 和 `Vegetables` 組件。 將兩個組件渲染爲 `TypesOfFood` 組件的子組件，然後將 `TypesOfFood` 渲染到 DOM 節點， 在這個挑戰中，請渲染到 `id='challenge-node'`的 `div` 中。
 
 # --hints--
 
-`TypesOfFood` 组件应该返回单个 `div` 元素。
+`TypesOfFood` 組件應該返回單個 `div` 元素。
 
 ```js
 assert(
@@ -31,7 +31,7 @@ assert(
 );
 ```
 
-`TypesOfFood` 组件应该在 `h1` 元素之后渲染 `Fruits` 组件。
+`TypesOfFood` 組件應該在 `h1` 元素之後渲染 `Fruits` 組件。
 
 ```js
 assert(
@@ -42,7 +42,7 @@ assert(
 );
 ```
 
-`TypesOfFood` 组件应该在 `Fruits` 组件之后渲染 `Vegetables` 组件。
+`TypesOfFood` 組件應該在 `Fruits` 組件之後渲染 `Vegetables` 組件。
 
 ```js
 assert(
@@ -53,7 +53,7 @@ assert(
 );
 ```
 
-`TypesOfFood` 组件应该渲染到 id 为 `challenge-node` 的 `div`中。
+`TypesOfFood` 組件應該渲染到 id 爲 `challenge-node` 的 `div`中。
 
 ```js
 assert(

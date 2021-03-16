@@ -1,6 +1,6 @@
 ---
 id: 5ee127a03c3b35dd45426493
-title: 将一个变量的值赋给另一个
+title: 將一個變量的值賦給另一個
 challengeType: 1
 videoUrl: ''
 forumTopicId: 418265
@@ -9,7 +9,7 @@ dashedName: assigning-the-value-of-one-variable-to-another
 
 # --description--
 
-在使用<dfn>赋值</dfn>运算符赋予变量某个值后，你可以使用<dfn>赋值</dfn>运算符将该变量的值赋给另一个变量。
+在使用<dfn>賦值</dfn>運算符賦予變量某個值後，你可以使用<dfn>賦值</dfn>運算符將該變量的值賦給另一個變量。
 
 ```js
 var myVar;
@@ -18,27 +18,27 @@ var myNum;
 myNum = myVar;
 ```
 
-以上代码声明了一个没有初始值的变量 `myVar`，然后给它赋值为 `5`。 紧接着，又声明了一个没有初始值的变量 `myNum`。 然后，变量 `myVar` 的内容（也就是 `5`）被赋给了变量 `myNum`。 现在，变量 `myNum` 的值也为 `5`。
+以上代碼聲明瞭一個沒有初始值的變量 `myVar`，然後給它賦值爲 `5`。 緊接着，又聲明瞭一個沒有初始值的變量 `myNum`。 然後，變量 `myVar` 的內容（也就是 `5`）被賦給了變量 `myNum`。 現在，變量 `myNum` 的值也爲 `5`。
 
 # --instructions--
 
-把变量 `a` 的内容赋给变量 `b`。
+把變量 `a` 的內容賦給變量 `b`。
 
 # --hints--
 
-你不应该修改注释上面的代码。
+你不應該修改註釋上面的代碼。
 
 ```js
 assert(/var a;/.test(code) && /a = 7;/.test(code) && /var b;/.test(code));
 ```
 
-`b` 的值应该为 `7`。
+`b` 的值應該爲 `7`。
 
 ```js
 assert(typeof b === 'number' && b === 7);
 ```
 
-应该使用 `=` 将 `a` 赋给 `b`。
+應該使用 `=` 將 `a` 賦給 `b`。
 
 ```js
 assert(/b\s*=\s*a\s*/g.test(code));

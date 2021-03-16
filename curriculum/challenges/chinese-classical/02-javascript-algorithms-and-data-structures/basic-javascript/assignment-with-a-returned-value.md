@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244c3
-title: 使用返回值赋值
+title: 使用返回值賦值
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/ce2pEtB'
 forumTopicId: 16658
@@ -9,27 +9,27 @@ dashedName: assignment-with-a-returned-value
 
 # --description--
 
-如果你还记得我们在[使用赋值运算符存储值](/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator)中的讨论的话，等号右侧的所有操作都会在赋值之前完成。 这意味着我们可以获取函数的返回值，并将其赋值给一个变量。
+如果你還記得我們在[使用賦值運算符存儲值](/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator)中的討論的話，等號右側的所有操作都會在賦值之前完成。 這意味着我們可以獲取函數的返回值，並將其賦值給一個變量。
 
-假设我们有一个预先定义的函数 `sum` ，它将两个数相加，然后：
+假設我們有一個預先定義的函數 `sum` ，它將兩個數相加，然後：
 
 `ourSum = sum(5, 12);`
 
-将会调用函数 `sum`，函数返回值 `17`，然后将该值赋给变量 `ourSum`。
+將會調用函數 `sum`，函數返回值 `17`，然後將該值賦給變量 `ourSum`。
 
 # --instructions--
 
-调用函数 `processArg`，传入参数 `7`，并将它的返回值赋给变量 `processed`。
+調用函數 `processArg`，傳入參數 `7`，並將它的返回值賦給變量 `processed`。
 
 # --hints--
 
-`processed` 的值应为 `2`。
+`processed` 的值應爲 `2`。
 
 ```js
 assert(processed === 2);
 ```
 
-你应该将 `processArg` 赋值给 `processed`。
+你應該將 `processArg` 賦值給 `processed`。
 
 ```js
 assert(/processed\s*=\s*processArg\(\s*7\s*\)/.test(code));

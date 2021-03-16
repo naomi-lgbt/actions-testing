@@ -1,6 +1,6 @@
 ---
 id: 587d7b8d367417b2b2512b5b
-title: 学习函数式编程
+title: 學習函數式編程
 challengeType: 1
 forumTopicId: 301233
 dashedName: learn-about-functional-programming
@@ -8,33 +8,33 @@ dashedName: learn-about-functional-programming
 
 # --description--
 
-函数式编程是一种方案简单、功能独立、对作用域外没有任何副作用的编程范式。
+函數式編程是一種方案簡單、功能獨立、對作用域外沒有任何副作用的編程範式。
 
 `INPUT -> PROCESS -> OUTPUT`
 
-函数式编程：
+函數式編程：
 
-1）功能独立——不依赖于程序的状态（比如可能发生变化的全局变量）；
+1）功能獨立——不依賴於程序的狀態（比如可能發生變化的全局變量）；
 
-2）纯函数——同一个输入永远能得到同一个输出；
+2）純函數——同一個輸入永遠能得到同一個輸出；
 
-3）有限的副作用——可以严格地限制函数外部对状态的更改。
+3）有限的副作用——可以嚴格地限制函數外部對狀態的更改。
 
 # --instructions--
 
-freeCodeCamp 成员在 love tea 的故事。
+freeCodeCamp 成員在 love tea 的故事。
 
-在代码编辑器中，已经为你定义好了 `prepareTea` 和 `getTea` 函数。 调用 `getTea` 函数为团队准备 40 杯茶，并将它们存储在 `tea4TeamFCC` 变量里。
+在代碼編輯器中，已經爲你定義好了 `prepareTea` 和 `getTea` 函數。 調用 `getTea` 函數爲團隊準備 40 杯茶，並將它們存儲在 `tea4TeamFCC` 變量裏。
 
 # --hints--
 
-`tea4TeamFCC` 变量里应有 40 杯为团队准备的茶。
+`tea4TeamFCC` 變量裏應有 40 杯爲團隊準備的茶。
 
 ```js
 assert(tea4TeamFCC.length === 40);
 ```
 
-`tea4TeamFCC` 变量里应有 greenTea。
+`tea4TeamFCC` 變量裏應有 greenTea。
 
 ```js
 assert(tea4TeamFCC[0] === 'greenTea');

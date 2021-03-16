@@ -1,6 +1,6 @@
 ---
 id: 587d7db6367417b2b2512b98
-title: 匹配单个未指定的字符
+title: 匹配單個未指定的字符
 challengeType: 1
 forumTopicId: 301358
 dashedName: match-single-characters-not-specified
@@ -8,31 +8,31 @@ dashedName: match-single-characters-not-specified
 
 # --description--
 
-到目前为止，已经创建了一个想要匹配的字符集合，但也可以创建一个不想匹配的字符集合。 这些类型的字符集称为否定字符集（ <dfn>negated character sets</dfn>）。
+到目前爲止，已經創建了一個想要匹配的字符集合，但也可以創建一個不想匹配的字符集合。 這些類型的字符集稱爲否定字符集（ <dfn>negated character sets</dfn>）。
 
-要创建否定字符集，需要在开始括号后面和不想匹配的字符前面放置脱字符（即`^`）。
+要創建否定字符集，需要在開始括號後面和不想匹配的字符前面放置脫字符（即`^`）。
 
-例如，`/[^aeiou]/gi` 匹配所有非元音字符。 注意，字符 `.`、`!`、`[`、`@`、`/` 和空白字符等也会被匹配，该否定字符集仅排除元音字符。
+例如，`/[^aeiou]/gi` 匹配所有非元音字符。 注意，字符 `.`、`!`、`[`、`@`、`/` 和空白字符等也會被匹配，該否定字符集僅排除元音字符。
 
 # --instructions--
 
-创建一个匹配所有非数字或元音字符的正则表达式。 请记得在正则表达式中包含恰当的标志。
+創建一個匹配所有非數字或元音字符的正則表達式。 請記得在正則表達式中包含恰當的標誌。
 
 # --hints--
 
-你的正则表达式 `myRegex` 应该匹配 9 项。
+你的正則表達式 `myRegex` 應該匹配 9 項。
 
 ```js
 assert(result.length == 9);
 ```
 
-你的正则表达式 `myRegex` 应该使用全局标志。
+你的正則表達式 `myRegex` 應該使用全局標誌。
 
 ```js
 assert(myRegex.flags.match(/g/).length == 1);
 ```
 
-你的正则表达式 `myRegex` 应该使用忽略大小写标志。
+你的正則表達式 `myRegex` 應該使用忽略大小寫標誌。
 
 ```js
 assert(myRegex.flags.match(/i/).length == 1);

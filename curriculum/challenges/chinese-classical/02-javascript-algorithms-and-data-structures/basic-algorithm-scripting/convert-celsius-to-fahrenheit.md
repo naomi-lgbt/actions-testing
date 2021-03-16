@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244b3
-title: 将摄氏度转换为华氏度
+title: 將攝氏度轉換爲華氏度
 challengeType: 1
 forumTopicId: 16806
 dashedName: convert-celsius-to-fahrenheit
@@ -8,43 +8,43 @@ dashedName: convert-celsius-to-fahrenheit
 
 # --description--
 
-将摄氏度转换为华氏度的计算方式为：摄氏度乘以 `9/5` 然后加上 `32`。
+將攝氏度轉換爲華氏度的計算方式爲：攝氏度乘以 `9/5` 然後加上 `32`。
 
-输入参数 `celsius` 代表一个摄氏度的温度。 使用已定义的变量 `fahrenheit`，并赋值为相应的华氏度的温度值。 根据上述转换公式来进行转换。
+輸入參數 `celsius` 代表一個攝氏度的溫度。 使用已定義的變量 `fahrenheit`，並賦值爲相應的華氏度的溫度值。 根據上述轉換公式來進行轉換。
 
 # --hints--
 
-`convertToF(0)` 应返回一个数字。
+`convertToF(0)` 應返回一個數字。
 
 ```js
 assert(typeof convertToF(0) === 'number');
 ```
 
-`convertToF(-30)` 应返回 `-22`。
+`convertToF(-30)` 應返回 `-22`。
 
 ```js
 assert(convertToF(-30) === -22);
 ```
 
-`convertToF(-10)` 应返回 `14`。
+`convertToF(-10)` 應返回 `14`。
 
 ```js
 assert(convertToF(-10) === 14);
 ```
 
-`convertToF(0)` 应返回 `32`。
+`convertToF(0)` 應返回 `32`。
 
 ```js
 assert(convertToF(0) === 32);
 ```
 
-`convertToF(20)` 应返回 `68`。
+`convertToF(20)` 應返回 `68`。
 
 ```js
 assert(convertToF(20) === 68);
 ```
 
-`convertToF(30)` 应返回 `86`。
+`convertToF(30)` 應返回 `86`。
 
 ```js
 assert(convertToF(30) === 86);

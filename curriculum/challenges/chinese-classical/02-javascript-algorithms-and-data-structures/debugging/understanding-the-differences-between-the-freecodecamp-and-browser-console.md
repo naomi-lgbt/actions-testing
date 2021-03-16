@@ -1,6 +1,6 @@
 ---
 id: 587d7b83367417b2b2512b37
-title: 了解 freeCodeCamp 和浏览器控制台之间的差异
+title: 瞭解 freeCodeCamp 和瀏覽器控制檯之間的差異
 challengeType: 1
 forumTopicId: 301193
 dashedName: understanding-the-differences-between-the-freecodecamp-and-browser-console
@@ -8,27 +8,27 @@ dashedName: understanding-the-differences-between-the-freecodecamp-and-browser-c
 
 # --description--
 
-你可能已经注意到一些 freeCodeCamp JavaScript 的挑战有自己的控制台。 这些控制台的行为与上一次挑战中使用的浏览器控制台略有不同。
+你可能已經注意到一些 freeCodeCamp JavaScript 的挑戰有自己的控制檯。 這些控制檯的行爲與上一次挑戰中使用的瀏覽器控制檯略有不同。
 
-以下挑战旨在强调 freeCodeCamp 控制台与浏览器控制台之间的一些差异。
+以下挑戰旨在強調 freeCodeCamp 控制檯與瀏覽器控制檯之間的一些差異。
 
-当在浏览器中加载并运行 JavaScript 文件时，`console.log()` 语句会在控制台中按照调用的次数准确地打印出要求的内容。
+當在瀏覽器中加載並運行 JavaScript 文件時，`console.log()` 語句會在控制檯中按照調用的次數準確地打印出要求的內容。
 
-在编辑器检测到脚本中的更改之后，以及测试期间，freeCodeCamp 控制台将打印 `console.log()` 语句。
+在編輯器檢測到腳本中的更改之後，以及測試期間，freeCodeCamp 控制檯將打印 `console.log()` 語句。
 
-在运行测试之前，将清除 freeCodeCamp 控制台，为避免破坏，仅在第一次测试期间打印日志（请参见下面的注释）。
+在運行測試之前，將清除 freeCodeCamp 控制檯，爲避免破壞，僅在第一次測試期間打印日誌（請參見下面的註釋）。
 
-如果你想看到每次测试的日志，运行测试，并打开浏览器控制台。 如果你喜欢使用浏览器控制台，想要它模仿 freeCodeCamp 控制台，请在其他 `console` 调用前加上 `console.clear()`，以清除浏览器控制台。
+如果你想看到每次測試的日誌，運行測試，並打開瀏覽器控制檯。 如果你喜歡使用瀏覽器控制檯，想要它模仿 freeCodeCamp 控制檯，請在其他 `console` 調用前加上 `console.clear()`，以清除瀏覽器控制檯。
 
-**注意：** 每次调用函数时，函数内的 `console.log` 都会被打印到 freeCodeCamp 控制台。 这样可以帮助在测试期间调试函数。
+**注意：** 每次調用函數時，函數內的 `console.log` 都會被打印到 freeCodeCamp 控制檯。 這樣可以幫助在測試期間調試函數。
 
 # --instructions--
 
-首先，使用 `console.log` 打印 `output` 变量。 然后使用 `console.clear` 清除浏览器控制台。
+首先，使用 `console.log` 打印 `output` 變量。 然後使用 `console.clear` 清除瀏覽器控制檯。
 
 # --hints--
 
-应该使用 `console.clear()` 清除浏览器控制台。
+應該使用 `console.clear()` 清除瀏覽器控制檯。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-应该使用 `console.log()` 打印 `output` 变量。
+應該使用 `console.log()` 打印 `output` 變量。
 
 ```js
 assert(__helpers.removeWhiteSpace(code).match(/console\.log\(output\)/));

@@ -1,6 +1,6 @@
 ---
 id: 587d7fb8367417b2b2512c11
-title: 使用 model.remove() 删除多个 document
+title: 使用 model.remove() 刪除多個 document
 challengeType: 2
 forumTopicId: 301538
 dashedName: delete-many-documents-with-model-remove
@@ -8,17 +8,17 @@ dashedName: delete-many-documents-with-model-remove
 
 # --description--
 
-`Model.remove()` 可以用于删除符合给定匹配条件的所有 document。
+`Model.remove()` 可以用於刪除符合給定匹配條件的所有 document。
 
 # --instructions--
 
-修改 `removeManyPeople` 函数，使用 `nameToRemove` 删除所有姓名是变量 `Model.remove()` 的人。 给它传入一个带有 `name` 字段的查询 document 和一个回调函数。
+修改 `removeManyPeople` 函數，使用 `nameToRemove` 刪除所有姓名是變量 `Model.remove()` 的人。 給它傳入一個帶有 `name` 字段的查詢 document 和一個回調函數。
 
-**注意：** `Model.remove()` 不会返回被删除的 document，而是会返回一个包含操作结果以及受影响的数据数量的 JSON 对象。 不要忘记将它传入 `done()` 回调函数，因为我们需要在挑战的测试中调用它。
+**注意：** `Model.remove()` 不會返回被刪除的 document，而是會返回一個包含操作結果以及受影響的數據數量的 JSON 對象。 不要忘記將它傳入 `done()` 回調函數，因爲我們需要在挑戰的測試中調用它。
 
 # --hints--
 
-应一次性成功删除多条数据
+應一次性成功刪除多條數據
 
 ```js
 (getUserInput) =>

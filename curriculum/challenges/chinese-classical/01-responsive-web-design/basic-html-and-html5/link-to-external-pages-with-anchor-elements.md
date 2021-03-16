@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08816
-title: 用 a 实现网页间的跳转
+title: 用 a 實現網頁間的跳轉
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/c8EkncB'
 forumTopicId: 18226
@@ -9,33 +9,33 @@ dashedName: link-to-external-pages-with-anchor-elements
 
 # --description--
 
-你可以用 `a`（Anchor，简写为 a）来实现网页间的跳转。
+你可以用 `a`（Anchor，簡寫爲 a）來實現網頁間的跳轉。
 
-`a` 需要一个 `href` 属性指向跳转的目的地。 同时，它还应有内容。 例如：
+`a` 需要一個 `href` 屬性指向跳轉的目的地。 同時，它還應有內容。 例如：
 
 `<a href="https://freecodecamp.org">this links to freecodecamp.org</a>`
 
-浏览器将显示文本 `this links to freecodecamp.org`，这是一个可点击的链接。 你可以通过这个链接访问 `https://www.freecodecamp.org`。
+瀏覽器將顯示文本 `this links to freecodecamp.org`，這是一個可點擊的鏈接。 你可以通過這個鏈接訪問 `https://www.freecodecamp.org`。
 
 # --instructions--
 
-创建一个内容文本为 “cat photos” 的 `a` 元素，并将其 `href` 属性值设置为 `https://freecatphotoapp.com`。
+創建一個內容文本爲 “cat photos” 的 `a` 元素，並將其 `href` 屬性值設置爲 `https://freecatphotoapp.com`。
 
 # --hints--
 
-`a` 元素应有锚文本 `cat photos`。
+`a` 元素應有錨文本 `cat photos`。
 
 ```js
 assert(/cat photos/gi.test($('a').text()));
 ```
 
-你的 `a` 元素应链接到 `https://freecatphotoapp.com`。
+你的 `a` 元素應鏈接到 `https://freecatphotoapp.com`。
 
 ```js
 assert(/^https?:\/\/freecatphotoapp\.com\/?$/i.test($('a').attr('href')));
 ```
 
-确保 `a` 元素有结束标签。
+確保 `a` 元素有結束標籤。
 
 ```js
 assert(

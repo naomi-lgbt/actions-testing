@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244ad
-title: 数字递减
+title: 數字遞減
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cM2KeS2'
 forumTopicId: 17558
@@ -9,29 +9,29 @@ dashedName: decrement-a-number-with-javascript
 
 # --description--
 
-使用自减符号`--`，你可以很方便地对一个变量执行<dfn>自减</dfn>或者 -1 运算。
+使用自減符號`--`，你可以很方便地對一個變量執行<dfn>自減</dfn>或者 -1 運算。
 
 `i--;`
 
-等效于
+等效於
 
 `i = i - 1;`
 
-**提示** `i--;` 这种写法，省去了书写等号的必要。
+**提示** `i--;` 這種寫法，省去了書寫等號的必要。
 
 # --instructions--
 
-重写代码，使用 `--` 符号对 `myVar` 执行自减操作。
+重寫代碼，使用 `--` 符號對 `myVar` 執行自減操作。
 
 # --hints--
 
-`myVar` 应该等于`10`。
+`myVar` 應該等於`10`。
 
 ```js
 assert(myVar === 10);
 ```
 
-`myVar = myVar - 1;` 语句应该被修改。
+`myVar = myVar - 1;` 語句應該被修改。
 
 ```js
 assert(
@@ -39,13 +39,13 @@ assert(
 );
 ```
 
-对 `myVar` 使用 `--` 运算符。
+對 `myVar` 使用 `--` 運算符。
 
 ```js
 assert(/[-]{2}\s*myVar|myVar\s*[-]{2}/.test(code));
 ```
 
-不要修改注释上面的代码。
+不要修改註釋上面的代碼。
 
 ```js
 assert(/var myVar = 11;/.test(code));

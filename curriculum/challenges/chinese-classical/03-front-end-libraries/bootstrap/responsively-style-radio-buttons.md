@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedb08845
-title: 响应式风格的单选按钮
+title: 響應式風格的單選按鈕
 challengeType: 0
 forumTopicId: 18270
 required:
@@ -13,27 +13,27 @@ dashedName: responsively-style-radio-buttons
 
 # --description--
 
-Bootstrap 的 `col-xs-*` class 也可以用在 `form` 元素上！ 这样就可以在不关心屏幕大小的情况下，将的单选按钮均匀的平铺在页面上。
+Bootstrap 的 `col-xs-*` class 也可以用在 `form` 元素上！ 這樣就可以在不關心屏幕大小的情況下，將的單選按鈕均勻的平鋪在頁面上。
 
-将所有单选按钮放入 `<div class="row">` 元素中。 再用 `<div class="col-xs-6">` 元素包裹每一个单选按钮。
+將所有單選按鈕放入 `<div class="row">` 元素中。 再用 `<div class="col-xs-6">` 元素包裹每一個單選按鈕。
 
-**注意：** 提醒一句，单选按钮是 type 为 `radio` 的 `input` 元素。
+**注意：** 提醒一句，單選按鈕是 type 爲 `radio` 的 `input` 元素。
 
 # --hints--
 
-所有的单选按钮应该放置于具有 `row` class 的 `div` 元素中。
+所有的單選按鈕應該放置於具有 `row` class 的 `div` 元素中。
 
 ```js
 assert($('div.row:has(input[type="radio"])').length > 0);
 ```
 
-每一个单选按钮应该嵌套于具有 class 属性为 `col-xs-6` 的 `div` 元素之中。
+每一個單選按鈕應該嵌套於具有 class 屬性爲 `col-xs-6` 的 `div` 元素之中。
 
 ```js
 assert($('div.col-xs-6:has(input[type="radio"])').length > 1);
 ```
 
-确保所有 `div` 元素都有闭合标签。
+確保所有 `div` 元素都有閉合標籤。
 
 ```js
 assert(

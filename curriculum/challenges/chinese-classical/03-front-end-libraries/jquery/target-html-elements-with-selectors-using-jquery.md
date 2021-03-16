@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9bedc08826
-title: 使用 jQuery 选择器选择元素
+title: 使用 jQuery 選擇器選擇元素
 challengeType: 6
 forumTopicId: 18319
 required:
@@ -11,33 +11,33 @@ dashedName: target-html-elements-with-selectors-using-jquery
 
 # --description--
 
-现在已经有了 `document ready function`。
+現在已經有了 `document ready function`。
 
-首先，完成第一个 jQuery 语句。 所有的 jQuery 函数都以 `$` 开头，这个符号通常被称为美元符号（dollar sign operator）或 bling。
+首先，完成第一個 jQuery 語句。 所有的 jQuery 函數都以 `$` 開頭，這個符號通常被稱爲美元符號（dollar sign operator）或 bling。
 
-jQuery 通常选取并操作带有<dfn>选择器（selector）</dfn>的 HTML 标签。
+jQuery 通常選取並操作帶有<dfn>選擇器（selector）</dfn>的 HTML 標籤。
 
-比如，想要给 `button` 元素添加跳跃效果。 只需要在 document ready 函数内添加如下代码：
+比如，想要給 `button` 元素添加跳躍效果。 只需要在 document ready 函數內添加如下代碼：
 
 `$("button").addClass("animated bounce");`
 
-请注意，已经在后台引入了 jQuery 库和 Animate.css 库，所以可以在编辑器里直接使用 jQuery 和动画。 因此，只需要通过 jQuery 给 `button` 元素添加 `bounce` 类就可以了。
+請注意，已經在後臺引入了 jQuery 庫和 Animate.css 庫，所以可以在編輯器裏直接使用 jQuery 和動畫。 因此，只需要通過 jQuery 給 `button` 元素添加 `bounce` 類就可以了。
 
 # --hints--
 
-应该用 jQuery 的 `addClass()` 方法给 `button` 标签添加 `animated` 和 `bounce` 类。
+應該用 jQuery 的 `addClass()` 方法給 `button` 標籤添加 `animated` 和 `bounce` 類。
 
 ```js
 assert($('button').hasClass('animated') && $('button').hasClass('bounce'));
 ```
 
-应该仅用 jQuery 给标签添加这些 class。
+應該僅用 jQuery 給標籤添加這些 class。
 
 ```js
 assert(!code.match(/class.*animated/g));
 ```
 
-jQuery 代码应该放在 `$(document).ready();` 函数里。
+jQuery 代碼應該放在 `$(document).ready();` 函數裏。
 
 ```js
 assert(

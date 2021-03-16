@@ -1,6 +1,6 @@
 ---
 id: 567af2437cbaa8c51670a16c
-title: 测试对象的属性
+title: 測試對象的屬性
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/c6Wz4ySr'
 forumTopicId: 18324
@@ -9,7 +9,7 @@ dashedName: testing-objects-for-properties
 
 # --description--
 
-有时检查一个对象属性是否存在是非常有用的。 我们可以用对象的 `.hasOwnProperty(propname)` 方法来检查对象是否有指定的属性。 `.hasOwnProperty()` 找到该属性时返回 `true`，找不到该属性时返回 `false`。
+有時檢查一個對象屬性是否存在是非常有用的。 我們可以用對象的 `.hasOwnProperty(propname)` 方法來檢查對象是否有指定的屬性。 `.hasOwnProperty()` 找到該屬性時返回 `true`，找不到該屬性時返回 `false`。
 
 **示例**
 
@@ -22,15 +22,15 @@ myObj.hasOwnProperty("top");
 myObj.hasOwnProperty("middle");
 ```
 
-第一个 `hasOwnProperty` 返回 `true`，第二个返回 `false`。
+第一個 `hasOwnProperty` 返回 `true`，第二個返回 `false`。
 
 # --instructions--
 
-修改函数 `checkObj` 检查 `obj` 是否有 `checkProp` 属性。 如果属性存在，返回属性对应的值。 如果不存在，返回`"Not Found"`。
+修改函數 `checkObj` 檢查 `obj` 是否有 `checkProp` 屬性。 如果屬性存在，返回屬性對應的值。 如果不存在，返回`"Not Found"`。
 
 # --hints--
 
-`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")` 应该返回字符串 `pony`。
+`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")` 應該返回字符串 `pony`。
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")` 应该返回字符串 `kitten`。
+`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")` 應該返回字符串 `kitten`。
 
 ```js
 assert(
@@ -46,7 +46,7 @@ assert(
 );
 ```
 
-`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house")` 应该返回字符串 `Not Found`。
+`checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house")` 應該返回字符串 `Not Found`。
 
 ```js
 assert(
@@ -55,19 +55,19 @@ assert(
 );
 ```
 
-`checkObj({city: "Seattle"}, "city")` 应该返回字符串 `Seattle`。
+`checkObj({city: "Seattle"}, "city")` 應該返回字符串 `Seattle`。
 
 ```js
 assert(checkObj({ city: 'Seattle' }, 'city') === 'Seattle');
 ```
 
-`checkObj({city: "Seattle"}, "district")` 应该返回字符串 `Not Found`。
+`checkObj({city: "Seattle"}, "district")` 應該返回字符串 `Not Found`。
 
 ```js
 assert(checkObj({ city: 'Seattle' }, 'district') === 'Not Found');
 ```
 
-`checkObj({pet: "kitten", bed: "sleigh"}, "gift")` 应该返回字符串 `Not Found`。
+`checkObj({pet: "kitten", bed: "sleigh"}, "gift")` 應該返回字符串 `Not Found`。
 
 ```js
 assert(checkObj({ pet: 'kitten', bed: 'sleigh' }, 'gift') === 'Not Found');

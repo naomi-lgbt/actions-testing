@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244ac
-title: 数字递增
+title: 數字遞增
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/ca8GLT9'
 forumTopicId: 18201
@@ -9,19 +9,19 @@ dashedName: increment-a-number-with-javascript
 
 # --description--
 
-使用 `++`，我们可以很容易地对变量进行<dfn>自增</dfn>或者 +1 运算。
+使用 `++`，我們可以很容易地對變量進行<dfn>自增</dfn>或者 +1 運算。
 
 `i++;`
 
-等效于
+等效於
 
 `i = i + 1;`
 
-**提示** `i++;` 这种写法，省去了书写等号的必要。
+**提示** `i++;` 這種寫法，省去了書寫等號的必要。
 
 # --instructions--
 
-重写代码，使用 `++` 来对变量 `myVar` 进行自增操作。
+重寫代碼，使用 `++` 來對變量 `myVar` 進行自增操作。
 
 # --hints--
 
@@ -31,7 +31,7 @@ dashedName: increment-a-number-with-javascript
 assert(myVar === 88);
 ```
 
-不应该使用赋值运算符。
+不應該使用賦值運算符。
 
 ```js
 assert(
@@ -39,13 +39,13 @@ assert(
 );
 ```
 
-使用 `++` 运算符。
+使用 `++` 運算符。
 
 ```js
 assert(/[+]{2}\s*myVar|myVar\s*[+]{2}/.test(code));
 ```
 
-不要修改注释上面的代码。
+不要修改註釋上面的代碼。
 
 ```js
 assert(/var myVar = 87;/.test(code));

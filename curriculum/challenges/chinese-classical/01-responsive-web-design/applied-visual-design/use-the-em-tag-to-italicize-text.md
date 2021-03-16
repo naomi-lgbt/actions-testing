@@ -1,6 +1,6 @@
 ---
 id: 587d781a367417b2b2512ab9
-title: 使用 em 标签强调文本
+title: 使用 em 標籤強調文本
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJRBtp'
 forumTopicId: 301078
@@ -9,21 +9,21 @@ dashedName: use-the-em-tag-to-italicize-text
 
 # --description--
 
-你可以使用 `em` 标签来强调文本。 由于浏览器会自动给元素应用 `font-style: italic;`，所以文本会显示为斜体。
+你可以使用 `em` 標籤來強調文本。 由於瀏覽器會自動給元素應用 `font-style: italic;`，所以文本會顯示爲斜體。
 
 # --instructions--
 
-在段落标签里面嵌套 `em` 标签来强调文本。
+在段落標籤裏面嵌套 `em` 標籤來強調文本。
 
 # --hints--
 
-应添加一个 `em` 标签。
+應添加一個 `em` 標籤。
 
 ```js
 assert($('em').length == 1);
 ```
 
-`em` 标签应包裹 `p` 标签里的内容，但不包裹 `p` 标签本身。
+`em` 標籤應包裹 `p` 標籤裏的內容，但不包裹 `p` 標籤本身。
 
 ```js
 assert($('p').children().length == 1 && $('em').children().length == 2);

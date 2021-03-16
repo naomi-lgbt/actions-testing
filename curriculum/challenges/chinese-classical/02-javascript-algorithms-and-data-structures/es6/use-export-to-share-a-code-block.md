@@ -1,6 +1,6 @@
 ---
 id: 587d7b8c367417b2b2512b56
-title: 用 export 来重用代码块
+title: 用 export 來重用代碼塊
 challengeType: 1
 forumTopicId: 301219
 dashedName: use-export-to-share-a-code-block
@@ -8,7 +8,7 @@ dashedName: use-export-to-share-a-code-block
 
 # --description--
 
-假设有一个文件 `math_functions.js`，该文件包含了数学运算相关的一些函数。 其中一个存储在变量 `add` 里，该函数接受两个数字作为参数返回它们的和。 你想在几个不同的 JavaScript 文件中使用这个函数。 要实现这个目的，就需要 `export` 它。
+假設有一個文件 `math_functions.js`，該文件包含了數學運算相關的一些函數。 其中一個存儲在變量 `add` 裏，該函數接受兩個數字作爲參數返回它們的和。 你想在幾個不同的 JavaScript 文件中使用這個函數。 要實現這個目的，就需要 `export` 它。
 
 ```js
 export const add = (x, y) => {
@@ -16,7 +16,7 @@ export const add = (x, y) => {
 }
 ```
 
-上面是导出单个函数常用方法，还可以这样导出：
+上面是導出單個函數常用方法，還可以這樣導出：
 
 ```js
 const add = (x, y) => {
@@ -26,7 +26,7 @@ const add = (x, y) => {
 export { add };
 ```
 
-导出变量和函数后，就可以在其它文件里导入使用从而避免了代码冗余。 重复第一个例子的代码可以导出多个对象或函数，在第二个例子里面的导出语句中添加更多值也可以导出多项，例子如下：
+導出變量和函數後，就可以在其它文件裏導入使用從而避免了代碼冗餘。 重複第一個例子的代碼可以導出多個對象或函數，在第二個例子裏面的導出語句中添加更多值也可以導出多項，例子如下：
 
 ```js
 export { add, subtract };
@@ -34,11 +34,11 @@ export { add, subtract };
 
 # --instructions--
 
-编辑框中有两个字符串相关的函数。 选用一种方法导出两个函数。
+編輯框中有兩個字符串相關的函數。 選用一種方法導出兩個函數。
 
 # --hints--
 
-应该导出 `uppercaseString` 变量。
+應該導出 `uppercaseString` 變量。
 
 ```js
 assert(
@@ -48,7 +48,7 @@ assert(
 );
 ```
 
-应该导出 `lowercaseString` 变量。
+應該導出 `lowercaseString` 變量。
 
 ```js
 assert(

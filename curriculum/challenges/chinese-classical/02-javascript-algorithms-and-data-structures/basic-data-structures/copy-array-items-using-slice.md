@@ -1,6 +1,6 @@
 ---
 id: 587d7b7a367417b2b2512b12
-title: 使用 slice() 复制数组元素
+title: 使用 slice() 複製數組元素
 challengeType: 1
 forumTopicId: 301158
 dashedName: copy-array-items-using-slice
@@ -8,7 +8,7 @@ dashedName: copy-array-items-using-slice
 
 # --description--
 
-接下来我们要介绍 `slice()` 方法。 `slice()` 不会修改数组，而是会复制，或者说*提取（extract）*给定数量的元素到一个新数组。 `slice()` 只接收 2 个输入参数：第一个是开始提取元素的位置（索引），第二个是提取元素的结束位置（索引）。 提取的元素中不包括第二个参数所对应的元素。 如下示例：
+接下來我們要介紹 `slice()` 方法。 `slice()` 不會修改數組，而是會複製，或者說*提取（extract）*給定數量的元素到一個新數組。 `slice()` 只接收 2 個輸入參數：第一個是開始提取元素的位置（索引），第二個是提取元素的結束位置（索引）。 提取的元素中不包括第二個參數所對應的元素。 如下示例：
 
 ```js
 let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
@@ -16,17 +16,17 @@ let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
 let todaysWeather = weatherConditions.slice(1, 3);
 ```
 
-`todaysWeather` 值为 `['snow', 'sleet']`，`weatherConditions` 值仍然为 `['rain', 'snow', 'sleet', 'hail', 'clear']`。
+`todaysWeather` 值爲 `['snow', 'sleet']`，`weatherConditions` 值仍然爲 `['rain', 'snow', 'sleet', 'hail', 'clear']`。
 
-在上面的代码中，我们从一个数组中提取了一些元素，并用这些元素创建了一个新数组。
+在上面的代碼中，我們從一個數組中提取了一些元素，並用這些元素創建了一個新數組。
 
 # --instructions--
 
-我们已经定义了一个 `forecast` 函数，它接受一个数组作为参数。 请修改这个函数，利用 `slice()` 从输入的数组中提取信息，最终返回一个包含元素 `warm` 和 `sunny` 的新数组。
+我們已經定義了一個 `forecast` 函數，它接受一個數組作爲參數。 請修改這個函數，利用 `slice()` 從輸入的數組中提取信息，最終返回一個包含元素 `warm` 和 `sunny` 的新數組。
 
 # --hints--
 
-`forecast` 应返回 `["warm", "sunny"]`。
+`forecast` 應返回 `["warm", "sunny"]`。
 
 ```js
 assert.deepEqual(
@@ -35,7 +35,7 @@ assert.deepEqual(
 );
 ```
 
-`forecast` 函数中应使用 `slice()` 方法。
+`forecast` 函數中應使用 `slice()` 方法。
 
 ```js
 assert(/\.slice\(/.test(code));

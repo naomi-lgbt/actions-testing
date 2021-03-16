@@ -1,6 +1,6 @@
 ---
 id: 5ccfad82bb2dc6c965a848e5
-title: 使用 JavaScript 的 fetch 方法获取 JSON
+title: 使用 JavaScript 的 fetch 方法獲取 JSON
 challengeType: 6
 forumTopicId: 301501
 dashedName: get-json-with-the-javascript-fetch-method
@@ -8,9 +8,9 @@ dashedName: get-json-with-the-javascript-fetch-method
 
 # --description--
 
-请求外部数据的另一个方法是使用 JavaScript 的 `fetch()` 方法。 它的作用和 `XMLHttpRequest` 一样，但是它的语法更容易理解。
+請求外部數據的另一個方法是使用 JavaScript 的 `fetch()` 方法。 它的作用和 `XMLHttpRequest` 一樣，但是它的語法更容易理解。
 
-下面是使用 GET 请求 `/json/cats.json` 数据的例子。
+下面是使用 GET 請求 `/json/cats.json` 數據的例子。
 
 ```js
 
@@ -22,29 +22,29 @@ fetch('/json/cats.json')
 
 ```
 
-逐行解释一下代码。
+逐行解釋一下代碼。
 
-第一行是发起请求。 `fetch(URL)` 向指定的 URL 发起 `GET` 请求。 这个方法返回一个 Promise。
+第一行是發起請求。 `fetch(URL)` 向指定的 URL 發起 `GET` 請求。 這個方法返回一個 Promise。
 
-当 Promise 返回后，如果请求成功，会执行 `then` 方法，该方法把响应转换为 JSON 格式。
+當 Promise 返回後，如果請求成功，會執行 `then` 方法，該方法把響應轉換爲 JSON 格式。
 
-`then` 方法返回的也是 Promise，会被下一个 `then` 方法捕获。 第二个 `then` 方法传入的参数就是最终的 JSON 对象。
+`then` 方法返回的也是 Promise，會被下一個 `then` 方法捕獲。 第二個 `then` 方法傳入的參數就是最終的 JSON 對象。
 
-接着，使用 `document.getElementById()` 选择将要接收数据的元素。 然后插入请求返回的 JSON 对象创建的字符串修改元素的 HTML 代码。
+接着，使用 `document.getElementById()` 選擇將要接收數據的元素。 然後插入請求返回的 JSON 對象創建的字符串修改元素的 HTML 代碼。
 
 # --instructions--
 
-更新代码，创建并向 freeCodeCamp Cat Photo API 发送 `GET` 请求。 这次使用 `fetch` 方法而不是 `XMLHttpRequest`。
+更新代碼，創建並向 freeCodeCamp Cat Photo API 發送 `GET` 請求。 這次使用 `fetch` 方法而不是 `XMLHttpRequest`。
 
 # --hints--
 
-应该使用 `fetch` 发起 `GET` 请求。
+應該使用 `fetch` 發起 `GET` 請求。
 
 ```js
 assert(code.match(/fetch\s*\(\s*('|")\/json\/cats\.json\1\s*\)/g));
 ```
 
-应该在 `then` 里面将响应转换为 JSON。
+應該在 `then` 裏面將響應轉換爲 JSON。
 
 ```js
 assert(
@@ -54,13 +54,13 @@ assert(
 );
 ```
 
-应该使用另一个 `then` 接收 `then` 转换的 JSON。
+應該使用另一個 `then` 接收 `then` 轉換的 JSON。
 
 ```js
 assert(code.match(/\.then\s*\(\s*(data|\(\s*data\s*\))\s*=>\s*{[^}]*}\s*\)/g));
 ```
 
-代码应该选择 id 为 `message` 的元素然后把它的内部 HTML 改成 JSON data 的字符串。
+代碼應該選擇 id 爲 `message` 的元素然後把它的內部 HTML 改成 JSON data 的字符串。
 
 ```js
 assert(

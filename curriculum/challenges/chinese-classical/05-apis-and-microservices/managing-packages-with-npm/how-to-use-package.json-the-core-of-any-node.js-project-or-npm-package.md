@@ -1,6 +1,6 @@
 ---
 id: 587d7fb3367417b2b2512bfb
-title: '如何使用 package.json ——所有 Node.js 项目或 npm 包的核心'
+title: '如何使用 package.json ——所有 Node.js 項目或 npm 包的核心'
 challengeType: 2
 forumTopicId: 301528
 dashedName: how-to-use-package-json-the-core-of-any-node-js-project-or-npm-package
@@ -8,19 +8,19 @@ dashedName: how-to-use-package-json-the-core-of-any-node-js-project-or-npm-packa
 
 # --description--
 
-可以采用下面的任意一种方式完成这些挑战：
+可以採用下面的任意一種方式完成這些挑戰：
 
-- 克隆 [GitHub repo](https://github.com/freeCodeCamp/boilerplate-npm/) 并在本地完成项目。
-- 使用 [Repl.it 上的初始化项目](https://repl.it/github/freeCodeCamp/boilerplate-npm) 来完成项目。
-- 使用你选择的网站生成器来完成项目， 并确保包含了我们 GitHub 仓库的所有文件。
+- 克隆 [GitHub repo](https://github.com/freeCodeCamp/boilerplate-npm/) 並在本地完成項目。
+- 使用 [Repl.it 上的初始化項目](https://repl.it/github/freeCodeCamp/boilerplate-npm) 來完成項目。
+- 使用你選擇的網站生成器來完成項目， 並確保包含了我們 GitHub 倉庫的所有文件。
 
-当完成本项目，请确认有一个正常运行的 demo 可以公开访问。 然后将 URL 提交到 `Solution Link` 中。 此外，还可以将项目的源码提交到 `GitHub Link` 中。
+當完成本項目，請確認有一個正常運行的 demo 可以公開訪問。 然後將 URL 提交到 `Solution Link` 中。 此外，還可以將項目的源碼提交到 `GitHub Link` 中。
 
-`package.json` 文件是所有 Node.js 项目和 npm 包的枢纽， 和 HTML 文档中的 &lt;head> 区域用来描述网页的配置信息（元数据）一样，它存储项目的相关信息。 它由单个 JSON 对象组成，并以键值对的形式存储项目信息， 且至少包含两个必填字段：“name”和“version”——但是最好提供有关项目的其他信息，这将对用户或者维护者有所帮助。
+`package.json` 文件是所有 Node.js 項目和 npm 包的樞紐， 和 HTML 文檔中的 &lt;head> 區域用來描述網頁的配置信息（元數據）一樣，它存儲項目的相關信息。 它由單個 JSON 對象組成，並以鍵值對的形式存儲項目信息， 且至少包含兩個必填字段：“name”和“version”——但是最好提供有關項目的其他信息，這將對用戶或者維護者有所幫助。
 
-如果能找到项目的文件树，那么可以在文件树的最外层找到 package.json， 在接下来的几个挑战中将完善这个文件。
+如果能找到項目的文件樹，那麼可以在文件樹的最外層找到 package.json， 在接下來的幾個挑戰中將完善這個文件。
 
-在这个文件中最常见的信息之一是 `author` 字段， 它说明了项目的创建者，它可以是字符串，也可以是带有联系人详细信息的对象。 对于较大的项目，建议使用对象；但是在我们的项目中，一个简单的字符串就够了，比如下面的例子：
+在這個文件中最常見的信息之一是 `author` 字段， 它說明了項目的創建者，它可以是字符串，也可以是帶有聯繫人詳細信息的對象。 對於較大的項目，建議使用對象；但是在我們的項目中，一個簡單的字符串就夠了，比如下面的例子：
 
 ```json
 "author": "Jane Doe",
@@ -28,13 +28,13 @@ dashedName: how-to-use-package-json-the-core-of-any-node-js-project-or-npm-packa
 
 # --instructions--
 
-在项目的 package.json 文件的 `author` 键中添加你的名字。
+在項目的 package.json 文件的 `author` 鍵中添加你的名字。
 
-**注意：** 正在修改的是一个 JSON，所有的字段名必须用双引号（"）包裹，也必须用逗号（,）分割。
+**注意：** 正在修改的是一個 JSON，所有的字段名必須用雙引號（"）包裹，也必須用逗號（,）分割。
 
 # --hints--
 
-package.json 应该有一个有效的“author”键
+package.json 應該有一個有效的“author”鍵
 
 ```js
 (getUserInput) =>

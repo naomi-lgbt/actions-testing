@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d403618a
-title: 使用 Array.map() 动态渲染元素
+title: 使用 Array.map() 動態渲染元素
 challengeType: 6
 forumTopicId: 301417
 dashedName: use-array-map-to-dynamically-render-elements
@@ -8,21 +8,21 @@ dashedName: use-array-map-to-dynamically-render-elements
 
 # --description--
 
-条件渲染很有用，但是可能需要组件来渲染未知数量的元素。 通常在响应式编程中，程序员在应用程序运行时之前无法知道其 state，因为这在很大程度上取决于用户与该程序的交互。 程序员需要提前编写代码来正确处理未知状态。 在 React 中使用 `Array.map()` 阐明了这个概念。
+條件渲染很有用，但是可能需要組件來渲染未知數量的元素。 通常在響應式編程中，程序員在應用程序運行時之前無法知道其 state，因爲這在很大程度上取決於用戶與該程序的交互。 程序員需要提前編寫代碼來正確處理未知狀態。 在 React 中使用 `Array.map()` 闡明瞭這個概念。
 
-例如，创建一个简单的“To Do List”应用程序。 作为程序员，你无法知道用户可能在其列表中有多少项。 需要设置组件，以便在使用该程序的人决定今天今日待办事项之前动态渲染正确数量的列表元素。
+例如，創建一個簡單的“To Do List”應用程序。 作爲程序員，你無法知道用戶可能在其列表中有多少項。 需要設置組件，以便在使用該程序的人決定今天今日待辦事項之前動態渲染正確數量的列表元素。
 
 # --instructions--
 
-代码编辑器完成了 `MyToDoList` 组件的大部分设置。 如果完成了受控表单挑战，这些代码中的一些应该看起来很熟悉。 你会注意到一个 `textarea` 和一个 `button`，以及一些跟踪它们状态的方法，但是页面当前还没有任何东西被渲染。
+代碼編輯器完成了 `MyToDoList` 組件的大部分設置。 如果完成了受控表單挑戰，這些代碼中的一些應該看起來很熟悉。 你會注意到一個 `textarea` 和一個 `button`，以及一些跟蹤它們狀態的方法，但是頁面當前還沒有任何東西被渲染。
 
-在 `constructor` 中，创建一个 `this.state` 对象并定义两个 state：`userInput` 应该初始化为空字符串，`toDoList` 应该初始化为空数组。 接下来，删除 `items` 变量旁边 `render()` 方法中的注释。 取而代之的是，将存储在组件内部 state 中的 `toDoList` 数组一一遍历并相应的动态呈现 `li` 元素中。 尝试在 `textarea` 中输入 `eat, code, sleep, repeat`，然后点击按钮，看看会发生什么。
+在 `constructor` 中，創建一個 `this.state` 對象並定義兩個 state：`userInput` 應該初始化爲空字符串，`toDoList` 應該初始化爲空數組。 接下來，刪除 `items` 變量旁邊 `render()` 方法中的註釋。 取而代之的是，將存儲在組件內部 state 中的 `toDoList` 數組一一遍歷並相應的動態呈現 `li` 元素中。 嘗試在 `textarea` 中輸入 `eat, code, sleep, repeat`，然後點擊按鈕，看看會發生什麼。
 
-**注意：** 像这样的映射操作创建的所有兄弟子元素都需要提供唯一的 `key` 属性。 别担心，这是下一个挑战的主题。
+**注意：** 像這樣的映射操作創建的所有兄弟子元素都需要提供唯一的 `key` 屬性。 別擔心，這是下一個挑戰的主題。
 
 # --hints--
 
-MyToDoList 组件应该存在，并渲染到页面。
+MyToDoList 組件應該存在，並渲染到頁面。
 
 ```js
 assert(
@@ -33,7 +33,7 @@ assert(
 );
 ```
 
-`MyToDoList` 组件的第一个子元素应该是 `textarea` 元素。
+`MyToDoList` 組件的第一個子元素應該是 `textarea` 元素。
 
 ```js
 assert(
@@ -47,7 +47,7 @@ assert(
 );
 ```
 
-`MyToDoList` 组件的第二个子元素应该是 `br` 元素。
+`MyToDoList` 組件的第二個子元素應該是 `br` 元素。
 
 ```js
 assert(
@@ -60,7 +60,7 @@ assert(
 );
 ```
 
-`MyToDoList` 组件的第三个子元素应该是 `button` 元素。
+`MyToDoList` 組件的第三個子元素應該是 `button` 元素。
 
 ```js
 assert(
@@ -74,7 +74,7 @@ assert(
 );
 ```
 
-`MyToDoList` 的 state 应该使用被设置为空数组的 `toDoList` 进行初始化。
+`MyToDoList` 的 state 應該使用被設置爲空數組的 `toDoList` 進行初始化。
 
 ```js
 assert(
@@ -89,7 +89,7 @@ assert(
 );
 ```
 
-`MyToDoList` 的 state 应该使用被设置为空字符串的 `userInput` 进行初始化。
+`MyToDoList` 的 state 應該使用被設置爲空字符串的 `userInput` 進行初始化。
 
 ```js
 assert(
@@ -104,7 +104,7 @@ assert(
 );
 ```
 
-单击 `Create List` 按钮时，`MyToDoList` 组件应该动态返回一个无序列表，该列表包含输入到 `textarea` 元素中的逗号分隔列表的每个项目的列表项目元素。
+單擊 `Create List` 按鈕時，`MyToDoList` 組件應該動態返回一個無序列表，該列表包含輸入到 `textarea` 元素中的逗號分隔列表的每個項目的列表項目元素。
 
 ```js
 (() => {

@@ -1,6 +1,6 @@
 ---
 id: 587d7faf367417b2b2512be8
-title: 根据地理位置数据找到用户的 GPS 坐标
+title: 根據地理位置數據找到用戶的 GPS 座標
 challengeType: 6
 forumTopicId: 18188
 dashedName: get-geolocation-data-to-find-a-users-gps-coordinates
@@ -8,15 +8,15 @@ dashedName: get-geolocation-data-to-find-a-users-gps-coordinates
 
 # --description--
 
-你还能做一件很酷的事就是访问你用户当前的地理位置。 每个浏览器都有内置的导航器，可以为你提供这些信息。
+你還能做一件很酷的事就是訪問你用戶當前的地理位置。 每個瀏覽器都有內置的導航器，可以爲你提供這些信息。
 
-导航器会获取用户当前的经度和纬度。
+導航器會獲取用戶當前的經度和緯度。
 
-您将看到允许或阻止此站点了解您当前位置的提示。 只要代码正确，挑战就可以以任何一种方式完成。
+您將看到允許或阻止此站點了解您當前位置的提示。 只要代碼正確，挑戰就可以以任何一種方式完成。
 
-通过选择允许，你将看到输出手机上的文本更改为你的纬度和经度
+通過選擇允許，你將看到輸出手機上的文本更改爲你的緯度和經度
 
-这是执行此操作的代码：
+這是執行此操作的代碼：
 
 ```js
 if (navigator.geolocation){
@@ -26,33 +26,33 @@ if (navigator.geolocation){
 }
 ```
 
-首先，它检查`navigator.geolocation`对象是否存在。 如果是，`getCurrentPosition`则调用该对象上的方法，该方法启动对用户位置的异步请求。 如果请求成功，则运行方法中的回调函数。 此函数`position`使用点表示法访问对象的纬度和经度值，并更新页面。
+首先，它檢查`navigator.geolocation`對象是否存在。 如果是，`getCurrentPosition`則調用該對象上的方法，該方法啓動對用戶位置的異步請求。 如果請求成功，則運行方法中的回調函數。 此函數`position`使用點表示法訪問對象的緯度和經度值，並更新頁面。
 
 # --instructions--
 
-在`script`标记内添加示例代码以检查用户的当前位置并将其插入 HTML
+在`script`標記內添加示例代碼以檢查用戶的當前位置並將其插入 HTML
 
 # --hints--
 
-应该使用 `navigator.geolocation` 访问用户的当前位置。
+應該使用 `navigator.geolocation` 訪問用戶的當前位置。
 
 ```js
 assert(code.match(/navigator\.geolocation\.getCurrentPosition/g));
 ```
 
-应该使用 `position.coords.latitude` 显示用户的纬度位置。
+應該使用 `position.coords.latitude` 顯示用戶的緯度位置。
 
 ```js
 assert(code.match(/position\.coords\.latitude/g));
 ```
 
-应该使用 `position.coords.longitude` 显示用户的经度位置。
+應該使用 `position.coords.longitude` 顯示用戶的經度位置。
 
 ```js
 assert(code.match(/position\.coords\.longitude/g));
 ```
 
-应该在具有 `id="data"` 的 `div` 元素中显示用户的位置。
+應該在具有 `id="data"` 的 `div` 元素中顯示用戶的位置。
 
 ```js
 assert(

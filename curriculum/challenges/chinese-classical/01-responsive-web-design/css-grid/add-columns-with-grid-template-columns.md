@@ -9,7 +9,7 @@ dashedName: add-columns-with-grid-template-columns
 
 # --description--
 
-简单地添加一个网格元素并不会有任何明显的效果。 你还需要明确网格的结构。 在一个网格容器中使用 `grid-template-columns` 属性可以添加一些列，示例如下：
+簡單地添加一個網格元素並不會有任何明顯的效果。 你還需要明確網格的結構。 在一個網格容器中使用 `grid-template-columns` 屬性可以添加一些列，示例如下：
 
 ```css
 .container {
@@ -18,15 +18,15 @@ dashedName: add-columns-with-grid-template-columns
 }
 ```
 
-上面的代码会在网格容器中添加两列，宽度均为 50px。 `grid-template-columns` 属性值的个数表示网格的列数，每个值表示相应的列宽度。
+上面的代碼會在網格容器中添加兩列，寬度均爲 50px。 `grid-template-columns` 屬性值的個數表示網格的列數，每個值表示相應的列寬度。
 
 # --instructions--
 
-请给网格容器设置三个列，每列宽度均为 `100px`。
+請給網格容器設置三個列，每列寬度均爲 `100px`。
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-template-columns` 属性，该属性应有三个属性值，均为 `100px`。
+class 爲 `container` 的元素應具有 `grid-template-columns` 屬性，該屬性應有三個屬性值，均爲 `100px`。
 
 ```js
 assert(

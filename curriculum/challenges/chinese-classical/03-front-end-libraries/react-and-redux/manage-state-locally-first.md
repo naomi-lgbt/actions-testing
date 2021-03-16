@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036142
-title: 首先在本地管理状态
+title: 首先在本地管理狀態
 challengeType: 6
 forumTopicId: 301431
 dashedName: manage-state-locally-first
@@ -8,19 +8,19 @@ dashedName: manage-state-locally-first
 
 # --description--
 
-这一关的任务是完成 `DisplayMessages` 组件的创建。
+這一關的任務是完成 `DisplayMessages` 組件的創建。
 
 # --instructions--
 
-首先，在 `render()` 方法中，让组件渲染 `input`、`button`、`ul` 三个元素。 `input` 元素的改变会触发 `handleChange()` 方法。 此外，`input` 元素会渲染组件状态中 `input` 的值。 点击按钮 `button` 需触发 `submitMessage()` 方法。
+首先，在 `render()` 方法中，讓組件渲染 `input`、`button`、`ul` 三個元素。 `input` 元素的改變會觸發 `handleChange()` 方法。 此外，`input` 元素會渲染組件狀態中 `input` 的值。 點擊按鈕 `button` 需觸發 `submitMessage()` 方法。
 
-接着，写出这两种方法。 `handleChange()` 方法会更新 `input` 为用户正在输入的内容。 `submitMessage()` 方法把当前存储在 `input` 的消息与本地状态的 `messages` 数组连接起来，并清除 `input` 的值。
+接着，寫出這兩種方法。 `handleChange()` 方法會更新 `input` 爲用戶正在輸入的內容。 `submitMessage()` 方法把當前存儲在 `input` 的消息與本地狀態的 `messages` 數組連接起來，並清除 `input` 的值。
 
-最后，在 `ul` 中展示 `messages` 数组，其中每个元素内容需放到 `li` 元素内。
+最後，在 `ul` 中展示 `messages` 數組，其中每個元素內容需放到 `li` 元素內。
 
 # --hints--
 
-`DisplayMessages` 组件的初始状态应是 `{ input: "", messages: [] }`。
+`DisplayMessages` 組件的初始狀態應是 `{ input: "", messages: [] }`。
 
 ```js
 assert(
@@ -36,7 +36,7 @@ assert(
 );
 ```
 
-`DisplayMessages` 组件应渲染含 `h2`、`button`、`ul`、`li` 四个子元素的`div`
+`DisplayMessages` 組件應渲染含 `h2`、`button`、`ul`、`li` 四個子元素的`div`
 
 ```js
 async () => {
@@ -58,13 +58,13 @@ async () => {
 };
 ```
 
-`.map` 应该用于 `messages` 数组。
+`.map` 應該用於 `messages` 數組。
 
 ```js
 assert(code.match(/this\.state\.messages\.map/g));
 ```
 
-`input` 元素应渲染本地状态中的 `input` 值。
+`input` 元素應渲染本地狀態中的 `input` 值。
 
 ```js
 async () => {
@@ -83,7 +83,7 @@ async () => {
 };
 ```
 
-调用 `handleChange` 方法时应更新状态中的 `input` 值为当前输入。
+調用 `handleChange` 方法時應更新狀態中的 `input` 值爲當前輸入。
 
 ```js
 async () => {
@@ -106,7 +106,7 @@ async () => {
 };
 ```
 
-单击 `Add message` 按钮应调用 `submitMessage` 方法，添加当前 `input` 到状态中的 `messages` 数组。
+單擊 `Add message` 按鈕應調用 `submitMessage` 方法，添加當前 `input` 到狀態中的 `messages` 數組。
 
 ```js
 async () => {
@@ -149,7 +149,7 @@ async () => {
 };
 ```
 
-`submitMessage` 方法应清除当前输入。
+`submitMessage` 方法應清除當前輸入。
 
 ```js
 async () => {

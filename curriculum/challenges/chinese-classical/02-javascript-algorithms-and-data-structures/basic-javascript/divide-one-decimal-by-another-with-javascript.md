@@ -1,6 +1,6 @@
 ---
 id: bd7993c9ca9feddfaeb7bdef
-title: 两个小数相除
+title: 兩個小數相除
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cBZe9AW'
 forumTopicId: 18255
@@ -9,27 +9,27 @@ dashedName: divide-one-decimal-by-another-with-javascript
 
 # --description--
 
-现在让我们将一个小数除以另一个小数。
+現在讓我們將一個小數除以另一個小數。
 
 # --instructions--
 
-改变数值 `0.0` 的值让变量 `quotient` 的值等于 `2.2`。
+改變數值 `0.0` 的值讓變量 `quotient` 的值等於 `2.2`。
 
 # --hints--
 
-`quotient` 的值应该等于`2.2`。
+`quotient` 的值應該等於`2.2`。
 
 ```js
 assert(quotient === 2.2);
 ```
 
-使用 `/` 运算符将 4.4 除以 2。
+使用 `/` 運算符將 4.4 除以 2。
 
 ```js
 assert(/4\.40*\s*\/\s*2\.*0*/.test(code));
 ```
 
-quotient 变量应该只被赋值一次。
+quotient 變量應該只被賦值一次。
 
 ```js
 assert(code.match(/quotient/g).length === 1);

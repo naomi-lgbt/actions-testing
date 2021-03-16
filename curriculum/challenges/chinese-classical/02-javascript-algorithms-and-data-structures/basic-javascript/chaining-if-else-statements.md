@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244dc
-title: 多个 if else 语句
+title: 多個 if else 語句
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/caeJgsw'
 forumTopicId: 16772
@@ -9,7 +9,7 @@ dashedName: chaining-if-else-statements
 
 # --description--
 
-`if/else` 语句串联在一起可以实现复杂的逻辑。 这是多个 `if` / `else if` 语句串联在一起的<dfn>伪代码</dfn>：
+`if/else` 語句串聯在一起可以實現複雜的邏輯。 這是多個 `if` / `else if` 語句串聯在一起的<dfn>僞代碼</dfn>：
 
 ```js
 if (condition1) {
@@ -26,7 +26,7 @@ if (condition1) {
 
 # --instructions--
 
-请将 `if`/`else if` 语句串联起来，实现下面的逻辑：
+請將 `if`/`else if` 語句串聯起來，實現下面的邏輯：
 
 `num < 5` - 返回 `Tiny`  
 `num < 10` - 返回 `Small`  
@@ -36,79 +36,79 @@ if (condition1) {
 
 # --hints--
 
-应至少有 4 个 `else` 语句。
+應至少有 4 個 `else` 語句。
 
 ```js
 assert(code.match(/else/g).length > 3);
 ```
 
-应至少有 4 个 `if` 语句。
+應至少有 4 個 `if` 語句。
 
 ```js
 assert(code.match(/if/g).length > 3);
 ```
 
-应至少有 1 个 `return` 语句。
+應至少有 1 個 `return` 語句。
 
 ```js
 assert(code.match(/return/g).length >= 1);
 ```
 
-`testSize(0)` 应该返回字符串 `Tiny`
+`testSize(0)` 應該返回字符串 `Tiny`
 
 ```js
 assert(testSize(0) === 'Tiny');
 ```
 
-`testSize(4)` 应该返回字符串 `Tiny`
+`testSize(4)` 應該返回字符串 `Tiny`
 
 ```js
 assert(testSize(4) === 'Tiny');
 ```
 
-`testSize(5)` 应该返回字符串 `Small`
+`testSize(5)` 應該返回字符串 `Small`
 
 ```js
 assert(testSize(5) === 'Small');
 ```
 
-`testSize(8)` 应该返回字符串 `Small`
+`testSize(8)` 應該返回字符串 `Small`
 
 ```js
 assert(testSize(8) === 'Small');
 ```
 
-`testSize(10)` 应该返回字符串 `Medium`
+`testSize(10)` 應該返回字符串 `Medium`
 
 ```js
 assert(testSize(10) === 'Medium');
 ```
 
-`testSize(14)` 应该返回字符串 `Medium`
+`testSize(14)` 應該返回字符串 `Medium`
 
 ```js
 assert(testSize(14) === 'Medium');
 ```
 
-`testSize(15)` 应该返回字符串 `Large`
+`testSize(15)` 應該返回字符串 `Large`
 
 ```js
 assert(testSize(15) === 'Large');
 ```
 
-`testSize(17)` 应该返回字符串 `Large`
+`testSize(17)` 應該返回字符串 `Large`
 
 ```js
 assert(testSize(17) === 'Large');
 ```
 
-`testSize(20)` 应该返回字符串 `Huge`
+`testSize(20)` 應該返回字符串 `Huge`
 
 ```js
 assert(testSize(20) === 'Huge');
 ```
 
-`testSize(25)` 应该返回字符串 `Huge`
+`testSize(25)` 應該返回字符串 `Huge`
 
 ```js
 assert(testSize(25) === 'Huge');

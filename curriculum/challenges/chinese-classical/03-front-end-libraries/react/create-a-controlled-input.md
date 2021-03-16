@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036178
-title: 创建一个可以控制的输入框
+title: 創建一個可以控制的輸入框
 challengeType: 6
 forumTopicId: 301385
 dashedName: create-a-controlled-input
@@ -8,23 +8,23 @@ dashedName: create-a-controlled-input
 
 # --description--
 
-应用程序可能在 `state` 和渲染的 UI 之间有更复杂的交互。 例如，用于文本输入的表单控件元素（如 `input` 和 `textarea`）在用户键入时在 DOM 中维护自己的 state。 通过 React，可以将这种可变 state 转移到 React 组件的 `state` 中。 用户的输入变成了应用程序 `state` 的一部分，因此 React 控制该输入字段的值。 通常，如果 React 组件具有用户可以键入的输入字段，那么它将是一个受控的输入表单。
+應用程序可能在 `state` 和渲染的 UI 之間有更復雜的交互。 例如，用於文本輸入的表單控件元素（如 `input` 和 `textarea`）在用戶鍵入時在 DOM 中維護自己的 state。 通過 React，可以將這種可變 state 轉移到 React 組件的 `state` 中。 用戶的輸入變成了應用程序 `state` 的一部分，因此 React 控制該輸入字段的值。 通常，如果 React 組件具有用戶可以鍵入的輸入字段，那麼它將是一個受控的輸入表單。
 
 # --instructions--
 
-代码编辑器具有一个名为 `ControlledInput` 的组件框架，用于创建受控的 `input` 元素。 组件的 `state` 已经被包含空字符串的 `input` 属性初始化。 此值表示用户在 `input` 字段中键入的文本。
+代碼編輯器具有一個名爲 `ControlledInput` 的組件框架，用於創建受控的 `input` 元素。 組件的 `state` 已經被包含空字符串的 `input` 屬性初始化。 此值表示用戶在 `input` 字段中鍵入的文本。
 
-首先，创建一个名为 `handleChange()` 的方法，该方法具有一个名为 `event` 的参数。 方法被调用时，它接收一个 `event` 对象，该对象包含一个来自 `input` 元素的字符串文本。 可以使用方法内的 `event.target.value` 来访问这个字符串。 用这个新字符串更新组件的`state`的`input`属性。
+首先，創建一個名爲 `handleChange()` 的方法，該方法具有一個名爲 `event` 的參數。 方法被調用時，它接收一個 `event` 對象，該對象包含一個來自 `input` 元素的字符串文本。 可以使用方法內的 `event.target.value` 來訪問這個字符串。 用這個新字符串更新組件的`state`的`input`屬性。
 
-在 `render` 方法中的 `h4` 标签之上创建 `input` 元素。 添加一个 `value` 属性，使其等于组件 `state` 的 `input` 属性。 然后将 `onChange()` 事件处理程序设置到 `handleChange()` 方法中。
+在 `render` 方法中的 `h4` 標籤之上創建 `input` 元素。 添加一個 `value` 屬性，使其等於組件 `state` 的 `input` 屬性。 然後將 `onChange()` 事件處理程序設置到 `handleChange()` 方法中。
 
-在输入框中键入时，文本由 `handleChange()` 方法处理，文本被设置为本地 `state` 中的 `input` 属性，并渲染在页面上的 `input` 框中。 组件 `state` 是输入数据的唯一真实来源。
+在輸入框中鍵入時，文本由 `handleChange()` 方法處理，文本被設置爲本地 `state` 中的 `input` 屬性，並渲染在頁面上的 `input` 框中。 組件 `state` 是輸入數據的唯一真實來源。
 
-最后，不要忘记在构造函数中添加必要的绑定。
+最後，不要忘記在構造函數中添加必要的綁定。
 
 # --hints--
 
-`ControlledInput` 应该返回包含一个 `input` 标签和 `p` 标签的 `div` 元素。
+`ControlledInput` 應該返回包含一個 `input` 標籤和 `p` 標籤的 `div` 元素。
 
 ```js
 assert(
@@ -39,7 +39,7 @@ assert(
 );
 ```
 
-`ControlledInput` 的 state 应该使用设置为空字符串的 `input` 属性初始化。
+`ControlledInput` 的 state 應該使用設置爲空字符串的 `input` 屬性初始化。
 
 ```js
 assert.strictEqual(
@@ -48,7 +48,7 @@ assert.strictEqual(
 );
 ```
 
-Input 元素中的键入值应该更新 input 的 state 和值，并且 `p` 元素应该在输入时呈现 state。
+Input 元素中的鍵入值應該更新 input 的 state 和值，並且 `p` 元素應該在輸入時呈現 state。
 
 ```js
 async () => {

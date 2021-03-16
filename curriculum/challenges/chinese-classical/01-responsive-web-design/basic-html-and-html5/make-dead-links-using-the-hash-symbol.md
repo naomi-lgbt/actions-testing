@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08817
-title: '用 # 号来创建链接占位符'
+title: '用 # 號來創建鏈接佔位符'
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cMdkytL'
 forumTopicId: 18230
@@ -9,19 +9,19 @@ dashedName: make-dead-links-using-the-hash-symbol
 
 # --description--
 
-有时你想为网站添加一个 `a` 元素，但还不确定要将它链接到哪里。
+有時你想爲網站添加一個 `a` 元素，但還不確定要將它鏈接到哪裏。
 
-当你使用 `JavaScript` 更改链接的指向时，这也很方便，我们将在后面的课程中介绍。
+當你使用 `JavaScript` 更改鏈接的指向時，這也很方便，我們將在後面的課程中介紹。
 
 # --instructions--
 
-目前，`href` 的属性值是 "`https://freecatphotoapp.com`"。 请将 `href` 属性的值替换为`#`，以此来创建链接占位符。
+目前，`href` 的屬性值是 "`https://freecatphotoapp.com`"。 請將 `href` 屬性的值替換爲`#`，以此來創建鏈接佔位符。
 
 例如: `href="#"`
 
 # --hints--
 
-`a` 的 `href` 属性值应为 "#"。
+`a` 的 `href` 屬性值應爲 "#"。
 
 ```js
 assert($('a').attr('href') === '#');

@@ -1,6 +1,6 @@
 ---
 id: 587d7db1367417b2b2512b85
-title: 将子辈的原型设置为父辈的实例
+title: 將子輩的原型設置爲父輩的實例
 challengeType: 1
 forumTopicId: 301325
 dashedName: set-the-childs-prototype-to-an-instance-of-the-parent
@@ -8,30 +8,30 @@ dashedName: set-the-childs-prototype-to-an-instance-of-the-parent
 
 # --description--
 
-在上一个挑战中，我们学习了从超类（或者叫父类） `Animal` 继承其行为的第一个步骤：创建一个 `Animal` 的新实例。
+在上一個挑戰中，我們學習了從超類（或者叫父類） `Animal` 繼承其行爲的第一個步驟：創建一個 `Animal` 的新實例。
 
-这一节挑战我们将学习第二个步骤：给子类型（或者子类）设置 `prototype`。 这样一来，`Bird` 就是 `Animal` 的一个实例了。
+這一節挑戰我們將學習第二個步驟：給子類型（或者子類）設置 `prototype`。 這樣一來，`Bird` 就是 `Animal` 的一個實例了。
 
 ```js
 Bird.prototype = Object.create(Animal.prototype);
 ```
 
-请记住，`prototype` 类似于创建对象的“配方”。 从某种意义上来说，`Bird` 对象的配方包含了 `Animal` 的所有关键“成分”。
+請記住，`prototype` 類似於創建對象的“配方”。 從某種意義上來說，`Bird` 對象的配方包含了 `Animal` 的所有關鍵“成分”。
 
 ```js
 let duck = new Bird("Donald");
 duck.eat();
 ```
 
-`duck` 继承了`Animal` 的所有属性，其中包括了 `eat` 方法。
+`duck` 繼承了`Animal` 的所有屬性，其中包括了 `eat` 方法。
 
 # --instructions--
 
-修改你的代码，实现一个继承自 `Animal` 的 `Dog` 实例。
+修改你的代碼，實現一個繼承自 `Animal` 的 `Dog` 實例。
 
 # --hints--
 
-`Dog.prototype` 应该是 `Animal` 的一个实例。
+`Dog.prototype` 應該是 `Animal` 的一個實例。
 
 ```js
 assert(Animal.prototype.isPrototypeOf(Dog.prototype));

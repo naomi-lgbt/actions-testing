@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244bd
-title: 将值传递给带有参数的函数
+title: 將值傳遞給帶有參數的函數
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cy8rahW'
 forumTopicId: 18254
@@ -9,9 +9,9 @@ dashedName: passing-values-to-functions-with-arguments
 
 # --description--
 
-函数的参数 （<dfn>parameters</dfn>）在函数中充当调用函数时传入函数的输入占位符（也叫形参）的作用。 函数调用时，参数可以为一个或多个。 调用函数时输入（或传递 <dfn>"passed"</dfn>）的实际值被称为参数（<dfn>arguments</dfn>）。
+函數的參數 （<dfn>parameters</dfn>）在函數中充當調用函數時傳入函數的輸入佔位符（也叫形參）的作用。 函數調用時，參數可以爲一個或多個。 調用函數時輸入（或傳遞 <dfn>"passed"</dfn>）的實際值被稱爲參數（<dfn>arguments</dfn>）。
 
-这是带有两个参数的函数，`param1` 和 `param2`：
+這是帶有兩個參數的函數，`param1` 和 `param2`：
 
 ```js
 function testFun(param1, param2) {
@@ -19,21 +19,21 @@ function testFun(param1, param2) {
 }
 ```
 
-然后我们可以调用 `testFun`，就像这样： `testFun("Hello", "World");`。 我们传入了两个字符串参数， `Hello` 和`World`。 在函数中，`param1` 等于字符串 `Hello` 和 `param2` 等于字符串 `World`。 请注意，`testFun` 函数可以多次调用，每次调用时传递的参数会决定参数的实际值。
+然後我們可以調用 `testFun`，就像這樣： `testFun("Hello", "World");`。 我們傳入了兩個字符串參數， `Hello` 和`World`。 在函數中，`param1` 等於字符串 `Hello` 和 `param2` 等於字符串 `World`。 請注意，`testFun` 函數可以多次調用，每次調用時傳遞的參數會決定參數的實際值。
 
 # --instructions--
 
-<ol><li>创建一个名为 <code>functionWithArgs</code> 的函数，它可以接收两个参数，计算参数的和，将结果输出到控制台。</li><li>用两个数字作为参数调用函数。</li></ol>
+<ol><li>創建一個名爲 <code>functionWithArgs</code> 的函數，它可以接收兩個參數，計算參數的和，將結果輸出到控制檯。</li><li>用兩個數字作爲參數調用函數。</li></ol>
 
 # --hints--
 
-`functionWithArgs` 应该是一个函数。
+`functionWithArgs` 應該是一個函數。
 
 ```js
 assert(typeof functionWithArgs === 'function');
 ```
 
-`functionWithArgs(1,2)` 应该输出 `3`。
+`functionWithArgs(1,2)` 應該輸出 `3`。
 
 ```js
 if (typeof functionWithArgs === 'function') {
@@ -44,7 +44,7 @@ if (typeof functionWithArgs === 'function') {
 assert(logOutput == 3);
 ```
 
-`functionWithArgs(7,9)` 应该输出 `16`。
+`functionWithArgs(7,9)` 應該輸出 `16`。
 
 ```js
 if (typeof functionWithArgs === 'function') {
@@ -55,7 +55,7 @@ if (typeof functionWithArgs === 'function') {
 assert(logOutput == 16);
 ```
 
-在定义 `functionWithArgs` 之后记得传入两个数字调用它。
+在定義 `functionWithArgs` 之後記得傳入兩個數字調用它。
 
 ```js
 assert(

@@ -8,13 +8,13 @@ dashedName: add-elements-within-your-bootstrap-wells
 
 # --description--
 
-现在的每一行的列都已经有了 `div` 元素。 这已经足够了， 现在让我们添加 `button` 元素吧。
+現在的每一行的列都已經有了 `div` 元素。 這已經足夠了， 現在讓我們添加 `button` 元素吧。
 
-每一个 class 属性为 `well` 的 `div` 元素内都应该放三个 `button` 元素。
+每一個 class 屬性爲 `well` 的 `div` 元素內都應該放三個 `button` 元素。
 
 # --hints--
 
-每一个 class 属性为 `well` 的 `div` 元素内都应该放三个 `button` 元素。
+每一個 class 屬性爲 `well` 的 `div` 元素內都應該放三個 `button` 元素。
 
 ```js
 assert(
@@ -23,13 +23,13 @@ assert(
 );
 ```
 
-总共有 6 个 `button` 元素。
+總共有 6 個 `button` 元素。
 
 ```js
 assert($('button') && $('button').length > 5);
 ```
 
-确保所有 `button` 元素都有闭合标签。
+確保所有 `button` 元素都有閉合標籤。
 
 ```js
 assert(

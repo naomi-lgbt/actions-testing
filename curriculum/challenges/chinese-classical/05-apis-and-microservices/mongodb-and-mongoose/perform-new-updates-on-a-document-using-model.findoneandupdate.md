@@ -1,6 +1,6 @@
 ---
 id: 587d7fb8367417b2b2512c0f
-title: 在 document 中执行新的更新方式——使用 model.findOneAndUpdate()
+title: 在 document 中執行新的更新方式——使用 model.findOneAndUpdate()
 challengeType: 2
 forumTopicId: 301542
 dashedName: perform-new-updates-on-a-document-using-model-findoneandupdate
@@ -8,17 +8,17 @@ dashedName: perform-new-updates-on-a-document-using-model-findoneandupdate
 
 # --description--
 
-最近发布的 mongoose 版本简化了 document 的更新方式， 但同时，一些高级功能（如 pre/post hook, 验证）的使用方式也变得和以前不同。因此，在很多情景下，上一个挑战中提到的老方法其实更常用。 新方法的加入，可以让我们使用 `findByIdAndUpdate()` 来进行基于 id 的搜索。
+最近發佈的 mongoose 版本簡化了 document 的更新方式， 但同時，一些高級功能（如 pre/post hook, 驗證）的使用方式也變得和以前不同。因此，在很多情景下，上一個挑戰中提到的老方法其實更常用。 新方法的加入，可以讓我們使用 `findByIdAndUpdate()` 來進行基於 id 的搜索。
 
 # --instructions--
 
-修改 `findAndUpdate` 函数，通过 `Name` 查询人，并将查到的人的年龄设为 `20` 岁， 将函数参数 `personName` 作为查询关键字。
+修改 `findAndUpdate` 函數，通過 `Name` 查詢人，並將查到的人的年齡設爲 `20` 歲， 將函數參數 `personName` 作爲查詢關鍵字。
 
-**提示：** 你需要返回更新后的 document。 你可以把 `findOneAndUpdate()` 的第三个参数设置为 `{ new: true }` 。 默认情况下，这个方法会返回修改前的数据。
+**提示：** 你需要返回更新後的 document。 你可以把 `findOneAndUpdate()` 的第三個參數設置爲 `{ new: true }` 。 默認情況下，這個方法會返回修改前的數據。
 
 # --hints--
 
-应成功地使用 findOneAndUpdate 更新数据
+應成功地使用 findOneAndUpdate 更新數據
 
 ```js
 (getUserInput) =>

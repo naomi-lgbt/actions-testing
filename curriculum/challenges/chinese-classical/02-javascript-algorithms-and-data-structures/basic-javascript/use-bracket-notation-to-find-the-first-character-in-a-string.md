@@ -1,6 +1,6 @@
 ---
 id: bd7123c9c549eddfaeb5bdef
-title: 使用方括号查找字符串中的第一个字符
+title: 使用方括號查找字符串中的第一個字符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/ca8JwhW'
 forumTopicId: 18341
@@ -9,11 +9,11 @@ dashedName: use-bracket-notation-to-find-the-first-character-in-a-string
 
 # --description--
 
-方括号表示法（<dfn>Bracket notation</dfn>）是一种在字符串中的特定 index（索引）处获取字符的方法。
+方括號表示法（<dfn>Bracket notation</dfn>）是一種在字符串中的特定 index（索引）處獲取字符的方法。
 
-大多数现代编程语言，如JavaScript，不同于人类从 1 开始计数。 它们是从 0 开始计数。 这被称为基于零（<dfn>Zero-based</dfn>）的索引。
+大多數現代編程語言，如JavaScript，不同於人類從 1 開始計數。 它們是從 0 開始計數。 這被稱爲基於零（<dfn>Zero-based</dfn>）的索引。
 
-例如，单词 `Charles` 的索引 0 的字符是 `C`。 所以在 `var firstName = "Charles"` 中，你可以使用 `firstName[0]` 来获得第一个位置上的字符。
+例如，單詞 `Charles` 的索引 0 的字符是 `C`。 所以在 `var firstName = "Charles"` 中，你可以使用 `firstName[0]` 來獲得第一個位置上的字符。
 
 示例：
 
@@ -22,23 +22,23 @@ var firstName = "Charles";
 var firstLetter = firstName[0];
 ```
 
-`firstLetter` 值为字符串 `C` 。
+`firstLetter` 值爲字符串 `C` 。
 
 # --instructions--
 
-使用方括号获取变量 `lastName` 中的第一个字符，并赋给变量 `firstLetterOfLastName`。
+使用方括號獲取變量 `lastName` 中的第一個字符，並賦給變量 `firstLetterOfLastName`。
 
-**提示：** 如果卡住了，请尝试查看上面的示例。
+**提示：** 如果卡住了，請嘗試查看上面的示例。
 
 # --hints--
 
-`firstLetterOfLastName` 变量值应该为 `L` 。
+`firstLetterOfLastName` 變量值應該爲 `L` 。
 
 ```js
 assert(firstLetterOfLastName === 'L');
 ```
 
-应该使用方括号表示法。
+應該使用方括號表示法。
 
 ```js
 assert(code.match(/firstLetterOfLastName\s*?=\s*?lastName\[.*?\]/));

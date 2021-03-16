@@ -1,6 +1,6 @@
 ---
 id: 587d78af367417b2b2512b00
-title: 使用 align-self 属性
+title: 使用 align-self 屬性
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/cMbvzfv'
 forumTopicId: 301107
@@ -9,23 +9,23 @@ dashedName: use-the-align-self-property
 
 # --description--
 
-flex 子项目的最后一个属性是 `align-self`。 这个属性允许你调整单个子元素自己的对齐方式，而不会影响到全部子元素。 因为 `float`、`clear` 和 `vertical-align` 等调整对齐方式的属性都不能应用于 flex 子元素，所以这个属性显得十分有用。
+flex 子項目的最後一個屬性是 `align-self`。 這個屬性允許你調整單個子元素自己的對齊方式，而不會影響到全部子元素。 因爲 `float`、`clear` 和 `vertical-align` 等調整對齊方式的屬性都不能應用於 flex 子元素，所以這個屬性顯得十分有用。
 
-`align-self` 可设置的值与 `align-items` 的一样，并且它会覆盖 `align-items` 所设置的值。
+`align-self` 可設置的值與 `align-items` 的一樣，並且它會覆蓋 `align-items` 所設置的值。
 
 # --instructions--
 
-请为 `#box-1` 和 `#box-2` 添加 CSS 属性 `align-self`。 将 `#box-1` 的 `align-self` 属性值设为 center，将 `#box-2` 的设为 `flex-end`。
+請爲 `#box-1` 和 `#box-2` 添加 CSS 屬性 `align-self`。 將 `#box-1` 的 `align-self` 屬性值設爲 center，將 `#box-2` 的設爲 `flex-end`。
 
 # --hints--
 
-`#box-1` 元素应具有 `align-self` 属性，其属性值应为 `center`。
+`#box-1` 元素應具有 `align-self` 屬性，其屬性值應爲 `center`。
 
 ```js
 assert($('#box-1').css('align-self') == 'center');
 ```
 
-`#box-2` 元素应具有 `align-self` 属性，其属性值应为 `flex-end`。
+`#box-2` 元素應具有 `align-self` 屬性，其屬性值應爲 `flex-end`。
 
 ```js
 assert($('#box-2').css('align-self') == 'flex-end');

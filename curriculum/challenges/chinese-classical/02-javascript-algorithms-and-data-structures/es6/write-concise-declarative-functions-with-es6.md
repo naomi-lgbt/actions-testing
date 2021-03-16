@@ -1,6 +1,6 @@
 ---
 id: 587d7b8b367417b2b2512b50
-title: 用 ES6 编写简洁的函数声明
+title: 用 ES6 編寫簡潔的函數聲明
 challengeType: 1
 forumTopicId: 301224
 dashedName: write-concise-declarative-functions-with-es6
@@ -8,7 +8,7 @@ dashedName: write-concise-declarative-functions-with-es6
 
 # --description--
 
-在 ES5 中，当我们需要在对象中定义一个函数的时候，必须像这样使用 `function` 关键字：
+在 ES5 中，當我們需要在對象中定義一個函數的時候，必須像這樣使用 `function` 關鍵字：
 
 ```js
 const person = {
@@ -19,7 +19,7 @@ const person = {
 };
 ```
 
-用 ES6 的语法在对象中定义函数的时候，可以删除 `function` 关键词和冒号。 请看以下例子：
+用 ES6 的語法在對象中定義函數的時候，可以刪除 `function` 關鍵詞和冒號。 請看以下例子：
 
 ```js
 const person = {
@@ -32,17 +32,17 @@ const person = {
 
 # --instructions--
 
-使用以上这种简短的语法，重构在 `bicycle` 对象中的 `setGear` 函数。
+使用以上這種簡短的語法，重構在 `bicycle` 對象中的 `setGear` 函數。
 
 # --hints--
 
-不应使用传统的函数定义方法。
+不應使用傳統的函數定義方法。
 
 ```js
 (getUserInput) => assert(!__helpers.removeJSComments(code).match(/function/));
 ```
 
-`setGear` 应是一个声明函数。
+`setGear` 應是一個聲明函數。
 
 ```js
 assert(
@@ -50,7 +50,7 @@ assert(
 );
 ```
 
-`bicycle.setGear(48)` 应将 `gear` 的值改为 48。
+`bicycle.setGear(48)` 應將 `gear` 的值改爲 48。
 
 ```js
 assert(new bicycle.setGear(48).gear === 48);

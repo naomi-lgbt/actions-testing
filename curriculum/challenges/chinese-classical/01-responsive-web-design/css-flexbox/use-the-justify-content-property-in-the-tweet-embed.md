@@ -1,6 +1,6 @@
 ---
 id: 587d78ac367417b2b2512af7
-title: 在推文中使用 justify-content 属性
+title: 在推文中使用 justify-content 屬性
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/c43GgTa'
 forumTopicId: 301115
@@ -9,21 +9,21 @@ dashedName: use-the-justify-content-property-in-the-tweet-embed
 
 # --description--
 
-上一项挑战展示了 `justify-content` 属性的作用。 如果我们想对齐推文内的子元素，可以把给 `.profile-name` 元素应用这个属性。
+上一項挑戰展示了 `justify-content` 屬性的作用。 如果我們想對齊推文內的子元素，可以把給 `.profile-name` 元素應用這個屬性。
 
 # --instructions--
 
-请在 header 中的 `.profile-name` 元素添加 CSS 属性 `justify-content`，把它的属性值设为上面挑战提到的任意可用值。
+請在 header 中的 `.profile-name` 元素添加 CSS 屬性 `justify-content`，把它的屬性值設爲上面挑戰提到的任意可用值。
 
 # --hints--
 
-`.follow-btn` 应在页面上呈现。 请关闭广告拦截器等任何扩展。
+`.follow-btn` 應在頁面上呈現。 請關閉廣告攔截器等任何擴展。
 
 ```js
 assert($('.follow-btn').length > 0 && $('.follow-btn').css('display') !== 'none');
 ```
 
-`.profile-name` 元素的 `justify-content` 属性可选用以下属性值：`center`、`flex-start`、`flex-end`、`space-between`、`space-around` 或 `space-evenly`。
+`.profile-name` 元素的 `justify-content` 屬性可選用以下屬性值：`center`、`flex-start`、`flex-end`、`space-between`、`space-around` 或 `space-evenly`。
 
 ```js
 assert(

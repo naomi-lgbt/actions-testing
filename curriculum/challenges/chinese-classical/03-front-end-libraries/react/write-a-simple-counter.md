@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036177
-title: 写一个简单的计数器
+title: 寫一個簡單的計數器
 challengeType: 6
 forumTopicId: 301425
 dashedName: write-a-simple-counter
@@ -8,17 +8,17 @@ dashedName: write-a-simple-counter
 
 # --description--
 
-可以结合目前为止所涵盖的概念来设计更复杂的有状态组件。 这包括初始化 `state`，编写设置 `state` 的方法，以及指定单击处理程序来触发这些方法。
+可以結合目前爲止所涵蓋的概念來設計更復雜的有狀態組件。 這包括初始化 `state`，編寫設置 `state` 的方法，以及指定單擊處理程序來觸發這些方法。
 
 # --instructions--
 
-`Counter` 组件跟踪 `state` 中的 `count` 值。 有两个按钮分别调用 `increment()` 和 `decrement()` 方法。 编写这些方法，使计数器值在单击相应按钮时增加或减少 1。 另外，创建一个 `reset()` 方法，当单击 reset 按钮时，把计数设置为 0。
+`Counter` 組件跟蹤 `state` 中的 `count` 值。 有兩個按鈕分別調用 `increment()` 和 `decrement()` 方法。 編寫這些方法，使計數器值在單擊相應按鈕時增加或減少 1。 另外，創建一個 `reset()` 方法，當單擊 reset 按鈕時，把計數設置爲 0。
 
-**注意：** 确保没有修改按钮的 `className`。 另外，请记住在构造函数中为新创建的方法添加必要的绑定。
+**注意：** 確保沒有修改按鈕的 `className`。 另外，請記住在構造函數中爲新創建的方法添加必要的綁定。
 
 # --hints--
 
-`Counter` 应该返回一个 `div` 元素，它包含三个按钮，按钮内容依次是 `Increment!`、`Decrement!`、`Reset`。
+`Counter` 應該返回一個 `div` 元素，它包含三個按鈕，按鈕內容依次是 `Increment!`、`Decrement!`、`Reset`。
 
 ```js
 assert(
@@ -33,14 +33,14 @@ assert(
 );
 ```
 
-`Counter` 应该使用设置为 `0` 的 `count` 属性初始化 state。
+`Counter` 應該使用設置爲 `0` 的 `count` 屬性初始化 state。
 
 ```js
 const mockedComponent = Enzyme.mount(React.createElement(Counter));
 assert(mockedComponent.find('h1').text() === 'Current Count: 0');
 ```
 
-单击 increment 按钮应将计数增加 `1`。
+單擊 increment 按鈕應將計數增加 `1`。
 
 ```js
 const mockedComponent = Enzyme.mount(React.createElement(Counter));
@@ -48,7 +48,7 @@ mockedComponent.find('.inc').simulate('click');
 assert(mockedComponent.find('h1').text() === 'Current Count: 1');
 ```
 
-单击 decrement 按钮应将计数减少 `1`。
+單擊 decrement 按鈕應將計數減少 `1`。
 
 ```js
 const mockedComponent = Enzyme.mount(React.createElement(Counter));
@@ -56,7 +56,7 @@ mockedComponent.find('.dec').simulate('click');
 assert(mockedComponent.find('h1').text() === 'Current Count: -1');
 ```
 
-单击 reset 按钮应将计数重置为 `0`。
+單擊 reset 按鈕應將計數重置爲 `0`。
 
 ```js
 const mockedComponent = Enzyme.mount(React.createElement(Counter));

@@ -1,6 +1,6 @@
 ---
 id: 587d7b8f367417b2b2512b62
-title: 在原型上实现 map 方法
+title: 在原型上實現 map 方法
 challengeType: 1
 forumTopicId: 301230
 dashedName: implement-map-on-a-prototype
@@ -8,19 +8,19 @@ dashedName: implement-map-on-a-prototype
 
 # --description--
 
-之前用到了 `Array.prototype.map()` 方法（即 `map()`），通过 `map` 返回一个与调用它的数组长度相同的数组。 只要它的回调函数不改变原始数组，它就不会改变原始数组。
+之前用到了 `Array.prototype.map()` 方法（即 `map()`），通過 `map` 返回一個與調用它的數組長度相同的數組。 只要它的回調函數不改變原始數組，它就不會改變原始數組。
 
-换句话说，`map` 是一个纯函数，它的输出仅取决于输入的数组和作为参数传入的回调函数。 此外，它接收另一个函数作为它的参数。
+換句話說，`map` 是一個純函數，它的輸出僅取決於輸入的數組和作爲參數傳入的回調函數。 此外，它接收另一個函數作爲它的參數。
 
-实现一个 `map`，加深对它的了解。 你可以用 `for` 循环或者 `Array.prototype.forEach()` 方法。
+實現一個 `map`，加深對它的瞭解。 你可以用 `for` 循環或者 `Array.prototype.forEach()` 方法。
 
 # --instructions--
 
-写一个和 `Array.prototype.map()` 一样的 `Array.prototype.myMap()`。 不能使用内置的 `map` 方法。 在 `myMap` 方法内，可以使用 `this` 访问 `Array` 实例。
+寫一個和 `Array.prototype.map()` 一樣的 `Array.prototype.myMap()`。 不能使用內置的 `map` 方法。 在 `myMap` 方法內，可以使用 `this` 訪問 `Array` 實例。
 
 # --hints--
 
-`new_s` 应该等于 `[46, 130, 196, 10]`。
+`new_s` 應該等於 `[46, 130, 196, 10]`。
 
 ```js
 assert(JSON.stringify(new_s) === JSON.stringify([46, 130, 196, 10]));

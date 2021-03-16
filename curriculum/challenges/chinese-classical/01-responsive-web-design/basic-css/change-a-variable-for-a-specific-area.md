@@ -1,6 +1,6 @@
 ---
 id: 5a9d72a1424fe3d0e10cad15
-title: 更改特定区域的变量
+title: 更改特定區域的變量
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cdRwbuW'
 forumTopicId: 301085
@@ -9,17 +9,17 @@ dashedName: change-a-variable-for-a-specific-area
 
 # --description--
 
-当你在 `:root` 里创建变量时，这些变量的作用域是整个页面。
+當你在 `:root` 裏創建變量時，這些變量的作用域是整個頁面。
 
-如果在元素里创建相同的变量，会重写作用于整个页面的变量的值。
+如果在元素裏創建相同的變量，會重寫作用於整個頁面的變量的值。
 
 # --instructions--
 
-在 `penguin` class 里，请设置 `--penguin-belly` 的值为 `white`。
+在 `penguin` class 裏，請設置 `--penguin-belly` 的值爲 `white`。
 
 # --hints--
 
-应在 `penguin` class 里重定义 `--penguin-belly` 的变量值，新的值应为 `white`。
+應在 `penguin` class 裏重定義 `--penguin-belly` 的變量值，新的值應爲 `white`。
 
 ```js
 assert(

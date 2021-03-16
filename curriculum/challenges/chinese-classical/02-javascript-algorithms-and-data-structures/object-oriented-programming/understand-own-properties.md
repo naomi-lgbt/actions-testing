@@ -1,6 +1,6 @@
 ---
 id: 587d7dae367417b2b2512b7b
-title: 了解自有属性
+title: 瞭解自有屬性
 challengeType: 1
 forumTopicId: 301326
 dashedName: understand-own-properties
@@ -8,7 +8,7 @@ dashedName: understand-own-properties
 
 # --description--
 
-请看下面的实例，`Bird` 构造函数定义了两个属性：`name` 和 `numLegs`：
+請看下面的實例，`Bird` 構造函數定義了兩個屬性：`name` 和 `numLegs`：
 
 ```js
 function Bird(name) {
@@ -20,7 +20,7 @@ let duck = new Bird("Donald");
 let canary = new Bird("Tweety");
 ```
 
-`name` 和 `numLegs` 被叫做 `own` 属性，因为他们是直接在实例对象上定义的。 这就意味着 `duck` 和 `canary` 这两个对象分别拥有这些属性的独立副本。 事实上，`Bird` 的所有实例都将拥有这些属性的独立副本。 以下的代码将 `duck` 里面所有的 `own` 属性都存到一个叫 `ownProps` 的数组里面：
+`name` 和 `numLegs` 被叫做 `own` 屬性，因爲他們是直接在實例對象上定義的。 這就意味着 `duck` 和 `canary` 這兩個對象分別擁有這些屬性的獨立副本。 事實上，`Bird` 的所有實例都將擁有這些屬性的獨立副本。 以下的代碼將 `duck` 裏面所有的 `own` 屬性都存到一個叫 `ownProps` 的數組裏面：
 
 ```js
 let ownProps = [];
@@ -34,27 +34,27 @@ for (let property in duck) {
 console.log(ownProps);
 ```
 
-控制台将显示值 `["name", "numLegs"]`。
+控制檯將顯示值 `["name", "numLegs"]`。
 
 # --instructions--
 
-将 `canary` 对象里面的 `own` 属性添加到 `ownProps` 数组里面。
+將 `canary` 對象裏面的 `own` 屬性添加到 `ownProps` 數組裏面。
 
 # --hints--
 
-`ownProps` 应该包含 `numLegs` 和 `name` 两个属性的值。
+`ownProps` 應該包含 `numLegs` 和 `name` 兩個屬性的值。
 
 ```js
 assert(ownProps.indexOf('name') !== -1 && ownProps.indexOf('numLegs') !== -1);
 ```
 
-在不使用内置方法 `Object.keys()` 的前提下完成这个挑战。
+在不使用內置方法 `Object.keys()` 的前提下完成這個挑戰。
 
 ```js
 assert(!/Object(\.keys|\[(['"`])keys\2\])/.test(code));
 ```
 
-你应该解决这个挑战，而不是硬编码 `ownProps` 数组。
+你應該解決這個挑戰，而不是硬編碼 `ownProps` 數組。
 
 ```js
 assert(

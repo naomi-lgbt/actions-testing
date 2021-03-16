@@ -1,6 +1,6 @@
 ---
 id: 587d7fae367417b2b2512be6
-title: 渲染数据源的图像
+title: 渲染數據源的圖像
 challengeType: 6
 forumTopicId: 18265
 dashedName: render-images-from-data-sources
@@ -8,27 +8,27 @@ dashedName: render-images-from-data-sources
 
 # --description--
 
-前几个挑战中表明，JSON 数组中的每个对象都包含一个 `imageLink` 键，其值为猫图像的 URL。
+前幾個挑戰中表明，JSON 數組中的每個對象都包含一個 `imageLink` 鍵，其值爲貓圖像的 URL。
 
-当你遍历这些对象的时候，你可以使用 `imageLink` 属性在 `img` 元素中显示此图像。
+當你遍歷這些對象的時候，你可以使用 `imageLink` 屬性在 `img` 元素中顯示此圖像。
 
-这是执行此操作的代码：
+這是執行此操作的代碼：
 
 `html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>";`
 
 # --instructions--
 
-添加代码，在 `img` 标签中使用 `imageLink` 和 `altText` 属性。
+添加代碼，在 `img` 標籤中使用 `imageLink` 和 `altText` 屬性。
 
 # --hints--
 
-应该使用 `imageLink` 属性来显示图像。
+應該使用 `imageLink` 屬性來顯示圖像。
 
 ```js
 assert(code.match(/val\.imageLink/g));
 ```
 
-应该使用 `altText` 作为图片的 `alt` 属性值。
+應該使用 `altText` 作爲圖片的 `alt` 屬性值。
 
 ```js
 assert(code.match(/val\.altText/g));

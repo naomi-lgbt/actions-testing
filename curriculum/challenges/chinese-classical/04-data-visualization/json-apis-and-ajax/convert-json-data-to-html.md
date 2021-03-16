@@ -1,6 +1,6 @@
 ---
 id: 587d7fae367417b2b2512be5
-title: 将 JSON 数据转换为 HTML
+title: 將 JSON 數據轉換爲 HTML
 challengeType: 6
 forumTopicId: 16807
 dashedName: convert-json-data-to-html
@@ -8,15 +8,15 @@ dashedName: convert-json-data-to-html
 
 # --description--
 
-现在你从 JSON API 获取了数据，可以在 HTML 中显示它们了。
+現在你從 JSON API 獲取了數據，可以在 HTML 中顯示它們了。
 
-既然 cat photo 对象都保存在数组里，你可以使用 `forEach` 方法来遍历它们。 当你拿到每个对象时，你就可以修改 HTML 元素了。
+既然 cat photo 對象都保存在數組裏，你可以使用 `forEach` 方法來遍歷它們。 當你拿到每個對象時，你就可以修改 HTML 元素了。
 
-首先，通过 `let html = "";` 声明一个 html 变量。
+首先，通過 `let html = "";` 聲明一個 html 變量。
 
-接着，遍历 JSON，将用 `strong` 标签包裹的键名和后面跟着值的 html 元素添加给变量。 当循环结束后渲染它。
+接着，遍歷 JSON，將用 `strong` 標籤包裹的鍵名和後面跟着值的 html 元素添加給變量。 當循環結束後渲染它。
 
-这是执行此操作的代码：
+這是執行此操作的代碼：
 
 ```js
 let html = "";
@@ -30,11 +30,11 @@ json.forEach(function(val) {
 });
 ```
 
-**注意：**在本挑战中，你需要给页面添加新的 HTML 元素，所以你不能使用 `textContent` 方法。 你可以用 `innerHTML` 来完成挑战，这个方法使网站容易遭受跨站脚本攻击。
+**注意：**在本挑戰中，你需要給頁面添加新的 HTML 元素，所以你不能使用 `textContent` 方法。 你可以用 `innerHTML` 來完成挑戰，這個方法使網站容易遭受跨站腳本攻擊。
 
 # --instructions--
 
-添加一个 `forEach` 循环来遍历 JSON 数据，并创建 HTML 元素以显示它。
+添加一個 `forEach` 循環來遍歷 JSON 數據，並創建 HTML 元素以顯示它。
 
 下面是示例 JSON：
 
@@ -52,19 +52,19 @@ json.forEach(function(val) {
 
 # --hints--
 
-应该将数据保存在 `html` 变量中。
+應該將數據保存在 `html` 變量中。
 
 ```js
 assert(__helpers.removeWhiteSpace(code).match(/html(\+=|=html\+)/g))
 ```
 
-应该使用 `forEach` 方法来遍历 API 中的 JSON 数据。
+應該使用 `forEach` 方法來遍歷 API 中的 JSON 數據。
 
 ```js
 assert(code.match(/json\.forEach/g));
 ```
 
-应该用 `strong` 标签包裹键名。
+應該用 `strong` 標籤包裹鍵名。
 
 ```js
 assert(code.match(/<strong>.+<\/strong>/g));

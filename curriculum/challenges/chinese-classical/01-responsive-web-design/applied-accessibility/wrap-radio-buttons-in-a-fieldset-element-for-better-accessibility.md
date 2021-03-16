@@ -1,6 +1,6 @@
 ---
 id: 587d778b367417b2b2512aa7
-title: 将单选按钮包裹在 fieldset 元素中以获得更好的可访问性
+title: 將單選按鈕包裹在 fieldset 元素中以獲得更好的可訪問性
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJVefw'
 forumTopicId: 301030
@@ -9,13 +9,13 @@ dashedName: wrap-radio-buttons-in-a-fieldset-element-for-better-accessibility
 
 # --description--
 
-接下来的表单主题是关于单选按钮的可访问性。 在上一个挑战中，每个单选按钮都有一个包含 `for` 属性的 `label` 标签，这些属性值指向相关选项的 `id`。 然而单选按钮通常成组出现，而且用户必须选择其中一项。
+接下來的表單主題是關於單選按鈕的可訪問性。 在上一個挑戰中，每個單選按鈕都有一個包含 `for` 屬性的 `label` 標籤，這些屬性值指向相關選項的 `id`。 然而單選按鈕通常成組出現，而且用戶必須選擇其中一項。
 
-`fieldset` 标签包裹整组单选按钮，实现这个功能。 它经常使用 `legend` 标签来提供分组的描述，以便屏幕阅读器用户会阅读 `fieldset` 元素中的每个选项。
+`fieldset` 標籤包裹整組單選按鈕，實現這個功能。 它經常使用 `legend` 標籤來提供分組的描述，以便屏幕閱讀器用戶會閱讀 `fieldset` 元素中的每個選項。
 
-当选项的含义很明确时，如“性别选择”，`fieldset` 与 `legend` 标签可以省略。 这时，使用包含 `for` 属性的 `label` 标签就足够了。
+當選項的含義很明確時，如“性別選擇”，`fieldset` 與 `legend` 標籤可以省略。 這時，使用包含 `for` 屬性的 `label` 標籤就足夠了。
 
-举个例子：
+舉個例子：
 
 ```html
 <form>
@@ -33,17 +33,17 @@ dashedName: wrap-radio-buttons-in-a-fieldset-element-for-better-accessibility
 
 # --instructions--
 
-当用户使用邮件注册时，Camper Cat 想知道他们的忍者等级。 他添加了一组单选按钮，并从我们之前的课程中吸取了教训，为每个选项使用带有 `for` 属性的 `label` 标签。 Camper Cat 加油！ 然而，他仍然需要一些帮助。 请将包含单选按钮组的 `div` 标签替换为 `fieldset` 标签；将 `p` 标签替换为 `legend` 标签。
+當用戶使用郵件註冊時，Camper Cat 想知道他們的忍者等級。 他添加了一組單選按鈕，並從我們之前的課程中吸取了教訓，爲每個選項使用帶有 `for` 屬性的 `label` 標籤。 Camper Cat 加油！ 然而，他仍然需要一些幫助。 請將包含單選按鈕組的 `div` 標籤替換爲 `fieldset` 標籤；將 `p` 標籤替換爲 `legend` 標籤。
 
 # --hints--
 
-应存在 1 个 `fieldset` 标签包含单选按钮组。
+應存在 1 個 `fieldset` 標籤包含單選按鈕組。
 
 ```js
 assert($('fieldset').length == 1);
 ```
 
-确保 `fieldset` 标签是闭合的。
+確保 `fieldset` 標籤是閉合的。
 
 ```js
 assert(
@@ -52,19 +52,19 @@ assert(
 );
 ```
 
-应存在 1 个包含询问用户忍者等级内容文字的 `legend` 标签。
+應存在 1 個包含詢問用戶忍者等級內容文字的 `legend` 標籤。
 
 ```js
 assert($('legend').length == 1);
 ```
 
-不应存在 `div` 标签。
+不應存在 `div` 標籤。
 
 ```js
 assert($('div').length == 0);
 ```
 
-不应存在包含询问用户忍者等级内容文字的 `p` 标签。
+不應存在包含詢問用戶忍者等級內容文字的 `p` 標籤。
 
 ```js
 assert($('p').length == 4);

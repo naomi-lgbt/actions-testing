@@ -1,6 +1,6 @@
 ---
 id: 56bbb991ad1ed5201cd392cb
-title: 使用 push() 操作数组
+title: 使用 push() 操作數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cnqmVtJ'
 forumTopicId: 18237
@@ -9,9 +9,9 @@ dashedName: manipulate-arrays-with-push
 
 # --description--
 
-一个将数据添加到数组末尾的简单方法是 `push()` 函数。
+一個將數據添加到數組末尾的簡單方法是 `push()` 函數。
 
-`.push()` 接受一个或多个参数（<dfn>parameters</dfn>），并把它压入到数组的末尾。
+`.push()` 接受一個或多個參數（<dfn>parameters</dfn>），並把它壓入到數組的末尾。
 
 示例：
 
@@ -23,15 +23,15 @@ var arr2 = ["Stimpson", "J", "cat"];
 arr2.push(["happy", "joy"]);
 ```
 
-`arr1` 现在值为 `[1, 2, 3, 4]`，`arr2` 值为 `["Stimpson", "J", "cat", ["happy", "joy"]]`。
+`arr1` 現在值爲 `[1, 2, 3, 4]`，`arr2` 值爲 `["Stimpson", "J", "cat", ["happy", "joy"]]`。
 
 # --instructions--
 
-把`["dog", 3]` 压入到 `myArray` 变量的末尾。
+把`["dog", 3]` 壓入到 `myArray` 變量的末尾。
 
 # --hints--
 
-`myArray` 现在应该等于 `[["John", 23], ["cat", 2], ["dog", 3]]`。
+`myArray` 現在應該等於 `[["John", 23], ["cat", 2], ["dog", 3]]`。
 
 ```js
 assert(

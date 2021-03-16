@@ -1,6 +1,6 @@
 ---
 id: 5a94fe5469fb03452672e461
-title: 使用 auto-fill 创建弹性布局
+title: 使用 auto-fill 創建彈性佈局
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cmzdycW'
 forumTopicId: 301126
@@ -9,21 +9,21 @@ dashedName: create-flexible-layouts-using-auto-fill
 
 # --description--
 
-repeat 方法带有一个名为<dfn>自动填充（auto-fill）</dfn>的功能。 它的功能是根据容器的大小，尽可能多地放入指定大小的行或列。 你可以通过结合 `auto-fill` 和 `minmax` 来更灵活地布局。
+repeat 方法帶有一個名爲<dfn>自動填充（auto-fill）</dfn>的功能。 它的功能是根據容器的大小，儘可能多地放入指定大小的行或列。 你可以通過結合 `auto-fill` 和 `minmax` 來更靈活地佈局。
 
 ```css
 repeat(auto-fill, minmax(60px, 1fr));
 ```
 
-上面的代码效果是这样：首先，列的宽度会随容器大小改变。其次，只要容器宽度不足以插入一个宽为 60px 的列，当前行的所有列就都会一直拉伸。请自己调整宽度，动手试一下就不难理解了。 **注意：**如果容器宽度不足以将所有网格项放在同一行，余下的网格项将会移至新的一行。
+上面的代碼效果是這樣：首先，列的寬度會隨容器大小改變。其次，只要容器寬度不足以插入一個寬爲 60px 的列，當前行的所有列就都會一直拉伸。請自己調整寬度，動手試一下就不難理解了。 **注意：**如果容器寬度不足以將所有網格項放在同一行，餘下的網格項將會移至新的一行。
 
 # --instructions--
 
-在第一个网格中，请使用 `auto-fill` 和 `repeat` 来填充网格。 其中列宽的最小值为 `60px`，最大值为 `1fr`。 你可以调整最右侧的预览区大小，查看自动填充的效果。
+在第一個網格中，請使用 `auto-fill` 和 `repeat` 來填充網格。 其中列寬的最小值爲 `60px`，最大值爲 `1fr`。 你可以調整最右側的預覽區大小，查看自動填充的效果。
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-template-columns` 属性，且属性值应使用 `repeat` 和 `auto-fill`，以便将最小宽度为 `60px`、最大宽度为 `1fr` 的列填充至网格。
+class 爲 `container` 的元素應具有 `grid-template-columns` 屬性，且屬性值應使用 `repeat` 和 `auto-fill`，以便將最小寬度爲 `60px`、最大寬度爲 `1fr` 的列填充至網格。
 
 ```js
 assert(

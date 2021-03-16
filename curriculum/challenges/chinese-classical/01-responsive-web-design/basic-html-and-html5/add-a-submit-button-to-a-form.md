@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedd08830
-title: 给表单添加提交按钮
+title: 給表單添加提交按鈕
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVMPUv/cp2Nkhz'
 forumTopicId: 16627
@@ -9,7 +9,7 @@ dashedName: add-a-submit-button-to-a-form
 
 # --description--
 
-让我们来给表单添加一个 `submit`（提交）按钮。 点击提交按钮时，表单中的数据将会被发送到 `action` 属性指定的 URL 上。
+讓我們來給表單添加一個 `submit`（提交）按鈕。 點擊提交按鈕時，表單中的數據將會被髮送到 `action` 屬性指定的 URL 上。
 
 例如：
 
@@ -17,23 +17,23 @@ dashedName: add-a-submit-button-to-a-form
 
 # --instructions--
 
-在 `form` 的底部创建一个按钮，按钮的类型为 `submit`，文本为 `Submit`。
+在 `form` 的底部創建一個按鈕，按鈕的類型爲 `submit`，文本爲 `Submit`。
 
 # --hints--
 
-你的 `form` 里面应该有一个 `button`。
+你的 `form` 裏面應該有一個 `button`。
 
 ```js
 assert($('form').children('button').length > 0);
 ```
 
-按钮的 `type` 属性值应为 `submit`。
+按鈕的 `type` 屬性值應爲 `submit`。
 
 ```js
 assert($('button').attr('type') === 'submit');
 ```
 
-提交按钮的文本应为 `Submit` 。
+提交按鈕的文本應爲 `Submit` 。
 
 ```js
 assert(
@@ -43,7 +43,7 @@ assert(
 );
 ```
 
-`button` 元素应有结束标签。
+`button` 元素應有結束標籤。
 
 ```js
 assert(

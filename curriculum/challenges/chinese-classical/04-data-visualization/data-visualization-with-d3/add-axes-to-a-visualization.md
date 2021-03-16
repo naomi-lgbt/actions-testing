@@ -1,6 +1,6 @@
 ---
 id: 587d7fad367417b2b2512bdf
-title: 添加坐标轴到视图中
+title: 添加座標軸到視圖中
 challengeType: 6
 forumTopicId: 301472
 dashedName: add-axes-to-a-visualization
@@ -8,15 +8,15 @@ dashedName: add-axes-to-a-visualization
 
 # --description--
 
-另一种改进散点图的方法是添加 x 轴和 y 轴。
+另一種改進散點圖的方法是添加 x 軸和 y 軸。
 
-D3 有两种方法来渲染 y 轴和 x 轴，分别是 `axisLeft()` 和 `axisBottom()`。 下面是一个基于上个挑战中的 `xScale` 创建 x 轴的例子：
+D3 有兩種方法來渲染 y 軸和 x 軸，分別是 `axisLeft()` 和 `axisBottom()`。 下面是一個基於上個挑戰中的 `xScale` 創建 x 軸的例子：
 
 ```js
 const xAxis = d3.axisBottom(xScale);
 ```
 
-下一步是在 SVG 画布上渲染 x 轴。 为此，你可以使用一个 SVG 组件， `g` 元素， `g` 是英文中组（group）的缩写。 不同于 `rect`、`circle`、`text`，在渲染时，轴只是一条直线。 因为它是一个简单的图形，所以可以用 `g` 。 最后一步是使用 `transform` 属性将轴放置在 SVG 画布的正确位置上。 否则，轴将会沿着 SVG 画布的边缘渲染，从而不可见。 SVG 支持多种 `transforms`，但是定位轴需要使用 `translate` 属性。 当它应用在 `g` 元素上时，它根据给出的总量移动整组。 下面是一个例子：
+下一步是在 SVG 畫布上渲染 x 軸。 爲此，你可以使用一個 SVG 組件， `g` 元素， `g` 是英文中組（group）的縮寫。 不同於 `rect`、`circle`、`text`，在渲染時，軸只是一條直線。 因爲它是一個簡單的圖形，所以可以用 `g` 。 最後一步是使用 `transform` 屬性將軸放置在 SVG 畫布的正確位置上。 否則，軸將會沿着 SVG 畫布的邊緣渲染，從而不可見。 SVG 支持多種 `transforms`，但是定位軸需要使用 `translate` 屬性。 當它應用在 `g` 元素上時，它根據給出的總量移動整組。 下面是一個例子：
 
 ```js
 const xAxis = d3.axisBottom(xScale);
@@ -26,21 +26,21 @@ svg.append("g")
    .call(xAxis);
 ```
 
-上部分代码将 x 轴放置在 SVG 画布的底端。 然后 x 轴作为参数被传递给 `call()` 方法。 y 轴的定位也是这样，只是 `translate` 参数的形式是 `(x, 0)`。 因为 `translate` 是 `attr()` 方法中的一个字符串，你可以在参数中使用字符串的连接将变量值包括进去。
+上部分代碼將 x 軸放置在 SVG 畫布的底端。 然後 x 軸作爲參數被傳遞給 `call()` 方法。 y 軸的定位也是這樣，只是 `translate` 參數的形式是 `(x, 0)`。 因爲 `translate` 是 `attr()` 方法中的一個字符串，你可以在參數中使用字符串的連接將變量值包括進去。
 
 # --instructions--
 
-现在散点图有 x 轴了。 用 `axisLeft()` 方法创建 y 轴并赋值给 `yAxis` 变量， 然后通过 `g` 元素渲染 y 轴。 使用 `transform` 属性将 y 轴向右平移（平移的单位等于 paading 的值），向下平移 `0` 个单位。 记得对 y 轴调用 `call()` 方法。
+現在散點圖有 x 軸了。 用 `axisLeft()` 方法創建 y 軸並賦值給 `yAxis` 變量， 然後通過 `g` 元素渲染 y 軸。 使用 `transform` 屬性將 y 軸向右平移（平移的單位等於 paading 的值），向下平移 `0` 個單位。 記得對 y 軸調用 `call()` 方法。
 
 # --hints--
 
-你应该使用 `axisLeft()` 方法，并传入 `yScale` 作为参数。
+你應該使用 `axisLeft()` 方法，並傳入 `yScale` 作爲參數。
 
 ```js
 assert(code.match(/\.axisLeft\(yScale\)/g));
 ```
 
-y 轴 `g` 元素应有一个 `transform` 属性，将 y 轴平移 `(60, 0)`。
+y 軸 `g` 元素應有一個 `transform` 屬性，將 y 軸平移 `(60, 0)`。
 
 ```js
 assert(
@@ -51,7 +51,7 @@ assert(
 );
 ```
 
-你应该调用(call) `yAxis` 。
+你應該調用(call) `yAxis` 。
 
 ```js
 assert(code.match(/\.call\(\s*yAxis\s*\)/g));

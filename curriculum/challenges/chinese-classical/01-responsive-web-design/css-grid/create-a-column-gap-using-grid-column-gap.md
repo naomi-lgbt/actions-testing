@@ -1,6 +1,6 @@
 ---
 id: 5a9036ee38fddaf9a66b5d35
-title: 使用 grid-column-gap 创建多列之间的间距
+title: 使用 grid-column-gap 創建多列之間的間距
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cVZ8vfD'
 forumTopicId: 301124
@@ -9,21 +9,21 @@ dashedName: create-a-column-gap-using-grid-column-gap
 
 # --description--
 
-目前为止，在你所创建的网格中，每列都相互紧挨着。 有时候你想要列之间有一个间距。 如果需要在列与列之间添加一些间距，我们可以使用 `grid-column-gap`：
+目前爲止，在你所創建的網格中，每列都相互緊挨着。 有時候你想要列之間有一個間距。 如果需要在列與列之間添加一些間距，我們可以使用 `grid-column-gap`：
 
 ```css
 grid-column-gap: 10px;
 ```
 
-这会为我们创建的所有列之间都添加 10px 的空白间距。
+這會爲我們創建的所有列之間都添加 10px 的空白間距。
 
 # --instructions--
 
-请为网格中的所有列添加宽度为 `20px` 的间距。
+請爲網格中的所有列添加寬度爲 `20px` 的間距。
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-column-gap` 属性且属性值应为 `20px`。
+class 爲 `container` 的元素應具有 `grid-column-gap` 屬性且屬性值應爲 `20px`。
 
 ```js
 assert(

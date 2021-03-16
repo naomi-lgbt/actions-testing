@@ -1,6 +1,6 @@
 ---
 id: bd7123c9c451eddfaeb5bdef
-title: 使用方括号查找字符串中的最后一个字符
+title: 使用方括號查找字符串中的最後一個字符
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cBZQGcv'
 forumTopicId: 18342
@@ -9,9 +9,9 @@ dashedName: use-bracket-notation-to-find-the-last-character-in-a-string
 
 # --description--
 
-要获取字符串的最后一个字符，可以用字符串的长度减 1 的索引值。
+要獲取字符串的最後一個字符，可以用字符串的長度減 1 的索引值。
 
-例如，在 `var firstName = "Charles"` 中，可以用 `firstName[firstName.length - 1]` 来得到字符串的最后的一个字符。
+例如，在 `var firstName = "Charles"` 中，可以用 `firstName[firstName.length - 1]` 來得到字符串的最後的一個字符。
 
 示例：
 
@@ -20,23 +20,23 @@ var firstName = "Charles";
 var lastLetter = firstName[firstName.length - 1];
 ```
 
-`lastLetter` 值为字符串 `s`。
+`lastLetter` 值爲字符串 `s`。
 
 # --instructions--
 
-使用方括号表示法（ <dfn>bracket notation</dfn>）来找到 `lastName` 变量中的最后一个字符。
+使用方括號表示法（ <dfn>bracket notation</dfn>）來找到 `lastName` 變量中的最後一個字符。
 
-**提示：** 如果卡住了，请尝试查看上面的示例。
+**提示：** 如果卡住了，請嘗試查看上面的示例。
 
 # --hints--
 
-`lastLetterOfLastName` 应该是字母 `e`。
+`lastLetterOfLastName` 應該是字母 `e`。
 
 ```js
 assert(lastLetterOfLastName === 'e');
 ```
 
-您应该使用 `.length` 获取最后一个字母。
+您應該使用 `.length` 獲取最後一個字母。
 
 ```js
 assert(code.match(/\.length/g).length > 0);

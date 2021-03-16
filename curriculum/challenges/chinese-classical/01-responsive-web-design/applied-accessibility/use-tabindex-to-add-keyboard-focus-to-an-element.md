@@ -1,6 +1,6 @@
 ---
 id: 587d7790367417b2b2512ab0
-title: 使用 tabindex 将键盘焦点添加到元素中
+title: 使用 tabindex 將鍵盤焦點添加到元素中
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cmzMDHW'
 forumTopicId: 301027
@@ -9,27 +9,27 @@ dashedName: use-tabindex-to-add-keyboard-focus-to-an-element
 
 # --description--
 
-HTML 的 `tabindex` 属性有三种与标签焦点相关的功能。 当它在一个元素上时，表示该元素可以获得焦点。 tabindex 的值（可以是零、负整数或正整数）定义了行为。
+HTML 的 `tabindex` 屬性有三種與標籤焦點相關的功能。 當它在一個元素上時，表示該元素可以獲得焦點。 tabindex 的值（可以是零、負整數或正整數）定義了行爲。
 
-当用户使用键盘浏览页面时，诸如链接、表单控件等元素可以自动获得焦点。 它们获得焦点的顺序与它们出现在 HTML 文档流中的顺序一致。 我们可以通过将其他标签（如 `div`、`span`、`p` 等）的 `tabindex` 属性值设为 0 来让它们实现类似的效果。 比如：
+當用戶使用鍵盤瀏覽頁面時，諸如鏈接、表單控件等元素可以自動獲得焦點。 它們獲得焦點的順序與它們出現在 HTML 文檔流中的順序一致。 我們可以通過將其他標籤（如 `div`、`span`、`p` 等）的 `tabindex` 屬性值設爲 0 來讓它們實現類似的效果。 比如：
 
 `<div tabindex="0">I need keyboard focus!</div>`
 
-**注意：** `tabindex` 属性值为负整数（通常为 -1）的标签也是可以获得焦点的，只是不可以通过键盘操作（如 tab 键）来获得焦点。 这种方法通常用于以编程的方式使内容获得焦点（如：将焦点设置到用 `div` 实现的弹出框上）的场景。 只是这部分内容已经超出了当前挑战的范围。
+**注意：** `tabindex` 屬性值爲負整數（通常爲 -1）的標籤也是可以獲得焦點的，只是不可以通過鍵盤操作（如 tab 鍵）來獲得焦點。 這種方法通常用於以編程的方式使內容獲得焦點（如：將焦點設置到用 `div` 實現的彈出框上）的場景。 只是這部分內容已經超出了當前挑戰的範圍。
 
 # --instructions--
 
-Camper Cat 新建了一个用来收集他的用户信息的调查。 他知道输入框可以自动获得键盘焦点，但他希望用户使用键盘切换标签时，焦点可以停留在指示文字（Instructions）上。 给 `p` 标签添加一个 `tabindex` 属性，将属性值设置为 `0`。 注意：使用 `tabindex` 属性还可以让 CSS 伪类 `:focus` 在 `p` 标签上生效。
+Camper Cat 新建了一個用來收集他的用戶信息的調查。 他知道輸入框可以自動獲得鍵盤焦點，但他希望用戶使用鍵盤切換標籤時，焦點可以停留在指示文字（Instructions）上。 給 `p` 標籤添加一個 `tabindex` 屬性，將屬性值設置爲 `0`。 注意：使用 `tabindex` 屬性還可以讓 CSS 僞類 `:focus` 在 `p` 標籤上生效。
 
 # --hints--
 
-表单中，作为指示文字（Instructions）的 `p` 标签应具有 `tabindex` 属性。
+表單中，作爲指示文字（Instructions）的 `p` 標籤應具有 `tabindex` 屬性。
 
 ```js
 assert($('p').attr('tabindex'));
 ```
 
-`p` 标签的 `tabindex` 属性值应设置为 0。
+`p` 標籤的 `tabindex` 屬性值應設置爲 0。
 
 ```js
 assert($('p').attr('tabindex') == '0');

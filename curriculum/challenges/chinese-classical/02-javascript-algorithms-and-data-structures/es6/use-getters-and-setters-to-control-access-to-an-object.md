@@ -1,6 +1,6 @@
 ---
 id: 587d7b8c367417b2b2512b54
-title: 使用 getter 和 setter 来控制对象的访问
+title: 使用 getter 和 setter 來控制對象的訪問
 challengeType: 1
 forumTopicId: 301220
 dashedName: use-getters-and-setters-to-control-access-to-an-object
@@ -8,13 +8,13 @@ dashedName: use-getters-and-setters-to-control-access-to-an-object
 
 # --description--
 
-你可以从对象中获得一个值，也可以给对象的属性赋值。
+你可以從對象中獲得一個值，也可以給對象的屬性賦值。
 
-这些操作通常被称为 <dfn>getters</dfn> 以及 <dfn>setters</dfn>。
+這些操作通常被稱爲 <dfn>getters</dfn> 以及 <dfn>setters</dfn>。
 
-Getter 函数的作用是可以让对象返回一个私有变量，而不需要直接去访问私有变量。
+Getter 函數的作用是可以讓對象返回一個私有變量，而不需要直接去訪問私有變量。
 
-Setter 函数的作用是可以基于传进的参数来修改对象中私有变量。 这些修改可以是计算，或者是直接替换之前的值。
+Setter 函數的作用是可以基於傳進的參數來修改對象中私有變量。 這些修改可以是計算，或者是直接替換之前的值。
 
 ```js
 class Book {
@@ -36,29 +36,29 @@ novel.writer = 'newAuthor';
 console.log(novel.writer);
 ```
 
-控制台将显示字符串 `anonymous` 和 `newAuthor`。
+控制檯將顯示字符串 `anonymous` 和 `newAuthor`。
 
-请注意用于调用 getter 和 setter 的语法。 它们甚至看起来不像是函数。 getter 和 setter 非常重要，因为它们隐藏了内部的实现细节。
+請注意用於調用 getter 和 setter 的語法。 它們甚至看起來不像是函數。 getter 和 setter 非常重要，因爲它們隱藏了內部的實現細節。
 
-**注意：**通常会在私有变量前添加下划线（`_`）。 然而，这种做法本身并不是将变量变成私有的。
+**注意：**通常會在私有變量前添加下劃線（`_`）。 然而，這種做法本身並不是將變量變成私有的。
 
 # --instructions--
 
-使用 `class` 关键字创建一个 `Thermostat` class。 `constructor` 接收一个华氏温度。
+使用 `class` 關鍵字創建一個 `Thermostat` class。 `constructor` 接收一個華氏溫度。
 
-在 class 中，创建一个 `getter` 来获取摄氏温度和一个 `setter` 来设置温度值。
+在 class 中，創建一個 `getter` 來獲取攝氏溫度和一個 `setter` 來設置溫度值。
 
-记得在 `C = 5/9 * (F - 32)` 和 `F = C * 9.0 / 5 + 32` 中，`F` 是华氏温度值，`C` 是摄氏温度值。
+記得在 `C = 5/9 * (F - 32)` 和 `F = C * 9.0 / 5 + 32` 中，`F` 是華氏溫度值，`C` 是攝氏溫度值。
 
-**注意：**完成这个挑战后，应该在 class 中使用一个温度标准，要么是华氏温度，要么是摄氏温度。
+**注意：**完成這個挑戰後，應該在 class 中使用一個溫度標準，要麼是華氏溫度，要麼是攝氏溫度。
 
-这就是 getter 和 setter 的功能。 你正在为别的用户创建一个 API，不论你使用哪一个，用户都将获得正确的结果。
+這就是 getter 和 setter 的功能。 你正在爲別的用戶創建一個 API，不論你使用哪一個，用戶都將獲得正確的結果。
 
-或者说，你从用户需求中抽象出了实现细节。
+或者說，你從用戶需求中抽象出了實現細節。
 
 # --hints--
 
-`Thermostat` 应该是一个具有 `constructor` 方法的 `class`。
+`Thermostat` 應該是一個具有 `constructor` 方法的 `class`。
 
 ```js
 assert(
@@ -67,13 +67,13 @@ assert(
 );
 ```
 
-应该使用 `class` 关键词。
+應該使用 `class` 關鍵詞。
 
 ```js
 assert(code.match(/class/g));
 ```
 
-`Thermostat` 应该可以被实例化。
+`Thermostat` 應該可以被實例化。
 
 ```js
 assert(
@@ -84,7 +84,7 @@ assert(
 );
 ```
 
-当实例化华氏温度值时，`Thermostat` 应该被设置为正确的 `temperature`。
+當實例化華氏溫度值時，`Thermostat` 應該被設置爲正確的 `temperature`。
 
 ```js
 assert(
@@ -95,7 +95,7 @@ assert(
 );
 ```
 
-应该定义一个 `getter`。
+應該定義一個 `getter`。
 
 ```js
 assert(
@@ -109,7 +109,7 @@ assert(
 );
 ```
 
-应该定义一个 `setter`。
+應該定義一個 `setter`。
 
 ```js
 assert(
@@ -123,7 +123,7 @@ assert(
 );
 ```
 
-调用带有摄氏温度值的 `setter` 应该设置 `temperature`。
+調用帶有攝氏溫度值的 `setter` 應該設置 `temperature`。
 
 ```js
 assert(

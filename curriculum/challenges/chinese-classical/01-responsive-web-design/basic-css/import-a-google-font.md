@@ -1,6 +1,6 @@
 ---
 id: bad87fee1348bd9aedf08807
-title: 引入谷歌字体
+title: 引入谷歌字體
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cM9MRsJ'
 forumTopicId: 18200
@@ -9,36 +9,36 @@ dashedName: import-a-google-font
 
 # --description--
 
-在我们的网站上，除了使用系统提供的默认字体以外，我们也可以使用自定义字体。 网络上有很多字体库。 在这个例子中，我们将使用 Google 字体库。
+在我們的網站上，除了使用系統提供的默認字體以外，我們也可以使用自定義字體。 網絡上有很多字體庫。 在這個例子中，我們將使用 Google 字體庫。
 
-[Google 字体库](https://fonts.google.com/)是一个免费的 Web 字体库，我们只需要在 CSS 里设置字体的 URL 即可使用。
+[Google 字體庫](https://fonts.google.com/)是一個免費的 Web 字體庫，我們只需要在 CSS 裏設置字體的 URL 即可使用。
 
-接下来，我们就要引入和使用 Google Fonts（注意：如果 Google 在你的地区被限制访问，你可以选择跳过这个挑战）。
+接下來，我們就要引入和使用 Google Fonts（注意：如果 Google 在你的地區被限制訪問，你可以選擇跳過這個挑戰）。
 
-要引入 Google Font，你需要从 Google Fonts 上复制字体的 URL，并粘贴到你的 HTML 里面。 在这个挑战中，我们需要引入 `Lobster` 字体。 因此，请复制以下代码段，并粘贴到代码编辑器顶部，即放到 `style` 标签之前。
+要引入 Google Font，你需要從 Google Fonts 上覆制字體的 URL，並粘貼到你的 HTML 裏面。 在這個挑戰中，我們需要引入 `Lobster` 字體。 因此，請複製以下代碼段，並粘貼到代碼編輯器頂部，即放到 `style` 標籤之前。
 
 `<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">`
 
-现在你可以通过将下面例子中的 FAMILY_NAMEFAMILY_NAME 替换为 `Lobster`，来使用 `Lobster` 字体：  
+現在你可以通過將下面例子中的 FAMILY_NAMEFAMILY_NAME 替換爲 `Lobster`，來使用 `Lobster` 字體：  
 `font-family: FAMILY_NAME, GENERIC_NAME;`。
 
-GENERIC_NAME 是可选的，它用来指明在其他字体不可用时的后备字体。 我们会在下一个挑战中详细说明。
+GENERIC_NAME 是可選的，它用來指明在其他字體不可用時的後備字體。 我們會在下一個挑戰中詳細說明。
 
-字体名区分大小写，并且如果字体名含有空格，则在声明时需要用引号包起来。 例如，使用 `"Open Sans"` 字体需要添加引号，而 `Lobster` 则不需要。
+字體名區分大小寫，並且如果字體名含有空格，則在聲明時需要用引號包起來。 例如，使用 `"Open Sans"` 字體需要添加引號，而 `Lobster` 則不需要。
 
 # --instructions--
 
-给你的网页导入 `Lobster` 字体。 引入 Lobster 字体，然后使用元素选择器将 `h2` 元素的 `font-family` 设置为 `Lobster`。
+給你的網頁導入 `Lobster` 字體。 引入 Lobster 字體，然後使用元素選擇器將 `h2` 元素的 `font-family` 設置爲 `Lobster`。
 
 # --hints--
 
-应引入 `Lobster` 字体。
+應引入 `Lobster` 字體。
 
 ```js
 assert(new RegExp('googleapis', 'gi').test(code));
 ```
 
-`h2` 元素应使用 `Lobster` 字体。
+`h2` 元素應使用 `Lobster` 字體。
 
 ```js
 assert(
@@ -48,7 +48,7 @@ assert(
 );
 ```
 
-应使用元素选择器（`h2`）来改变字体样式。
+應使用元素選擇器（`h2`）來改變字體樣式。
 
 ```js
 assert(
@@ -58,7 +58,7 @@ assert(
 );
 ```
 
-`p` 元素应保持使用 `monospace` 字体。
+`p` 元素應保持使用 `monospace` 字體。
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 587d7b8f367417b2b2512b60
-title: 在函数中重构全局变量
+title: 在函數中重構全局變量
 challengeType: 1
 forumTopicId: 301235
 dashedName: refactor-global-variables-out-of-functions
@@ -8,23 +8,23 @@ dashedName: refactor-global-variables-out-of-functions
 
 # --description--
 
-目前为止，我们已经看到了函数式编程的两个原则：
+目前爲止，我們已經看到了函數式編程的兩個原則：
 
-1) 不要更改变量或对象 - 创建新变量和对象，并在需要时从函数返回它们。 提示：使用类似 `var newArr = arrVar` 时 `arrVar` 是一个数组，代码只是创建一个对现有变量的引用，而不是副本。 所以更改 `newArr` 中的值会同时更改 `arrVar` 中的值。
+1) 不要更改變量或對象 - 創建新變量和對象，並在需要時從函數返回它們。 提示：使用類似 `var newArr = arrVar` 時 `arrVar` 是一個數組，代碼只是創建一個對現有變量的引用，而不是副本。 所以更改 `newArr` 中的值會同時更改 `arrVar` 中的值。
 
-2) 声明函数参数 - 函数内的任何计算仅取决于参数，而不取决于任何全局对象或变量。
+2) 聲明函數參數 - 函數內的任何計算僅取決於參數，而不取決於任何全局對象或變量。
 
-给数字增加 1 不够刺激，我们可以在处理数组或更复杂的对象时应用这些原则。
+給數字增加 1 不夠刺激，我們可以在處理數組或更復雜的對象時應用這些原則。
 
 # --instructions--
 
-重构代码，使全局数组 `bookList` 在函数内部不会被改变。 `add` 函数可以将指定的 `bookName` 增加到数组末尾并返回一个新的数组（列表）。 `remove` 函数可以从数组中移除指定 `bookName`。
+重構代碼，使全局數組 `bookList` 在函數內部不會被改變。 `add` 函數可以將指定的 `bookName` 增加到數組末尾並返回一個新的數組（列表）。 `remove` 函數可以從數組中移除指定 `bookName`。
 
-**注意：** 两个函数都应该返回一个数组，任何新参数都应该在 `bookName` 参数之前添加。
+**注意：** 兩個函數都應該返回一個數組，任何新參數都應該在 `bookName` 參數之前添加。
 
 # --hints--
 
-`bookList` 应等于 `["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"]`.
+`bookList` 應等於 `["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"]`.
 
 ```js
 assert(
@@ -38,7 +38,7 @@ assert(
 );
 ```
 
-`newBookList` 应等于 `["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"]`.
+`newBookList` 應等於 `["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"]`.
 
 ```js
 assert(
@@ -53,7 +53,7 @@ assert(
 );
 ```
 
-`newerBookList` 应等于 `["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"]`.
+`newerBookList` 應等於 `["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"]`.
 
 ```js
 assert(
@@ -66,7 +66,7 @@ assert(
 );
 ```
 
-`newestBookList` 应等于 `["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"]`.
+`newestBookList` 應等於 `["The Hound of the Baskervilles", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae", "A Brief History of Time"]`.
 
 ```js
 assert(

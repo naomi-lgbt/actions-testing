@@ -1,6 +1,6 @@
 ---
 id: 587d78a6367417b2b2512adb
-title: 使用 CSS Transform skex 属性沿X轴倾斜元素
+title: 使用 CSS Transform skex 屬性沿X軸傾斜元素
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cyLP8Sr'
 forumTopicId: 301074
@@ -9,9 +9,9 @@ dashedName: use-the-css-transform-property-skewx-to-skew-an-element-along-the-x-
 
 # --description--
 
-接下来要介绍的 `transform` 属性是 `skewX()`：它使选择的元素沿着 X 轴（横向）翻转指定的角度。
+接下來要介紹的 `transform` 屬性是 `skewX()`：它使選擇的元素沿着 X 軸（橫向）翻轉指定的角度。
 
-下面的代码沿着 X 轴翻转段落元素 -32 度。
+下面的代碼沿着 X 軸翻轉段落元素 -32 度。
 
 ```css
 p {
@@ -21,11 +21,11 @@ p {
 
 # --instructions--
 
-使用 `transform` 属性沿 X 轴翻转 id 为 `bottom` 的元素 24 度。
+使用 `transform` 屬性沿 X 軸翻轉 id 爲 `bottom` 的元素 24 度。
 
 # --hints--
 
-id 为 `bottom` 的元素应该沿着 X 轴翻转 24 度。
+id 爲 `bottom` 的元素應該沿着 X 軸翻轉 24 度。
 
 ```js
 assert(code.match(/#bottom\s*?{\s*?.*?\s*?transform:\s*?skewX\(24deg\);/g));

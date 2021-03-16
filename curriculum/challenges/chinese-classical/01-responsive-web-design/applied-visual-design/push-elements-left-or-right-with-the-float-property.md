@@ -1,6 +1,6 @@
 ---
 id: 587d78a3367417b2b2512ace
-title: 使用 float 属性将元素左浮动或右浮动
+title: 使用 float 屬性將元素左浮動或右浮動
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c2MDqu2'
 forumTopicId: 301066
@@ -9,21 +9,21 @@ dashedName: push-elements-left-or-right-with-the-float-property
 
 # --description--
 
-接下来要介绍的定位机制并不是 `position` 属性的选项，而是通过元素的 `float` 属性来设置。 浮动元素不在文档流中，它向 `left` 或 `right` 浮动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。 通常需要用 `width` 属性来指定浮动元素占据的水平空间。
+接下來要介紹的定位機制並不是 `position` 屬性的選項，而是通過元素的 `float` 屬性來設置。 浮動元素不在文檔流中，它向 `left` 或 `right` 浮動，直到它的外邊緣碰到包含框或另一個浮動框的邊框爲止。 通常需要用 `width` 屬性來指定浮動元素佔據的水平空間。
 
 # --instructions--
 
-使这两个元素按两列布局，`section` 和 `aside` 左右排列。 设置 `#left` 元素的 `float` 属性值为 `left`，设置 `#right` 元素的 `float` 属性值为 `right`。
+使這兩個元素按兩列布局，`section` 和 `aside` 左右排列。 設置 `#left` 元素的 `float` 屬性值爲 `left`，設置 `#right` 元素的 `float` 屬性值爲 `right`。
 
 # --hints--
 
-id 为 `left` 的元素的 `float` 属性值应为 `left`。
+id 爲 `left` 的元素的 `float` 屬性值應爲 `left`。
 
 ```js
 assert($('#left').css('float') == 'left');
 ```
 
-id 为 `right` 的元素的 `float` 属性值应为 `right`。
+id 爲 `right` 的元素的 `float` 屬性值應爲 `right`。
 
 ```js
 assert($('#right').css('float') == 'right');

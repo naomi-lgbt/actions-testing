@@ -1,6 +1,6 @@
 ---
 id: 56592a60ddddeae28f7aa8e1
-title: 使用索引访问多维数组
+title: 使用索引訪問多維數組
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/ckND4Cq'
 forumTopicId: 16159
@@ -9,7 +9,7 @@ dashedName: access-multi-dimensional-arrays-with-indexes
 
 # --description--
 
-我们可以把<dfn>多维</dfn>数组看作成是*数组中的数组*。 使用方括号表示法访问数组时，第一个方括号访问的是数组的最外层（第一层），第二个方括号访问的是数组的第二层，以此类推。
+我們可以把<dfn>多維</dfn>數組看作成是*數組中的數組*。 使用方括號表示法訪問數組時，第一個方括號訪問的是數組的最外層（第一層），第二個方括號訪問的是數組的第二層，以此類推。
 
 **例如：**
 
@@ -25,23 +25,23 @@ arr[3][0];
 arr[3][0][1];
 ```
 
-`arr[3]` 为 `[[10, 11, 12], 13, 14]`，`arr[3][0]` 为 `[10, 11, 12]`，并且 `arr[3][0][1]` 为 `11`。
+`arr[3]` 爲 `[[10, 11, 12], 13, 14]`，`arr[3][0]` 爲 `[10, 11, 12]`，並且 `arr[3][0][1]` 爲 `11`。
 
-**注意：** 数组名与方括号之间不应该有任何空格，比如`array [0][0]` 甚至是 `array [0] [0]` 都是不允许的。 尽管 JavaScript 能够正确处理这种情况，但是当其他程序员阅读你写的代码时，这可能让他们感到困惑。
+**注意：** 數組名與方括號之間不應該有任何空格，比如`array [0][0]` 甚至是 `array [0] [0]` 都是不允許的。 儘管 JavaScript 能夠正確處理這種情況，但是當其他程序員閱讀你寫的代碼時，這可能讓他們感到困惑。
 
 # --instructions--
 
-使用方括号从 `myArray` 中选取一个值，使得 `myData` 等于 `8`。
+使用方括號從 `myArray` 中選取一個值，使得 `myData` 等於 `8`。
 
 # --hints--
 
-`myData` 应该等于 `8`。
+`myData` 應該等於 `8`。
 
 ```js
 assert(myData === 8);
 ```
 
-你应该使用方括号从 `myArray` 中读取正确的值。
+你應該使用方括號從 `myArray` 中讀取正確的值。
 
 ```js
 assert(/myData=myArray\[2\]\[1\]/.test(__helpers.removeWhiteSpace(code)));

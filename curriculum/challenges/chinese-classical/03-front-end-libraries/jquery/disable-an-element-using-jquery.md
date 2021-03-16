@@ -8,21 +8,21 @@ dashedName: disable-an-element-using-jquery
 
 # --description--
 
-还能用 jQuery 改变 HTML 标签的非 CSS 属性， 例如：禁用按钮。
+還能用 jQuery 改變 HTML 標籤的非 CSS 屬性， 例如：禁用按鈕。
 
-当禁用按钮时，它将变成灰色并无法点击。
+當禁用按鈕時，它將變成灰色並無法點擊。
 
-jQuery 有一个 `.prop()` 方法，可以用其调整标签的属性。
+jQuery 有一個 `.prop()` 方法，可以用其調整標籤的屬性。
 
-下面是禁用所有的按钮的代码：
+下面是禁用所有的按鈕的代碼：
 
 `$("button").prop("disabled", true);`
 
-禁用 `target1` 按钮。
+禁用 `target1` 按鈕。
 
 # --hints--
 
-应该禁用 `target1` 按钮。
+應該禁用 `target1` 按鈕。
 
 ```js
 assert(
@@ -32,13 +32,13 @@ assert(
 );
 ```
 
-不应该禁用其它的按钮。
+不應該禁用其它的按鈕。
 
 ```js
 assert($('#target2') && !$('#target2').prop('disabled'));
 ```
 
-应该仅用 jQuery 更改元素属性。
+應該僅用 jQuery 更改元素屬性。
 
 ```js
 assert(!code.match(/disabled[^<]*>/g));

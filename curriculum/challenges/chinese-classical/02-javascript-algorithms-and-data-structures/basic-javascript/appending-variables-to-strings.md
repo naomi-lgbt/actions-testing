@@ -1,6 +1,6 @@
 ---
 id: 56533eb9ac21ba0edf2244ed
-title: 将变量追加到字符串
+title: 將變量追加到字符串
 challengeType: 1
 videoUrl: 'https://scrimba.com/c/cbQmZfa'
 forumTopicId: 16656
@@ -9,7 +9,7 @@ dashedName: appending-variables-to-strings
 
 # --description--
 
-就像我们可以用多行字符串<dfn>字面量</dfn>构建单个字符串一样，我们还可以使用加且赋值（`+=`）运算符将字符串追加到字符串的末尾。
+就像我們可以用多行字符串<dfn>字面量</dfn>構建單個字符串一樣，我們還可以使用加且賦值（`+=`）運算符將字符串追加到字符串的末尾。
 
 示例：
 
@@ -19,21 +19,21 @@ var ourStr = "freeCodeCamp is ";
 ourStr += anAdjective;
 ```
 
-`ourStr` 值为 `freeCodeCamp is awesome!`。
+`ourStr` 值爲 `freeCodeCamp is awesome!`。
 
 # --instructions--
 
-将 `someAdjective` 设置为一个至少包含 3 个字符的字符串，然后使用 `+=` 运算符将它追加到 `myStr`。
+將 `someAdjective` 設置爲一個至少包含 3 個字符的字符串，然後使用 `+=` 運算符將它追加到 `myStr`。
 
 # --hints--
 
-`someAdjective` 应当为包含至少三个字符的字符串。
+`someAdjective` 應當爲包含至少三個字符的字符串。
 
 ```js
 assert(typeof someAdjective !== 'undefined' && someAdjective.length > 2);
 ```
 
-你应该使用 `+=` 运算符将 `someAdjective` 追加到 `myStr`。
+你應該使用 `+=` 運算符將 `someAdjective` 追加到 `myStr`。
 
 ```js
 assert(code.match(/myStr\s*\+=\s*someAdjective\s*/).length > 0);

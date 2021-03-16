@@ -1,6 +1,6 @@
 ---
 id: 587d7fb4367417b2b2512bff
-title: 给 package.json 添加版本号
+title: 給 package.json 添加版本號
 challengeType: 2
 forumTopicId: 301525
 dashedName: add-a-version-to-your-package-json
@@ -8,7 +8,7 @@ dashedName: add-a-version-to-your-package-json
 
 # --description--
 
-`version` 是 package.json 文件中必填字段之一， 这个字段描述了当前项目的版本， 如：
+`version` 是 package.json 文件中必填字段之一， 這個字段描述了當前項目的版本， 如：
 
 ```json
 "version": "1.2.0",
@@ -16,11 +16,11 @@ dashedName: add-a-version-to-your-package-json
 
 # --instructions--
 
-给 package.json 文件添加项目的版本号（`version`）。
+給 package.json 文件添加項目的版本號（`version`）。
 
 # --hints--
 
-package.json 应该包含一个有效的 “version” 键
+package.json 應該包含一個有效的 “version” 鍵
 
 ```js
 (getUserInput) =>

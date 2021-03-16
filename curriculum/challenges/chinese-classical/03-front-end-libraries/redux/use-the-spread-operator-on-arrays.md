@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036159
-title: 在数组中使用扩展运算符
+title: 在數組中使用擴展運算符
 challengeType: 6
 forumTopicId: 301452
 dashedName: use-the-spread-operator-on-arrays
@@ -8,19 +8,19 @@ dashedName: use-the-spread-operator-on-arrays
 
 # --description--
 
-ES6 中有助于在 Redux 中强制执行状态不变性的一个解决方案是扩展运算符：`...`。 扩展运算符具有很多的应用，其中一种非常适合通过一个已有的数组生成一个新数组。 这是相对较新的但常用的语法。 例如，如果你有一个数组 `myArray` 并写：
+ES6 中有助於在 Redux 中強制執行狀態不變性的一個解決方案是擴展運算符：`...`。 擴展運算符具有很多的應用，其中一種非常適合通過一個已有的數組生成一個新數組。 這是相對較新的但常用的語法。 例如，如果你有一個數組 `myArray` 並寫：
 
 `let newArray = [...myArray];`
 
-`newArray` 现在是 `myArray` 的克隆。 两个数组仍然在内存中单独存在。 如果你执行像 `newArray.push(5)` 这样的代码，`myArray` 不会改变。 `...` 有效将 `myArray` 中的值 *展开*到一个新数组中。 要克隆数组但在新数组中添加其他值，可以编写 `[...myArray, 'new value']`。 这将返回一个由 `myArray` 中的值和字符串 `new value` （作为最后一个值）组成的新数组。 扩展语法可以像这样在数组组合中多次使用，但重要的是要注意它只做一个浅拷贝。 这就是说，它只为一维数组提供了不可变的数组操作。
+`newArray` 現在是 `myArray` 的克隆。 兩個數組仍然在內存中單獨存在。 如果你執行像 `newArray.push(5)` 這樣的代碼，`myArray` 不會改變。 `...` 有效將 `myArray` 中的值 *展開*到一個新數組中。 要克隆數組但在新數組中添加其他值，可以編寫 `[...myArray, 'new value']`。 這將返回一個由 `myArray` 中的值和字符串 `new value` （作爲最後一個值）組成的新數組。 擴展語法可以像這樣在數組組合中多次使用，但重要的是要注意它只做一個淺拷貝。 這就是說，它只爲一維數組提供了不可變的數組操作。
 
 # --instructions--
 
-添加待办事项时，使用 spread 运算符返回新的状态副本。
+添加待辦事項時，使用 spread 運算符返回新的狀態副本。
 
 # --hints--
 
-Redux store 应该在代码编辑器中存在并使用 `["Do not mutate state!"]` 进行状态初始化。
+Redux store 應該在代碼編輯器中存在並使用 `["Do not mutate state!"]` 進行狀態初始化。
 
 ```js
 assert(
@@ -34,13 +34,13 @@ assert(
 );
 ```
 
-`addToDo`和`immutableReducer`都应该是一个函数。
+`addToDo`和`immutableReducer`都應該是一個函數。
 
 ```js
 assert(typeof addToDo === 'function' && typeof immutableReducer === 'function');
 ```
 
-在 Redux store 上 dispatch 一个类型为`ADD_TO_DO` aciton 应该添加一个`todo`项，并且不应该改变 state。
+在 Redux store 上 dispatch 一個類型爲`ADD_TO_DO` aciton 應該添加一個`todo`項，並且不應該改變 state。
 
 ```js
 assert(
@@ -55,7 +55,7 @@ assert(
 );
 ```
 
-应使用扩展运算符返回新的 state。
+應使用擴展運算符返回新的 state。
 
 ```js
 (getUserInput) => assert(getUserInput('index').includes('...state'));

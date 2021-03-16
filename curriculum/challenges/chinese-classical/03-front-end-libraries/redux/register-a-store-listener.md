@@ -1,6 +1,6 @@
 ---
 id: 5a24c314108439a4d4036153
-title: 注册 Store 监听器
+title: 註冊 Store 監聽器
 challengeType: 6
 forumTopicId: 301446
 dashedName: register-a-store-listener
@@ -8,15 +8,15 @@ dashedName: register-a-store-listener
 
 # --description--
 
-在 Redux `store` 对象上访问数据的另一种方法是 `store.subscribe()`。 这允许将监听器函数订阅到 store，只要 action 被 dispatch 就会调用它们。 这个方法的一个简单用途是为 store 订阅一个函数，它只是在每次收到一个 action 并且更新 store 时记录一条消息。
+在 Redux `store` 對象上訪問數據的另一種方法是 `store.subscribe()`。 這允許將監聽器函數訂閱到 store，只要 action 被 dispatch 就會調用它們。 這個方法的一個簡單用途是爲 store 訂閱一個函數，它只是在每次收到一個 action 並且更新 store 時記錄一條消息。
 
 # --instructions--
 
-编写一个回调函数，每次 store 收到一个 action 时，它会递增全局变量 `count`，并将此函数传递给 `store.subscribe()` 方法。 将会看到 `store.dispatch()` 连续三次被调用，每次都直接传入一个 action 对象。 观察 dispatch action 之间的控制台输出，看看是否发生了更新。
+編寫一個回調函數，每次 store 收到一個 action 時，它會遞增全局變量 `count`，並將此函數傳遞給 `store.subscribe()` 方法。 將會看到 `store.dispatch()` 連續三次被調用，每次都直接傳入一個 action 對象。 觀察 dispatch action 之間的控制檯輸出，看看是否發生了更新。
 
 # --hints--
 
-在 store 上 dispatch `ADD` action 应该使计数器增加 `1`。
+在 store 上 dispatch `ADD` action 應該使計數器增加 `1`。
 
 ```js
 assert(
@@ -29,13 +29,13 @@ assert(
 );
 ```
 
-应该有一个监听函数 `store.subscribe` 订阅 store。
+應該有一個監聽函數 `store.subscribe` 訂閱 store。
 
 ```js
 (getUserInput) => assert(getUserInput('index').includes('store.subscribe('));
 ```
 
-在更新 store 时，`store.subscribe` 应该在回调中使全局变量 `count` 增加。
+在更新 store 時，`store.subscribe` 應該在回調中使全局變量 `count` 增加。
 
 ```js
 assert(store.getState() === count);

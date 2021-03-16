@@ -1,6 +1,6 @@
 ---
 id: 587d7db2367417b2b2512b8b
-title: 了解立即调用函数表达（IIFE）
+title: 瞭解立即調用函數表達（IIFE）
 challengeType: 1
 forumTopicId: 301328
 dashedName: understand-the-immediately-invoked-function-expression-iife
@@ -8,7 +8,7 @@ dashedName: understand-the-immediately-invoked-function-expression-iife
 
 # --description--
 
-JavaScript 中的一个常见模式就是，函数在声明后立刻执行：
+JavaScript 中的一個常見模式就是，函數在聲明後立刻執行：
 
 ```js
 (function () {
@@ -16,23 +16,23 @@ JavaScript 中的一个常见模式就是，函数在声明后立刻执行：
 })();
 ```
 
-这是一个匿名函数表达式，立即执行并输出 `Chirp, chirp!`。
+這是一個匿名函數表達式，立即執行並輸出 `Chirp, chirp!`。
 
-请注意，函数没有名称，也不存储在变量中。 函数表达式末尾的两个括号（）会让它被立即执行或调用。 这种模式被叫做立即调用函数表达式（<dfn>immediately invoked function expression</dfn>) 或者<dfn>IIFE</dfn>。
+請注意，函數沒有名稱，也不存儲在變量中。 函數表達式末尾的兩個括號（）會讓它被立即執行或調用。 這種模式被叫做立即調用函數表達式（<dfn>immediately invoked function expression</dfn>) 或者<dfn>IIFE</dfn>。
 
 # --instructions--
 
-重写函数 `makeNest`，并删除它的调用，取而代之是一个匿名的立即调用函数表达式（IIFE）。
+重寫函數 `makeNest`，並刪除它的調用，取而代之是一個匿名的立即調用函數表達式（IIFE）。
 
 # --hints--
 
-该函数应该是匿名的。
+該函數應該是匿名的。
 
 ```js
 assert(/\((function|\(\))(=>|\(\)){?/.test(code.replace(/\s/g, '')));
 ```
 
-函数应该在表达式的末尾有括号，以便立即调用它。
+函數應該在表達式的末尾有括號，以便立即調用它。
 
 ```js
 assert(/\(.*(\)\(|\}\(\))\)/.test(code.replace(/[\s;]/g, '')));
