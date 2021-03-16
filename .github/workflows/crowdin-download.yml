@@ -98,7 +98,7 @@ jobs:
         uses: ./tools/crowdin/actions/pr-creator
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
-          branch: 'i18n-sync-learn'
+          branch: 'i18n-sync-curriculum'
           owner-repo: 'nhcarrigan/actions-testing'
           base: 'main'
           title: 'chore(i18n,learn): processed translations'
