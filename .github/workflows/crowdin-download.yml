@@ -71,10 +71,7 @@ jobs:
           skip_untranslated_files: true
           export_only_approved: true
 
-
-          commit_message: 'chore(i8n,curriculum): processed translations'
-          localization_branch_name: i18n-sync-curriculum
-          push_translations: true
+          push_translations: false
 
           # pull-request
           create_pull_request: false
@@ -90,7 +87,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          
+
+      # Create Commit
+      - name: Commit Changes
+        runs: |
+          git config --global user.name "nhcarrigan-test"
+          git config --global user.email "nhcarrigan+test@gmail.com"
+          git add .
+          git commit -m "chore: update translations"
+          git push -u origin i18n-sync-curriculum
+
       # Generate PR #
       # Alll languages should go ABOVE this. #
 
