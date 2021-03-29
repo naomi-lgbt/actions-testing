@@ -93,7 +93,7 @@ jobs:
         run: |
           git checkout -b i18n-sync-curriculum
           git config --global user.name "nhcarrigan-test"
-          git config --global user.email "nhcarrigan+test@gmail.com"
+          git config --global user.email "${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}"
           git add .
           git commit -m "chore: update translations"
           git push -u origin i18n-sync-curriculum -f
