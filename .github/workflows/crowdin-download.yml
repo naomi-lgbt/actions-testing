@@ -91,6 +91,7 @@ jobs:
       # Create Commit
       - name: Commit Changes
         run: |
+          git checkout -b i18n-sync-curriculum
           git config --global user.name "nhcarrigan-test"
           git config --global user.email "nhcarrigan+test@gmail.com"
           git add .
