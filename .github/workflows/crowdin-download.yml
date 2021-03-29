@@ -95,7 +95,7 @@ jobs:
           git config --global user.email "nhcarrigan+test@gmail.com"
           git add .
           git commit -m "chore: update translations"
-          git push -u origin i18n-sync-curriculum
+          git push -u origin i18n-sync-curriculum -f
 
       # Generate PR #
       # Alll languages should go ABOVE this. #
