@@ -99,7 +99,7 @@ jobs:
         env:
           EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
         run: |
-          git config user.name "nhtest"
+          git config user.name "nhcarrigan-test"
           git config user.email "$EMAIL"
           git add .
           git commit -m "chore: update translations" | grep "nothing to commit, working tree clean"
