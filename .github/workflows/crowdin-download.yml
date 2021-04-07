@@ -1,4 +1,4 @@
-name: Crowdin Curriculum Download
+name: Crowdin Curriculum Download New Because Old was Broked?
 on:
   workflow_dispatch:
 
