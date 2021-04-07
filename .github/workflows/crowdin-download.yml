@@ -99,6 +99,7 @@ jobs:
         env:
           EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
         run: |
+          set -x
           git config --global user.name "nhcarrigan-test"
           git config --global user.email "$EMAIL"
           git add .
