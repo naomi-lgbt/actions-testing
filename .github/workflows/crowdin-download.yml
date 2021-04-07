@@ -71,9 +71,7 @@ jobs:
           skip_untranslated_files: true
           export_only_approved: true
 
-          commit_message: 'chore(i8n,client): processed translations'
-          localization_branch_name: i18n-sync-curriculum
-          push_translations: true
+          push_translations: false
 
           # pull-request
           create_pull_request: false
