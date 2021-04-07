@@ -90,6 +90,18 @@ jobs:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
+      # Create Commit
+      - name: Commit Changes
+        env:
+          EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
+        run: |
+          git checkout -b i18n-sync-curriculum
+          git config --global user.name "nhtest"
+          git config --global user.email "nhcarrigan+test@gmail.com"
+          git add .
+          git commit -m "chore: update translations"
+          git push -u origin i18n-sync-curriculum -f
+
       # Generate PR #
       # Alll languages should go ABOVE this. #
 
