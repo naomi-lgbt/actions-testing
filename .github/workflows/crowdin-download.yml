@@ -11,11 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
-
-      - name: Switch branch
-        run: |
-          git checkout -b i18n-sync-curriculum
-
+          
       - name: Install Dependencies
         working-directory: ./tools
         run: |
@@ -100,6 +96,7 @@ jobs:
           EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
         run: |
           set -x
+          git checkout -b i18n-sync-curriculum
           git config --global user.name "nhcarrigan-test"
           git config --global user.email "$EMAIL"
           git add .
