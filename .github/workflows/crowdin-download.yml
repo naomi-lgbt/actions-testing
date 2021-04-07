@@ -9,8 +9,15 @@ jobs:
     steps:
       - name: Checkout Source Files
         uses: actions/checkout@v2
-        with: 
+        with:
           token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
+
+      - name: Set git config
+        env:
+          EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
+        run: |
+          git config --global user.name "nhtest"
+          git config --global user.email $EMAIL
 
       - name: Install Dependencies
         working-directory: ./tools
@@ -41,7 +48,7 @@ jobs:
           create_pull_request: false
 
           # global options
-          config: './config/crowdin/curriculum/crowdin.yml'
+          config: "./config/crowdin/curriculum/crowdin.yml"
           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
           # Uncomment below to debug
@@ -55,7 +62,7 @@ jobs:
       # Convert Simplified Chinese to Traditional #
       - name: Generate Translations
         uses: ./tools/crowdin/actions/convert-chinese
- 
+
       ##### Download Espanol #####
       - name: Crowdin Download Espanol Translations
         uses: crowdin/github-action@master
@@ -79,7 +86,7 @@ jobs:
           create_pull_request: false
 
           # global options
-          config: './config/crowdin/curriculum/crowdin.yml'
+          config: "./config/crowdin/curriculum/crowdin.yml"
           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
           # Uncomment below to debug
@@ -92,12 +99,8 @@ jobs:
 
       # Create Commit
       - name: Commit Changes
-        env:
-          EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
         run: |
           git checkout -b i18n-sync-curriculum
-          git config --global user.name "nhtest"
-          git config --global user.email $EMAIL
           git add .
           git commit -m "chore: update translations" | grep "nothing to commit, working tree clean"
           git push -u origin i18n-sync-curriculum -f
@@ -109,10 +112,10 @@ jobs:
         uses: ./tools/crowdin/actions/pr-creator
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
-          branch: 'i18n-sync-curriculum'
-          owner-repo: 'nhcarrigan/actions-testing'
-          base: 'main'
-          title: 'chore(i18n,learn): processed translations'
-          body: 'This PR was opened auto-magically by Crowdin.'
-          labels: 'crowdin-sync, scope: i18n, scope: learn'
-          reviewers: 'nhcarrigan'
+          branch: "i18n-sync-curriculum"
+          owner-repo: "nhcarrigan/actions-testing"
+          base: "main"
+          title: "chore(i18n,learn): processed translations"
+          body: "This PR was opened auto-magically by Crowdin."
+          labels: "crowdin-sync, scope: i18n, scope: learn"
+          reviewers: "nhcarrigan"
