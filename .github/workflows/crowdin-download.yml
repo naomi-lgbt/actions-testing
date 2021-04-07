@@ -9,9 +9,7 @@ jobs:
     steps:
       - name: Checkout Source Files
         uses: actions/checkout@v2
-        with: 
-          token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
-
+        
       - name: Install Dependencies
         working-directory: ./tools
         run: |
