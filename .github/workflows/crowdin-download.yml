@@ -97,7 +97,7 @@ jobs:
         run: |
           git checkout -b i18n-sync-curriculum
           git config user.name "nhtest"
-          git config user.email "nhcarrigan+test@gmail.com"
+          git config user.email $EMAIL
           git add .
           git commit -m "chore: update translations" | grep "nothing to commit, working tree clean"
           git push -u origin i18n-sync-curriculum -f
