@@ -19,13 +19,13 @@ const hideString = async (projectId, fileName, string) => {
     fileId: targetFile.fileId
   });
 
-  console.log(stringResponse);
-
   const targetString = stringResponse.find(el => el.data.text === string);
   if (!targetString) {
     core.setFailed(`${string} was not found.`);
     return;
   }
+
+  console.log(targetString);
 
   await changeHiddenStatus(projectId, targetString.id, true);
   console.log('string hidden!');
