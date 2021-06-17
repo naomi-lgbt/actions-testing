@@ -50,7 +50,7 @@ jobs:
         uses: ./tools/crowdin/actions/hide-specific-string
         with:
           filename: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
-          string-content: Here's a <a href="https://www.freecodecamp.org" target="_blank">link to www.freecodecamp.org</a> for you to follow.
+          string-content: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
         env: 
           CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
