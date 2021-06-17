@@ -27,7 +27,7 @@ const hideString = async (projectId, fileName, string) => {
 
   console.log(targetString);
 
-  await changeHiddenStatus(projectId, targetString.id, true);
+  await changeHiddenStatus(projectId, targetString.data.id, true);
   console.log('string hidden!');
 };
 
