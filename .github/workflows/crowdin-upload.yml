@@ -17,33 +17,33 @@ jobs:
           cd ./crowdin
           npm ci
 
-      # - name: Crowdin Upload
-      #   uses: crowdin/github-action@master
-      #   # options: https://github.com/crowdin/github-action/blob/master/action.yml
-      #   with:
-      #     # uploads
-      #     upload_sources: true
-      #     upload_translations: false
-      #     auto_approve_imported: false
-      #     import_eq_suggestions: false
+      - name: Crowdin Upload
+        uses: crowdin/github-action@master
+        # options: https://github.com/crowdin/github-action/blob/master/action.yml
+        with:
+          # uploads
+          upload_sources: true
+          upload_translations: false
+          auto_approve_imported: false
+          import_eq_suggestions: false
 
-      #     # downloads
-      #     download_translations: false
+          # downloads
+          download_translations: false
 
-      #     # pull-request
-      #     create_pull_request: false
+          # pull-request
+          create_pull_request: false
 
-      #     # global options
-      #     config: './config/crowdin/curriculum/crowdin.yml'
-      #     base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
+          # global options
+          config: './config/crowdin/curriculum/crowdin.yml'
+          base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
-      #     # Uncomment below to debug
-      #     # dryrun_action: true
+          # Uncomment below to debug
+          # dryrun_action: true
 
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-      #     CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
 
       - name: Hide a String
