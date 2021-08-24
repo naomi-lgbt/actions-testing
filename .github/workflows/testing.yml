@@ -1,10 +1,10 @@
-name: Crowdin Curriculum Upload
+name: Testy Test
 on:
   workflow_dispatch:
 
 jobs:
-  i18n-upload-curriculum-files:
-    name: Learn
+  testy-test:
+    name: Beep Boop
     runs-on: ubuntu-18.04
 
     steps:
