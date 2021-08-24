@@ -1,0 +1,27 @@
+name: Crowdin Curriculum Upload
+on:
+  workflow_dispatch:
+
+jobs:
+  i18n-upload-curriculum-files:
+    name: Learn
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout Source Files
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        working-directory: ./tools
+        run: |
+          cd ./crowdin
+          npm ci
+
+      - name: Testy Test
+        uses: ./tools/crowdin/actions/testy
+        with:
+          filename: 'react/use--for-a-more-concise-conditional.md'
+        env:
+          CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
