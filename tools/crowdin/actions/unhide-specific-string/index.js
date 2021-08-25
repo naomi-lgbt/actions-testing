@@ -10,9 +10,9 @@ const stringContent = core.getInput("string-content");
 
 const hideString = async (projectId, fileName, string) => {
   const fileResponse = await getFiles(projectId);
-  const targetFile = fileResponse.find(
-    (el) => path.basename(el.path) === fileName
-  );
+  const targetFile = fileResponse.find((el) => el.path.endsWith(filename));
+  console.log("path: " + targetFile.path);
+  console.log("basename: " + path.basename(targetFile.path));
   if (!targetFile) {
     core.setFailed(`${fileName} was not found.`);
     return;
