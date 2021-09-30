@@ -15,9 +15,9 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const files = await github.rest.pulls.listFiles({
-              context.repository_owner,
-              context.repository.split('/')[1],
-              context.payload.pull_request.number
+              owner: context.repository_owner,
+              repo: context.repository.split('/')[1],
+              body: context.payload.pull_request.number
             })
             console.log(files);
             if (false) {
