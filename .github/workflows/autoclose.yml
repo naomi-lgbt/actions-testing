@@ -32,9 +32,10 @@ jobs:
                 repo: context.repo.repo,
                 body: "Thank you for opening this pull request.\n\nThis is a standard message notifying you that we've reviewed your pull request and have decided not to merge it. We would welcome future pull requests from you.\n\nThank you and happy coding.",
               });
-              await github.rest.pulls.close({
+              await github.rest.pulls.update({
                 owner: context.payload.repository.owner.login,
                 repo: context.payload.repository.name,
                 pull_number: context.payload.pull_request.number,
+                state: "closed"
               });
             }
