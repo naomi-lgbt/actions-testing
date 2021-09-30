@@ -14,8 +14,11 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log(context.payload.pull_request.files);
-            const files = context.payload.pull_request.files;
+            const files = await github.rest.pulls.listFiles({
+              context.repository_owner,
+              context.repository.split('/')[1],
+              context.payload.pull_request.number
+            })
             if (false) {
               core.setFailed('This PR appears to touch translated curriculum files.')
               github.issues.createComment({
