@@ -14,10 +14,10 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log(context);
+            console.log(context.payload.repository.owner);
             const files = await github.rest.pulls.listFiles({
               owner: context.repository_owner,
-              repo: context.repository.split('/')[1],
+              repo: context.payload.repository.name,
               pull_number: context.payload.pull_request.number
             })
             console.log(files);
