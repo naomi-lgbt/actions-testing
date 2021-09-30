@@ -17,7 +17,7 @@ jobs:
             const files = await github.rest.pulls.listFiles({
               owner: context.repository_owner,
               repo: context.repository.split('/')[1],
-              body: context.payload.pull_request.number
+              pull_number: context.payload.pull_request.number
             })
             console.log(files);
             if (false) {
