@@ -19,6 +19,7 @@ jobs:
               context.repository.split('/')[1],
               context.payload.pull_request.number
             })
+            console.log(files);
             if (false) {
               core.setFailed('This PR appears to touch translated curriculum files.')
               github.issues.createComment({
