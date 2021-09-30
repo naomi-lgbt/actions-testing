@@ -26,7 +26,7 @@ jobs:
                 "@@ -63,7 +63,6 @@ $RECYCLE.BIN/\n # Icon must end with two \\r\n Icon\n \n-\n # Thumbnails\n ._*\n "
             ) {
               core.setFailed("Invalid PR detected.");
-              github.issues.createComment({
+              github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
