@@ -8,6 +8,6 @@
 files: [
  {
   "source" : "/shaun.md",
-  "translation" : "/es-shaun.md",
+  "translation" : "/%language%-shaun.md",
  },
 ]
