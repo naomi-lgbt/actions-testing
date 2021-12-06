@@ -1,8 +1,0 @@
-{
-  "name": "fcc-source-challenges",
-  "private": true,
-  "version": "0.0.1",
-  "engines": {
-    "node": ">= 14.0.0"
-  }
-}
