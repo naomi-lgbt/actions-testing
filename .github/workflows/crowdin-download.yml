@@ -118,6 +118,10 @@ jobs:
       - name: Create PR
         uses: nhcarrigan/crowdin-action@main
         env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          PLUGIN: "pull-request"
           GH_TOKEN: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           BRANCH: "i18n-sync-client"
           REPOSITORY: "nhcarrigan/actions-testing"
