@@ -11,6 +11,15 @@ jobs:
       - name: Checkout Source Files
         uses: actions/checkout@v2
 
+      - name: Generate Crowdin Config
+        uses: nhcarrigan/crowdin-action@main
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          PLUGIN: "generate-config"
+          PROJECT_NAME: "client"
+
       - name: Check Paths?
         uses: nhcarrigan/crowdin-action@main
         env:
@@ -66,7 +75,7 @@ jobs:
       #   with:
       #     filename: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
       #     string-content: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
-      #   env: 
+      #   env:
       #     CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
       #     CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
       #     CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
