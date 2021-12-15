@@ -35,7 +35,7 @@ jobs:
           # downloads
           download_translations: true
           download_language: zh-CN
-          skip_untranslated_files: true
+          skip_untranslated_files: false
           export_only_approved: true
 
           push_translations: false
@@ -62,7 +62,7 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-          PLUGIN: "generate-config"
+          PLUGIN: "convert-chinese"
           FILE_PATH: "/client/i18n/locales/chinese"
 
       ##### Download Espanol #####
@@ -79,7 +79,7 @@ jobs:
           # downloads
           download_translations: true
           download_language: es-EM
-          skip_untranslated_files: true
+          skip_untranslated_files: false
           export_only_approved: true
 
           push_translations: false
