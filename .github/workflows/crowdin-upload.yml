@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate Crowdin Config
-        uses: nhcarrigan/crowdin-action@main
+        uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
@@ -21,7 +21,7 @@ jobs:
           PROJECT_NAME: "client"
 
       - name: Check Paths?
-        uses: nhcarrigan/crowdin-action@main
+        uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
@@ -45,7 +45,7 @@ jobs:
           create_pull_request: false
 
           # global options
-          config: './crowdin-config.yml'
+          config: "./crowdin-config.yml"
           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
           # Uncomment below to debug
@@ -56,19 +56,22 @@ jobs:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
-      # - name: Remove Deleted English Curriculum Files From Crowdin
-      #   uses: ./tools/crowdin/actions/remove-deleted-files
-      #   env:
-      #     CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
-      #     CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-      #     CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+      - name: Remove deleted files
+        uses: freecodecamp/crowdin-action@main
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          PLUGIN: "remove-deleted-files"
+          FILE_PATH: "curriculum/challenges/english"
 
-      # - name: Hide Non-Translated Strings
-      #   uses: ./tools/crowdin/actions/hide-non-translated-strings
-      #   env:
-      #     CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
-      #     CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-      #     CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+      - name: Hide Non-Translated Strings
+        uses: freecodecamp/crowdin-action@main
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+          PLUGIN: "hide-curriculum-strings"
 
       # - name: Hide a String
       #   uses: ./tools/crowdin/actions/hide-specific-string
