@@ -1,8 +1,5 @@
 name: Bug Report
 description: Report a bug with the game.
-title: ""
-labels: []
-assignees: ""
 body:
   - type: markdown
     attributes:
@@ -33,5 +30,5 @@ body:
     attributes:
       label: Additional Information
       description: Is there anything else we should know?
-    validation:
+    validations:
       required: false
