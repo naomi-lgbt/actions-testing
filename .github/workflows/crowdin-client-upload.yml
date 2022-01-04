@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  i18n-upload-curriculum-files:
+  i18n-upload-client-files:
     name: Learn
     runs-on: ubuntu-18.04
 
