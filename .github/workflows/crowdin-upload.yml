@@ -15,7 +15,7 @@ jobs:
         uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2"
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           PLUGIN: "generate-config"
           PROJECT_NAME: "curriculum"
@@ -24,7 +24,7 @@ jobs:
         uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2"
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           PLUGIN: "check-paths"
 
@@ -60,7 +60,7 @@ jobs:
         uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2"
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           PLUGIN: "remove-deleted-files"
           FILE_PATH: "curriculum/challenges/english"
@@ -69,7 +69,7 @@ jobs:
         uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2"
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           PLUGIN: "hide-curriculum-strings"
 
