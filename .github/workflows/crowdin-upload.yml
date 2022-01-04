@@ -28,33 +28,33 @@ jobs:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           PLUGIN: "check-paths"
 
-      - name: Crowdin Upload
-        uses: crowdin/github-action@master
-        # options: https://github.com/crowdin/github-action/blob/master/action.yml
-        with:
-          # uploads
-          upload_sources: true
-          upload_translations: false
-          auto_approve_imported: false
-          import_eq_suggestions: false
+#       - name: Crowdin Upload
+#         uses: crowdin/github-action@master
+#         # options: https://github.com/crowdin/github-action/blob/master/action.yml
+#         with:
+#           # uploads
+#           upload_sources: true
+#           upload_translations: false
+#           auto_approve_imported: false
+#           import_eq_suggestions: false
 
-          # downloads
-          download_translations: false
+#           # downloads
+#           download_translations: false
 
-          # pull-request
-          create_pull_request: false
+#           # pull-request
+#           create_pull_request: false
 
-          # global options
-          config: "./crowdin-config.yml"
-          base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
+#           # global options
+#           config: "./crowdin-config.yml"
+#           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
-          # Uncomment below to debug
-          # dryrun_action: true
+#           # Uncomment below to debug
+#           # dryrun_action: true
 
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+#           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
       - name: Remove deleted files
         uses: freecodecamp/crowdin-action@main
@@ -75,13 +75,13 @@ jobs:
 
       - name: Hide a String
         uses: ./tools/crowdin/actions/hide-specific-string
-        with:
-          filename: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
-          string-content: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
         env:
           CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          PLUGIN: "hide-specific-string"
+          FILENAME: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
+          STRING-CONTENT: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
 
       # - name: Unhide Title of Use && For a More Concise Conditional
       #   uses: ./tools/crowdin/actions/unhide-specific-string
