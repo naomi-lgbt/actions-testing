@@ -81,7 +81,7 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           PLUGIN: "hide-string"
           FILE_NAME: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
-          STRING-CONTENT: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
+          STRING_CONTENT: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
 
       # - name: Unhide Title of Use && For a More Concise Conditional
       #   uses: ./tools/crowdin/actions/unhide-specific-string
