@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate Crowdin Config
-        uses: freecodecamp/crowdin-action@main
+        uses: freecodecamp/crowdin-action@fix/bad-paths
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
@@ -20,44 +20,36 @@ jobs:
           PLUGIN: "generate-config"
           PROJECT_NAME: "curriculum"
 
-      - name: Check Paths?
-        uses: freecodecamp/crowdin-action@main
+      - name: Crowdin Upload
+        uses: crowdin/github-action@master
+        # options: https://github.com/crowdin/github-action/blob/master/action.yml
+        with:
+          # uploads
+          upload_sources: true
+          upload_translations: false
+          auto_approve_imported: false
+          import_eq_suggestions: false
+
+          # downloads
+          download_translations: false
+
+          # pull-request
+          create_pull_request: false
+
+          # global options
+          config: "./crowdin-config.yml"
+          base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
+
+          # Uncomment below to debug
+          # dryrun_action: true
+
         env:
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-          PLUGIN: "check-paths"
-
-#       - name: Crowdin Upload
-#         uses: crowdin/github-action@master
-#         # options: https://github.com/crowdin/github-action/blob/master/action.yml
-#         with:
-#           # uploads
-#           upload_sources: true
-#           upload_translations: false
-#           auto_approve_imported: false
-#           import_eq_suggestions: false
-
-#           # downloads
-#           download_translations: false
-
-#           # pull-request
-#           create_pull_request: false
-
-#           # global options
-#           config: "./crowdin-config.yml"
-#           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
-
-#           # Uncomment below to debug
-#           # dryrun_action: true
-
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-#           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
 
       - name: Remove deleted files
-        uses: freecodecamp/crowdin-action@nhcarrigan/testing
+        uses: freecodecamp/crowdin-action@fix/bad-paths
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
@@ -66,7 +58,7 @@ jobs:
           FILE_PATH: "curriculum/challenges/english"
 
       - name: Hide Non-Translated Strings
-        uses: freecodecamp/crowdin-action@nhcarrigan/testing
+        uses: freecodecamp/crowdin-action@fix/bad-paths
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
@@ -74,13 +66,13 @@ jobs:
           PLUGIN: "hide-curriculum-strings"
 
       - name: Hide a String
-        uses: freecodecamp/crowdin-action@nhcarrigan/testing
+        uses: freecodecamp/crowdin-action@fix/bad-paths
         env:
-          CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
+          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
           PLUGIN: "hide-string"
-          FILE_NAME: 'basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md'
+          FILE_NAME: "basic-html-and-html5/nest-an-anchor-element-within-a-paragraph.md"
           STRING_CONTENT: Here's a <a href="https://www.freecodecamp.org" target="_blank" mark="crwd-mark">link to www.freecodecamp.org</a> for you to follow.
 
       # - name: Unhide Title of Use && For a More Concise Conditional
