@@ -74,7 +74,7 @@ jobs:
           PLUGIN: "hide-curriculum-strings"
 
       - name: Hide a String
-        uses: ./tools/crowdin/actions/hide-specific-string
+        uses: freecodecamp/crowdin-action@main
         env:
           CROWDIN_API_URL: 'https://freecodecamp.crowdin.com/api/v2/'
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
