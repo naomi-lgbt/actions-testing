@@ -57,16 +57,16 @@ jobs:
           PLUGIN: "remove-deleted-files"
           FILE_PATHS: '["curriculum/challenges/english", "curriculum/dictionaries/english"]'
 
-      - name: Hide Non-Translated Strings
-        uses: freecodecamp/crowdin-action@main
-        env:
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
-          CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
-          PLUGIN: "hide-curriculum-strings"
+      # - name: Hide Non-Translated Strings
+      #   uses: freecodecamp/crowdin-action@main
+      #   env:
+      #     CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_CAMPERBOT_SERVICE_TOKEN }}
+      #     CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
+      #     CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
+      #     PLUGIN: "hide-curriculum-strings"
 
       - name: Hide a String
-        uses: freecodecamp/crowdin-action@main
+        uses: freecodecamp/crowdin-action@feat/multiple-paths
         env:
           CROWDIN_API_URL: "https://freecodecamp.crowdin.com/api/v2/"
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID_CURRICULUM }}
