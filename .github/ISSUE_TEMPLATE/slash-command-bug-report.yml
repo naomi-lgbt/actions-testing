@@ -1,4 +1,4 @@
-name: Message Components Bug Report
+name: Slash Commands Bug Report
 description: A bug has been found in Discord's Slash Commands and Interactions.
 title: "bug"
 labels: ["slash commands"]
