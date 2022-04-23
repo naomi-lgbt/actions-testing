@@ -18,6 +18,7 @@ jobs:
             });
             const hasReviewLabel = pull.labels?.find(label => label.name === "🔍 status: ready for review");
             const hasWipLabel = pull.labels?.find(label => label.name === "⚒️ status: work in progress");
+            console.log(pull);
             if (pull.draft && !hasWipLabel) {
               await github.rest.issues.setLabels({
                 owner: context.payload.repository.owner.login,
@@ -25,10 +26,7 @@ jobs:
                 issue_number: context.issue.number,
                 labels: ["⚒️ status: work in progress"]
               })
-              return;
-            };
-            // add review label
-            if (!hasReviewLabel) {
+            } else if (!hasReviewLabel) {
               await github.rest.issues.setLabels({
                 owner: context.payload.repository.owner.login,
                 repo: context.payload.repository.name,
