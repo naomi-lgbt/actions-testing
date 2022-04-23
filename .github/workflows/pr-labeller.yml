@@ -1,6 +1,14 @@
 name: "Pull Request Labeller"
 on:
-  - pull_request_target
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - converted_to_draft
+      - ready_for_review
+      - review_requested
+      - review_request_removed
 
 jobs:
   label:
