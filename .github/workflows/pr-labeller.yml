@@ -1,0 +1,21 @@
+name: 'Pull Request Labeller'
+on:
+  - pull_request_target
+
+jobs:
+  label:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+<<<<<<< HEAD
+          const prNumber = context.issue.number;
+          console.log(prNumber);
+          console.log(context.issue);
+=======
+          const event = context.eventName;
+          console.log(event);
+>>>>>>> 5a7512fb6f5065b0d276fec48d993f4f5b4376e6
+        
