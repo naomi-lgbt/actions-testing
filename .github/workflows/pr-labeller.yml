@@ -2,6 +2,7 @@ name: "Pull Request Labeller"
 on:
   pull_request_target:
     types:
+      - closed
       - opened
       - reopened
       - synchronize
@@ -24,18 +25,35 @@ jobs:
               repo: context.payload.repository.name,
               pull_number:  context.issue.number
             });
-            if (pull.data.draft) {
+            if (pull.data.state === "closed") {
+              if (pull.data.merged) {
+                await github.rest.issues.setLabels({
+                  owner: context.payload.repository.owner.login,
+                  repo: context.payload.repository.name,
+                  issue_number: context.issue.number,
+                  labels: ["⚒️ pull: work in progress"]
+                })
+              }
+              else {
+                await github.rest.issues.setLabels({
+                  owner: context.payload.repository.owner.login,
+                  repo: context.payload.repository.name,
+                  issue_number: context.issue.number,
+                  labels: ["⚒️ pull: work in progress"]
+                })
+              }
+            } else if (pull.data.draft) {
               await github.rest.issues.setLabels({
                 owner: context.payload.repository.owner.login,
                 repo: context.payload.repository.name,
                 issue_number: context.issue.number,
-                labels: ["⚒️ status: work in progress"]
+                labels: ["⚒️ pull: work in progress"]
               })
             } else {
               await github.rest.issues.setLabels({
                 owner: context.payload.repository.owner.login,
                 repo: context.payload.repository.name,
                 issue_number: context.issue.number,
-                labels: ["🔍 status: ready for review"]
+                labels: ["🔍 pull: ready for review"]
               })
             }
