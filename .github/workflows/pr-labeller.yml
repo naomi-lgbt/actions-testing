@@ -1,4 +1,4 @@
-name: 'Pull Request Labeller'
+name: "Pull Request Labeller"
 on:
   - pull_request_target
 
@@ -6,11 +6,33 @@ jobs:
   label:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/github-script@v6
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          const prNumber = context.issue.number;
-          console.log(context.action);
-          console.log(prNumber);
-          console.log(context.issue);
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = context.issue.number;
+            const pull = await github.rest.pull.get({
+              owner: context.payload.repository.owner.login,
+              repo: context.payload.repository.name,
+              pull_number:  context.issue.number
+            });
+            const hasReviewLabel = pull.labels.find(label => label.name === "🔍 status: ready for review");
+            const hasWipLabel = pull.labels.find(label => label.name === "⚒️ status: work in progress");
+            if (pull.draft && !hasWipLabel) {
+              await github.rest.issues.setLabels({
+                owner: context.payload.repository.owner.login,
+                repo: context.payload.repository.name,
+                issue_number: context.issue.number,
+                labels: ["⚒️ status: work in progress"]
+              })
+              return;
+            };
+            // add review label
+            if (!hasReviewLabel) {
+              await github.rest.issues.setLabels({
+                owner: context.payload.repository.owner.login,
+                repo: context.payload.repository.name,
+                issue_number: context.issue.number,
+                labels: ["🔍 status: ready for review"]
+              })
+            }
