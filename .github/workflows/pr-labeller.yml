@@ -42,6 +42,7 @@ jobs:
                   labels: ["⚒️ pull: work in progress"]
                 })
               }
+              return;
             } else if (pull.data.draft) {
               await github.rest.issues.setLabels({
                 owner: context.payload.repository.owner.login,
