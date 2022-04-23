@@ -11,7 +11,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const prNumber = context.issue.number;
-            const pull = await github.rest.pull.get({
+            const pull = await github.rest.pulls.get({
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               pull_number:  context.issue.number
