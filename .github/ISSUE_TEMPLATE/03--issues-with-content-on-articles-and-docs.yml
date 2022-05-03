@@ -1,5 +1,5 @@
 name: Report issues with content on guide articles or documentation.
-about: Report issues with content on a specific article, like broken links, typos, missing parts, etc.
+description: Report issues with content on a specific article, like broken links, typos, missing parts, etc.
 labels: ['type: bug', 'status: waiting triage']
 body:
   - type: markdown
