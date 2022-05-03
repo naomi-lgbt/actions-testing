@@ -37,7 +37,7 @@ body:
     attributes:
       label: System
       description: Please complete the following information.
-      placeholder: |
+      value: |
         - Device: [e.g. iPhone 6, Laptop]
         - OS: [e.g. iOS 14, Windows 10, Ubuntu 20.04]
         - Browser: [e.g. Chrome, Safari]

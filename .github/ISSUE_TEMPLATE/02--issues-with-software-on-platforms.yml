@@ -15,7 +15,7 @@ body:
     attributes:
       label: Steps to Reproduce
       description: Please provide the steps to reproduce the issue.
-      placeholder: |
+      value: |
         1. Go to '...'
         2. Click on '...'
         3. Scroll down to '...'
@@ -38,7 +38,7 @@ body:
     attributes:
       label: System
       description: Please complete the following information.
-      placeholder: |
+      value: |
         - Device: [e.g. iPhone 6, Laptop]
         - OS: [e.g. iOS 14, Windows 10, Ubuntu 20.04]
         - Browser: [e.g. Chrome, Safari]
