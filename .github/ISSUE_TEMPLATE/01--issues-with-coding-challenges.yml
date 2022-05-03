@@ -15,7 +15,7 @@ body:
     attributes:
       label: Your code
       description: Copy and paste the code from the editor that you used in between the back-ticks.
-      placeholder: |
+      value: |
         ```
 
         ```
