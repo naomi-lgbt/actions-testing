@@ -3,12 +3,15 @@ on:
 
 jobs:
   welcome:
+    name: Welcomer
     runs-on: ubuntu-latest
-    uses: actions/github-script@v6
-    with:
-      script: |
-        const creator = context.payload.sender.login;
-        const pulls = await octokit.rest.search.code({
-          q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged
-        });
-        console.log(pulls);
+    steps:
+      - name: Welcome New Contributors
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const creator = context.payload.sender.login;
+            const pulls = await octokit.rest.search.code({
+              q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged
+            });
+            console.log(pulls);
