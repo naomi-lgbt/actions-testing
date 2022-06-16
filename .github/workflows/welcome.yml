@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  welcome:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    uses: actions/github-script@v6
+    with:
+      script: |
+        const creator = context.payload.sender.login;
+        const pulls = await octokit.rest.search.code({
+          q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged
+        });
+        console.log(pulls);
+        
