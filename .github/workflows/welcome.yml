@@ -27,7 +27,7 @@ jobs:
               body: `
               #### :sparkles: :tada: **AWESOME!** :tada: :sparkles:
 
-              Hi @{{ author }},
+              Hi @${creator},
 
               Thanks for this pull request and for contributing to the code-base for the first time. We are looking forward to more contributions from you in the future.
 
