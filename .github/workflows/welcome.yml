@@ -3,7 +3,6 @@ on:
 
 jobs:
   welcome:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     uses: actions/github-script@v6
     with:
@@ -13,4 +12,3 @@ jobs:
           q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged
         });
         console.log(pulls);
-        
