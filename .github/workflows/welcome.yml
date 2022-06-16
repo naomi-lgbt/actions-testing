@@ -12,6 +12,6 @@ jobs:
           script: |
             const creator = context.payload.sender.login;
             const pulls = await octokit.rest.search.code({
-              q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged
+              q: `repo:freecodecamp/freecodecamp+author:${creator}+is:pr+is:merged`
             });
             console.log(pulls);
