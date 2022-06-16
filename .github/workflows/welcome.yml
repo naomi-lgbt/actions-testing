@@ -1,10 +1,13 @@
 name: New Contributor Welcome
 on:
-  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
 
 jobs:
   welcome:
     name: Welcomer
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Welcome New Contributors
@@ -16,10 +19,8 @@ jobs:
             const pulls = await github.rest.search.issuesAndPullRequests({
               q: `repo:${repo}+author:${creator}+is:pr+is:merged`
             });
-            // This means they've got merged PRs.
-            if (pulls.data.total_count) {
-              return;
-            }
+            console.log(pulls);
+            console.log(pulls.data.total_count);
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
