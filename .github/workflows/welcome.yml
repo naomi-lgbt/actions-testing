@@ -19,7 +19,7 @@ jobs:
               repo: context.repo.repo,
               pull_number: context.issue.number
             });
-            const creator = pull.user.login;
+            const creator = pull.data.user.login;
             const repo = `${context.repo.owner}/${context.repo.repo}`;
             const pulls = await github.rest.search.issuesAndPullRequests({
               q: `repo:${repo}+author:${creator}+is:pr+is:merged`
