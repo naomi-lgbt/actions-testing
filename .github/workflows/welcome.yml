@@ -1,4 +1,4 @@
-name: New Contributor Welcome
+name: Github - Welcome First-timers
 on:
   pull_request:
     types:
@@ -6,12 +6,12 @@ on:
 
 jobs:
   welcome:
-    name: Welcomer
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+
     steps:
       - name: Welcome New Contributors
-        uses: actions/github-script@v6
+        if: github.event.pull_request.merged == true
+        uses: actions/github-script@7a5c598405937d486b0331594b5da2b14db670da # tag=v6
         with:
           script: |
             const creator = context.payload.sender.login;
@@ -19,19 +19,20 @@ jobs:
             const pulls = await github.rest.search.issuesAndPullRequests({
               q: `repo:${repo}+author:${creator}+is:pr+is:merged`
             });
+            console.log(pulls?.data?.total_count);
             console.log(pulls);
-            console.log(pulls.data.total_count);
+            // This means they've got merged PRs.
+            if (pulls?.data?.total_count) {
+              return;
+            }
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: `
               #### :sparkles: :tada: **AWESOME!** :tada: :sparkles:
-
               Hi @${creator},
-
               Thanks for this pull request and for contributing to the code-base for the first time. We are looking forward to more contributions from you in the future.
-
               Cheers & happy contributing!
               `
             });
