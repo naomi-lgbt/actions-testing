@@ -24,10 +24,8 @@ jobs:
             const pulls = await github.rest.search.issuesAndPullRequests({
               q: `repo:${repo}+author:${creator}+is:pr+is:merged`
             });
-            console.log(pulls?.data?.total_count);
-            console.log(pulls);
             // This means they've got merged PRs.
-            if (pulls?.data?.total_count) {
+            if (pulls?.data?.total_count > 1) {
               return;
             }
             github.rest.issues.createComment({
