@@ -89,6 +89,16 @@ jobs:
           script: |
             core.setFailed();
 
+  gimme-logs:
+    name: Comment on i18n Failure
+    needs: ['test', 'test-localization']
+    runs-on: ubuntu-20.04
+    if: ${{ needs.test.result == 'success' && needs.test-localization.result == 'failure' }}
+    steps:
+      - run: |
+          echo "The test job: ${{ needs.test.result }}"
+          echo "The test-localisation job: ${{ needs.test-localization.result }}"
+
   failure-comment:
     name: Comment on i18n Failure
     needs: ['test', 'test-localization']
