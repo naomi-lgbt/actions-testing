@@ -51,7 +51,7 @@ jobs:
         with:
           github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
-            console.log('passed');
+            core.setFailed();
 
   test-upcoming:
     name: Test Upcoming Changes
