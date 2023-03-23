@@ -92,6 +92,7 @@ jobs:
   gimme-logs:
     name: Log all the things
     runs-on: ubuntu-20.04
+    needs: ['test', 'test-localization']
     if: ${{ always() }}
     steps:
       - run: |
