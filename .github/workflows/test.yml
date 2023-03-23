@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.CAMPERBOT_NO_TRANSLATE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             console.log('linted!')
       
@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.CAMPERBOT_NO_TRANSLATE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             console.log('tested');
 
@@ -67,7 +67,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.CAMPERBOT_NO_TRANSLATE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             console.log('tested upcoming');
 
@@ -85,7 +85,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.CAMPERBOT_NO_TRANSLATE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             console.log('tested localisation')
 
@@ -97,7 +97,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.CAMPERBOT_NO_TRANSLATE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const isDev = await github.rest.teams.getMembershipForUserInOrg({
               org: "freeCodeCamp",
