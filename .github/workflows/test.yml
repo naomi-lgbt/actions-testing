@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
             console.log('linted!')
       
@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
             console.log('passed');
 
@@ -67,7 +67,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
             console.log('passed');
 
@@ -85,7 +85,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
             core.setFailed();
 
@@ -107,7 +107,7 @@ jobs:
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.ACTIONS_CAMPERBOT_PA_TOKEN }}
           script: |
             const isDev = await github.rest.teams.getMembershipForUserInOrg({
               org: "freeCodeCamp",
