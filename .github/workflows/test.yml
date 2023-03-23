@@ -91,18 +91,16 @@ jobs:
 
   gimme-logs:
     name: Log all the things
-    needs: ['test', 'test-localization']
     runs-on: ubuntu-20.04
     steps:
       - run: |
-          echo "The test job: ${{ needs.test.result }}"
-          echo "The test-localisation job: ${{ needs.test-localization.result }}"
+          echo "The test job: ${{ jobs.test.result }}"
+          echo "The test-localisation job: ${{ jobs.test-localization.result }}"
 
   failure-comment:
     name: Comment on i18n Failure
-    needs: ['test', 'test-localization']
     runs-on: ubuntu-20.04
-    if: ${{ needs.test.result == 'success' && needs.test-localization.result == 'failure' }}
+    if: ${{ jobs.test.result == 'success' &&  jobs.test-localization.result == 'failure' }}
     steps:
       - uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
         with:
