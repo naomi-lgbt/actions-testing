@@ -44,7 +44,7 @@ jobs:
           echo "Found ${#toDelete[@]} tags to delete."
           for value in "${toDelete[@]}"; do
               echo "Deleting tag: $value"
-              doctl registry repository delete-tag org/news-${{ matrix.languages }} $value
+              doctl registry repository delete-tag org/news-${{ matrix.languages }} $value --force
           done
 
   clean:
