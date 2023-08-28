@@ -63,4 +63,4 @@ jobs:
         run: doctl registry login --expiry-seconds 1200
 
       - name: Trigger Garbage collection
-        run: doctl registry garbage-collection start --include-untagged-manifests
+        run: doctl registry garbage-collection start --include-untagged-manifests --force
